@@ -1,79 +1,99 @@
-# 🏀 NBA Trade Tree
+# NBA Trade Tree 🏀
 
-Interactive web experience to visualize NBA trade lineage — see how players got to their current teams through cascading trades and draft picks.
+Interactive web app that visualizes the chain of trades, picks, and transactions that led to any NBA player being on their current roster.
 
-**Think of it as "git blame" for NBA rosters.**
-
-## Screenshot
-
-<img width="1200" alt="NBA Trade Tree - Celtics/Nets Trade" src="https://via.placeholder.com/1200x600/0a0a0b/ffffff?text=NBA+Trade+Tree+Visualization">
+> "git blame" for NBA rosters — every player has an origin story.
 
 ## Features
 
-- 🔍 **Player Search** — Search any NBA player to see their acquisition history
-- 🌳 **Interactive Trees** — Zoomable, draggable trade tree visualization
-- 🎨 **Team Colors** — Nodes styled with team branding
-- 📱 **Responsive** — Works on desktop and mobile
-- ⚡ **Fast** — SQLite database for instant queries
+- **Player Search**: Autocomplete search for any NBA player
+- **Trade Tree Visualization**: Interactive graph showing acquisition chains
+- **Trade Chain Tracing**: Follow picks and trades back to their origin
+- **Dark Theme**: Modern, clean UI inspired by Mission Control
 
-## Tech Stack
+## Famous Example: The Celtics Trade Tree
 
-- **Next.js 15** (App Router)
-- **React Flow** (@xyflow/react) for graph visualization
-- **SQLite** + Drizzle ORM
-- **Tailwind CSS**
-- **TypeScript**
-
-## Quick Start
-
-```bash
-# Install dependencies
-npm install
-
-# Run development server
-npm run dev
-
-# Open http://localhost:3000
-```
-
-## Data Model
-
-```
-players     — NBA players (current + historical)
-teams       — NBA teams
-trades      — Trade transactions
-trade_assets — What was exchanged in each trade
-draft_picks — Draft picks (with ownership tracking)
-acquisitions — How each player joined each team
-```
-
-## Famous Example: Celtics Trade Tree
+In 2013, the Celtics traded Kevin Garnett and Paul Pierce to the Nets for four first-round picks:
 
 ```
 2013: Celtics trade KG + Pierce → Nets
   ├── 2014 1st (#17) → James Young
   ├── 2016 1st (#3) → Jaylen Brown ⭐
-  ├── 2017 1st (#1) → Trade to PHI → #3 → Jayson Tatum ⭐
-  └── 2018 1st (#8) → Kyrie trade chain
-
+  ├── 2017 1st (#1) → Traded to PHI → Received #3 → Jayson Tatum ⭐
+  └── 2018 1st (#8) → Part of Kyrie Irving trade
+  
 Result: KG/Pierce → 2024 NBA Championship core
 ```
 
-## Roadmap
+## Tech Stack
 
-- [x] M0: Data Foundation (SQLite schema)
-- [x] M1: Core Web App (React Flow visualization)
-- [ ] M2: Team Pages
-- [ ] M3: Championship Lineage
-- [ ] M4: Trade Deadline Live Mode
-- [ ] M5: "What If" Mode
-- [ ] M6: Social Sharing
+- **Frontend**: Next.js 16, React 19, TypeScript
+- **Visualization**: React Flow (@xyflow/react)
+- **Styling**: Tailwind CSS
+- **Database**: SQLite + Drizzle ORM
+- **Data Source**: Basketball-Reference (scraped), nba_api
 
-## Credits
+## Getting Started
 
-- Data: [Basketball-Reference](https://www.basketball-reference.com/)
-- Built by Edward 🤖
+### Prerequisites
+
+- Node.js 20+
+- Python 3.10+ (for data scripts)
+
+### Setup
+
+1. Clone the repo:
+```bash
+git clone https://github.com/ByAkshayRam/nba-trade-tree.git
+cd nba-trade-tree
+```
+
+2. Seed the database:
+```bash
+python3 scripts/scrape_trades.py
+```
+
+3. Install dependencies and run:
+```bash
+cd app
+npm install
+npm run dev
+```
+
+4. Open http://localhost:3000
+
+## Project Structure
+
+```
+nba-trade-tree/
+├── app/                    # Next.js web application
+│   ├── src/
+│   │   ├── app/           # App router pages & API routes
+│   │   ├── components/    # React components
+│   │   └── db/            # Drizzle schema & database
+├── data/                   # SQLite database
+├── scripts/                # Python scraping scripts
+├── research/               # Competitor analysis & notes
+└── PRD.md                  # Product requirements document
+```
+
+## Milestones
+
+- [x] **M0**: Data Foundation - Scraping, schema, trade chain validation
+- [x] **M1**: Core Web App - Search, tree visualization, dark theme
+- [ ] **M2**: Team View - Browse by team, roster acquisition sources
+- [ ] **M3**: Championship Lineage - Trace championship rosters
+- [ ] **M4**: Trade Deadline Live - Real-time trade impact
+- [ ] **M5**: "What If" Mode - Alternate timelines
+
+## Contributing
+
+This is a personal project, but PRs are welcome! See PRD.md for the roadmap.
 
 ## License
 
 MIT
+
+---
+
+Built with 💚 by [Akshay](https://github.com/ByAkshayRam)
