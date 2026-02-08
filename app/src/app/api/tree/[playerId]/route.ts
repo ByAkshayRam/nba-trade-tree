@@ -16,7 +16,7 @@ interface ChainStep {
 
 interface TreeNode {
   id: string;
-  type: "player" | "trade" | "pick" | "team-asset";
+  type: "player" | "trade" | "pick" | "team-asset" | "trade-header" | "asset";
   data: {
     label: string;
     sublabel?: string;
@@ -30,6 +30,11 @@ interface TreeNode {
     received?: string[];
     teamFromColor?: string;
     teamToColor?: string;
+    // For asset nodes
+    assetType?: "player" | "pick";
+    assetIndex?: number;
+    totalAssets?: number;
+    parentTradeId?: string;
   };
 }
 
@@ -168,41 +173,107 @@ export async function GET(
         // Process chain in reverse (from most recent to origin)
         for (let i = chain.length - 1; i >= 0; i--) {
           const step = chain[i];
-          const nodeId = `chain-${branchIdx}-${i}`;
+          const baseNodeId = `chain-${branchIdx}-${i}`;
           
           // Determine node type based on content
           const isDraft = step.action?.toLowerCase().includes('draft') || step.event.toLowerCase().includes('draft');
-          const nodeType = isDraft ? 'pick' : 'trade';
-
+          
           // Get team colors
           const teamFromColor = step.teamFrom ? teamColors[step.teamFrom]?.primary : undefined;
           const teamToColor = step.teamTo ? teamColors[step.teamTo]?.primary : undefined;
 
-          nodes.push({
-            id: nodeId,
-            type: nodeType,
-            data: {
-              label: step.event,
-              sublabel: step.action,
-              date: step.date,
-              teamFrom: step.teamFrom,
-              teamTo: step.teamTo,
-              assets: step.assets,
-              received: step.received,
-              teamFromColor,
-              teamToColor,
-              color: teamToColor || teamFromColor,
-            },
-          });
+          // Check if this trade has multiple assets to split
+          const assetsToSplit = step.assets || [];
+          const shouldSplitAssets = !isDraft && assetsToSplit.length > 1;
 
-          edges.push({
-            id: `edge-${nodeId}-${prevNodeId}`,
-            source: nodeId,
-            target: prevNodeId,
-            label: isDraft ? "Drafted" : undefined,
-          });
+          if (shouldSplitAssets) {
+            // Create trade header node
+            const headerNodeId = `${baseNodeId}-header`;
+            nodes.push({
+              id: headerNodeId,
+              type: "trade-header",
+              data: {
+                label: step.event,
+                sublabel: step.action,
+                date: step.date,
+                teamFrom: step.teamFrom,
+                teamTo: step.teamTo,
+                teamFromColor,
+                teamToColor,
+                color: teamFromColor,
+              },
+            });
 
-          prevNodeId = nodeId;
+            // Create individual asset nodes
+            assetsToSplit.forEach((asset, assetIdx) => {
+              const assetNodeId = `${baseNodeId}-asset-${assetIdx}`;
+              const isPickAsset = asset.toLowerCase().includes('pick') || 
+                                   asset.toLowerCase().includes('1st') || 
+                                   asset.toLowerCase().includes('2nd');
+              
+              nodes.push({
+                id: assetNodeId,
+                type: "asset",
+                data: {
+                  label: asset,
+                  assetType: isPickAsset ? "pick" : "player",
+                  teamFrom: step.teamFrom,
+                  teamTo: step.teamTo,
+                  color: teamFromColor,
+                  teamFromColor,
+                  teamToColor,
+                  assetIndex: assetIdx,
+                  totalAssets: assetsToSplit.length,
+                  parentTradeId: headerNodeId,
+                },
+              });
+
+              // Edge from header to each asset
+              edges.push({
+                id: `edge-${headerNodeId}-${assetNodeId}`,
+                source: headerNodeId,
+                target: assetNodeId,
+              });
+
+              // Edge from each asset to the next node in chain
+              edges.push({
+                id: `edge-${assetNodeId}-${prevNodeId}`,
+                source: assetNodeId,
+                target: prevNodeId,
+              });
+            });
+
+            prevNodeId = headerNodeId;
+          } else {
+            // Single asset or draft pick - use original behavior
+            const nodeType = isDraft ? 'pick' : 'trade';
+
+            nodes.push({
+              id: baseNodeId,
+              type: nodeType,
+              data: {
+                label: step.event,
+                sublabel: step.action,
+                date: step.date,
+                teamFrom: step.teamFrom,
+                teamTo: step.teamTo,
+                assets: step.assets,
+                received: step.received,
+                teamFromColor,
+                teamToColor,
+                color: teamToColor || teamFromColor,
+              },
+            });
+
+            edges.push({
+              id: `edge-${baseNodeId}-${prevNodeId}`,
+              source: baseNodeId,
+              target: prevNodeId,
+              label: isDraft ? "Drafted" : undefined,
+            });
+
+            prevNodeId = baseNodeId;
+          }
         }
       });
     } else if (acquisition) {
