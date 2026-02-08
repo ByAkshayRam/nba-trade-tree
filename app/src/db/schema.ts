@@ -28,7 +28,7 @@ export const trades = sqliteTable("trades", {
   description: text("description"),
   sourceUrl: text("source_url"),
   isMultiTeam: integer("is_multi_team").default(0), // For 3+ team trades
-  parentTradeId: integer("parent_trade_id").references((): typeof trades => trades.id), // Links related sub-trades
+  parentTradeId: integer("parent_trade_id"), // Links related sub-trades (self-referencing)
 });
 
 export const tradeAssets = sqliteTable("trade_assets", {
