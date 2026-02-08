@@ -31,7 +31,7 @@ interface TreeNode {
     teamFromColor?: string;
     teamToColor?: string;
     // For asset nodes
-    assetType?: "player" | "pick";
+    assetType?: "player" | "pick" | "cash";
     assetIndex?: number;
     totalAssets?: number;
     parentTradeId?: string;
@@ -204,19 +204,30 @@ export async function GET(
               },
             });
 
-            // Create individual asset nodes
+            // Create individual asset nodes (players, picks, cash)
             assetsToSplit.forEach((asset, assetIdx) => {
               const assetNodeId = `${baseNodeId}-asset-${assetIdx}`;
-              const isPickAsset = asset.toLowerCase().includes('pick') || 
-                                   asset.toLowerCase().includes('1st') || 
-                                   asset.toLowerCase().includes('2nd');
+              const assetLower = asset.toLowerCase();
+              
+              // Determine asset type
+              const isPickAsset = assetLower.includes('pick') || 
+                                   assetLower.includes('1st') || 
+                                   assetLower.includes('2nd') ||
+                                   assetLower.includes('round');
+              const isCashAsset = assetLower.includes('cash') || 
+                                   assetLower.includes('$') ||
+                                   assetLower.includes('million');
+              
+              let assetType: "player" | "pick" | "cash" = "player";
+              if (isPickAsset) assetType = "pick";
+              else if (isCashAsset) assetType = "cash";
               
               nodes.push({
                 id: assetNodeId,
                 type: "asset",
                 data: {
                   label: asset,
-                  assetType: isPickAsset ? "pick" : "player",
+                  assetType,
                   teamFrom: step.teamFrom,
                   teamTo: step.teamTo,
                   color: teamFromColor,
@@ -228,19 +239,19 @@ export async function GET(
                 },
               });
 
-              // Edge from header to each asset
+              // Edge from each asset DOWN to the trade header (assets are ABOVE)
               edges.push({
-                id: `edge-${headerNodeId}-${assetNodeId}`,
-                source: headerNodeId,
-                target: assetNodeId,
-              });
-
-              // Edge from each asset to the next node in chain
-              edges.push({
-                id: `edge-${assetNodeId}-${prevNodeId}`,
+                id: `edge-${assetNodeId}-${headerNodeId}`,
                 source: assetNodeId,
-                target: prevNodeId,
+                target: headerNodeId,
               });
+            });
+
+            // Edge from trade header to the next node in chain
+            edges.push({
+              id: `edge-${headerNodeId}-${prevNodeId}`,
+              source: headerNodeId,
+              target: prevNodeId,
             });
 
             prevNodeId = headerNodeId;

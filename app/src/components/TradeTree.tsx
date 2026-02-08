@@ -46,7 +46,7 @@ interface TreeNode {
     teamFromColor?: string;
     teamToColor?: string;
     // For asset nodes
-    assetType?: "player" | "pick";
+    assetType?: "player" | "pick" | "cash";
     assetIndex?: number;
     totalAssets?: number;
     parentTradeId?: string;
@@ -353,15 +353,23 @@ function TradeHeaderNode({ data }: { data: TreeNode["data"] }) {
   );
 }
 
-// Individual Asset Node - compact representation of a single player or pick
+// Individual Asset Node - compact representation of a single player, pick, or cash
 function AssetNode({ data }: { data: TreeNode["data"] }) {
   const color = data.teamFromColor || data.color || "#666";
-  const isPlayer = data.assetType === "player";
-  const icon = isPlayer ? "👤" : "🎯";
+  const assetType = data.assetType || "player";
+  
+  // Determine icon based on asset type
+  const getIcon = () => {
+    switch (assetType) {
+      case "pick": return "🎯";
+      case "cash": return "💵";
+      default: return "👤";
+    }
+  };
   
   return (
     <div 
-      className="rounded-lg overflow-hidden min-w-[140px] max-w-[180px] shadow-lg cursor-pointer relative"
+      className="rounded-lg overflow-hidden min-w-[140px] max-w-[200px] shadow-lg cursor-pointer relative"
       style={{ 
         backgroundColor: "#141416",
         border: `2px solid ${color}`,
@@ -379,7 +387,7 @@ function AssetNode({ data }: { data: TreeNode["data"] }) {
       
       <div className="p-3">
         <div className="flex items-center gap-2">
-          <span className="text-lg">{icon}</span>
+          <span className="text-lg">{getIcon()}</span>
           <div className="flex-1 min-w-0">
             <div className="text-white text-sm font-medium truncate">{data.label}</div>
             <div className="text-xs text-zinc-500 mt-0.5">
@@ -534,27 +542,18 @@ export function TradeTree({ playerId }: TradeTreeProps) {
       steps.forEach((step) => {
         const nodeX = branchX;
         
-        positionedNodes.push({
-          id: step.node.id,
-          type: step.node.type,
-          data: step.node.data,
-          draggable: false,
-          connectable: false,
-          position: { x: nodeX, y: currentY },
-        });
-
-        // If this is a trade header, position its asset nodes horizontally below it
+        // If this is a trade header, position asset nodes ABOVE it first
         if (step.isHeader) {
           const assets = assetNodes.get(step.node.id) || [];
           if (assets.length > 0) {
             // Sort assets by their index
             assets.sort((a, b) => (a.data.assetIndex || 0) - (b.data.assetIndex || 0));
             
-            // Calculate horizontal spread
+            // Calculate horizontal spread for assets
             const totalAssetsWidth = assets.length * assetNodeWidth + (assets.length - 1) * assetSpacing;
             const assetStartX = nodeX + (nodeWidth - totalAssetsWidth) / 2;
-            const assetY = currentY + assetRowSpacing;
             
+            // Position assets at current Y (ABOVE trade header)
             assets.forEach((asset, i) => {
               positionedNodes.push({
                 id: asset.id,
@@ -564,15 +563,25 @@ export function TradeTree({ playerId }: TradeTreeProps) {
                 connectable: false,
                 position: {
                   x: assetStartX + i * (assetNodeWidth + assetSpacing),
-                  y: assetY,
+                  y: currentY,
                 },
               });
             });
             
-            // Add extra spacing for the asset row
+            // Move Y down for the trade header
             currentY += assetRowSpacing;
           }
         }
+
+        // Position the main node (trade header or regular node)
+        positionedNodes.push({
+          id: step.node.id,
+          type: step.node.type,
+          data: step.node.data,
+          draggable: false,
+          connectable: false,
+          position: { x: nodeX, y: currentY },
+        });
 
         currentY += nodeSpacingY;
       });
