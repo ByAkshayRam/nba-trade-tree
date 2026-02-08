@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
-import { db, players, teams } from "@/db";
-import { like, sql } from "drizzle-orm";
+import Database from "better-sqlite3";
+import path from "path";
+
+const dbPath = path.join(process.cwd(), "..", "data", "nba_trades.db");
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
@@ -10,21 +12,23 @@ export async function GET(request: Request) {
     return NextResponse.json([]);
   }
 
-  const results = await db
-    .select({
-      id: players.id,
-      name: players.name,
-      draftYear: players.draftYear,
-      draftPick: players.draftPick,
-      headshotUrl: players.headshotUrl,
-      teamAbbr: teams.abbreviation,
-      teamName: teams.name,
-      teamColor: teams.primaryColor,
-    })
-    .from(players)
-    .leftJoin(teams, sql`${players.currentTeamId} = ${teams.id}`)
-    .where(like(players.name, `%${query}%`))
-    .limit(10);
+  const db = new Database(dbPath, { readonly: true });
 
-  return NextResponse.json(results);
+  try {
+    const results = db.prepare(`
+      SELECT 
+        p.id, p.name, p.draft_year as draftYear, p.draft_pick as draftPick, 
+        p.headshot_url as headshotUrl,
+        t.abbreviation as teamAbbr, t.name as teamName, t.primary_color as teamColor
+      FROM players p
+      LEFT JOIN teams t ON p.current_team_id = t.id
+      WHERE p.name LIKE ?
+      ORDER BY p.is_active DESC, p.name ASC
+      LIMIT 10
+    `).all(`%${query}%`);
+
+    return NextResponse.json(results);
+  } finally {
+    db.close();
+  }
 }

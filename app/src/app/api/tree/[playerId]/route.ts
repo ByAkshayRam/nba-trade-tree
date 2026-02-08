@@ -1,16 +1,35 @@
 import { NextResponse } from "next/server";
-import { db, players, teams, acquisitions, trades, tradeChains } from "@/db";
-import { eq, sql } from "drizzle-orm";
+import Database from "better-sqlite3";
+import path from "path";
+
+const dbPath = path.join(process.cwd(), "..", "data", "nba_trades.db");
+
+interface ChainStep {
+  event: string;
+  date: string;
+  action?: string;
+  teamFrom?: string;
+  teamTo?: string;
+  assets?: string[];
+  received?: string[];
+}
 
 interface TreeNode {
   id: string;
-  type: "player" | "trade" | "pick";
+  type: "player" | "trade" | "pick" | "team-asset";
   data: {
     label: string;
     sublabel?: string;
     color?: string;
+    secondaryColor?: string;
     date?: string;
     imageUrl?: string;
+    teamFrom?: string;
+    teamTo?: string;
+    assets?: string[];
+    received?: string[];
+    teamFromColor?: string;
+    teamToColor?: string;
   };
 }
 
@@ -19,6 +38,7 @@ interface TreeEdge {
   source: string;
   target: string;
   label?: string;
+  animated?: boolean;
 }
 
 export async function GET(
@@ -32,138 +52,208 @@ export async function GET(
     return NextResponse.json({ error: "Invalid player ID" }, { status: 400 });
   }
 
-  // Get player info
-  const playerResult = await db
-    .select({
-      id: players.id,
-      name: players.name,
-      draftYear: players.draftYear,
-      draftPick: players.draftPick,
-      headshotUrl: players.headshotUrl,
-      teamAbbr: teams.abbreviation,
-      teamName: teams.name,
-      teamColor: teams.primaryColor,
-    })
-    .from(players)
-    .leftJoin(teams, sql`${players.currentTeamId} = ${teams.id}`)
-    .where(eq(players.id, id))
-    .limit(1);
+  const db = new Database(dbPath, { readonly: true });
 
-  if (playerResult.length === 0) {
-    return NextResponse.json({ error: "Player not found" }, { status: 404 });
-  }
+  try {
+    // Get player info with team
+    const player = db.prepare(`
+      SELECT 
+        p.id, p.name, p.draft_year as draftYear, p.draft_pick as draftPick, 
+        p.headshot_url as headshotUrl, p.position,
+        t.abbreviation as teamAbbr, t.name as teamName, t.primary_color as teamColor,
+        t.secondary_color as teamSecondaryColor
+      FROM players p
+      LEFT JOIN teams t ON p.current_team_id = t.id
+      WHERE p.id = ?
+    `).get(id) as {
+      id: number;
+      name: string;
+      draftYear: number;
+      draftPick: number;
+      headshotUrl: string | null;
+      position: string | null;
+      teamAbbr: string;
+      teamName: string;
+      teamColor: string;
+      teamSecondaryColor: string;
+    } | undefined;
 
-  const player = playerResult[0];
-
-  // Get acquisition info
-  const acqResult = await db
-    .select({
-      type: acquisitions.acquisitionType,
-      date: acquisitions.date,
-      originTradeId: acquisitions.originTradeId,
-    })
-    .from(acquisitions)
-    .where(eq(acquisitions.playerId, id))
-    .limit(1);
-
-  const acquisition = acqResult[0] || null;
-
-  // Get trade chain if exists
-  let chain: Array<{ event: string; date: string; action?: string }> = [];
-  let originTrade = null;
-
-  if (acquisition?.originTradeId) {
-    // Get origin trade details
-    const tradeResult = await db
-      .select()
-      .from(trades)
-      .where(eq(trades.id, acquisition.originTradeId))
-      .limit(1);
-
-    originTrade = tradeResult[0] || null;
-
-    // Get chain
-    const chainResult = await db
-      .select({ chainJson: tradeChains.chainJson })
-      .from(tradeChains)
-      .where(eq(tradeChains.resultingPlayerId, id))
-      .limit(1);
-
-    if (chainResult[0]) {
-      chain = JSON.parse(chainResult[0].chainJson);
+    if (!player) {
+      return NextResponse.json({ error: "Player not found" }, { status: 404 });
     }
-  }
 
-  // Build tree structure for React Flow
-  const nodes: TreeNode[] = [];
-  const edges: TreeEdge[] = [];
+    // Get acquisition info
+    const acquisition = db.prepare(`
+      SELECT 
+        acquisition_type as type, date, trade_id as tradeId, 
+        origin_trade_id as originTradeId, pick_id as pickId, notes
+      FROM acquisitions
+      WHERE player_id = ?
+      ORDER BY date DESC
+      LIMIT 1
+    `).get(id) as {
+      type: string;
+      date: string;
+      tradeId: number | null;
+      originTradeId: number | null;
+      pickId: number | null;
+      notes: string | null;
+    } | undefined;
 
-  // Player node (current)
-  nodes.push({
-    id: `player-${player.id}`,
-    type: "player",
-    data: {
-      label: player.name,
-      sublabel: `${player.teamAbbr} • #${player.draftPick} (${player.draftYear})`,
-      color: player.teamColor || "#007A33",
-      imageUrl: player.headshotUrl || undefined,
-    },
-  });
+    // Get all trade chains for this player
+    const chains = db.prepare(`
+      SELECT 
+        tc.id, tc.origin_trade_id as originTradeId, tc.chain_json as chainJson,
+        tc.branch_index as branchIndex,
+        t.date as originDate, t.description as originDescription
+      FROM trade_chains tc
+      JOIN trades t ON tc.origin_trade_id = t.id
+      WHERE tc.resulting_player_id = ?
+      ORDER BY tc.branch_index ASC
+    `).all(id) as Array<{
+      id: number;
+      originTradeId: number;
+      chainJson: string;
+      branchIndex: number;
+      originDate: string;
+      originDescription: string;
+    }>;
 
-  // Add chain nodes
-  if (chain.length > 0) {
-    let prevNodeId = `player-${player.id}`;
+    // Get all teams for color lookup
+    const teamsResult = db.prepare(`
+      SELECT abbreviation, name, primary_color, secondary_color FROM teams
+    `).all() as Array<{
+      abbreviation: string;
+      name: string;
+      primary_color: string;
+      secondary_color: string;
+    }>;
 
-    for (let i = chain.length - 1; i >= 0; i--) {
-      const step = chain[i];
-      const nodeId = `chain-${i}`;
+    const teamColors: Record<string, { primary: string; secondary: string; name: string }> = {};
+    teamsResult.forEach(t => {
+      teamColors[t.abbreviation] = { 
+        primary: t.primary_color || '#666', 
+        secondary: t.secondary_color || '#333',
+        name: t.name
+      };
+    });
 
+    // Build tree structure
+    const nodes: TreeNode[] = [];
+    const edges: TreeEdge[] = [];
+
+    // Player node (current)
+    nodes.push({
+      id: `player-${player.id}`,
+      type: "player",
+      data: {
+        label: player.name,
+        sublabel: `${player.teamAbbr} • #${player.draftPick} (${player.draftYear})`,
+        color: player.teamColor || "#007A33",
+        secondaryColor: player.teamSecondaryColor || "#333",
+        imageUrl: player.headshotUrl || undefined,
+      },
+    });
+
+    if (chains.length > 0) {
+      // Process each chain branch
+      chains.forEach((chainData, branchIdx) => {
+        const chain: ChainStep[] = JSON.parse(chainData.chainJson);
+        
+        if (chain.length === 0) return;
+
+        // Build nodes for this chain branch
+        let prevNodeId = `player-${player.id}`;
+
+        // Process chain in reverse (from most recent to origin)
+        for (let i = chain.length - 1; i >= 0; i--) {
+          const step = chain[i];
+          const nodeId = `chain-${branchIdx}-${i}`;
+          
+          // Determine node type based on content
+          const isDraft = step.action?.toLowerCase().includes('draft') || step.event.toLowerCase().includes('draft');
+          const nodeType = isDraft ? 'pick' : 'trade';
+
+          // Get team colors
+          const teamFromColor = step.teamFrom ? teamColors[step.teamFrom]?.primary : undefined;
+          const teamToColor = step.teamTo ? teamColors[step.teamTo]?.primary : undefined;
+
+          nodes.push({
+            id: nodeId,
+            type: nodeType,
+            data: {
+              label: step.event,
+              sublabel: step.action,
+              date: step.date,
+              teamFrom: step.teamFrom,
+              teamTo: step.teamTo,
+              assets: step.assets,
+              received: step.received,
+              teamFromColor,
+              teamToColor,
+              color: teamToColor || teamFromColor,
+            },
+          });
+
+          edges.push({
+            id: `edge-${nodeId}-${prevNodeId}`,
+            source: nodeId,
+            target: prevNodeId,
+            label: isDraft ? "Drafted" : undefined,
+          });
+
+          prevNodeId = nodeId;
+        }
+      });
+    } else if (acquisition) {
+      // Fallback: simple acquisition node if no chain
+      const nodeId = `acq-${player.id}`;
       nodes.push({
         id: nodeId,
-        type: step.action?.includes("Drafted") ? "pick" : "trade",
+        type: acquisition.type === 'draft' ? 'pick' : 'trade',
         data: {
-          label: step.event,
-          sublabel: step.action,
-          date: step.date,
+          label: acquisition.type === 'draft' 
+            ? `Drafted #${player.draftPick} (${player.draftYear})`
+            : `Acquired via ${acquisition.type}`,
+          sublabel: acquisition.notes || undefined,
+          date: acquisition.date,
         },
       });
 
       edges.push({
-        id: `edge-${nodeId}-${prevNodeId}`,
+        id: `edge-${nodeId}-player-${player.id}`,
         source: nodeId,
-        target: prevNodeId,
-        label: step.action?.includes("Drafted") ? "Drafted" : undefined,
-      });
-
-      prevNodeId = nodeId;
-    }
-
-    // Add origin trade node
-    if (originTrade) {
-      const originNodeId = `trade-${originTrade.id}`;
-      nodes.push({
-        id: originNodeId,
-        type: "trade",
-        data: {
-          label: originTrade.description || "Trade",
-          date: originTrade.date,
-        },
-      });
-
-      edges.push({
-        id: `edge-origin-${chain.length - 1}`,
-        source: originNodeId,
-        target: `chain-${chain.length - 1}`,
+        target: `player-${player.id}`,
       });
     }
+
+    // Get origin trade details if exists
+    let originTrade = null;
+    if (chains.length > 0) {
+      const trade = db.prepare(`
+        SELECT id, date, description FROM trades WHERE id = ?
+      `).get(chains[0].originTradeId) as { id: number; date: string; description: string } | undefined;
+      originTrade = trade || null;
+    }
+
+    // Get all branches info for UI
+    const branches = chains.map((c, idx) => ({
+      index: idx,
+      originDate: c.originDate,
+      description: c.originDescription,
+      stepsCount: JSON.parse(c.chainJson).length,
+    }));
+
+    return NextResponse.json({
+      player,
+      acquisition: acquisition || null,
+      originTrade,
+      chains: chains.map(c => JSON.parse(c.chainJson)),
+      branches,
+      nodes,
+      edges,
+    });
+  } finally {
+    db.close();
   }
-
-  return NextResponse.json({
-    player,
-    acquisition,
-    originTrade,
-    chain,
-    nodes,
-    edges,
-  });
 }
