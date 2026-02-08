@@ -396,8 +396,8 @@ export function TradeTree({ playerId }: TradeTreeProps) {
     // Position each branch
     let branchIndex = 0;
     branchNodes.forEach((steps, branchIdx) => {
-      // Sort by step index (descending to go from most recent to origin)
-      steps.sort((a, b) => b.index - a.index);
+      // Sort by step index (ascending so origin trade is at TOP, flows down to player)
+      steps.sort((a, b) => a.index - b.index);
       
       const branchX = startX + branchIndex * branchSpacingX;
       
@@ -447,19 +447,26 @@ export function TradeTree({ playerId }: TradeTreeProps) {
     setIsExporting(true);
     
     try {
-      // Find the react-flow viewport
-      const viewport = flowRef.current.querySelector('.react-flow__viewport') as HTMLElement;
-      if (!viewport) return;
+      // Use the entire flow container for export
+      const flowContainer = flowRef.current;
       
-      const dataUrl = await toPng(viewport, {
+      const dataUrl = await toPng(flowContainer, {
         backgroundColor: '#0a0a0b',
         pixelRatio: 2,
+        skipFonts: true,
         filter: (node) => {
-          // Exclude minimap and controls
           const className = node.className?.toString() || '';
-          return !className.includes('react-flow__minimap') && 
-                 !className.includes('react-flow__panel');
-        }
+          // Exclude minimap, controls, and panels
+          if (className.includes('react-flow__minimap')) return false;
+          if (className.includes('react-flow__panel')) return false;
+          if (className.includes('react-flow__controls')) return false;
+          // Skip external images (they cause CORS errors)
+          if (node.tagName === 'IMG') {
+            const src = (node as HTMLImageElement).src || '';
+            if (src.includes('cdn.nba.com')) return false;
+          }
+          return true;
+        },
       });
       
       // Create download link
@@ -469,6 +476,7 @@ export function TradeTree({ playerId }: TradeTreeProps) {
       link.click();
     } catch (err) {
       console.error('Export failed:', err);
+      alert('Export failed. Try again or take a screenshot instead.');
     } finally {
       setIsExporting(false);
     }
