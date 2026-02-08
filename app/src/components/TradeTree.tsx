@@ -12,8 +12,22 @@ import {
   useEdgesState,
   ConnectionMode,
   MarkerType,
+  NodeMouseHandler,
 } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
+import { NodeDetailModal } from "./NodeDetailModal";
+
+interface TreeNode {
+  id: string;
+  type: "player" | "trade" | "pick";
+  data: {
+    label: string;
+    sublabel?: string;
+    color?: string;
+    date?: string;
+    imageUrl?: string;
+  };
+}
 
 interface TreeData {
   player: {
@@ -41,17 +55,7 @@ interface TreeData {
     date: string;
     action?: string;
   }>;
-  nodes: Array<{
-    id: string;
-    type: string;
-    data: {
-      label: string;
-      sublabel?: string;
-      color?: string;
-      date?: string;
-      imageUrl?: string;
-    };
-  }>;
+  nodes: TreeNode[];
   edges: Array<{
     id: string;
     source: string;
@@ -64,14 +68,15 @@ interface TradeTreeProps {
   playerId: number;
 }
 
-// Custom node component
-function PlayerNode({ data }: { data: TreeData["nodes"][0]["data"] }) {
+// Custom node component for players
+function PlayerNode({ data }: { data: TreeNode["data"] }) {
   return (
     <div
-      className="px-4 py-3 rounded-lg shadow-lg min-w-[200px] border-2"
+      className="px-4 py-3 rounded-xl shadow-lg min-w-[220px] border-2 cursor-pointer hover:scale-105 transition-transform"
       style={{
         backgroundColor: "#18181b",
         borderColor: data.color || "#22c55e",
+        boxShadow: `0 0 20px ${data.color || "#22c55e"}30`,
       }}
     >
       <div className="flex items-center gap-3">
@@ -79,11 +84,12 @@ function PlayerNode({ data }: { data: TreeData["nodes"][0]["data"] }) {
           <img
             src={data.imageUrl}
             alt=""
-            className="w-12 h-12 rounded-full object-cover"
+            className="w-14 h-14 rounded-full object-cover border-2"
+            style={{ borderColor: data.color || "#22c55e" }}
           />
         )}
         <div>
-          <div className="font-bold text-white">{data.label}</div>
+          <div className="font-bold text-white text-lg">{data.label}</div>
           {data.sublabel && (
             <div className="text-sm text-zinc-400">{data.sublabel}</div>
           )}
@@ -93,25 +99,35 @@ function PlayerNode({ data }: { data: TreeData["nodes"][0]["data"] }) {
   );
 }
 
-function TradeNode({ data }: { data: TreeData["nodes"][0]["data"] }) {
+function TradeNode({ data }: { data: TreeNode["data"] }) {
   return (
-    <div className="px-4 py-3 rounded-lg shadow-lg min-w-[240px] bg-zinc-800 border border-zinc-600">
-      <div className="text-xs text-zinc-400 mb-1">{data.date}</div>
-      <div className="font-medium text-white text-sm">{data.label}</div>
+    <div className="px-4 py-3 rounded-xl shadow-lg min-w-[260px] bg-zinc-800 border border-zinc-600 cursor-pointer hover:bg-zinc-700 transition-colors">
+      <div className="flex items-center gap-2 mb-2">
+        <span className="text-lg">🔄</span>
+        <span className="text-xs text-zinc-400">{data.date}</span>
+      </div>
+      <div className="font-medium text-white text-sm leading-tight">{data.label}</div>
       {data.sublabel && (
-        <div className="text-xs text-green-400 mt-1">→ {data.sublabel}</div>
+        <div className="text-xs text-green-400 mt-2 flex items-center gap-1">
+          <span>→</span> {data.sublabel}
+        </div>
       )}
     </div>
   );
 }
 
-function PickNode({ data }: { data: TreeData["nodes"][0]["data"] }) {
+function PickNode({ data }: { data: TreeNode["data"] }) {
   return (
-    <div className="px-4 py-3 rounded-lg shadow-lg min-w-[200px] bg-green-900/30 border border-green-600">
-      <div className="text-xs text-green-400 mb-1">{data.date}</div>
-      <div className="font-medium text-white text-sm">{data.label}</div>
+    <div className="px-4 py-3 rounded-xl shadow-lg min-w-[220px] bg-green-900/30 border border-green-600 cursor-pointer hover:bg-green-900/50 transition-colors">
+      <div className="flex items-center gap-2 mb-2">
+        <span className="text-lg">🎯</span>
+        <span className="text-xs text-green-400">{data.date}</span>
+      </div>
+      <div className="font-medium text-white text-sm leading-tight">{data.label}</div>
       {data.sublabel && (
-        <div className="text-xs text-green-300 mt-1">→ {data.sublabel}</div>
+        <div className="text-xs text-green-300 mt-2 flex items-center gap-1">
+          <span>→</span> {data.sublabel}
+        </div>
       )}
     </div>
   );
@@ -127,6 +143,7 @@ export function TradeTree({ playerId }: TradeTreeProps) {
   const [treeData, setTreeData] = useState<TreeData | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [selectedNode, setSelectedNode] = useState<TreeNode | null>(null);
 
   const [nodes, setNodes, onNodesChange] = useNodesState<Node>([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState<Edge>([]);
@@ -158,22 +175,33 @@ export function TradeTree({ playerId }: TradeTreeProps) {
   useEffect(() => {
     if (!treeData) return;
 
-    // Position nodes vertically
+    // Improved layout - center nodes vertically with better spacing
+    const nodeSpacing = 180;
+    const startX = 200;
+    
     const positionedNodes: Node[] = treeData.nodes.map((node, index) => ({
       id: node.id,
       type: node.type,
       data: node.data,
-      position: { x: 250, y: index * 150 },
+      position: { 
+        x: startX + (index % 2 === 0 ? 0 : 40), // Slight zigzag
+        y: index * nodeSpacing 
+      },
     }));
 
     const styledEdges: Edge[] = treeData.edges.map((edge) => ({
       ...edge,
       type: "smoothstep",
       animated: true,
-      style: { stroke: "#22c55e", strokeWidth: 2 },
+      style: { 
+        stroke: "#22c55e", 
+        strokeWidth: 2,
+      },
       markerEnd: {
         type: MarkerType.ArrowClosed,
         color: "#22c55e",
+        width: 20,
+        height: 20,
       },
     }));
 
@@ -181,9 +209,16 @@ export function TradeTree({ playerId }: TradeTreeProps) {
     setEdges(styledEdges);
   }, [treeData, setNodes, setEdges]);
 
+  const handleNodeClick: NodeMouseHandler = useCallback((event, node) => {
+    const treeNode = treeData?.nodes.find((n) => n.id === node.id);
+    if (treeNode) {
+      setSelectedNode(treeNode);
+    }
+  }, [treeData]);
+
   if (isLoading) {
     return (
-      <div className="h-[600px] flex items-center justify-center bg-zinc-950 rounded-lg border border-zinc-800">
+      <div className="h-[600px] flex items-center justify-center bg-[#0a0a0b] rounded-xl border border-[#232328]">
         <div className="flex flex-col items-center gap-4">
           <div className="w-12 h-12 border-4 border-zinc-700 border-t-green-500 rounded-full animate-spin" />
           <div className="text-zinc-400">Loading trade tree...</div>
@@ -194,7 +229,7 @@ export function TradeTree({ playerId }: TradeTreeProps) {
 
   if (error) {
     return (
-      <div className="h-[600px] flex items-center justify-center bg-zinc-950 rounded-lg border border-zinc-800">
+      <div className="h-[600px] flex items-center justify-center bg-[#0a0a0b] rounded-xl border border-[#232328]">
         <div className="text-red-400">Error: {error}</div>
       </div>
     );
@@ -202,14 +237,16 @@ export function TradeTree({ playerId }: TradeTreeProps) {
 
   if (!treeData || treeData.nodes.length === 0) {
     return (
-      <div className="h-[600px] flex items-center justify-center bg-zinc-950 rounded-lg border border-zinc-800">
-        <div className="text-center">
-          <div className="text-2xl mb-2">🏀</div>
-          <div className="text-zinc-400">No trade tree data available for this player.</div>
-          <div className="text-sm text-zinc-500 mt-1">
+      <div className="h-[600px] flex items-center justify-center bg-[#0a0a0b] rounded-xl border border-[#232328]">
+        <div className="text-center px-4">
+          <div className="text-4xl mb-4">🏀</div>
+          <div className="text-zinc-300 text-lg font-medium mb-2">No Trade Tree Data</div>
+          <div className="text-sm text-zinc-500 max-w-md">
             {treeData?.acquisition?.type === "draft" && !treeData.chain?.length
-              ? "This player was drafted directly by their team."
-              : "Trade chain information not yet available."}
+              ? "This player was drafted directly by their team — no trades in their lineage."
+              : treeData?.acquisition?.type === "signing"
+              ? "This player was signed as a free agent — no trade chain to display."
+              : "Trade chain information not yet available for this player."}
           </div>
         </div>
       </div>
@@ -217,31 +254,50 @@ export function TradeTree({ playerId }: TradeTreeProps) {
   }
 
   return (
-    <div className="h-[600px] bg-zinc-950 rounded-lg border border-zinc-800 overflow-hidden">
-      <ReactFlow
-        nodes={nodes}
-        edges={edges}
-        onNodesChange={onNodesChange}
-        onEdgesChange={onEdgesChange}
-        nodeTypes={nodeTypes}
-        connectionMode={ConnectionMode.Loose}
-        fitView
-        fitViewOptions={{ padding: 0.2 }}
-        minZoom={0.5}
-        maxZoom={1.5}
-      >
-        <Background color="#27272a" gap={20} />
-        <Controls className="!bg-zinc-800 !border-zinc-700 !rounded-lg" />
-        <MiniMap
-          nodeColor={(node) => {
-            if (node.type === "player") return "#22c55e";
-            if (node.type === "pick") return "#16a34a";
-            return "#52525b";
-          }}
-          maskColor="rgba(0, 0, 0, 0.8)"
-          className="!bg-zinc-900 !border-zinc-700"
-        />
-      </ReactFlow>
-    </div>
+    <>
+      <div className="h-[600px] bg-[#0a0a0b] rounded-xl border border-[#232328] overflow-hidden">
+        <ReactFlow
+          nodes={nodes}
+          edges={edges}
+          onNodesChange={onNodesChange}
+          onEdgesChange={onEdgesChange}
+          onNodeClick={handleNodeClick}
+          nodeTypes={nodeTypes}
+          connectionMode={ConnectionMode.Loose}
+          fitView
+          fitViewOptions={{ padding: 0.3 }}
+          minZoom={0.5}
+          maxZoom={1.5}
+          proOptions={{ hideAttribution: true }}
+        >
+          <Background color="#1a1a1b" gap={24} size={1} />
+          <Controls 
+            className="!bg-[#141416] !border-[#232328] !rounded-lg"
+            showInteractive={false}
+          />
+          <MiniMap
+            nodeColor={(node) => {
+              if (node.type === "player") return "#22c55e";
+              if (node.type === "pick") return "#16a34a";
+              return "#52525b";
+            }}
+            maskColor="rgba(10, 10, 11, 0.85)"
+            className="!bg-[#141416] !border-[#232328] !rounded-lg"
+          />
+        </ReactFlow>
+        
+        {/* Click hint */}
+        <div className="absolute bottom-4 left-4 text-xs text-zinc-500 bg-[#141416] px-3 py-1.5 rounded-full border border-[#232328]">
+          Click any node for details
+        </div>
+      </div>
+
+      {/* Node Detail Modal */}
+      <NodeDetailModal
+        node={selectedNode}
+        onClose={() => setSelectedNode(null)}
+        originTrade={treeData.originTrade}
+      />
+    </>
   );
 }
