@@ -54,12 +54,12 @@ interface AcquisitionTreeProps {
   player: string;
 }
 
-// Player node with handles
+// Player node with handles (flipped for left-to-right trace back)
 function PlayerNode({ data }: { data: AcquisitionNodeData }) {
   return (
     <div className="px-4 py-3 rounded-lg shadow-lg min-w-[180px] bg-zinc-900 border-l-4 border-l-blue-500 relative">
-      <Handle type="target" position={Position.Left} className="!bg-blue-500 !w-3 !h-3" />
-      <Handle type="source" position={Position.Right} className="!bg-blue-500 !w-3 !h-3" />
+      <Handle type="source" position={Position.Left} className="!bg-blue-500 !w-3 !h-3" />
+      <Handle type="target" position={Position.Right} className="!bg-blue-500 !w-3 !h-3" />
       <div className="flex items-center gap-2 mb-1">
         <div className="w-2 h-2 rounded-full bg-blue-500" />
         <span className="text-[10px] text-blue-400 font-semibold uppercase">Player</span>
@@ -71,12 +71,12 @@ function PlayerNode({ data }: { data: AcquisitionNodeData }) {
   );
 }
 
-// Pick node with handles
+// Pick node with handles (flipped)
 function PickNode({ data }: { data: AcquisitionNodeData }) {
   return (
     <div className="px-4 py-3 rounded-lg shadow-lg min-w-[180px] bg-green-950/50 border-l-4 border-l-green-500 relative">
-      <Handle type="target" position={Position.Left} className="!bg-green-500 !w-3 !h-3" />
-      <Handle type="source" position={Position.Right} className="!bg-green-500 !w-3 !h-3" />
+      <Handle type="source" position={Position.Left} className="!bg-green-500 !w-3 !h-3" />
+      <Handle type="target" position={Position.Right} className="!bg-green-500 !w-3 !h-3" />
       <div className="flex items-center gap-2 mb-1">
         <div className="w-2 h-2 rounded-full bg-green-500" />
         <span className="text-[10px] text-green-400 font-semibold uppercase">Draft Pick</span>
@@ -87,39 +87,58 @@ function PickNode({ data }: { data: AcquisitionNodeData }) {
   );
 }
 
-// Asset node with handles
+// Asset node with handles (flipped)
 function AssetNode({ data }: { data: AcquisitionNodeData }) {
   const isPick = data.nodeType === "pick";
   return (
     <div className={`px-3 py-2 rounded shadow min-w-[140px] border relative ${isPick ? 'bg-green-950/30 border-green-800' : 'bg-zinc-800/50 border-zinc-700'}`}>
-      <Handle type="target" position={Position.Left} className="!bg-zinc-500 !w-2 !h-2" />
-      <Handle type="source" position={Position.Right} className="!bg-zinc-500 !w-2 !h-2" />
+      <Handle type="source" position={Position.Left} className="!bg-zinc-500 !w-2 !h-2" />
+      <Handle type="target" position={Position.Right} className="!bg-zinc-500 !w-2 !h-2" />
       <div className="font-medium text-zinc-300 text-xs">{data.label}</div>
       {data.date && <div className="text-[9px] text-zinc-600 mt-0.5">{data.date}</div>}
     </div>
   );
 }
 
-// Target node with handles
+// Target node with handles and player image
 function TargetNode({ data }: { data: AcquisitionNodeData }) {
+  // Generate headshot URL from player name (NBA CDN pattern)
+  const playerSlug = data.label.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z-]/g, '');
+  const headshotUrl = `https://cdn.nba.com/headshots/nba/latest/1040x760/${playerSlug}.png`;
+  // Fallback to ESPN style
+  const espnUrl = "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6478.png&w=350&h=254";
+  
   return (
-    <div className="px-5 py-4 rounded-xl shadow-xl min-w-[200px] bg-green-900 border-2 border-green-400 relative">
-      <Handle type="target" position={Position.Left} className="!bg-green-400 !w-4 !h-4" />
-      <div className="flex items-center gap-2 mb-2">
-        <div className="w-3 h-3 rounded-full bg-green-400 animate-pulse" />
-        <span className="text-xs text-green-300 font-bold uppercase">Acquired</span>
+    <div className="px-5 py-4 rounded-xl shadow-xl min-w-[240px] bg-green-900 border-2 border-green-400 relative">
+      <Handle type="source" position={Position.Right} className="!bg-green-400 !w-4 !h-4" />
+      <div className="flex items-start gap-4">
+        <img 
+          src={espnUrl}
+          alt={data.label}
+          className="w-16 h-16 rounded-full object-cover bg-green-950 border-2 border-green-400"
+          onError={(e) => {
+            (e.target as HTMLImageElement).style.display = 'none';
+          }}
+        />
+        <div className="flex-1">
+          <div className="flex items-center gap-2 mb-1">
+            <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+            <span className="text-[10px] text-green-300 font-bold uppercase">Acquired</span>
+          </div>
+          <div className="font-bold text-white text-lg">{data.label}</div>
+          {data.sublabel && <div className="text-sm text-green-200">{data.sublabel}</div>}
+          {data.date && <div className="text-xs text-green-300 mt-1">{data.date}</div>}
+        </div>
       </div>
-      <div className="font-bold text-white text-lg">{data.label}</div>
-      {data.date && <div className="text-sm text-green-300 mt-1">{data.date}</div>}
     </div>
   );
 }
 
-// Origin node with handles
+// Origin node with handles (at the right end now)
 function OriginNode({ data }: { data: AcquisitionNodeData }) {
   return (
     <div className="px-5 py-4 rounded-xl shadow-xl min-w-[200px] bg-amber-950 border-2 border-amber-400 animate-pulse relative">
-      <Handle type="source" position={Position.Right} className="!bg-amber-400 !w-4 !h-4" />
+      <Handle type="target" position={Position.Left} className="!bg-amber-400 !w-4 !h-4" />
       <div className="flex items-center gap-2 mb-2">
         <span className="text-amber-400">★</span>
         <span className="text-xs text-amber-300 font-bold uppercase">Origin</span>
@@ -146,7 +165,7 @@ const NODE_HEIGHT = 80;
 // ELK layout - LEFT to RIGHT
 const elkOptions = {
   "elk.algorithm": "layered",
-  "elk.direction": "RIGHT",
+  "elk.direction": "LEFT", // Vucevic on left, trace back to right
   "elk.spacing.nodeNode": "50",
   "elk.layered.spacing.nodeNodeBetweenLayers": "100",
   "elk.edgeRouting": "ORTHOGONAL",
