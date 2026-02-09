@@ -1,66 +1,69 @@
 # NBA Trade Tree 🏀
 
-Interactive web app that visualizes the chain of trades, picks, and transactions that led to any NBA player being on their current roster.
+An interactive web experience that lets you search any NBA player and instantly see the full chain of trades, draft picks, and transactions that led to them being on their current roster.
 
-> "git blame" for NBA rosters — every player has an origin story.
+Think of it as "git blame" for NBA rosters.
 
-## Features
+## Features (MVP - Milestones 0 + 1)
 
-- **Player Search**: Autocomplete search for any NBA player
-- **Trade Tree Visualization**: Interactive graph showing acquisition chains
-- **Trade Chain Tracing**: Follow picks and trades back to their origin
-- **Dark Theme**: Modern, clean UI inspired by Mission Control
+### ✅ Data Foundation (Milestone 0)
+- Python data pipeline with nba_api integration
+- SQLite database with Drizzle ORM
+- 37+ players with trade chain data
+- 10 major trade events tracked
+- Validated trade tree tracing (Jayson Tatum → KG/Pierce trade)
 
-## Famous Example: The Celtics Trade Tree
+### ✅ Web App + Visualization (Milestone 1)
+- Next.js 14 app with TypeScript + Tailwind
+- Player search with autocomplete
+- `/api/tree/[playerId]` - returns full acquisition chain
+- React Flow graph visualization:
+  - Player nodes (with headshots & team colors)
+  - Trade event nodes
+  - Draft pick nodes
+  - Animated edge connections
+- Click any node for details modal
+- Dark theme (#0a0a0b, #141416, #232328)
 
-In 2013, the Celtics traded Kevin Garnett and Paul Pierce to the Nets for four first-round picks:
+## Famous Trade Trees Included
 
-```
-2013: Celtics trade KG + Pierce → Nets
-  ├── 2014 1st (#17) → James Young
-  ├── 2016 1st (#3) → Jaylen Brown ⭐
-  ├── 2017 1st (#1) → Traded to PHI → Received #3 → Jayson Tatum ⭐
-  └── 2018 1st (#8) → Part of Kyrie Irving trade
-  
-Result: KG/Pierce → 2024 NBA Championship core
-```
-
-## Tech Stack
-
-- **Frontend**: Next.js 16, React 19, TypeScript
-- **Visualization**: React Flow (@xyflow/react)
-- **Styling**: Tailwind CSS
-- **Database**: SQLite + Drizzle ORM
-- **Data Source**: Basketball-Reference (scraped), nba_api
+1. **Celtics-Nets (2013)** - KG/Pierce → Jaylen Brown + Jayson Tatum → 2024 Championship
+2. **Luka-Trae Draft Swap (2018)** - Hawks trade #3 for #5 + future pick
+3. **Harden to Houston (2012)** - OKC trades Harden, receives picks that become Steven Adams
+4. **Kawhi to Raptors (2018)** - DeMar DeRozan trade → one year, one championship
+5. **Anthony Davis to Lakers (2019)** - Lonzo Ball, Ingram, Hart + picks
+6. **Gobert to Timberwolves (2022)** - 5 first round picks
 
 ## Getting Started
 
 ### Prerequisites
-
-- Node.js 20+
-- Python 3.10+ (for data scripts)
+- Node.js 18+
+- Python 3.10+
 
 ### Setup
 
-1. Clone the repo:
 ```bash
-git clone https://github.com/ByAkshayRam/nba-trade-tree.git
-cd nba-trade-tree
-```
+# Clone the repo
+cd projects/nba-trade-tree
 
-2. Seed the database:
-```bash
+# Set up Python environment for data scripts
+python3 -m venv .venv
+source .venv/bin/activate
+pip install nba_api requests beautifulsoup4 lxml
+
+# Initialize/update the database
 python3 scripts/scrape_trades.py
-```
+python3 scripts/expand_data.py
 
-3. Install dependencies and run:
-```bash
+# Install Node dependencies
 cd app
 npm install
+
+# Run the dev server
 npm run dev
 ```
 
-4. Open http://localhost:3000
+Open [http://localhost:3000](http://localhost:3000) to see the app.
 
 ## Project Structure
 
@@ -68,32 +71,38 @@ npm run dev
 nba-trade-tree/
 ├── app/                    # Next.js web application
 │   ├── src/
-│   │   ├── app/           # App router pages & API routes
+│   │   ├── app/           # Pages & API routes
 │   │   ├── components/    # React components
-│   │   └── db/            # Drizzle schema & database
-├── data/                   # SQLite database
-├── scripts/                # Python scraping scripts
-├── research/               # Competitor analysis & notes
-└── PRD.md                  # Product requirements document
+│   │   └── db/            # Drizzle schema & connection
+├── data/
+│   └── nba_trades.db      # SQLite database
+├── scripts/
+│   ├── scrape_trades.py   # Core trade data & validation
+│   └── expand_data.py     # Extended player/trade data
+└── research/              # Research notes on data sources
 ```
 
-## Milestones
+## Tech Stack
 
-- [x] **M0**: Data Foundation - Scraping, schema, trade chain validation
-- [x] **M1**: Core Web App - Search, tree visualization, dark theme
-- [ ] **M2**: Team View - Browse by team, roster acquisition sources
-- [ ] **M3**: Championship Lineage - Trace championship rosters
-- [ ] **M4**: Trade Deadline Live - Real-time trade impact
-- [ ] **M5**: "What If" Mode - Alternate timelines
+- **Frontend:** Next.js 14, React 19, TypeScript, Tailwind CSS
+- **Visualization:** React Flow (@xyflow/react)
+- **Database:** SQLite + Drizzle ORM (better-sqlite3)
+- **Data Pipeline:** Python, nba_api, BeautifulSoup
 
-## Contributing
+## Success Criteria ✅
 
-This is a personal project, but PRs are welcome! See PRD.md for the roadmap.
+Search "Jayson Tatum" → see full tree from KG/Pierce trade → click any node for details.
 
-## License
+**Status: Complete!**
 
-MIT
+## Roadmap
+
+- [ ] Milestone 2: Team View + Polish
+- [ ] Milestone 3: Championship Lineage
+- [ ] Milestone 4: Trade Deadline Live Mode
+- [ ] Milestone 5: "What If" Mode
+- [ ] Milestone 6: Content & Social Layer
 
 ---
 
-Built with 💚 by [Akshay](https://github.com/ByAkshayRam)
+Built with 🏀 by Edward

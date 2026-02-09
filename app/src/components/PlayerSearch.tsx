@@ -8,6 +8,7 @@ interface PlayerResult {
   draftYear: number;
   draftPick: number;
   headshotUrl: string | null;
+  jerseyNumber: number | null;
   teamAbbr: string;
   teamName: string;
   teamColor: string;
@@ -59,8 +60,9 @@ export function PlayerSearch({ onSelect }: PlayerSearchProps) {
   }, [query]);
 
   const handleSelect = (player: PlayerResult) => {
-    setQuery(player.name);
     setIsOpen(false);
+    setResults([]);
+    setQuery("");
     onSelect(player);
   };
 

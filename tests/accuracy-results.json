@@ -1,0 +1,73 @@
+{
+  "passed": 0,
+  "failed": 11,
+  "skipped": 0,
+  "details": [
+    {
+      "player": "Luka Doncic",
+      "tests": [],
+      "status": "fail",
+      "error": "API fetch failed"
+    },
+    {
+      "player": "James Harden",
+      "tests": [],
+      "status": "fail",
+      "error": "API fetch failed"
+    },
+    {
+      "player": "Anthony Davis",
+      "tests": [],
+      "status": "fail",
+      "error": "API fetch failed"
+    },
+    {
+      "player": "Trae Young",
+      "tests": [],
+      "status": "fail",
+      "error": "API fetch failed"
+    },
+    {
+      "player": "Kevin Durant",
+      "tests": [],
+      "status": "fail",
+      "error": "API fetch failed"
+    },
+    {
+      "player": "LeBron James",
+      "tests": [],
+      "status": "fail",
+      "error": "API fetch failed"
+    },
+    {
+      "player": "Darius Garland",
+      "tests": [],
+      "status": "fail",
+      "error": "API fetch failed"
+    },
+    {
+      "player": "Stephen Curry",
+      "tests": [],
+      "status": "fail",
+      "error": "API fetch failed"
+    },
+    {
+      "player": "Giannis Antetokounmpo",
+      "tests": [],
+      "status": "fail",
+      "error": "API fetch failed"
+    },
+    {
+      "player": "Jayson Tatum",
+      "tests": [],
+      "status": "fail",
+      "error": "API fetch failed"
+    },
+    {
+      "player": "Jaylen Brown",
+      "tests": [],
+      "status": "fail",
+      "error": "API fetch failed"
+    }
+  ]
+}

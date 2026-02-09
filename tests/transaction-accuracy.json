@@ -1,0 +1,135 @@
+{
+  "_meta": {
+    "description": "Transaction accuracy test cases - verified from web sources",
+    "last_updated": "2026-02-08",
+    "sources": ["ESPN", "NBA.com", "Wikipedia", "Basketball-Reference"]
+  },
+  "test_cases": [
+    {
+      "player": "Luka Doncic",
+      "player_id": 22,
+      "expected_current_team": "LAL",
+      "expected_transaction_count": 3,
+      "key_validations": [
+        {"date": "2018-06-25", "event_contains": "Drafted", "team": "ATL"},
+        {"date": "2018-06-21", "event_contains": "Mavericks", "details_contains": "Trae Young"},
+        {"date": "2025-02-02", "event_contains": "Lakers", "details_contains": "Anthony Davis"}
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Luka_Don%C4%8Di%C4%87%E2%80%93Anthony_Davis_trade"
+    },
+    {
+      "player": "James Harden",
+      "player_id": 13,
+      "expected_current_team": "CLE",
+      "expected_transaction_count": 6,
+      "key_validations": [
+        {"date": "2009-06-25", "event_contains": "Drafted", "team": "OKC"},
+        {"date": "2012-10-27", "event_contains": "Rockets", "details_contains": "Kevin Martin"},
+        {"date": "2021-01-14", "event_contains": "Nets"},
+        {"date": "2022-02-10", "event_contains": "76ers", "details_contains": "Ben Simmons"},
+        {"date": "2023-10-31", "event_contains": "Clippers"},
+        {"date": "2026-02-05", "event_contains": "Cavaliers", "details_contains": "Darius Garland"}
+      ],
+      "source_url": "https://www.nba.com/news/james-harden-darius-garland-trade"
+    },
+    {
+      "player": "Anthony Davis",
+      "player_id": 42,
+      "expected_current_team": "WAS",
+      "expected_transaction_count": 4,
+      "key_validations": [
+        {"event_contains": "Drafted", "team": "NOH"},
+        {"date": "2019-06-15", "event_contains": "Lakers", "details_contains": "Lonzo Ball"},
+        {"date": "2025-02-02", "event_contains": "Mavericks"},
+        {"date": "2026-02-05", "event_contains": "Wizards"}
+      ],
+      "source_url": "https://www.nba.com/news/wizards-mavericks-anthony-davis-trade"
+    },
+    {
+      "player": "Trae Young",
+      "player_id": 23,
+      "expected_current_team": "WAS",
+      "expected_transaction_count": 3,
+      "key_validations": [
+        {"event_contains": "Drafted", "team": "DAL"},
+        {"date": "2018-06-21", "event_contains": "Hawks", "details_contains": "Luka"},
+        {"event_contains": "Wizards", "details_contains": "CJ McCollum"}
+      ],
+      "source_url": "https://www.espn.com/nba/story/_/id/47267103/nba-trade-tracker-details-every-deal-2025-26-season"
+    },
+    {
+      "player": "Kevin Durant",
+      "player_id": 30,
+      "expected_current_team": "HOU",
+      "expected_transaction_count": 5,
+      "key_validations": [
+        {"event_contains": "Drafted", "team": "SEA"},
+        {"date": "2016-07-04", "event_contains": "Warriors"},
+        {"event_contains": "Nets"},
+        {"date": "2023-02-09", "event_contains": "Suns", "details_contains": "Mikal Bridges"}
+      ]
+    },
+    {
+      "player": "LeBron James",
+      "player_id": 37,
+      "expected_current_team": "LAL",
+      "expected_transaction_count": 4,
+      "key_validations": [
+        {"event_contains": "Drafted", "team": "CLE"},
+        {"event_contains": "Heat"},
+        {"event_contains": "Cavaliers"},
+        {"event_contains": "Lakers"}
+      ]
+    },
+    {
+      "player": "Darius Garland",
+      "player_id": 61,
+      "expected_current_team": "LAC",
+      "expected_transaction_count": 2,
+      "key_validations": [
+        {"event_contains": "Drafted", "team": "CLE"},
+        {"date": "2026-02-05", "event_contains": "Clippers", "details_contains": "James Harden"}
+      ]
+    },
+    {
+      "player": "Stephen Curry",
+      "player_id": 31,
+      "expected_current_team": "GSW",
+      "expected_transaction_count": 1,
+      "key_validations": [
+        {"event_contains": "Drafted", "team": "GSW"}
+      ],
+      "notes": "Career-long Warrior, no trades"
+    },
+    {
+      "player": "Giannis Antetokounmpo",
+      "player_id": 34,
+      "expected_current_team": "MIL",
+      "expected_transaction_count": 1,
+      "key_validations": [
+        {"event_contains": "Drafted", "team": "MIL"}
+      ],
+      "notes": "Career-long Buck, no trades"
+    },
+    {
+      "player": "Jayson Tatum",
+      "player_id": 6,
+      "expected_current_team": "BOS",
+      "expected_transaction_count": 1,
+      "key_validations": [
+        {"event_contains": "Drafted", "team": "BOS"}
+      ],
+      "origin_trade": "2013 Celtics-Nets trade provided the pick"
+    },
+    {
+      "player": "Jaylen Brown",
+      "player_id": 5,
+      "expected_current_team": "BOS",
+      "expected_transaction_count": 1,
+      "key_validations": [
+        {"event_contains": "Drafted", "team": "BOS"}
+      ],
+      "origin_trade": "2013 Celtics-Nets trade provided the pick"
+    }
+  ]
+}
