@@ -18,7 +18,7 @@ export async function GET(request: Request) {
     const results = db.prepare(`
       SELECT 
         p.id, p.name, p.draft_year as draftYear, p.draft_pick as draftPick, 
-        p.headshot_url as headshotUrl,
+        p.headshot_url as headshotUrl, p.jersey_number as jerseyNumber,
         t.abbreviation as teamAbbr, t.name as teamName, t.primary_color as teamColor
       FROM players p
       LEFT JOIN teams t ON p.current_team_id = t.id

@@ -1,0 +1,2431 @@
+{
+  "testPlayers": [
+    {
+      "id": 5,
+      "name": "Jaylen Brown",
+      "expectedTeam": "BOS"
+    },
+    {
+      "id": 6,
+      "name": "Jayson Tatum",
+      "expectedTeam": "BOS"
+    },
+    {
+      "id": 7,
+      "name": "Markelle Fultz",
+      "expectedTeam": "ORL"
+    },
+    {
+      "id": 8,
+      "name": "Kyrie Irving",
+      "expectedTeam": "DAL"
+    },
+    {
+      "id": 12,
+      "name": "Collin Sexton",
+      "expectedTeam": "CHI"
+    },
+    {
+      "id": 13,
+      "name": "James Harden",
+      "expectedTeam": "CLE"
+    },
+    {
+      "id": 16,
+      "name": "Steven Adams",
+      "expectedTeam": "HOU"
+    },
+    {
+      "id": 17,
+      "name": "Victor Oladipo",
+      "expectedTeam": "IND"
+    },
+    {
+      "id": 18,
+      "name": "Domantas Sabonis",
+      "expectedTeam": "SAC"
+    },
+    {
+      "id": 19,
+      "name": "Ben Simmons",
+      "expectedTeam": "BKN"
+    },
+    {
+      "id": 20,
+      "name": "Seth Curry",
+      "expectedTeam": "GSW"
+    },
+    {
+      "id": 22,
+      "name": "Luka Doncic",
+      "expectedTeam": "LAL"
+    },
+    {
+      "id": 23,
+      "name": "Trae Young",
+      "expectedTeam": "WAS"
+    },
+    {
+      "id": 24,
+      "name": "Cam Reddish",
+      "expectedTeam": "LAL"
+    },
+    {
+      "id": 25,
+      "name": "Derrick White",
+      "expectedTeam": "BOS"
+    },
+    {
+      "id": 26,
+      "name": "Al Horford",
+      "expectedTeam": "GSW"
+    },
+    {
+      "id": 27,
+      "name": "Kristaps Porzingis",
+      "expectedTeam": "GSW"
+    },
+    {
+      "id": 28,
+      "name": "Chris Paul",
+      "expectedTeam": "TOR"
+    },
+    {
+      "id": 29,
+      "name": "Russell Westbrook",
+      "expectedTeam": "SAC"
+    },
+    {
+      "id": 30,
+      "name": "Kevin Durant",
+      "expectedTeam": "HOU"
+    },
+    {
+      "id": 31,
+      "name": "Stephen Curry",
+      "expectedTeam": "GSW"
+    },
+    {
+      "id": 32,
+      "name": "Nikola Jokic",
+      "expectedTeam": "DEN"
+    },
+    {
+      "id": 33,
+      "name": "Shai Gilgeous-Alexander",
+      "expectedTeam": "OKC"
+    },
+    {
+      "id": 34,
+      "name": "Giannis Antetokounmpo",
+      "expectedTeam": "MIL"
+    },
+    {
+      "id": 35,
+      "name": "Victor Wembanyama",
+      "expectedTeam": "SAS"
+    },
+    {
+      "id": 36,
+      "name": "Anthony Edwards",
+      "expectedTeam": "MIN"
+    },
+    {
+      "id": 37,
+      "name": "LeBron James",
+      "expectedTeam": "LAL"
+    },
+    {
+      "id": 38,
+      "name": "Jalen Brunson",
+      "expectedTeam": "NYK"
+    },
+    {
+      "id": 39,
+      "name": "Jalen Williams",
+      "expectedTeam": "OKC"
+    },
+    {
+      "id": 40,
+      "name": "Cade Cunningham",
+      "expectedTeam": "DET"
+    },
+    {
+      "id": 41,
+      "name": "Evan Mobley",
+      "expectedTeam": "CLE"
+    },
+    {
+      "id": 42,
+      "name": "Anthony Davis",
+      "expectedTeam": "WAS"
+    },
+    {
+      "id": 43,
+      "name": "Donovan Mitchell",
+      "expectedTeam": "CLE"
+    },
+    {
+      "id": 44,
+      "name": "Devin Booker",
+      "expectedTeam": "PHX"
+    },
+    {
+      "id": 45,
+      "name": "Paolo Banchero",
+      "expectedTeam": "ORL"
+    },
+    {
+      "id": 46,
+      "name": "Jimmy Butler",
+      "expectedTeam": "GSW"
+    },
+    {
+      "id": 47,
+      "name": "Kawhi Leonard",
+      "expectedTeam": "LAC"
+    },
+    {
+      "id": 48,
+      "name": "Bam Adebayo",
+      "expectedTeam": "MIA"
+    },
+    {
+      "id": 49,
+      "name": "Pascal Siakam",
+      "expectedTeam": "IND"
+    },
+    {
+      "id": 50,
+      "name": "Chet Holmgren",
+      "expectedTeam": "OKC"
+    },
+    {
+      "id": 51,
+      "name": "Alperen Sengun",
+      "expectedTeam": "HOU"
+    },
+    {
+      "id": 52,
+      "name": "Karl-Anthony Towns",
+      "expectedTeam": "NYK"
+    },
+    {
+      "id": 53,
+      "name": "Tyrese Maxey",
+      "expectedTeam": "PHI"
+    },
+    {
+      "id": 54,
+      "name": "Scottie Barnes",
+      "expectedTeam": "TOR"
+    },
+    {
+      "id": 55,
+      "name": "Jaren Jackson Jr.",
+      "expectedTeam": "UTA"
+    },
+    {
+      "id": 56,
+      "name": "Franz Wagner",
+      "expectedTeam": "ORL"
+    },
+    {
+      "id": 57,
+      "name": "Ja Morant",
+      "expectedTeam": "MEM"
+    },
+    {
+      "id": 58,
+      "name": "De'Aaron Fox",
+      "expectedTeam": "SAS"
+    },
+    {
+      "id": 59,
+      "name": "Ivica Zubac",
+      "expectedTeam": "IND"
+    },
+    {
+      "id": 60,
+      "name": "Amen Thompson",
+      "expectedTeam": "HOU"
+    },
+    {
+      "id": 61,
+      "name": "Darius Garland",
+      "expectedTeam": "LAC"
+    },
+    {
+      "id": 62,
+      "name": "Desmond Bane",
+      "expectedTeam": "ORL"
+    },
+    {
+      "id": 63,
+      "name": "Aaron Gordon",
+      "expectedTeam": "DEN"
+    },
+    {
+      "id": 64,
+      "name": "OG Anunoby",
+      "expectedTeam": "NYK"
+    },
+    {
+      "id": 65,
+      "name": "Julius Randle",
+      "expectedTeam": "MIN"
+    },
+    {
+      "id": 66,
+      "name": "Lauri Markkanen",
+      "expectedTeam": "UTA"
+    },
+    {
+      "id": 67,
+      "name": "Jalen Johnson",
+      "expectedTeam": "ATL"
+    },
+    {
+      "id": 68,
+      "name": "Jarrett Allen",
+      "expectedTeam": "CLE"
+    },
+    {
+      "id": 69,
+      "name": "Jamal Murray",
+      "expectedTeam": "DEN"
+    },
+    {
+      "id": 70,
+      "name": "Joel Embiid",
+      "expectedTeam": "PHI"
+    },
+    {
+      "id": 71,
+      "name": "Mikal Bridges",
+      "expectedTeam": "NYK"
+    },
+    {
+      "id": 72,
+      "name": "Rudy Gobert",
+      "expectedTeam": "MIN"
+    },
+    {
+      "id": 73,
+      "name": "Draymond Green",
+      "expectedTeam": "GSW"
+    },
+    {
+      "id": 74,
+      "name": "Cooper Flagg",
+      "expectedTeam": "DAL"
+    },
+    {
+      "id": 75,
+      "name": "Alex Caruso",
+      "expectedTeam": "OKC"
+    },
+    {
+      "id": 76,
+      "name": "Paul George",
+      "expectedTeam": "PHI"
+    },
+    {
+      "id": 77,
+      "name": "Dyson Daniels",
+      "expectedTeam": "ATL"
+    },
+    {
+      "id": 78,
+      "name": "Isaiah Hartenstein",
+      "expectedTeam": "OKC"
+    },
+    {
+      "id": 79,
+      "name": "Myles Turner",
+      "expectedTeam": "MIL"
+    },
+    {
+      "id": 80,
+      "name": "Trey Murphy III",
+      "expectedTeam": "NOP"
+    },
+    {
+      "id": 81,
+      "name": "Jalen Suggs",
+      "expectedTeam": "ORL"
+    },
+    {
+      "id": 82,
+      "name": "Austin Reaves",
+      "expectedTeam": "LAL"
+    },
+    {
+      "id": 83,
+      "name": "Zion Williamson",
+      "expectedTeam": "NOP"
+    },
+    {
+      "id": 84,
+      "name": "Christian Braun",
+      "expectedTeam": "DEN"
+    },
+    {
+      "id": 85,
+      "name": "LaMelo Ball",
+      "expectedTeam": "CHA"
+    },
+    {
+      "id": 86,
+      "name": "Luguentz Dort",
+      "expectedTeam": "OKC"
+    },
+    {
+      "id": 87,
+      "name": "Aaron Nesmith",
+      "expectedTeam": "IND"
+    },
+    {
+      "id": 88,
+      "name": "Deni Avdija",
+      "expectedTeam": "POR"
+    },
+    {
+      "id": 89,
+      "name": "Cameron Johnson",
+      "expectedTeam": "DEN"
+    },
+    {
+      "id": 90,
+      "name": "Tyler Herro",
+      "expectedTeam": "MIA"
+    },
+    {
+      "id": 91,
+      "name": "Josh Hart",
+      "expectedTeam": "NYK"
+    },
+    {
+      "id": 92,
+      "name": "Michael Porter Jr.",
+      "expectedTeam": "BKN"
+    },
+    {
+      "id": 93,
+      "name": "Coby White",
+      "expectedTeam": "CHA"
+    },
+    {
+      "id": 94,
+      "name": "Zach LaVine",
+      "expectedTeam": "SAC"
+    },
+    {
+      "id": 95,
+      "name": "Dereck Lively II",
+      "expectedTeam": "DAL"
+    },
+    {
+      "id": 96,
+      "name": "Jabari Smith Jr.",
+      "expectedTeam": "HOU"
+    },
+    {
+      "id": 97,
+      "name": "Jaden McDaniels",
+      "expectedTeam": "MIN"
+    },
+    {
+      "id": 98,
+      "name": "Brandon Miller",
+      "expectedTeam": "CHA"
+    },
+    {
+      "id": 99,
+      "name": "Brandon Ingram",
+      "expectedTeam": "TOR"
+    },
+    {
+      "id": 100,
+      "name": "Toumani Camara",
+      "expectedTeam": "POR"
+    },
+    {
+      "id": 101,
+      "name": "Onyeka Okongwu",
+      "expectedTeam": "ATL"
+    },
+    {
+      "id": 102,
+      "name": "DeMar DeRozan",
+      "expectedTeam": "SAC"
+    },
+    {
+      "id": 103,
+      "name": "Andrew Nembhard",
+      "expectedTeam": "IND"
+    },
+    {
+      "id": 104,
+      "name": "Norman Powell",
+      "expectedTeam": "MIA"
+    },
+    {
+      "id": 105,
+      "name": "Jonathan Kuminga",
+      "expectedTeam": "ATL"
+    },
+    {
+      "id": 106,
+      "name": "Tobias Harris",
+      "expectedTeam": "DET"
+    },
+    {
+      "id": 107,
+      "name": "Jaden Ivey",
+      "expectedTeam": "CHI"
+    },
+    {
+      "id": 108,
+      "name": "Bradley Beal",
+      "expectedTeam": "LAC"
+    },
+    {
+      "id": 109,
+      "name": "Jonas Valanciunas",
+      "expectedTeam": "DEN"
+    },
+    {
+      "id": 110,
+      "name": "Zach Edey",
+      "expectedTeam": "MEM"
+    },
+    {
+      "id": 111,
+      "name": "Andrew Wiggins",
+      "expectedTeam": "MIA"
+    },
+    {
+      "id": 112,
+      "name": "Naz Reid",
+      "expectedTeam": "MIN"
+    },
+    {
+      "id": 113,
+      "name": "Jrue Holiday",
+      "expectedTeam": "POR"
+    },
+    {
+      "id": 114,
+      "name": "Mitchell Robinson",
+      "expectedTeam": "NYK"
+    },
+    {
+      "id": 115,
+      "name": "Jakob Poeltl",
+      "expectedTeam": "TOR"
+    },
+    {
+      "id": 116,
+      "name": "Devin Vassell",
+      "expectedTeam": "SAS"
+    },
+    {
+      "id": 117,
+      "name": "P.J. Washington",
+      "expectedTeam": "DAL"
+    },
+    {
+      "id": 118,
+      "name": "Nickeil Alexander-Walker",
+      "expectedTeam": "ATL"
+    },
+    {
+      "id": 119,
+      "name": "Payton Pritchard",
+      "expectedTeam": "BOS"
+    },
+    {
+      "id": 120,
+      "name": "Walker Kessler",
+      "expectedTeam": "UTA"
+    },
+    {
+      "id": 121,
+      "name": "Stephon Castle",
+      "expectedTeam": "SAS"
+    },
+    {
+      "id": 122,
+      "name": "RJ Barrett",
+      "expectedTeam": "TOR"
+    },
+    {
+      "id": 123,
+      "name": "Precious Achiuwa",
+      "expectedTeam": "SAC"
+    },
+    {
+      "id": 124,
+      "name": "Ochai Agbaji",
+      "expectedTeam": "BKN"
+    },
+    {
+      "id": 125,
+      "name": "Santi Aldama",
+      "expectedTeam": "MEM"
+    },
+    {
+      "id": 126,
+      "name": "Trey Alexander",
+      "expectedTeam": "NOP"
+    },
+    {
+      "id": 127,
+      "name": "Grayson Allen",
+      "expectedTeam": "PHX"
+    },
+    {
+      "id": 128,
+      "name": "Jose Alvarado",
+      "expectedTeam": "NYK"
+    },
+    {
+      "id": 129,
+      "name": "Kyle Anderson",
+      "expectedTeam": "MEM"
+    },
+    {
+      "id": 130,
+      "name": "Alex Antetokounmpo",
+      "expectedTeam": "MIL"
+    },
+    {
+      "id": 131,
+      "name": "Thanasis Antetokounmpo",
+      "expectedTeam": "MIL"
+    },
+    {
+      "id": 132,
+      "name": "Cole Anthony",
+      "expectedTeam": "PHX"
+    },
+    {
+      "id": 133,
+      "name": "Deandre Ayton",
+      "expectedTeam": "LAL"
+    },
+    {
+      "id": 134,
+      "name": "Marvin Bagley III",
+      "expectedTeam": "DAL"
+    },
+    {
+      "id": 135,
+      "name": "Ace Bailey",
+      "expectedTeam": "UTA"
+    },
+    {
+      "id": 137,
+      "name": "Dominick Barlow",
+      "expectedTeam": "PHI"
+    },
+    {
+      "id": 138,
+      "name": "Harrison Barnes",
+      "expectedTeam": "SAS"
+    },
+    {
+      "id": 139,
+      "name": "Brooks Barnhizer",
+      "expectedTeam": "OKC"
+    },
+    {
+      "id": 140,
+      "name": "Charles Bassey",
+      "expectedTeam": "PHI"
+    },
+    {
+      "id": 141,
+      "name": "Tamar Bates",
+      "expectedTeam": "DEN"
+    },
+    {
+      "id": 142,
+      "name": "Jamison Battle",
+      "expectedTeam": "TOR"
+    },
+    {
+      "id": 143,
+      "name": "Nicolas Batum",
+      "expectedTeam": "LAC"
+    },
+    {
+      "id": 144,
+      "name": "Joan Beringer",
+      "expectedTeam": "MIN"
+    },
+    {
+      "id": 145,
+      "name": "Saddiq Bey",
+      "expectedTeam": "NOP"
+    },
+    {
+      "id": 146,
+      "name": "Goga Bitadze",
+      "expectedTeam": "ORL"
+    },
+    {
+      "id": 147,
+      "name": "Bismack Biyombo",
+      "expectedTeam": "SAS"
+    },
+    {
+      "id": 148,
+      "name": "Anthony Black",
+      "expectedTeam": "ORL"
+    },
+    {
+      "id": 150,
+      "name": "Adem Bona",
+      "expectedTeam": "PHI"
+    },
+    {
+      "id": 153,
+      "name": "Malaki Branham",
+      "expectedTeam": "CHA"
+    },
+    {
+      "id": 154,
+      "name": "Koby Brea",
+      "expectedTeam": "PHX"
+    },
+    {
+      "id": 155,
+      "name": "Miles Bridges",
+      "expectedTeam": "CHA"
+    },
+    {
+      "id": 156,
+      "name": "Dillon Brooks",
+      "expectedTeam": "PHX"
+    },
+    {
+      "id": 157,
+      "name": "Johni Broome",
+      "expectedTeam": "PHI"
+    },
+    {
+      "id": 158,
+      "name": "Bruce Brown",
+      "expectedTeam": "DEN"
+    },
+    {
+      "id": 159,
+      "name": "Kobe Brown",
+      "expectedTeam": "IND"
+    },
+    {
+      "id": 160,
+      "name": "Carter Bryant",
+      "expectedTeam": "SAS"
+    },
+    {
+      "id": 161,
+      "name": "Thomas Bryant",
+      "expectedTeam": "CLE"
+    },
+    {
+      "id": 162,
+      "name": "Jimmy Butler III",
+      "expectedTeam": "GSW"
+    },
+    {
+      "id": 163,
+      "name": "Matas Buzelis",
+      "expectedTeam": "CHI"
+    },
+    {
+      "id": 164,
+      "name": "Jamal Cain",
+      "expectedTeam": "ORL"
+    },
+    {
+      "id": 165,
+      "name": "Kentavious Caldwell-Pope",
+      "expectedTeam": "MEM"
+    },
+    {
+      "id": 166,
+      "name": "Clint Capela",
+      "expectedTeam": "HOU"
+    },
+    {
+      "id": 167,
+      "name": "Dylan Cardwell",
+      "expectedTeam": "SAC"
+    },
+    {
+      "id": 168,
+      "name": "Branden Carlson",
+      "expectedTeam": "OKC"
+    },
+    {
+      "id": 169,
+      "name": "Bub Carrington",
+      "expectedTeam": "WAS"
+    },
+    {
+      "id": 170,
+      "name": "Devin Carter",
+      "expectedTeam": "SAC"
+    },
+    {
+      "id": 171,
+      "name": "Jevon Carter",
+      "expectedTeam": "ORL"
+    },
+    {
+      "id": 172,
+      "name": "Wendell Carter Jr.",
+      "expectedTeam": "ORL"
+    },
+    {
+      "id": 173,
+      "name": "Colin Castleton",
+      "expectedTeam": "ORL"
+    },
+    {
+      "id": 174,
+      "name": "Julian Champagnie",
+      "expectedTeam": "SAS"
+    },
+    {
+      "id": 175,
+      "name": "Justin Champagnie",
+      "expectedTeam": "WAS"
+    },
+    {
+      "id": 176,
+      "name": "Cam Christie",
+      "expectedTeam": "LAC"
+    },
+    {
+      "id": 177,
+      "name": "Max Christie",
+      "expectedTeam": "DAL"
+    },
+    {
+      "id": 178,
+      "name": "Moussa Cisse",
+      "expectedTeam": "DAL"
+    },
+    {
+      "id": 179,
+      "name": "Sidy Cissoko",
+      "expectedTeam": "POR"
+    },
+    {
+      "id": 180,
+      "name": "Jaylen Clark",
+      "expectedTeam": "MIN"
+    },
+    {
+      "id": 181,
+      "name": "Brandon Clarke",
+      "expectedTeam": "MEM"
+    },
+    {
+      "id": 182,
+      "name": "Jordan Clarkson",
+      "expectedTeam": "NYK"
+    },
+    {
+      "id": 183,
+      "name": "Nic Claxton",
+      "expectedTeam": "BKN"
+    },
+    {
+      "id": 184,
+      "name": "Walter Clayton Jr.",
+      "expectedTeam": "MEM"
+    },
+    {
+      "id": 185,
+      "name": "Nique Clifford",
+      "expectedTeam": "SAC"
+    },
+    {
+      "id": 186,
+      "name": "Donovan Clingan",
+      "expectedTeam": "POR"
+    },
+    {
+      "id": 187,
+      "name": "Noah Clowney",
+      "expectedTeam": "BKN"
+    },
+    {
+      "id": 188,
+      "name": "Amir Coffey",
+      "expectedTeam": "PHX"
+    },
+    {
+      "id": 189,
+      "name": "Isaiah Collier",
+      "expectedTeam": "UTA"
+    },
+    {
+      "id": 190,
+      "name": "John Collins",
+      "expectedTeam": "LAC"
+    },
+    {
+      "id": 191,
+      "name": "Zach Collins",
+      "expectedTeam": "CHI"
+    },
+    {
+      "id": 194,
+      "name": "Javonte Cooke",
+      "expectedTeam": "POR"
+    },
+    {
+      "id": 195,
+      "name": "Sharife Cooper",
+      "expectedTeam": "WAS"
+    },
+    {
+      "id": 196,
+      "name": "Bilal Coulibaly",
+      "expectedTeam": "WAS"
+    },
+    {
+      "id": 197,
+      "name": "Cedric Coward",
+      "expectedTeam": "MEM"
+    },
+    {
+      "id": 198,
+      "name": "Isaiah Crawford",
+      "expectedTeam": "HOU"
+    },
+    {
+      "id": 201,
+      "name": "JD Davison",
+      "expectedTeam": "HOU"
+    },
+    {
+      "id": 202,
+      "name": "RayJ Dennis",
+      "expectedTeam": "ATL"
+    },
+    {
+      "id": 203,
+      "name": "Donte DiVincenzo",
+      "expectedTeam": "MIN"
+    },
+    {
+      "id": 205,
+      "name": "Mohamed Diawara",
+      "expectedTeam": "NYK"
+    },
+    {
+      "id": 206,
+      "name": "Gradey Dick",
+      "expectedTeam": "TOR"
+    },
+    {
+      "id": 207,
+      "name": "Hunter Dickinson",
+      "expectedTeam": "NOP"
+    },
+    {
+      "id": 208,
+      "name": "Ousmane Dieng",
+      "expectedTeam": "MIL"
+    },
+    {
+      "id": 209,
+      "name": "Rob Dillingham",
+      "expectedTeam": "CHI"
+    },
+    {
+      "id": 211,
+      "name": "Ayo Dosunmu",
+      "expectedTeam": "MIN"
+    },
+    {
+      "id": 212,
+      "name": "Kris Dunn",
+      "expectedTeam": "LAC"
+    },
+    {
+      "id": 213,
+      "name": "Ryan Dunn",
+      "expectedTeam": "PHX"
+    },
+    {
+      "id": 214,
+      "name": "Jalen Duren",
+      "expectedTeam": "DET"
+    },
+    {
+      "id": 216,
+      "name": "Tari Eason",
+      "expectedTeam": "HOU"
+    },
+    {
+      "id": 217,
+      "name": "VJ Edgecombe",
+      "expectedTeam": "PHI"
+    },
+    {
+      "id": 218,
+      "name": "Justin Edwards",
+      "expectedTeam": "PHI"
+    },
+    {
+      "id": 219,
+      "name": "Keon Ellis",
+      "expectedTeam": "CLE"
+    },
+    {
+      "id": 220,
+      "name": "Noa Essengue",
+      "expectedTeam": "CHI"
+    },
+    {
+      "id": 221,
+      "name": "Tyson Etienne",
+      "expectedTeam": "BKN"
+    },
+    {
+      "id": 222,
+      "name": "Drew Eubanks",
+      "expectedTeam": "SAC"
+    },
+    {
+      "id": 225,
+      "name": "Jeremiah Fears",
+      "expectedTeam": "NOP"
+    },
+    {
+      "id": 226,
+      "name": "Kyle Filipowski",
+      "expectedTeam": "UTA"
+    },
+    {
+      "id": 227,
+      "name": "Dorian Finney-Smith",
+      "expectedTeam": "HOU"
+    },
+    {
+      "id": 228,
+      "name": "Rasheer Fleming",
+      "expectedTeam": "PHX"
+    },
+    {
+      "id": 230,
+      "name": "Simone Fontecchio",
+      "expectedTeam": "MIA"
+    },
+    {
+      "id": 231,
+      "name": "Enrique Freeman",
+      "expectedTeam": "MIN"
+    },
+    {
+      "id": 232,
+      "name": "Johnny Furphy",
+      "expectedTeam": "IND"
+    },
+    {
+      "id": 233,
+      "name": "Daniel Gafford",
+      "expectedTeam": "DAL"
+    },
+    {
+      "id": 234,
+      "name": "Myron Gardner",
+      "expectedTeam": "MIA"
+    },
+    {
+      "id": 235,
+      "name": "Luka Garza",
+      "expectedTeam": "BOS"
+    },
+    {
+      "id": 236,
+      "name": "Keyonte George",
+      "expectedTeam": "UTA"
+    },
+    {
+      "id": 237,
+      "name": "Kyshawn George",
+      "expectedTeam": "WAS"
+    },
+    {
+      "id": 238,
+      "name": "Josh Giddey",
+      "expectedTeam": "CHI"
+    },
+    {
+      "id": 239,
+      "name": "Anthony Gill",
+      "expectedTeam": "WAS"
+    },
+    {
+      "id": 240,
+      "name": "Collin Gillespie",
+      "expectedTeam": "PHX"
+    },
+    {
+      "id": 241,
+      "name": "Vladislav Goldin",
+      "expectedTeam": "MIA"
+    },
+    {
+      "id": 243,
+      "name": "Jordan Goodwin",
+      "expectedTeam": "PHX"
+    },
+    {
+      "id": 245,
+      "name": "Jerami Grant",
+      "expectedTeam": "POR"
+    },
+    {
+      "id": 246,
+      "name": "AJ Green",
+      "expectedTeam": "MIL"
+    },
+    {
+      "id": 247,
+      "name": "Jalen Green",
+      "expectedTeam": "PHX"
+    },
+    {
+      "id": 248,
+      "name": "Javonte Green",
+      "expectedTeam": "DET"
+    },
+    {
+      "id": 249,
+      "name": "Jeff Green",
+      "expectedTeam": "HOU"
+    },
+    {
+      "id": 250,
+      "name": "Josh Green",
+      "expectedTeam": "CHA"
+    },
+    {
+      "id": 251,
+      "name": "Quentin Grimes",
+      "expectedTeam": "PHI"
+    },
+    {
+      "id": 252,
+      "name": "Mouhamed Gueye",
+      "expectedTeam": "ATL"
+    },
+    {
+      "id": 253,
+      "name": "Rui Hachimura",
+      "expectedTeam": "LAL"
+    },
+    {
+      "id": 254,
+      "name": "Tyrese Haliburton",
+      "expectedTeam": "IND"
+    },
+    {
+      "id": 255,
+      "name": "PJ Hall",
+      "expectedTeam": "CHA"
+    },
+    {
+      "id": 256,
+      "name": "Tim Hardaway Jr.",
+      "expectedTeam": "DEN"
+    },
+    {
+      "id": 257,
+      "name": "Jaden Hardy",
+      "expectedTeam": "WAS"
+    },
+    {
+      "id": 258,
+      "name": "Elijah Harkless",
+      "expectedTeam": "UTA"
+    },
+    {
+      "id": 259,
+      "name": "Dylan Harper",
+      "expectedTeam": "SAS"
+    },
+    {
+      "id": 260,
+      "name": "Ron Harper Jr.",
+      "expectedTeam": "BOS"
+    },
+    {
+      "id": 261,
+      "name": "Gary Harris",
+      "expectedTeam": "MIL"
+    },
+    {
+      "id": 263,
+      "name": "Sam Hauser",
+      "expectedTeam": "BOS"
+    },
+    {
+      "id": 264,
+      "name": "Jordan Hawkins",
+      "expectedTeam": "NOP"
+    },
+    {
+      "id": 265,
+      "name": "Jaxson Hayes",
+      "expectedTeam": "LAL"
+    },
+    {
+      "id": 267,
+      "name": "Scoot Henderson",
+      "expectedTeam": "POR"
+    },
+    {
+      "id": 268,
+      "name": "Taylor Hendricks",
+      "expectedTeam": "MEM"
+    },
+    {
+      "id": 269,
+      "name": "Chucky Hepburn",
+      "expectedTeam": "TOR"
+    },
+    {
+      "id": 270,
+      "name": "Buddy Hield",
+      "expectedTeam": "ATL"
+    },
+    {
+      "id": 272,
+      "name": "Aaron Holiday",
+      "expectedTeam": "HOU"
+    },
+    {
+      "id": 273,
+      "name": "Ronald Holland II",
+      "expectedTeam": "DET"
+    },
+    {
+      "id": 274,
+      "name": "DaRon Holmes II",
+      "expectedTeam": "DEN"
+    },
+    {
+      "id": 275,
+      "name": "Caleb Houstan",
+      "expectedTeam": "ATL"
+    },
+    {
+      "id": 276,
+      "name": "Jett Howard",
+      "expectedTeam": "ORL"
+    },
+    {
+      "id": 277,
+      "name": "Kevin Huerter",
+      "expectedTeam": "DET"
+    },
+    {
+      "id": 278,
+      "name": "Jay Huff",
+      "expectedTeam": "IND"
+    },
+    {
+      "id": 279,
+      "name": "Ariel Hukporti",
+      "expectedTeam": "NYK"
+    },
+    {
+      "id": 280,
+      "name": "De'Andre Hunter",
+      "expectedTeam": "SAC"
+    },
+    {
+      "id": 282,
+      "name": "Bones Hyland",
+      "expectedTeam": "MIN"
+    },
+    {
+      "id": 283,
+      "name": "Oso Ighodaro",
+      "expectedTeam": "PHX"
+    },
+    {
+      "id": 284,
+      "name": "Joe Ingles",
+      "expectedTeam": "MIN"
+    },
+    {
+      "id": 285,
+      "name": "Harrison Ingram",
+      "expectedTeam": "SAS"
+    },
+    {
+      "id": 286,
+      "name": "Jonathan Isaac",
+      "expectedTeam": "ORL"
+    },
+    {
+      "id": 287,
+      "name": "GG Jackson",
+      "expectedTeam": "MEM"
+    },
+    {
+      "id": 288,
+      "name": "Isaiah Jackson",
+      "expectedTeam": "LAC"
+    },
+    {
+      "id": 289,
+      "name": "Quenton Jackson",
+      "expectedTeam": "IND"
+    },
+    {
+      "id": 290,
+      "name": "Andre Jackson Jr.",
+      "expectedTeam": "MIL"
+    },
+    {
+      "id": 291,
+      "name": "Trayce Jackson-Davis",
+      "expectedTeam": "TOR"
+    },
+    {
+      "id": 293,
+      "name": "Bronny James",
+      "expectedTeam": "LAL"
+    },
+    {
+      "id": 294,
+      "name": "Sion James",
+      "expectedTeam": "CHA"
+    },
+    {
+      "id": 295,
+      "name": "Jaime Jaquez Jr.",
+      "expectedTeam": "MIA"
+    },
+    {
+      "id": 296,
+      "name": "Trey Jemison III",
+      "expectedTeam": "NYK"
+    },
+    {
+      "id": 297,
+      "name": "Daniss Jenkins",
+      "expectedTeam": "DET"
+    },
+    {
+      "id": 298,
+      "name": "Ty Jerome",
+      "expectedTeam": "MEM"
+    },
+    {
+      "id": 299,
+      "name": "Isaiah Joe",
+      "expectedTeam": "OKC"
+    },
+    {
+      "id": 300,
+      "name": "AJ Johnson",
+      "expectedTeam": "DAL"
+    },
+    {
+      "id": 301,
+      "name": "Keldon Johnson",
+      "expectedTeam": "SAS"
+    },
+    {
+      "id": 302,
+      "name": "Keshad Johnson",
+      "expectedTeam": "MIA"
+    },
+    {
+      "id": 303,
+      "name": "Tre Johnson",
+      "expectedTeam": "WAS"
+    },
+    {
+      "id": 306,
+      "name": "Curtis Jones",
+      "expectedTeam": "DEN"
+    },
+    {
+      "id": 307,
+      "name": "Herbert Jones",
+      "expectedTeam": "NOP"
+    },
+    {
+      "id": 308,
+      "name": "Isaac Jones",
+      "expectedTeam": "DET"
+    },
+    {
+      "id": 309,
+      "name": "Kam Jones",
+      "expectedTeam": "IND"
+    },
+    {
+      "id": 310,
+      "name": "Spencer Jones",
+      "expectedTeam": "DEN"
+    },
+    {
+      "id": 311,
+      "name": "Tre Jones",
+      "expectedTeam": "CHI"
+    },
+    {
+      "id": 312,
+      "name": "Tyus Jones",
+      "expectedTeam": "DAL"
+    },
+    {
+      "id": 313,
+      "name": "David Jones Garcia",
+      "expectedTeam": "SAS"
+    },
+    {
+      "id": 314,
+      "name": "Derrick Jones Jr.",
+      "expectedTeam": "LAC"
+    },
+    {
+      "id": 315,
+      "name": "DeAndre Jordan",
+      "expectedTeam": "NOP"
+    },
+    {
+      "id": 317,
+      "name": "Johnny Juzang",
+      "expectedTeam": "MIN"
+    },
+    {
+      "id": 318,
+      "name": "Ryan Kalkbrenner",
+      "expectedTeam": "CHA"
+    },
+    {
+      "id": 319,
+      "name": "Miles Kelly",
+      "expectedTeam": "DAL"
+    },
+    {
+      "id": 320,
+      "name": "Luke Kennard",
+      "expectedTeam": "LAL"
+    },
+    {
+      "id": 321,
+      "name": "Corey Kispert",
+      "expectedTeam": "ATL"
+    },
+    {
+      "id": 322,
+      "name": "Maxi Kleber",
+      "expectedTeam": "LAL"
+    },
+    {
+      "id": 323,
+      "name": "Bobi Klintman",
+      "expectedTeam": "DET"
+    },
+    {
+      "id": 324,
+      "name": "Dalton Knecht",
+      "expectedTeam": "LAL"
+    },
+    {
+      "id": 325,
+      "name": "Kon Knueppel",
+      "expectedTeam": "CHA"
+    },
+    {
+      "id": 326,
+      "name": "Tyler Kolek",
+      "expectedTeam": "NYK"
+    },
+    {
+      "id": 327,
+      "name": "Christian Koloko",
+      "expectedTeam": "ATL"
+    },
+    {
+      "id": 328,
+      "name": "John Konchar",
+      "expectedTeam": "UTA"
+    },
+    {
+      "id": 329,
+      "name": "Luke Kornet",
+      "expectedTeam": "SAS"
+    },
+    {
+      "id": 331,
+      "name": "Kyle Kuzma",
+      "expectedTeam": "MIL"
+    },
+    {
+      "id": 332,
+      "name": "Jake LaRavia",
+      "expectedTeam": "LAL"
+    },
+    {
+      "id": 333,
+      "name": "Jock Landale",
+      "expectedTeam": "ATL"
+    },
+    {
+      "id": 334,
+      "name": "Chaz Lanier",
+      "expectedTeam": "DET"
+    },
+    {
+      "id": 335,
+      "name": "Pelle Larsson",
+      "expectedTeam": "MIA"
+    },
+    {
+      "id": 336,
+      "name": "A.J. Lawson",
+      "expectedTeam": "TOR"
+    },
+    {
+      "id": 337,
+      "name": "Caris LeVert",
+      "expectedTeam": "DET"
+    },
+    {
+      "id": 338,
+      "name": "E.J. Liddell",
+      "expectedTeam": "BKN"
+    },
+    {
+      "id": 339,
+      "name": "Damian Lillard",
+      "expectedTeam": "POR"
+    },
+    {
+      "id": 340,
+      "name": "Isaiah Livers",
+      "expectedTeam": "PHX"
+    },
+    {
+      "id": 342,
+      "name": "Kevon Looney",
+      "expectedTeam": "NOP"
+    },
+    {
+      "id": 343,
+      "name": "Brook Lopez",
+      "expectedTeam": "LAC"
+    },
+    {
+      "id": 344,
+      "name": "Caleb Love",
+      "expectedTeam": "POR"
+    },
+    {
+      "id": 345,
+      "name": "Kevin Love",
+      "expectedTeam": "UTA"
+    },
+    {
+      "id": 346,
+      "name": "Kyle Lowry",
+      "expectedTeam": "PHI"
+    },
+    {
+      "id": 347,
+      "name": "Khaman Maluach",
+      "expectedTeam": "PHX"
+    },
+    {
+      "id": 348,
+      "name": "Sandro Mamukelashvili",
+      "expectedTeam": "TOR"
+    },
+    {
+      "id": 349,
+      "name": "Terance Mann",
+      "expectedTeam": "BKN"
+    },
+    {
+      "id": 350,
+      "name": "Tre Mann",
+      "expectedTeam": "CHA"
+    },
+    {
+      "id": 351,
+      "name": "Naji Marshall",
+      "expectedTeam": "DAL"
+    },
+    {
+      "id": 352,
+      "name": "Alijah Martin",
+      "expectedTeam": "TOR"
+    },
+    {
+      "id": 353,
+      "name": "Caleb Martin",
+      "expectedTeam": "DAL"
+    },
+    {
+      "id": 355,
+      "name": "Tyrese Martin",
+      "expectedTeam": "BKN"
+    },
+    {
+      "id": 356,
+      "name": "Bennedict Mathurin",
+      "expectedTeam": "LAC"
+    },
+    {
+      "id": 359,
+      "name": "Miles McBride",
+      "expectedTeam": "NYK"
+    },
+    {
+      "id": 360,
+      "name": "Jared McCain",
+      "expectedTeam": "OKC"
+    },
+    {
+      "id": 361,
+      "name": "Mac McClung",
+      "expectedTeam": "CHI"
+    },
+    {
+      "id": 362,
+      "name": "CJ McCollum",
+      "expectedTeam": "ATL"
+    },
+    {
+      "id": 363,
+      "name": "T.J. McConnell",
+      "expectedTeam": "IND"
+    },
+    {
+      "id": 364,
+      "name": "Kevin McCullar Jr.",
+      "expectedTeam": "NYK"
+    },
+    {
+      "id": 365,
+      "name": "Doug McDermott",
+      "expectedTeam": "SAC"
+    },
+    {
+      "id": 366,
+      "name": "Bryce McGowens",
+      "expectedTeam": "NOP"
+    },
+    {
+      "id": 367,
+      "name": "Jordan McLaughlin",
+      "expectedTeam": "SAS"
+    },
+    {
+      "id": 368,
+      "name": "Liam McNeeley",
+      "expectedTeam": "CHA"
+    },
+    {
+      "id": 369,
+      "name": "De'Anthony Melton",
+      "expectedTeam": "GSW"
+    },
+    {
+      "id": 370,
+      "name": "Sam Merrill",
+      "expectedTeam": "CLE"
+    },
+    {
+      "id": 371,
+      "name": "Khris Middleton",
+      "expectedTeam": "DAL"
+    },
+    {
+      "id": 372,
+      "name": "Emanuel Miller",
+      "expectedTeam": "CLE"
+    },
+    {
+      "id": 373,
+      "name": "Jordan Miller",
+      "expectedTeam": "LAC"
+    },
+    {
+      "id": 374,
+      "name": "Leonard Miller",
+      "expectedTeam": "CHI"
+    },
+    {
+      "id": 376,
+      "name": "Josh Minott",
+      "expectedTeam": "BKN"
+    },
+    {
+      "id": 377,
+      "name": "Yves Missi",
+      "expectedTeam": "NOP"
+    },
+    {
+      "id": 378,
+      "name": "Ajay Mitchell",
+      "expectedTeam": "OKC"
+    },
+    {
+      "id": 379,
+      "name": "Davion Mitchell",
+      "expectedTeam": "MIA"
+    },
+    {
+      "id": 380,
+      "name": "Jonathan Mogbo",
+      "expectedTeam": "TOR"
+    },
+    {
+      "id": 381,
+      "name": "Malik Monk",
+      "expectedTeam": "SAC"
+    },
+    {
+      "id": 382,
+      "name": "Moses Moody",
+      "expectedTeam": "GSW"
+    },
+    {
+      "id": 383,
+      "name": "Wendell Moore Jr.",
+      "expectedTeam": "DET"
+    },
+    {
+      "id": 385,
+      "name": "Dejounte Murray",
+      "expectedTeam": "NOP"
+    },
+    {
+      "id": 386,
+      "name": "Keegan Murray",
+      "expectedTeam": "SAC"
+    },
+    {
+      "id": 387,
+      "name": "Kris Murray",
+      "expectedTeam": "POR"
+    },
+    {
+      "id": 388,
+      "name": "Collin Murray-Boyles",
+      "expectedTeam": "TOR"
+    },
+    {
+      "id": 389,
+      "name": "Svi Mykhailiuk",
+      "expectedTeam": "UTA"
+    },
+    {
+      "id": 390,
+      "name": "Pete Nance",
+      "expectedTeam": "MIL"
+    },
+    {
+      "id": 391,
+      "name": "Larry Nance Jr.",
+      "expectedTeam": "CLE"
+    },
+    {
+      "id": 393,
+      "name": "Ryan Nembhard",
+      "expectedTeam": "DAL"
+    },
+    {
+      "id": 394,
+      "name": "Asa Newell",
+      "expectedTeam": "ATL"
+    },
+    {
+      "id": 397,
+      "name": "Zeke Nnaji",
+      "expectedTeam": "DEN"
+    },
+    {
+      "id": 399,
+      "name": "Royce O'Neale",
+      "expectedTeam": "PHX"
+    },
+    {
+      "id": 400,
+      "name": "Josh Okogie",
+      "expectedTeam": "HOU"
+    },
+    {
+      "id": 401,
+      "name": "Isaac Okoro",
+      "expectedTeam": "CHI"
+    },
+    {
+      "id": 402,
+      "name": "Lachlan Olbrich",
+      "expectedTeam": "CHI"
+    },
+    {
+      "id": 403,
+      "name": "Kelly Olynyk",
+      "expectedTeam": "SAS"
+    },
+    {
+      "id": 404,
+      "name": "Kelly Oubre Jr.",
+      "expectedTeam": "PHI"
+    },
+    {
+      "id": 405,
+      "name": "Gary Payton II",
+      "expectedTeam": "GSW"
+    },
+    {
+      "id": 406,
+      "name": "Micah Peavy",
+      "expectedTeam": "NOP"
+    },
+    {
+      "id": 407,
+      "name": "Noah Penda",
+      "expectedTeam": "ORL"
+    },
+    {
+      "id": 408,
+      "name": "Taelon Peter",
+      "expectedTeam": "IND"
+    },
+    {
+      "id": 410,
+      "name": "Julian Phillips",
+      "expectedTeam": "MIN"
+    },
+    {
+      "id": 411,
+      "name": "Jalen Pickett",
+      "expectedTeam": "DEN"
+    },
+    {
+      "id": 412,
+      "name": "Scotty Pippen Jr.",
+      "expectedTeam": "MEM"
+    },
+    {
+      "id": 413,
+      "name": "Daeqwon Plowden",
+      "expectedTeam": "SAC"
+    },
+    {
+      "id": 415,
+      "name": "Brandin Podziemski",
+      "expectedTeam": "GSW"
+    },
+    {
+      "id": 416,
+      "name": "Jordan Poole",
+      "expectedTeam": "NOP"
+    },
+    {
+      "id": 417,
+      "name": "Craig Porter Jr.",
+      "expectedTeam": "CLE"
+    },
+    {
+      "id": 418,
+      "name": "Kevin Porter Jr.",
+      "expectedTeam": "MIL"
+    },
+    {
+      "id": 419,
+      "name": "Bobby Portis",
+      "expectedTeam": "MIL"
+    },
+    {
+      "id": 421,
+      "name": "Quinten Post",
+      "expectedTeam": "GSW"
+    },
+    {
+      "id": 422,
+      "name": "Drake Powell",
+      "expectedTeam": "BKN"
+    },
+    {
+      "id": 423,
+      "name": "Dwight Powell",
+      "expectedTeam": "DAL"
+    },
+    {
+      "id": 424,
+      "name": "Taurean Prince",
+      "expectedTeam": "MIL"
+    },
+    {
+      "id": 425,
+      "name": "Tyrese Proctor",
+      "expectedTeam": "CLE"
+    },
+    {
+      "id": 426,
+      "name": "Olivier-Maxence Prosper",
+      "expectedTeam": "MEM"
+    },
+    {
+      "id": 427,
+      "name": "Derik Queen",
+      "expectedTeam": "NOP"
+    },
+    {
+      "id": 428,
+      "name": "Neemias Queta",
+      "expectedTeam": "BOS"
+    },
+    {
+      "id": 429,
+      "name": "Immanuel Quickley",
+      "expectedTeam": "TOR"
+    },
+    {
+      "id": 430,
+      "name": "Maxime Raynaud",
+      "expectedTeam": "SAC"
+    },
+    {
+      "id": 432,
+      "name": "Paul Reed",
+      "expectedTeam": "DET"
+    },
+    {
+      "id": 433,
+      "name": "Antonio Reeves",
+      "expectedTeam": "CHA"
+    },
+    {
+      "id": 434,
+      "name": "Will Richard",
+      "expectedTeam": "GSW"
+    },
+    {
+      "id": 435,
+      "name": "Nick Richards",
+      "expectedTeam": "CHI"
+    },
+    {
+      "id": 436,
+      "name": "Jase Richardson",
+      "expectedTeam": "ORL"
+    },
+    {
+      "id": 437,
+      "name": "Will Riley",
+      "expectedTeam": "WAS"
+    },
+    {
+      "id": 438,
+      "name": "Zaccharie Risacher",
+      "expectedTeam": "ATL"
+    },
+    {
+      "id": 439,
+      "name": "Duncan Robinson",
+      "expectedTeam": "DET"
+    },
+    {
+      "id": 440,
+      "name": "Orlando Robinson",
+      "expectedTeam": "ORL"
+    },
+    {
+      "id": 442,
+      "name": "Ryan Rollins",
+      "expectedTeam": "MIL"
+    },
+    {
+      "id": 444,
+      "name": "Terry Rozier",
+      "expectedTeam": "MIA"
+    },
+    {
+      "id": 445,
+      "name": "Rayan Rupert",
+      "expectedTeam": "POR"
+    },
+    {
+      "id": 446,
+      "name": "D'Angelo Russell",
+      "expectedTeam": "WAS"
+    },
+    {
+      "id": 449,
+      "name": "Kobe Sanders",
+      "expectedTeam": "LAC"
+    },
+    {
+      "id": 450,
+      "name": "Gui Santos",
+      "expectedTeam": "GSW"
+    },
+    {
+      "id": 451,
+      "name": "Ben Saraf",
+      "expectedTeam": "BKN"
+    },
+    {
+      "id": 452,
+      "name": "Alex Sarr",
+      "expectedTeam": "WAS"
+    },
+    {
+      "id": 453,
+      "name": "Marcus Sasser",
+      "expectedTeam": "DET"
+    },
+    {
+      "id": 454,
+      "name": "Baylor Scheierman",
+      "expectedTeam": "BOS"
+    },
+    {
+      "id": 457,
+      "name": "Brice Sensabaugh",
+      "expectedTeam": "UTA"
+    },
+    {
+      "id": 458,
+      "name": "Landry Shamet",
+      "expectedTeam": "NYK"
+    },
+    {
+      "id": 459,
+      "name": "Terrence Shannon Jr.",
+      "expectedTeam": "MIN"
+    },
+    {
+      "id": 460,
+      "name": "Day'Ron Sharpe",
+      "expectedTeam": "BKN"
+    },
+    {
+      "id": 461,
+      "name": "Shaedon Sharpe",
+      "expectedTeam": "POR"
+    },
+    {
+      "id": 462,
+      "name": "Jamal Shead",
+      "expectedTeam": "TOR"
+    },
+    {
+      "id": 463,
+      "name": "Ben Sheppard",
+      "expectedTeam": "IND"
+    },
+    {
+      "id": 464,
+      "name": "Reed Sheppard",
+      "expectedTeam": "HOU"
+    },
+    {
+      "id": 465,
+      "name": "Max Shulga",
+      "expectedTeam": "BOS"
+    },
+    {
+      "id": 466,
+      "name": "Anfernee Simons",
+      "expectedTeam": "CHI"
+    },
+    {
+      "id": 468,
+      "name": "Jericho Sims",
+      "expectedTeam": "MIL"
+    },
+    {
+      "id": 469,
+      "name": "Javon Small",
+      "expectedTeam": "MEM"
+    },
+    {
+      "id": 470,
+      "name": "Marcus Smart",
+      "expectedTeam": "LAL"
+    },
+    {
+      "id": 471,
+      "name": "Dru Smith",
+      "expectedTeam": "MIA"
+    },
+    {
+      "id": 472,
+      "name": "Jalen Smith",
+      "expectedTeam": "CHI"
+    },
+    {
+      "id": 473,
+      "name": "Tolu Smith",
+      "expectedTeam": "DET"
+    },
+    {
+      "id": 474,
+      "name": "Nick Smith Jr.",
+      "expectedTeam": "LAL"
+    },
+    {
+      "id": 475,
+      "name": "Jeremy Sochan",
+      "expectedTeam": "SAS"
+    },
+    {
+      "id": 476,
+      "name": "Thomas Sorber",
+      "expectedTeam": "OKC"
+    },
+    {
+      "id": 477,
+      "name": "Cam Spencer",
+      "expectedTeam": "MEM"
+    },
+    {
+      "id": 478,
+      "name": "Pat Spencer",
+      "expectedTeam": "GSW"
+    },
+    {
+      "id": 479,
+      "name": "Isaiah Stevens",
+      "expectedTeam": "SAC"
+    },
+    {
+      "id": 480,
+      "name": "Isaiah Stewart",
+      "expectedTeam": "DET"
+    },
+    {
+      "id": 481,
+      "name": "Julian Strawther",
+      "expectedTeam": "DEN"
+    },
+    {
+      "id": 482,
+      "name": "Max Strus",
+      "expectedTeam": "CLE"
+    },
+    {
+      "id": 483,
+      "name": "Jae'Sean Tate",
+      "expectedTeam": "HOU"
+    },
+    {
+      "id": 485,
+      "name": "Garrett Temple",
+      "expectedTeam": "TOR"
+    },
+    {
+      "id": 487,
+      "name": "Adou Thiero",
+      "expectedTeam": "LAL"
+    },
+    {
+      "id": 489,
+      "name": "Ausar Thompson",
+      "expectedTeam": "DET"
+    },
+    {
+      "id": 490,
+      "name": "Klay Thompson",
+      "expectedTeam": "DAL"
+    },
+    {
+      "id": 491,
+      "name": "Matisse Thybulle",
+      "expectedTeam": "POR"
+    },
+    {
+      "id": 492,
+      "name": "Xavier Tillman",
+      "expectedTeam": "CHA"
+    },
+    {
+      "id": 493,
+      "name": "Nae'Qwan Tomlin",
+      "expectedTeam": "CLE"
+    },
+    {
+      "id": 494,
+      "name": "John Tonje",
+      "expectedTeam": "BOS"
+    },
+    {
+      "id": 498,
+      "name": "Obi Toppin",
+      "expectedTeam": "IND"
+    },
+    {
+      "id": 499,
+      "name": "Nolan Traore",
+      "expectedTeam": "BKN"
+    },
+    {
+      "id": 501,
+      "name": "Gary Trent Jr.",
+      "expectedTeam": "MIL"
+    },
+    {
+      "id": 502,
+      "name": "Oscar Tshiebwe",
+      "expectedTeam": "UTA"
+    },
+    {
+      "id": 503,
+      "name": "Hunter Tyson",
+      "expectedTeam": "BKN"
+    },
+    {
+      "id": 504,
+      "name": "Jaylon Tyson",
+      "expectedTeam": "CLE"
+    },
+    {
+      "id": 506,
+      "name": "Fred VanVleet",
+      "expectedTeam": "HOU"
+    },
+    {
+      "id": 507,
+      "name": "Jarred Vanderbilt",
+      "expectedTeam": "LAL"
+    },
+    {
+      "id": 508,
+      "name": "Gabe Vincent",
+      "expectedTeam": "ATL"
+    },
+    {
+      "id": 509,
+      "name": "Tristan Vukcevic",
+      "expectedTeam": "WAS"
+    },
+    {
+      "id": 511,
+      "name": "Dean Wade",
+      "expectedTeam": "CLE"
+    },
+    {
+      "id": 512,
+      "name": "Moritz Wagner",
+      "expectedTeam": "ORL"
+    },
+    {
+      "id": 513,
+      "name": "Jabari Walker",
+      "expectedTeam": "PHI"
+    },
+    {
+      "id": 514,
+      "name": "Jarace Walker",
+      "expectedTeam": "IND"
+    },
+    {
+      "id": 515,
+      "name": "Cason Wallace",
+      "expectedTeam": "OKC"
+    },
+    {
+      "id": 516,
+      "name": "Keaton Wallace",
+      "expectedTeam": "ATL"
+    },
+    {
+      "id": 517,
+      "name": "Jordan Walsh",
+      "expectedTeam": "BOS"
+    },
+    {
+      "id": 518,
+      "name": "Ja'Kobe Walter",
+      "expectedTeam": "TOR"
+    },
+    {
+      "id": 519,
+      "name": "Kel'el Ware",
+      "expectedTeam": "MIA"
+    },
+    {
+      "id": 520,
+      "name": "Lindy Waters III",
+      "expectedTeam": "SAS"
+    },
+    {
+      "id": 521,
+      "name": "Trendon Watford",
+      "expectedTeam": "PHI"
+    },
+    {
+      "id": 522,
+      "name": "Jamir Watkins",
+      "expectedTeam": "WAS"
+    },
+    {
+      "id": 523,
+      "name": "Peyton Watson",
+      "expectedTeam": "DEN"
+    },
+    {
+      "id": 524,
+      "name": "Jaylen Wells",
+      "expectedTeam": "MEM"
+    },
+    {
+      "id": 525,
+      "name": "Blake Wesley",
+      "expectedTeam": "POR"
+    },
+    {
+      "id": 526,
+      "name": "Cam Whitmore",
+      "expectedTeam": "WAS"
+    },
+    {
+      "id": 527,
+      "name": "Aaron Wiggins",
+      "expectedTeam": "OKC"
+    },
+    {
+      "id": 528,
+      "name": "Amari Williams",
+      "expectedTeam": "BOS"
+    },
+    {
+      "id": 529,
+      "name": "Brandon Williams",
+      "expectedTeam": "DAL"
+    },
+    {
+      "id": 530,
+      "name": "Cody Williams",
+      "expectedTeam": "UTA"
+    },
+    {
+      "id": 531,
+      "name": "Grant Williams",
+      "expectedTeam": "CHA"
+    },
+    {
+      "id": 532,
+      "name": "Jaylin Williams",
+      "expectedTeam": "OKC"
+    },
+    {
+      "id": 533,
+      "name": "Kenrich Williams",
+      "expectedTeam": "OKC"
+    },
+    {
+      "id": 534,
+      "name": "Mark Williams",
+      "expectedTeam": "PHX"
+    },
+    {
+      "id": 535,
+      "name": "Patrick Williams",
+      "expectedTeam": "CHI"
+    },
+    {
+      "id": 536,
+      "name": "Ziaire Williams",
+      "expectedTeam": "BKN"
+    },
+    {
+      "id": 537,
+      "name": "Robert Williams III",
+      "expectedTeam": "POR"
+    },
+    {
+      "id": 538,
+      "name": "Vince Williams Jr.",
+      "expectedTeam": "UTA"
+    },
+    {
+      "id": 539,
+      "name": "Jalen Wilson",
+      "expectedTeam": "BKN"
+    },
+    {
+      "id": 541,
+      "name": "Danny Wolf",
+      "expectedTeam": "BKN"
+    },
+    {
+      "id": 542,
+      "name": "Guerschon Yabusele",
+      "expectedTeam": "CHI"
+    },
+    {
+      "id": 543,
+      "name": "Yang Hansen",
+      "expectedTeam": "POR"
+    },
+    {
+      "id": 544,
+      "name": "Jahmir Young",
+      "expectedTeam": "MIA"
+    },
+    {
+      "id": 545,
+      "name": "Chris Youngblood",
+      "expectedTeam": "OKC"
+    },
+    {
+      "id": 546,
+      "name": "Rocco Zikarsky",
+      "expectedTeam": "MIN"
+    },
+    {
+      "id": 547,
+      "name": "Tristan da Silva",
+      "expectedTeam": "ORL"
+    }
+  ],
+  "baseUrl": "http://localhost:3456",
+  "checks": {
+    "visual": [
+      "node_overlap",
+      "text_truncation",
+      "color_contrast",
+      "responsive_layout"
+    ],
+    "data": [
+      "correct_team",
+      "complete_history",
+      "valid_dates",
+      "no_duplicates",
+      "has_draft_origin"
+    ],
+    "functional": [
+      "search_works",
+      "tree_loads",
+      "png_export",
+      "back_navigation"
+    ]
+  }
+}

@@ -4,6 +4,36 @@ import path from "path";
 
 const dbPath = path.join(process.cwd(), "..", "data", "nba_trades.db");
 
+// Helper to look up who was drafted with a pick
+function getPickOutcome(db: Database.Database, pickDescription: string): { playerName: string; pickNumber: number } | null {
+  // Parse year and round from descriptions like "2016 1st Round Pick" or "2024 1st"
+  const yearMatch = pickDescription.match(/(\d{4})/);
+  const roundMatch = pickDescription.match(/1st|2nd|first|second/i);
+  
+  if (!yearMatch) return null;
+  
+  const year = parseInt(yearMatch[1]);
+  const round = roundMatch && (roundMatch[0].toLowerCase().includes('2') || roundMatch[0].toLowerCase() === 'second') ? 2 : 1;
+  
+  try {
+    const pick = db.prepare(`
+      SELECT dp.pick_number, p.name as player_name 
+      FROM draft_picks dp 
+      LEFT JOIN players p ON dp.player_id = p.id 
+      WHERE dp.year = ? AND dp.round = ? AND dp.player_id IS NOT NULL
+      LIMIT 1
+    `).get(year, round) as { pick_number: number; player_name: string } | undefined;
+    
+    if (pick && pick.player_name) {
+      return { playerName: pick.player_name, pickNumber: pick.pick_number };
+    }
+  } catch (e) {
+    // Ignore errors, just return null
+  }
+  
+  return null;
+}
+
 interface ChainStep {
   event: string;
   date: string;
@@ -35,6 +65,8 @@ interface TreeNode {
     assetIndex?: number;
     totalAssets?: number;
     parentTradeId?: string;
+    direction?: "sent" | "received";
+    position?: "above" | "below";
   };
 }
 
@@ -44,6 +76,7 @@ interface TreeEdge {
   target: string;
   label?: string;
   animated?: boolean;
+  acquisitionType?: 'trade' | 'draft' | 'signing' | 'waiver';
 }
 
 export async function GET(
@@ -52,6 +85,10 @@ export async function GET(
 ) {
   const { playerId } = await params;
   const id = parseInt(playerId, 10);
+  
+  // Get view mode from query params (compact is default, detailed for future toggle)
+  const { searchParams } = new URL(request.url);
+  const viewMode = searchParams.get('mode') || 'compact'; // 'compact' or 'detailed'
 
   if (isNaN(id)) {
     return NextResponse.json({ error: "Invalid player ID" }, { status: 400 });
@@ -63,7 +100,8 @@ export async function GET(
     // Get player info with team
     const player = db.prepare(`
       SELECT 
-        p.id, p.name, p.draft_year as draftYear, p.draft_pick as draftPick, 
+        p.id, p.name, p.draft_year as draftYear, p.draft_pick as draftPick,
+        p.draft_round as draftRound,
         p.headshot_url as headshotUrl, p.position,
         t.abbreviation as teamAbbr, t.name as teamName, t.primary_color as teamColor,
         t.secondary_color as teamSecondaryColor
@@ -75,6 +113,7 @@ export async function GET(
       name: string;
       draftYear: number;
       draftPick: number;
+      draftRound: number;
       headshotUrl: string | null;
       position: string | null;
       teamAbbr: string;
@@ -87,23 +126,34 @@ export async function GET(
       return NextResponse.json({ error: "Player not found" }, { status: 404 });
     }
 
-    // Get acquisition info
-    const acquisition = db.prepare(`
+    // Get ALL acquisitions for this player (full transaction history)
+    const allAcquisitions = db.prepare(`
       SELECT 
-        acquisition_type as type, date, trade_id as tradeId, 
-        origin_trade_id as originTradeId, pick_id as pickId, notes
-      FROM acquisitions
-      WHERE player_id = ?
-      ORDER BY date DESC
-      LIMIT 1
-    `).get(id) as {
+        a.acquisition_type as type, a.date, a.trade_id as tradeId, 
+        a.origin_trade_id as originTradeId, a.pick_id as pickId, a.notes,
+        t.abbreviation as teamAbbr, t.name as teamName, 
+        t.primary_color as teamColor, t.secondary_color as teamSecondaryColor
+      FROM acquisitions a
+      LEFT JOIN teams t ON a.team_id = t.id
+      WHERE a.player_id = ?
+      ORDER BY a.date ASC
+    `).all(id) as Array<{
       type: string;
       date: string;
       tradeId: number | null;
       originTradeId: number | null;
       pickId: number | null;
       notes: string | null;
-    } | undefined;
+      teamAbbr: string;
+      teamName: string;
+      teamColor: string;
+      teamSecondaryColor: string;
+    }>;
+    
+    // Most recent acquisition for backwards compatibility
+    const acquisition = allAcquisitions.length > 0 
+      ? allAcquisitions[allAcquisitions.length - 1] 
+      : undefined;
 
     // Get all trade chains for this player
     const chains = db.prepare(`
@@ -147,21 +197,38 @@ export async function GET(
     const nodes: TreeNode[] = [];
     const edges: TreeEdge[] = [];
 
+    // Helper to format draft round as ordinal
+    const formatRound = (round: number): string => {
+      if (round === 1) return "1st Round";
+      if (round === 2) return "2nd Round";
+      return `Round ${round}`;
+    };
+
     // Player node (current)
+    const draftInfo = player.draftYear && player.draftRound
+      ? `${formatRound(player.draftRound)} (${player.draftYear})`
+      : player.draftYear 
+        ? `(${player.draftYear})`
+        : "";
+    
     nodes.push({
       id: `player-${player.id}`,
       type: "player",
       data: {
         label: player.name,
-        sublabel: `${player.teamAbbr} • #${player.draftPick} (${player.draftYear})`,
+        sublabel: `${player.teamAbbr}${draftInfo ? ` • ${draftInfo}` : ""}`,
         color: player.teamColor || "#007A33",
         secondaryColor: player.teamSecondaryColor || "#333",
         imageUrl: player.headshotUrl || undefined,
       },
     });
 
-    if (chains.length > 0) {
-      // Process each chain branch
+    // Calculate which data source is more complete
+    const chainStepsCount = chains.reduce((sum, c) => sum + JSON.parse(c.chainJson).length, 0);
+    const useChains = chains.length > 0 && chainStepsCount >= allAcquisitions.length;
+
+    if (useChains) {
+      // Process each chain branch (for complex multi-asset trades)
       chains.forEach((chainData, branchIdx) => {
         const chain: ChainStep[] = JSON.parse(chainData.chainJson);
         
@@ -182,9 +249,59 @@ export async function GET(
           const teamFromColor = step.teamFrom ? teamColors[step.teamFrom]?.primary : undefined;
           const teamToColor = step.teamTo ? teamColors[step.teamTo]?.primary : undefined;
 
-          // Check if this trade has multiple assets to split
-          const assetsToSplit = step.assets || [];
-          const shouldSplitAssets = !isDraft && assetsToSplit.length > 1;
+          // Assets sent in trade
+          const assetsSent = step.assets || [];
+          // Assets received
+          const assetsReceived = step.received || [];
+
+          // COMPACT MODE: Single trade node with assets listed inline
+          if (viewMode === 'compact') {
+            const nodeType = isDraft ? 'pick' : 'trade';
+            
+            nodes.push({
+              id: baseNodeId,
+              type: nodeType,
+              data: {
+                label: step.event,
+                sublabel: step.action,
+                date: step.date,
+                teamFrom: step.teamFrom,
+                teamTo: step.teamTo,
+                assets: assetsSent.length > 0 ? assetsSent : undefined,
+                received: assetsReceived.length > 0 ? assetsReceived : undefined,
+                teamFromColor,
+                teamToColor,
+                color: teamFromColor || teamToColor,
+              },
+            });
+
+            edges.push({
+              id: `edge-${baseNodeId}-${prevNodeId}`,
+              source: baseNodeId,
+              target: prevNodeId,
+              acquisitionType: isDraft ? 'draft' : 'trade',
+            });
+
+            prevNodeId = baseNodeId;
+            continue;
+          }
+          
+          // DETAILED MODE: Separate asset nodes (legacy behavior for future toggle)
+          // Filter received assets to only the pick matching the player's draft year
+          const relevantReceivedPick = assetsReceived.find(pick => {
+            const yearMatch = pick.match(/(\d{4})/);
+            if (yearMatch && player.draftYear) {
+              return parseInt(yearMatch[1]) === player.draftYear;
+            }
+            return false;
+          });
+          
+          // Only show sent assets above, and the one relevant pick below
+          const sentAssets = assetsSent.map(a => ({ label: a, direction: 'sent' as const, position: 'above' as const }));
+          const receivedAsset = relevantReceivedPick ? [{ label: relevantReceivedPick, direction: 'received' as const, position: 'below' as const }] : [];
+          
+          const allAssets = [...sentAssets, ...receivedAsset];
+          const shouldSplitAssets = !isDraft && sentAssets.length > 0;
 
           if (shouldSplitAssets) {
             // Create trade header node
@@ -204,9 +321,12 @@ export async function GET(
               },
             });
 
-            // Create individual asset nodes (players, picks, cash)
-            assetsToSplit.forEach((asset, assetIdx) => {
-              const assetNodeId = `${baseNodeId}-asset-${assetIdx}`;
+            // Create individual asset nodes - sent assets above, received pick below
+            allAssets.forEach((assetInfo, assetIdx) => {
+              const asset = assetInfo.label;
+              const direction = assetInfo.direction;
+              const position = assetInfo.position; // 'above' or 'below'
+              const assetNodeId = `${baseNodeId}-asset-${direction}-${assetIdx}`;
               const assetLower = asset.toLowerCase();
               
               // Determine asset type
@@ -222,19 +342,31 @@ export async function GET(
               if (isPickAsset) assetType = "pick";
               else if (isCashAsset) assetType = "cash";
               
+              // For picks, look up who was drafted (only in detailed mode)
+              let pickOutcome: string | undefined;
+              if (isPickAsset) {
+                const outcome = getPickOutcome(db, asset);
+                if (outcome) {
+                  pickOutcome = `→ Became ${outcome.playerName} (#${outcome.pickNumber})`;
+                }
+              }
+              
               nodes.push({
                 id: assetNodeId,
                 type: "asset",
                 data: {
                   label: asset,
+                  sublabel: pickOutcome,
                   assetType,
-                  teamFrom: step.teamFrom,
-                  teamTo: step.teamTo,
-                  color: teamFromColor,
+                  direction, // 'sent' or 'received'
+                  position, // 'above' or 'below' the trade header
+                  teamFrom: direction === 'sent' ? step.teamFrom : step.teamTo,
+                  teamTo: direction === 'sent' ? step.teamTo : step.teamFrom,
+                  color: direction === 'received' ? teamToColor : teamFromColor,
                   teamFromColor,
                   teamToColor,
                   assetIndex: assetIdx,
-                  totalAssets: assetsToSplit.length,
+                  totalAssets: allAssets.length,
                   parentTradeId: headerNodeId,
                 },
               });
@@ -252,6 +384,7 @@ export async function GET(
               id: `edge-${headerNodeId}-${prevNodeId}`,
               source: headerNodeId,
               target: prevNodeId,
+              acquisitionType: 'trade',
             });
 
             prevNodeId = headerNodeId;
@@ -281,32 +414,63 @@ export async function GET(
               source: baseNodeId,
               target: prevNodeId,
               label: isDraft ? "Drafted" : undefined,
+              acquisitionType: isDraft ? 'draft' : 'trade',
             });
 
             prevNodeId = baseNodeId;
           }
         }
       });
-    } else if (acquisition) {
-      // Fallback: simple acquisition node if no chain
-      const nodeId = `acq-${player.id}`;
-      nodes.push({
-        id: nodeId,
-        type: acquisition.type === 'draft' ? 'pick' : 'trade',
-        data: {
-          label: acquisition.type === 'draft' 
-            ? `Drafted #${player.draftPick} (${player.draftYear})`
-            : `Acquired via ${acquisition.type}`,
-          sublabel: acquisition.notes || undefined,
-          date: acquisition.date,
-        },
-      });
-
-      edges.push({
-        id: `edge-${nodeId}-player-${player.id}`,
-        source: nodeId,
-        target: `player-${player.id}`,
-      });
+    } else if (allAcquisitions.length > 0) {
+      // Build timeline from all acquisitions (draft → trades/signings → current)
+      // Process in REVERSE order (most recent first, working back to draft)
+      // so edges point from origin → player
+      let prevNodeId = `player-${player.id}`;
+      
+      for (let i = allAcquisitions.length - 1; i >= 0; i--) {
+        const acq = allAcquisitions[i];
+        const nodeId = `acq-${player.id}-${i}`;
+        const color = acq.teamColor || '#666';
+        
+        // Determine node type and label based on acquisition type
+        let nodeType: 'pick' | 'trade' = 'trade';
+        let label = '';
+        let sublabel = acq.notes || undefined;
+        
+        if (acq.type === 'draft') {
+          nodeType = 'pick';
+          label = `Drafted #${player.draftPick} (${player.draftYear})`;
+          sublabel = `by ${acq.teamName}`;
+        } else if (acq.type === 'signing') {
+          label = `Signed with ${acq.teamAbbr}`;
+        } else if (acq.type === 'trade') {
+          label = `Traded to ${acq.teamAbbr}`;
+        } else {
+          label = `Joined ${acq.teamAbbr}`;
+        }
+        
+        nodes.push({
+          id: nodeId,
+          type: nodeType,
+          data: {
+            label,
+            sublabel,
+            date: acq.date,
+            color,
+            teamTo: acq.teamAbbr,
+            teamToColor: color,
+          },
+        });
+        
+        edges.push({
+          id: `edge-${nodeId}-${prevNodeId}`,
+          source: nodeId,
+          target: prevNodeId,
+          acquisitionType: acq.type as 'trade' | 'draft' | 'signing' | 'waiver',
+        });
+        
+        prevNodeId = nodeId;
+      }
     }
 
     // Get origin trade details if exists

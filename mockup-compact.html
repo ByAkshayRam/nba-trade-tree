@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trade Tree - Compact Mode Mockup</title>
+  <style>
+    body {
+      background: #0a0a0b;
+      color: white;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      padding: 40px;
+      display: flex;
+      gap: 60px;
+      justify-content: center;
+    }
+    .column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .column h2 {
+      color: #71717a;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+    }
+    .tree {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .node {
+      background: #141416;
+      border: 2px solid #007A33;
+      border-radius: 12px;
+      padding: 16px 20px;
+      min-width: 280px;
+      position: relative;
+    }
+    .node.trade {
+      background: linear-gradient(135deg, #007A3315 0%, #14141650 100%);
+    }
+    .node.draft {
+      background: linear-gradient(135deg, #007A3325 0%, #14141650 100%);
+    }
+    .node.player {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #0a0a0b;
+    }
+    .node-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .node-type {
+      font-size: 12px;
+      font-weight: 600;
+      color: #22c55e;
+    }
+    .node-date {
+      font-size: 11px;
+      color: #71717a;
+    }
+    .node-title {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+    .node-subtitle {
+      font-size: 12px;
+      color: #22c55e;
+    }
+    .assets {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid #232328;
+      display: flex;
+      gap: 20px;
+    }
+    .asset-group {
+      flex: 1;
+    }
+    .asset-label {
+      font-size: 10px;
+      color: #71717a;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .asset-list {
+      font-size: 11px;
+      color: #a1a1aa;
+    }
+    .asset-list div {
+      margin: 2px 0;
+    }
+    .connector {
+      width: 2px;
+      height: 30px;
+      background: #22c55e;
+    }
+    .player-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid #007A33;
+      background: #232328;
+    }
+    .player-info h3 {
+      font-size: 16px;
+      margin: 0 0 4px 0;
+    }
+    .player-info p {
+      font-size: 12px;
+      color: #71717a;
+      margin: 0;
+    }
+    .comparison {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 20px;
+      padding: 12px 16px;
+      background: #141416;
+      border-radius: 8px;
+      font-size: 13px;
+    }
+    .comparison .label {
+      color: #71717a;
+    }
+    .comparison .value {
+      color: #22c55e;
+      font-weight: 600;
+    }
+    .old-nodes {
+      opacity: 0.6;
+      transform: scale(0.7);
+    }
+    .badge {
+      background: #22c55e20;
+      color: #22c55e;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+<div class="column">
+  <h2>📍 Current (10 nodes)</h2>
+  <div style="font-size: 12px; color: #71717a; text-align: center; max-width: 200px; margin-bottom: 20px;">
+    Separate nodes for each asset, redundant sublabels, verbose
+  </div>
+  <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='500'%3E%3Crect fill='%23141416' x='10' y='10' width='180' height='480' rx='8'/%3E%3Ctext fill='%2371717a' x='100' y='250' text-anchor='middle' font-size='12'%3E(see current UI)%3C/text%3E%3C/svg%3E" style="opacity:0.5"/>
+</div>
+
+<div class="column">
+  <h2>✨ Compact Mode (4 nodes)</h2>
+  <div style="font-size: 12px; color: #71717a; text-align: center; max-width: 200px; margin-bottom: 20px;">
+    Assets inline, cleaner flow, same information
+  </div>
+  
+  <div class="tree">
+    <!-- Origin Trade -->
+    <div class="node trade">
+      <div class="node-header">
+        <span class="node-type">🔄 TRADE</span>
+        <span class="node-date">July 12, 2013</span>
+      </div>
+      <div class="node-title">Celtics trade KG, Pierce, Terry to Nets</div>
+      <div class="assets">
+        <div class="asset-group">
+          <div class="asset-label">Sent →</div>
+          <div class="asset-list">
+            <div>Kevin Garnett</div>
+            <div>Paul Pierce</div>
+            <div>Jason Terry</div>
+          </div>
+        </div>
+        <div class="asset-group">
+          <div class="asset-label">Received ←</div>
+          <div class="asset-list">
+            <div>2014, 2016, 2017, 2018 1sts</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="connector"></div>
+    
+    <!-- Trade #1 for #3 -->
+    <div class="node trade">
+      <div class="node-header">
+        <span class="node-type">🔄 TRADE</span>
+        <span class="node-date">June 22, 2017</span>
+      </div>
+      <div class="node-title">Celtics trade #1 to 76ers for #3</div>
+      <div class="node-subtitle">Moved down to select Tatum</div>
+    </div>
+    
+    <div class="connector"></div>
+    
+    <!-- Draft -->
+    <div class="node draft">
+      <div class="node-header">
+        <span class="node-type">🎯 DRAFT</span>
+        <span class="node-date">June 22, 2017</span>
+      </div>
+      <div class="node-title">Celtics draft Jayson Tatum #3</div>
+      <div class="node-subtitle">Used 2017 Nets pick (via trade down)</div>
+    </div>
+    
+    <div class="connector"></div>
+    
+    <!-- Player -->
+    <div class="node player">
+      <img class="player-img" src="https://cdn.nba.com/headshots/nba/latest/1040x760/1628369.png" alt="Jayson Tatum">
+      <div class="player-info">
+        <h3>Jayson Tatum</h3>
+        <p>BOS • 1st Round (2017)</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="comparison">
+    <span class="label">Reduction:</span>
+    <span class="value">10 → 4 nodes (60% smaller)</span>
+  </div>
+</div>
+
+</body>
+</html>

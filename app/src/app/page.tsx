@@ -10,6 +10,7 @@ interface SelectedPlayer {
   draftYear: number;
   draftPick: number;
   headshotUrl: string | null;
+  jerseyNumber: number | null;
   teamAbbr: string;
   teamName: string;
   teamColor: string;
@@ -110,7 +111,21 @@ export default function Home() {
                   />
                 )}
                 <div>
-                  <h3 className="text-2xl md:text-3xl font-bold">{selectedPlayer.name}</h3>
+                  <h3 className="text-2xl md:text-3xl font-bold flex items-center gap-3">
+                    {selectedPlayer.name}
+                    {selectedPlayer.jerseyNumber !== null && (
+                      <span 
+                        className="text-lg font-bold px-2.5 py-0.5 rounded"
+                        style={{ 
+                          backgroundColor: `${selectedPlayer.teamColor}25`,
+                          color: selectedPlayer.teamColor,
+                          border: `2px solid ${selectedPlayer.teamColor}`
+                        }}
+                      >
+                        #{selectedPlayer.jerseyNumber}
+                      </span>
+                    )}
+                  </h3>
                   <p className="text-zinc-400 flex items-center gap-2">
                     <span 
                       className="w-3 h-3 rounded-full"

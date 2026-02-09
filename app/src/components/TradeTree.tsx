@@ -50,6 +50,8 @@ interface TreeNode {
     assetIndex?: number;
     totalAssets?: number;
     parentTradeId?: string;
+    direction?: "sent" | "received";
+    position?: "above" | "below";
   };
 }
 
@@ -88,11 +90,23 @@ interface TreeData {
     source: string;
     target: string;
     label?: string;
+    acquisitionType?: 'trade' | 'draft' | 'signing' | 'waiver';
   }>;
 }
 
 interface TradeTreeProps {
   playerId: number;
+}
+
+// Format date from "YYYY-MM-DD" to "Month Day, Year"
+function formatDate(dateStr: string): string {
+  if (!dateStr) return '';
+  const date = new Date(dateStr + 'T00:00:00');
+  return date.toLocaleDateString('en-US', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric'
+  });
 }
 
 // Custom node component for players - enhanced
@@ -208,7 +222,7 @@ function TradeNode({ data }: { data: TreeNode["data"] }) {
       
       {/* Date badge */}
       <div className="absolute -top-6 left-1/2 -translate-x-1/2 text-xs text-zinc-500 bg-zinc-900 px-2 py-1 rounded-full border border-zinc-700 whitespace-nowrap">
-        {data.date}
+        {formatDate(data.date || '')}
       </div>
     </div>
   );
@@ -235,7 +249,7 @@ function SimpleTradeNode({ data }: { data: TreeNode["data"] }) {
       >
         <div className="flex items-center justify-between">
           <span>🔄 Trade</span>
-          <span className="text-xs opacity-70">{data.date}</span>
+          <span className="text-xs opacity-70">{formatDate(data.date || '')}</span>
         </div>
       </div>
       <div className="p-4">
@@ -243,6 +257,32 @@ function SimpleTradeNode({ data }: { data: TreeNode["data"] }) {
         {data.sublabel && (
           <div className="text-xs text-green-400 mt-2 flex items-center gap-1">
             <span>→</span> {data.sublabel}
+          </div>
+        )}
+        
+        {/* Inline assets for compact mode */}
+        {(data.assets || data.received) && (
+          <div className="mt-3 pt-3 border-t border-zinc-700 flex gap-4 text-xs">
+            {data.assets && data.assets.length > 0 && (
+              <div className="flex-1">
+                <div className="text-zinc-500 uppercase text-[10px] mb-1">Sent →</div>
+                <div className="text-zinc-400 space-y-0.5">
+                  {data.assets.map((asset: string, i: number) => (
+                    <div key={i}>{asset}</div>
+                  ))}
+                </div>
+              </div>
+            )}
+            {data.received && data.received.length > 0 && (
+              <div className="flex-1">
+                <div className="text-zinc-500 uppercase text-[10px] mb-1">← Received</div>
+                <div className="text-green-400 space-y-0.5">
+                  {data.received.map((asset: string, i: number) => (
+                    <div key={i}>{asset}</div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         )}
       </div>
@@ -270,7 +310,7 @@ function PickNode({ data }: { data: TreeNode["data"] }) {
       >
         <div className="flex items-center justify-between">
           <span>🎯 Draft Pick</span>
-          <span className="text-xs opacity-70">{data.date}</span>
+          <span className="text-xs opacity-70">{formatDate(data.date || '')}</span>
         </div>
       </div>
       <div className="p-4">
@@ -278,19 +318,6 @@ function PickNode({ data }: { data: TreeNode["data"] }) {
         {data.sublabel && (
           <div className="text-xs text-zinc-300 mt-2 flex items-center gap-1">
             <span>→</span> {data.sublabel}
-          </div>
-        )}
-        
-        {/* Show assets received if available */}
-        {data.received && data.received.length > 0 && (
-          <div className="mt-3 pt-3 border-t border-zinc-700">
-            <div className="text-xs text-zinc-500 mb-2">Selected:</div>
-            {data.received.map((asset, i) => (
-              <div key={i} className="text-sm text-green-400 flex items-center gap-2">
-                <span>⭐</span>
-                {asset}
-              </div>
-            ))}
           </div>
         )}
       </div>
@@ -322,7 +349,7 @@ function TradeHeaderNode({ data }: { data: TreeNode["data"] }) {
           <span>🔄</span>
           <span>Trade</span>
         </div>
-        <span className="text-xs opacity-80 font-normal">{data.date}</span>
+        <span className="text-xs opacity-80 font-normal">{formatDate(data.date || '')}</span>
       </div>
       <div className="p-4">
         <div className="text-white text-sm font-medium leading-relaxed">{data.label}</div>
@@ -355,7 +382,8 @@ function TradeHeaderNode({ data }: { data: TreeNode["data"] }) {
 
 // Individual Asset Node - compact representation of a single player, pick, or cash
 function AssetNode({ data }: { data: TreeNode["data"] }) {
-  const color = data.teamFromColor || data.color || "#666";
+  const isReceived = data.direction === 'received';
+  const color = isReceived ? (data.teamToColor || data.color || "#22c55e") : (data.teamFromColor || data.color || "#666");
   const assetType = data.assetType || "player";
   
   // Determine icon based on asset type
@@ -386,15 +414,29 @@ function AssetNode({ data }: { data: TreeNode["data"] }) {
       />
       
       <div className="p-3">
+        {/* Direction indicator for received assets */}
+        {isReceived && (
+          <div className="text-[10px] text-green-400 font-medium mb-1 uppercase tracking-wide">
+            ⬇ Received
+          </div>
+        )}
         <div className="flex items-center gap-2">
           <span className="text-lg">{getIcon()}</span>
           <div className="flex-1 min-w-0">
             <div className="text-white text-sm font-medium truncate">{data.label}</div>
-            <div className="text-xs text-zinc-500 mt-0.5">
-              {data.teamFrom} → {data.teamTo}
-            </div>
+            {!isReceived && (
+              <div className="text-xs text-zinc-500 mt-0.5">
+                {data.teamFrom} → {data.teamTo}
+              </div>
+            )}
           </div>
         </div>
+        {/* Show pick outcome if available */}
+        {data.sublabel && (
+          <div className="text-xs text-green-400 mt-2 pt-2 border-t border-zinc-700">
+            {data.sublabel}
+          </div>
+        )}
       </div>
     </div>
   );
@@ -446,8 +488,8 @@ export function TradeTree({ playerId }: TradeTreeProps) {
     if (!treeData) return;
 
     // Layout: Origin at TOP, Player at BOTTOM
-    const nodeSpacingY = 200;
-    const assetRowSpacing = 120; // Extra space for asset row
+    const nodeSpacingY = 350; // Large spacing to account for variable node heights
+    const assetRowSpacing = 200; // Extra space for asset rows
     const branchSpacingX = 600;
     const containerWidth = 1400;
     const nodeWidth = 300;
@@ -504,31 +546,8 @@ export function TradeTree({ playerId }: TradeTreeProps) {
     const totalWidth = (numBranches - 1) * branchSpacingX;
     const startX = (containerWidth - totalWidth) / 2 - nodeWidth / 2;
 
-    // Calculate max depth considering asset rows take extra space
-    let maxVisualDepth = 0;
-    branchNodes.forEach((steps) => {
-      let depth = 0;
-      steps.forEach((step) => {
-        depth++; // Base step
-        if (step.isHeader) depth += 0.6; // Asset row adds partial height
-      });
-      maxVisualDepth = Math.max(maxVisualDepth, depth);
-    });
-
-    // Player node at center bottom
-    if (playerNode) {
-      positionedNodes.push({
-        id: playerNode.id,
-        type: playerNode.type,
-        data: playerNode.data,
-        draggable: false,
-        connectable: false,
-        position: { 
-          x: (containerWidth - nodeWidth) / 2 - nodeWidth / 2, 
-          y: maxVisualDepth * nodeSpacingY + 100
-        },
-      });
-    }
+    // Track max Y position across all branches to place player at bottom
+    let maxFinalY = 0;
 
     // Position each branch
     let branchIndex = 0;
@@ -542,19 +561,21 @@ export function TradeTree({ playerId }: TradeTreeProps) {
       steps.forEach((step) => {
         const nodeX = branchX;
         
-        // If this is a trade header, position asset nodes ABOVE it first
+        // If this is a trade header, position assets above AND below
         if (step.isHeader) {
           const assets = assetNodes.get(step.node.id) || [];
-          if (assets.length > 0) {
-            // Sort assets by their index
-            assets.sort((a, b) => (a.data.assetIndex || 0) - (b.data.assetIndex || 0));
+          
+          // Separate above (sent) and below (received) assets
+          const aboveAssets = assets.filter(a => a.data.position === 'above' || a.data.direction === 'sent');
+          const belowAssets = assets.filter(a => a.data.position === 'below');
+          
+          // Position ABOVE assets (players sent)
+          if (aboveAssets.length > 0) {
+            aboveAssets.sort((a, b) => (a.data.assetIndex || 0) - (b.data.assetIndex || 0));
+            const totalAboveWidth = aboveAssets.length * assetNodeWidth + (aboveAssets.length - 1) * assetSpacing;
+            const aboveStartX = nodeX + (nodeWidth - totalAboveWidth) / 2;
             
-            // Calculate horizontal spread for assets
-            const totalAssetsWidth = assets.length * assetNodeWidth + (assets.length - 1) * assetSpacing;
-            const assetStartX = nodeX + (nodeWidth - totalAssetsWidth) / 2;
-            
-            // Position assets at current Y (ABOVE trade header)
-            assets.forEach((asset, i) => {
+            aboveAssets.forEach((asset, i) => {
               positionedNodes.push({
                 id: asset.id,
                 type: asset.type,
@@ -562,53 +583,137 @@ export function TradeTree({ playerId }: TradeTreeProps) {
                 draggable: false,
                 connectable: false,
                 position: {
-                  x: assetStartX + i * (assetNodeWidth + assetSpacing),
+                  x: aboveStartX + i * (assetNodeWidth + assetSpacing),
                   y: currentY,
                 },
               });
             });
-            
-            // Move Y down for the trade header
             currentY += assetRowSpacing;
           }
+          
+          // Position the trade header
+          positionedNodes.push({
+            id: step.node.id,
+            type: step.node.type,
+            data: step.node.data,
+            draggable: false,
+            connectable: false,
+            position: { x: nodeX, y: currentY },
+          });
+          currentY += nodeSpacingY;
+          
+          // Position BELOW assets (the relevant pick received)
+          if (belowAssets.length > 0) {
+            belowAssets.sort((a, b) => (a.data.assetIndex || 0) - (b.data.assetIndex || 0));
+            const totalBelowWidth = belowAssets.length * assetNodeWidth + (belowAssets.length - 1) * assetSpacing;
+            const belowStartX = nodeX + (nodeWidth - totalBelowWidth) / 2;
+            
+            belowAssets.forEach((asset, i) => {
+              positionedNodes.push({
+                id: asset.id,
+                type: asset.type,
+                data: asset.data,
+                draggable: false,
+                connectable: false,
+                position: {
+                  x: belowStartX + i * (assetNodeWidth + assetSpacing),
+                  y: currentY,
+                },
+              });
+            });
+            currentY += assetRowSpacing;
+          }
+        } else {
+          // Position the main node (regular trade or pick node)
+          positionedNodes.push({
+            id: step.node.id,
+            type: step.node.type,
+            data: step.node.data,
+            draggable: false,
+            connectable: false,
+            position: { x: nodeX, y: currentY },
+          });
+          currentY += nodeSpacingY;
         }
-
-        // Position the main node (trade header or regular node)
-        positionedNodes.push({
-          id: step.node.id,
-          type: step.node.type,
-          data: step.node.data,
-          draggable: false,
-          connectable: false,
-          position: { x: nodeX, y: currentY },
-        });
-
-        currentY += nodeSpacingY;
       });
 
+      // Track the max Y position across all branches
+      maxFinalY = Math.max(maxFinalY, currentY);
       branchIndex++;
     });
+
+    // Position player node at the bottom, after all chain nodes
+    if (playerNode && branchNodes.size > 0) {
+      positionedNodes.push({
+        id: playerNode.id,
+        type: playerNode.type,
+        data: playerNode.data,
+        draggable: false,
+        connectable: false,
+        position: { 
+          x: (containerWidth - nodeWidth) / 2 - nodeWidth / 2, 
+          y: maxFinalY
+        },
+      });
+    }
+
+    // Handle acquisition-based nodes (acq-*) that aren't part of chain system
+    const acqNodes = treeData.nodes.filter(n => n.id.startsWith('acq-'));
+    if (acqNodes.length > 0 && branchNodes.size === 0) {
+      // Sort by index (extracted from id like "acq-37-0")
+      acqNodes.sort((a, b) => {
+        const aIdx = parseInt(a.id.split('-')[2] || '0');
+        const bIdx = parseInt(b.id.split('-')[2] || '0');
+        return aIdx - bIdx;
+      });
+      
+      const centerX = (containerWidth - nodeWidth) / 2 - nodeWidth / 2;
+      let currentY = 0;
+      
+      // Position acquisition nodes from origin (draft) at top flowing down to player
+      acqNodes.forEach((node) => {
+        positionedNodes.push({
+          id: node.id,
+          type: node.type,
+          data: node.data,
+          draggable: false,
+          connectable: false,
+          position: { x: centerX, y: currentY },
+        });
+        currentY += nodeSpacingY;
+      });
+      
+      // Add player node at bottom
+      if (playerNode) {
+        positionedNodes.push({
+          id: playerNode.id,
+          type: playerNode.type,
+          data: playerNode.data,
+          draggable: false,
+          connectable: false,
+          position: { x: centerX, y: currentY },
+        });
+      }
+    }
 
     // Create edges with styled lines
     treeData.edges.forEach((edge) => {
       // Check if this is an edge from header to asset or asset to next node
       const isAssetEdge = edge.source.includes('-asset-') || edge.target.includes('-asset-');
+      // Check if this is a signing (free agent) - use dotted line
+      const isSigning = edge.acquisitionType === 'signing';
       
       styledEdges.push({
         ...edge,
         type: isAssetEdge ? "bezier" : "smoothstep",
         animated: false,
         style: { 
-          stroke: isAssetEdge ? "#4ade80" : "#22c55e", 
+          stroke: isSigning ? "#60a5fa" : (isAssetEdge ? "#4ade80" : "#22c55e"), 
           strokeWidth: isAssetEdge ? 1.5 : 2,
           opacity: isAssetEdge ? 0.7 : 1,
+          strokeDasharray: isSigning ? "8 4" : undefined, // Dotted line for signings
         },
-        markerEnd: {
-          type: MarkerType.ArrowClosed,
-          color: isAssetEdge ? "#4ade80" : "#22c55e",
-          width: isAssetEdge ? 12 : 16,
-          height: isAssetEdge ? 12 : 16,
-        },
+        // No arrows - clean lines only
       });
     });
 
@@ -752,31 +857,39 @@ export function TradeTree({ playerId }: TradeTreeProps) {
           proOptions={{ hideAttribution: true }}
         >
           <Background color="#1a1a1b" gap={32} size={1} />
-          <MiniMap
-            nodeColor={(node) => {
-              if (node.type === "player") return "#22c55e";
-              if (node.type === "pick") return "#16a34a";
-              return "#52525b";
-            }}
-            maskColor="rgba(10, 10, 11, 0.9)"
-            className="!bg-[#141416] !border-[#232328] !rounded-lg"
-            pannable
-            zoomable
-          />
+          {/* MiniMap disabled for mobile - was getting in the way */}
           
-          {/* Branches legend */}
-          {treeData.branches.length > 1 && (
-            <Panel position="top-left" className="!m-4">
-              <div className="bg-[#141416] p-3 rounded-lg border border-[#232328] text-sm">
-                <div className="text-zinc-400 mb-2 font-medium">Branches</div>
-                {treeData.branches.map((branch, i) => (
-                  <div key={i} className="text-zinc-500 text-xs mb-1">
-                    Branch {i + 1}: {branch.stepsCount} steps
+          {/* Legend panel */}
+          <Panel position="top-left" className="!m-4">
+            <div className="bg-[#141416] p-3 rounded-lg border border-[#232328] text-sm space-y-3">
+              {/* Line types legend */}
+              <div>
+                <div className="text-zinc-400 mb-2 font-medium text-xs uppercase tracking-wide">Line Types</div>
+                <div className="space-y-1.5">
+                  <div className="flex items-center gap-2 text-xs text-zinc-500">
+                    <div className="w-6 h-0.5 bg-green-500" />
+                    <span>Traded / Drafted</span>
                   </div>
-                ))}
+                  <div className="flex items-center gap-2 text-xs text-zinc-500">
+                    <div className="w-6 h-0.5 bg-blue-400" style={{ background: 'repeating-linear-gradient(to right, #60a5fa 0, #60a5fa 4px, transparent 4px, transparent 8px)' }} />
+                    <span>Signed (Free Agent)</span>
+                  </div>
+                </div>
               </div>
-            </Panel>
-          )}
+              
+              {/* Branches legend */}
+              {treeData.branches.length > 1 && (
+                <div className="pt-2 border-t border-zinc-700">
+                  <div className="text-zinc-400 mb-2 font-medium text-xs uppercase tracking-wide">Branches</div>
+                  {treeData.branches.map((branch, i) => (
+                    <div key={i} className="text-zinc-500 text-xs mb-1">
+                      Branch {i + 1}: {branch.stepsCount} steps
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          </Panel>
         </ReactFlow>
       </div>
 
@@ -786,7 +899,7 @@ export function TradeTree({ playerId }: TradeTreeProps) {
           <div className="flex items-center gap-2 mb-2">
             <span className="text-green-500">🌱</span>
             <span className="text-sm font-medium text-zinc-300">Origin Trade</span>
-            <span className="text-xs text-zinc-500">{treeData.originTrade.date}</span>
+            <span className="text-xs text-zinc-500">{formatDate(treeData.originTrade.date)}</span>
           </div>
           <p className="text-sm text-zinc-400">{treeData.originTrade.description}</p>
         </div>
