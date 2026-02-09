@@ -1,0 +1,44 @@
+{
+  "_meta": {
+    "team": "BOS",
+    "player": "Jayson Tatum",
+    "source": "NBA Draft History",
+    "sourceUrl": "https://www.nba.com/celtics/draft",
+    "originYear": 2017,
+    "depth": 2,
+    "lastUpdated": "2026-02-09"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jayson Tatum",
+    "acquisitionType": "draft",
+    "date": "2017-06-22",
+    "draftPick": 3,
+    "draftRound": 1,
+    "currentTeam": "BOS",
+    "note": "2024 NBA Champion, 5x All-Star",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2017 1st Round Pick (#1 overall)",
+        "acquisitionType": "trade",
+        "date": "2017-06-19",
+        "tradePartner": "PHI",
+        "tradeDescription": "Celtics trade #1 pick to 76ers for #3 pick and future 1st (2019 SAC pick that became Romeo Langford)",
+        "note": "Markelle Fultz selected #1 by PHI",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2017 #1 Overall Pick",
+            "acquisitionType": "trade",
+            "date": "2013-06-27",
+            "tradePartner": "BKN",
+            "tradeDescription": "Part of the Kevin Garnett/Paul Pierce trade to Brooklyn",
+            "note": "The infamous Nets trade - pick conveyed as #1 in 2017",
+            "isOrigin": true
+          }
+        ]
+      }
+    ]
+  }
+}

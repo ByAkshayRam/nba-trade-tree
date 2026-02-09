@@ -1,0 +1,44 @@
+{
+  "_meta": {
+    "team": "BOS",
+    "player": "Jaylen Brown",
+    "source": "NBA Draft History",
+    "sourceUrl": "https://www.nba.com/celtics/draft",
+    "originYear": 2016,
+    "depth": 2,
+    "lastUpdated": "2026-02-09"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jaylen Brown",
+    "acquisitionType": "draft",
+    "date": "2016-06-23",
+    "draftPick": 3,
+    "draftRound": 1,
+    "currentTeam": "BOS",
+    "note": "2024 NBA Finals MVP, 3x All-Star",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2016 1st Round Pick (#3 overall)",
+        "acquisitionType": "trade",
+        "date": "2013-06-27",
+        "tradePartner": "BKN",
+        "tradeDescription": "Part of the Kevin Garnett/Paul Pierce trade to Brooklyn",
+        "note": "The infamous Nets trade - pick conveyed as #3 in 2016",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Kevin Garnett",
+            "acquisitionType": "trade",
+            "date": "2007-07-31",
+            "tradePartner": "MIN",
+            "tradeDescription": "Celtics acquire KG for Al Jefferson, Ryan Gomes, Sebastian Telfair, Gerald Green, Theo Ratliff, 2009 1st",
+            "note": "2008 NBA Champion, DPOY",
+            "isOrigin": true
+          }
+        ]
+      }
+    ]
+  }
+}

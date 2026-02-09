@@ -1,4 +1,5 @@
 import AcquisitionTree from "@/components/AcquisitionTreeClient";
+import PlayerSelector from "@/components/PlayerSelector";
 import Link from "next/link";
 
 interface PageProps {
@@ -65,20 +66,23 @@ export default async function AcquisitionTreePage({ params }: PageProps) {
               {data.team} Acquisition Tree
             </h1>
           </div>
-          <div className="text-right">
-            <div className="text-sm text-gray-400">Source</div>
-            {data.sourceUrl ? (
-              <a
-                href={data.sourceUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-400 hover:underline text-sm"
-              >
-                {data.source}
-              </a>
-            ) : (
-              <span className="text-gray-300 text-sm">{data.source}</span>
-            )}
+          <div className="flex items-center gap-6">
+            <PlayerSelector currentPlayer={playerId} teamAbbr={teamAbbr} />
+            <div className="text-right">
+              <div className="text-sm text-gray-400">Source</div>
+              {data.sourceUrl ? (
+                <a
+                  href={data.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:underline text-sm"
+                >
+                  {data.source}
+                </a>
+              ) : (
+                <span className="text-gray-300 text-sm">{data.source}</span>
+              )}
+            </div>
           </div>
         </div>
       </header>

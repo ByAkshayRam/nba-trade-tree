@@ -1,0 +1,58 @@
+{
+  "_meta": {
+    "team": "BOS",
+    "player": "Derrick White",
+    "source": "ESPN Trade History",
+    "sourceUrl": "https://www.espn.com/nba/player/_/id/3078576/derrick-white",
+    "originYear": 2022,
+    "depth": 2,
+    "lastUpdated": "2026-02-09"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Derrick White",
+    "acquisitionType": "trade",
+    "date": "2022-02-10",
+    "tradePartner": "SAS",
+    "tradeDescription": "Celtics acquire Derrick White for Josh Richardson, Romeo Langford, and a 2022 1st round pick",
+    "currentTeam": "BOS",
+    "note": "2024 NBA Champion, key defensive piece",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Josh Richardson",
+        "acquisitionType": "trade",
+        "date": "2021-03-25",
+        "tradePartner": "DAL",
+        "tradeDescription": "Celtics acquire Richardson for Moses Brown and 2021 2nd",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Moses Brown",
+            "acquisitionType": "trade",
+            "date": "2021-03-25",
+            "tradePartner": "OKC",
+            "tradeDescription": "Part of the Richardson deal",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Romeo Langford",
+        "acquisitionType": "draft",
+        "date": "2019-06-20",
+        "draftPick": 14,
+        "tradeDescription": "Drafted with pick acquired from SAC (via PHI in Fultz trade)",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2022 1st Round Pick",
+        "acquisitionType": "own",
+        "note": "Boston's own pick",
+        "isOrigin": true
+      }
+    ]
+  }
+}
