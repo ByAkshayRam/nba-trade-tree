@@ -1,0 +1,24 @@
+{
+  "_meta": {
+    "team": "BOS",
+    "player": "Payton Pritchard",
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/p/pritcpa01.html",
+    "originYear": 2020,
+    "depth": 1,
+    "lastUpdated": "2026-02-09",
+    "verificationStatus": "VERIFIED"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Payton Pritchard",
+    "acquisitionType": "draft",
+    "date": "2020-11-18",
+    "draftPick": 26,
+    "draftRound": 1,
+    "currentTeam": "BOS",
+    "note": "2024 NBA Champion, Fast PP. Celtics drafted with their OWN pick.",
+    "isOrigin": true,
+    "tradeDescription": "Drafted by Celtics with their own 1st round pick (26th overall)"
+  }
+}

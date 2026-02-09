@@ -1,0 +1,40 @@
+{
+  "_meta": {
+    "team": "BOS",
+    "player": "John Tonje",
+    "source": "Basketball-Reference, MassLive",
+    "sourceUrl": "https://www.basketball-reference.com/teams/BOS/2026_transactions.html",
+    "originYear": 2025,
+    "depth": 2,
+    "lastUpdated": "2026-02-09",
+    "verificationStatus": "VERIFIED"
+  },
+  "tree": {
+    "type": "player",
+    "name": "John Tonje",
+    "acquisitionType": "trade",
+    "date": "2026-02-05",
+    "tradePartner": "UTA",
+    "currentTeam": "BOS",
+    "tradeDescription": "Acquired from Utah in Chris Boucher deal. Boucher + cash + 2027 2nd to Jazz for Tonje (two-way) and trade exception",
+    "note": "2025 2nd round pick (53rd overall) by Utah from Wisconsin",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Chris Boucher",
+        "acquisitionType": "free-agent",
+        "date": "2025-08-10",
+        "tradeDescription": "Signed as unrestricted free agent",
+        "note": "Free agent signing - TRUE ORIGIN. Previously with Toronto.",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2027 2nd Round Pick",
+        "acquisitionType": "own",
+        "note": "Celtics own pick - TRUE ORIGIN (originally from Denver)",
+        "isOrigin": true
+      }
+    ]
+  }
+}

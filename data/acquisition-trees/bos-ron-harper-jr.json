@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "team": "BOS",
+    "player": "Ron Harper Jr.",
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/h/harpero02.html",
+    "originYear": 2025,
+    "depth": 1,
+    "lastUpdated": "2026-02-09",
+    "verificationStatus": "VERIFIED"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Ron Harper Jr.",
+    "acquisitionType": "undrafted",
+    "date": "2025-10-16",
+    "currentTeam": "BOS",
+    "note": "Undrafted from Rutgers. Son of 5x NBA Champion Ron Harper. Signed to two-way contract.",
+    "isOrigin": true,
+    "tradeDescription": "Signed as undrafted free agent (two-way contract) - no assets exchanged"
+  }
+}
