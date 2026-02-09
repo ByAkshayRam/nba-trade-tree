@@ -1,4 +1,4 @@
-import AcquisitionTree from "@/components/AcquisitionTree";
+import AcquisitionTree from "@/components/AcquisitionTreeClient";
 import Link from "next/link";
 
 interface PageProps {
