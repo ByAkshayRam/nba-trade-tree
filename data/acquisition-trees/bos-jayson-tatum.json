@@ -4,8 +4,8 @@
     "player": "Jayson Tatum",
     "source": "NBA/ESPN Trade History Research",
     "sourceUrl": "https://www.basketball-reference.com/players/t/tatumja01.html",
-    "originYear": 1998,
-    "depth": 6,
+    "originYear": 1996,
+    "depth": 7,
     "lastUpdated": "2026-02-09"
   },
   "tree": {
@@ -33,8 +33,8 @@
             "acquisitionType": "trade",
             "date": "2013-06-27",
             "tradePartner": "BKN",
-            "tradeDescription": "The infamous Nets trade: KG, Pierce, Terry, DJ White for picks",
-            "note": "Conveyed as #1 overall in 2017",
+            "tradeDescription": "The Nets trade: KG, Pierce, Terry for multiple unprotected picks",
+            "note": "One of the most lopsided trades in NBA history",
             "assetsGivenUp": [
               {
                 "type": "player",
@@ -42,8 +42,8 @@
                 "acquisitionType": "trade",
                 "date": "2007-07-31",
                 "tradePartner": "MIN",
-                "tradeDescription": "Celtics acquire KG for Al Jefferson, Ryan Gomes, Gerald Green, Sebastian Telfair, Theo Ratliff, 2009 1st",
-                "note": "2008 NBA Champion, DPOY",
+                "tradeDescription": "Celtics acquire KG for Al Jefferson, Gerald Green, Ryan Gomes, Sebastian Telfair, Theo Ratliff, 2009 1st",
+                "note": "2008 NBA Champion, DPOY, 15x All-Star",
                 "assetsGivenUp": [
                   {
                     "type": "player",
@@ -52,18 +52,8 @@
                     "date": "2004-06-24",
                     "draftPick": 15,
                     "draftRound": 1,
-                    "tradeDescription": "Drafted by Celtics with their own pick",
-                    "note": "Celtics own pick - TRUE ORIGIN",
-                    "isOrigin": true
-                  },
-                  {
-                    "type": "player",
-                    "name": "Ryan Gomes",
-                    "acquisitionType": "draft",
-                    "date": "2005-06-28",
-                    "draftPick": 50,
-                    "draftRound": 2,
-                    "tradeDescription": "Drafted by Celtics with their own 2nd round pick",
+                    "tradeDescription": "Drafted by Celtics with their OWN pick",
+                    "note": "Celtics finished 36-46 in 2003-04",
                     "isOrigin": true
                   },
                   {
@@ -73,7 +63,18 @@
                     "date": "2005-06-28",
                     "draftPick": 18,
                     "draftRound": 1,
-                    "tradeDescription": "Drafted by Celtics with their own pick",
+                    "tradeDescription": "Drafted by Celtics with their OWN pick",
+                    "note": "High school to NBA, dunk contest winner",
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "player",
+                    "name": "Ryan Gomes",
+                    "acquisitionType": "draft",
+                    "date": "2005-06-28",
+                    "draftPick": 50,
+                    "draftRound": 2,
+                    "tradeDescription": "Drafted by Celtics with their OWN 2nd round pick",
                     "isOrigin": true
                   },
                   {
@@ -90,7 +91,7 @@
                         "acquisitionType": "trade",
                         "date": "2003-02-20",
                         "tradePartner": "DAL",
-                        "tradeDescription": "Acquired from Dallas for Antoine Walker",
+                        "tradeDescription": "Acquired from Dallas for Antoine Walker and Tony Delk",
                         "assetsGivenUp": [
                           {
                             "type": "player",
@@ -99,13 +100,42 @@
                             "date": "1996-06-26",
                             "draftPick": 6,
                             "draftRound": 1,
-                            "tradeDescription": "Drafted by Celtics with their own pick",
-                            "note": "Celtics own pick - TRUE ORIGIN",
+                            "tradeDescription": "Drafted by Celtics with their OWN pick",
+                            "note": "3x All-Star, Celtics finished 33-49 in 1995-96",
                             "isOrigin": true
+                          },
+                          {
+                            "type": "player",
+                            "name": "Tony Delk",
+                            "acquisitionType": "trade",
+                            "date": "2002-08-02",
+                            "tradePartner": "PHO",
+                            "tradeDescription": "Acquired from Phoenix for Rodney Rogers",
+                            "assetsGivenUp": [
+                              {
+                                "type": "player",
+                                "name": "Rodney Rogers",
+                                "acquisitionType": "free-agent",
+                                "date": "2001-08-01",
+                                "tradeDescription": "Signed as unrestricted free agent from LAC",
+                                "note": "Free agent signing - no assets given up",
+                                "isOrigin": true
+                              }
+                            ]
                           }
                         ]
                       }
                     ]
+                  },
+                  {
+                    "type": "player",
+                    "name": "Theo Ratliff",
+                    "acquisitionType": "trade",
+                    "date": "2006-01-26",
+                    "tradePartner": "POR",
+                    "tradeDescription": "Acquired from Portland in multi-team trade",
+                    "note": "Expiring contract used as salary filler",
+                    "isOrigin": true
                   }
                 ]
               },
@@ -116,8 +146,8 @@
                 "date": "1998-06-24",
                 "draftPick": 10,
                 "draftRound": 1,
-                "tradeDescription": "Drafted by Celtics with their own pick",
-                "note": "The Truth - 2008 Finals MVP, Celtics own pick - TRUE ORIGIN",
+                "tradeDescription": "Drafted by Celtics with their OWN pick",
+                "note": "The Truth - 2008 Finals MVP, 10x All-Star. Celtics finished 36-46 in 1997-98.",
                 "isOrigin": true
               },
               {
@@ -125,8 +155,8 @@
                 "name": "Jason Terry",
                 "acquisitionType": "free-agent",
                 "date": "2012-07-11",
-                "tradeDescription": "Signed as free agent",
-                "note": "Free agent signing",
+                "tradeDescription": "Signed as unrestricted free agent from DAL",
+                "note": "The Jet - 2011 NBA Champion with Dallas. Signed 3yr/$15M deal. FREE AGENT = no assets given up",
                 "isOrigin": true
               }
             ]
