@@ -100,26 +100,39 @@ function AssetNode({ data }: { data: AcquisitionNodeData }) {
   );
 }
 
+// ESPN Player ID mapping for headshots
+const ESPN_PLAYER_IDS: Record<string, string> = {
+  "Nikola Vucevic": "6478",
+  "Jayson Tatum": "4065648",
+  "Jaylen Brown": "3917376",
+  "Derrick White": "3078576",
+  "Payton Pritchard": "4066354",
+  "Al Horford": "3213",
+  "Jrue Holiday": "6442",
+};
+
 // Target node with handles and player image
 function TargetNode({ data }: { data: AcquisitionNodeData }) {
-  // Generate headshot URL from player name (NBA CDN pattern)
-  const playerSlug = data.label.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z-]/g, '');
-  const headshotUrl = `https://cdn.nba.com/headshots/nba/latest/1040x760/${playerSlug}.png`;
-  // Fallback to ESPN style
-  const espnUrl = "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6478.png&w=350&h=254";
+  // Get ESPN player ID for headshot
+  const espnId = ESPN_PLAYER_IDS[data.label] || "";
+  const espnUrl = espnId 
+    ? `https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/${espnId}.png&w=350&h=254`
+    : "";
   
   return (
     <div className="px-5 py-4 rounded-xl shadow-xl min-w-[240px] bg-green-900 border-2 border-green-400 relative">
       <Handle type="source" position={Position.Right} className="!bg-green-400 !w-4 !h-4" />
       <div className="flex items-start gap-4">
-        <img 
-          src={espnUrl}
-          alt={data.label}
-          className="w-16 h-16 rounded-full object-cover bg-green-950 border-2 border-green-400"
-          onError={(e) => {
-            (e.target as HTMLImageElement).style.display = 'none';
-          }}
-        />
+        {espnUrl && (
+          <img 
+            src={espnUrl}
+            alt={data.label}
+            className="w-16 h-16 rounded-full object-cover bg-green-950 border-2 border-green-400"
+            onError={(e) => {
+              (e.target as HTMLImageElement).style.display = 'none';
+            }}
+          />
+        )}
         <div className="flex-1">
           <div className="flex items-center gap-2 mb-1">
             <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
