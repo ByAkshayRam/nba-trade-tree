@@ -83,8 +83,20 @@ export default async function AcquisitionTreePage({ params }: PageProps) {
         </div>
       </header>
 
-      {/* Tree Visualization */}
+      {/* Main Content */}
       <main className="max-w-7xl mx-auto px-6 py-8">
+        {/* Story Summary - Now at top */}
+        <div className="mb-8 bg-gray-900 rounded-lg p-6">
+          <h3 className="text-xl font-bold mb-4">The Story</h3>
+          <p className="text-gray-300 leading-relaxed">
+            The {data.team}&apos;s acquisition of <strong>{data.player}</strong> can be traced 
+            back {2026 - data.originYear} years to a single draft pick in {data.originYear}. 
+            Through {data.depth} transactions, that original asset evolved into the player 
+            they have today.
+          </p>
+        </div>
+
+        {/* Tree Visualization */}
         <AcquisitionTree
           nodes={data.nodes}
           edges={data.edges}
@@ -113,17 +125,6 @@ export default async function AcquisitionTreePage({ params }: PageProps) {
             </div>
             <div className="text-gray-400 mt-1">Origin Year</div>
           </div>
-        </div>
-
-        {/* Story Summary */}
-        <div className="mt-8 bg-gray-900 rounded-lg p-6">
-          <h3 className="text-xl font-bold mb-4">The Story</h3>
-          <p className="text-gray-300 leading-relaxed">
-            The {data.team}&apos;s acquisition of <strong>{data.player}</strong> can be traced 
-            back {2026 - data.originYear} years to a single draft pick in {data.originYear}. 
-            Through {data.depth} transactions, that original asset evolved into the player 
-            they have today.
-          </p>
         </div>
       </main>
     </div>
