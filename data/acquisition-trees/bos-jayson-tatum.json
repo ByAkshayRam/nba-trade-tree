@@ -2,10 +2,10 @@
   "_meta": {
     "team": "BOS",
     "player": "Jayson Tatum",
-    "source": "NBA Draft History",
-    "sourceUrl": "https://www.nba.com/celtics/draft",
-    "originYear": 2017,
-    "depth": 2,
+    "source": "NBA/ESPN Trade History Research",
+    "sourceUrl": "https://www.basketball-reference.com/players/t/tatumja01.html",
+    "originYear": 1998,
+    "depth": 6,
     "lastUpdated": "2026-02-09"
   },
   "tree": {
@@ -20,22 +20,116 @@
     "assetsGivenUp": [
       {
         "type": "pick",
-        "name": "2017 1st Round Pick (#1 overall)",
+        "name": "2017 #3 Pick (traded down from #1)",
         "acquisitionType": "trade",
         "date": "2017-06-19",
         "tradePartner": "PHI",
-        "tradeDescription": "Celtics trade #1 pick to 76ers for #3 pick and future 1st (2019 SAC pick that became Romeo Langford)",
-        "note": "Markelle Fultz selected #1 by PHI",
+        "tradeDescription": "Celtics trade #1 pick to 76ers for #3 pick and future 1st",
+        "note": "Fultz went #1, Lonzo #2, Tatum #3",
         "assetsGivenUp": [
           {
             "type": "pick",
-            "name": "2017 #1 Overall Pick",
+            "name": "2017 #1 Overall Pick (from BKN)",
             "acquisitionType": "trade",
             "date": "2013-06-27",
             "tradePartner": "BKN",
-            "tradeDescription": "Part of the Kevin Garnett/Paul Pierce trade to Brooklyn",
-            "note": "The infamous Nets trade - pick conveyed as #1 in 2017",
-            "isOrigin": true
+            "tradeDescription": "The infamous Nets trade: KG, Pierce, Terry, DJ White for picks",
+            "note": "Conveyed as #1 overall in 2017",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Kevin Garnett",
+                "acquisitionType": "trade",
+                "date": "2007-07-31",
+                "tradePartner": "MIN",
+                "tradeDescription": "Celtics acquire KG for Al Jefferson, Ryan Gomes, Gerald Green, Sebastian Telfair, Theo Ratliff, 2009 1st",
+                "note": "2008 NBA Champion, DPOY",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Al Jefferson",
+                    "acquisitionType": "draft",
+                    "date": "2004-06-24",
+                    "draftPick": 15,
+                    "draftRound": 1,
+                    "tradeDescription": "Drafted by Celtics with their own pick",
+                    "note": "Celtics own pick - TRUE ORIGIN",
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "player",
+                    "name": "Ryan Gomes",
+                    "acquisitionType": "draft",
+                    "date": "2005-06-28",
+                    "draftPick": 50,
+                    "draftRound": 2,
+                    "tradeDescription": "Drafted by Celtics with their own 2nd round pick",
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "player",
+                    "name": "Gerald Green",
+                    "acquisitionType": "draft",
+                    "date": "2005-06-28",
+                    "draftPick": 18,
+                    "draftRound": 1,
+                    "tradeDescription": "Drafted by Celtics with their own pick",
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "player",
+                    "name": "Sebastian Telfair",
+                    "acquisitionType": "trade",
+                    "date": "2006-06-28",
+                    "tradePartner": "POR",
+                    "tradeDescription": "Acquired from Portland for Raef LaFrentz",
+                    "assetsGivenUp": [
+                      {
+                        "type": "player",
+                        "name": "Raef LaFrentz",
+                        "acquisitionType": "trade",
+                        "date": "2003-02-20",
+                        "tradePartner": "DAL",
+                        "tradeDescription": "Acquired from Dallas for Antoine Walker",
+                        "assetsGivenUp": [
+                          {
+                            "type": "player",
+                            "name": "Antoine Walker",
+                            "acquisitionType": "draft",
+                            "date": "1996-06-26",
+                            "draftPick": 6,
+                            "draftRound": 1,
+                            "tradeDescription": "Drafted by Celtics with their own pick",
+                            "note": "Celtics own pick - TRUE ORIGIN",
+                            "isOrigin": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "player",
+                "name": "Paul Pierce",
+                "acquisitionType": "draft",
+                "date": "1998-06-24",
+                "draftPick": 10,
+                "draftRound": 1,
+                "tradeDescription": "Drafted by Celtics with their own pick",
+                "note": "The Truth - 2008 Finals MVP, Celtics own pick - TRUE ORIGIN",
+                "isOrigin": true
+              },
+              {
+                "type": "player",
+                "name": "Jason Terry",
+                "acquisitionType": "free-agent",
+                "date": "2012-07-11",
+                "tradeDescription": "Signed as free agent",
+                "note": "Free agent signing",
+                "isOrigin": true
+              }
+            ]
           }
         ]
       }

@@ -2,10 +2,10 @@
   "_meta": {
     "team": "BOS",
     "player": "Jaylen Brown",
-    "source": "NBA Draft History",
-    "sourceUrl": "https://www.nba.com/celtics/draft",
-    "originYear": 2016,
-    "depth": 2,
+    "source": "NBA/ESPN Trade History Research",
+    "sourceUrl": "https://www.basketball-reference.com/players/b/brownja02.html",
+    "originYear": 1998,
+    "depth": 5,
     "lastUpdated": "2026-02-09"
   },
   "tree": {
@@ -20,12 +20,12 @@
     "assetsGivenUp": [
       {
         "type": "pick",
-        "name": "2016 1st Round Pick (#3 overall)",
+        "name": "2016 #3 Pick (from BKN)",
         "acquisitionType": "trade",
         "date": "2013-06-27",
         "tradePartner": "BKN",
-        "tradeDescription": "Part of the Kevin Garnett/Paul Pierce trade to Brooklyn",
-        "note": "The infamous Nets trade - pick conveyed as #3 in 2016",
+        "tradeDescription": "The infamous Nets trade: KG, Pierce, Terry for picks",
+        "note": "Pick conveyed as #3 in 2016",
         "assetsGivenUp": [
           {
             "type": "player",
@@ -33,8 +33,49 @@
             "acquisitionType": "trade",
             "date": "2007-07-31",
             "tradePartner": "MIN",
-            "tradeDescription": "Celtics acquire KG for Al Jefferson, Ryan Gomes, Sebastian Telfair, Gerald Green, Theo Ratliff, 2009 1st",
+            "tradeDescription": "Celtics acquire KG for Al Jefferson, Ryan Gomes, Gerald Green, Sebastian Telfair, Theo Ratliff, 2009 1st",
             "note": "2008 NBA Champion, DPOY",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Al Jefferson",
+                "acquisitionType": "draft",
+                "date": "2004-06-24",
+                "draftPick": 15,
+                "draftRound": 1,
+                "tradeDescription": "Drafted by Celtics with their own pick",
+                "note": "Celtics own pick - TRUE ORIGIN",
+                "isOrigin": true
+              },
+              {
+                "type": "player",
+                "name": "Gerald Green",
+                "acquisitionType": "draft",
+                "date": "2005-06-28",
+                "draftPick": 18,
+                "draftRound": 1,
+                "tradeDescription": "Drafted by Celtics with their own pick",
+                "isOrigin": true
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Paul Pierce",
+            "acquisitionType": "draft",
+            "date": "1998-06-24",
+            "draftPick": 10,
+            "draftRound": 1,
+            "tradeDescription": "Drafted by Celtics with their own pick",
+            "note": "The Truth - 2008 Finals MVP, Celtics own pick - TRUE ORIGIN",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Jason Terry",
+            "acquisitionType": "free-agent",
+            "date": "2012-07-11",
+            "tradeDescription": "Signed as free agent",
             "isOrigin": true
           }
         ]
