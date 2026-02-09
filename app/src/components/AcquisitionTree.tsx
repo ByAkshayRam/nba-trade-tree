@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useEffect, useState, useCallback } from "react";
+import { useMemo, useEffect, useState } from "react";
 import {
   ReactFlow,
   Background,
@@ -11,6 +11,7 @@ import {
   ConnectionMode,
   Node,
   Edge,
+  Handle,
 } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
 import ELK from "elkjs/lib/elk.bundled.js";
@@ -53,10 +54,12 @@ interface AcquisitionTreeProps {
   player: string;
 }
 
-// Player node
+// Player node with handles
 function PlayerNode({ data }: { data: AcquisitionNodeData }) {
   return (
-    <div className="px-4 py-3 rounded-lg shadow-lg min-w-[180px] bg-zinc-900 border-l-4 border-l-blue-500">
+    <div className="px-4 py-3 rounded-lg shadow-lg min-w-[180px] bg-zinc-900 border-l-4 border-l-blue-500 relative">
+      <Handle type="target" position={Position.Left} className="!bg-blue-500 !w-3 !h-3" />
+      <Handle type="source" position={Position.Right} className="!bg-blue-500 !w-3 !h-3" />
       <div className="flex items-center gap-2 mb-1">
         <div className="w-2 h-2 rounded-full bg-blue-500" />
         <span className="text-[10px] text-blue-400 font-semibold uppercase">Player</span>
@@ -68,10 +71,12 @@ function PlayerNode({ data }: { data: AcquisitionNodeData }) {
   );
 }
 
-// Pick node
+// Pick node with handles
 function PickNode({ data }: { data: AcquisitionNodeData }) {
   return (
-    <div className="px-4 py-3 rounded-lg shadow-lg min-w-[180px] bg-green-950/50 border-l-4 border-l-green-500">
+    <div className="px-4 py-3 rounded-lg shadow-lg min-w-[180px] bg-green-950/50 border-l-4 border-l-green-500 relative">
+      <Handle type="target" position={Position.Left} className="!bg-green-500 !w-3 !h-3" />
+      <Handle type="source" position={Position.Right} className="!bg-green-500 !w-3 !h-3" />
       <div className="flex items-center gap-2 mb-1">
         <div className="w-2 h-2 rounded-full bg-green-500" />
         <span className="text-[10px] text-green-400 font-semibold uppercase">Draft Pick</span>
@@ -82,21 +87,24 @@ function PickNode({ data }: { data: AcquisitionNodeData }) {
   );
 }
 
-// Asset node (secondary origins)
+// Asset node with handles
 function AssetNode({ data }: { data: AcquisitionNodeData }) {
   const isPick = data.nodeType === "pick";
   return (
-    <div className={`px-3 py-2 rounded shadow min-w-[140px] border ${isPick ? 'bg-green-950/30 border-green-800' : 'bg-zinc-800/50 border-zinc-700'}`}>
+    <div className={`px-3 py-2 rounded shadow min-w-[140px] border relative ${isPick ? 'bg-green-950/30 border-green-800' : 'bg-zinc-800/50 border-zinc-700'}`}>
+      <Handle type="target" position={Position.Left} className="!bg-zinc-500 !w-2 !h-2" />
+      <Handle type="source" position={Position.Right} className="!bg-zinc-500 !w-2 !h-2" />
       <div className="font-medium text-zinc-300 text-xs">{data.label}</div>
       {data.date && <div className="text-[9px] text-zinc-600 mt-0.5">{data.date}</div>}
     </div>
   );
 }
 
-// Target node (Vucevic)
+// Target node with handles
 function TargetNode({ data }: { data: AcquisitionNodeData }) {
   return (
-    <div className="px-5 py-4 rounded-xl shadow-xl min-w-[200px] bg-green-900 border-2 border-green-400">
+    <div className="px-5 py-4 rounded-xl shadow-xl min-w-[200px] bg-green-900 border-2 border-green-400 relative">
+      <Handle type="target" position={Position.Left} className="!bg-green-400 !w-4 !h-4" />
       <div className="flex items-center gap-2 mb-2">
         <div className="w-3 h-3 rounded-full bg-green-400 animate-pulse" />
         <span className="text-xs text-green-300 font-bold uppercase">Acquired</span>
@@ -107,10 +115,11 @@ function TargetNode({ data }: { data: AcquisitionNodeData }) {
   );
 }
 
-// Origin node (Moïso)
+// Origin node with handles
 function OriginNode({ data }: { data: AcquisitionNodeData }) {
   return (
-    <div className="px-5 py-4 rounded-xl shadow-xl min-w-[200px] bg-amber-950 border-2 border-amber-400 animate-pulse">
+    <div className="px-5 py-4 rounded-xl shadow-xl min-w-[200px] bg-amber-950 border-2 border-amber-400 animate-pulse relative">
+      <Handle type="source" position={Position.Right} className="!bg-amber-400 !w-4 !h-4" />
       <div className="flex items-center gap-2 mb-2">
         <span className="text-amber-400">★</span>
         <span className="text-xs text-amber-300 font-bold uppercase">Origin</span>
@@ -138,8 +147,8 @@ const NODE_HEIGHT = 80;
 const elkOptions = {
   "elk.algorithm": "layered",
   "elk.direction": "RIGHT",
-  "elk.spacing.nodeNode": "40",
-  "elk.layered.spacing.nodeNodeBetweenLayers": "80",
+  "elk.spacing.nodeNode": "50",
+  "elk.layered.spacing.nodeNodeBetweenLayers": "100",
   "elk.edgeRouting": "ORTHOGONAL",
 };
 
@@ -187,12 +196,10 @@ export default function AcquisitionTree({
           type: nodeType,
           data: n.data,
           position: { x: 0, y: 0 },
-          sourcePosition: Position.Right,
-          targetPosition: Position.Left,
         };
       });
 
-      // Create edges with styling
+      // Create edges - using default type for visibility
       const flowEdges: Edge[] = initialEdges.map((e) => {
         const sourceNode = initialNodes.find(n => n.id === e.source);
         const isMainPath = !sourceNode?.data.isOrigin || sourceNode?.id === primaryOriginId;
@@ -201,15 +208,14 @@ export default function AcquisitionTree({
           id: e.id,
           source: e.source,
           target: e.target,
-          type: "smoothstep",
-          animated: false,
+          type: "default", // Simple straight lines
           style: {
-            stroke: isMainPath ? "#22c55e" : "#52525b",
+            stroke: isMainPath ? "#22c55e" : "#6b7280",
             strokeWidth: isMainPath ? 3 : 2,
           },
           markerEnd: {
             type: MarkerType.ArrowClosed,
-            color: isMainPath ? "#22c55e" : "#52525b",
+            color: isMainPath ? "#22c55e" : "#6b7280",
             width: 20,
             height: 20,
           },
@@ -251,10 +257,10 @@ export default function AcquisitionTree({
         setEdges(flowEdges);
       } catch (error) {
         console.error("Layout error:", error);
-        // Fallback: simple horizontal layout
+        // Fallback
         const positionedNodes = flowNodes.map((node, i) => ({
           ...node,
-          position: { x: i * 250, y: Math.random() * 300 },
+          position: { x: i * 250, y: Math.floor(i / 4) * 150 },
         }));
         setNodes(positionedNodes);
         setEdges(flowEdges);
@@ -295,10 +301,12 @@ export default function AcquisitionTree({
         elementsSelectable={false}
         panOnDrag
         zoomOnScroll
+        proOptions={{ hideAttribution: true }}
       >
         <Background color="#3f3f46" gap={16} />
         <Controls 
           showInteractive={false}
+          position="top-right"
           className="!bg-zinc-800 !border-zinc-700 !rounded-lg" 
         />
         <MiniMap
@@ -310,6 +318,7 @@ export default function AcquisitionTree({
           }}
           maskColor="rgba(0, 0, 0, 0.8)"
           className="!bg-zinc-900 !border-zinc-700"
+          position="bottom-right"
         />
       </ReactFlow>
 
@@ -343,8 +352,8 @@ export default function AcquisitionTree({
         </div>
       </div>
 
-      {/* Debug info */}
-      <div className="absolute top-4 right-4 bg-zinc-900/90 backdrop-blur rounded px-2 py-1 text-[10px] text-zinc-500 border border-zinc-700">
+      {/* Debug */}
+      <div className="absolute bottom-4 right-24 bg-zinc-900/90 backdrop-blur rounded px-2 py-1 text-[10px] text-zinc-500 border border-zinc-700">
         {nodes.length} nodes · {edges.length} edges
       </div>
     </div>
