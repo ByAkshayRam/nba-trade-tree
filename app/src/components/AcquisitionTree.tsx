@@ -11,10 +11,6 @@ import {
   MarkerType,
   Position,
   ConnectionMode,
-  BaseEdge,
-  EdgeLabelRenderer,
-  getStraightPath,
-  getSmoothStepPath,
 } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
 import ELK from "elkjs/lib/elk.bundled.js";
@@ -31,6 +27,7 @@ interface AcquisitionNodeData {
   note?: string;
   isOrigin?: boolean;
   isTarget?: boolean;
+  isPrimaryOrigin?: boolean;
   draftPick?: number;
   color?: string;
   [key: string]: unknown;
@@ -60,78 +57,46 @@ interface AcquisitionTreeProps {
 // Player node - acquired player in the chain
 function PlayerNode({ data }: { data: AcquisitionNodeData }) {
   return (
-    <div
-      className="px-4 py-3 rounded-lg shadow-lg min-w-[220px] border-l-4 bg-zinc-900"
-      style={{ borderLeftColor: "#3b82f6" }}
-    >
-      <div className="flex items-center gap-2">
+    <div className="px-4 py-3 rounded-lg shadow-lg min-w-[200px] bg-zinc-900 border-l-4 border-l-blue-500">
+      <div className="flex items-center gap-2 mb-1">
         <div className="w-2 h-2 rounded-full bg-blue-500" />
-        <span className="text-xs text-blue-400 font-medium uppercase tracking-wide">Player</span>
+        <span className="text-[10px] text-blue-400 font-semibold uppercase tracking-wider">Player</span>
       </div>
-      <div className="font-bold text-white mt-1">{data.label}</div>
-      {data.sublabel && (
-        <div className="text-sm text-zinc-400">{data.sublabel}</div>
-      )}
-      {data.date && (
-        <div className="text-xs text-zinc-500 mt-1">{data.date}</div>
-      )}
-      {data.note && (
-        <div className="text-xs text-zinc-500 mt-2 italic border-t border-zinc-700 pt-2">{data.note}</div>
-      )}
-    </div>
-  );
-}
-
-// Trade node
-function TradeNode({ data }: { data: AcquisitionNodeData }) {
-  return (
-    <div className="px-4 py-3 rounded-lg shadow-lg min-w-[240px] bg-zinc-800 border-l-4 border-l-amber-500">
-      <div className="flex items-center gap-2">
-        <div className="w-2 h-2 rounded-full bg-amber-500" />
-        <span className="text-xs text-amber-400 font-medium uppercase tracking-wide">Trade</span>
-      </div>
-      <div className="font-medium text-white text-sm mt-1">{data.label}</div>
-      {data.sublabel && (
-        <div className="text-xs text-zinc-400 mt-1">{data.sublabel}</div>
-      )}
-      {data.date && (
-        <div className="text-xs text-zinc-500 mt-1">{data.date}</div>
-      )}
-      {data.tradePartner && (
-        <div className="text-xs text-amber-400/70 mt-1">↔ {data.tradePartner}</div>
-      )}
+      <div className="font-bold text-white">{data.label}</div>
+      {data.sublabel && <div className="text-sm text-zinc-400">{data.sublabel}</div>}
+      {data.date && <div className="text-xs text-zinc-500 mt-1">{data.date}</div>}
     </div>
   );
 }
 
 // Pick node - draft pick asset
 function PickNode({ data }: { data: AcquisitionNodeData }) {
-  const isOrigin = data.isOrigin;
-  
   return (
-    <div 
-      className={`px-4 py-3 rounded-lg shadow-lg min-w-[200px] border-l-4 ${isOrigin ? "ring-2 ring-amber-500 animate-pulse" : ""}`}
-      style={{ 
-        backgroundColor: "rgba(34, 197, 94, 0.1)",
-        borderLeftColor: "#22c55e"
-      }}
-    >
-      <div className="flex items-center gap-2">
+    <div className="px-4 py-3 rounded-lg shadow-lg min-w-[200px] bg-green-950/50 border-l-4 border-l-green-500">
+      <div className="flex items-center gap-2 mb-1">
         <div className="w-2 h-2 rounded-full bg-green-500" />
-        <span className="text-xs text-green-400 font-medium uppercase tracking-wide">
-          {isOrigin ? "★ Origin Pick" : "Draft Pick"}
+        <span className="text-[10px] text-green-400 font-semibold uppercase tracking-wider">Draft Pick</span>
+      </div>
+      <div className="font-bold text-white">{data.label}</div>
+      {data.sublabel && <div className="text-sm text-green-300">{data.sublabel}</div>}
+      {data.date && <div className="text-xs text-zinc-500 mt-1">{data.date}</div>}
+    </div>
+  );
+}
+
+// Additional asset node (leaf nodes that aren't the primary origin)
+function AssetNode({ data }: { data: AcquisitionNodeData }) {
+  const isPick = data.nodeType === "pick";
+  return (
+    <div className={`px-3 py-2 rounded shadow-lg min-w-[160px] border border-zinc-600 ${isPick ? 'bg-green-950/30' : 'bg-zinc-800/50'}`}>
+      <div className="flex items-center gap-1.5 mb-1">
+        <div className={`w-1.5 h-1.5 rounded-full ${isPick ? 'bg-green-600' : 'bg-zinc-500'}`} />
+        <span className="text-[9px] text-zinc-500 font-medium uppercase tracking-wider">
+          {isPick ? 'Pick' : 'Asset'}
         </span>
       </div>
-      <div className="font-medium text-white text-sm mt-1">{data.label}</div>
-      {data.sublabel && (
-        <div className="text-xs text-green-300 mt-1">{data.sublabel}</div>
-      )}
-      {data.date && (
-        <div className="text-xs text-zinc-500 mt-1">{data.date}</div>
-      )}
-      {data.draftPick && (
-        <div className="text-xs text-green-400 mt-1 font-medium">Pick #{data.draftPick}</div>
-      )}
+      <div className="font-medium text-zinc-300 text-sm">{data.label}</div>
+      {data.date && <div className="text-[10px] text-zinc-600 mt-0.5">{data.date}</div>}
     </div>
   );
 }
@@ -139,25 +104,15 @@ function PickNode({ data }: { data: AcquisitionNodeData }) {
 // Target player node (final destination - Vucevic)
 function TargetNode({ data }: { data: AcquisitionNodeData }) {
   return (
-    <div
-      className="px-5 py-4 rounded-xl shadow-xl min-w-[240px] border-2 ring-2 ring-green-400/30"
-      style={{
-        backgroundColor: "#14532d",
-        borderColor: "#22c55e",
-      }}
-    >
+    <div className="px-5 py-4 rounded-xl shadow-xl min-w-[240px] bg-green-900 border-2 border-green-500 ring-4 ring-green-500/20">
       <div className="flex items-center gap-2 mb-2">
         <div className="w-3 h-3 rounded-full bg-green-400 animate-pulse" />
         <span className="text-xs text-green-300 font-bold uppercase tracking-wide">Acquired</span>
       </div>
       <div className="font-bold text-white text-xl">{data.label}</div>
-      {data.sublabel && (
-        <div className="text-sm text-green-200">{data.sublabel}</div>
-      )}
-      {data.date && (
-        <div className="text-sm text-green-300 mt-2 font-medium">{data.date}</div>
-      )}
-      <div className="text-xs text-green-400 mt-2 font-medium flex items-center gap-1">
+      {data.sublabel && <div className="text-sm text-green-200">{data.sublabel}</div>}
+      {data.date && <div className="text-sm text-green-300 mt-2 font-medium">{data.date}</div>}
+      <div className="flex items-center gap-1 text-xs text-green-400 mt-2 font-medium">
         <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
         </svg>
@@ -167,105 +122,36 @@ function TargetNode({ data }: { data: AcquisitionNodeData }) {
   );
 }
 
-// Origin node (starting point - the original pick/player)
+// Primary Origin node (THE starting point - only one)
 function OriginNode({ data }: { data: AcquisitionNodeData }) {
   return (
-    <div
-      className="px-5 py-4 rounded-xl shadow-xl min-w-[240px] border-2 animate-pulse"
-      style={{
-        backgroundColor: "#451a03",
-        borderColor: "#f59e0b",
-      }}
-    >
+    <div className="px-5 py-4 rounded-xl shadow-xl min-w-[240px] bg-amber-950 border-2 border-amber-500 ring-4 ring-amber-500/20 animate-pulse">
       <div className="flex items-center gap-2 mb-2">
-        <div className="w-3 h-3 rounded-full bg-amber-400" />
-        <span className="text-xs text-amber-300 font-bold uppercase tracking-wide">★ Origin</span>
+        <span className="text-lg">★</span>
+        <span className="text-xs text-amber-300 font-bold uppercase tracking-wide">Origin Point</span>
       </div>
-      <div className="font-bold text-white text-lg">{data.label}</div>
-      {data.sublabel && (
-        <div className="text-sm text-amber-200">{data.sublabel}</div>
-      )}
-      {data.date && (
-        <div className="text-sm text-amber-300 mt-2">{data.date}</div>
-      )}
+      <div className="font-bold text-white text-xl">{data.label}</div>
+      {data.sublabel && <div className="text-sm text-amber-200">{data.sublabel}</div>}
+      {data.date && <div className="text-sm text-amber-300 mt-2">{data.date}</div>}
       <div className="text-xs text-amber-400 mt-2 font-medium">
-        Where it all began
+        Where it all started
       </div>
     </div>
   );
 }
 
-// Custom edge with step path for tree-like appearance
-function TreeEdge({ 
-  id, 
-  sourceX, 
-  sourceY, 
-  targetX, 
-  targetY, 
-  label,
-  style,
-  markerEnd 
-}: {
-  id: string;
-  sourceX: number;
-  sourceY: number;
-  targetX: number;
-  targetY: number;
-  label?: string;
-  style?: React.CSSProperties;
-  markerEnd?: string;
-}) {
-  const [edgePath, labelX, labelY] = getSmoothStepPath({
-    sourceX,
-    sourceY,
-    targetX,
-    targetY,
-    sourcePosition: Position.Bottom,
-    targetPosition: Position.Top,
-    borderRadius: 8,
-  });
-
-  return (
-    <>
-      <BaseEdge 
-        id={id} 
-        path={edgePath} 
-        style={style}
-        markerEnd={markerEnd}
-      />
-      {label && (
-        <EdgeLabelRenderer>
-          <div
-            style={{
-              position: 'absolute',
-              transform: `translate(-50%, -50%) translate(${labelX}px,${labelY}px)`,
-              pointerEvents: 'all',
-            }}
-            className="bg-zinc-800 px-2 py-1 rounded text-xs text-zinc-300 border border-zinc-600 font-medium"
-          >
-            {label}
-          </div>
-        </EdgeLabelRenderer>
-      )}
-    </>
-  );
-}
-
 const nodeTypes = {
   player: PlayerNode,
-  trade: TradeNode,
   pick: PickNode,
+  asset: AssetNode,
   target: TargetNode,
   origin: OriginNode,
   acquisition: PlayerNode,
+  trade: PlayerNode,
 };
 
-const edgeTypes = {
-  tree: TreeEdge,
-};
-
-const NODE_WIDTH = 240;
-const NODE_HEIGHT = 120;
+const NODE_WIDTH = 220;
+const NODE_HEIGHT = 100;
 
 type FlowNode = {
   id: string;
@@ -287,15 +173,17 @@ type FlowEdge = {
   markerEnd?: unknown;
   labelStyle?: Record<string, unknown>;
   labelBgStyle?: Record<string, unknown>;
+  labelBgPadding?: [number, number];
 };
 
-// ELK layout options for tree structure
+// ELK layout for proper tree structure
 const elkOptions = {
   "elk.algorithm": "layered",
-  "elk.layered.spacing.nodeNodeBetweenLayers": "120",
-  "elk.spacing.nodeNode": "80",
-  "elk.direction": "DOWN",
+  "elk.layered.spacing.nodeNodeBetweenLayers": "100",
+  "elk.spacing.nodeNode": "50",
+  "elk.direction": "UP", // Origin at bottom, target at top
   "elk.layered.crossingMinimization.strategy": "LAYER_SWEEP",
+  "elk.edgeRouting": "ORTHOGONAL", // Right-angle tree lines!
   "elk.layered.nodePlacement.strategy": "BRANDES_KOEPF",
 };
 
@@ -328,12 +216,19 @@ async function getLayoutedElements(
         x: layoutedNode?.x ?? 0,
         y: layoutedNode?.y ?? 0,
       },
-      sourcePosition: Position.Bottom,
-      targetPosition: Position.Top,
+      sourcePosition: Position.Top,
+      targetPosition: Position.Bottom,
     };
   });
 
   return { nodes: layoutedNodes, edges };
+}
+
+// Parse date string to comparable value
+function parseDate(dateStr?: string): number {
+  if (!dateStr) return Infinity;
+  const date = new Date(dateStr);
+  return isNaN(date.getTime()) ? Infinity : date.getTime();
 }
 
 export default function AcquisitionTree({
@@ -347,71 +242,89 @@ export default function AcquisitionTree({
   const [layoutedEdges, setLayoutedEdges] = useState<FlowEdge[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
+  // Find the PRIMARY origin (earliest date among origin nodes)
+  const primaryOriginId = useMemo(() => {
+    const originNodes = initialNodes.filter(n => n.data.isOrigin);
+    if (originNodes.length === 0) return null;
+    
+    // Sort by date, earliest first
+    const sorted = [...originNodes].sort((a, b) => {
+      return parseDate(a.data.date) - parseDate(b.data.date);
+    });
+    
+    return sorted[0]?.id;
+  }, [initialNodes]);
+
   // Convert to React Flow format with proper node types
   const flowNodes: FlowNode[] = useMemo(
     () =>
       initialNodes.map((n) => {
-        // Determine node type based on data
-        let nodeType = n.type;
-        if (n.data.isTarget) nodeType = "target";
-        else if (n.data.isOrigin) nodeType = "origin";
-        else if (n.data.nodeType === "pick") nodeType = "pick";
-        else if (n.data.nodeType === "trade-action") nodeType = "trade";
-        else nodeType = "player";
+        let nodeType: string;
+        
+        if (n.data.isTarget) {
+          nodeType = "target";
+        } else if (n.data.isOrigin && n.id === primaryOriginId) {
+          // Only THE primary origin gets the special origin style
+          nodeType = "origin";
+        } else if (n.data.isOrigin) {
+          // Other origin nodes are just assets
+          nodeType = "asset";
+        } else if (n.data.nodeType === "pick") {
+          nodeType = "pick";
+        } else {
+          nodeType = "player";
+        }
 
         return {
           id: n.id,
           type: nodeType,
-          data: n.data as AcquisitionNodeData,
+          data: {
+            ...n.data,
+            isPrimaryOrigin: n.id === primaryOriginId,
+          } as AcquisitionNodeData,
           position: { x: 0, y: 0 },
         };
       }),
-    [initialNodes]
+    [initialNodes, primaryOriginId]
   );
 
   const flowEdges: FlowEdge[] = useMemo(
     () =>
-      initialEdges.map((e, index) => {
-        // Find source node to determine edge color
+      initialEdges.map((e) => {
         const sourceNode = initialNodes.find(n => n.id === e.source);
-        const isPick = sourceNode?.data.nodeType === "pick";
-        const edgeColor = isPick ? "#22c55e" : "#3b82f6";
+        const isPrimaryPath = sourceNode?.id === primaryOriginId || 
+          !sourceNode?.data.isOrigin; // Main chain, not side assets
         
         return {
           id: e.id,
           source: e.source,
           target: e.target,
-          label: e.label || (index === 0 ? "traded for" : ""),
+          label: e.label,
           animated: false,
-          type: "smoothstep",
+          type: "smoothstep", // Step edges for tree look
           style: { 
-            stroke: edgeColor, 
-            strokeWidth: 3,
-            strokeDasharray: isPick ? "0" : "0",
+            stroke: isPrimaryPath ? "#22c55e" : "#52525b",
+            strokeWidth: isPrimaryPath ? 3 : 2,
           },
           markerEnd: {
             type: MarkerType.ArrowClosed,
-            color: edgeColor,
-            width: 20,
-            height: 20,
+            color: isPrimaryPath ? "#22c55e" : "#52525b",
+            width: 16,
+            height: 16,
           },
           labelStyle: { 
-            fill: "#e4e4e7", 
-            fontSize: 11,
+            fill: "#a1a1aa", 
+            fontSize: 10,
             fontWeight: 500,
           },
           labelBgStyle: { 
             fill: "#18181b", 
-            fillOpacity: 0.95,
-            stroke: "#3f3f46",
-            strokeWidth: 1,
-            rx: 4,
-            ry: 4,
+            fillOpacity: 0.9,
           },
-          labelBgPadding: [8, 4] as [number, number],
+          labelBgPadding: [6, 3] as [number, number],
         };
       }),
-    [initialEdges, initialNodes]
+    [initialEdges, initialNodes, primaryOriginId]
   );
 
   // Run layout on mount
@@ -424,10 +337,9 @@ export default function AcquisitionTree({
         setLayoutedEdges(edges);
       } catch (error) {
         console.error("Layout error:", error);
-        // Fallback: stack nodes vertically
         const fallbackNodes = flowNodes.map((node, index) => ({
           ...node,
-          position: { x: 300, y: index * 160 },
+          position: { x: 300, y: (flowNodes.length - index - 1) * 140 },
         }));
         setLayoutedNodes(fallbackNodes);
         setLayoutedEdges(flowEdges);
@@ -440,7 +352,6 @@ export default function AcquisitionTree({
   const [nodes, setNodes] = useNodesState(layoutedNodes);
   const [edges, setEdges] = useEdgesState(layoutedEdges);
 
-  // Update nodes/edges when layout completes
   useEffect(() => {
     if (layoutedNodes.length > 0) {
       setNodes(layoutedNodes);
@@ -459,6 +370,10 @@ export default function AcquisitionTree({
     );
   }
 
+  // Find primary origin label for display
+  const primaryOriginNode = initialNodes.find(n => n.id === primaryOriginId);
+  const primaryOriginLabel = primaryOriginNode?.data.label || "Origin";
+
   return (
     <div className="h-[700px] bg-zinc-950 rounded-lg border border-zinc-800 overflow-hidden relative">
       <ReactFlow
@@ -467,7 +382,7 @@ export default function AcquisitionTree({
         nodeTypes={nodeTypes}
         connectionMode={ConnectionMode.Loose}
         fitView
-        fitViewOptions={{ padding: 0.2 }}
+        fitViewOptions={{ padding: 0.15 }}
         minZoom={0.2}
         maxZoom={1.5}
         nodesDraggable={false}
@@ -477,10 +392,9 @@ export default function AcquisitionTree({
         zoomOnScroll={true}
         defaultEdgeOptions={{
           type: "smoothstep",
-          animated: false,
         }}
       >
-        <Background color="#27272a" gap={24} size={1} />
+        <Background color="#27272a" gap={20} size={1} />
         <Controls 
           showInteractive={false}
           className="!bg-zinc-800 !border-zinc-700 !rounded-lg [&>button]:!bg-zinc-800 [&>button]:!border-zinc-600 [&>button]:!text-zinc-300 [&>button:hover]:!bg-zinc-700" 
@@ -490,6 +404,7 @@ export default function AcquisitionTree({
             if (node.type === "target") return "#22c55e";
             if (node.type === "origin") return "#f59e0b";
             if (node.type === "pick") return "#22c55e";
+            if (node.type === "asset") return "#52525b";
             return "#3b82f6";
           }}
           maskColor="rgba(0, 0, 0, 0.85)"
@@ -499,43 +414,50 @@ export default function AcquisitionTree({
         />
       </ReactFlow>
 
-      {/* Legend */}
-      <div className="absolute bottom-4 left-4 bg-zinc-900/95 backdrop-blur-sm rounded-lg p-4 border border-zinc-700 shadow-xl">
-        <div className="text-xs text-zinc-400 font-medium uppercase tracking-wide mb-3">Legend</div>
-        <div className="grid grid-cols-2 gap-x-6 gap-y-2 text-xs">
-          <div className="flex items-center gap-2">
-            <div className="w-4 h-4 rounded border-2 border-amber-500 bg-amber-900/50" />
-            <span className="text-zinc-300">Origin ({originYear})</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-4 h-4 rounded border-2 border-green-500 bg-green-900/50" />
-            <span className="text-zinc-300">{player}</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-4 h-4 rounded border-l-4 border-l-green-500 bg-green-900/20" />
-            <span className="text-zinc-300">Draft Pick</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-4 h-4 rounded border-l-4 border-l-blue-500 bg-zinc-900" />
-            <span className="text-zinc-300">Player Asset</span>
-          </div>
+      {/* Title */}
+      <div className="absolute top-4 left-4 bg-zinc-900/95 backdrop-blur-sm rounded-lg px-4 py-3 border border-zinc-700">
+        <div className="text-[10px] text-zinc-500 uppercase tracking-wider font-medium">Acquisition Chain</div>
+        <div className="text-lg font-bold text-white mt-0.5">
+          {primaryOriginLabel} <span className="text-zinc-500">→</span> {player}
         </div>
-        <div className="mt-3 pt-3 border-t border-zinc-700 flex items-center gap-4 text-xs text-zinc-500">
-          <div className="flex items-center gap-1">
-            <div className="w-6 h-0.5 bg-green-500" />
-            <span>Pick path</span>
-          </div>
-          <div className="flex items-center gap-1">
-            <div className="w-6 h-0.5 bg-blue-500" />
-            <span>Player path</span>
-          </div>
-        </div>
+        <div className="text-xs text-zinc-500 mt-1">{originYear} to present</div>
       </div>
 
-      {/* Title overlay */}
-      <div className="absolute top-4 left-4 bg-zinc-900/95 backdrop-blur-sm rounded-lg px-4 py-2 border border-zinc-700">
-        <div className="text-xs text-zinc-400 uppercase tracking-wide">Asset Chain</div>
-        <div className="text-lg font-bold text-white">{originYear} → {player}</div>
+      {/* Legend */}
+      <div className="absolute bottom-4 left-4 bg-zinc-900/95 backdrop-blur-sm rounded-lg p-3 border border-zinc-700">
+        <div className="text-[10px] text-zinc-500 uppercase tracking-wider font-medium mb-2">Legend</div>
+        <div className="space-y-1.5 text-xs">
+          <div className="flex items-center gap-2">
+            <div className="w-4 h-4 rounded bg-amber-950 border-2 border-amber-500" />
+            <span className="text-zinc-300">★ Origin (starting point)</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-4 h-4 rounded bg-green-900 border-2 border-green-500" />
+            <span className="text-zinc-300">Target (acquired player)</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-4 h-4 rounded bg-zinc-900 border-l-4 border-l-blue-500" />
+            <span className="text-zinc-300">Player in chain</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-4 h-4 rounded bg-green-950/50 border-l-4 border-l-green-500" />
+            <span className="text-zinc-300">Draft pick</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-4 h-4 rounded bg-zinc-800/50 border border-zinc-600" />
+            <span className="text-zinc-400">Additional asset</span>
+          </div>
+        </div>
+        <div className="mt-2 pt-2 border-t border-zinc-700 flex items-center gap-3 text-[10px] text-zinc-500">
+          <div className="flex items-center gap-1">
+            <div className="w-4 h-0.5 bg-green-500 rounded" />
+            <span>Main path</span>
+          </div>
+          <div className="flex items-center gap-1">
+            <div className="w-4 h-0.5 bg-zinc-600 rounded" />
+            <span>Side asset</span>
+          </div>
+        </div>
       </div>
     </div>
   );
