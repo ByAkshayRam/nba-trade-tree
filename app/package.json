@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --webpack",
+    "dev": "next dev --webpack -p 3456",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3456",
     "lint": "eslint"
   },
   "dependencies": {
@@ -13,6 +13,7 @@
     "better-sqlite3": "^12.6.2",
     "drizzle-orm": "^0.45.1",
     "elkjs": "^0.11.0",
+    "html-to-image": "^1.11.13",
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3"

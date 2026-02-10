@@ -8,6 +8,7 @@ interface Player {
   slug: string;
   hasTree: boolean;
   originYear?: number;
+  acquisitionYear?: number;
   depth?: number;
 }
 
@@ -81,7 +82,7 @@ export default function PlayerSelector({ currentPlayer, teamAbbr }: PlayerSelect
                 <span>{player.name}</span>
                 {player.hasTree ? (
                   <span className="text-xs text-green-500 bg-green-900/30 px-2 py-0.5 rounded">
-                    {player.originYear}
+                    {player.originYear} → {player.acquisitionYear}
                   </span>
                 ) : (
                   <span className="text-xs text-zinc-600">Coming soon</span>

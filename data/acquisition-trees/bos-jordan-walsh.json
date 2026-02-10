@@ -12,12 +12,14 @@
   "tree": {
     "type": "player",
     "name": "Jordan Walsh",
-    "acquisitionType": "trade",
+    "acquisitionType": "draft-night-trade",
     "date": "2023-06-28",
+    "draftPick": 38,
+    "draftRound": 2,
     "tradePartner": "SAC",
     "currentTeam": "BOS",
-    "tradeDescription": "Celtics traded Colby Jones to Sacramento for Jordan Walsh and a 2024 2nd round pick",
-    "note": "2023 2nd round pick (38th overall) by Sacramento from Arkansas",
+    "tradeDescription": "Drafted #38 by Sacramento, immediately traded to Boston for Colby Jones and a 2024 2nd",
+    "note": "2023 2nd round pick (38th overall) from Arkansas - draft night acquisition",
     "assetsGivenUp": [
       {
         "type": "player",

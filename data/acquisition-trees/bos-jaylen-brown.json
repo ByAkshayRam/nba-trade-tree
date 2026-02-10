@@ -25,6 +25,7 @@
         "acquisitionType": "trade",
         "date": "2013-06-27",
         "tradePartner": "BKN",
+        "becamePlayer": "Jaylen Brown",
         "tradeDescription": "The infamous Nets trade: KG, Pierce, Terry for multiple unprotected picks",
         "note": "One of the most lopsided trades in NBA history. Pick conveyed as #3 in 2016.",
         "assetsGivenUp": [
@@ -128,6 +129,17 @@
                 "tradePartner": "POR",
                 "tradeDescription": "Acquired from Portland in multi-team trade",
                 "note": "Expiring contract used as salary filler. Treated as origin.",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2009 1st Round Pick",
+                "acquisitionType": "original",
+                "date": "2007-07-31",
+                "draftPick": 11,
+                "becamePlayer": "Jonny Flynn",
+                "tradeDescription": "Boston's own 2009 1st round pick (top-3 protected)",
+                "note": "Pick conveyed #11 to Minnesota, used on Jonny Flynn",
                 "isOrigin": true
               }
             ]

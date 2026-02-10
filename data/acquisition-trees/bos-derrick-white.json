@@ -48,8 +48,9 @@
                 "type": "pick",
                 "name": "2021 1st Round Pick (#16)",
                 "acquisitionType": "own",
+                "becamePlayer": "Alperen Sengun",
                 "tradeDescription": "Celtics own pick from 2020-21 season (36-36 record)",
-                "note": "Own pick - TRUE ORIGIN",
+                "note": "Sent to OKC in Kemba trade, eventually became #16 pick used on Sengun",
                 "isOrigin": true
               }
             ]
@@ -71,6 +72,7 @@
             "acquisitionType": "trade",
             "date": "2017-06-19",
             "tradePartner": "PHI",
+            "becamePlayer": "Romeo Langford",
             "tradeDescription": "Part of Fultz trade. Celtics traded #1 pick for #3 pick (Tatum) and future SAC 1st",
             "note": "Pick conveyed as #14 in 2019",
             "assetsGivenUp": [
@@ -80,6 +82,7 @@
                 "acquisitionType": "trade",
                 "date": "2013-06-27",
                 "tradePartner": "BKN",
+                "becamePlayer": "Markelle Fultz",
                 "tradeDescription": "The Nets trade: KG, Pierce, Terry for unprotected picks",
                 "note": "Same origin as Jayson Tatum - see Tatum tree for full Nets trade breakdown",
                 "assetsGivenUp": [
@@ -123,8 +126,9 @@
         "type": "pick",
         "name": "2022 1st Round Pick (protected 1-4)",
         "acquisitionType": "own",
-        "tradeDescription": "Celtics own pick - conveyed as #53 due to protection",
-        "note": "Own pick - TRUE ORIGIN",
+        "becamePlayer": "Blake Wesley",
+        "tradeDescription": "Celtics own pick - conveyed #25 to Spurs",
+        "note": "Own pick - TRUE ORIGIN. Spurs used on Blake Wesley.",
         "isOrigin": true
       },
       {

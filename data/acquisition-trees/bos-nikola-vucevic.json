@@ -158,8 +158,9 @@
                     "type": "pick",
                     "name": "2023 1st Round Pick",
                     "acquisitionType": "own",
-                    "tradeDescription": "Celtics own pick",
-                    "note": "Conveyed as part of Brogdon trade. TRUE ORIGIN.",
+                    "becamePlayer": "Ben Sheppard",
+                    "tradeDescription": "Celtics own pick (#29)",
+                    "note": "Conveyed to Indiana in Brogdon trade. Pacers selected Ben Sheppard.",
                     "isOrigin": true
                   }
                 ]
@@ -179,8 +180,9 @@
                 "type": "pick",
                 "name": "2024 1st Round Pick (GSW conditional)",
                 "acquisitionType": "own",
+                "becamePlayer": "Bub Carrington",
                 "tradeDescription": "Originally GSW pick acquired by Celtics. Conveyed to Portland.",
-                "note": "TRUE ORIGIN",
+                "note": "Portland selected Bub Carrington.",
                 "isOrigin": true
               },
               {

@@ -44,6 +44,7 @@ interface FlowNode {
     isOrigin?: boolean;
     isTarget?: boolean;
     draftPick?: number;
+    becamePlayer?: string;
   };
 }
 
@@ -172,6 +173,7 @@ export async function GET(
         isOrigin,
         isTarget,
         draftPick: node.draftPick,
+        becamePlayer: node.becamePlayer,
       },
     });
     

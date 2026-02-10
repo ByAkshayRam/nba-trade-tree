@@ -24,6 +24,7 @@
         "acquisitionType": "trade",
         "date": "2017-06-19",
         "tradePartner": "PHI",
+        "becamePlayer": "Jayson Tatum",
         "tradeDescription": "Celtics trade #1 pick to 76ers for #3 pick and future 1st",
         "note": "Fultz went #1, Lonzo #2, Tatum #3",
         "assetsGivenUp": [
@@ -33,6 +34,7 @@
             "acquisitionType": "trade",
             "date": "2013-06-27",
             "tradePartner": "BKN",
+            "becamePlayer": "Markelle Fultz",
             "tradeDescription": "The Nets trade: KG, Pierce, Terry for multiple unprotected picks",
             "note": "One of the most lopsided trades in NBA history",
             "assetsGivenUp": [
@@ -135,6 +137,17 @@
                     "tradePartner": "POR",
                     "tradeDescription": "Acquired from Portland in multi-team trade",
                     "note": "Expiring contract used as salary filler",
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2009 1st Round Pick",
+                    "acquisitionType": "original",
+                    "date": "2007-07-31",
+                    "draftPick": 11,
+                    "becamePlayer": "Jonny Flynn",
+                    "tradeDescription": "Boston's own 2009 1st round pick (top-3 protected)",
+                    "note": "Pick conveyed #11 to Minnesota, used on Jonny Flynn",
                     "isOrigin": true
                   }
                 ]

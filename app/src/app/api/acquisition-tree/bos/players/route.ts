@@ -12,10 +12,13 @@ export async function GET() {
   const players = files.map(file => {
     const data = JSON.parse(fs.readFileSync(path.join(dataDir, file), "utf-8"));
     const slug = file.replace("bos-", "").replace(".json", "");
+    // Get acquisition year from the tree root's date
+    const acquisitionYear = data.tree?.date ? new Date(data.tree.date).getFullYear() : null;
     return {
       slug,
       name: data._meta?.player || slug,
       originYear: data._meta?.originYear,
+      acquisitionYear,
       depth: data._meta?.depth,
       verificationStatus: data._meta?.verificationStatus || "UNVERIFIED",
     };
@@ -47,6 +50,7 @@ export async function GET() {
       ...p,
       hasTree: !!treeData,
       originYear: treeData?.originYear,
+      acquisitionYear: treeData?.acquisitionYear,
       depth: treeData?.depth,
       verificationStatus: treeData?.verificationStatus || "NO_TREE",
     };

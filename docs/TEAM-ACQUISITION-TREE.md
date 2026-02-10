@@ -1,148 +1,266 @@
-# Team Acquisition Tree - Data Model
+# Team Acquisition Tree - Complete Implementation
 
 ## Vision
-Trace HOW a team acquired a player by following their asset history backward through time.
+Trace HOW a team acquired every player on their current roster by following asset history backward through time.
 
-**Question answered:** "How did the Celtics get Vucevic?"
+**Question answered:** "How did the Celtics build their championship roster?"
 
-**Not:** "Where has Vucevic played?" (that's Player Origin Story)
+## ✅ Milestone Completed: Feb 10, 2026
 
-## Example: Celtics → Vucevic
+### Features Implemented
 
-```
-Nikola Vucevic (acquired Feb 2026)
-└── Traded Anfernee Simons
-    └── Traded Jrue Holiday (Jun 2025)
-        └── Traded Malcolm Brogdon + Robert Williams + picks (Oct 2023)
-            ├── Malcolm Brogdon
-            │   └── Traded Aaron Nesmith + Daniel Theis + 2023 1st (Jul 2022)
-            │       └── Aaron Nesmith
-            │           └── Drafted 14th (2020) with Grizzlies pick
-            │               └── Jeff Green trade (2015)
-            │                   └── Kendrick Perkins trade (2011)
-            │                       └── Drafted 27th by MEM, traded draft night (2003)
-            │                           └── Dahntay Jones + Troy Bell package
-            │                               └── Dahntay Jones drafted 20th with PHI pick (2003)
-            │                                   └── Jérôme Moïso trade (2001)
-            │                                       └── Drafted 11th by BOS (2000)
-            └── Robert Williams
-                └── Drafted 27th by BOS (2018)
-```
+#### 1. Full Team Acquisition Tree View (`/team/:teamAbbr`)
+- Displays **all current roster players** in a unified acquisition tree
+- **Vertical roster column** on the left side, organized by:
+  - 🟡 **Starters** (top)
+  - 🟢 **Bench** (middle)
+  - 🟣 **Two-Way** (bottom)
+- **🏠 Homegrown indicator** for players drafted or signed directly (no trade chains)
+- Shows complete transaction history tracing back to the **single origin** (oldest player in chain)
 
-26 years of asset history!
+#### 2. Interactive Path Highlighting
+- **Click any node** to highlight the full acquisition path from that node to its origin
+- **Selected path**: Glows brighter, edges thicken, origin star pulses
+- **Non-selected nodes**: Dim to 40% opacity
+- **Click background** or same node to reset view
+- **Status indicator**: Shows "Tracing: [Player Name]" when path is selected
+
+#### 3. Origin Definition Logic
+- **Origin** = The oldest player/asset in the transaction chain that led to today's roster
+- Only chains that include **at least one trade** have origins marked
+- Players acquired via direct signing, waivers, or draft (without subsequent trades) don't show origins
+- Example: Antoine Walker (2000) is the single origin for multiple Celtics chains
+
+#### 4. Export to Social Media
+- **Export button** with Dark Mode / Light Mode options
+- Generates high-quality JPEG with:
+  - Title: "[Team Name] Acquisition Tree"
+  - Subtitle: "How every player on the current roster was acquired"
+  - Stats row: Roster count, Origins, Total Nodes, Transactions
+  - Full graph visualization (controls/minimap hidden)
+  - Footer: "Created by @ByAkshayRam"
+  - Data sources: Basketball Reference, ESPN, NBA.com
+  - Current date
+- 2x pixel ratio for crisp Twitter sharing
+
+#### 5. Individual Player Trees (`/team/:teamAbbr/acquisition/:playerId`)
+- Detailed view of single player's acquisition history
+- `becamePlayer` feature shows what draft picks became (grey pills)
+- Date formatting: "Month Day, Year" format
+- Player selector shows year range (origin → acquisition)
+
+---
 
 ## Data Model
-
-### New Table: `acquisition_trees`
-
-```sql
-CREATE TABLE acquisition_trees (
-  id INTEGER PRIMARY KEY,
-  team_id INTEGER NOT NULL REFERENCES teams(id),
-  target_player_id INTEGER NOT NULL REFERENCES players(id),
-  tree_json TEXT NOT NULL,  -- Full recursive tree structure
-  origin_year INTEGER,       -- Earliest asset in tree
-  last_updated TEXT,
-  UNIQUE(team_id, target_player_id)
-);
-```
 
 ### Tree Node Structure
 
 ```typescript
 interface AcquisitionNode {
-  // What was acquired
   type: 'player' | 'pick' | 'cash';
-  name: string;  // "Nikola Vucevic" or "2020 1st Round Pick"
-  
-  // How it was acquired
-  acquisitionType: 'draft' | 'trade' | 'signing' | 'waiver';
+  name: string;
+  acquisitionType: 'draft' | 'trade' | 'signing' | 'waiver' | 'draft-night-trade';
   date: string;
-  
-  // For trades: what was given up to get this
-  assetsGivenUp?: AcquisitionNode[];
-  
-  // Trade details
-  tradePartner?: string;  // Team abbreviation
+  draftPick?: number;
+  draftRound?: number;
+  tradePartner?: string;
   tradeDescription?: string;
-  
-  // For picks: who it became
-  becamePlayer?: string;
-  
-  // For players: their current status
+  becamePlayer?: string;  // For picks: who the pick became
   currentTeam?: string;
-  
-  // Visual
-  teamColor?: string;
+  note?: string;
+  isOrigin?: boolean;
+  assetsGivenUp?: AcquisitionNode[];  // Recursive: what was traded to get this
 }
 ```
 
-### API Endpoint
+### Flow Node Data (for visualization)
 
+```typescript
+interface FlowNode {
+  id: string;
+  type: 'target' | 'player' | 'pick' | 'origin' | 'acquisition';
+  data: {
+    label: string;
+    sublabel?: string;
+    date?: string;
+    nodeType: 'player' | 'pick' | 'cash';
+    acquisitionType?: string;
+    tradePartner?: string;
+    note?: string;
+    isOrigin?: boolean;
+    isTarget?: boolean;
+    isRosterPlayer?: boolean;
+    isHomegrown?: boolean;
+    rosterOrder?: number;
+    rosterCategory?: 'starter' | 'bench' | 'two-way';
+    draftPick?: number;
+    becamePlayer?: string;
+  };
+}
 ```
-GET /api/acquisition-tree/:teamAbbr/:playerId
+
+---
+
+## API Endpoints
+
+### Team Acquisition Tree
+```
+GET /api/acquisition-tree/:teamAbbr/team
 ```
 
 Response:
 ```json
 {
   "team": "BOS",
-  "player": "Nikola Vucevic",
-  "originYear": 2000,
-  "depth": 11,
-  "tree": { ... AcquisitionNode },
-  "nodes": [ ... React Flow nodes ],
-  "edges": [ ... React Flow edges ]
+  "teamName": "Boston Celtics",
+  "rosterCount": 15,
+  "nodeCount": 65,
+  "edgeCount": 56,
+  "originCount": 1,
+  "tradeCount": 12,
+  "earliestOrigin": 2000,
+  "nodes": [...],
+  "edges": [...],
+  "teamColors": { "primary": "#007A33", "secondary": "#BA9653" }
 }
 ```
 
-## Building the Tree
-
-### Algorithm
-
-1. Start with target player on target team
-2. Find how team acquired player:
-   - If draft/signing → STOP (leaf node)
-   - If trade → get assets given up
-3. For each asset given up:
-   - If player → recurse (how did team get THAT player?)
-   - If pick → find what pick became, then recurse
-4. Continue until all branches hit draft picks or signings
-
-### Data Sources
-
-For Celtics → Vucevic, we need:
-1. Celtics transaction history (what they've given up in trades)
-2. Pick outcomes (what each draft pick became)
-3. Player transaction history (to link chains)
-
-### CelticsBlog Article as Seed Data
-
-The article traces:
+### Individual Player Tree
 ```
-Moïso (2000) → PHI pick (2003) → Jones → Perkins (2003)
-→ Green (2011) → MEM pick (2020) → Nesmith (2020)
-→ Brogdon (2022) → Holiday (2023) → Simons (2025) → Vucevic (2026)
+GET /api/acquisition-tree/:teamAbbr/:playerId
 ```
 
-We can use this as the first complete tree.
+### Player List
+```
+GET /api/acquisition-tree/:teamAbbr/players
+```
 
-## UI Changes
+---
 
-### New Route
-`/team/:teamAbbr/acquisition/:playerName`
+## Origin Detection Algorithm
 
-Example: `/team/bos/acquisition/nikola-vucevic`
+```typescript
+// For each roster player's acquisition chain:
+// 1. Trace back through ALL transactions in their history
+// 2. Find the single OLDEST node by date in that chain
+// 3. Only mark origins for chains that include at least one trade
 
-### Visualization
-- Tree flows TOP (origin) → BOTTOM (current player)
-- Each branch shows assets given up
-- Picks show who they became
-- Team colors for each node
-- Click any player node to see THEIR acquisition tree
+for (const [rosterId, nodeKeys] of rosterToNodes.entries()) {
+  // Skip chains that don't have any trades
+  if (!rosterHasTrades.get(rosterId)) continue;
+  
+  let oldestKey = null;
+  let oldestDate = Infinity;
+  
+  for (const nodeKey of nodeKeys) {
+    const node = nodeMap.get(nodeKey);
+    if (node?.data.date) {
+      const dateMs = parseDate(node.data.date);
+      if (dateMs < oldestDate) {
+        oldestDate = dateMs;
+        oldestKey = nodeKey;
+      }
+    }
+  }
+  
+  if (oldestKey) originNodeKeys.add(oldestKey);
+}
+```
 
-## Migration Path
+---
 
-1. Keep Player Origin Story as `/player/:id`
-2. Add Team Acquisition Tree as `/team/:abbr/acquisition/:id`
-3. Link between them (player card → "How did [team] get them?")
+## Roster Organization
+
+```typescript
+const ROSTER_ORDER = {
+  // Starters (order 1-5)
+  "Derrick White": { order: 1, category: "starter" },
+  "Jaylen Brown": { order: 2, category: "starter" },
+  "Jayson Tatum": { order: 3, category: "starter" },
+  "Nikola Vucevic": { order: 4, category: "starter" },
+  "Payton Pritchard": { order: 5, category: "starter" },
+  
+  // Bench (order 10-18)
+  "Sam Hauser": { order: 10, category: "bench" },
+  "Neemias Queta": { order: 11, category: "bench" },
+  // ... etc
+  
+  // Two-way (order 20+)
+  "John Tonje": { order: 20, category: "two-way" },
+  "Max Shulga": { order: 21, category: "two-way" },
+};
+```
+
+---
+
+## UI Components
+
+### TeamAcquisitionTree.tsx
+Main visualization component with:
+- ELK.js layered layout algorithm
+- Post-processing for vertical roster column
+- Interactive path highlighting
+- Export functionality with html-to-image
+
+### Node Types
+- **RosterNode**: Green with ESPN headshot, category label, homegrown indicator
+- **PlayerNode**: Blue accent, shows trade partner
+- **PickNode**: Green accent, shows `becamePlayer` as grey pill
+- **OriginNode**: Amber with star icon, pulses when selected
+
+### Layout Configuration
+```typescript
+const elkOptions = {
+  "elk.algorithm": "layered",
+  "elk.direction": "LEFT",
+  "elk.spacing.nodeNode": "80",
+  "elk.layered.spacing.nodeNodeBetweenLayers": "180",
+  "elk.edgeRouting": "ORTHOGONAL",
+  "elk.layered.nodePlacement.strategy": "BRANDES_KOEPF",
+};
+```
+
+---
+
+## Example: Celtics Acquisition Chain
+
+```
+Antoine Walker (drafted 2000) ← ORIGIN
+└── Traded for PHI pick (2001)
+    └── Became Dahntay Jones (2003)
+        └── Packaged with Troy Bell for Kendrick Perkins (2003)
+            └── Traded for Jeff Green (2011)
+                └── Traded for MEM pick (2015)
+                    └── Became Aaron Nesmith (2020)
+                        └── Packaged in trade for Malcolm Brogdon (2022)
+                            └── Traded for Jrue Holiday (2023)
+                                └── Traded for Anfernee Simons (2025)
+                                    └── Traded for Nikola Vucevic (2026) ← ROSTER
+```
+
+**26 years** of asset history from a single origin!
+
+---
+
+## Files Changed
+
+### New Files
+- `app/src/app/team/[teamAbbr]/page.tsx` - Team acquisition tree page
+- `app/src/app/api/acquisition-tree/[teamAbbr]/team/route.ts` - Team tree API
+- `app/src/components/TeamAcquisitionTree.tsx` - Main visualization component
+
+### Modified Files
+- `app/src/components/AcquisitionTree.tsx` - Added becamePlayer pills, fixed spacing
+- `app/src/components/PlayerSelector.tsx` - Added year range display
+- `app/package.json` - Added html-to-image dependency
+- `data/acquisition-trees/*.json` - Added becamePlayer data
+
+---
+
+## Next Steps
+
+1. Add more teams beyond Celtics
+2. Automated roster validation against ESPN
+3. Historical roster snapshots (view team at any point in time)
+4. Embed/share links for specific paths
+5. Animation of asset flow through time

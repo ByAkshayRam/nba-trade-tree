@@ -30,6 +30,7 @@ interface AcquisitionNodeData {
   isTarget?: boolean;
   isPrimaryOrigin?: boolean;
   draftPick?: number;
+  becamePlayer?: string;
   [key: string]: unknown;
 }
 
@@ -66,7 +67,7 @@ function PlayerNode({ data }: { data: AcquisitionNodeData }) {
       </div>
       <div className="font-bold text-white text-sm">{data.label}</div>
       {data.sublabel && <div className="text-xs text-zinc-400">{data.sublabel}</div>}
-      {data.date && <div className="text-[10px] text-zinc-500 mt-1">{data.date}</div>}
+      {data.date && <div className="text-[10px] text-zinc-500 mt-1">{formatDate(data.date)}</div>}
     </div>
   );
 }
@@ -74,15 +75,22 @@ function PlayerNode({ data }: { data: AcquisitionNodeData }) {
 // Pick node with handles (flipped)
 function PickNode({ data }: { data: AcquisitionNodeData }) {
   return (
-    <div className="px-4 py-3 rounded-lg shadow-lg min-w-[180px] bg-green-950/50 border-l-4 border-l-green-500 relative">
-      <Handle type="source" position={Position.Left} className="!bg-green-500 !w-3 !h-3" />
-      <Handle type="target" position={Position.Right} className="!bg-green-500 !w-3 !h-3" />
-      <div className="flex items-center gap-2 mb-1">
-        <div className="w-2 h-2 rounded-full bg-green-500" />
-        <span className="text-[10px] text-green-400 font-semibold uppercase">Draft Pick</span>
+    <div className="relative">
+      <div className="px-4 py-3 rounded-lg shadow-lg min-w-[180px] bg-green-950/50 border-l-4 border-l-green-500 relative">
+        <Handle type="source" position={Position.Left} className="!bg-green-500 !w-3 !h-3" />
+        <Handle type="target" position={Position.Right} className="!bg-green-500 !w-3 !h-3" />
+        <div className="flex items-center gap-2 mb-1">
+          <div className="w-2 h-2 rounded-full bg-green-500" />
+          <span className="text-[10px] text-green-400 font-semibold uppercase">Draft Pick</span>
+        </div>
+        <div className="font-bold text-white text-sm">{data.label}</div>
+        {data.date && <div className="text-[10px] text-zinc-500 mt-1">{formatDate(data.date)}</div>}
       </div>
-      <div className="font-bold text-white text-sm">{data.label}</div>
-      {data.date && <div className="text-[10px] text-zinc-500 mt-1">{data.date}</div>}
+      {data.becamePlayer && (
+        <div className="absolute -bottom-6 right-0 px-2 py-1 bg-zinc-800 border border-zinc-600 rounded text-[10px] text-zinc-300 whitespace-nowrap">
+          → {data.becamePlayer}
+        </div>
+      )}
     </div>
   );
 }
@@ -91,11 +99,18 @@ function PickNode({ data }: { data: AcquisitionNodeData }) {
 function AssetNode({ data }: { data: AcquisitionNodeData }) {
   const isPick = data.nodeType === "pick";
   return (
-    <div className={`px-3 py-2 rounded shadow min-w-[140px] border relative ${isPick ? 'bg-green-950/30 border-green-800' : 'bg-zinc-800/50 border-zinc-700'}`}>
-      <Handle type="source" position={Position.Left} className="!bg-zinc-500 !w-2 !h-2" />
-      <Handle type="target" position={Position.Right} className="!bg-zinc-500 !w-2 !h-2" />
-      <div className="font-medium text-zinc-300 text-xs">{data.label}</div>
-      {data.date && <div className="text-[9px] text-zinc-600 mt-0.5">{data.date}</div>}
+    <div className="relative">
+      <div className={`px-3 py-2 rounded shadow min-w-[140px] border relative ${isPick ? 'bg-green-950/30 border-green-800' : 'bg-zinc-800/50 border-zinc-700'}`}>
+        <Handle type="source" position={Position.Left} className="!bg-zinc-500 !w-2 !h-2" />
+        <Handle type="target" position={Position.Right} className="!bg-zinc-500 !w-2 !h-2" />
+        <div className="font-medium text-zinc-300 text-xs">{data.label}</div>
+        {data.date && <div className="text-[9px] text-zinc-600 mt-0.5">{formatDate(data.date)}</div>}
+      </div>
+      {data.becamePlayer && (
+        <div className="absolute -bottom-5 right-0 px-2 py-0.5 bg-zinc-800 border border-zinc-600 rounded text-[9px] text-zinc-300 whitespace-nowrap">
+          → {data.becamePlayer}
+        </div>
+      )}
     </div>
   );
 }
@@ -107,9 +122,34 @@ const ESPN_PLAYER_IDS: Record<string, string> = {
   "Jaylen Brown": "3917376",
   "Derrick White": "3078576",
   "Payton Pritchard": "4066354",
+  "Sam Hauser": "4065804",
+  "Neemias Queta": "4397424",
+  "Jordan Walsh": "4683689",
+  "Baylor Scheierman": "4593841",
+  "Luka Garza": "4277951",
+  "Ron Harper Jr.": "4397251",
+  "Hugo Gonzalez": "5175647",
+  "Max Shulga": "4701992",
+  "Amari Williams": "4702745",
+  "John Tonje": "4593043",
   "Al Horford": "3213",
   "Jrue Holiday": "6442",
 };
+
+// Get acquisition label based on type
+function getAcquisitionLabel(acquisitionType?: string): string {
+  switch (acquisitionType) {
+    case "draft": return "Drafted";
+    case "trade": return "Traded";
+    case "draft-night-trade": return "Draft Night Trade";
+    case "free-agent": return "Signed (UDFA)";
+    case "signing": return "Signed (UDFA)";
+    case "udfa": return "Signed (UDFA)";
+    case "undrafted": return "Signed (UDFA)";
+    case "waiver": return "Waiver Claim";
+    default: return "Acquired";
+  }
+}
 
 // Target node with handles and player image
 function TargetNode({ data }: { data: AcquisitionNodeData }) {
@@ -118,6 +158,8 @@ function TargetNode({ data }: { data: AcquisitionNodeData }) {
   const espnUrl = espnId 
     ? `https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/${espnId}.png&w=350&h=254`
     : "";
+  
+  const acquisitionLabel = getAcquisitionLabel(data.acquisitionType);
   
   return (
     <div className="px-5 py-4 rounded-xl shadow-xl min-w-[240px] bg-green-900 border-2 border-green-400 relative">
@@ -136,11 +178,11 @@ function TargetNode({ data }: { data: AcquisitionNodeData }) {
         <div className="flex-1">
           <div className="flex items-center gap-2 mb-1">
             <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-            <span className="text-[10px] text-green-300 font-bold uppercase">Acquired</span>
+            <span className="text-[10px] text-green-300 font-bold uppercase">{acquisitionLabel}</span>
           </div>
           <div className="font-bold text-white text-lg">{data.label}</div>
           {data.sublabel && <div className="text-sm text-green-200">{data.sublabel}</div>}
-          {data.date && <div className="text-xs text-green-300 mt-1">{data.date}</div>}
+          {data.date && <div className="text-xs text-green-300 mt-1">{formatDate(data.date)}</div>}
         </div>
       </div>
     </div>
@@ -151,13 +193,14 @@ function TargetNode({ data }: { data: AcquisitionNodeData }) {
 function OriginNode({ data }: { data: AcquisitionNodeData }) {
   return (
     <div className="px-5 py-4 rounded-xl shadow-xl min-w-[200px] bg-amber-950 border-2 border-amber-400 animate-pulse relative">
-      <Handle type="target" position={Position.Left} className="!bg-amber-400 !w-4 !h-4" />
+      <Handle type="source" position={Position.Left} className="!bg-amber-400 !w-4 !h-4" />
+      <Handle type="target" position={Position.Right} className="!bg-amber-400 !w-4 !h-4" />
       <div className="flex items-center gap-2 mb-2">
         <span className="text-amber-400">★</span>
         <span className="text-xs text-amber-300 font-bold uppercase">Origin</span>
       </div>
       <div className="font-bold text-white text-lg">{data.label}</div>
-      {data.date && <div className="text-sm text-amber-300 mt-1">{data.date}</div>}
+      {data.date && <div className="text-sm text-amber-300 mt-1">{formatDate(data.date)}</div>}
     </div>
   );
 }
@@ -178,16 +221,31 @@ const NODE_HEIGHT = 80;
 // ELK layout - LEFT to RIGHT
 const elkOptions = {
   "elk.algorithm": "layered",
-  "elk.direction": "LEFT", // Vucevic on left, trace back to right
-  "elk.spacing.nodeNode": "50",
-  "elk.layered.spacing.nodeNodeBetweenLayers": "100",
+  "elk.direction": "LEFT", // Target on left, origins on right
+  "elk.spacing.nodeNode": "80",  // Vertical spacing between sibling nodes
+  "elk.layered.spacing.nodeNodeBetweenLayers": "180",  // Horizontal spacing between layers
+  "elk.layered.spacing.edgeNodeBetweenLayers": "40",  // Space between edges and nodes
+  "elk.layered.spacing.edgeEdgeBetweenLayers": "30",  // Space between parallel edges
   "elk.edgeRouting": "ORTHOGONAL",
+  "elk.layered.nodePlacement.strategy": "BRANDES_KOEPF",  // Better node placement
 };
 
 function parseDate(dateStr?: string): number {
   if (!dateStr) return Infinity;
   const date = new Date(dateStr);
   return isNaN(date.getTime()) ? Infinity : date.getTime();
+}
+
+function formatDate(dateStr?: string): string {
+  if (!dateStr) return "";
+  const date = new Date(dateStr);
+  if (isNaN(date.getTime())) return dateStr;
+  return date.toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric", 
+    year: "numeric",
+    timeZone: "UTC"
+  });
 }
 
 export default function AcquisitionTree({
