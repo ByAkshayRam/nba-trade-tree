@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "team": "WAS",
+    "player": "Justin Champagnie",
+    "source": "NBA/ESPN Trade History Research",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-10"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Justin Champagnie",
+    "acquisitionType": "free-agent",
+    "date": "2024-09-01",
+    "currentTeam": "WAS",
+    "tradeDescription": "Signed as free agent from Boston Celtics",
+    "note": "Pittsburgh product, energy forward. Free agent = no assets given up",
+    "isOrigin": true
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "team": "WAS",
+    "player": "Will Riley",
+    "source": "NBA/ESPN Trade History Research",
+    "originYear": 2025,
+    "depth": 1,
+    "lastUpdated": "2026-02-10"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Will Riley",
+    "acquisitionType": "draft",
+    "date": "2025-06-26",
+    "draftPick": 16,
+    "draftRound": 1,
+    "currentTeam": "WAS",
+    "tradeDescription": "Drafted 16th overall by Wizards",
+    "note": "Illinois product, long athletic wing, homegrown talent, rookie",
+    "isOrigin": true
+  }
+}

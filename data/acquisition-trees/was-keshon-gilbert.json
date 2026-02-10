@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "team": "WAS",
+    "player": "Keshon Gilbert",
+    "source": "NBA/ESPN Trade History Research",
+    "originYear": 2025,
+    "depth": 1,
+    "lastUpdated": "2026-02-10"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Keshon Gilbert",
+    "acquisitionType": "free-agent",
+    "date": "2025-10-01",
+    "currentTeam": "WAS",
+    "tradeDescription": "Signed as two-way player",
+    "note": "Iowa State product, two-way contract. Free agent = no assets given up",
+    "isOrigin": true
+  }
+}

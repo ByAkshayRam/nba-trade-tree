@@ -1,0 +1,58 @@
+{
+  "_meta": {
+    "team": "NYK",
+    "player": "Jose Alvarado",
+    "source": "NBA/ESPN Trade History Research",
+    "sourceUrl": "https://www.basketball-reference.com/players/a/alvarjo01.html",
+    "originYear": 2024,
+    "depth": 2,
+    "lastUpdated": "2026-02-10"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jose Alvarado",
+    "acquisitionType": "trade",
+    "date": "2026-02-05",
+    "tradePartner": "NOP",
+    "currentTeam": "NYK",
+    "tradeDescription": "Knicks acquire Alvarado for Dalen Terry and two second-round picks",
+    "note": "Georgia Tech product, fan favorite, defensive pest",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Dalen Terry",
+        "acquisitionType": "trade",
+        "date": "2026-02-04",
+        "tradePartner": "CHI",
+        "tradeDescription": "Acquired from Chicago for Guerschon Yabusele (held 1 day)",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Guerschon Yabusele",
+            "acquisitionType": "free-agent",
+            "date": "2024-07-15",
+            "tradeDescription": "Signed as free agent after Olympic standout performance",
+            "note": "French Olympian, returnee from Europe",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2028 Second-Round Pick",
+        "acquisitionType": "original",
+        "date": "2026-02-05",
+        "tradeDescription": "Knicks' own second-round pick",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2030 Second-Round Pick",
+        "acquisitionType": "original",
+        "date": "2026-02-05",
+        "tradeDescription": "Knicks' own second-round pick",
+        "isOrigin": true
+      }
+    ]
+  }
+}

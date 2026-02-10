@@ -1,0 +1,92 @@
+{
+  "_meta": {
+    "team": "NYK",
+    "player": "Mikal Bridges",
+    "source": "NBA/ESPN Trade History Research",
+    "sourceUrl": "https://www.basketball-reference.com/players/b/bridgmi01.html",
+    "originYear": 2018,
+    "depth": 5,
+    "lastUpdated": "2026-02-10"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Mikal Bridges",
+    "acquisitionType": "trade",
+    "date": "2024-06-26",
+    "tradePartner": "BKN",
+    "currentTeam": "NYK",
+    "tradeDescription": "Knicks acquire Bridges for massive haul: Bogdanovic, 5 first-round picks, pick swap",
+    "note": "Villanova product, 3&D wing, ironman durability",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Bojan Bogdanovic",
+        "acquisitionType": "trade",
+        "date": "2023-02-09",
+        "tradePartner": "DET",
+        "tradeDescription": "Acquired from Detroit for Alec Burks and draft consideration",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Alec Burks",
+            "acquisitionType": "trade",
+            "date": "2021-03-25",
+            "tradePartner": "GSW",
+            "tradeDescription": "Acquired from Golden State in buyout/trade",
+            "note": "Acquired for salary matching purposes",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2025 First-Round Pick (unprotected)",
+        "acquisitionType": "original",
+        "date": "2024-06-26",
+        "tradeDescription": "NYK's own first-round pick",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2027 First-Round Pick (unprotected)",
+        "acquisitionType": "original",
+        "date": "2024-06-26",
+        "tradeDescription": "NYK's own first-round pick",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2029 First-Round Pick (unprotected)",
+        "acquisitionType": "original",
+        "date": "2024-06-26",
+        "tradeDescription": "NYK's own first-round pick",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2031 First-Round Pick (unprotected)",
+        "acquisitionType": "original",
+        "date": "2024-06-26",
+        "tradeDescription": "NYK's own first-round pick",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2025 First-Round Pick (via MIL, protected)",
+        "acquisitionType": "trade",
+        "date": "2023-09-29",
+        "tradePartner": "MIL",
+        "tradeDescription": "Acquired from Milwaukee in Damian Lillard trade (NYK was facilitator)",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2028 First-Round Pick Swap",
+        "acquisitionType": "original",
+        "date": "2024-06-26",
+        "tradeDescription": "Right to swap 2028 first-round picks with NYK",
+        "isOrigin": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "team": "WAS",
+    "player": "Jaden Hardy",
+    "source": "NBA/ESPN Trade History Research",
+    "sourceUrl": "https://www.basketball-reference.com/players/h/hardyja01.html",
+    "originYear": 2026,
+    "depth": 1,
+    "lastUpdated": "2026-02-10"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jaden Hardy",
+    "acquisitionType": "trade",
+    "date": "2026-02-04",
+    "tradePartner": "DAL",
+    "currentTeam": "WAS",
+    "tradeDescription": "Acquired from Dallas in Anthony Davis mega-trade",
+    "note": "Young scoring guard, G-League Ignite product. Part of AD return package",
+    "isOrigin": true
+  }
+}

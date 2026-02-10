@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "team": "NYK",
+    "player": "Mohamed Diawara",
+    "source": "NBA/ESPN Trade History Research",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-10"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Mohamed Diawara",
+    "acquisitionType": "draft",
+    "date": "2024-06-27",
+    "draftPick": 44,
+    "draftRound": 2,
+    "currentTeam": "NYK",
+    "tradeDescription": "Drafted 44th overall by Knicks",
+    "note": "French forward, two-way player, homegrown talent",
+    "isOrigin": true
+  }
+}

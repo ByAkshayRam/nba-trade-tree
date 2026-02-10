@@ -1,0 +1,93 @@
+{
+  "_meta": {
+    "team": "WAS",
+    "player": "Anthony Davis",
+    "source": "NBA/ESPN Trade History Research",
+    "sourceUrl": "https://www.basketball-reference.com/players/d/davisan02.html",
+    "originYear": 2020,
+    "depth": 5,
+    "lastUpdated": "2026-02-10"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Anthony Davis",
+    "acquisitionType": "trade",
+    "date": "2026-02-04",
+    "tradePartner": "DAL",
+    "currentTeam": "WAS",
+    "tradeDescription": "Wizards acquire AD in massive 3-team deadline deal from Mavericks",
+    "note": "8x All-Star, 2020 NBA Champion, 2012 #1 overall pick",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Khris Middleton",
+        "acquisitionType": "trade",
+        "date": "2024-02-08",
+        "tradePartner": "MIL",
+        "tradeDescription": "Acquired from Milwaukee in Bradley Beal trade aftermath",
+        "note": "3x All-Star, 2021 NBA Champion. Salary matching",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "AJ Johnson",
+        "acquisitionType": "draft",
+        "date": "2024-06-26",
+        "draftPick": 23,
+        "draftRound": 1,
+        "tradeDescription": "Drafted 23rd overall by Wizards",
+        "note": "Texas A&M product, point guard prospect",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2024 #23 Overall Pick",
+            "acquisitionType": "original",
+            "date": "2024-06-26",
+            "draftPick": 23,
+            "becamePlayer": "AJ Johnson",
+            "tradeDescription": "Wizards' own first-round pick (via tanking)",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Malaki Branham",
+        "acquisitionType": "trade",
+        "date": "2023-06-22",
+        "tradePartner": "SAS",
+        "tradeDescription": "Acquired from San Antonio in trade",
+        "note": "Ohio State product, scoring guard",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Marvin Bagley III",
+        "acquisitionType": "trade",
+        "date": "2024-02-08",
+        "tradePartner": "DET",
+        "tradeDescription": "Acquired from Detroit in trade deadline deal",
+        "note": "2018 #2 overall pick, salary filler",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2026 First-Round Pick (via OKC)",
+        "acquisitionType": "trade",
+        "date": "2023-06-22",
+        "tradePartner": "OKC",
+        "tradeDescription": "Acquired from OKC in previous trade",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2030 First-Round Pick (via GS, top-20 protected)",
+        "acquisitionType": "trade",
+        "date": "2025-06-26",
+        "tradePartner": "GSW",
+        "tradeDescription": "Acquired from Golden State in previous trade",
+        "isOrigin": true
+      }
+    ]
+  }
+}

@@ -50,27 +50,98 @@ interface FlowNode {
   };
 }
 
-// Celtics roster organization (as of 2025-26 season)
-const ROSTER_ORDER: Record<string, { order: number; category: "starter" | "bench" | "two-way" }> = {
-  // Starters
-  "Derrick White": { order: 1, category: "starter" },
-  "Jaylen Brown": { order: 2, category: "starter" },
-  "Jayson Tatum": { order: 3, category: "starter" },
-  "Nikola Vucevic": { order: 4, category: "starter" },
-  "Payton Pritchard": { order: 5, category: "starter" },
-  // Bench
-  "Sam Hauser": { order: 10, category: "bench" },
-  "Neemias Queta": { order: 11, category: "bench" },
-  "Jordan Walsh": { order: 12, category: "bench" },
-  "Baylor Scheierman": { order: 13, category: "bench" },
-  "Luka Garza": { order: 14, category: "bench" },
-  "Ron Harper Jr.": { order: 15, category: "bench" },
-  "Chris Boucher": { order: 16, category: "bench" },
-  "Hugo Gonzalez": { order: 17, category: "bench" },
-  "Amari Williams": { order: 18, category: "bench" },
-  // Two-way
-  "John Tonje": { order: 20, category: "two-way" },
-  "Max Shulga": { order: 21, category: "two-way" },
+// Roster organization by team (as of 2025-26 season)
+const ROSTER_ORDERS: Record<string, Record<string, { order: number; category: "starter" | "bench" | "two-way" }>> = {
+  BOS: {
+    // Starters
+    "Derrick White": { order: 1, category: "starter" },
+    "Jaylen Brown": { order: 2, category: "starter" },
+    "Jayson Tatum": { order: 3, category: "starter" },
+    "Nikola Vucevic": { order: 4, category: "starter" },
+    "Payton Pritchard": { order: 5, category: "starter" },
+    // Bench
+    "Sam Hauser": { order: 10, category: "bench" },
+    "Neemias Queta": { order: 11, category: "bench" },
+    "Jordan Walsh": { order: 12, category: "bench" },
+    "Baylor Scheierman": { order: 13, category: "bench" },
+    "Luka Garza": { order: 14, category: "bench" },
+    "Ron Harper Jr.": { order: 15, category: "bench" },
+    "Chris Boucher": { order: 16, category: "bench" },
+    "Hugo Gonzalez": { order: 17, category: "bench" },
+    "Amari Williams": { order: 18, category: "bench" },
+    // Two-way
+    "John Tonje": { order: 20, category: "two-way" },
+    "Max Shulga": { order: 21, category: "two-way" },
+  },
+  NYK: {
+    // Starters
+    "Jalen Brunson": { order: 1, category: "starter" },
+    "Mikal Bridges": { order: 2, category: "starter" },
+    "OG Anunoby": { order: 3, category: "starter" },
+    "Karl-Anthony Towns": { order: 4, category: "starter" },
+    "Josh Hart": { order: 5, category: "starter" },
+    // Bench
+    "Miles McBride": { order: 10, category: "bench" },
+    "Jose Alvarado": { order: 11, category: "bench" },
+    "Mitchell Robinson": { order: 12, category: "bench" },
+    "Pacome Dadiet": { order: 13, category: "bench" },
+    "Dillon Jones": { order: 14, category: "bench" },
+    "Tyler Kolek": { order: 15, category: "bench" },
+    "Ariel Hukporti": { order: 16, category: "bench" },
+    "Jordan Clarkson": { order: 17, category: "bench" },
+    "Landry Shamet": { order: 18, category: "bench" },
+    // Two-way
+    "Mohamed Diawara": { order: 20, category: "two-way" },
+    "Trey Jemison III": { order: 21, category: "two-way" },
+    "Kevin McCullar Jr.": { order: 22, category: "two-way" },
+  },
+  OKC: {
+    // Starters
+    "Shai Gilgeous-Alexander": { order: 1, category: "starter" },
+    "Jalen Williams": { order: 2, category: "starter" },
+    "Chet Holmgren": { order: 3, category: "starter" },
+    "Alex Caruso": { order: 4, category: "starter" },
+    "Isaiah Hartenstein": { order: 5, category: "starter" },
+    // Bench
+    "Cason Wallace": { order: 10, category: "bench" },
+    "Luguentz Dort": { order: 11, category: "bench" },
+    "Jared McCain": { order: 12, category: "bench" },
+    "Isaiah Joe": { order: 13, category: "bench" },
+    "Jaylin Williams": { order: 14, category: "bench" },
+    "Aaron Wiggins": { order: 15, category: "bench" },
+    "Kenrich Williams": { order: 16, category: "bench" },
+    "Nikola Topic": { order: 17, category: "bench" },
+    "Ajay Mitchell": { order: 18, category: "bench" },
+    "Thomas Sorber": { order: 19, category: "bench" },
+    // Two-way
+    "Brooks Barnhizer": { order: 20, category: "two-way" },
+    "Buddy Boeheim": { order: 21, category: "two-way" },
+    "Branden Carlson": { order: 22, category: "two-way" },
+    "Chris Youngblood": { order: 23, category: "two-way" },
+  },
+  WAS: {
+    // Starters
+    "Trae Young": { order: 1, category: "starter" },
+    "Anthony Davis": { order: 2, category: "starter" },
+    "Alex Sarr": { order: 3, category: "starter" },
+    "Bilal Coulibaly": { order: 4, category: "starter" },
+    "Bub Carrington": { order: 5, category: "starter" },
+    // Bench
+    "Tre Johnson": { order: 10, category: "bench" },
+    "D'Angelo Russell": { order: 11, category: "bench" },
+    "Jaden Hardy": { order: 12, category: "bench" },
+    "Cam Whitmore": { order: 13, category: "bench" },
+    "Kyshawn George": { order: 14, category: "bench" },
+    "Will Riley": { order: 15, category: "bench" },
+    "Justin Champagnie": { order: 16, category: "bench" },
+    "Sharife Cooper": { order: 17, category: "bench" },
+    "Anthony Gill": { order: 18, category: "bench" },
+    "Skal Labissiere": { order: 19, category: "bench" },
+    // Two-way
+    "Keshon Gilbert": { order: 20, category: "two-way" },
+    "Tristan Vukcevic": { order: 21, category: "two-way" },
+    "Jamir Watkins": { order: 22, category: "two-way" },
+  },
 };
 
 interface FlowEdge {
@@ -82,6 +153,16 @@ interface FlowEdge {
 
 const TEAM_COLORS: Record<string, { primary: string; secondary: string }> = {
   BOS: { primary: "#007A33", secondary: "#BA9653" },
+  NYK: { primary: "#006BB6", secondary: "#F58426" },
+  OKC: { primary: "#007AC1", secondary: "#EF3B24" },
+  WAS: { primary: "#002B5C", secondary: "#E31837" },
+};
+
+const TEAM_NAMES: Record<string, string> = {
+  BOS: "Boston Celtics",
+  NYK: "New York Knicks",
+  OKC: "Oklahoma City Thunder",
+  WAS: "Washington Wizards",
 };
 
 export async function GET(
@@ -273,7 +354,8 @@ export async function GET(
     rosterNode.data.isHomegrown = !hasTrades;
     
     // Set roster order and category
-    const rosterInfo = ROSTER_ORDER[playerName];
+    const teamRosterOrder = ROSTER_ORDERS[team] || {};
+    const rosterInfo = teamRosterOrder[playerName];
     if (rosterInfo) {
       rosterNode.data.rosterOrder = rosterInfo.order;
       rosterNode.data.rosterCategory = rosterInfo.category;
@@ -303,7 +385,7 @@ export async function GET(
   
   return NextResponse.json({
     team,
-    teamName: "Boston Celtics",
+    teamName: TEAM_NAMES[team] || team,
     rosterCount: rosterPlayers,
     nodeCount: nodes.length,
     edgeCount: edges.length,

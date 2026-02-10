@@ -1,0 +1,23 @@
+{
+  "_meta": {
+    "team": "NYK",
+    "player": "Mitchell Robinson",
+    "source": "NBA/ESPN Trade History Research",
+    "sourceUrl": "https://www.basketball-reference.com/players/r/robinmi01.html",
+    "originYear": 2018,
+    "depth": 1,
+    "lastUpdated": "2026-02-10"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Mitchell Robinson",
+    "acquisitionType": "draft",
+    "date": "2018-06-21",
+    "draftPick": 36,
+    "draftRound": 2,
+    "currentTeam": "NYK",
+    "tradeDescription": "Drafted 36th overall by Knicks",
+    "note": "Second-round steal, elite shot blocker, homegrown talent",
+    "isOrigin": true
+  }
+}

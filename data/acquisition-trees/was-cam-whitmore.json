@@ -1,0 +1,31 @@
+{
+  "_meta": {
+    "team": "WAS",
+    "player": "Cam Whitmore",
+    "source": "NBA/ESPN Trade History Research",
+    "sourceUrl": "https://www.basketball-reference.com/players/w/whitmca01.html",
+    "originYear": 2024,
+    "depth": 2,
+    "lastUpdated": "2026-02-10"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Cam Whitmore",
+    "acquisitionType": "trade",
+    "date": "2024-06-26",
+    "tradePartner": "HOU",
+    "currentTeam": "WAS",
+    "tradeDescription": "Acquired from Houston in draft night trade",
+    "note": "Villanova product, athletic forward, 2023 lottery pick",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2024 Second-Round Pick",
+        "acquisitionType": "original",
+        "date": "2024-06-26",
+        "tradeDescription": "Wizards' own second-round pick",
+        "isOrigin": true
+      }
+    ]
+  }
+}

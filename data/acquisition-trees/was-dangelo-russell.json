@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "team": "WAS",
+    "player": "D'Angelo Russell",
+    "source": "NBA/ESPN Trade History Research",
+    "sourceUrl": "https://www.basketball-reference.com/players/r/russeda01.html",
+    "originYear": 2026,
+    "depth": 1,
+    "lastUpdated": "2026-02-10"
+  },
+  "tree": {
+    "type": "player",
+    "name": "D'Angelo Russell",
+    "acquisitionType": "trade",
+    "date": "2026-02-04",
+    "tradePartner": "DAL",
+    "currentTeam": "WAS",
+    "tradeDescription": "Acquired from Dallas in Anthony Davis mega-trade (was part of LAL-to-DAL deal)",
+    "note": "2019 All-Star, former #2 overall pick. Salary matching piece",
+    "isOrigin": true
+  }
+}

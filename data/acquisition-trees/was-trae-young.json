@@ -1,0 +1,78 @@
+{
+  "_meta": {
+    "team": "WAS",
+    "player": "Trae Young",
+    "source": "NBA/ESPN Trade History Research",
+    "sourceUrl": "https://www.basketball-reference.com/players/y/youngtr01.html",
+    "originYear": 2020,
+    "depth": 4,
+    "lastUpdated": "2026-02-10"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Trae Young",
+    "acquisitionType": "trade",
+    "date": "2026-01-07",
+    "tradePartner": "ATL",
+    "currentTeam": "WAS",
+    "tradeDescription": "Wizards acquire Trae Young from Hawks for CJ McCollum and Corey Kispert",
+    "note": "3x All-Star, 2022 Eastern Conference Finals, elite playmaker",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "CJ McCollum",
+        "acquisitionType": "trade",
+        "date": "2024-02-08",
+        "tradePartner": "NOP",
+        "tradeDescription": "Acquired from New Orleans in trade deadline deal",
+        "note": "3x All-Star level scorer, Lehigh product",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Bradley Beal",
+            "acquisitionType": "draft",
+            "date": "2012-06-28",
+            "draftPick": 3,
+            "draftRound": 1,
+            "tradeDescription": "Drafted 3rd overall by Washington Wizards",
+            "note": "3x All-Star, franchise cornerstone for 11 years",
+            "assetsGivenUp": [
+              {
+                "type": "pick",
+                "name": "2012 #3 Overall Pick",
+                "acquisitionType": "original",
+                "date": "2012-06-28",
+                "draftPick": 3,
+                "becamePlayer": "Bradley Beal",
+                "tradeDescription": "Wizards' own first-round pick - finished 20-46 in 2011-12",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Corey Kispert",
+        "acquisitionType": "draft",
+        "date": "2021-07-29",
+        "draftPick": 15,
+        "draftRound": 1,
+        "tradeDescription": "Drafted 15th overall by Wizards",
+        "note": "Gonzaga sharpshooter, homegrown",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2021 #15 Overall Pick",
+            "acquisitionType": "original",
+            "date": "2021-07-29",
+            "draftPick": 15,
+            "becamePlayer": "Corey Kispert",
+            "tradeDescription": "Wizards' own first-round pick",
+            "isOrigin": true
+          }
+        ]
+      }
+    ]
+  }
+}

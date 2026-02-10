@@ -1,0 +1,58 @@
+{
+  "_meta": {
+    "team": "OKC",
+    "player": "Jared McCain",
+    "source": "NBA/ESPN Trade History Research",
+    "sourceUrl": "https://www.basketball-reference.com/players/m/mccaija01.html",
+    "originYear": 2024,
+    "depth": 2,
+    "lastUpdated": "2026-02-10"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jared McCain",
+    "acquisitionType": "trade",
+    "date": "2026-02-04",
+    "tradePartner": "PHI",
+    "currentTeam": "OKC",
+    "tradeDescription": "Thunder acquire McCain from 76ers for first-round pick and three seconds",
+    "note": "Duke product, ROTY candidate, explosive scorer",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2026 First-Round Pick (via HOU)",
+        "acquisitionType": "trade",
+        "date": "2021-08-25",
+        "tradePartner": "HOU",
+        "tradeDescription": "Acquired from Houston in massive Sam Presti pick collection",
+        "note": "Part of Thunder's legendary draft capital stockpile",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2027 Second-Round Pick",
+        "acquisitionType": "original",
+        "date": "2026-02-04",
+        "tradeDescription": "Most favorable of picks from OKC/HOU/IND/MIA",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2028 Second-Round Pick (from OKC)",
+        "acquisitionType": "original",
+        "date": "2026-02-04",
+        "tradeDescription": "Thunder's own second-round pick",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2028 Second-Round Pick (via MIL)",
+        "acquisitionType": "trade",
+        "date": "2023-09-29",
+        "tradePartner": "MIL",
+        "tradeDescription": "Acquired via previous trade",
+        "isOrigin": true
+      }
+    ]
+  }
+}

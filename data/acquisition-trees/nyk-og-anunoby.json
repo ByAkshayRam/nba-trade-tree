@@ -1,0 +1,77 @@
+{
+  "_meta": {
+    "team": "NYK",
+    "player": "OG Anunoby",
+    "source": "NBA/ESPN Trade History Research",
+    "sourceUrl": "https://www.basketball-reference.com/players/a/anunoog01.html",
+    "originYear": 2014,
+    "depth": 4,
+    "lastUpdated": "2026-02-10"
+  },
+  "tree": {
+    "type": "player",
+    "name": "OG Anunoby",
+    "acquisitionType": "trade",
+    "date": "2023-12-30",
+    "tradePartner": "TOR",
+    "currentTeam": "NYK",
+    "tradeDescription": "Knicks acquire OG for RJ Barrett, Immanuel Quickley, and DET 2nd",
+    "note": "2019 NBA Champion, elite 3&D wing",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "RJ Barrett",
+        "acquisitionType": "draft",
+        "date": "2019-06-20",
+        "draftPick": 3,
+        "draftRound": 1,
+        "tradeDescription": "Drafted 3rd overall by Knicks",
+        "note": "Knicks tanked and won lottery in 2019",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2019 #3 Overall Pick",
+            "acquisitionType": "original",
+            "date": "2019-06-20",
+            "draftPick": 3,
+            "becamePlayer": "RJ Barrett",
+            "tradeDescription": "Knicks' own pick - finished 17-65 in 2018-19",
+            "note": "Worst record in NBA that season",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Immanuel Quickley",
+        "acquisitionType": "draft",
+        "date": "2020-11-18",
+        "draftPick": 25,
+        "draftRound": 1,
+        "tradeDescription": "Drafted 25th overall by Knicks",
+        "note": "Kentucky product, 6th Man candidate",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2020 #25 Overall Pick",
+            "acquisitionType": "original",
+            "date": "2020-11-18",
+            "draftPick": 25,
+            "becamePlayer": "Immanuel Quickley",
+            "tradeDescription": "Knicks' own first-round pick",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2024 Second-Round Pick (via DET)",
+        "acquisitionType": "trade",
+        "date": "2022-06-23",
+        "tradePartner": "DET",
+        "tradeDescription": "Acquired from Detroit in Kemba Walker deal",
+        "isOrigin": true
+      }
+    ]
+  }
+}
