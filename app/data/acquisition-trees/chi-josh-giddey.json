@@ -2,9 +2,9 @@
   "_meta": {
     "team": "CHI",
     "player": "Josh Giddey",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "NBA Trade History Research",
     "originYear": 2021,
-    "depth": 2,
+    "depth": 4,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -14,15 +14,16 @@
     "date": "2024-06-20",
     "currentTeam": "CHI",
     "tradePartner": "OKC",
-    "tradeDescription": "Bulls trade Alex Caruso for Giddey",
-    "note": "Young playmaker",
+    "tradeDescription": "Bulls acquired Giddey from Thunder for Alex Caruso",
+    "note": "Triple-double machine, young playmaker",
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Alex Caruso",
-        "acquisitionType": "trade",
-        "date": "2021-08-11",
-        "tradePartner": "LAL",
+        "acquisitionType": "free-agent",
+        "date": "2021-08-02",
+        "tradeDescription": "Bulls signed Caruso as free agent from Lakers",
+        "note": "Fan favorite, elite defender, 2020 Champion",
         "isOrigin": true
       }
     ]

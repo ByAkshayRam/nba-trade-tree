@@ -2,9 +2,9 @@
   "_meta": {
     "team": "BKN",
     "player": "Michael Porter Jr.",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2026,
-    "depth": 1,
+    "source": "NBA Trade History Research",
+    "originYear": 2018,
+    "depth": 4,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -14,7 +14,38 @@
     "date": "2026-02-06",
     "currentTeam": "BKN",
     "tradePartner": "DEN",
-    "tradeDescription": "Acquired from Nuggets at deadline",
-    "note": "Scoring forward"
+    "tradeDescription": "Nets acquire MPJ at 2026 deadline for Cam Thomas and picks",
+    "note": "Sharpshooting forward, 2023 Champion, injury history",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Cam Thomas",
+        "acquisitionType": "draft",
+        "date": "2021-07-29",
+        "draftPick": 27,
+        "draftRound": 1,
+        "currentTeam": "MIL",
+        "tradeDescription": "Nets drafted Cam Thomas with their own pick",
+        "note": "Bucket getter, 40+ point games, traded to MIL in same deadline",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2026 1st Round Pick (BKN)",
+        "acquisitionType": "original",
+        "date": "2026-02-06",
+        "tradeDescription": "Brooklyn's own 2026 first",
+        "note": "Another first from the perpetually rebuilding Nets",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2028 1st Round Pick (BKN)",
+        "acquisitionType": "original",
+        "date": "2026-02-06",
+        "tradeDescription": "Brooklyn's own 2028 first",
+        "isOrigin": true
+      }
+    ]
   }
 }

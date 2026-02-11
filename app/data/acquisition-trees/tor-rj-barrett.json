@@ -2,9 +2,9 @@
   "_meta": {
     "team": "TOR",
     "player": "RJ Barrett",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2017,
-    "depth": 2,
+    "source": "NBA Trade History Research",
+    "originYear": 2019,
+    "depth": 4,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -14,16 +14,48 @@
     "date": "2023-12-30",
     "currentTeam": "TOR",
     "tradePartner": "NYK",
-    "tradeDescription": "Barrett and Quickley for Anunoby",
-    "note": "Canadian star homecoming",
+    "tradeDescription": "Raptors acquire RJ for Immanuel Quickley and a 2nd",
+    "note": "Canadian star comes home, former #3 pick",
     "assetsGivenUp": [
       {
         "type": "player",
-        "name": "OG Anunoby",
+        "name": "Immanuel Quickley",
         "acquisitionType": "draft",
-        "date": "2017-06-22",
-        "draftPick": 23,
-        "note": "Developed into elite 3&D",
+        "date": "2020-11-18",
+        "draftPick": 25,
+        "draftRound": 1,
+        "currentTeam": "TOR",
+        "tradeDescription": "Knicks drafted IQ with pick acquired from OKC",
+        "note": "Scoring guard, stayed in Toronto after trade",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2020 #25 Pick (from OKC via LAC)",
+            "acquisitionType": "trade",
+            "date": "2019-07-06",
+            "tradePartner": "LAC",
+            "tradeDescription": "Knicks got pick in Marcus Morris sign-and-trade",
+            "becamePlayer": "Immanuel Quickley",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Marcus Morris Sr.",
+                "acquisitionType": "free-agent",
+                "date": "2019-07-06",
+                "tradeDescription": "Knicks signed Morris as free agent, then traded for pick",
+                "note": "Sign-and-trade",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2024 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2023-12-30",
+        "tradeDescription": "Knicks own 2nd round pick",
         "isOrigin": true
       }
     ]

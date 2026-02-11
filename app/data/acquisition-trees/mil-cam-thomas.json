@@ -2,9 +2,9 @@
   "_meta": {
     "team": "MIL",
     "player": "Cam Thomas",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2023,
-    "depth": 2,
+    "source": "NBA Trade History Research",
+    "originYear": 2021,
+    "depth": 4,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -14,17 +14,84 @@
     "date": "2026-02-06",
     "currentTeam": "MIL",
     "tradePartner": "BKN",
-    "tradeDescription": "Deadline deal for young scorer",
-    "note": "Elite bucket getter",
+    "tradeDescription": "Bucks acquire scoring guard at 2026 deadline for Damian Lillard",
+    "note": "Bucket getter, young scoring guard",
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Damian Lillard",
         "acquisitionType": "trade",
-        "date": "2023-09-27",
+        "date": "2023-10-01",
         "tradePartner": "POR",
-        "note": "Superstar traded after 1.5 seasons",
-        "isOrigin": true
+        "tradeDescription": "Bucks acquired Dame for Jrue Holiday + picks",
+        "note": "7x All-Star, Dame Time legend",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Jrue Holiday",
+            "acquisitionType": "trade",
+            "date": "2020-11-24",
+            "tradePartner": "NOP",
+            "tradeDescription": "Bucks acquired Jrue for Eric Bledsoe, George Hill, picks",
+            "note": "2021 NBA Champion, Finals difference maker",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Eric Bledsoe",
+                "acquisitionType": "trade",
+                "date": "2017-11-07",
+                "tradePartner": "PHO",
+                "tradeDescription": "Acquired from Suns for Greg Monroe and picks",
+                "note": "Point guard after 'I don't wanna be here' tweet",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Greg Monroe",
+                    "acquisitionType": "free-agent",
+                    "date": "2015-07-09",
+                    "tradeDescription": "Signed as free agent from Detroit",
+                    "note": "Big man signing didn't work out",
+                    "isOrigin": true
+                  }
+                ]
+              },
+              {
+                "type": "player",
+                "name": "George Hill",
+                "acquisitionType": "trade",
+                "date": "2020-11-24",
+                "tradePartner": "OKC",
+                "tradeDescription": "Salary filler in multi-team deal",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2024 Unprotected 1st (MIL)",
+                "acquisitionType": "original",
+                "date": "2020-11-24",
+                "tradeDescription": "Milwaukee's own pick, became Rob Dillingham",
+                "becamePlayer": "Rob Dillingham",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2027 Unprotected 1st (MIL)",
+                "acquisitionType": "original",
+                "date": "2020-11-24",
+                "tradeDescription": "Milwaukee's own pick",
+                "isOrigin": true
+              }
+            ]
+          },
+          {
+            "type": "pick",
+            "name": "2029 Unprotected 1st (MIL)",
+            "acquisitionType": "original",
+            "date": "2023-10-01",
+            "tradeDescription": "Milwaukee's own pick in Dame trade",
+            "isOrigin": true
+          }
+        ]
       }
     ]
   }
