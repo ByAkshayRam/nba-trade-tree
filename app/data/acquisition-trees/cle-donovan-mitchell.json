@@ -2,9 +2,9 @@
   "_meta": {
     "team": "CLE",
     "player": "Donovan Mitchell",
-    "source": "NBA Trade History Research",
-    "originYear": 2017,
-    "depth": 4,
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2018,
+    "depth": 2,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -14,110 +14,22 @@
     "date": "2022-09-01",
     "currentTeam": "CLE",
     "tradePartner": "UTA",
-    "tradeDescription": "Cavaliers acquire Spida for Lauri Markkanen, Collin Sexton, Ochai Agbaji, and 3 unprotected 1sts",
-    "note": "3x All-Star, franchise cornerstone",
+    "tradeDescription": "Blockbuster: Markkanen, Sexton, picks for Mitchell",
+    "note": "3x All-Star",
     "assetsGivenUp": [
-      {
-        "type": "player",
-        "name": "Lauri Markkanen",
-        "acquisitionType": "trade",
-        "date": "2021-08-27",
-        "tradePartner": "CHI",
-        "tradeDescription": "Acquired in 3-team trade involving Larry Nance Jr.",
-        "note": "Breakout All-Star in Utah",
-        "assetsGivenUp": [
-          {
-            "type": "player",
-            "name": "Larry Nance Jr.",
-            "acquisitionType": "trade",
-            "date": "2018-02-08",
-            "tradePartner": "LAL",
-            "tradeDescription": "Acquired from Lakers with Jordan Clarkson for Isaiah Thomas, Channing Frye, and a 1st",
-            "note": "Hometown hero, Oregon native",
-            "assetsGivenUp": [
-              {
-                "type": "player",
-                "name": "Isaiah Thomas",
-                "acquisitionType": "trade",
-                "date": "2017-08-22",
-                "tradePartner": "BOS",
-                "tradeDescription": "Acquired in Kyrie Irving trade",
-                "note": "Former All-NBA, hip injury derailed career",
-                "assetsGivenUp": [
-                  {
-                    "type": "player",
-                    "name": "Kyrie Irving",
-                    "acquisitionType": "draft",
-                    "date": "2011-06-23",
-                    "draftPick": 1,
-                    "draftRound": 1,
-                    "tradeDescription": "Cavaliers drafted Kyrie #1 overall with pick from LAC via trade",
-                    "note": "2016 NBA Champion, hit THE SHOT. Pick came from Baron Davis trade.",
-                    "assetsGivenUp": [
-                      {
-                        "type": "player",
-                        "name": "Baron Davis",
-                        "acquisitionType": "trade",
-                        "date": "2011-02-24",
-                        "tradePartner": "LAC",
-                        "tradeDescription": "Cavaliers took on Davis' expiring contract for Clippers unprotected 2011 1st",
-                        "note": "Contract dump turned into #1 pick (Kyrie). Cavs were tanking after LeBron left.",
-                        "isOrigin": true
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
       {
         "type": "player",
         "name": "Collin Sexton",
         "acquisitionType": "draft",
         "date": "2018-06-21",
         "draftPick": 8,
-        "draftRound": 1,
-        "currentTeam": "UTA",
-        "tradeDescription": "Cavaliers drafted Sexton with pick from BKN (Kyrie trade)",
-        "note": "Young Bull, 20+ PPG scorer",
-        "isOrigin": true
-      },
-      {
-        "type": "player",
-        "name": "Ochai Agbaji",
-        "acquisitionType": "draft",
-        "date": "2022-06-23",
-        "draftPick": 14,
-        "draftRound": 1,
-        "currentTeam": "UTA",
-        "tradeDescription": "Cavaliers drafted with their own pick",
-        "note": "National champion at Kansas",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2025 Unprotected 1st (CLE)",
+        "name": "2025 1st Round Pick",
         "acquisitionType": "original",
         "date": "2022-09-01",
-        "tradeDescription": "Cleveland's own unprotected 2025 first",
-        "isOrigin": true
-      },
-      {
-        "type": "pick",
-        "name": "2027 Unprotected 1st (CLE)",
-        "acquisitionType": "original",
-        "date": "2022-09-01",
-        "tradeDescription": "Cleveland's own unprotected 2027 first",
-        "isOrigin": true
-      },
-      {
-        "type": "pick",
-        "name": "2029 Unprotected 1st (CLE)",
-        "acquisitionType": "original",
-        "date": "2022-09-01",
-        "tradeDescription": "Cleveland's own unprotected 2029 first",
         "isOrigin": true
       }
     ]

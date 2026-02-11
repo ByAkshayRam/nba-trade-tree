@@ -2,9 +2,9 @@
   "_meta": {
     "team": "CLE",
     "player": "James Harden",
-    "source": "NBA Trade History Research",
-    "originYear": 2009,
-    "depth": 5,
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2019,
+    "depth": 2,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -14,8 +14,8 @@
     "date": "2026-02-06",
     "currentTeam": "CLE",
     "tradePartner": "LAC",
-    "tradeDescription": "Cavaliers acquire Harden at 2026 deadline for Darius Garland and picks",
-    "note": "Former MVP reunites with competitive team",
+    "tradeDescription": "Blockbuster deadline deal",
+    "note": "MVP, scoring champion",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -23,19 +23,14 @@
         "acquisitionType": "draft",
         "date": "2019-06-20",
         "draftPick": 5,
-        "draftRound": 1,
-        "currentTeam": "LAC",
-        "tradeDescription": "Cavaliers drafted Garland with their OWN pick",
-        "note": "2x All-Star, drafted after Zion/Ja/RJ/DeAndre",
+        "note": "All-Star traded for Harden",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2026 1st Round Pick",
+        "name": "2027 1st Round Pick",
         "acquisitionType": "original",
         "date": "2026-02-06",
-        "tradeDescription": "Cleveland's own 2026 first rounder",
-        "note": "Protected lottery",
         "isOrigin": true
       }
     ]
