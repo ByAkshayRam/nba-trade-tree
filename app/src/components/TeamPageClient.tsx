@@ -2,7 +2,32 @@
 
 import { useState, useCallback } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import TeamAcquisitionTree from "./TeamAcquisitionTree";
+
+// All Eastern Conference teams
+const EAST_TEAMS = [
+  { abbr: "ATL", name: "Atlanta Hawks", emoji: "🦅" },
+  { abbr: "BKN", name: "Brooklyn Nets", emoji: "🌃" },
+  { abbr: "BOS", name: "Boston Celtics", emoji: "🍀" },
+  { abbr: "CHA", name: "Charlotte Hornets", emoji: "🐝" },
+  { abbr: "CHI", name: "Chicago Bulls", emoji: "🐂" },
+  { abbr: "CLE", name: "Cleveland Cavaliers", emoji: "⚔️" },
+  { abbr: "DET", name: "Detroit Pistons", emoji: "🔧" },
+  { abbr: "IND", name: "Indiana Pacers", emoji: "🏎️" },
+  { abbr: "MIA", name: "Miami Heat", emoji: "🔥" },
+  { abbr: "MIL", name: "Milwaukee Bucks", emoji: "🦌" },
+  { abbr: "NYK", name: "New York Knicks", emoji: "🗽" },
+  { abbr: "ORL", name: "Orlando Magic", emoji: "✨" },
+  { abbr: "PHI", name: "Philadelphia 76ers", emoji: "🔔" },
+  { abbr: "TOR", name: "Toronto Raptors", emoji: "🦖" },
+  { abbr: "WAS", name: "Washington Wizards", emoji: "🧙" },
+];
+
+// Get team emoji
+function getTeamEmoji(abbr: string): string {
+  return EAST_TEAMS.find(t => t.abbr === abbr.toUpperCase())?.emoji || "🏀";
+}
 
 interface SelectedPlayerInfo {
   id: string;
@@ -116,10 +141,18 @@ function generatePlayerNarrative(player: SelectedPlayerInfo, teamName: string): 
 
 export default function TeamPageClient({ data, teamAbbr }: TeamPageClientProps) {
   const [selectedPlayer, setSelectedPlayer] = useState<SelectedPlayerInfo | null>(null);
+  const router = useRouter();
   
   const handlePlayerSelect = useCallback((player: SelectedPlayerInfo | null) => {
     setSelectedPlayer(player);
   }, []);
+
+  const handleTeamChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const newTeam = e.target.value;
+    if (newTeam && newTeam !== teamAbbr.toUpperCase()) {
+      router.push(`/team/${newTeam}`);
+    }
+  };
   
   // Generate dynamic narrative
   const currentNarrative = selectedPlayer 
@@ -129,6 +162,8 @@ export default function TeamPageClient({ data, teamAbbr }: TeamPageClientProps) 
   const narrativeTitle = selectedPlayer 
     ? `🔍 ${selectedPlayer.name}'s Acquisition Chain`
     : "📖 Roster Story";
+
+  const currentTeamEmoji = getTeamEmoji(teamAbbr);
 
   return (
     <div className="min-h-screen bg-gray-950 text-white">
@@ -140,17 +175,31 @@ export default function TeamPageClient({ data, teamAbbr }: TeamPageClientProps) 
               ← Back to Search
             </Link>
             <h1 className="text-2xl font-bold flex items-center gap-3">
-              <span className="text-3xl">🍀</span>
+              <span className="text-3xl">{currentTeamEmoji}</span>
               {data.teamName} - Complete Roster Acquisition Tree
             </h1>
           </div>
-          <div className="flex items-center gap-6">
-            <Link
-              href={`/team/${teamAbbr}/acquisition/jayson-tatum`}
-              className="text-sm text-gray-400 hover:text-white"
-            >
-              View Individual Players →
-            </Link>
+          <div className="flex items-center gap-4">
+            {/* Team Switcher Dropdown */}
+            <div className="relative">
+              <select
+                value={teamAbbr.toUpperCase()}
+                onChange={handleTeamChange}
+                className="appearance-none bg-gray-800 border border-gray-700 text-white px-4 py-2 pr-10 rounded-lg cursor-pointer hover:border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent text-sm font-medium"
+              >
+                <option value="" disabled>Switch Team</option>
+                {EAST_TEAMS.map(team => (
+                  <option key={team.abbr} value={team.abbr}>
+                    {team.emoji} {team.abbr} - {team.name}
+                  </option>
+                ))}
+              </select>
+              <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </header>
