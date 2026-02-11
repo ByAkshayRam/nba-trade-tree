@@ -8,7 +8,10 @@ interface PageProps {
 }
 
 async function getTeamTree(teamAbbr: string) {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3456";
+  // On Vercel, use VERCEL_URL; locally use localhost
+  const baseUrl = process.env.VERCEL_URL 
+    ? `https://${process.env.VERCEL_URL}`
+    : process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3456";
   
   try {
     const res = await fetch(
