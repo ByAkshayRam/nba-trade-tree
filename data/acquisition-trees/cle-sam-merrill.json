@@ -1,0 +1,17 @@
+{
+  "_meta": {
+    "team": "CLE",
+    "player": "Sam Merrill",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2023,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Sam Merrill",
+    "acquisitionType": "free-agent",
+    "date": "2023-07-01",
+    "currentTeam": "CLE"
+  }
+}

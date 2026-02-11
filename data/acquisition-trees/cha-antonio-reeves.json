@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "CHA",
+    "player": "Antonio Reeves",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2025,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Antonio Reeves",
+    "acquisitionType": "draft",
+    "date": "2025-06-26",
+    "currentTeam": "CHA",
+    "draftPick": 43,
+    "draftRound": 2
+  }
+}

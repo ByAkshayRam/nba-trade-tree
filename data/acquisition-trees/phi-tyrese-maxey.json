@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "team": "PHI",
+    "player": "Tyrese Maxey",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2020,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Tyrese Maxey",
+    "acquisitionType": "draft",
+    "date": "2020-11-18",
+    "currentTeam": "PHI",
+    "draftPick": 21,
+    "draftRound": 1,
+    "note": "All-Star, MIP, franchise cornerstone"
+  }
+}

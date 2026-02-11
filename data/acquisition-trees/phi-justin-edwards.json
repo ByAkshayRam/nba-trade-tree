@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "PHI",
+    "player": "Justin Edwards",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Justin Edwards",
+    "acquisitionType": "draft",
+    "date": "2024-06-26",
+    "currentTeam": "PHI",
+    "draftPick": 22,
+    "draftRound": 1
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "DET",
+    "player": "Bobi Klintman",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2023,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Bobi Klintman",
+    "acquisitionType": "draft",
+    "date": "2023-06-22",
+    "currentTeam": "DET",
+    "draftPick": 37,
+    "draftRound": 2
+  }
+}

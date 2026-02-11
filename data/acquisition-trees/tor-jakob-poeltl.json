@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "TOR",
+    "player": "Jakob Poeltl",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2023,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jakob Poeltl",
+    "acquisitionType": "trade",
+    "date": "2023-02-09",
+    "currentTeam": "TOR",
+    "tradePartner": "SAS",
+    "note": "Returned to Toronto"
+  }
+}

@@ -2,21 +2,16 @@
   "_meta": {
     "team": "WAS",
     "player": "Tristan Vukcevic",
-    "source": "NBA/ESPN Trade History Research",
-    "originYear": 2023,
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2024,
     "depth": 1,
-    "lastUpdated": "2026-02-10"
+    "lastUpdated": "2026-02-11"
   },
   "tree": {
     "type": "player",
     "name": "Tristan Vukcevic",
-    "acquisitionType": "draft",
-    "date": "2023-06-22",
-    "draftPick": 43,
-    "draftRound": 2,
-    "currentTeam": "WAS",
-    "tradeDescription": "Drafted 43rd overall by Wizards",
-    "note": "Serbian big man, stash pick, homegrown talent",
-    "isOrigin": true
+    "acquisitionType": "free-agent",
+    "date": "2024-07-01",
+    "currentTeam": "WAS"
   }
 }

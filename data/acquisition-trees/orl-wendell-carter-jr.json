@@ -1,0 +1,41 @@
+{
+  "_meta": {
+    "team": "ORL",
+    "player": "Wendell Carter Jr.",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2004,
+    "depth": 3,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Wendell Carter Jr.",
+    "acquisitionType": "trade",
+    "date": "2021-03-25",
+    "currentTeam": "ORL",
+    "tradePartner": "CHI",
+    "tradeDescription": "Part of Vucevic deal",
+    "note": "Two-way center",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Nikola Vucevic",
+        "acquisitionType": "trade",
+        "date": "2012-08-10",
+        "tradePartner": "PHI",
+        "note": "Came in Dwight Howard trade",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Dwight Howard",
+            "acquisitionType": "draft",
+            "date": "2004-06-24",
+            "draftPick": 1,
+            "note": "#1 overall pick",
+            "isOrigin": true
+          }
+        ]
+      }
+    ]
+  }
+}

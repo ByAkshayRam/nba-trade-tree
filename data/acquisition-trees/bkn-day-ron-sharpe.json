@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "BKN",
+    "player": "Day'Ron Sharpe",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2021,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Day'Ron Sharpe",
+    "acquisitionType": "draft",
+    "date": "2021-07-29",
+    "currentTeam": "BKN",
+    "draftPick": 29,
+    "draftRound": 1
+  }
+}

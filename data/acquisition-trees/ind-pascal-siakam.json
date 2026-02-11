@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "team": "IND",
+    "player": "Pascal Siakam",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2024,
+    "depth": 2,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Pascal Siakam",
+    "acquisitionType": "trade",
+    "date": "2024-01-17",
+    "currentTeam": "IND",
+    "tradePartner": "TOR",
+    "tradeDescription": "Deadline blockbuster",
+    "note": "All-Star forward, champion",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2024 1st Round Pick",
+        "acquisitionType": "original",
+        "date": "2024-01-17",
+        "isOrigin": true
+      }
+    ]
+  }
+}

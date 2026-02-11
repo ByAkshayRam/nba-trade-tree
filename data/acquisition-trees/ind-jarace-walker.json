@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "IND",
+    "player": "Jarace Walker",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2023,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jarace Walker",
+    "acquisitionType": "draft",
+    "date": "2023-06-22",
+    "currentTeam": "IND",
+    "draftPick": 8,
+    "draftRound": 1
+  }
+}

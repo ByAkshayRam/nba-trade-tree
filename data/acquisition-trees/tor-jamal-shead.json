@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "TOR",
+    "player": "Jamal Shead",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jamal Shead",
+    "acquisitionType": "draft",
+    "date": "2024-06-26",
+    "currentTeam": "TOR",
+    "draftPick": 45,
+    "draftRound": 2
+  }
+}

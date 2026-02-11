@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "team": "PHI",
+    "player": "MarJon Beauchamp",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2026,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "MarJon Beauchamp",
+    "acquisitionType": "trade",
+    "date": "2026-02-06",
+    "currentTeam": "PHI",
+    "tradePartner": "MIL"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "BKN",
+    "player": "Ben Saraf",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2025,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Ben Saraf",
+    "acquisitionType": "draft",
+    "date": "2025-06-26",
+    "currentTeam": "BKN",
+    "draftPick": 37,
+    "draftRound": 2
+  }
+}

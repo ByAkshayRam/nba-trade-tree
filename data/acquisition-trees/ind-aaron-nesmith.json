@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "team": "IND",
+    "player": "Aaron Nesmith",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2022,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Aaron Nesmith",
+    "acquisitionType": "trade",
+    "date": "2022-02-08",
+    "currentTeam": "IND",
+    "tradePartner": "BOS"
+  }
+}

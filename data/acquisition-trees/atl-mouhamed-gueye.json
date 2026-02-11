@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "ATL",
+    "player": "Mouhamed Gueye",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2023,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Mouhamed Gueye",
+    "acquisitionType": "draft",
+    "date": "2023-06-22",
+    "currentTeam": "ATL",
+    "draftPick": 39,
+    "draftRound": 1
+  }
+}

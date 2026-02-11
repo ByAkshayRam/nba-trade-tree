@@ -1,0 +1,31 @@
+{
+  "_meta": {
+    "team": "MIA",
+    "player": "Andrew Wiggins",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2019,
+    "depth": 2,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Andrew Wiggins",
+    "acquisitionType": "trade",
+    "date": "2026-02-06",
+    "currentTeam": "MIA",
+    "tradePartner": "GSW",
+    "tradeDescription": "Part of Jimmy Butler mega-deal",
+    "note": "Champion, All-Star starter",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Jimmy Butler",
+        "acquisitionType": "trade",
+        "date": "2019-07-06",
+        "tradePartner": "PHI",
+        "note": "6x All-Star, traded at deadline",
+        "isOrigin": true
+      }
+    ]
+  }
+}

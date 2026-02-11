@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "PHI",
+    "player": "Kyle Lowry",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Kyle Lowry",
+    "acquisitionType": "trade",
+    "date": "2024-02-08",
+    "currentTeam": "PHI",
+    "tradePartner": "MIA",
+    "note": "Veteran leader"
+  }
+}

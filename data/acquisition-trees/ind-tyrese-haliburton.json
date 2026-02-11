@@ -1,0 +1,41 @@
+{
+  "_meta": {
+    "team": "IND",
+    "player": "Tyrese Haliburton",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2010,
+    "depth": 3,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Tyrese Haliburton",
+    "acquisitionType": "trade",
+    "date": "2022-02-08",
+    "currentTeam": "IND",
+    "tradePartner": "SAC",
+    "tradeDescription": "Pacers trade Sabonis for Haliburton",
+    "note": "All-Star, best trade in Pacers history",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Domantas Sabonis",
+        "acquisitionType": "trade",
+        "date": "2017-07-07",
+        "tradePartner": "OKC",
+        "note": "Came in Paul George trade",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Paul George",
+            "acquisitionType": "draft",
+            "date": "2010-06-24",
+            "draftPick": 10,
+            "note": "7x All-Star",
+            "isOrigin": true
+          }
+        ]
+      }
+    ]
+  }
+}

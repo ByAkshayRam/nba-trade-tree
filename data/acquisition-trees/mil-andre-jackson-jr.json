@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "MIL",
+    "player": "Andre Jackson Jr.",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2023,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Andre Jackson Jr.",
+    "acquisitionType": "draft",
+    "date": "2023-06-22",
+    "currentTeam": "MIL",
+    "draftPick": 36,
+    "draftRound": 2
+  }
+}

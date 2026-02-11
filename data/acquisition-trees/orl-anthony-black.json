@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "ORL",
+    "player": "Anthony Black",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2023,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Anthony Black",
+    "acquisitionType": "draft",
+    "date": "2023-06-22",
+    "currentTeam": "ORL",
+    "draftPick": 6,
+    "draftRound": 1
+  }
+}
