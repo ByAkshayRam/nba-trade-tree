@@ -2,9 +2,9 @@
   "_meta": {
     "team": "PHI",
     "player": "Joel Embiid",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "NBA Trade History Research",
     "originYear": 2014,
-    "depth": 1,
+    "depth": 3,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -15,6 +15,19 @@
     "currentTeam": "PHI",
     "draftPick": 3,
     "draftRound": 1,
-    "note": "MVP, 7x All-Star, Process success"
+    "tradeDescription": "76ers drafted Embiid #3 overall with their OWN pick - The Process",
+    "note": "2023 MVP, 7x All-Star, cornerstone of The Process",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2014 #3 Overall Pick (PHI own)",
+        "acquisitionType": "original",
+        "date": "2014-06-26",
+        "tradeDescription": "Philadelphia's own pick after tanking 2013-14 season (19-63)",
+        "becamePlayer": "Joel Embiid",
+        "note": "Trust The Process - Sam Hinkie's masterplan begins. Sixers finished 19-63.",
+        "isOrigin": true
+      }
+    ]
   }
 }

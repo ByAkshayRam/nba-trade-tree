@@ -2,9 +2,9 @@
   "_meta": {
     "team": "CHA",
     "player": "Coby White",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2026,
-    "depth": 1,
+    "source": "NBA Trade History Research",
+    "originYear": 2019,
+    "depth": 4,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -14,7 +14,25 @@
     "date": "2026-02-06",
     "currentTeam": "CHA",
     "tradePartner": "CHI",
-    "tradeDescription": "Acquired from Bulls at deadline",
-    "note": "Scoring guard"
+    "tradeDescription": "Hornets acquire Coby White at 2026 deadline for picks",
+    "note": "Scoring combo guard, 6th man caliber",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2027 1st Round Pick (CHA)",
+        "acquisitionType": "original",
+        "date": "2026-02-06",
+        "tradeDescription": "Charlotte's own lottery pick",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2026 2nd Round Pick (CHA)",
+        "acquisitionType": "original",
+        "date": "2026-02-06",
+        "tradeDescription": "Charlotte's own second rounder",
+        "isOrigin": true
+      }
+    ]
   }
 }

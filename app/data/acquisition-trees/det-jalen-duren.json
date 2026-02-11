@@ -2,9 +2,9 @@
   "_meta": {
     "team": "DET",
     "player": "Jalen Duren",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "NBA Trade History Research",
     "originYear": 2022,
-    "depth": 2,
+    "depth": 4,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -14,15 +14,28 @@
     "date": "2022-06-23",
     "currentTeam": "DET",
     "tradePartner": "CHA",
-    "tradeDescription": "Draft night trade",
-    "note": "Athletic center",
+    "tradeDescription": "Pistons acquired Duren from Hornets for Kemba Walker contract",
+    "note": "Athletic big man, young rim protector",
     "assetsGivenUp": [
       {
-        "type": "pick",
-        "name": "2022 #13 Pick",
-        "acquisitionType": "original",
+        "type": "player",
+        "name": "Kemba Walker",
+        "acquisitionType": "trade",
         "date": "2022-06-23",
-        "isOrigin": true
+        "tradePartner": "NYK",
+        "tradeDescription": "Pistons took on Kemba's bad contract from Knicks to get #13 pick",
+        "note": "Contract dump - Kemba was bought out",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2025 Protected 1st (DET via NYK)",
+            "acquisitionType": "trade",
+            "date": "2022-06-23",
+            "tradePartner": "NYK",
+            "tradeDescription": "Pistons received future pick protection for absorbing salary",
+            "isOrigin": true
+          }
+        ]
       }
     ]
   }

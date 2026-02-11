@@ -2,9 +2,9 @@
   "_meta": {
     "team": "PHI",
     "player": "Tyrese Maxey",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "NBA Trade History Research",
     "originYear": 2020,
-    "depth": 1,
+    "depth": 3,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -15,6 +15,19 @@
     "currentTeam": "PHI",
     "draftPick": 21,
     "draftRound": 1,
-    "note": "All-Star, MIP, franchise cornerstone"
+    "tradeDescription": "76ers drafted Maxey #21 overall with their OWN pick",
+    "note": "MIP 2024, All-Star, emerged as co-star next to Embiid",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2020 #21 Overall Pick (PHI own)",
+        "acquisitionType": "original",
+        "date": "2020-11-18",
+        "tradeDescription": "Philadelphia's own pick, late lottery steal",
+        "becamePlayer": "Tyrese Maxey",
+        "note": "Kentucky product slipped in draft - became All-Star",
+        "isOrigin": true
+      }
+    ]
   }
 }

@@ -2,9 +2,9 @@
   "_meta": {
     "team": "DET",
     "player": "Duncan Robinson",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2026,
-    "depth": 1,
+    "source": "NBA Trade History Research",
+    "originYear": 2018,
+    "depth": 4,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -14,7 +14,36 @@
     "date": "2026-02-06",
     "currentTeam": "DET",
     "tradePartner": "MIA",
-    "tradeDescription": "Deadline acquisition",
-    "note": "Elite shooter"
+    "tradeDescription": "Pistons acquire Robinson at 2026 deadline as salary filler in Butler deal",
+    "note": "Elite 3-point shooter, fell out of rotation in Miami",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Simone Fontecchio",
+        "acquisitionType": "trade",
+        "date": "2024-02-08",
+        "tradePartner": "UTA",
+        "tradeDescription": "Acquired from Jazz as rotation piece",
+        "note": "Italian national team star",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2024 2nd Round Pick",
+            "acquisitionType": "original",
+            "date": "2024-02-08",
+            "tradeDescription": "Detroit's own 2nd round pick",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2028 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2026-02-06",
+        "tradeDescription": "Detroit's own 2nd round pick",
+        "isOrigin": true
+      }
+    ]
   }
 }
