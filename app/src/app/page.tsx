@@ -1,8 +1,27 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { PlayerSearch } from "@/components/PlayerSearch";
 import { TradeTree } from "@/components/TradeTree";
+
+const EAST_TEAMS = [
+  { abbr: "ATL", name: "Hawks", emoji: "🦅" },
+  { abbr: "BKN", name: "Nets", emoji: "🌃" },
+  { abbr: "BOS", name: "Celtics", emoji: "🍀" },
+  { abbr: "CHA", name: "Hornets", emoji: "🐝" },
+  { abbr: "CHI", name: "Bulls", emoji: "🐂" },
+  { abbr: "CLE", name: "Cavaliers", emoji: "⚔️" },
+  { abbr: "DET", name: "Pistons", emoji: "🔧" },
+  { abbr: "IND", name: "Pacers", emoji: "🏎️" },
+  { abbr: "MIA", name: "Heat", emoji: "🔥" },
+  { abbr: "MIL", name: "Bucks", emoji: "🦌" },
+  { abbr: "NYK", name: "Knicks", emoji: "🗽" },
+  { abbr: "ORL", name: "Magic", emoji: "✨" },
+  { abbr: "PHI", name: "76ers", emoji: "🔔" },
+  { abbr: "TOR", name: "Raptors", emoji: "🦖" },
+  { abbr: "WAS", name: "Wizards", emoji: "🧙" },
+];
 
 interface SelectedPlayer {
   id: number;
@@ -144,9 +163,34 @@ export default function Home() {
           </div>
         )}
 
-        {/* Featured tree example (when no player selected) */}
+        {/* Browse by Team */}
         {!selectedPlayer && (
           <div className="mt-12 p-6 bg-zinc-900 rounded-xl border border-zinc-800">
+            <h3 className="text-xl font-bold mb-4 text-center">
+              🏀 Browse Team Acquisition Trees
+            </h3>
+            <p className="text-center text-zinc-400 mb-6">
+              See how every player on a team&apos;s roster was acquired — the full web of trades, picks, and transactions.
+            </p>
+            <div className="grid grid-cols-3 sm:grid-cols-5 gap-3">
+              {EAST_TEAMS.map((team) => (
+                <Link
+                  key={team.abbr}
+                  href={`/team/${team.abbr}`}
+                  className="flex flex-col items-center p-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg transition-colors group"
+                >
+                  <span className="text-2xl mb-1">{team.emoji}</span>
+                  <span className="text-sm font-medium text-white group-hover:text-green-400">{team.abbr}</span>
+                  <span className="text-xs text-zinc-500">{team.name}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Featured tree example (when no player selected) */}
+        {!selectedPlayer && (
+          <div className="mt-8 p-6 bg-zinc-900 rounded-xl border border-zinc-800">
             <h3 className="text-xl font-bold mb-4 text-center">
               ⭐ Featured: The Celtics-Nets Trade Tree
             </h3>
