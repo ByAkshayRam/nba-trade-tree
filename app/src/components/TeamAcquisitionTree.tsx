@@ -835,7 +835,17 @@ export default function TeamAcquisitionTree({
           })),
         };
 
-        const layoutedGraph = await elk.layout(graph);
+        // Timeout wrapper for ELK layout (5 seconds max)
+        const layoutWithTimeout = async (g: typeof graph, timeoutMs = 5000) => {
+          return Promise.race([
+            elk.layout(g),
+            new Promise<never>((_, reject) => 
+              setTimeout(() => reject(new Error('ELK layout timeout')), timeoutMs)
+            )
+          ]);
+        };
+
+        const layoutedGraph = await layoutWithTimeout(graph);
 
         // Get initial positions from ELK
         let positionedNodes = flowNodes.map((node) => {
