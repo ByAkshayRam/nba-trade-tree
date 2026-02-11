@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px;
+    }
+    
+    .card {
+      width: 1080px;
+      height: 1350px;
+      background: #050505;
+      border-radius: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    /* Team color gradient overlay */
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(ellipse at 0% 0%, rgba(0,122,51,0.4) 0%, transparent 50%),
+        radial-gradient(ellipse at 100% 100%, rgba(186,150,83,0.2) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    
+    .header {
+      padding: 50px 60px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .team-section {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    
+    .team-logo {
+      width: 64px;
+      height: 64px;
+      background: #007A33;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+    }
+    
+    .team-text .team-name {
+      font-size: 26px;
+      font-weight: 700;
+      color: #fff;
+    }
+    
+    .team-text .team-sub {
+      font-size: 14px;
+      color: rgba(255,255,255,0.5);
+      margin-top: 2px;
+    }
+    
+    .type-badge {
+      background: rgba(186,150,83,0.2);
+      border: 1px solid #BA9653;
+      color: #BA9653;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    
+    .hero-section {
+      padding: 30px 60px 50px;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .headline {
+      font-size: 56px;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 30px;
+    }
+    
+    .headline .accent {
+      color: #BA9653;
+    }
+    
+    .headline .green {
+      color: #22c55e;
+    }
+    
+    .players-row {
+      display: flex;
+      gap: 20px;
+    }
+    
+    .player-card {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: rgba(255,255,255,0.05);
+      padding: 14px 20px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    
+    .player-img {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #BA9653;
+    }
+    
+    .player-info .player-name {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+    }
+    
+    .player-info .player-detail {
+      font-size: 12px;
+      color: rgba(255,255,255,0.5);
+      margin-top: 2px;
+    }
+    
+    .tree-section {
+      flex: 1;
+      padding: 0 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .tree-label {
+      font-size: 12px;
+      color: rgba(255,255,255,0.4);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 24px;
+    }
+    
+    .tree-flow {
+      display: flex;
+      align-items: stretch;
+      gap: 0;
+    }
+    
+    .tree-node {
+      flex: 1;
+      text-align: center;
+      position: relative;
+    }
+    
+    .tree-node::after {
+      content: '';
+      position: absolute;
+      top: 28px;
+      right: 0;
+      width: 50%;
+      height: 4px;
+      background: linear-gradient(90deg, transparent, #22c55e);
+    }
+    
+    .tree-node:last-child::after {
+      display: none;
+    }
+    
+    .tree-node::before {
+      content: '';
+      position: absolute;
+      top: 28px;
+      left: 0;
+      width: 50%;
+      height: 4px;
+      background: linear-gradient(90deg, #22c55e, transparent);
+    }
+    
+    .tree-node:first-child::before {
+      display: none;
+    }
+    
+    .tree-node:first-child::after {
+      background: linear-gradient(90deg, #f59e0b, #22c55e);
+    }
+    
+    .node-circle {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      margin: 0 auto 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .node-circle.origin {
+      background: linear-gradient(135deg, #f59e0b, #d97706);
+      box-shadow: 0 0 30px rgba(245,158,11,0.4);
+    }
+    
+    .node-circle.pick {
+      background: rgba(34,197,94,0.2);
+      border: 3px solid #22c55e;
+    }
+    
+    .node-circle.trade {
+      background: rgba(59,130,246,0.2);
+      border: 3px solid #3b82f6;
+    }
+    
+    .node-circle.player {
+      background: linear-gradient(135deg, #007A33, #005a25);
+      border: 3px solid #BA9653;
+      box-shadow: 0 0 30px rgba(0,122,51,0.4);
+    }
+    
+    .node-year {
+      font-size: 13px;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 6px;
+    }
+    
+    .node-label {
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      max-width: 180px;
+      margin: 0 auto;
+      line-height: 1.3;
+    }
+    
+    .stats-section {
+      padding: 40px 60px;
+      background: rgba(0,0,0,0.4);
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .stat {
+      text-align: center;
+    }
+    
+    .stat-value {
+      font-size: 42px;
+      font-weight: 800;
+      color: #fff;
+    }
+    
+    .stat-label {
+      font-size: 11px;
+      color: rgba(255,255,255,0.4);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 4px;
+    }
+    
+    .footer {
+      padding: 30px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      position: relative;
+      z-index: 1;
+    }
+    
+    .brand {
+      font-size: 18px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.7);
+    }
+    
+    .brand span {
+      color: #BA9653;
+    }
+    
+    .date {
+      font-size: 14px;
+      color: rgba(255,255,255,0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <div class="team-section">
+        <div class="team-logo">🍀</div>
+        <div class="team-text">
+          <div class="team-name">Boston Celtics</div>
+          <div class="team-sub">Acquisition Tree</div>
+        </div>
+      </div>
+      <div class="type-badge">Trade Chain</div>
+    </div>
+    
+    <div class="hero-section">
+      <h1 class="headline">
+        Brooklyn traded <span class="green">5 years</span> of picks for <span class="accent">2 years</span> of aging stars.
+      </h1>
+      
+      <div class="players-row">
+        <div class="player-card">
+          <img class="player-img" src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4065648.png&w=350&h=254" alt="Tatum">
+          <div class="player-info">
+            <div class="player-name">Jayson Tatum</div>
+            <div class="player-detail">Via BKN → PHI → #3</div>
+          </div>
+        </div>
+        <div class="player-card">
+          <img class="player-img" src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3917376.png&w=350&h=254" alt="Brown">
+          <div class="player-info">
+            <div class="player-name">Jaylen Brown</div>
+            <div class="player-detail">Via BKN → #3</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="tree-section">
+      <div class="tree-label">The Chain That Built a Dynasty</div>
+      <div class="tree-flow">
+        <div class="tree-node">
+          <div class="node-circle origin">★</div>
+          <div class="node-year">2013</div>
+          <div class="node-label">KG + Pierce to Brooklyn</div>
+        </div>
+        <div class="tree-node">
+          <div class="node-circle pick">📋</div>
+          <div class="node-year">2014-18</div>
+          <div class="node-label">Brooklyn Picks Convey</div>
+        </div>
+        <div class="tree-node">
+          <div class="node-circle trade">🔄</div>
+          <div class="node-year">2016-17</div>
+          <div class="node-label">Draft Night Trades</div>
+        </div>
+        <div class="tree-node">
+          <div class="node-circle player">🏆</div>
+          <div class="node-year">2024</div>
+          <div class="node-label">NBA Champions</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="stats-section">
+      <div class="stat">
+        <div class="stat-value">15</div>
+        <div class="stat-label">Roster</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">8</div>
+        <div class="stat-label">🏠 Homegrown</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">5</div>
+        <div class="stat-label">Origins</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">30</div>
+        <div class="stat-label">Trades</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">1996</div>
+        <div class="stat-label">Earliest</div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <div class="brand">@ByAkshayRam · <span>NBA Acquisition Tree</span></div>
+      <div class="date">February 2026</div>
+    </div>
+  </div>
+</body>
+</html>

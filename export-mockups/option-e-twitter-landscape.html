@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px;
+    }
+    
+    .card {
+      width: 1350px;
+      height: 1080px;
+      background: #0a0a0a;
+      border-radius: 0;
+      display: flex;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    /* Left section - Content */
+    .left {
+      flex: 1;
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 1;
+    }
+    
+    /* Right section - Visual */
+    .right {
+      width: 480px;
+      background: linear-gradient(180deg, #007A33 0%, #004d20 50%, #002510 100%);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 50px;
+    }
+    
+    .right::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M20 20h20v20H20z'/%3E%3C/g%3E%3C/svg%3E");
+    }
+    
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 50px;
+    }
+    
+    .team-logo {
+      width: 60px;
+      height: 60px;
+      background: #007A33;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+    }
+    
+    .team-text .team-name {
+      font-size: 24px;
+      font-weight: 700;
+      color: #fff;
+    }
+    
+    .team-text .team-sub {
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+      margin-top: 2px;
+    }
+    
+    .headline-section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .headline {
+      font-size: 54px;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 40px;
+    }
+    
+    .headline .gold {
+      color: #BA9653;
+    }
+    
+    .headline .green {
+      color: #22c55e;
+    }
+    
+    .headline .dim {
+      color: rgba(255,255,255,0.5);
+    }
+    
+    .chain-inline {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    
+    .chain-step {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255,255,255,0.05);
+      padding: 12px 20px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .chain-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+    }
+    
+    .chain-dot.origin { background: #f59e0b; }
+    .chain-dot.pick { background: #22c55e; }
+    .chain-dot.trade { background: #3b82f6; }
+    .chain-dot.player { background: #007A33; border: 2px solid #BA9653; }
+    
+    .chain-text {
+      font-size: 14px;
+      color: rgba(255,255,255,0.8);
+      font-weight: 500;
+    }
+    
+    .chain-arrow {
+      color: rgba(255,255,255,0.3);
+      font-size: 20px;
+    }
+    
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 40px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .brand {
+      font-size: 18px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.6);
+    }
+    
+    .brand span {
+      color: #BA9653;
+    }
+    
+    .stats-row {
+      display: flex;
+      gap: 30px;
+    }
+    
+    .stat-item {
+      text-align: center;
+    }
+    
+    .stat-num {
+      font-size: 28px;
+      font-weight: 800;
+      color: #fff;
+    }
+    
+    .stat-lbl {
+      font-size: 10px;
+      color: rgba(255,255,255,0.4);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    /* Right side content */
+    .players-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .player-large {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: rgba(0,0,0,0.3);
+      padding: 20px;
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .player-large-img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #BA9653;
+    }
+    
+    .player-large-info .player-large-name {
+      font-size: 24px;
+      font-weight: 700;
+      color: #fff;
+    }
+    
+    .player-large-info .player-large-detail {
+      font-size: 14px;
+      color: rgba(255,255,255,0.6);
+      margin-top: 4px;
+    }
+    
+    .player-large-info .player-large-tag {
+      display: inline-block;
+      background: rgba(186,150,83,0.2);
+      color: #BA9653;
+      padding: 4px 12px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      margin-top: 8px;
+      text-transform: uppercase;
+    }
+    
+    .outcome-badge {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    .outcome-badge .trophy {
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+    
+    .outcome-badge .outcome-text {
+      font-size: 20px;
+      font-weight: 700;
+      color: #BA9653;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+    
+    .outcome-badge .outcome-year {
+      font-size: 48px;
+      font-weight: 800;
+      color: #fff;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="left">
+      <div class="header">
+        <div class="team-logo">🍀</div>
+        <div class="team-text">
+          <div class="team-name">Boston Celtics</div>
+          <div class="team-sub">Acquisition Tree Analysis</div>
+        </div>
+      </div>
+      
+      <div class="headline-section">
+        <h1 class="headline">
+          One trade in <span class="gold">2013</span>.<br/>
+          Two franchise players.<br/>
+          <span class="green">One championship</span> <span class="dim">a decade later.</span>
+        </h1>
+        
+        <div class="chain-inline">
+          <div class="chain-step">
+            <div class="chain-dot origin"></div>
+            <span class="chain-text">KG/Pierce (2013)</span>
+          </div>
+          <span class="chain-arrow">→</span>
+          <div class="chain-step">
+            <div class="chain-dot pick"></div>
+            <span class="chain-text">Brooklyn Picks</span>
+          </div>
+          <span class="chain-arrow">→</span>
+          <div class="chain-step">
+            <div class="chain-dot trade"></div>
+            <span class="chain-text">Draft Trades</span>
+          </div>
+          <span class="chain-arrow">→</span>
+          <div class="chain-step">
+            <div class="chain-dot player"></div>
+            <span class="chain-text">Tatum + Brown</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer">
+        <div class="brand">@ByAkshayRam · <span>NBA Acquisition Tree</span></div>
+        <div class="stats-row">
+          <div class="stat-item">
+            <div class="stat-num">15</div>
+            <div class="stat-lbl">Roster</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">8</div>
+            <div class="stat-lbl">Homegrown</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">5</div>
+            <div class="stat-lbl">Origins</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="right">
+      <div class="players-stack">
+        <div class="player-large">
+          <img class="player-large-img" src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4065648.png&w=350&h=254" alt="Tatum">
+          <div class="player-large-info">
+            <div class="player-large-name">Jayson Tatum</div>
+            <div class="player-large-detail">2017 #3 Pick via BKN/PHI</div>
+            <div class="player-large-tag">5x All-Star</div>
+          </div>
+        </div>
+        <div class="player-large">
+          <img class="player-large-img" src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3917376.png&w=350&h=254" alt="Brown">
+          <div class="player-large-info">
+            <div class="player-large-name">Jaylen Brown</div>
+            <div class="player-large-detail">2016 #3 Pick via BKN</div>
+            <div class="player-large-tag">Finals MVP</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="outcome-badge">
+        <div class="trophy">🏆</div>
+        <div class="outcome-text">NBA Champions</div>
+        <div class="outcome-year">2024</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

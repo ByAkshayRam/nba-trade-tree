@@ -1,9 +1,9 @@
 # NBA Trade Tree — Product Requirements Document
 
-**Version:** 1.0  
+**Version:** 1.2  
 **Author:** Edward (with Akshay)  
-**Date:** February 5, 2026  
-**Status:** Draft  
+**Date:** February 11, 2026  
+**Status:** Active Development  
 
 ---
 
@@ -30,6 +30,43 @@ NBA trades have cascading downstream effects that are invisible to most fans. Wh
 
 ---
 
+## Current State (February 11, 2026)
+
+### ✅ Completed Features
+
+**Data Foundation:**
+- Complete acquisition trees for 4 teams: BOS, NYK, OKC, WAS
+- ESPN player ID mapping for headshots
+- Player roster data with categories (starter/bench/two-way)
+- Origin tracking back to 1996 for some chains
+
+**Web Application:**
+- Next.js 16 app running on port 3456
+- Team pages at `/team/[teamAbbr]` with full roster visualization
+- Interactive graph using React Flow with ELK layout algorithm
+- Click-to-trace: Select any player to highlight their acquisition path
+- Dynamic narrative generation based on selected player
+
+**Visualization Features:**
+- Color-coded nodes: Green (roster), Amber (origin), Blue (player), Green (pick)
+- Player headshots from ESPN CDN
+- Homegrown indicator (🏠) for drafted players
+- Stats row: Roster count, Homegrown, Total Assets, Origins, Earliest Origin
+
+**Export System (3 formats):**
+1. **Full Tree (4:5)** - 2160×2700px - Complete graph with headline & stats
+2. **Twitter Card (5:4)** - 2700×2160px - Split layout with player cards
+3. **Stat Card (16:9)** - 2400×1350px - Provocative headline with chain sidebar
+
+**Export Features:**
+- Dark/light mode toggle
+- Multi-select export dialog
+- ESPN headshots with proper aspect ratio (350×254)
+- Web UI color matching (green/blue/gold)
+- Larger, centered layouts for social sharing
+
+---
+
 ## Famous Example: The Celtics Trade Tree
 
 ```
@@ -47,237 +84,179 @@ Result: KG/Pierce → 2024 NBA Championship core
 
 ## Milestone Plan
 
-### Milestone 0: Data Foundation (MVP-critical)
+### Milestone 0: Data Foundation ✅ COMPLETE
 **Goal:** Build a reliable, queryable dataset of NBA trades, draft picks, and transactions.
 
-**Deliverables:**
-- [ ] Python scraping pipeline for Basketball-Reference trade history (2000–present)
-- [ ] nba_api integration for player profiles, draft history, team rosters
-- [ ] Data normalization into a unified schema (players, picks, trades, acquisitions)
-- [ ] SQLite database with all scraped data (start local, migrate to Postgres later)
-- [ ] Validation against 5 known trade trees (Celtics/Nets, Harden, Westbrook, etc.)
-- [ ] Script to refresh/update data incrementally
-
-**Schema (core tables):**
-```
-players:        id, name, current_team_id, draft_year, draft_pick, headshot_url
-teams:          id, abbreviation, name, primary_color, secondary_color
-trades:         id, date, description, source_url
-trade_assets:   id, trade_id, team_from, team_to, asset_type (player|pick), asset_id
-draft_picks:    id, year, round, number, original_team_id, current_team_id, player_id
-acquisitions:   id, player_id, team_id, type (trade|draft|signing|waiver), date, trade_id
-```
-
-**Success criteria:** Can programmatically trace Jayson Tatum's acquisition back to the KG/Pierce trade in ≤3 recursive queries.
-
-**Estimated effort:** 2–3 sessions
+**Completed:**
+- [x] Acquisition data for BOS, NYK, OKC, WAS (4 teams)
+- [x] Player headshots via ESPN CDN integration
+- [x] Roster categorization (starter/bench/two-way)
+- [x] Homegrown tracking
+- [x] Origin year tracking (earliest: 1996 for Celtics)
 
 ---
 
-### Milestone 1: Core Web App + Tree Visualization
+### Milestone 1: Core Web App + Tree Visualization ✅ COMPLETE
 **Goal:** Searchable web app that renders a player's trade tree as an interactive graph.
 
-**Deliverables:**
-- [ ] Next.js app with TypeScript + Tailwind + shadcn/ui
-- [ ] Player search with autocomplete (type-ahead against player database)
-- [ ] API route: `/api/tree/[playerId]` — returns full acquisition chain as a tree
-- [ ] React Flow graph visualization of the trade tree
-  - Nodes = Players, Draft Picks, Trade Events
-  - Edges = "led to" relationships
-  - Team colors on nodes
-  - Player headshots where available
-- [ ] Click any node to see trade details (date, teams, all assets exchanged)
-- [ ] Responsive layout (desktop priority, mobile usable)
-
-**Tech stack:**
-- Next.js 16 (App Router)
-- React Flow (`@xyflow/react`) for graph visualization
-- SQLite via Drizzle (same pattern as Mission Control, keep it simple)
-- Tailwind + shadcn/ui
-
-**Success criteria:** Search "Jayson Tatum" → see full tree from KG/Pierce trade → click any node for details.
-
-**Estimated effort:** 2–3 sessions
+**Completed:**
+- [x] Next.js 16 app with TypeScript + Tailwind
+- [x] Team pages with full roster visualization
+- [x] React Flow graph with ELK layout algorithm
+- [x] Click-to-trace functionality (highlight acquisition paths)
+- [x] Dynamic narrative generation for selected players
+- [x] Responsive layout with zoom/pan controls
 
 ---
 
-### Milestone 2: Team View + Polish
+### Milestone 2: Team View + Polish ✅ IN PROGRESS
 **Goal:** Browse by team, see how their entire roster was assembled.
 
-**Deliverables:**
-- [ ] Team landing pages: `/team/[abbreviation]`
-- [ ] Current roster view with acquisition source for each player
-  - Drafted / Traded / Signed / Waived
-  - "Trace" button to expand any player's full tree
-- [ ] Visual polish pass:
-  - Team-colored themes per page
-  - Smooth animations on tree expand/collapse
-  - Loading skeletons
-  - OG image generation for social sharing
-- [ ] Shareable URLs: `/player/[name]` with pretty slugs
-- [ ] Basic SEO: page titles, meta descriptions, structured data
+**Completed:**
+- [x] Team landing pages: `/team/[teamAbbr]`
+- [x] Current roster view with acquisition source
+- [x] Visual polish: team colors, animations, loading states
+- [x] Stats row with 7 metrics
 
-**Success criteria:** Can browse to Warriors page, see full roster, click Curry → see he was drafted (simple), click a traded player → see full tree.
-
-**Estimated effort:** 2 sessions
+**Remaining:**
+- [ ] Shareable URLs with pretty slugs
+- [ ] OG image generation for social sharing
+- [ ] SEO optimization
 
 ---
 
-### Milestone 3: Championship Lineage
-**Goal:** For any championship team, trace how every player on the title roster was acquired.
-
-**Deliverables:**
-- [ ] Championship data (year, team, roster)
-- [ ] Championship page: `/championships/[year]`
-- [ ] Full roster tree — every player's origin story in one view
-- [ ] "Championship Impact Score" — which original trade contributed the most championship value
-- [ ] Notable championship trade trees highlighted (e.g., "5 players on this roster trace back to 2 trades")
-
-**Success criteria:** View 2024 Celtics championship, see that Brown + Tatum both trace to KG/Pierce trade.
-
-**Estimated effort:** 1–2 sessions
-
----
-
-### Milestone 4: Trade Deadline Live Mode
-**Goal:** Real-time updates during trade deadline, showing immediate impact on trade trees.
-
-**Deliverables:**
-- [ ] Live trade feed integration (Twitter/ESPN scraping or manual input)
-- [ ] "What just happened" view — when a trade breaks, instantly show the tree implications
-- [ ] Push notifications for major tree-altering trades
-- [ ] Historical deadline view — browse past deadlines and their downstream impact
-- [ ] Before/after tree comparison
-
-**Success criteria:** During next trade deadline, can show real-time tree updates within minutes of a trade being reported.
-
-**Estimated effort:** 2 sessions (timing dependent on deadline schedule)
-
----
-
-### Milestone 5: "What If" Mode
-**Goal:** Alternate timelines — what if a trade never happened?
-
-**Deliverables:**
-- [ ] "Remove trade" toggle on any trade node
-- [ ] Re-render the tree without that trade, showing the alternate timeline
-- [ ] "Biggest butterfly effect" leaderboard — which trades had the most downstream impact
-- [ ] Shareable "What If" URLs for social content
-
-**Success criteria:** Remove KG/Pierce trade → see Celtics never get Brown/Tatum → share the comparison.
-
-**Estimated effort:** 2 sessions
-
----
-
-### Milestone 6: Content & Social Layer
+### Milestone 6: Content & Social Layer ✅ IN PROGRESS
 **Goal:** Make the app a content generation machine for sports Twitter.
 
-**Deliverables:**
-- [ ] Auto-generated shareable images (tree as PNG/SVG)
-- [ ] Embeddable widgets for blogs/articles
-- [ ] "Trade Tree of the Day" automated content
-- [ ] Twitter bot integration — reply to trade discussions with tree visualizations
-- [ ] Newsletter integration — weekly "Best Trade Trees" roundup
+**Completed:**
+- [x] Export dialog with 3 format options
+- [x] Full Tree export (4:5) - complete graph capture
+- [x] Twitter Card export (5:4) - split layout with player cards
+- [x] Stat Card export (16:9) - provocative headline format
+- [x] Dark/light mode for all exports
+- [x] ESPN headshots integration in exports
+- [x] Centered layouts and larger fonts for viral sharing
 
-**Success criteria:** Generate shareable trade tree images that get engagement on sports Twitter.
-
-**Estimated effort:** 2 sessions
-
----
-
-## Technical Decisions
-
-| Decision | Choice | Rationale |
-|----------|--------|-----------|
-| Database | SQLite → Postgres later | Start simple, same Drizzle ORM. Migrate when traffic justifies it |
-| Graph viz | React Flow | Best React integration, interactive out of the box, good docs |
-| Hosting | Vercel | Free tier, instant deploys, edge functions |
-| Data source | Basketball-Reference + nba_api | Most complete, scrapeable, API-accessible |
-| Styling | Tailwind + shadcn | Fast to build, consistent with Mission Control |
-| Auth | None (public app) | No user accounts needed for MVP |
+**Remaining:**
+- [ ] Embeddable widgets for blogs
+- [ ] Twitter bot integration
+- [ ] Auto-generated "Trade Tree of the Day"
 
 ---
 
-## Data Pipeline Architecture
+### Future Milestones (Not Started)
 
+**Milestone 3: Championship Lineage**
+- Championship roster trees
+- Impact scoring
+
+**Milestone 4: Trade Deadline Live Mode**
+- Real-time trade updates
+- Before/after comparisons
+
+**Milestone 5: "What If" Mode**
+- Remove trade toggle
+- Alternate timeline visualization
+
+---
+
+## Technical Architecture
+
+**Stack:**
+- Next.js 16 (App Router) with TypeScript
+- React Flow (`@xyflow/react`) for graph visualization
+- ELK.js for automatic graph layout
+- Tailwind CSS for styling
+- html-to-image for graph exports
+- Canvas API for custom export graphics
+
+**Key Components:**
 ```
-Basketball-Reference (scrape)
-        │
-        ▼
-  Raw HTML → Parse trades, transactions
-        │
-        ▼
-nba_api (API)
-        │
-        ▼
-  Player profiles, draft data, team rosters
-        │
-        ▼
-  ┌─────────────┐
-  │  Normalize   │ ← Dedupe players, link picks to trades
-  │  & Link      │ ← Build acquisition chains
-  └─────┬───────┘
-        │
-        ▼
-  ┌─────────────┐
-  │   SQLite     │ ← Local dev
-  │   (Drizzle)  │
-  └─────┬───────┘
-        │
-        ▼
-  ┌─────────────┐
-  │  Next.js API │ ← Recursive tree queries
-  │  Routes      │
-  └─────┬───────┘
-        │
-        ▼
-  ┌─────────────┐
-  │  React Flow  │ ← Interactive visualization
-  │  Frontend    │
-  └─────────────┘
+app/
+├── src/
+│   ├── app/
+│   │   ├── team/[teamAbbr]/page.tsx      # Team page (server)
+│   │   └── api/acquisition-tree/...       # API routes
+│   └── components/
+│       ├── TeamAcquisitionTree.tsx        # Main graph + exports
+│       ├── TeamPageClient.tsx             # Client wrapper + narrative
+│       └── AcquisitionTreeClient.tsx      # Legacy player view
 ```
 
----
-
-## Risks & Mitigations
-
-| Risk | Impact | Mitigation |
-|------|--------|------------|
-| Basketball-Reference rate limits/blocks | Can't scrape data | Use caching, respect robots.txt, slow scraping. Fallback: manual data entry for key trees |
-| Trade data is incomplete/messy | Trees have gaps | Start with well-known trees (Celtics, Rockets), validate before scaling. Allow manual corrections |
-| React Flow performance with large trees | UI freezes | Lazy-load branches, collapse by default, virtualize large graphs |
-| Draft pick ownership is complex (protections, swaps) | Incorrect trees | Model pick protections explicitly. Start with simpler unprotected picks |
-| Scope creep | Never ships | Stick to milestones. M0+M1 = usable product. Everything else is enhancement |
+**Export Dimensions:**
+| Format | Aspect | Dimensions | Use Case |
+|--------|--------|------------|----------|
+| Full Tree | 4:5 | 2160×2700 | Instagram, detailed view |
+| Twitter Card | 5:4 | 2700×2160 | Twitter/X landscape |
+| Stat Card | 16:9 | 2400×1350 | YouTube thumbnails, presentations |
 
 ---
 
-## Success Metrics
+## Recent Changes (Feb 10-11, 2026)
 
-- **M0+M1 (MVP):** Can search any top-50 NBA player and see their trade tree
-- **M2:** 30+ team pages with full roster trees
-- **M3:** All championships since 2000 mapped
-- **Engagement:** Shareable on social media, gets organic sports Twitter traction
-- **Long-term:** Become the go-to reference for NBA trade history visualization
+### Session: Export System Enhancement
+
+**Full Tree Export:**
+- Legend moved up to avoid overlapping stats
+- Headline font increased to 64px
+- Stats values increased to 56px
+- Colors now match web UI (green/blue/gold)
+
+**Stat Card Export:**
+- Headline and chain box vertically centered
+- Font sizes increased (88px headline, 32px chain items)
+- Single player headshot focus (removed extra headshots)
+- Larger, more prominent layout for social impact
+
+**Twitter Card Export:**
+- Split layout with player cards + trophy section
+- Proper headshot aspect ratio preservation
+- Team color gradients
+
+**Bug Fixes:**
+- Fixed `[object Object]` display bug
+- Fixed roster sorting by `rosterOrder`
+- Fixed stretched headshots (preserved 350×254 ratio)
+- Fixed TypeScript errors in AcquisitionTreeClient
 
 ---
 
-## Open Questions
+## Data Coverage
 
-1. **Scope of historical data:** Start from 2000? 1990? Further back = more data but diminishing returns
-2. **Pick protections:** How detailed do we model pick protections? (Top-5 protected, lottery protected, etc.)
-3. **Three-team trades:** How to visualize cleanly?
-4. **Player photos:** NBA headshots API? Or scrape from Basketball-Reference?
-5. **Domain name:** nbatradetree.com? tradelineage.com?
+| Team | Players | Nodes | Edges | Origins | Earliest |
+|------|---------|-------|-------|---------|----------|
+| BOS | 15 | 65+ | 60+ | 5 | 1996 |
+| NYK | 17 | TBD | TBD | TBD | TBD |
+| OKC | 19 | TBD | TBD | TBD | TBD |
+| WAS | 17 | TBD | TBD | TBD | TBD |
+
+---
+
+## Running the App
+
+```bash
+# Development
+cd /home/ubuntu/nba-acquisition-tree/app
+npm run dev -p 3456
+
+# Production (PM2)
+pm2 start npm --name nba-acquisition-tree -- run start -- -p 3456
+```
+
+**URLs:**
+- Team page: `http://localhost:3456/team/bos`
+- API: `http://localhost:3456/api/acquisition-tree/bos/team`
 
 ---
 
 ## Next Steps
 
-1. **Now:** Review this PRD, align on scope and priorities
-2. **Milestone 0:** Start building the data scraping pipeline
-3. **Milestone 1:** Web app + visualization (this is the "wow" moment)
+1. **Add more teams:** Expand from 4 to all 30 NBA teams
+2. **Player search:** Global search to find any player's tree
+3. **Championship view:** 2024 Celtics roster → all acquisition paths
+4. **Social sharing:** OG images, Twitter cards
+5. **Real data pipeline:** Connect to Basketball-Reference scraper
 
 ---
 
-*This is a living document. Updated as we learn more during implementation.*
+*This is a living document. Last updated: February 11, 2026*

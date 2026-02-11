@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px;
+    }
+    
+    .card {
+      width: 1080px;
+      height: 1350px;
+      background: #09090b;
+      border-radius: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .header {
+      padding: 40px 50px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .team-section {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    
+    .team-logo {
+      width: 52px;
+      height: 52px;
+      background: #007A33;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+    }
+    
+    .team-text .team-name {
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+    }
+    
+    .team-text .team-sub {
+      font-size: 12px;
+      color: rgba(255,255,255,0.5);
+      margin-top: 2px;
+    }
+    
+    .type-badge {
+      background: rgba(186,150,83,0.15);
+      border: 1px solid rgba(186,150,83,0.4);
+      color: #BA9653;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    
+    .hero-section {
+      padding: 10px 50px 25px;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .headline {
+      font-size: 44px;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.12;
+      margin-bottom: 0;
+    }
+    
+    .headline .accent {
+      color: #BA9653;
+    }
+    
+    .headline .green {
+      color: #22c55e;
+    }
+    
+    .headline .muted {
+      color: rgba(255,255,255,0.5);
+    }
+    
+    .tree-section {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      background: #09090b;
+    }
+    
+    .tree-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    
+    /* Fade edges for cleaner look */
+    .tree-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      background: linear-gradient(180deg, #09090b 0%, transparent 100%);
+      z-index: 1;
+      pointer-events: none;
+    }
+    
+    .tree-section::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      background: linear-gradient(0deg, #09090b 0%, transparent 100%);
+      z-index: 1;
+      pointer-events: none;
+    }
+    
+    .stats-section {
+      padding: 25px 50px;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      z-index: 2;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+    
+    .stat {
+      text-align: center;
+    }
+    
+    .stat-value {
+      font-size: 32px;
+      font-weight: 800;
+      color: #fff;
+    }
+    
+    .stat-value.green { color: #22c55e; }
+    .stat-value.amber { color: #f59e0b; }
+    .stat-value.blue { color: #3b82f6; }
+    .stat-value.purple { color: #a855f7; }
+    .stat-value.rose { color: #f43f5e; }
+    
+    .stat-label {
+      font-size: 10px;
+      color: rgba(255,255,255,0.4);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 4px;
+    }
+    
+    .footer {
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .brand {
+      font-size: 16px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.7);
+    }
+    
+    .brand span {
+      color: #BA9653;
+    }
+    
+    .cta {
+      font-size: 13px;
+      color: rgba(255,255,255,0.4);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <div class="team-section">
+        <div class="team-logo">🍀</div>
+        <div class="team-text">
+          <div class="team-name">Boston Celtics</div>
+          <div class="team-sub">Complete Roster Acquisition Tree</div>
+        </div>
+      </div>
+      <div class="type-badge">2025-26</div>
+    </div>
+    
+    <div class="hero-section">
+      <h1 class="headline">
+        <span class="green">15 players</span>. <span class="accent">65 assets</span>. <span class="muted">30 years of moves.</span><br/>
+        This is how a championship roster gets built.
+      </h1>
+    </div>
+    
+    <div class="tree-section">
+      <img class="tree-image" src="file:///home/ubuntu/nba-acquisition-tree/export-mockups/tree-clean.png" alt="Acquisition Tree">
+    </div>
+    
+    <div class="stats-section">
+      <div class="stat">
+        <div class="stat-value green">15</div>
+        <div class="stat-label">Current Roster</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">8</div>
+        <div class="stat-label">🏠 Homegrown</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value blue">65</div>
+        <div class="stat-label">Total Assets</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value amber">5</div>
+        <div class="stat-label">True Origins</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value rose">1996</div>
+        <div class="stat-label">Earliest Origin</div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <div class="brand">@ByAkshayRam · <span>NBA Acquisition Tree</span></div>
+      <div class="cta">Explore the full interactive tree →</div>
+    </div>
+  </div>
+</body>
+</html>

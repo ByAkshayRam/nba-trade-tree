@@ -165,6 +165,14 @@ const TEAM_NAMES: Record<string, string> = {
   WAS: "Washington Wizards",
 };
 
+// Compelling roster narratives for each team - creator-friendly stories
+const ROSTER_NARRATIVES: Record<string, string> = {
+  BOS: "The Celtics' championship core is a masterclass in patience. When Danny Ainge traded Kevin Garnett and Paul Pierce to Brooklyn in 2013, the basketball world thought Boston was entering a decade of darkness. Instead, those picks became Jaylen Brown (#3, 2016) and — through a trade with Philadelphia — Jayson Tatum (#3, 2017). One trade, a decade later, produced an NBA championship. Derrick White arrived via the Spurs for another Brooklyn pick. The KG/Pierce trade echoes through this entire roster.",
+  NYK: "The Knicks built their contender through aggressive trading. Jalen Brunson chose New York in free agency, then helped recruit. OG Anunoby came from Toronto. Mikal Bridges arrived in a blockbuster with Brooklyn. Karl-Anthony Towns was traded from Minnesota. This isn't the Knicks of old — this is a front office that identified targets and went all-in. The result? A roster constructed for a championship run.",
+  OKC: "Sam Presti played chess while everyone else played checkers. When he traded Russell Westbrook and Paul George, critics called it a teardown. Instead, it was a reload. Shai Gilgeous-Alexander — the 'throw-in' from the Clippers deal — became a top-5 player. Chet Holmgren at #2 adds unicorn potential. The Thunder have more draft picks than any team in NBA history, but their best assets are already on the roster.",
+  WAS: "The Wizards are in full rebuild mode, and it's getting interesting. Alex Sarr at #2 overall anchors the future. Bilal Coulibaly shows star potential. Then came the blockbuster: Trae Young and Anthony Davis arrived via trade, instantly changing the timeline. This roster is a mix of young potential and proven stars — a fascinating experiment in competitive rebuilding.",
+};
+
 export async function GET(
   request: Request,
   { params }: { params: Promise<{ teamAbbr: string }> }
@@ -379,6 +387,7 @@ export async function GET(
   
   // Calculate stats
   const rosterPlayers = nodes.filter(n => n.data.isRosterPlayer).length;
+  const homegrownPlayers = nodes.filter(n => n.data.isRosterPlayer && n.data.isHomegrown).length;
   const origins = nodes.filter(n => n.data.isOrigin).length;
   const trades = nodes.filter(n => n.data.acquisitionType === "trade").length;
   const earliestYear = Math.min(...trees.map(t => t._meta.originYear));
@@ -386,7 +395,9 @@ export async function GET(
   return NextResponse.json({
     team,
     teamName: TEAM_NAMES[team] || team,
+    rosterNarrative: ROSTER_NARRATIVES[team] || null,
     rosterCount: rosterPlayers,
+    homegrownCount: homegrownPlayers,
     nodeCount: nodes.length,
     edgeCount: edges.length,
     originCount: origins,
