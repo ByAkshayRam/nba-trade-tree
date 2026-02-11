@@ -2,9 +2,9 @@
   "_meta": {
     "team": "BKN",
     "player": "Nic Claxton",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "NBA Trade History Research",
     "originYear": 2019,
-    "depth": 1,
+    "depth": 3,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -15,6 +15,19 @@
     "currentTeam": "BKN",
     "draftPick": 31,
     "draftRound": 2,
-    "note": "Elite rim protector, team cornerstone"
+    "tradeDescription": "Nets drafted Claxton with their OWN pick",
+    "note": "Rim protector, developed into solid starter. Survived the KD/Kyrie era.",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2019 #31 Overall Pick (BKN own)",
+        "acquisitionType": "original",
+        "date": "2019-06-20",
+        "tradeDescription": "Brooklyn's own second round pick",
+        "becamePlayer": "Nic Claxton",
+        "note": "Nets were building around D'Lo before super team era",
+        "isOrigin": true
+      }
+    ]
   }
 }

@@ -2,17 +2,37 @@
   "_meta": {
     "team": "CHA",
     "player": "Grant Williams",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2023,
-    "depth": 1,
+    "source": "NBA Trade History Research",
+    "originYear": 2019,
+    "depth": 4,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
     "type": "player",
     "name": "Grant Williams",
     "acquisitionType": "trade",
-    "date": "2023-07-06",
+    "date": "2024-02-08",
     "currentTeam": "CHA",
-    "tradePartner": "DAL"
+    "tradePartner": "DAL",
+    "tradeDescription": "Hornets acquire Williams at 2024 deadline for future picks",
+    "note": "3-and-D forward, 2022 playoff hero",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2025 2nd Round Pick (CHA)",
+        "acquisitionType": "original",
+        "date": "2024-02-08",
+        "tradeDescription": "Charlotte's own second rounder",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2026 2nd Round Pick (CHA)",
+        "acquisitionType": "original",
+        "date": "2024-02-08",
+        "tradeDescription": "Charlotte's own second rounder",
+        "isOrigin": true
+      }
+    ]
   }
 }

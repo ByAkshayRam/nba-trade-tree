@@ -2,17 +2,37 @@
   "_meta": {
     "team": "BKN",
     "player": "Ziaire Williams",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2024,
-    "depth": 1,
+    "source": "NBA Trade History Research",
+    "originYear": 2021,
+    "depth": 4,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
     "type": "player",
     "name": "Ziaire Williams",
     "acquisitionType": "trade",
-    "date": "2024-07-01",
+    "date": "2024-02-08",
     "currentTeam": "BKN",
-    "tradePartner": "MEM"
+    "tradePartner": "MEM",
+    "tradeDescription": "Nets acquire Williams at 2024 deadline for future picks",
+    "note": "Young wing, high upside from Stanford",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2025 2nd Round Pick (BKN)",
+        "acquisitionType": "original",
+        "date": "2024-02-08",
+        "tradeDescription": "Brooklyn's own second round pick",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2027 2nd Round Pick (BKN)",
+        "acquisitionType": "original",
+        "date": "2024-02-08",
+        "tradeDescription": "Brooklyn's own second round pick",
+        "isOrigin": true
+      }
+    ]
   }
 }

@@ -2,18 +2,59 @@
   "_meta": {
     "team": "PHI",
     "player": "Kyle Lowry",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2024,
-    "depth": 1,
+    "source": "NBA Trade History Research",
+    "originYear": 2006,
+    "depth": 4,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
     "type": "player",
     "name": "Kyle Lowry",
     "acquisitionType": "trade",
-    "date": "2024-02-08",
+    "date": "2026-02-06",
     "currentTeam": "PHI",
     "tradePartner": "MIA",
-    "note": "Veteran leader"
+    "tradeDescription": "76ers acquire Lowry at 2026 deadline for salary filler",
+    "note": "6x All-Star, 2019 Champion, veteran leadership",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "De'Anthony Melton",
+        "acquisitionType": "trade",
+        "date": "2022-06-23",
+        "tradePartner": "MEM",
+        "tradeDescription": "Acquired from Grizzlies for Danny Green trade exception",
+        "note": "Solid two-way guard",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Danny Green",
+            "acquisitionType": "trade",
+            "date": "2019-07-06",
+            "tradePartner": "TOR",
+            "tradeDescription": "Acquired from Raptors in Kawhi Leonard sign-and-trade fallout",
+            "note": "3x Champion, 3-and-D specialist",
+            "assetsGivenUp": [
+              {
+                "type": "pick",
+                "name": "2022 1st Round Pick (PHI)",
+                "acquisitionType": "original",
+                "date": "2019-07-06",
+                "tradeDescription": "Philadelphia's own pick",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2027 2nd Round Pick (PHI)",
+        "acquisitionType": "original",
+        "date": "2026-02-06",
+        "tradeDescription": "Philadelphia's own second rounder",
+        "isOrigin": true
+      }
+    ]
   }
 }
