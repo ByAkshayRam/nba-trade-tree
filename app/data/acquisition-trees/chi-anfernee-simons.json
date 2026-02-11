@@ -2,9 +2,9 @@
   "_meta": {
     "team": "CHI",
     "player": "Anfernee Simons",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2026,
-    "depth": 1,
+    "source": "NBA Trade History Research",
+    "originYear": 2018,
+    "depth": 4,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -14,7 +14,31 @@
     "date": "2026-02-06",
     "currentTeam": "CHI",
     "tradePartner": "POR",
-    "tradeDescription": "Acquired from Trail Blazers at deadline",
-    "note": "Scoring guard"
+    "tradeDescription": "Bulls acquire Simons at 2026 deadline for Zach LaVine",
+    "note": "Explosive scoring guard, MIP candidate",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Zach LaVine",
+        "acquisitionType": "trade",
+        "date": "2017-06-23",
+        "tradePartner": "MIN",
+        "tradeDescription": "Bulls acquired LaVine from Wolves for Jimmy Butler",
+        "note": "2x All-Star, high-flying scorer",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Jimmy Butler",
+            "acquisitionType": "draft",
+            "date": "2011-06-23",
+            "draftPick": 30,
+            "draftRound": 1,
+            "tradeDescription": "Bulls drafted Jimmy with their own pick",
+            "note": "6x All-Star, transformed from late pick to superstar",
+            "isOrigin": true
+          }
+        ]
+      }
+    ]
   }
 }

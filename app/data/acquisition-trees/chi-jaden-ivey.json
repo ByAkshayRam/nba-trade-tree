@@ -2,9 +2,9 @@
   "_meta": {
     "team": "CHI",
     "player": "Jaden Ivey",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2026,
-    "depth": 2,
+    "source": "NBA Trade History Research",
+    "originYear": 2022,
+    "depth": 4,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -14,14 +14,23 @@
     "date": "2026-02-06",
     "currentTeam": "CHI",
     "tradePartner": "DET",
-    "tradeDescription": "Acquired from Pistons at deadline",
-    "note": "Explosive guard",
+    "tradeDescription": "Bulls acquire Ivey at 2026 deadline for picks",
+    "note": "Explosive athleticism, high upside guard",
     "assetsGivenUp": [
       {
         "type": "pick",
-        "name": "2026 1st Round Pick",
+        "name": "2026 1st Round Pick (CHI)",
         "acquisitionType": "original",
         "date": "2026-02-06",
+        "tradeDescription": "Chicago's own 2026 first round pick",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2028 1st Round Pick (CHI)",
+        "acquisitionType": "original",
+        "date": "2026-02-06",
+        "tradeDescription": "Chicago's own 2028 first round pick",
         "isOrigin": true
       }
     ]

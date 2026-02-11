@@ -2,9 +2,9 @@
   "_meta": {
     "team": "ATL",
     "player": "CJ McCollum",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2026,
-    "depth": 1,
+    "source": "NBA Trade History Research",
+    "originYear": 2013,
+    "depth": 4,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -14,7 +14,43 @@
     "date": "2026-02-06",
     "currentTeam": "ATL",
     "tradePartner": "NOP",
-    "tradeDescription": "Acquired from Pelicans at deadline",
-    "note": "Veteran scorer"
+    "tradeDescription": "Hawks acquire CJ at 2026 deadline as part of Trae Young reshuffling",
+    "note": "Elite scorer, veteran leadership",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Trae Young",
+        "acquisitionType": "draft",
+        "date": "2018-06-21",
+        "draftPick": 5,
+        "draftRound": 1,
+        "currentTeam": "WAS",
+        "tradePartner": "DAL",
+        "tradeDescription": "Hawks drafted Luka Doncic #3 then traded for #5 pick (Trae) + future 1st",
+        "note": "3x All-Star, elite playmaker traded to WAS at 2026 deadline",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2018 #3 Overall Pick (Luka Doncic)",
+            "acquisitionType": "draft",
+            "date": "2018-06-21",
+            "draftPick": 3,
+            "draftRound": 1,
+            "becamePlayer": "Luka Doncic",
+            "tradeDescription": "Hawks own pick, used on Luka then traded to Dallas",
+            "note": "Controversial trade in hindsight - Luka became superstar",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2026 1st Round Pick (ATL)",
+        "acquisitionType": "original",
+        "date": "2026-02-06",
+        "tradeDescription": "Hawks own first round pick",
+        "isOrigin": true
+      }
+    ]
   }
 }

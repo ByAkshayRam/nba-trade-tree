@@ -2,9 +2,9 @@
   "_meta": {
     "team": "ATL",
     "player": "Jonathan Kuminga",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2026,
-    "depth": 1,
+    "source": "NBA Trade History Research",
+    "originYear": 2021,
+    "depth": 3,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -14,7 +14,29 @@
     "date": "2026-02-06",
     "currentTeam": "ATL",
     "tradePartner": "GSW",
-    "tradeDescription": "Acquired from Warriors",
-    "note": "Young athletic forward"
+    "tradeDescription": "Hawks acquire Kuminga at 2026 deadline as part of Jimmy Butler mega-deal",
+    "note": "Athletic forward, former #7 pick with massive upside",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "De'Andre Hunter",
+        "acquisitionType": "draft",
+        "date": "2019-06-20",
+        "draftPick": 4,
+        "draftRound": 1,
+        "currentTeam": "GSW",
+        "tradeDescription": "Hawks drafted Hunter #4 overall with their own pick",
+        "note": "National champion at Virginia, solid two-way player",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2028 1st Round Pick (ATL)",
+        "acquisitionType": "original",
+        "date": "2026-02-06",
+        "tradeDescription": "Atlanta's own 2028 first",
+        "isOrigin": true
+      }
+    ]
   }
 }
