@@ -2,9 +2,9 @@
   "_meta": {
     "team": "ATL",
     "player": "Dyson Daniels",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2024,
-    "depth": 1,
+    "source": "NBA Trade History Research",
+    "originYear": 2022,
+    "depth": 4,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -14,6 +14,62 @@
     "date": "2024-09-01",
     "currentTeam": "ATL",
     "tradePartner": "NOP",
-    "note": "Defensive guard"
+    "tradeDescription": "Hawks acquire Daniels from Pelicans for Dejounte Murray",
+    "note": "Elite perimeter defender, high upside guard",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Dejounte Murray",
+        "acquisitionType": "trade",
+        "date": "2022-06-29",
+        "tradePartner": "SAS",
+        "tradeDescription": "Hawks acquired Murray from Spurs for Danilo Gallinari, 3 first round picks",
+        "note": "All-Star guard, franchise trade at the time",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Danilo Gallinari",
+            "acquisitionType": "free-agent",
+            "date": "2020-11-21",
+            "tradeDescription": "Hawks signed Gallo as free agent from OKC",
+            "note": "Veteran scorer, signed for $61M/3yr",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2023 Unprotected 1st (CHA via ATL)",
+            "acquisitionType": "original",
+            "date": "2022-06-29",
+            "tradeDescription": "Pick originally from Charlotte to Atlanta",
+            "becamePlayer": "Cason Wallace (OKC)",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2025 1st Round Pick (ATL)",
+            "acquisitionType": "original",
+            "date": "2022-06-29",
+            "tradeDescription": "Atlanta's own first",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2027 1st Round Pick (ATL)",
+            "acquisitionType": "original",
+            "date": "2022-06-29",
+            "tradeDescription": "Atlanta's own first",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2026 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2024-09-01",
+        "tradeDescription": "Additional pick in Murray trade",
+        "isOrigin": true
+      }
+    ]
   }
 }

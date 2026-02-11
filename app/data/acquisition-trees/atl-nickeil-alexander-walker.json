@@ -2,9 +2,9 @@
   "_meta": {
     "team": "ATL",
     "player": "Nickeil Alexander-Walker",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2024,
-    "depth": 1,
+    "source": "NBA Trade History Research",
+    "originYear": 2019,
+    "depth": 4,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -13,6 +13,30 @@
     "acquisitionType": "trade",
     "date": "2024-02-08",
     "currentTeam": "ATL",
-    "tradePartner": "MIN"
+    "tradePartner": "MIN",
+    "tradeDescription": "Hawks acquire NAW at 2024 deadline for salary matching",
+    "note": "SGA's cousin, athletic combo guard",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "AJ Griffin",
+        "acquisitionType": "draft",
+        "date": "2022-06-23",
+        "draftPick": 16,
+        "draftRound": 1,
+        "currentTeam": "MIN",
+        "tradeDescription": "Hawks drafted Griffin with their own pick",
+        "note": "Duke product, fell out of Hawks rotation",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2026 2nd Round Pick (ATL)",
+        "acquisitionType": "original",
+        "date": "2024-02-08",
+        "tradeDescription": "Atlanta's own 2nd rounder",
+        "isOrigin": true
+      }
+    ]
   }
 }

@@ -2,9 +2,9 @@
   "_meta": {
     "team": "ATL",
     "player": "Corey Kispert",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2026,
-    "depth": 1,
+    "source": "NBA Trade History Research",
+    "originYear": 2021,
+    "depth": 4,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -14,6 +14,43 @@
     "date": "2026-02-06",
     "currentTeam": "ATL",
     "tradePartner": "WAS",
-    "note": "Sharpshooter"
+    "tradeDescription": "Hawks acquire Kispert at 2026 deadline as part of Trae Young mega-trade",
+    "note": "Gonzaga sharpshooter, elite 3-point specialist",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Trae Young",
+        "acquisitionType": "trade",
+        "date": "2018-06-21",
+        "tradePartner": "DAL",
+        "tradeDescription": "Hawks drafted Luka #3, traded for Trae (#5) + future 1st from Dallas",
+        "note": "3x All-Star, Hawks franchise player traded at 2026 deadline",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2018 #3 Overall Pick (Luka Doncic)",
+            "acquisitionType": "draft",
+            "date": "2018-06-21",
+            "draftPick": 3,
+            "draftRound": 1,
+            "becamePlayer": "Luka Doncic",
+            "tradeDescription": "Hawks own pick, used on Luka, traded to Dallas",
+            "note": "Hawks moved back 2 spots to get future All-Star Trae Young",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2019 1st Round Pick (from DAL)",
+            "acquisitionType": "trade",
+            "date": "2018-06-21",
+            "tradePartner": "DAL",
+            "becamePlayer": "Cam Reddish",
+            "tradeDescription": "Dallas' own 2019 first, became #10 pick (Cam Reddish)",
+            "note": "Additional pick in Luka/Trae swap",
+            "isOrigin": true
+          }
+        ]
+      }
+    ]
   }
 }

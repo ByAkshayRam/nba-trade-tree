@@ -2,9 +2,9 @@
   "_meta": {
     "team": "ATL",
     "player": "Jalen Johnson",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "NBA Trade History Research",
     "originYear": 2021,
-    "depth": 1,
+    "depth": 2,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -15,6 +15,19 @@
     "currentTeam": "ATL",
     "draftPick": 20,
     "draftRound": 1,
-    "note": "Breakout All-Star candidate"
+    "tradeDescription": "Hawks drafted Jalen Johnson with their OWN pick",
+    "note": "Breakout star in 2024-25, All-Star candidate, new franchise cornerstone",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2021 #20 Overall Pick (ATL own)",
+        "acquisitionType": "original",
+        "date": "2021-07-29",
+        "tradeDescription": "Atlanta's own first round pick after 41-31 season",
+        "becamePlayer": "Jalen Johnson",
+        "note": "Hawks drafted well - JJ emerged as star after Trae trade",
+        "isOrigin": true
+      }
+    ]
   }
 }

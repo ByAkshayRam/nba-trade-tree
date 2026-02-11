@@ -2,9 +2,9 @@
   "_meta": {
     "team": "ATL",
     "player": "Onyeka Okongwu",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "NBA Trade History Research",
     "originYear": 2020,
-    "depth": 1,
+    "depth": 2,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -15,6 +15,19 @@
     "currentTeam": "ATL",
     "draftPick": 6,
     "draftRound": 1,
-    "note": "Athletic big man"
+    "tradeDescription": "Hawks drafted Okongwu with their OWN pick",
+    "note": "Athletic rim protector, Capela's understudy turned starter",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2020 #6 Overall Pick (ATL own)",
+        "acquisitionType": "original",
+        "date": "2020-11-18",
+        "tradeDescription": "Atlanta's own lottery pick after 20-47 season",
+        "becamePlayer": "Onyeka Okongwu",
+        "note": "USC big man selected in loaded 2020 class",
+        "isOrigin": true
+      }
+    ]
   }
 }

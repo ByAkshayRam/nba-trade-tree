@@ -2,9 +2,9 @@
   "_meta": {
     "team": "ATL",
     "player": "Caleb Houstan",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2025,
-    "depth": 1,
+    "source": "NBA Trade History Research",
+    "originYear": 2022,
+    "depth": 3,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -13,6 +13,19 @@
     "acquisitionType": "trade",
     "date": "2025-02-01",
     "currentTeam": "ATL",
-    "tradePartner": "ORL"
+    "tradePartner": "ORL",
+    "tradeDescription": "Hawks acquire Houstan for cash considerations",
+    "note": "Young wing, Michigan product",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "Cash Considerations",
+        "acquisitionType": "original",
+        "date": "2025-02-01",
+        "tradeDescription": "Hawks sent cash to Orlando",
+        "note": "Low-cost flier on young talent",
+        "isOrigin": true
+      }
+    ]
   }
 }

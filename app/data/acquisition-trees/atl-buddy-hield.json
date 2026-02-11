@@ -2,9 +2,9 @@
   "_meta": {
     "team": "ATL",
     "player": "Buddy Hield",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2026,
-    "depth": 1,
+    "source": "NBA Trade History Research",
+    "originYear": 2016,
+    "depth": 5,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -14,6 +14,36 @@
     "date": "2026-02-06",
     "currentTeam": "ATL",
     "tradePartner": "GSW",
-    "note": "Sharpshooting guard"
+    "tradeDescription": "Hawks acquire Hield at 2026 deadline as part of multi-team Butler mega-deal",
+    "note": "Elite 3-point shooter, journeyman veteran",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Bogdan Bogdanovic",
+        "acquisitionType": "trade",
+        "date": "2020-11-21",
+        "tradePartner": "SAC",
+        "tradeDescription": "Hawks acquired Bogdan via sign-and-trade from Kings",
+        "note": "Serbian sharpshooter, solid scorer",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2024 2nd Round Pick (ATL)",
+            "acquisitionType": "original",
+            "date": "2020-11-21",
+            "tradeDescription": "Atlanta's own 2nd rounder plus cap space",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2027 2nd Round Pick (ATL)",
+        "acquisitionType": "original",
+        "date": "2026-02-06",
+        "tradeDescription": "Atlanta's own 2nd rounder",
+        "isOrigin": true
+      }
+    ]
   }
 }
