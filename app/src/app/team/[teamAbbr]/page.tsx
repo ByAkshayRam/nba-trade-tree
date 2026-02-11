@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { headers } from "next/headers";
 import TeamPageClient from "@/components/TeamPageClient";
 
 interface PageProps {
@@ -8,10 +9,11 @@ interface PageProps {
 }
 
 async function getTeamTree(teamAbbr: string) {
-  // On Vercel, use VERCEL_URL; locally use localhost
-  const baseUrl = process.env.VERCEL_URL 
-    ? `https://${process.env.VERCEL_URL}`
-    : process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3456";
+  // Get the host from headers for server-side fetch
+  const headersList = await headers();
+  const host = headersList.get("host") || "localhost:3456";
+  const protocol = host.includes("localhost") ? "http" : "https";
+  const baseUrl = `${protocol}://${host}`;
   
   try {
     const res = await fetch(
