@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "TOR",
+    "player": "Immanuel Quickley",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2023,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Immanuel Quickley",
+    "acquisitionType": "trade",
+    "date": "2023-12-30",
+    "currentTeam": "TOR",
+    "tradePartner": "NYK",
+    "note": "Came with RJ Barrett"
+  }
+}

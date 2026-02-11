@@ -1,0 +1,210 @@
+{
+  "_meta": {
+    "team": "BOS",
+    "player": "Nikola Vucevic",
+    "source": "Basketball-Reference, CelticsBlog",
+    "sourceUrl": "https://www.basketball-reference.com/teams/BOS/2026_transactions.html",
+    "originYear": 2000,
+    "depth": 11,
+    "lastUpdated": "2026-02-09",
+    "verificationStatus": "VERIFIED"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Nikola Vucevic",
+    "acquisitionType": "trade",
+    "date": "2026-02-05",
+    "tradePartner": "CHI",
+    "tradeDescription": "Celtics trade Simons + 2026 2nd to Bulls for Vucevic + 2027 2nd (DEN own)",
+    "currentTeam": "BOS",
+    "note": "2x All-Star center, 35 years old",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Anfernee Simons",
+        "acquisitionType": "trade",
+        "date": "2025-07-07",
+        "tradePartner": "POR",
+        "tradeDescription": "Celtics acquire Simons for Jrue Holiday. Boston also received trade exception.",
+        "note": "Simons had brief Celtics tenure before being flipped for Vucevic",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Jrue Holiday",
+            "acquisitionType": "trade",
+            "date": "2023-10-01",
+            "tradePartner": "POR",
+            "tradeDescription": "Part of Damian Lillard mega-trade. Celtics give up Brogdon, Rob Williams, 2024 1st (GSW), 2029 1st",
+            "note": "2024 NBA Champion - key two-way player in title run",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Malcolm Brogdon",
+                "acquisitionType": "trade",
+                "date": "2022-07-09",
+                "tradePartner": "IND",
+                "tradeDescription": "Celtics acquire Brogdon for Nesmith, Theis, and 2023 1st",
+                "note": "2023 6th Man of the Year",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Aaron Nesmith",
+                    "acquisitionType": "draft",
+                    "date": "2020-11-18",
+                    "draftPick": 14,
+                    "draftRound": 1,
+                    "tradeDescription": "Drafted with pick acquired from Memphis (Jeff Green trade)",
+                    "assetsGivenUp": [
+                      {
+                        "type": "pick",
+                        "name": "2020 1st Round Pick (#14, from MEM)",
+                        "acquisitionType": "trade",
+                        "date": "2015-01-12",
+                        "tradePartner": "MEM",
+                        "tradeDescription": "Jeff Green trade. Pick was heavily protected, finally conveyed in 2020 as #14",
+                        "becamePlayer": "Aaron Nesmith",
+                        "assetsGivenUp": [
+                          {
+                            "type": "player",
+                            "name": "Jeff Green",
+                            "acquisitionType": "trade",
+                            "date": "2011-02-24",
+                            "tradePartner": "OKC",
+                            "tradeDescription": "Celtics acquire Green for Kendrick Perkins and Nate Robinson",
+                            "note": "Green missed 2012 season for heart surgery",
+                            "assetsGivenUp": [
+                              {
+                                "type": "player",
+                                "name": "Kendrick Perkins",
+                                "acquisitionType": "trade",
+                                "date": "2003-06-26",
+                                "tradePartner": "MEM",
+                                "tradeDescription": "Draft night trade. Celtics send Dahntay Jones + Troy Bell for Marcus Banks + Perkins",
+                                "note": "Perkins was key to 2008 championship, tore ACL in 2010 Finals Game 6",
+                                "assetsGivenUp": [
+                                  {
+                                    "type": "player",
+                                    "name": "Dahntay Jones",
+                                    "acquisitionType": "draft",
+                                    "date": "2003-06-26",
+                                    "draftPick": 20,
+                                    "draftRound": 1,
+                                    "tradeDescription": "Drafted with pick acquired from 76ers (Moïso trade)",
+                                    "assetsGivenUp": [
+                                      {
+                                        "type": "pick",
+                                        "name": "2003 1st Round Pick (#20, from PHI)",
+                                        "acquisitionType": "trade",
+                                        "date": "2001-08-03",
+                                        "tradePartner": "PHI",
+                                        "tradeDescription": "Celtics trade Jérôme Moïso for Roshown McLeod and lottery-protected 1st",
+                                        "becamePlayer": "Dahntay Jones",
+                                        "assetsGivenUp": [
+                                          {
+                                            "type": "player",
+                                            "name": "Jérôme Moïso",
+                                            "acquisitionType": "draft",
+                                            "date": "2000-06-28",
+                                            "draftPick": 11,
+                                            "draftRound": 1,
+                                            "tradeDescription": "Drafted by Celtics with their OWN pick",
+                                            "note": "THE ULTIMATE ORIGIN. Celtics drafted Moïso 11th overall out of UCLA. Massive bust - played 24 games, averaged 1.5 PPG. His selection started a 26-year chain.",
+                                            "isOrigin": true
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "player",
+                                    "name": "Troy Bell",
+                                    "acquisitionType": "draft",
+                                    "date": "2003-06-26",
+                                    "draftPick": 16,
+                                    "draftRound": 1,
+                                    "tradeDescription": "Drafted by Celtics with their OWN pick",
+                                    "note": "Part of package for Perkins. Never played in NBA. Celtics own pick.",
+                                    "isOrigin": true
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "player",
+                                "name": "Nate Robinson",
+                                "acquisitionType": "trade",
+                                "date": "2006-06-28",
+                                "tradePartner": "PHO",
+                                "tradeDescription": "Draft night trade - part of the Rajon Rondo trade complex",
+                                "note": "3x Slam Dunk Contest winner. Flipped to OKC for Jeff Green.",
+                                "isOrigin": true
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "player",
+                    "name": "Daniel Theis",
+                    "acquisitionType": "trade",
+                    "date": "2022-02-10",
+                    "tradePartner": "HOU",
+                    "tradeDescription": "Re-acquired from Houston in deadline deal for Schroder, Fernando, Kanter",
+                    "note": "Originally signed by Celtics as free agent 2017, traded to Bulls 2021, returned 2022",
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2023 1st Round Pick",
+                    "acquisitionType": "own",
+                    "becamePlayer": "Ben Sheppard",
+                    "tradeDescription": "Celtics own pick (#29)",
+                    "note": "Conveyed to Indiana in Brogdon trade. Pacers selected Ben Sheppard.",
+                    "isOrigin": true
+                  }
+                ]
+              },
+              {
+                "type": "player",
+                "name": "Robert Williams III",
+                "acquisitionType": "draft",
+                "date": "2018-06-21",
+                "draftPick": 27,
+                "draftRound": 1,
+                "tradeDescription": "Drafted by Celtics with their OWN pick",
+                "note": "Time Lord. 2024 NBA Champion (traded after). Celtics own pick - TRUE ORIGIN.",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2024 1st Round Pick (GSW conditional)",
+                "acquisitionType": "own",
+                "becamePlayer": "Bub Carrington",
+                "tradeDescription": "Originally GSW pick acquired by Celtics. Conveyed to Portland.",
+                "note": "Portland selected Bub Carrington.",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2029 1st Round Pick",
+                "acquisitionType": "own",
+                "tradeDescription": "Celtics own pick",
+                "note": "TRUE ORIGIN",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2026 2nd Round Pick (most favorable)",
+        "acquisitionType": "trade",
+        "tradeDescription": "Acquired from Orlando in Noah Penda trade (June 2025)",
+        "note": "Part of Vucevic trade to Chicago",
+        "isOrigin": true
+      }
+    ]
+  }
+}

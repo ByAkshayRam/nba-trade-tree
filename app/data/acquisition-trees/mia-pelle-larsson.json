@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "MIA",
+    "player": "Pelle Larsson",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2023,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Pelle Larsson",
+    "acquisitionType": "draft",
+    "date": "2023-06-22",
+    "currentTeam": "MIA",
+    "draftPick": 44,
+    "draftRound": 2
+  }
+}

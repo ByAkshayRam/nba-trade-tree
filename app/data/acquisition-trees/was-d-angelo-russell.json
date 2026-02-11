@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "WAS",
+    "player": "D'Angelo Russell",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2026,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "D'Angelo Russell",
+    "acquisitionType": "trade",
+    "date": "2026-02-06",
+    "currentTeam": "WAS",
+    "tradePartner": "LAL",
+    "note": "Part of AD deal"
+  }
+}

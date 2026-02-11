@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "CLE",
+    "player": "Tyrese Proctor",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2025,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Tyrese Proctor",
+    "acquisitionType": "draft",
+    "date": "2025-06-26",
+    "currentTeam": "CLE",
+    "draftPick": 36,
+    "draftRound": 2
+  }
+}

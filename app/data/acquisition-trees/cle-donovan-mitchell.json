@@ -1,0 +1,37 @@
+{
+  "_meta": {
+    "team": "CLE",
+    "player": "Donovan Mitchell",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2018,
+    "depth": 2,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Donovan Mitchell",
+    "acquisitionType": "trade",
+    "date": "2022-09-01",
+    "currentTeam": "CLE",
+    "tradePartner": "UTA",
+    "tradeDescription": "Blockbuster: Markkanen, Sexton, picks for Mitchell",
+    "note": "3x All-Star",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Collin Sexton",
+        "acquisitionType": "draft",
+        "date": "2018-06-21",
+        "draftPick": 8,
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2025 1st Round Pick",
+        "acquisitionType": "original",
+        "date": "2022-09-01",
+        "isOrigin": true
+      }
+    ]
+  }
+}

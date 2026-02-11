@@ -1,0 +1,44 @@
+{
+  "_meta": {
+    "team": "WAS",
+    "player": "Trae Young",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2021,
+    "depth": 2,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Trae Young",
+    "acquisitionType": "trade",
+    "date": "2026-02-06",
+    "currentTeam": "WAS",
+    "tradePartner": "ATL",
+    "tradeDescription": "Blockbuster deadline deal",
+    "note": "3x All-Star, elite playmaker",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2026 1st Round Pick",
+        "acquisitionType": "original",
+        "date": "2026-02-06",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2028 1st Round Pick",
+        "acquisitionType": "original",
+        "date": "2026-02-06",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Corey Kispert",
+        "acquisitionType": "draft",
+        "date": "2021-07-29",
+        "draftPick": 15,
+        "isOrigin": true
+      }
+    ]
+  }
+}

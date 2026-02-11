@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "MIA",
+    "player": "Terry Rozier",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Terry Rozier",
+    "acquisitionType": "trade",
+    "date": "2024-02-08",
+    "currentTeam": "MIA",
+    "tradePartner": "CHA",
+    "note": "Scoring guard"
+  }
+}

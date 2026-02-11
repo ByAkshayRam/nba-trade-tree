@@ -1,0 +1,45 @@
+{
+  "_meta": {
+    "team": "OKC",
+    "player": "Alex Caruso",
+    "source": "NBA/ESPN Trade History Research",
+    "sourceUrl": "https://www.basketball-reference.com/players/c/carusal01.html",
+    "originYear": 2022,
+    "depth": 3,
+    "lastUpdated": "2026-02-10"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Alex Caruso",
+    "acquisitionType": "trade",
+    "date": "2024-06-20",
+    "tradePartner": "CHI",
+    "currentTeam": "OKC",
+    "tradeDescription": "Thunder acquire Caruso from Chicago for Josh Giddey",
+    "note": "2020 NBA Champion, elite perimeter defender, All-Defense caliber",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Josh Giddey",
+        "acquisitionType": "draft",
+        "date": "2021-07-29",
+        "draftPick": 6,
+        "draftRound": 1,
+        "tradeDescription": "Drafted 6th overall by Thunder",
+        "note": "Australian point guard, triple-double threat",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2021 #6 Overall Pick",
+            "acquisitionType": "original",
+            "date": "2021-07-29",
+            "draftPick": 6,
+            "becamePlayer": "Josh Giddey",
+            "tradeDescription": "Thunder's own first-round pick",
+            "isOrigin": true
+          }
+        ]
+      }
+    ]
+  }
+}

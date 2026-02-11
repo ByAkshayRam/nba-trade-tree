@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "team": "IND",
+    "player": "Andrew Nembhard",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2022,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Andrew Nembhard",
+    "acquisitionType": "draft",
+    "date": "2022-06-23",
+    "currentTeam": "IND",
+    "draftPick": 31,
+    "draftRound": 2,
+    "note": "Clutch playoff performer"
+  }
+}

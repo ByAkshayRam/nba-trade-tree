@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "CHA",
+    "player": "Miles Bridges",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2018,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Miles Bridges",
+    "acquisitionType": "draft",
+    "date": "2018-06-21",
+    "currentTeam": "CHA",
+    "draftPick": 12,
+    "draftRound": 1
+  }
+}

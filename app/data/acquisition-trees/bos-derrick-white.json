@@ -1,0 +1,144 @@
+{
+  "_meta": {
+    "team": "BOS",
+    "player": "Derrick White",
+    "source": "Basketball-Reference, NBA.com verified",
+    "sourceUrl": "https://www.basketball-reference.com/players/w/whitede01.html",
+    "originYear": 2013,
+    "depth": 6,
+    "lastUpdated": "2026-02-09",
+    "verificationStatus": "VERIFIED"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Derrick White",
+    "acquisitionType": "trade",
+    "date": "2022-02-10",
+    "tradePartner": "SAS",
+    "tradeDescription": "Celtics acquire White for Richardson, Langford, 2022 1st (protected 1-4), 2028 swap",
+    "currentTeam": "BOS",
+    "note": "2024 NBA Champion, key two-way player",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Josh Richardson",
+        "acquisitionType": "trade",
+        "date": "2021-07-31",
+        "tradePartner": "DAL",
+        "tradeDescription": "Celtics acquire Richardson for Moses Brown",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Moses Brown",
+            "acquisitionType": "trade",
+            "date": "2021-06-18",
+            "tradePartner": "OKC",
+            "tradeDescription": "Part of Kemba Walker trade. Celtics sent Walker, 2021 #16 pick, 2025 2nd. Received Horford, Brown, 2025 2nd",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Kemba Walker",
+                "acquisitionType": "free-agent",
+                "date": "2019-07-06",
+                "tradeDescription": "Signed 4yr/$141M max contract as unrestricted free agent from Charlotte",
+                "note": "Free agent signing - TRUE ORIGIN. No assets exchanged.",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2021 1st Round Pick (#16)",
+                "acquisitionType": "own",
+                "becamePlayer": "Alperen Sengun",
+                "tradeDescription": "Celtics own pick from 2020-21 season (36-36 record)",
+                "note": "Sent to OKC in Kemba trade, eventually became #16 pick used on Sengun",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Romeo Langford",
+        "acquisitionType": "draft",
+        "date": "2019-06-20",
+        "draftPick": 14,
+        "draftRound": 1,
+        "tradeDescription": "Drafted with pick acquired from SAC (via PHI in Fultz trade)",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2019 1st Round Pick (#14, from SAC)",
+            "acquisitionType": "trade",
+            "date": "2017-06-19",
+            "tradePartner": "PHI",
+            "becamePlayer": "Romeo Langford",
+            "tradeDescription": "Part of Fultz trade. Celtics traded #1 pick for #3 pick (Tatum) and future SAC 1st",
+            "note": "Pick conveyed as #14 in 2019",
+            "assetsGivenUp": [
+              {
+                "type": "pick",
+                "name": "2017 #1 Overall Pick (from BKN)",
+                "acquisitionType": "trade",
+                "date": "2013-06-27",
+                "tradePartner": "BKN",
+                "becamePlayer": "Markelle Fultz",
+                "tradeDescription": "The Nets trade: KG, Pierce, Terry for unprotected picks",
+                "note": "Same origin as Jayson Tatum - see Tatum tree for full Nets trade breakdown",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Paul Pierce",
+                    "acquisitionType": "draft",
+                    "date": "1998-06-24",
+                    "draftPick": 10,
+                    "draftRound": 1,
+                    "tradeDescription": "Drafted by Celtics with their OWN pick",
+                    "note": "The Truth - TRUE ORIGIN",
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "player",
+                    "name": "Kevin Garnett",
+                    "acquisitionType": "trade",
+                    "date": "2007-07-31",
+                    "tradePartner": "MIN",
+                    "tradeDescription": "See Tatum tree for full KG trade breakdown",
+                    "note": "Links to Al Jefferson (2004 own pick) - TRUE ORIGIN",
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "player",
+                    "name": "Jason Terry",
+                    "acquisitionType": "free-agent",
+                    "date": "2012-07-11",
+                    "tradeDescription": "Signed as free agent from Dallas",
+                    "note": "Free agent - TRUE ORIGIN",
+                    "isOrigin": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2022 1st Round Pick (protected 1-4)",
+        "acquisitionType": "own",
+        "becamePlayer": "Blake Wesley",
+        "tradeDescription": "Celtics own pick - conveyed #25 to Spurs",
+        "note": "Own pick - TRUE ORIGIN. Spurs used on Blake Wesley.",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2028 1st Round Pick Swap",
+        "acquisitionType": "own",
+        "tradeDescription": "Celtics own future swap rights",
+        "note": "Own rights - TRUE ORIGIN",
+        "isOrigin": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "_meta": {
+    "team": "TOR",
+    "player": "RJ Barrett",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2017,
+    "depth": 2,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "RJ Barrett",
+    "acquisitionType": "trade",
+    "date": "2023-12-30",
+    "currentTeam": "TOR",
+    "tradePartner": "NYK",
+    "tradeDescription": "Barrett and Quickley for Anunoby",
+    "note": "Canadian star homecoming",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "OG Anunoby",
+        "acquisitionType": "draft",
+        "date": "2017-06-22",
+        "draftPick": 23,
+        "note": "Developed into elite 3&D",
+        "isOrigin": true
+      }
+    ]
+  }
+}

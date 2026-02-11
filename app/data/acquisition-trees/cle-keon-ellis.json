@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "team": "CLE",
+    "player": "Keon Ellis",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2026,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Keon Ellis",
+    "acquisitionType": "trade",
+    "date": "2026-02-06",
+    "currentTeam": "CLE",
+    "tradePartner": "SAC"
+  }
+}

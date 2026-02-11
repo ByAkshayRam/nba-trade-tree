@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "team": "MIL",
+    "player": "Giannis Antetokounmpo",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2013,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Giannis Antetokounmpo",
+    "acquisitionType": "draft",
+    "date": "2013-06-27",
+    "currentTeam": "MIL",
+    "draftPick": 15,
+    "draftRound": 1,
+    "note": "2x MVP, DPOY, 2021 Champion, Finals MVP"
+  }
+}

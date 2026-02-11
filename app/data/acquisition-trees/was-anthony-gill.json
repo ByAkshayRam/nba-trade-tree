@@ -1,0 +1,17 @@
+{
+  "_meta": {
+    "team": "WAS",
+    "player": "Anthony Gill",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2021,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Anthony Gill",
+    "acquisitionType": "free-agent",
+    "date": "2021-10-01",
+    "currentTeam": "WAS"
+  }
+}

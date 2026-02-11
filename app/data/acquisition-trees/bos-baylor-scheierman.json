@@ -1,0 +1,24 @@
+{
+  "_meta": {
+    "team": "BOS",
+    "player": "Baylor Scheierman",
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/s/scheiba01.html",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-09",
+    "verificationStatus": "VERIFIED"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Baylor Scheierman",
+    "acquisitionType": "draft",
+    "date": "2024-06-26",
+    "draftPick": 30,
+    "draftRound": 1,
+    "currentTeam": "BOS",
+    "note": "Drafted from Creighton. Celtics drafted with their OWN pick as defending NBA Champions.",
+    "isOrigin": true,
+    "tradeDescription": "Drafted by Celtics with their own 1st round pick (30th overall)"
+  }
+}

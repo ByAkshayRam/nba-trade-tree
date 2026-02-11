@@ -1,0 +1,24 @@
+{
+  "_meta": {
+    "team": "BOS",
+    "player": "Hugo Gonzalez",
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/teams/BOS/2025_transactions.html",
+    "originYear": 2025,
+    "depth": 1,
+    "lastUpdated": "2026-02-09",
+    "verificationStatus": "VERIFIED"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Hugo Gonzalez",
+    "acquisitionType": "draft",
+    "date": "2025-06-25",
+    "draftPick": 28,
+    "draftRound": 1,
+    "currentTeam": "BOS",
+    "note": "International prospect. Celtics drafted with their OWN pick.",
+    "isOrigin": true,
+    "tradeDescription": "Drafted by Celtics with their own 1st round pick (28th overall)"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "_meta": {
+    "team": "WAS",
+    "player": "Anthony Davis",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2021,
+    "depth": 2,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Anthony Davis",
+    "acquisitionType": "trade",
+    "date": "2026-02-06",
+    "currentTeam": "WAS",
+    "tradePartner": "LAL",
+    "tradeDescription": "Massive deadline blockbuster",
+    "note": "9x All-Star, Champion",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2027 1st Round Pick",
+        "acquisitionType": "original",
+        "date": "2026-02-06",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2029 1st Round Pick",
+        "acquisitionType": "original",
+        "date": "2026-02-06",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Kyle Kuzma",
+        "acquisitionType": "trade",
+        "date": "2021-08-02",
+        "tradePartner": "LAL",
+        "isOrigin": true
+      }
+    ]
+  }
+}

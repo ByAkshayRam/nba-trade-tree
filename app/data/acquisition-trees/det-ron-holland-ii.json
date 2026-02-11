@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "DET",
+    "player": "Ron Holland II",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Ron Holland II",
+    "acquisitionType": "draft",
+    "date": "2024-06-26",
+    "currentTeam": "DET",
+    "draftPick": 5,
+    "draftRound": 1
+  }
+}

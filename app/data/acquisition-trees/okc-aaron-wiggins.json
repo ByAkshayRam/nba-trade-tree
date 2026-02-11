@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "team": "OKC",
+    "player": "Aaron Wiggins",
+    "source": "NBA/ESPN Trade History Research",
+    "originYear": 2021,
+    "depth": 1,
+    "lastUpdated": "2026-02-10"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Aaron Wiggins",
+    "acquisitionType": "draft",
+    "date": "2021-07-29",
+    "draftPick": 55,
+    "draftRound": 2,
+    "currentTeam": "OKC",
+    "tradeDescription": "Drafted 55th overall by Thunder",
+    "note": "Maryland product, versatile wing, second-round gem, homegrown talent",
+    "isOrigin": true
+  }
+}

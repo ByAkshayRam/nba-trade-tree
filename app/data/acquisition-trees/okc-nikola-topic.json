@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "team": "OKC",
+    "player": "Nikola Topic",
+    "source": "NBA/ESPN Trade History Research",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-10"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Nikola Topic",
+    "acquisitionType": "draft",
+    "date": "2024-06-26",
+    "draftPick": 12,
+    "draftRound": 1,
+    "currentTeam": "OKC",
+    "tradeDescription": "Drafted 12th overall by Thunder",
+    "note": "Serbian point guard prospect, fell due to injury. Presti stash pick, homegrown talent",
+    "isOrigin": true
+  }
+}

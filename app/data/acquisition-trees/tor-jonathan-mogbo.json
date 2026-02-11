@@ -1,0 +1,17 @@
+{
+  "_meta": {
+    "team": "TOR",
+    "player": "Jonathan Mogbo",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jonathan Mogbo",
+    "acquisitionType": "free-agent",
+    "date": "2024-07-01",
+    "currentTeam": "TOR"
+  }
+}

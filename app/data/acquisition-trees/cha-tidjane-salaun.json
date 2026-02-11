@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "CHA",
+    "player": "Tidjane Salaun",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Tidjane Salaun",
+    "acquisitionType": "draft",
+    "date": "2024-06-26",
+    "currentTeam": "CHA",
+    "draftPick": 6,
+    "draftRound": 1
+  }
+}

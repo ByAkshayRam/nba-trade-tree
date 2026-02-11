@@ -1,0 +1,31 @@
+{
+  "_meta": {
+    "team": "MIL",
+    "player": "Cam Thomas",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2023,
+    "depth": 2,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Cam Thomas",
+    "acquisitionType": "trade",
+    "date": "2026-02-06",
+    "currentTeam": "MIL",
+    "tradePartner": "BKN",
+    "tradeDescription": "Deadline deal for young scorer",
+    "note": "Elite bucket getter",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Damian Lillard",
+        "acquisitionType": "trade",
+        "date": "2023-09-27",
+        "tradePartner": "POR",
+        "note": "Superstar traded after 1.5 seasons",
+        "isOrigin": true
+      }
+    ]
+  }
+}

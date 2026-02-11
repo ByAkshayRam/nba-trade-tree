@@ -1,0 +1,17 @@
+{
+  "_meta": {
+    "team": "MIA",
+    "player": "Dru Smith",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Dru Smith",
+    "acquisitionType": "free-agent",
+    "date": "2024-07-01",
+    "currentTeam": "MIA"
+  }
+}

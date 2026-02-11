@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "team": "NYK",
+    "player": "Kevin McCullar Jr.",
+    "source": "NBA/ESPN Trade History Research",
+    "originYear": 2025,
+    "depth": 1,
+    "lastUpdated": "2026-02-10"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Kevin McCullar Jr.",
+    "acquisitionType": "free-agent",
+    "date": "2025-10-01",
+    "currentTeam": "NYK",
+    "tradeDescription": "Signed as two-way player",
+    "note": "Kansas product, two-way contract. Free agent = no assets given up",
+    "isOrigin": true
+  }
+}

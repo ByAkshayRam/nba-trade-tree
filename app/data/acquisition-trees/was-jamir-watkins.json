@@ -1,0 +1,17 @@
+{
+  "_meta": {
+    "team": "WAS",
+    "player": "Jamir Watkins",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2025,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jamir Watkins",
+    "acquisitionType": "free-agent",
+    "date": "2025-07-01",
+    "currentTeam": "WAS"
+  }
+}

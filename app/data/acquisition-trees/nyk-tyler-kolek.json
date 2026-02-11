@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "team": "NYK",
+    "player": "Tyler Kolek",
+    "source": "NBA/ESPN Trade History Research",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-10"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Tyler Kolek",
+    "acquisitionType": "draft",
+    "date": "2024-06-27",
+    "draftPick": 34,
+    "draftRound": 2,
+    "currentTeam": "NYK",
+    "tradeDescription": "Drafted 34th overall by Knicks",
+    "note": "Marquette product, playmaking guard, homegrown talent",
+    "isOrigin": true
+  }
+}

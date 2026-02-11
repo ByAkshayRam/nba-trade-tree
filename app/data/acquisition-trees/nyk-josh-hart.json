@@ -1,0 +1,72 @@
+{
+  "_meta": {
+    "team": "NYK",
+    "player": "Josh Hart",
+    "source": "NBA/ESPN Trade History Research",
+    "sourceUrl": "https://www.basketball-reference.com/players/h/hartjo01.html",
+    "originYear": 2020,
+    "depth": 4,
+    "lastUpdated": "2026-02-10"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Josh Hart",
+    "acquisitionType": "trade",
+    "date": "2023-02-09",
+    "tradePartner": "POR",
+    "currentTeam": "NYK",
+    "tradeDescription": "Knicks acquire Hart from Portland for Cam Reddish and draft picks",
+    "note": "Villanova product, heart and hustle guy, triple-double machine",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Cam Reddish",
+        "acquisitionType": "trade",
+        "date": "2022-01-13",
+        "tradePartner": "ATL",
+        "tradeDescription": "Acquired from Atlanta for a protected 2025 first-round pick and Kevin Knox",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2025 First-Round Pick (top-18 protected)",
+            "acquisitionType": "original",
+            "date": "2022-01-13",
+            "tradeDescription": "Knicks' own first-round pick with heavy protection",
+            "note": "Never conveyed due to protection",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Kevin Knox",
+            "acquisitionType": "draft",
+            "date": "2018-06-21",
+            "draftPick": 9,
+            "draftRound": 1,
+            "tradeDescription": "Drafted 9th overall by Knicks",
+            "note": "Bust pick, Knicks finished 29-53 in 2017-18",
+            "assetsGivenUp": [
+              {
+                "type": "pick",
+                "name": "2018 #9 Overall Pick",
+                "acquisitionType": "original",
+                "date": "2018-06-21",
+                "draftPick": 9,
+                "becamePlayer": "Kevin Knox",
+                "tradeDescription": "Knicks' own first-round pick",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2023 Second-Round Pick",
+        "acquisitionType": "original",
+        "date": "2023-02-09",
+        "tradeDescription": "Knicks' own second-round pick",
+        "isOrigin": true
+      }
+    ]
+  }
+}

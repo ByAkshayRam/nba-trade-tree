@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "MIL",
+    "player": "Ryan Rollins",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2022,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Ryan Rollins",
+    "acquisitionType": "draft",
+    "date": "2022-06-23",
+    "currentTeam": "MIL",
+    "draftPick": 44,
+    "draftRound": 2
+  }
+}

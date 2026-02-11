@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "team": "ATL",
+    "player": "Jalen Johnson",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2021,
+    "depth": 1,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jalen Johnson",
+    "acquisitionType": "draft",
+    "date": "2021-07-29",
+    "currentTeam": "ATL",
+    "draftPick": 20,
+    "draftRound": 1,
+    "note": "Breakout All-Star candidate"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "_meta": {
+    "team": "NYK",
+    "player": "Karl-Anthony Towns",
+    "source": "NBA/ESPN Trade History Research",
+    "sourceUrl": "https://www.basketball-reference.com/players/t/townska01.html",
+    "originYear": 2014,
+    "depth": 4,
+    "lastUpdated": "2026-02-10"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Karl-Anthony Towns",
+    "acquisitionType": "trade",
+    "date": "2024-10-02",
+    "tradePartner": "MIN",
+    "currentTeam": "NYK",
+    "tradeDescription": "Knicks acquire KAT for Julius Randle, Donte DiVincenzo, Keita Bates-Diop, and DET 1st",
+    "note": "4x All-Star, 2015 #1 overall pick",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Julius Randle",
+        "acquisitionType": "free-agent",
+        "date": "2019-07-06",
+        "tradeDescription": "Signed as unrestricted free agent from New Orleans Pelicans",
+        "note": "3x All-Star, signed 3yr/$63M deal. Free agent signing = no assets given up",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Donte DiVincenzo",
+        "acquisitionType": "trade",
+        "date": "2023-07-06",
+        "tradePartner": "GSW",
+        "tradeDescription": "Acquired from Golden State for 3 second-round picks",
+        "note": "2021 NBA Champion with Milwaukee",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2024 Second-Round Pick",
+            "acquisitionType": "original",
+            "date": "2023-07-06",
+            "tradeDescription": "NYK's own second-round pick",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2025 Second-Round Pick",
+            "acquisitionType": "original",
+            "date": "2023-07-06",
+            "tradeDescription": "NYK's own second-round pick",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2026 Second-Round Pick",
+            "acquisitionType": "original",
+            "date": "2023-07-06",
+            "tradeDescription": "NYK's own second-round pick",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Keita Bates-Diop",
+        "acquisitionType": "free-agent",
+        "date": "2023-09-15",
+        "tradeDescription": "Signed as free agent",
+        "note": "Journeyman forward, salary filler",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2025 First-Round Pick (via DET)",
+        "acquisitionType": "trade",
+        "date": "2022-06-23",
+        "tradePartner": "DET",
+        "becamePlayer": "TBD",
+        "tradeDescription": "Acquired from Detroit in multi-team trade involving Kemba Walker",
+        "note": "Originally sent to MIN in KAT trade",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Kemba Walker",
+            "acquisitionType": "trade",
+            "date": "2021-06-18",
+            "tradePartner": "BOS",
+            "tradeDescription": "Acquired from Boston for a 2021 1st round pick (#16)",
+            "note": "Salary dump, Walker was owed $73M",
+            "assetsGivenUp": [
+              {
+                "type": "pick",
+                "name": "2021 First-Round Pick (#16)",
+                "acquisitionType": "original",
+                "date": "2021-06-18",
+                "draftPick": 16,
+                "draftRound": 1,
+                "becamePlayer": "Alperen Sengun",
+                "tradeDescription": "Knicks' own first-round pick, used by OKC to select Sengun, traded to HOU",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

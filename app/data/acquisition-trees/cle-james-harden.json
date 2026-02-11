@@ -1,0 +1,38 @@
+{
+  "_meta": {
+    "team": "CLE",
+    "player": "James Harden",
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2019,
+    "depth": 2,
+    "lastUpdated": "2026-02-11"
+  },
+  "tree": {
+    "type": "player",
+    "name": "James Harden",
+    "acquisitionType": "trade",
+    "date": "2026-02-06",
+    "currentTeam": "CLE",
+    "tradePartner": "LAC",
+    "tradeDescription": "Blockbuster deadline deal",
+    "note": "MVP, scoring champion",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Darius Garland",
+        "acquisitionType": "draft",
+        "date": "2019-06-20",
+        "draftPick": 5,
+        "note": "All-Star traded for Harden",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2027 1st Round Pick",
+        "acquisitionType": "original",
+        "date": "2026-02-06",
+        "isOrigin": true
+      }
+    ]
+  }
+}

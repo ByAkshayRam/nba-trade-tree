@@ -398,7 +398,11 @@ export async function GET(
   const { teamAbbr } = await params;
   const team = teamAbbr.toUpperCase();
   
-  const dataDir = path.join(process.cwd(), "..", "data", "acquisition-trees");
+  // Support both local dev (data outside app/) and Vercel (data inside app/)
+  let dataDir = path.join(process.cwd(), "data", "acquisition-trees");
+  if (!fs.existsSync(dataDir)) {
+    dataDir = path.join(process.cwd(), "..", "data", "acquisition-trees");
+  }
   
   // Get all tree files for this team
   const files = fs.readdirSync(dataDir).filter(f => 
