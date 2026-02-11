@@ -820,6 +820,44 @@ export default function TeamAcquisitionTree({
       });
 
       try {
+        let positionedNodes: Node[];
+        
+        // For sparse graphs (< 5 edges), skip ELK and use simple column layout
+        // ELK can hang on mostly-disconnected graphs
+        if (flowEdges.length < 5) {
+          console.log(`Sparse graph (${flowEdges.length} edges) - using simple layout`);
+          
+          // Separate roster and non-roster nodes
+          const rosterNodes = flowNodes.filter(n => n.type === "target");
+          const otherNodes = flowNodes.filter(n => n.type !== "target");
+          
+          // Sort roster by order
+          rosterNodes.sort((a, b) => {
+            const orderA = (a.data as NodeData).rosterOrder ?? 99;
+            const orderB = (b.data as NodeData).rosterOrder ?? 99;
+            return orderA - orderB;
+          });
+          
+          // Position roster in left column
+          rosterNodes.forEach((node, i) => {
+            node.position = { x: 0, y: i * ROSTER_VERTICAL_SPACING };
+          });
+          
+          // Position other nodes (origins, etc.) in a column to the right
+          otherNodes.forEach((node, i) => {
+            node.position = { x: NODE_WIDTH + 200, y: i * 80 };
+          });
+          
+          positionedNodes = [...rosterNodes, ...otherNodes];
+          
+          setBaseNodes(positionedNodes);
+          setBaseEdges(flowEdges);
+          setNodes(positionedNodes);
+          setEdges(flowEdges);
+          setIsLoading(false);
+          return; // Skip the rest of ELK processing
+        }
+        
         const graph = {
           id: "root",
           layoutOptions: elkOptions,
@@ -848,7 +886,7 @@ export default function TeamAcquisitionTree({
         const layoutedGraph = await layoutWithTimeout(graph);
 
         // Get initial positions from ELK
-        let positionedNodes = flowNodes.map((node) => {
+        positionedNodes = flowNodes.map((node) => {
           const elkNode = layoutedGraph.children?.find((n) => n.id === node.id);
           return {
             ...node,
