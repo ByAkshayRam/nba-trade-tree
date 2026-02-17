@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { PlayerSearch } from "@/components/PlayerSearch";
 import { TradeTree } from "@/components/TradeTree";
+import { trackPageView, startPageTimer } from "@/lib/analytics";
 
 const EAST_TEAMS = [
   { abbr: "ATL", name: "Hawks", emoji: "🦅" },
@@ -54,6 +55,11 @@ interface SelectedPlayer {
 
 export default function Home() {
   const [selectedPlayer, setSelectedPlayer] = useState<SelectedPlayer | null>(null);
+
+  useEffect(() => {
+    trackPageView('/');
+    startPageTimer();
+  }, []);
 
   return (
     <div className="min-h-screen bg-black text-white">

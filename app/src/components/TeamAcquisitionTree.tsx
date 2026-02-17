@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useCallback, useMemo, useRef } from "react";
+import { trackPlayerClick, trackExport } from "@/lib/analytics";
 import {
   ReactFlow,
   Background,
@@ -1367,6 +1368,11 @@ export default function TeamAcquisitionTree({
       setSelectedNodeId(null);
     } else {
       setSelectedNodeId(node.id);
+      const nd = node.data as NodeData;
+      if (nd.isRosterPlayer) {
+        const teamAbbr = typeof window !== 'undefined' ? window.location.pathname.split('/').pop() || '' : '';
+        trackPlayerClick(nd.label, teamAbbr.toUpperCase());
+      }
     }
   }, [selectedNodeId]);
 
@@ -2552,6 +2558,8 @@ export default function TeamAcquisitionTree({
     
     setIsExporting(true);
     setShowExportMenu(false);
+    const teamAbbr = typeof window !== 'undefined' ? window.location.pathname.split('/').pop() || '' : '';
+    trackExport(selected.map(([k]) => k).join(','), teamAbbr.toUpperCase());
     
     try {
       const exports: { name: string; data: string }[] = [];

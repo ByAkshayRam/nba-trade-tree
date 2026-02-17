@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import TeamAcquisitionTree from "./TeamAcquisitionTree";
+import { trackPageView, trackTeamView, startPageTimer } from "@/lib/analytics";
 
 // All Eastern Conference teams
 const EAST_TEAMS = [
@@ -162,6 +163,12 @@ function generatePlayerNarrative(player: SelectedPlayerInfo, teamName: string): 
 export default function TeamPageClient({ data, teamAbbr }: TeamPageClientProps) {
   const [selectedPlayer, setSelectedPlayer] = useState<SelectedPlayerInfo | null>(null);
   const router = useRouter();
+
+  useEffect(() => {
+    trackPageView(`/team/${teamAbbr}`);
+    trackTeamView(teamAbbr.toUpperCase(), data.teamName);
+    startPageTimer();
+  }, [teamAbbr, data.teamName]);
   
   const handlePlayerSelect = useCallback((player: SelectedPlayerInfo | null) => {
     setSelectedPlayer(player);
