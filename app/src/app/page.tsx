@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { PlayerSearch } from "@/components/PlayerSearch";
-import { TradeTree } from "@/components/TradeTree";
 import { trackPageView, startPageTimer } from "@/lib/analytics";
 
 const EAST_TEAMS = [
@@ -42,19 +42,8 @@ const WEST_TEAMS = [
   { abbr: "UTA", name: "Jazz", emoji: "🎵" },
 ];
 
-interface SelectedPlayer {
-  id: number;
-  name: string;
-  draftYear: number;
-  draftPick: number;
-  headshotUrl: string | null;
-  teamAbbr: string;
-  teamName: string;
-  teamColor: string;
-}
-
 export default function Home() {
-  const [selectedPlayer, setSelectedPlayer] = useState<SelectedPlayer | null>(null);
+  const router = useRouter();
   const [email, setEmail] = useState("");
   const [subscribeStatus, setSubscribeStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [subscribeMsg, setSubscribeMsg] = useState("");
@@ -136,52 +125,35 @@ export default function Home() {
           
           {/* Search */}
           <div className="flex justify-center mb-8">
-            <PlayerSearch onSelect={setSelectedPlayer} />
+            <PlayerSearch onSelect={(player) => {
+              const slug = player.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+              router.push(`/team/${player.teamAbbr}?player=${slug}`);
+            }} />
           </div>
           
           {/* Quick examples */}
-          {!selectedPlayer && (
-            <div className="flex flex-wrap justify-center gap-2 text-sm">
-              <span className="text-zinc-600">Try:</span>
-              {["Jayson Tatum", "Jaylen Brown"].map((name) => (
-                <button
-                  key={name}
-                  onClick={() => {
-                    const mockPlayers: Record<string, SelectedPlayer> = {
-                      "Jayson Tatum": {
-                        id: 1,
-                        name: "Jayson Tatum",
-                        draftYear: 2017,
-                        draftPick: 3,
-                        headshotUrl: "https://cdn.nba.com/headshots/nba/latest/1040x760/1628369.png",
-                        teamAbbr: "BOS",
-                        teamName: "Boston Celtics",
-                        teamColor: "#007A33",
-                      },
-                      "Jaylen Brown": {
-                        id: 2,
-                        name: "Jaylen Brown",
-                        draftYear: 2016,
-                        draftPick: 3,
-                        headshotUrl: "https://cdn.nba.com/headshots/nba/latest/1040x760/1627759.png",
-                        teamAbbr: "BOS",
-                        teamName: "Boston Celtics",
-                        teamColor: "#007A33",
-                      },
-                    };
-                    setSelectedPlayer(mockPlayers[name] || null);
-                  }}
-                  className="px-4 py-1.5 bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 hover:border-fuchsia-500/30 rounded-full text-zinc-300 transition-all"
-                >
-                  {name}
-                </button>
-              ))}
-            </div>
-          )}
+          <div className="flex flex-wrap justify-center gap-2 text-sm">
+            <span className="text-zinc-600">Try:</span>
+            {[
+              { name: "Jayson Tatum", team: "BOS" },
+              { name: "Jaylen Brown", team: "BOS" },
+            ].map(({ name, team }) => (
+              <button
+                key={name}
+                onClick={() => {
+                  const slug = name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+                  router.push(`/team/${team}?player=${slug}`);
+                }}
+                className="px-4 py-1.5 bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 hover:border-fuchsia-500/30 rounded-full text-zinc-300 transition-all"
+              >
+                {name}
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Stats banner */}
-        {!selectedPlayer && (
+        {(
           <div className="grid grid-cols-3 gap-4 mb-12">
             {[
               { value: "30", label: "Teams", color: "text-fuchsia-400" },
@@ -196,39 +168,8 @@ export default function Home() {
           </div>
         )}
 
-        {/* Selected player info */}
-        {selectedPlayer && (
-          <div className="mb-8">
-            <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center gap-4">
-                {selectedPlayer.headshotUrl && (
-                  <img
-                    src={selectedPlayer.headshotUrl}
-                    alt={selectedPlayer.name}
-                    className="w-16 h-16 rounded-full object-cover border-2"
-                    style={{ borderColor: selectedPlayer.teamColor }}
-                  />
-                )}
-                <div>
-                  <h3 className="text-2xl font-bold">{selectedPlayer.name}</h3>
-                  <p className="text-zinc-400">
-                    {selectedPlayer.teamName} • #{selectedPlayer.draftPick} ({selectedPlayer.draftYear})
-                  </p>
-                </div>
-              </div>
-              <button
-                onClick={() => setSelectedPlayer(null)}
-                className="px-4 py-2 text-sm bg-zinc-800 hover:bg-zinc-700 rounded-lg transition-colors"
-              >
-                ← Back
-              </button>
-            </div>
-            <TradeTree playerId={selectedPlayer.id} />
-          </div>
-        )}
-
         {/* Browse by Team */}
-        {!selectedPlayer && (
+        {(
           <div className="p-6 sm:p-8 bg-zinc-900/50 rounded-2xl border border-zinc-800/50">
             <h3 className="text-2xl font-bold mb-2 text-center">
               Browse Team Roster DNA
@@ -274,7 +215,7 @@ export default function Home() {
         )}
 
         {/* Featured: Celtics-Nets */}
-        {!selectedPlayer && (
+        {(
           <div className="mt-8 p-6 sm:p-8 bg-gradient-to-br from-zinc-900/80 via-[#0f0d15] to-zinc-900/80 rounded-2xl border border-fuchsia-500/10">
             <div className="flex items-center justify-center gap-2 mb-2">
               <span className="text-fuchsia-400 text-xs font-bold uppercase tracking-widest">Featured Chain</span>
@@ -323,7 +264,7 @@ export default function Home() {
           </div>
         )}
         {/* Email Signup */}
-        {!selectedPlayer && (
+        {(
           <div className="mt-8 p-6 sm:p-8 bg-zinc-900/50 rounded-2xl border border-zinc-800/50 text-center">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-400 text-xs font-medium mb-4">
               <span>📬</span> Stay in the loop
