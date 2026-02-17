@@ -20,8 +20,8 @@ interface Summary {
 interface RecentEvent {
   event: string;
   properties?: Record<string, string | number | boolean | null>;
-  sessionId: string;
-  visitorId: string;
+  session_id: string;
+  visitor_id: string;
   timestamp: string;
   ip: string;
 }
@@ -410,7 +410,7 @@ export default function AdminPage() {
                       {e.event === 'export' && `${e.properties?.format} — ${e.properties?.teamAbbr}`}
                       {e.event === 'page_duration' && `${e.properties?.seconds}s on ${e.properties?.path}`}
                     </span>
-                    <span className="text-zinc-600 text-[10px] ml-auto shrink-0">{e.visitorId?.slice(0, 6)}</span>
+                    <span className="text-zinc-600 text-[10px] ml-auto shrink-0">{e.visitor_id?.slice(0, 6)}</span>
                   </div>
                 ))}
               </div>

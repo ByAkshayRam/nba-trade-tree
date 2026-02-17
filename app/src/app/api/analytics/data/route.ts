@@ -1,21 +1,18 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { promises as fs } from 'fs';
-import path from 'path';
+import { supabase } from '@/lib/supabase';
 
-const EVENTS_FILE = path.join(process.cwd(), 'data', 'analytics-events.jsonl');
 const ADMIN_PASSWORD = process.env.ANALYTICS_PASSWORD || 'rosterdna-admin-2026';
 
 interface AnalyticsEvent {
   event: string;
-  properties?: Record<string, string | number | boolean | null>;
-  sessionId: string;
-  visitorId: string;
+  properties: Record<string, string | number | boolean | null>;
+  session_id: string;
+  visitor_id: string;
   timestamp: string;
   ip: string;
 }
 
 export async function GET(request: NextRequest) {
-  // Simple auth check
   const auth = request.headers.get('authorization');
   const urlPassword = request.nextUrl.searchParams.get('key');
   
@@ -24,56 +21,36 @@ export async function GET(request: NextRequest) {
   }
 
   try {
-    let rawData: string;
-    try {
-      rawData = await fs.readFile(EVENTS_FILE, 'utf-8');
-    } catch {
-      return NextResponse.json({ events: [], summary: getEmptySummary() });
+    let query = supabase
+      .from('analytics_events')
+      .select('*')
+      .order('timestamp', { ascending: false })
+      .limit(10000);
+
+    const since = request.nextUrl.searchParams.get('since');
+    if (since) {
+      query = query.gte('timestamp', since);
     }
 
-    const events: AnalyticsEvent[] = rawData
-      .trim()
-      .split('\n')
-      .filter(Boolean)
-      .map(line => {
-        try { return JSON.parse(line); } 
-        catch { return null; }
-      })
-      .filter(Boolean);
+    const { data: events, error } = await query;
 
-    // Optional time filter
-    const since = request.nextUrl.searchParams.get('since');
-    const filteredEvents = since 
-      ? events.filter(e => new Date(e.timestamp) >= new Date(since))
-      : events;
+    if (error) {
+      console.error('Supabase read error:', error);
+      return NextResponse.json({ error: 'Failed to read events' }, { status: 500 });
+    }
 
-    const summary = buildSummary(filteredEvents);
+    const typedEvents = (events || []) as AnalyticsEvent[];
+    const summary = buildSummary(typedEvents);
 
-    return NextResponse.json({ 
+    return NextResponse.json({
       summary,
-      recentEvents: filteredEvents.slice(-100).reverse(),
-      totalEvents: filteredEvents.length,
+      recentEvents: typedEvents.slice(0, 100),
+      totalEvents: typedEvents.length,
     });
   } catch (error) {
     console.error('Analytics data error:', error);
     return NextResponse.json({ error: 'Internal error' }, { status: 500 });
   }
-}
-
-function getEmptySummary() {
-  return {
-    totalPageViews: 0,
-    uniqueVisitors: 0,
-    uniqueSessions: 0,
-    topTeams: [],
-    topPlayers: [],
-    topPages: [],
-    eventCounts: {},
-    viewsByDay: [],
-    avgSessionDuration: 0,
-    deviceBreakdown: { desktop: 0, mobile: 0, tablet: 0 },
-    referrerBreakdown: {},
-  };
 }
 
 function buildSummary(events: AnalyticsEvent[]) {
@@ -82,9 +59,8 @@ function buildSummary(events: AnalyticsEvent[]) {
   const playerClicks = events.filter(e => e.event === 'player_click');
   const durations = events.filter(e => e.event === 'page_duration');
   
-  // Unique visitors & sessions
-  const uniqueVisitors = new Set(events.map(e => e.visitorId)).size;
-  const uniqueSessions = new Set(events.map(e => e.sessionId)).size;
+  const uniqueVisitors = new Set(events.map(e => e.visitor_id)).size;
+  const uniqueSessions = new Set(events.map(e => e.session_id)).size;
 
   // Top teams
   const teamCounts: Record<string, number> = {};
@@ -97,7 +73,7 @@ function buildSummary(events: AnalyticsEvent[]) {
     .slice(0, 15)
     .map(([team, count]) => ({ team, count }));
 
-  // Top players clicked
+  // Top players
   const playerCounts: Record<string, number> = {};
   playerClicks.forEach(e => {
     const key = `${e.properties?.playerName} (${e.properties?.teamAbbr})`;
@@ -119,7 +95,7 @@ function buildSummary(events: AnalyticsEvent[]) {
     .slice(0, 15)
     .map(([page, count]) => ({ page, count }));
 
-  // Event type counts
+  // Event counts
   const eventCounts: Record<string, number> = {};
   events.forEach(e => {
     eventCounts[e.event] = (eventCounts[e.event] || 0) + 1;
@@ -135,12 +111,12 @@ function buildSummary(events: AnalyticsEvent[]) {
     .sort((a, b) => a[0].localeCompare(b[0]))
     .map(([date, count]) => ({ date, count }));
 
-  // Avg session duration
+  // Avg duration
   const avgDuration = durations.length > 0
     ? Math.round(durations.reduce((sum, e) => sum + (Number(e.properties?.seconds) || 0), 0) / durations.length)
     : 0;
 
-  // Device breakdown
+  // Devices
   const devices = { desktop: 0, mobile: 0, tablet: 0 };
   events.forEach(e => {
     const ua = ((e.properties?.userAgent as string) || '').toLowerCase();
@@ -149,18 +125,16 @@ function buildSummary(events: AnalyticsEvent[]) {
     else devices.desktop++;
   });
 
-  // Referrer breakdown
+  // Referrers
   const referrerMap: Record<string, number> = {};
   events.forEach(e => {
     let ref = (e.properties?.referrer as string) || '';
     if (!ref) ref = '(direct)';
-    else {
-      try { ref = new URL(ref).hostname; } catch { /* keep as-is */ }
-    }
+    else { try { ref = new URL(ref).hostname; } catch { /* keep */ } }
     referrerMap[ref] = (referrerMap[ref] || 0) + 1;
   });
 
-  // Visitors by hour (for heatmap)
+  // Hourly
   const hourMap: Record<number, number> = {};
   events.forEach(e => {
     const hour = new Date(e.timestamp).getUTCHours();
