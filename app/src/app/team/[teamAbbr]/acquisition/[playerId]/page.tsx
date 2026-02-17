@@ -2,12 +2,43 @@ import AcquisitionTree from "@/components/AcquisitionTreeClient";
 import PlayerSelector from "@/components/PlayerSelector";
 import Link from "next/link";
 import { headers } from "next/headers";
+import { Metadata } from "next";
 
 interface PageProps {
   params: Promise<{
     teamAbbr: string;
     playerId: string;
   }>;
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { teamAbbr, playerId } = await params;
+  const team = teamAbbr.toUpperCase();
+  // Convert slug to player name: "jayson-tatum" → "Jayson Tatum"
+  const playerName = playerId.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+  const slug = `${teamAbbr.toLowerCase()}-${playerId}`;
+
+  const headersList = await headers();
+  const host = headersList.get("host") || "rosterdna.vercel.app";
+  const proto = headersList.get("x-forwarded-proto") || "https";
+  const baseUrl = `${proto}://${host}`;
+
+  return {
+    title: `${playerName} — Acquisition Chain | RosterDNA`,
+    description: `How did ${team} acquire ${playerName}? Trace the full trade chain — every pick, trade, and signing that led to this roster spot.`,
+    openGraph: {
+      title: `${playerName} — RosterDNA`,
+      description: `Trace ${playerName}'s acquisition chain on ${team}.`,
+      images: [`${baseUrl}/api/card/player/${slug}`],
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${playerName} — RosterDNA`,
+      description: `How did ${team} acquire ${playerName}?`,
+      images: [`${baseUrl}/api/card/player/${slug}`],
+    },
+  };
 }
 
 async function getAcquisitionTree(teamAbbr: string, playerId: string) {

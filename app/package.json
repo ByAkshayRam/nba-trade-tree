@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.95.3",
+    "@vercel/og": "^0.8.6",
     "@xyflow/react": "^12.10.0",
     "better-sqlite3": "^12.6.2",
     "drizzle-orm": "^0.45.1",

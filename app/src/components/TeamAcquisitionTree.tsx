@@ -2694,146 +2694,94 @@ export default function TeamAcquisitionTree({
         )}
       </div>
 
-      {/* Export Button */}
+      {/* Share Button */}
       <div className="absolute top-4 right-16 z-10">
         <div className="relative">
           <button
             onClick={() => setShowExportMenu(!showExportMenu)}
-            disabled={isExporting}
-            className="bg-green-600 hover:bg-green-500 disabled:bg-zinc-600 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-2 transition-colors shadow-lg"
+            className="bg-fuchsia-600 hover:bg-fuchsia-500 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-2 transition-colors shadow-lg"
           >
-            {isExporting ? (
-              <>
-                <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24">
-                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
-                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
-                </svg>
-                Exporting...
-              </>
-            ) : (
-              <>
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
-                </svg>
-                Export
-              </>
-            )}
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+            </svg>
+            Share
           </button>
           
           {showExportMenu && (
             <div className="absolute top-full right-0 mt-2 bg-zinc-800 border border-zinc-700 rounded-xl shadow-xl overflow-hidden w-[320px]">
               <div className="px-4 py-3 border-b border-zinc-700">
-                <div className="text-sm font-semibold text-white mb-1">Export Graphics</div>
-                <div className="text-xs text-zinc-400">Select formats to download</div>
+                <div className="text-sm font-semibold text-white mb-1">Share This Team</div>
+                <div className="text-xs text-zinc-400">Copy link or share on social</div>
               </div>
               
-              {/* Format Selection */}
-              <div className="p-3 space-y-2 border-b border-zinc-700">
-                <label className="flex items-start gap-3 p-2 rounded-lg hover:bg-zinc-700/50 cursor-pointer transition-colors">
-                  <input
-                    type="checkbox"
-                    checked={exportSelections.fullTree}
-                    onChange={(e) => setExportSelections(prev => ({ ...prev, fullTree: e.target.checked }))}
-                    className="mt-1 w-4 h-4 rounded border-zinc-600 bg-zinc-700 text-green-500 focus:ring-green-500"
-                  />
-                  <div className="flex-1">
-                    <div className="text-sm font-medium text-white flex items-center gap-2">
-                      🌳 Full Tree
-                      <span className="text-[10px] px-1.5 py-0.5 bg-zinc-700 rounded text-zinc-400">4:5</span>
-                    </div>
-                    <div className="text-xs text-zinc-500">Complete graph with headline & stats</div>
-                  </div>
-                </label>
-                
-                <label className="flex items-start gap-3 p-2 rounded-lg hover:bg-zinc-700/50 cursor-pointer transition-colors">
-                  <input
-                    type="checkbox"
-                    checked={exportSelections.twitterLandscape}
-                    onChange={(e) => setExportSelections(prev => ({ ...prev, twitterLandscape: e.target.checked }))}
-                    className="mt-1 w-4 h-4 rounded border-zinc-600 bg-zinc-700 text-green-500 focus:ring-green-500"
-                  />
-                  <div className="flex-1">
-                    <div className="text-sm font-medium text-white flex items-center gap-2">
-                      🐦 Twitter Card
-                      <span className="text-[10px] px-1.5 py-0.5 bg-zinc-700 rounded text-zinc-400">5:4</span>
-                    </div>
-                    <div className="text-xs text-zinc-500">Split layout with player cards & trophy</div>
-                  </div>
-                </label>
-                
-                <label className="flex items-start gap-3 p-2 rounded-lg hover:bg-zinc-700/50 cursor-pointer transition-colors">
-                  <input
-                    type="checkbox"
-                    checked={exportSelections.statCard}
-                    onChange={(e) => setExportSelections(prev => ({ ...prev, statCard: e.target.checked }))}
-                    className="mt-1 w-4 h-4 rounded border-zinc-600 bg-zinc-700 text-green-500 focus:ring-green-500"
-                  />
-                  <div className="flex-1">
-                    <div className="text-sm font-medium text-white flex items-center gap-2">
-                      📊 Stat Card
-                      <span className="text-[10px] px-1.5 py-0.5 bg-zinc-700 rounded text-zinc-400">16:9</span>
-                    </div>
-                    <div className="text-xs text-zinc-500">Narrative headline with chain sidebar</div>
-                  </div>
-                </label>
-              </div>
-              
-              {/* Mode Selection */}
-              <div className="p-3 border-b border-zinc-700">
-                <div className="text-xs text-zinc-400 mb-2">Color Mode</div>
-                <div className="flex gap-2">
-                  <button
-                    onClick={() => setExportMode('dark')}
-                    className={`flex-1 px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-2 ${
-                      exportMode === 'dark' 
-                        ? 'bg-zinc-600 text-white ring-2 ring-green-500' 
-                        : 'bg-zinc-700 text-zinc-300 hover:bg-zinc-600'
-                    }`}
-                  >
-                    <span className="w-4 h-4 rounded bg-zinc-900 border border-zinc-600" />
-                    Dark
-                  </button>
-                  <button
-                    onClick={() => setExportMode('light')}
-                    className={`flex-1 px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-2 ${
-                      exportMode === 'light' 
-                        ? 'bg-zinc-600 text-white ring-2 ring-green-500' 
-                        : 'bg-zinc-700 text-zinc-300 hover:bg-zinc-600'
-                    }`}
-                  >
-                    <span className="w-4 h-4 rounded bg-white border border-zinc-300" />
-                    Light
-                  </button>
-                </div>
-              </div>
-              
-              {/* Export Button */}
-              <div className="p-3">
+              {/* Share Options */}
+              <div className="p-3 space-y-2">
                 <button
-                  onClick={handleExport}
-                  disabled={!Object.values(exportSelections).some(v => v)}
-                  className="w-full px-4 py-2.5 bg-green-600 hover:bg-green-500 disabled:bg-zinc-700 disabled:text-zinc-500 text-white rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-2"
+                  onClick={() => {
+                    const url = window.location.href;
+                    navigator.clipboard.writeText(url);
+                    setShowExportMenu(false);
+                  }}
+                  className="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-zinc-700/50 transition-colors text-left"
                 >
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                  </svg>
-                  Download {Object.values(exportSelections).filter(v => v).length} Selected
+                  <span className="text-lg">🔗</span>
+                  <div className="flex-1">
+                    <div className="text-sm font-medium text-white">Copy Link</div>
+                    <div className="text-xs text-zinc-500">Share this team page</div>
+                  </div>
                 </button>
+
+                <button
+                  onClick={() => {
+                    const url = window.location.href;
+                    const text = `Check out how the ${teamName} roster was built 🧬`;
+                    window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`, '_blank');
+                    setShowExportMenu(false);
+                  }}
+                  className="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-zinc-700/50 transition-colors text-left"
+                >
+                  <span className="text-lg">𝕏</span>
+                  <div className="flex-1">
+                    <div className="text-sm font-medium text-white">Share on Twitter/X</div>
+                    <div className="text-xs text-zinc-500">Tweet with pre-filled text</div>
+                  </div>
+                </button>
+
+                <button
+                  onClick={() => {
+                    const url = window.location.href;
+                    const title = `How the ${teamName} roster was built`;
+                    window.open(`https://www.reddit.com/submit?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`, '_blank');
+                    setShowExportMenu(false);
+                  }}
+                  className="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-zinc-700/50 transition-colors text-left"
+                >
+                  <span className="text-lg">🟠</span>
+                  <div className="flex-1">
+                    <div className="text-sm font-medium text-white">Share on Reddit</div>
+                    <div className="text-xs text-zinc-500">Post to r/nba or any subreddit</div>
+                  </div>
+                </button>
+              </div>
+
+              <div className="px-4 py-3 border-t border-zinc-700">
+                <div className="text-[10px] text-zinc-600 flex items-center gap-1.5">
+                  <span>🧬</span> Branded cards coming soon — follow @RosterDNA
+                </div>
               </div>
             </div>
           )}
         </div>
       </div>
 
-      {/* Click outside to close export menu */}
+      {/* Click outside to close share menu */}
       {showExportMenu && (
         <div 
           className="fixed inset-0 z-0" 
           onClick={() => setShowExportMenu(false)}
         />
       )}
-
-      {/* Hidden export container ref */}
+      {/* Hidden export container ref (kept for potential future use) */}
       <div ref={exportRef} className="hidden" />
     </div>
   );
