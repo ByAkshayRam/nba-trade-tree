@@ -62,19 +62,29 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-[#09090b] text-white">
       {/* Header */}
-      <header className="border-b border-zinc-800">
+      <header className="border-b border-zinc-800/50">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <span className="text-2xl">🏀</span>
+            <span className="text-2xl">🧬</span>
             <div>
-              <h1 className="text-xl font-bold text-white">RosterDNA</h1>
-              <p className="text-xs text-zinc-500">Trace any player&apos;s acquisition origin</p>
+              <h1 className="text-xl font-bold text-white tracking-tight">RosterDNA</h1>
+              <p className="text-[10px] text-zinc-600 uppercase tracking-widest">Every roster tells a story</p>
             </div>
           </div>
-          <div className="text-xs font-semibold px-2 py-1 rounded bg-amber-500/20 text-amber-400 border border-amber-500/30">
-            BETA
+          <div className="flex items-center gap-3">
+            <a
+              href="https://twitter.com/RosterDNA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-zinc-500 hover:text-fuchsia-400 transition-colors"
+            >
+              @RosterDNA
+            </a>
+            <div className="text-[10px] font-bold px-2.5 py-1 rounded-full bg-fuchsia-500/10 text-fuchsia-400 border border-fuchsia-500/20">
+              BETA
+            </div>
           </div>
         </div>
       </header>
@@ -82,13 +92,18 @@ export default function Home() {
       {/* Main content */}
       <main className="max-w-6xl mx-auto px-4 py-8">
         {/* Hero section */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent">
-            Every Player Has an Origin Story
+        <div className="text-center mb-16 pt-8">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-fuchsia-500/10 border border-fuchsia-500/20 text-fuchsia-400 text-xs font-medium mb-6">
+            <span>🧬</span> 512 players · 30 teams · every acquisition traced
+          </div>
+          <h2 className="text-5xl sm:text-6xl font-extrabold mb-5 leading-tight">
+            <span className="bg-gradient-to-r from-fuchsia-400 via-violet-400 to-blue-400 bg-clip-text text-transparent">
+              How Was Your Team Built?
+            </span>
           </h2>
-          <p className="text-lg text-zinc-400 max-w-2xl mx-auto mb-8">
-            Search any NBA player to see the chain of trades, picks, and transactions 
-            that led to them being on their current roster.
+          <p className="text-lg text-zinc-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+            Trace the chain of trades, draft picks, and signings that built every NBA roster. 
+            From the Celtics-Nets heist to OKC&apos;s draft empire — see the full story.
           </p>
           
           {/* Search */}
@@ -99,12 +114,11 @@ export default function Home() {
           {/* Quick examples */}
           {!selectedPlayer && (
             <div className="flex flex-wrap justify-center gap-2 text-sm">
-              <span className="text-zinc-500">Try:</span>
+              <span className="text-zinc-600">Try:</span>
               {["Jayson Tatum", "Jaylen Brown"].map((name) => (
                 <button
                   key={name}
                   onClick={() => {
-                    // Mock selection for demo
                     const mockPlayers: Record<string, SelectedPlayer> = {
                       "Jayson Tatum": {
                         id: 1,
@@ -129,7 +143,7 @@ export default function Home() {
                     };
                     setSelectedPlayer(mockPlayers[name] || null);
                   }}
-                  className="px-3 py-1 bg-zinc-800 hover:bg-zinc-700 rounded-full text-zinc-300 transition-colors"
+                  className="px-4 py-1.5 bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 hover:border-fuchsia-500/30 rounded-full text-zinc-300 transition-all"
                 >
                   {name}
                 </button>
@@ -137,6 +151,23 @@ export default function Home() {
             </div>
           )}
         </div>
+
+        {/* Stats banner */}
+        {!selectedPlayer && (
+          <div className="grid grid-cols-4 gap-4 mb-12">
+            {[
+              { value: "30", label: "Teams", color: "text-fuchsia-400" },
+              { value: "512", label: "Players Traced", color: "text-violet-400" },
+              { value: "650+", label: "Player Headshots", color: "text-blue-400" },
+              { value: "100%", label: "Roster Coverage", color: "text-emerald-400" },
+            ].map((stat) => (
+              <div key={stat.label} className="text-center p-4 bg-zinc-900/50 rounded-xl border border-zinc-800/50">
+                <div className={`text-2xl sm:text-3xl font-extrabold font-mono ${stat.color}`}>{stat.value}</div>
+                <div className="text-[10px] text-zinc-600 uppercase tracking-widest mt-1">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        )}
 
         {/* Selected player info */}
         {selectedPlayer && (
@@ -162,124 +193,127 @@ export default function Home() {
                 onClick={() => setSelectedPlayer(null)}
                 className="px-4 py-2 text-sm bg-zinc-800 hover:bg-zinc-700 rounded-lg transition-colors"
               >
-                ← Back to Search
+                ← Back
               </button>
             </div>
-
-            {/* Trade Tree */}
             <TradeTree playerId={selectedPlayer.id} />
-
-            {/* Legend */}
-            <div className="mt-4 flex flex-wrap gap-6 text-sm text-zinc-400">
-              <div className="flex items-center gap-2">
-                <div className="w-4 h-4 rounded bg-green-500/30 border border-green-600" />
-                <span>Draft Pick</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-4 h-4 rounded bg-zinc-800 border border-zinc-600" />
-                <span>Trade Event</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-4 h-4 rounded bg-zinc-900 border-2 border-green-500" />
-                <span>Player</span>
-              </div>
-            </div>
           </div>
         )}
 
         {/* Browse by Team */}
         {!selectedPlayer && (
-          <div className="mt-12 p-6 bg-zinc-900 rounded-xl border border-zinc-800">
-            <h3 className="text-xl font-bold mb-4 text-center">
-              🏀 Browse Team Acquisition Trees
+          <div className="p-6 sm:p-8 bg-zinc-900/50 rounded-2xl border border-zinc-800/50">
+            <h3 className="text-2xl font-bold mb-2 text-center">
+              Browse Team Roster DNA
             </h3>
-            <p className="text-center text-zinc-400 mb-6">
-              See how every player on a team&apos;s roster was acquired — the full web of trades, picks, and transactions.
+            <p className="text-center text-zinc-500 mb-8 text-sm">
+              Click any team to see their complete acquisition tree
             </p>
-            <p className="text-xs text-zinc-500 mb-2 font-semibold uppercase tracking-wider">Eastern Conference</p>
-            <div className="grid grid-cols-3 sm:grid-cols-5 gap-3 mb-4">
-              {EAST_TEAMS.map((team) => (
-                <Link
-                  key={team.abbr}
-                  href={`/team/${team.abbr}`}
-                  className="flex flex-col items-center p-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg transition-colors group"
-                >
-                  <span className="text-2xl mb-1">{team.emoji}</span>
-                  <span className="text-sm font-medium text-white group-hover:text-green-400">{team.abbr}</span>
-                  <span className="text-xs text-zinc-500">{team.name}</span>
-                </Link>
-              ))}
+            
+            <div className="mb-6">
+              <p className="text-[10px] text-zinc-600 mb-3 font-bold uppercase tracking-widest">Eastern Conference</p>
+              <div className="grid grid-cols-3 sm:grid-cols-5 gap-2.5">
+                {EAST_TEAMS.map((team) => (
+                  <Link
+                    key={team.abbr}
+                    href={`/team/${team.abbr}`}
+                    className="flex flex-col items-center p-3 bg-zinc-800/50 hover:bg-zinc-800 border border-zinc-800/50 hover:border-fuchsia-500/30 rounded-xl transition-all group"
+                  >
+                    <span className="text-2xl mb-1 group-hover:scale-110 transition-transform">{team.emoji}</span>
+                    <span className="text-sm font-bold text-white group-hover:text-fuchsia-400 transition-colors">{team.abbr}</span>
+                    <span className="text-[10px] text-zinc-600">{team.name}</span>
+                  </Link>
+                ))}
+              </div>
             </div>
-            <p className="text-xs text-zinc-500 mb-2 font-semibold uppercase tracking-wider">Western Conference</p>
-            <div className="grid grid-cols-3 sm:grid-cols-5 gap-3">
-              {WEST_TEAMS.map((team) => (
-                <Link
-                  key={team.abbr}
-                  href={`/team/${team.abbr}`}
-                  className="flex flex-col items-center p-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg transition-colors group"
-                >
-                  <span className="text-2xl mb-1">{team.emoji}</span>
-                  <span className="text-sm font-medium text-white group-hover:text-green-400">{team.abbr}</span>
-                  <span className="text-xs text-zinc-500">{team.name}</span>
-                </Link>
-              ))}
+
+            <div>
+              <p className="text-[10px] text-zinc-600 mb-3 font-bold uppercase tracking-widest">Western Conference</p>
+              <div className="grid grid-cols-3 sm:grid-cols-5 gap-2.5">
+                {WEST_TEAMS.map((team) => (
+                  <Link
+                    key={team.abbr}
+                    href={`/team/${team.abbr}`}
+                    className="flex flex-col items-center p-3 bg-zinc-800/50 hover:bg-zinc-800 border border-zinc-800/50 hover:border-fuchsia-500/30 rounded-xl transition-all group"
+                  >
+                    <span className="text-2xl mb-1 group-hover:scale-110 transition-transform">{team.emoji}</span>
+                    <span className="text-sm font-bold text-white group-hover:text-fuchsia-400 transition-colors">{team.abbr}</span>
+                    <span className="text-[10px] text-zinc-600">{team.name}</span>
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         )}
 
-        {/* Featured tree example (when no player selected) */}
+        {/* Featured: Celtics-Nets */}
         {!selectedPlayer && (
-          <div className="mt-8 p-6 bg-zinc-900 rounded-xl border border-zinc-800">
-            <h3 className="text-xl font-bold mb-4 text-center">
-              ⭐ Featured: The Celtics-Nets Trade Tree
-            </h3>
-            <div className="text-center text-zinc-400 mb-6">
-              <p>
-                In 2013, the Celtics traded Kevin Garnett and Paul Pierce to the Nets for 
-                four first-round picks. Those picks became:
-              </p>
+          <div className="mt-8 p-6 sm:p-8 bg-gradient-to-br from-zinc-900/80 via-[#0f0d15] to-zinc-900/80 rounded-2xl border border-fuchsia-500/10">
+            <div className="flex items-center justify-center gap-2 mb-2">
+              <span className="text-fuchsia-400 text-xs font-bold uppercase tracking-widest">Featured Chain</span>
             </div>
-            <div className="grid md:grid-cols-4 gap-4">
+            <h3 className="text-2xl font-bold mb-2 text-center">
+              The Celtics-Nets Trade Heist
+            </h3>
+            <p className="text-center text-zinc-500 mb-6 text-sm max-w-lg mx-auto">
+              In 2013, Boston sent KG and Pierce to Brooklyn for four first-round picks. 
+              Those picks became a dynasty.
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
               {[
-                { year: 2014, pick: "#17", result: "James Young", status: "bust" },
-                { year: 2016, pick: "#3", result: "Jaylen Brown", status: "star" },
-                { year: 2017, pick: "#1→#3", result: "Jayson Tatum", status: "star" },
-                { year: 2018, pick: "#8", result: "→ Kyrie trade", status: "traded" },
+                { year: "2014", pick: "#17", result: "James Young", status: "bust", note: "Waived after 2 seasons" },
+                { year: "2016", pick: "#3", result: "Jaylen Brown", status: "star", note: "🏆 2024 Finals MVP" },
+                { year: "2017", pick: "#1→#3", result: "Jayson Tatum", status: "star", note: "🏆 5× All-Star" },
+                { year: "2018", pick: "#8", result: "→ Kyrie trade", status: "traded", note: "Packaged for Irving" },
               ].map((item) => (
                 <div
                   key={item.year}
-                  className={`p-4 rounded-lg border ${
+                  className={`p-4 rounded-xl border transition-all ${
                     item.status === "star"
-                      ? "bg-green-900/20 border-green-600"
+                      ? "bg-fuchsia-900/10 border-fuchsia-500/30 hover:border-fuchsia-500/50"
                       : item.status === "traded"
-                      ? "bg-zinc-800 border-zinc-600"
-                      : "bg-zinc-800/50 border-zinc-700"
+                      ? "bg-zinc-800/50 border-blue-500/20"
+                      : "bg-zinc-800/30 border-zinc-800"
                   }`}
                 >
-                  <div className="text-sm text-zinc-400">{item.year}</div>
-                  <div className="font-bold text-lg">{item.pick}</div>
-                  <div className={item.status === "star" ? "text-green-400" : "text-zinc-300"}>
+                  <div className="text-[10px] text-zinc-600 uppercase tracking-wider">{item.year}</div>
+                  <div className="font-extrabold text-xl mt-1">{item.pick}</div>
+                  <div className={`text-sm font-medium mt-1 ${item.status === "star" ? "text-fuchsia-400" : "text-zinc-300"}`}>
                     {item.result}
                   </div>
-                  {item.status === "star" && (
-                    <div className="text-xs text-green-500 mt-1">🏆 2024 Champion</div>
-                  )}
+                  <div className="text-[10px] text-zinc-600 mt-1">{item.note}</div>
                 </div>
               ))}
             </div>
-            <div className="text-center mt-6 text-sm text-zinc-500">
-              Result: Two All-Stars who led the 2024 Championship run. The greatest trade heist in NBA history.
+            <div className="text-center mt-6">
+              <Link
+                href="/team/BOS"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-fuchsia-600/20 hover:bg-fuchsia-600/30 border border-fuchsia-500/30 text-fuchsia-400 rounded-xl text-sm font-medium transition-all"
+              >
+                Explore the full Celtics tree →
+              </Link>
             </div>
           </div>
         )}
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-zinc-800 mt-12">
-        <div className="max-w-6xl mx-auto px-4 py-6 text-center text-sm text-zinc-500">
-          <p>
-            RosterDNA • Data from Basketball-Reference
-          </p>
+      <footer className="border-t border-zinc-800/50 mt-16">
+        <div className="max-w-6xl mx-auto px-4 py-6 flex items-center justify-between text-xs text-zinc-600">
+          <div className="flex items-center gap-2">
+            <span>🧬</span>
+            <span className="font-semibold">RosterDNA</span>
+            <span>·</span>
+            <span>Data from Basketball-Reference</span>
+          </div>
+          <a
+            href="https://twitter.com/RosterDNA"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-fuchsia-400 transition-colors"
+          >
+            Follow @RosterDNA
+          </a>
         </div>
       </footer>
     </div>
