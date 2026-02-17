@@ -23,11 +23,14 @@ export default function CardsAdmin() {
   const [selectedTeam, setSelectedTeam] = useState("BOS");
   const [players, setPlayers] = useState<string[]>([]);
   const [selectedPlayer, setSelectedPlayer] = useState("");
-  const [cardType, setCardType] = useState<"player" | "chain" | "team" | "stat">("player");
+  const [cardType, setCardType] = useState<"story" | "player" | "chain" | "team" | "stat">("story");
   const [previewUrl, setPreviewUrl] = useState("");
   const [statTitle, setStatTitle] = useState("");
   const [statValue, setStatValue] = useState("");
   const [statSubtitle, setStatSubtitle] = useState("");
+  const [storyHeadline, setStoryHeadline] = useState("");
+  const [storyHighlight, setStoryHighlight] = useState("");
+  const [storyFormat, setStoryFormat] = useState<"landscape" | "portrait">("landscape");
 
   useEffect(() => {
     fetch(`/api/acquisition-tree/${selectedTeam}/team`)
@@ -61,6 +64,13 @@ export default function CardsAdmin() {
         if (statSubtitle) params.set("subtitle", statSubtitle);
         params.set("teamAbbr", selectedTeam);
         url = `/api/card/stat?${params.toString()}`;
+        break;
+      case "story":
+        const sp = new URLSearchParams();
+        if (storyHeadline) sp.set("headline", storyHeadline);
+        if (storyHighlight) sp.set("highlight", storyHighlight);
+        sp.set("format", storyFormat);
+        url = `/api/card/story/${selectedPlayer}?${sp.toString()}`;
         break;
     }
     setPreviewUrl(url);
@@ -101,7 +111,7 @@ export default function CardsAdmin() {
             <div>
               <label style={{ fontSize: "12px", fontWeight: 600, color: "#71717a", letterSpacing: "1px", display: "block", marginBottom: "6px" }}>CARD TYPE</label>
               <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
-                {(["player", "chain", "team", "stat"] as const).map((t) => (
+                {(["story", "player", "chain", "team", "stat"] as const).map((t) => (
                   <button
                     key={t}
                     onClick={() => setCardType(t)}
@@ -123,7 +133,7 @@ export default function CardsAdmin() {
             </div>
 
             {/* Player selector (for player/chain) */}
-            {(cardType === "player" || cardType === "chain") && (
+            {(cardType === "player" || cardType === "chain" || cardType === "story") && (
               <div>
                 <label style={{ fontSize: "12px", fontWeight: 600, color: "#71717a", letterSpacing: "1px", display: "block", marginBottom: "6px" }}>PLAYER</label>
                 <select
@@ -135,6 +145,30 @@ export default function CardsAdmin() {
                     <option key={p} value={p}>{p}</option>
                   ))}
                 </select>
+              </div>
+            )}
+
+            {/* Story fields */}
+            {cardType === "story" && (
+              <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+                <div>
+                  <label style={{ fontSize: "12px", fontWeight: 600, color: "#71717a", display: "block", marginBottom: "4px" }}>HEADLINE (leave blank for auto)</label>
+                  <textarea value={storyHeadline} onChange={(e) => setStoryHeadline(e.target.value)} placeholder="Jayson Tatum exists because the Nets gave up their future for 2 years of KG." rows={3} style={{ width: "100%", padding: "10px 12px", backgroundColor: "#18181b", border: "1px solid #27272a", borderRadius: "8px", color: "#e4e4e7", fontSize: "14px", resize: "vertical" }} />
+                </div>
+                <div>
+                  <label style={{ fontSize: "12px", fontWeight: 600, color: "#71717a", display: "block", marginBottom: "4px" }}>HIGHLIGHT PHRASES (comma-separated)</label>
+                  <input value={storyHighlight} onChange={(e) => setStoryHighlight(e.target.value)} placeholder="the Nets gave up their future, 2 years" style={{ width: "100%", padding: "10px 12px", backgroundColor: "#18181b", border: "1px solid #27272a", borderRadius: "8px", color: "#e4e4e7", fontSize: "14px" }} />
+                </div>
+                <div>
+                  <label style={{ fontSize: "12px", fontWeight: 600, color: "#71717a", display: "block", marginBottom: "4px" }}>FORMAT</label>
+                  <div style={{ display: "flex", gap: "6px" }}>
+                    {(["landscape", "portrait"] as const).map((f) => (
+                      <button key={f} onClick={() => setStoryFormat(f)} style={{ padding: "8px 16px", backgroundColor: storyFormat === f ? "#d946ef" : "#18181b", border: storyFormat === f ? "1px solid #d946ef" : "1px solid #27272a", borderRadius: "6px", color: "#e4e4e7", fontSize: "13px", fontWeight: 600, cursor: "pointer" }}>
+                        {f === "landscape" ? "🖥️ Landscape" : "📱 Portrait"}
+                      </button>
+                    ))}
+                  </div>
+                </div>
               </div>
             )}
 

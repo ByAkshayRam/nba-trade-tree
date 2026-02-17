@@ -55,11 +55,39 @@ interface SelectedPlayer {
 
 export default function Home() {
   const [selectedPlayer, setSelectedPlayer] = useState<SelectedPlayer | null>(null);
+  const [email, setEmail] = useState("");
+  const [subscribeStatus, setSubscribeStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [subscribeMsg, setSubscribeMsg] = useState("");
 
   useEffect(() => {
     trackPageView('/');
     startPageTimer();
   }, []);
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) return;
+    setSubscribeStatus("loading");
+    try {
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        setSubscribeStatus("success");
+        setSubscribeMsg(data.message || "You're in!");
+        setEmail("");
+      } else {
+        setSubscribeStatus("error");
+        setSubscribeMsg(data.error || "Something went wrong");
+      }
+    } catch {
+      setSubscribeStatus("error");
+      setSubscribeMsg("Network error — try again");
+    }
+  };
 
   return (
     <div className="min-h-screen bg-[#09090b] text-white">
@@ -154,11 +182,10 @@ export default function Home() {
 
         {/* Stats banner */}
         {!selectedPlayer && (
-          <div className="grid grid-cols-4 gap-4 mb-12">
+          <div className="grid grid-cols-3 gap-4 mb-12">
             {[
               { value: "30", label: "Teams", color: "text-fuchsia-400" },
               { value: "512", label: "Players Traced", color: "text-violet-400" },
-              { value: "650+", label: "Player Headshots", color: "text-blue-400" },
               { value: "100%", label: "Roster Coverage", color: "text-emerald-400" },
             ].map((stat) => (
               <div key={stat.label} className="text-center p-4 bg-zinc-900/50 rounded-xl border border-zinc-800/50">
@@ -293,6 +320,46 @@ export default function Home() {
                 Explore the full Celtics tree →
               </Link>
             </div>
+          </div>
+        )}
+        {/* Email Signup */}
+        {!selectedPlayer && (
+          <div className="mt-8 p-6 sm:p-8 bg-zinc-900/50 rounded-2xl border border-zinc-800/50 text-center">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-400 text-xs font-medium mb-4">
+              <span>📬</span> Stay in the loop
+            </div>
+            <h3 className="text-2xl font-bold mb-2">
+              Get updates as RosterDNA evolves
+            </h3>
+            <p className="text-zinc-500 text-sm mb-6 max-w-md mx-auto">
+              New features, new teams, new stories. Drop your email and we&apos;ll keep you posted — no spam, ever.
+            </p>
+            {subscribeStatus === "success" ? (
+              <div className="inline-flex items-center gap-2 px-5 py-3 bg-emerald-500/10 border border-emerald-500/20 rounded-xl text-emerald-400 text-sm font-medium">
+                <span>✅</span> {subscribeMsg}
+              </div>
+            ) : (
+              <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="your@email.com"
+                  required
+                  className="flex-1 px-4 py-3 bg-zinc-800/80 border border-zinc-700/50 rounded-xl text-white placeholder-zinc-600 text-sm focus:outline-none focus:border-fuchsia-500/50 focus:ring-1 focus:ring-fuchsia-500/20 transition-all"
+                />
+                <button
+                  type="submit"
+                  disabled={subscribeStatus === "loading"}
+                  className="px-6 py-3 bg-fuchsia-600 hover:bg-fuchsia-500 disabled:bg-fuchsia-800 disabled:opacity-50 text-white font-semibold rounded-xl text-sm transition-all whitespace-nowrap"
+                >
+                  {subscribeStatus === "loading" ? "Subscribing..." : "Notify Me"}
+                </button>
+              </form>
+            )}
+            {subscribeStatus === "error" && (
+              <p className="text-red-400 text-xs mt-3">{subscribeMsg}</p>
+            )}
           </div>
         )}
       </main>
