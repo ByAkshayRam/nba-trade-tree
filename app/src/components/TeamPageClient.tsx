@@ -191,12 +191,12 @@ export default function TeamPageClient({ data, teamAbbr }: TeamPageClientProps) 
       <header className="border-b border-gray-800 px-6 py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div>
-            <Link href="/" className="text-gray-400 hover:text-white text-sm mb-1 block">
-              ← Back to Search
+            <Link href="/" className="text-gray-400 hover:text-white text-sm mb-1 inline-flex items-center gap-2">
+              ← <span className="font-semibold text-white">RosterDNA</span> <span className="text-xs font-semibold px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-400 border border-amber-500/30">BETA</span>
             </Link>
             <h1 className="text-2xl font-bold flex items-center gap-3">
               <span className="text-3xl">{currentTeamEmoji}</span>
-              {data.teamName} - Complete Roster Acquisition Tree
+              {data.teamName} Acquisition Tree
             </h1>
           </div>
           <div className="flex items-center gap-4">

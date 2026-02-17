@@ -1202,15 +1202,15 @@ function PickNode({ data }: NodeProps) {
       <div 
         className={`px-3 py-2 rounded-lg shadow-lg min-w-[120px] relative cursor-pointer transition-all duration-300 ${
           isHighlighted 
-            ? "bg-green-900 border-l-4 border-l-green-400 ring-2 ring-green-400/50 scale-105" 
+            ? "bg-fuchsia-900 border-l-4 border-l-fuchsia-400 ring-2 ring-fuchsia-400/50 scale-105" 
             : isDimmed 
-              ? "bg-green-950/20 border-l-4 border-l-green-500/30 opacity-40" 
-              : "bg-green-950/50 border-l-4 border-l-green-500 hover:border-l-green-400"
+              ? "bg-zinc-900/40 border-l-4 border-l-fuchsia-500/30 opacity-40" 
+              : "bg-zinc-900 border-l-4 border-l-fuchsia-500 hover:border-l-fuchsia-400"
         }`}
       >
-        <Handle type="source" position={Position.Left} className="!bg-green-500 !w-2 !h-2" />
-        <Handle type="target" position={Position.Right} className="!bg-green-500 !w-2 !h-2" />
-        <div className={`text-[9px] font-semibold uppercase ${isHighlighted ? "text-green-300" : "text-green-400"}`}>
+        <Handle type="source" position={Position.Left} className="!bg-fuchsia-500 !w-2 !h-2" />
+        <Handle type="target" position={Position.Right} className="!bg-fuchsia-500 !w-2 !h-2" />
+        <div className={`text-[9px] font-semibold uppercase ${isHighlighted ? "text-fuchsia-300" : "text-fuchsia-400"}`}>
           Pick
         </div>
         <div className="font-medium text-white text-xs">{nodeData.label}</div>
@@ -1919,7 +1919,7 @@ export default function TeamAcquisitionTree({
     ctx.font = 'bold 20px system-ui';
     ctx.fillText('@ByAkshayRam', padding, size - padding + 10);
     ctx.fillStyle = accentGreen;
-    ctx.fillText(' · NBA Acquisition Tree', padding + ctx.measureText('@ByAkshayRam').width, size - padding + 10);
+    ctx.fillText(' · RosterDNA', padding + ctx.measureText('@ByAkshayRam').width, size - padding + 10);
     
     ctx.textAlign = 'right';
     ctx.fillStyle = isDark ? '#6b7280' : '#9ca3af';
@@ -1976,7 +1976,7 @@ export default function TeamAcquisitionTree({
     ctx.fillText(teamName, padding + 100, 88);
     ctx.fillStyle = subtextColor;
     ctx.font = '26px system-ui';
-    ctx.fillText('Acquisition Tree Analysis', padding + 100, 122);
+    ctx.fillText('RosterDNA Analysis', padding + 100, 122);
     
     // Load ONLY the main player headshot (Jayson Tatum)
     const mainPlayer = teamData.franchisePlayers[0];
@@ -2109,7 +2109,7 @@ export default function TeamAcquisitionTree({
     ctx.font = 'bold 28px system-ui';
     ctx.fillText('@ByAkshayRam', padding, bottomY);
     ctx.fillStyle = accentGreen;
-    ctx.fillText(' · NBA Acquisition Tree', padding + ctx.measureText('@ByAkshayRam').width, bottomY);
+    ctx.fillText(' · RosterDNA', padding + ctx.measureText('@ByAkshayRam').width, bottomY);
     
     return canvas.toDataURL('image/jpeg', 0.95);
   }, [teamName, getTeamData, loadImage]);
@@ -2174,7 +2174,7 @@ export default function TeamAcquisitionTree({
     ctx.fillText(teamName, leftPadding + 105, 92);
     ctx.fillStyle = subtextColor;
     ctx.font = '26px system-ui';
-    ctx.fillText('Acquisition Tree Analysis', leftPadding + 105, 125);
+    ctx.fillText('RosterDNA Analysis', leftPadding + 105, 125);
     
     // Main headline - BIGGER
     const headlineY = 350;
@@ -2345,7 +2345,7 @@ export default function TeamAcquisitionTree({
     ctx.font = 'bold 28px system-ui';
     ctx.fillText('@ByAkshayRam', leftPadding, height - 50);
     ctx.fillStyle = accentGreen;
-    ctx.fillText(' · NBA Acquisition Tree', leftPadding + ctx.measureText('@ByAkshayRam').width, height - 50);
+    ctx.fillText(' · RosterDNA', leftPadding + ctx.measureText('@ByAkshayRam').width, height - 50);
     
     return canvas.toDataURL('image/jpeg', 0.95);
   }, [teamName, getTeamData, loadImage]);
@@ -2427,7 +2427,7 @@ export default function TeamAcquisitionTree({
     ctx.fillText(teamName, padding + 80, 70);
     ctx.fillStyle = subtextColor;
     ctx.font = '18px system-ui';
-    ctx.fillText('Complete Roster Acquisition Tree', padding + 80, 95);
+    ctx.fillText('RosterDNA', padding + 80, 95);
     
     // Season badge - top right
     ctx.fillStyle = isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.05)';
@@ -2532,7 +2532,7 @@ export default function TeamAcquisitionTree({
     ctx.font = 'bold 22px system-ui';
     ctx.fillText('@ByAkshayRam', padding, height - 40);
     ctx.fillStyle = accentGreen;
-    ctx.fillText(' · NBA Acquisition Tree', padding + ctx.measureText('@ByAkshayRam').width, height - 40);
+    ctx.fillText(' · RosterDNA', padding + ctx.measureText('@ByAkshayRam').width, height - 40);
     
     ctx.textAlign = 'right';
     ctx.fillStyle = subtextColor;
@@ -2636,7 +2636,7 @@ export default function TeamAcquisitionTree({
             if (data.isDimmed) return "#3f3f46";
             if (node.type === "target") return "#22c55e";
             if (node.type === "origin") return "#f59e0b";
-            if (node.type === "pick") return "#22c55e";
+            if (node.type === "pick") return "#d946ef";
             return "#3b82f6";
           }}
           maskColor="rgba(0, 0, 0, 0.8)"
@@ -2661,7 +2661,7 @@ export default function TeamAcquisitionTree({
             <span className="text-zinc-400">Player</span>
           </div>
           <div className="flex items-center gap-1.5">
-            <div className="w-3 h-3 rounded bg-green-950/50 border-l-2 border-l-green-500" />
+            <div className="w-3 h-3 rounded bg-zinc-900 border-l-2 border-l-fuchsia-500" />
             <span className="text-zinc-400">Pick</span>
           </div>
           <div className="flex items-center gap-1.5">
@@ -2676,7 +2676,7 @@ export default function TeamAcquisitionTree({
 
       {/* Node count & selection info */}
       <div className="absolute top-4 left-4 bg-zinc-900/90 backdrop-blur rounded-lg px-3 py-2 border border-zinc-700">
-        <div className="text-xs text-zinc-500">Team Acquisition Tree</div>
+        <div className="text-xs text-zinc-500">RosterDNA</div>
         <div className="text-sm font-bold text-white">{nodes.length} nodes · {edges.length} edges</div>
         {selectedPlayerName && (
           <div className="mt-1 text-xs text-green-400 flex items-center gap-1">

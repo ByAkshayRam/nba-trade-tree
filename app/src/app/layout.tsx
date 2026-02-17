@@ -8,11 +8,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "NBA Trade Tree | Trace Any Player's Origin",
+  title: "RosterDNA | Trace Any Player's Origin",
   description: "Interactive visualization of NBA trade chains. See how any player ended up on their current roster through trades, picks, and transactions.",
-  keywords: ["NBA", "trade", "basketball", "visualization", "Jayson Tatum", "trade tree"],
+  keywords: ["NBA", "trade", "basketball", "visualization", "RosterDNA", "trade tree", "roster"],
   openGraph: {
-    title: "NBA Trade Tree",
+    title: "RosterDNA",
     description: "Every player has an origin story. Trace the chain of trades that built championship rosters.",
     type: "website",
   },
