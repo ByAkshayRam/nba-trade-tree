@@ -6,7 +6,10 @@ const nextConfig: NextConfig = {
     '/api/acquisition-tree/[teamAbbr]/team': ['./data/**/*'],
     '/api/acquisition-tree/[teamAbbr]/[playerId]': ['./data/**/*'],
     '/team/[teamAbbr]': ['./data/**/*'],
+    '/api/players': ['./data/**/*'],
   },
+  // Ensure data files are treated as server-only assets
+  serverExternalPackages: [],
 };
 
 export default nextConfig;

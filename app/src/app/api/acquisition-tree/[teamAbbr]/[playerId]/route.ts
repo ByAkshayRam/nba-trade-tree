@@ -84,9 +84,9 @@ export async function GET(
   
   // Multiple possible locations depending on how Next.js runs
   const treesDirs = [
-    path.join(baseDir, "..", "data", "acquisition-trees"),
     path.join(baseDir, "data", "acquisition-trees"),
-    "/home/ubuntu/clawd/projects/nba-trade-tree/data/acquisition-trees", // Absolute fallback
+    path.join(baseDir, "app", "data", "acquisition-trees"),
+    path.join(baseDir, "..", "data", "acquisition-trees"),
   ];
   
   // Extract last name from player slug (e.g., "nikola-vucevic" -> "vucevic")

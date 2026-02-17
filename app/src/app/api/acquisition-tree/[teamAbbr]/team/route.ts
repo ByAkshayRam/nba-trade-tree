@@ -750,11 +750,15 @@ export async function GET(
   const { teamAbbr } = await params;
   const team = teamAbbr.toUpperCase();
   
-  // Support both local dev (data outside app/) and Vercel (data inside app/)
-  let dataDir = path.join(process.cwd(), "data", "acquisition-trees");
-  if (!fs.existsSync(dataDir)) {
-    dataDir = path.join(process.cwd(), "..", "data", "acquisition-trees");
-  }
+  // Support local dev, Vercel, and monorepo layouts
+  const candidates = [
+    path.join(process.cwd(), "data", "acquisition-trees"),
+    path.join(process.cwd(), "app", "data", "acquisition-trees"),
+    path.join(process.cwd(), "..", "data", "acquisition-trees"),
+    path.join(__dirname, "..", "..", "..", "..", "data", "acquisition-trees"),
+  ];
+  let dataDir = candidates.find(d => fs.existsSync(d)) || candidates[0];
+  console.log('[RosterDNA] cwd:', process.cwd(), 'dataDir:', dataDir, 'exists:', fs.existsSync(dataDir));
   
   // Get all tree files for this team
   const files = fs.readdirSync(dataDir).filter(f => 
