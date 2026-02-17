@@ -12,8 +12,9 @@ async function getTeamTree(teamAbbr: string) {
   // Get the host from headers for server-side fetch
   const headersList = await headers();
   const host = headersList.get("host") || "localhost:3456";
-  // Always use http for server-side self-fetch (avoids SSL errors with Tailscale/reverse proxy)
-  const baseUrl = `http://localhost:3456`;
+  const proto = headersList.get("x-forwarded-proto") || "http";
+  // Use actual host so it works on both localhost and Vercel
+  const baseUrl = `${proto}://${host}`;
   
   try {
     const res = await fetch(

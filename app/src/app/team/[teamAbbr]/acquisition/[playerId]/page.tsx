@@ -1,6 +1,7 @@
 import AcquisitionTree from "@/components/AcquisitionTreeClient";
 import PlayerSelector from "@/components/PlayerSelector";
 import Link from "next/link";
+import { headers } from "next/headers";
 
 interface PageProps {
   params: Promise<{
@@ -10,8 +11,10 @@ interface PageProps {
 }
 
 async function getAcquisitionTree(teamAbbr: string, playerId: string) {
-  // In production, this would be an absolute URL
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3456";
+  const headersList = await headers();
+  const host = headersList.get("host") || "localhost:3456";
+  const proto = headersList.get("x-forwarded-proto") || "http";
+  const baseUrl = `${proto}://${host}`;
   
   try {
     const res = await fetch(
