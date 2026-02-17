@@ -2,17 +2,30 @@
   "_meta": {
     "team": "CHI",
     "player": "Collin Sexton",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2026,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "ESPN, NBA.com, al.com",
+    "originYear": 2019,
+    "depth": 3,
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Collin Sexton",
     "acquisitionType": "trade",
-    "date": "2026-02-06",
+    "date": "2026-02-04",
     "currentTeam": "CHI",
-    "tradePartner": "UTA"
+    "tradePartner": "CHA",
+    "tradeDescription": "Bulls traded Coby White and Mike Conley to Hornets for Collin Sexton, Ousmane Dieng, and three 2nd-round picks",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Coby White",
+        "acquisitionType": "draft",
+        "date": "2019-06-20",
+        "draftPick": 7,
+        "draftRound": 1,
+        "note": "Drafted 7th overall by Chicago Bulls from UNC in 2019 NBA Draft",
+        "isOrigin": true
+      }
+    ]
   }
 }

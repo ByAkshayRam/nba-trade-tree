@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "NOP",
+    "player": "Karlo Matkovic",
+    "source": "ESPN, Basketball-Reference",
+    "originYear": 2022,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Karlo Matkovic",
+    "acquisitionType": "draft",
+    "date": "2022-06-23",
+    "currentTeam": "NOP",
+    "note": "Croatian center drafted 52nd overall in 2022, stashed overseas before joining team",
+    "isOrigin": true,
+    "draftPick": 52,
+    "draftRound": 2
+  }
+}

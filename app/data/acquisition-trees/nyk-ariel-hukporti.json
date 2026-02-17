@@ -2,19 +2,22 @@
   "_meta": {
     "team": "NYK",
     "player": "Ariel Hukporti",
-    "source": "NBA/ESPN Trade History Research",
+    "source": "NBA G League, Yahoo Sports",
     "originYear": 2024,
     "depth": 1,
-    "lastUpdated": "2026-02-10"
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Ariel Hukporti",
-    "acquisitionType": "free-agent",
-    "date": "2024-07-15",
+    "acquisitionType": "draft-night-trade",
+    "date": "2024-06-27",
+    "draftPick": 58,
+    "draftRound": 2,
     "currentTeam": "NYK",
-    "tradeDescription": "Signed as undrafted free agent",
-    "note": "German big man, undrafted find. Free agent = no assets given up",
+    "tradePartner": "DAL",
+    "tradeDescription": "Knicks acquired draft rights to Hukporti (58th pick) from Dallas on draft night",
+    "note": "German center, originally selected by Dallas Mavericks",
     "isOrigin": true
   }
 }

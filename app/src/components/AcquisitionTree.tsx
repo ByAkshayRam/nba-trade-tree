@@ -134,6 +134,7 @@ const ESPN_PLAYER_IDS: Record<string, string> = {
   "John Tonje": "4593043",
   "Al Horford": "3213",
   "Jrue Holiday": "6442",
+  "Pat Spencer": "4592714",
 };
 
 // Get acquisition label based on type

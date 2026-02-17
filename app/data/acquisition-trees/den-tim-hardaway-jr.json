@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "team": "DEN",
+    "player": "Tim Hardaway Jr.",
+    "source": "ESPN, Basketball-Reference, NBA.com, Wikipedia",
+    "originYear": 2013,
+    "depth": 7,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Tim Hardaway Jr.",
+    "acquisitionType": "free-agent",
+    "date": "2025-07-01",
+    "currentTeam": "DEN",
+    "note": "Guard signed as free agent, son of Hall of Famer Tim Hardaway",
+    "isOrigin": true,
+    "assetsGivenUp": []
+  }
+}

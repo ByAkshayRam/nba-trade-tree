@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "UTA",
+    "player": "Brice Sensabaugh",
+    "source": "ESPN, Basketball-Reference, Wikipedia, Sports-Reference",
+    "originYear": 2023,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Brice Sensabaugh",
+    "acquisitionType": "draft",
+    "date": "2023-06-22",
+    "currentTeam": "UTA",
+    "draftPick": 28,
+    "draftRound": 1,
+    "note": "Ohio State forward, 6'6\" wing scorer",
+    "isOrigin": true
+  }
+}

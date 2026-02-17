@@ -2,9 +2,9 @@
   "_meta": {
     "team": "CHA",
     "player": "Coby White",
-    "source": "NBA Trade History Research",
+    "source": "ESPN/NBA Trade History - Feb 2026",
     "originYear": 2019,
-    "depth": 4,
+    "depth": 6,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -14,23 +14,132 @@
     "date": "2026-02-06",
     "currentTeam": "CHA",
     "tradePartner": "CHI",
-    "tradeDescription": "Hornets acquire Coby White at 2026 deadline for picks",
-    "note": "Scoring combo guard, 6th man caliber",
+    "tradeDescription": "Acquired from Bulls (with Mike Conley Jr) in 3-team deal",
+    "note": "Explosive scoring guard, former UNC standout",
     "assetsGivenUp": [
       {
+        "type": "player",
+        "name": "Collin Sexton",
+        "acquisitionType": "trade",
+        "date": "2025-06-30",
+        "tradePartner": "UTA",
+        "tradeDescription": "Acquired from Jazz for Jusuf Nurkic",
+        "note": "Former Alabama guard",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Jusuf Nurkic",
+            "acquisitionType": "trade", 
+            "date": "2025-02-06",
+            "tradePartner": "PHX",
+            "tradeDescription": "Acquired from Suns with 2026 first round pick",
+            "note": "Veteran center from Bosnia",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Cody Martin",
+                "acquisitionType": "undrafted",
+                "date": "2019-07-01",
+                "note": "Nevada twin, undrafted but signed by Hornets",
+                "tradeDescription": "Signed as undrafted free agent",
+                "isOrigin": true
+              },
+              {
+                "type": "player",
+                "name": "Vasilije Micic",
+                "acquisitionType": "trade",
+                "date": "2024-02-08",
+                "tradePartner": "OKC",
+                "tradeDescription": "Part of Gordon Hayward trade package", 
+                "note": "Serbian guard",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Gordon Hayward",
+                    "acquisitionType": "trade",
+                    "date": "2020-11-29",
+                    "tradePartner": "BOS", 
+                    "tradeDescription": "Sign-and-trade from Celtics",
+                    "note": "Former All-Star forward",
+                    "assetsGivenUp": [
+                      {
+                        "type": "pick",
+                        "name": "2022 2nd Round Pick",
+                        "acquisitionType": "original",
+                        "date": "2020-11-29",
+                        "note": "Conditional pick sent to Boston",
+                        "becamePlayer": "Trevor Keels",
+                        "isOrigin": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "pick",
+                "name": "2026 2nd Round Pick",
+                "acquisitionType": "original",
+                "date": "2025-02-06",
+                "note": "Hornets' own second round pick",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Ousmane Dieng",
+        "acquisitionType": "trade",
+        "date": "2026-02-06", 
+        "tradePartner": "OKC",
+        "tradeDescription": "Acquired from Thunder for Mason Plumlee",
+        "note": "French forward with length and playmaking",
+        "assetsGivenUp": [
+          {
+            "type": "player", 
+            "name": "Mason Plumlee",
+            "acquisitionType": "trade",
+            "date": "2021-08-06",
+            "tradePartner": "DET",
+            "tradeDescription": "Acquired from Pistons with JT Thor for draft rights",
+            "note": "Veteran center from Duke",
+            "assetsGivenUp": [
+              {
+                "type": "pick",
+                "name": "2021 57th Pick",
+                "acquisitionType": "original", 
+                "date": "2021-07-29",
+                "note": "Hornets' own 2nd round pick",
+                "becamePlayer": "Balsa Koprivica",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
+      },
+      {
         "type": "pick",
-        "name": "2027 1st Round Pick (CHA)",
+        "name": "2029 2nd Round Pick",
         "acquisitionType": "original",
         "date": "2026-02-06",
-        "tradeDescription": "Charlotte's own lottery pick",
+        "note": "Future second round pick",
+        "isOrigin": true
+      },
+      {
+        "type": "pick", 
+        "name": "2030 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2026-02-06", 
+        "note": "Future second round pick",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2026 2nd Round Pick (CHA)",
+        "name": "2031 2nd Round Pick", 
         "acquisitionType": "original",
         "date": "2026-02-06",
-        "tradeDescription": "Charlotte's own second rounder",
+        "note": "Future second round pick",
         "isOrigin": true
       }
     ]

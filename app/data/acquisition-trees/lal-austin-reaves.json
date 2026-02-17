@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "LAL",
+    "player": "Austin Reaves",
+    "source": "Wikipedia, ESPN, Basketball-Reference",
+    "originYear": 2021,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Austin Reaves",
+    "acquisitionType": "undrafted",
+    "date": "2021-08-03",
+    "currentTeam": "LAL",
+    "note": "Undrafted out of Oklahoma, signed two-way contract with Lakers",
+    "isOrigin": true
+  }
+}

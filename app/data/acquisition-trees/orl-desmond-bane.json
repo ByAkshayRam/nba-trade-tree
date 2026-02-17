@@ -2,47 +2,70 @@
   "_meta": {
     "team": "ORL",
     "player": "Desmond Bane",
-    "source": "NBA Trade History Research",
-    "originYear": 2020,
-    "depth": 4,
-    "lastUpdated": "2026-02-11"
+    "source": "ESPN/NBA.com - Feb 2026",
+    "originYear": 2024,
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
     "name": "Desmond Bane",
     "acquisitionType": "trade",
-    "date": "2026-02-06",
+    "date": "2025-06-15",
     "currentTeam": "ORL",
     "tradePartner": "MEM",
-    "tradeDescription": "Magic acquire Bane at 2026 deadline for picks and Jonathan Isaac",
-    "note": "All-Star caliber scorer, knockdown shooter",
+    "tradeDescription": "Blockbuster deal for proven All-Star guard",
+    "note": "Traded from Memphis for KCP, Cole Anthony, four 1st-round picks and a pick swap",
     "assetsGivenUp": [
       {
         "type": "player",
-        "name": "Jonathan Isaac",
+        "name": "Kentavious Caldwell-Pope",
+        "acquisitionType": "free-agent",
+        "date": "2024-07-06",
+        "currentTeam": "MEM",
+        "note": "Signed 3yr/$66M from Denver in 2024 free agency",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Cole Anthony",
         "acquisitionType": "draft",
-        "date": "2017-06-22",
-        "draftPick": 6,
+        "date": "2020-11-18",
+        "draftPick": 15,
         "draftRound": 1,
         "currentTeam": "MEM",
-        "tradeDescription": "Magic drafted Isaac with their own pick",
-        "note": "Injury-plagued career, elite defender when healthy",
+        "note": "Drafted #15 overall in 2020",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2026 1st Round Pick (ORL)",
-        "acquisitionType": "original",
-        "date": "2026-02-06",
-        "tradeDescription": "Orlando's own first rounder",
+        "name": "2025 ORL 1st Round Pick",
+        "details": "2025 ORL first-round pick (#16 overall)",
+        "becamePlayer": "Traded to MEM, became #16 pick",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2028 1st Round Pick (ORL)",
-        "acquisitionType": "original",
-        "date": "2026-02-06",
-        "tradeDescription": "Orlando's own first rounder",
+        "name": "2026 ORL 1st Round Pick",
+        "details": "2026 ORL first-round pick (unprotected, includes swap rights with PHX/WAS)",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2028 ORL 1st Round Pick",
+        "details": "2028 ORL first-round pick (unprotected)",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2030 ORL 1st Round Pick",
+        "details": "2030 ORL first-round pick (unprotected)",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2029 Pick Swap",
+        "details": "2029 first-round pick swap rights (top-2 protected)",
         "isOrigin": true
       }
     ]

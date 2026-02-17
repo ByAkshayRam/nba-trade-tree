@@ -1,0 +1,46 @@
+{
+  "_meta": {
+    "team": "NOP",
+    "player": "Jordan Poole",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2005,
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jordan Poole",
+    "acquisitionType": "trade",
+    "date": "2025-07-06",
+    "currentTeam": "NOP",
+    "tradePartner": "WAS",
+    "tradeDescription": "Wizards trade Poole and Bey to Pelicans for McCollum and Olynyk",
+    "note": "Guard acquired from Washington in summer 2025",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "CJ McCollum",
+        "note": "Guard acquired from Portland in 2022",
+        "isOrigin": true,
+        "date": "2022-02-08",
+        "acquisitionType": "trade",
+        "tradePartner": "POR"
+      },
+      {
+        "type": "player",
+        "name": "Kelly Olynyk",
+        "note": "Forward-center acquired from Toronto in Brandon Ingram trade",
+        "isOrigin": true,
+        "date": "2025-02-06",
+        "acquisitionType": "trade",
+        "tradePartner": "TOR"
+      },
+      {
+        "type": "pick",
+        "name": "2027 2nd Round Pick",
+        "note": "Chicago own 2nd round pick sent to Washington",
+        "isOrigin": true
+      }
+    ]
+  }
+}

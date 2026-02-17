@@ -2,10 +2,10 @@
   "_meta": {
     "team": "MIA",
     "player": "Kasparas Jakucionis",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2025,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "ESPN, Basketball-Reference, NBA.com - Feb 2026",
+    "originYear": 2019,
+    "depth": 4,
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
@@ -13,7 +13,48 @@
     "acquisitionType": "draft",
     "date": "2025-06-26",
     "currentTeam": "MIA",
-    "draftPick": 19,
-    "draftRound": 1
+    "draftPick": 20,
+    "draftRound": 1,
+    "note": "Drafted 20th overall using GSW pick acquired in Jimmy Butler trade (top-10 protected, conveyed at #20)",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "details": "2025 1st Round Pick (from GSW, top-10 protected)",
+        "note": "Pick acquired from GSW in Feb 2025 Butler trade. Conveyed at #20.",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Jimmy Butler",
+            "acquisitionType": "trade",
+            "date": "2019-07-06",
+            "tradePartner": "PHI",
+            "note": "Sign-and-trade from PHI in 4-team deal",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Josh Richardson",
+                "note": "Sent to PHI",
+                "isOrigin": true
+              },
+              {
+                "type": "player",
+                "name": "Hassan Whiteside",
+                "note": "Sent to POR",
+                "isOrigin": true
+              },
+              {
+                "type": "player",
+                "name": "Maurice Harkless",
+                "note": "Sent to LAC with future 1st",
+                "isOrigin": true
+              }
+            ]
+          }
+        ],
+        "name": "2025 1st Round Pick (from GSW, top-10 protected)",
+        "becamePlayer": "Kasparas Jakucionis",
+        "draftPick": 20
+      }
+    ]
   }
 }

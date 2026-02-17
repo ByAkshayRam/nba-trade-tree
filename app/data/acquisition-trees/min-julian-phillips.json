@@ -1,0 +1,50 @@
+{
+  "_meta": {
+    "team": "MIN",
+    "player": "Julian Phillips",
+    "source": "ESPN, NBA.com, Basketball-Reference, Wikipedia",
+    "originYear": 2023,
+    "depth": 4,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Julian Phillips",
+    "acquisitionType": "trade",
+    "date": "2026-02-05",
+    "currentTeam": "MIN",
+    "tradePartner": "CHI",
+    "tradeDescription": "Acquired alongside Ayo Dosunmu from Bulls for Rob Dillingham, Leonard Miller, and 4 second-round picks",
+    "note": "Tennessee forward, 2023 2nd round pick (#35 by BOS, traded to WAS then CHI). Same trade as Dosunmu.",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Rob Dillingham",
+        "acquisitionType": "draft-night-trade",
+        "date": "2024-06-26",
+        "draftPick": 8,
+        "draftRound": 1,
+        "tradePartner": "SAS",
+        "note": "Part of same trade package as Dosunmu deal — see min-ayo-dosunmu.json for full asset tree",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Leonard Miller",
+        "acquisitionType": "draft-night-trade",
+        "date": "2023-06-22",
+        "draftPick": 33,
+        "draftRound": 2,
+        "tradePartner": "SAS",
+        "note": "Part of same trade package as Dosunmu deal",
+        "isOrigin": true
+      },
+      {
+        "type": "other",
+        "name": "4 Second-Round Picks",
+        "note": "2026, 2027 (via CLE), 2031, 2032 2nd round picks — see min-ayo-dosunmu.json for details",
+        "isOrigin": true
+      }
+    ]
+  }
+}

@@ -2,17 +2,21 @@
   "_meta": {
     "team": "PHI",
     "player": "Andre Drummond",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "nbaId": 203083,
+    "espnId": 6585,
+    "source": "Basketball-Reference Transaction Log",
     "originYear": 2024,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-16",
+    "accuracy": "high"
   },
   "tree": {
     "type": "player",
     "name": "Andre Drummond",
     "acquisitionType": "free-agent",
-    "date": "2024-07-01",
+    "date": "2024-07-07",
     "currentTeam": "PHI",
-    "note": "Backup center"
+    "note": "Signed as free agent. Veteran center, career 13.3 PPG and 13.4 RPG.",
+    "isOrigin": true
   }
 }

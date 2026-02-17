@@ -1,0 +1,53 @@
+{
+  "_meta": {
+    "team": "POR",
+    "player": "Jerami Grant",
+    "source": "Basketball-Reference.com 2022-23 POR transactions",
+    "originYear": 2022,
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jerami Grant",
+    "acquisitionType": "trade",
+    "date": "2022-07-06",
+    "currentTeam": "POR",
+    "tradePartner": "DET",
+    "tradeDescription": "Acquired from Detroit Pistons for Gabriele Procida, 2025 1st (MIL own), 2025 2nd (DET own), and 2026 2nd round pick",
+    "note": "Syracuse forward, 39th overall pick 2014",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Gabriele Procida",
+        "note": "Italian guard, drafted 36th overall in 2022",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      },
+      {
+        "type": "pick",
+        "name": "2025 1st Round Pick (MIL own)",
+        "acquisitionType": "original",
+        "becamePlayer": "Nolan Traoré",
+        "note": "Conditional, Milwaukee's own pick",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2025 2nd Round Pick (DET own)",
+        "acquisitionType": "original",
+        "becamePlayer": "Bogoljub Markovic",
+        "note": "Detroit's own pick",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2026 2nd Round Pick",
+        "acquisitionType": "original",
+        "note": "More favorable",
+        "isOrigin": true
+      }
+    ]
+  }
+}

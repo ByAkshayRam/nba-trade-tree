@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "WAS",
+    "player": "Kadary Richmond",
+    "source": "WAS Official Announcement",
+    "originYear": 2026,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Kadary Richmond",
+    "acquisitionType": "free-agent",
+    "date": "2026-02-11",
+    "currentTeam": "WAS",
+    "note": "Signed to 10-day contract. Undrafted guard from St. John's. Called up from G League affiliate.",
+    "isOrigin": true
+  }
+}

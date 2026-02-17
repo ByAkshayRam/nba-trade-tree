@@ -2,16 +2,40 @@
   "_meta": {
     "team": "CHI",
     "player": "Zach Collins",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2024,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "Spotrac, Wikipedia, RotoWire",
+    "originYear": 2011,
+    "depth": 4,
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Zach Collins",
-    "acquisitionType": "free-agent",
-    "date": "2024-07-01",
-    "currentTeam": "CHI"
+    "acquisitionType": "trade",
+    "date": "2025-02-02",
+    "currentTeam": "CHI",
+    "tradePartner": "SAS",
+    "tradeDescription": "3-team trade: Bulls sent Zach LaVine to SAC, received Kevin Huerter (SAC) + Zach Collins and Tre Jones (SAS). De'Aaron Fox to SAS.",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Zach LaVine",
+        "acquisitionType": "trade",
+        "date": "2017-06-22",
+        "tradePartner": "MIN",
+        "tradeDescription": "Bulls traded Jimmy Butler to Timberwolves for Zach LaVine, Kris Dunn, and the 7th pick (Lauri Markkanen)",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Jimmy Butler",
+            "acquisitionType": "draft",
+            "date": "2011-06-23",
+            "draftPick": 30,
+            "draftRound": 1,
+            "note": "Drafted 30th overall by Chicago Bulls from Marquette in 2011 NBA Draft",
+            "isOrigin": true
+          }
+        ]
+      }
+    ]
   }
 }

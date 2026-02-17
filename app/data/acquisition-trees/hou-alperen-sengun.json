@@ -1,0 +1,237 @@
+{
+  "_meta": {
+    "team": "HOU",
+    "player": "Alperen Sengun",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2021,
+    "depth": 6,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Alperen Sengun",
+    "acquisitionType": "draft-night-trade",
+    "date": "2021-07-29",
+    "currentTeam": "HOU",
+    "draftPick": 16,
+    "draftRound": 1,
+    "tradePartner": "OKC",
+    "tradeDescription": "Draft night trade: Rockets acquired pick #16 from Thunder for 2 protected 1st round picks",
+    "note": "Turkish center, skilled passer and scorer, traded up to get him",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "Washington 1st Round Pick (protected)",
+        "acquisitionType": "trade",
+        "tradePartner": "WAS",
+        "tradeDescription": "Rockets traded Russell Westbrook to Wizards for John Wall and this protected 1st round pick (Dec 2, 2020)",
+        "note": "Lottery protected 2023 (didn't convey, WAS in lottery), top-12 in 2024 (didn't convey, WAS picked #2), top-10 in 2025 (didn't convey, WAS picked #6), top-8 in 2026 (pending), then becomes two 2nds",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Russell Westbrook",
+            "acquisitionType": "trade",
+            "date": "2019-07-16",
+            "tradePartner": "OKC",
+            "tradeDescription": "Rockets sent Chris Paul, 2024 1st (top-4 protected), 2026 1st (top-4 protected), pick swaps in 2021 (top-4 protected) and 2025 (top-20 protected) to Thunder for Westbrook",
+            "note": "2017 MVP, traded from Thunder in blockbuster swap with Chris Paul",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Chris Paul",
+                "acquisitionType": "trade",
+                "date": "2017-06-28",
+                "tradePartner": "LAC",
+                "tradeDescription": "CP3 opted into final year of contract to facilitate trade; Rockets sent Beverley, Lou Williams, Dekker, Harrell, Liggins, Hilliard, Wiltjer, 2018 1st (top-3 protected), and $661K to Clippers",
+                "note": "9x All-Star point guard acquired from Clippers in blockbuster",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Patrick Beverley",
+                    "acquisitionType": "free-agent",
+                    "date": "2013-01-01",
+                    "note": "Signed from Spartak St. Petersburg (Russia) during 2012-13 season; tenacious defender",
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "player",
+                    "name": "Lou Williams",
+                    "acquisitionType": "trade",
+                    "date": "2017-02-23",
+                    "tradePartner": "LAL",
+                    "tradeDescription": "Rockets traded Corey Brewer and 2017 1st round pick to Lakers for Lou Williams",
+                    "note": "Three-time Sixth Man of the Year",
+                    "assetsGivenUp": [
+                      {
+                        "type": "player",
+                        "name": "Corey Brewer",
+                        "acquisitionType": "trade",
+                        "date": "2014-12-19",
+                        "tradePartner": "MIN",
+                        "tradeDescription": "3-team trade with MIN and PHI: Rockets sent Troy Daniels and 2015/2016 protected 2nd round picks to MIN, used Jeremy Lin trade exception",
+                        "note": "Veteran swingman from Timberwolves; also got Alexey Shved from PHI in same deal",
+                        "assetsGivenUp": [
+                          {
+                            "type": "player",
+                            "name": "Troy Daniels",
+                            "acquisitionType": "undrafted",
+                            "date": "2014-02-21",
+                            "note": "Undrafted from VCU in 2013; signed from Rio Grande Valley Vipers (G League affiliate)",
+                            "isOrigin": true
+                          },
+                          {
+                            "type": "pick",
+                            "name": "2015 SAC 2nd Round Pick (via HOU)",
+                            "acquisitionType": "trade",
+                            "becamePlayer": "Rakeem Christmas",
+                            "note": "Originally SAC's pick, acquired by HOU in Jason Terry trade; sent to MIN who traded to CLE; became #36 overall",
+                            "isOrigin": true
+                          },
+                          {
+                            "type": "pick",
+                            "name": "2016 HOU 2nd Round Pick",
+                            "acquisitionType": "original",
+                            "becamePlayer": "Rade Zagorac",
+                            "note": "Sent to MIN in Brewer trade; MIN traded to PHX, then to BOS; became #35 overall, drafted by BOS and traded to MEM",
+                            "isOrigin": true
+                          }
+                        ]
+                      },
+                      {
+                        "type": "pick",
+                        "name": "2017 HOU 1st Round Pick",
+                        "acquisitionType": "original",
+                        "becamePlayer": "Tony Bradley",
+                        "note": "Became #28 overall; LAL traded down to #30 (Josh Hart) and sent #28 to Utah who drafted Bradley",
+                        "isOrigin": true
+                      }
+                    ]
+                  },
+                  {
+                    "type": "player",
+                    "name": "Sam Dekker",
+                    "acquisitionType": "draft",
+                    "date": "2015-06-25",
+                    "draftPick": 18,
+                    "draftRound": 1,
+                    "note": "2015 #18 overall pick from Wisconsin",
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "player",
+                    "name": "Montrezl Harrell",
+                    "acquisitionType": "draft",
+                    "date": "2015-06-25",
+                    "draftPick": 32,
+                    "draftRound": 2,
+                    "note": "2015 #32 overall pick from Louisville; became 2020 Sixth Man of the Year with LAC",
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2018 HOU 1st Round Pick (top-3 protected)",
+                    "acquisitionType": "original",
+                    "becamePlayer": "Omari Spellman",
+                    "note": "Conveyed as #30 overall; LAC traded to ATL who drafted Spellman",
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "other",
+                    "name": "DeAndre Liggins, Darrun Hilliard, Kyle Wiltjer, $661K cash",
+                    "acquisitionType": "various",
+                    "note": "Minor assets included to match salaries",
+                    "isOrigin": true
+                  }
+                ]
+              },
+              {
+                "type": "pick",
+                "name": "2024 HOU 1st Round Pick (top-4 protected)",
+                "acquisitionType": "original",
+                "becamePlayer": "Nikola Topic",
+                "note": "Conveyed as #12 overall; OKC drafted Serbian guard Nikola Topic",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2026 HOU 1st Round Pick (top-4 protected)",
+                "acquisitionType": "original",
+                "note": "Still owed to OKC (top-4 protected); OKC traded it onward in Jared McCain deal. If top 4, becomes two 2nds.",
+                "isOrigin": true
+              },
+              {
+                "type": "other",
+                "name": "2021 Pick Swap Right (top-4 protected)",
+                "acquisitionType": "original",
+                "note": "OKC did not exercise the swap in 2021",
+                "isOrigin": true
+              },
+              {
+                "type": "other",
+                "name": "2025 Pick Swap Right (top-20 protected)",
+                "acquisitionType": "original",
+                "note": "OKC could swap if HOU pick was outside top 20; HOU was #2 seed so pick was late",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "Detroit 1st Round Pick (protected)",
+        "acquisitionType": "trade",
+        "date": "2025-06-25",
+        "tradePartner": "DET",
+        "tradeDescription": "Pick acquired from Pistons via Christian Wood trade (Nov 24, 2020)",
+        "becamePlayer": "Joan Beringer",
+        "note": "Originally 2022 conditional 1st from DET; didn't convey in 2022-2024, conveyed in 2025 as #17 overall. OKC traded to NYK, then to MIN who selected Beringer.",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Christian Wood",
+            "acquisitionType": "trade",
+            "date": "2020-11-24",
+            "tradePartner": "DET",
+            "tradeDescription": "Rockets sent Trevor Ariza, Isaiah Stewart, cash and a 2027 2nd round pick to Pistons for Wood, a 2021 2nd (Luka Garza) and this 2025 1st round pick",
+            "note": "Power forward from UNLV; averaged 21 pts/9.6 reb in 2020-21 with HOU",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Trevor Ariza",
+                "acquisitionType": "trade",
+                "date": "2020-11-22",
+                "tradePartner": "POR",
+                "note": "Acquired from Portland in Robert Covington trade just 2 days earlier; immediately flipped to DET",
+                "isOrigin": true
+              },
+              {
+                "type": "player",
+                "name": "Isaiah Stewart",
+                "acquisitionType": "trade",
+                "date": "2020-11-22",
+                "tradePartner": "POR",
+                "note": "Acquired from Portland in Robert Covington trade; immediately flipped to DET where he became a starter",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2027 HOU 2nd Round Pick",
+                "acquisitionType": "original",
+                "note": "Sent to Detroit in Christian Wood trade",
+                "isOrigin": true
+              },
+              {
+                "type": "other",
+                "name": "Cash Considerations",
+                "acquisitionType": "original",
+                "note": "Cash sent to Detroit",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

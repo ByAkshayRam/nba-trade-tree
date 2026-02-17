@@ -1,0 +1,43 @@
+{
+  "_meta": {
+    "team": "DEN",
+    "player": "Jalen Pickett",
+    "source": "ESPN, Wikipedia, Basketball-Reference, Yahoo Sports",
+    "originYear": 2023,
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jalen Pickett", 
+    "acquisitionType": "draft-night-trade",
+    "date": "2023-06-22",
+    "currentTeam": "DEN",
+    "tradePartner": "IND",
+    "tradeDescription": "Selected 32nd by Indiana via pre-draft trade with Denver",
+    "draftPick": 32,
+    "draftRound": 2,
+    "note": "Guard from Penn State acquired via draft-night trade",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2024 DEN 1st Round Pick",
+        "acquisitionType": "original",
+        "date": "2023-06-21",
+        "becamePlayer": "Johnny Furphy",
+        "note": "Denver's 2024 first-round pick (part of 29th/32nd pick trade)",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2023 #40 Pick",
+        "acquisitionType": "original", 
+        "date": "2023-06-21",
+        "becamePlayer": "Jaime Jaquez Jr.",
+        "note": "Denver's 2023 2nd round pick (part of 29th/32nd pick trade)",
+        "isOrigin": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "SAS",
+    "player": "Devin Vassell",
+    "source": "NBA Draft History, Basketball-Reference",
+    "originYear": 2020,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Devin Vassell",
+    "acquisitionType": "draft",
+    "date": "2020-11-18",
+    "currentTeam": "SAS",
+    "draftPick": 11,
+    "draftRound": 1,
+    "note": "Guard/forward drafted 11th overall from Florida State",
+    "isOrigin": true
+  }
+}

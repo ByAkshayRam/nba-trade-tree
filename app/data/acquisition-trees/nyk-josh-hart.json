@@ -2,11 +2,11 @@
   "_meta": {
     "team": "NYK",
     "player": "Josh Hart",
-    "source": "NBA/ESPN Trade History Research",
+    "source": "NBA Trade History Research - Deep Analysis",
     "sourceUrl": "https://www.basketball-reference.com/players/h/hartjo01.html",
-    "originYear": 2020,
-    "depth": 4,
-    "lastUpdated": "2026-02-10"
+    "originYear": 2017,
+    "depth": 6,
+    "lastUpdated": "2026-02-13"
   },
   "tree": {
     "type": "player",
@@ -15,8 +15,56 @@
     "date": "2023-02-09",
     "tradePartner": "POR",
     "currentTeam": "NYK",
-    "tradeDescription": "Knicks acquire Hart from Portland for Cam Reddish and draft picks",
-    "note": "Villanova product, heart and hustle guy, triple-double machine",
+    "tradeDescription": "NYK acquires Hart (via LAL\u2192NOLA\u2192POR) for Cam Reddish + draft considerations",
+    "note": "Villanova product, perfect culture fit. Journeyed LAL\u2192NOLA\u2192POR\u2192NYK. Heart & hustle player.",
+    "priorTeamPath": [
+      {
+        "type": "reference",
+        "name": "Josh Hart Career Path",
+        "note": "Hart to POR from NOLA in CJ McCollum trade (2022), to NOLA from LAL (2019)",
+        "acquisitionType": "multi-team-journey",
+        "date": "2022-02-08",
+        "tradePartner": "NOLA",
+        "tradeDescription": "Hart to POR as part of CJ McCollum trade package",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Josh Hart (NOLA tenure)",
+            "acquisitionType": "trade",
+            "date": "2019-02-07",
+            "tradePartner": "LAL",
+            "tradeDescription": "Hart to NOLA in Anthony Davis mega-trade package",
+            "note": "Hart was salary filler in AD trade that reshaped NBA",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Josh Hart (draft rights)",
+                "acquisitionType": "draft",
+                "date": "2017-06-22",
+                "draftPick": 30,
+                "draftRound": 1,
+                "tradePartner": "LAL",
+                "tradeDescription": "Lakers drafted Hart 30th overall in 2017",
+                "note": "Late 1st round gem from Villanova. Lakers developed him well.",
+                "assetsGivenUp": [
+                  {
+                    "type": "pick",
+                    "name": "2017 #30 Overall Pick",
+                    "acquisitionType": "original",
+                    "date": "2017-06-22",
+                    "draftPick": 30,
+                    "becamePlayer": "Josh Hart",
+                    "tradeDescription": "LAL's own pick from mediocre 2016-17 season",
+                    "note": "Lakers went 26-56 in Kobe's final season, got late lottery luck",
+                    "isOrigin": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
     "assetsGivenUp": [
       {
         "type": "player",
@@ -24,17 +72,9 @@
         "acquisitionType": "trade",
         "date": "2022-01-13",
         "tradePartner": "ATL",
-        "tradeDescription": "Acquired from Atlanta for a protected 2025 first-round pick and Kevin Knox",
+        "tradeDescription": "Acquired from Hawks for Kevin Knox + protected 2022 1st",
+        "note": "Duke wing with upside, needed change of scenery from ATL",
         "assetsGivenUp": [
-          {
-            "type": "pick",
-            "name": "2025 First-Round Pick (top-18 protected)",
-            "acquisitionType": "original",
-            "date": "2022-01-13",
-            "tradeDescription": "Knicks' own first-round pick with heavy protection",
-            "note": "Never conveyed due to protection",
-            "isOrigin": true
-          },
           {
             "type": "player",
             "name": "Kevin Knox",
@@ -42,8 +82,8 @@
             "date": "2018-06-21",
             "draftPick": 9,
             "draftRound": 1,
-            "tradeDescription": "Drafted 9th overall by Knicks",
-            "note": "Bust pick, Knicks finished 29-53 in 2017-18",
+            "tradeDescription": "Drafted 9th overall by NYK in 2018",
+            "note": "Kentucky forward, major bust. NYK reached for need over BPA.",
             "assetsGivenUp": [
               {
                 "type": "pick",
@@ -52,10 +92,31 @@
                 "date": "2018-06-21",
                 "draftPick": 9,
                 "becamePlayer": "Kevin Knox",
-                "tradeDescription": "Knicks' own first-round pick",
+                "tradeDescription": "NYK's own pick from poor 2017-18 season",
+                "note": "NYK went 29-53, bad enough for top-10 pick. Knox over better players.",
                 "isOrigin": true
               }
             ]
+          },
+          {
+            "type": "pick",
+            "name": "2022 First-Round Pick (protected 1-18)",
+            "acquisitionType": "original",
+            "date": "2022-01-13",
+            "tradeDescription": "NYK's own 2022 first with heavy protection",
+            "note": "Protection ensured pick wouldn't convey - NYK picked #11 in 2022, within 1-18 protection. Converted to 2023 2nd round pick.",
+            "assetsGivenUp": [
+              {
+                "type": "pick",
+                "name": "2023 Second-Round Pick (conversion)",
+                "acquisitionType": "pick-conversion",
+                "date": "2023-06-22",
+                "tradeDescription": "2022 1st protection caused conversion to 2023 2nd",
+                "note": "2022 1st protection caused conversion to 2023 2nd. Sent to ATL in Cam Reddish trade.",
+                "isOrigin": true
+              }
+            ],
+            "didNotConvey": true
           }
         ]
       },
@@ -64,7 +125,8 @@
         "name": "2023 Second-Round Pick",
         "acquisitionType": "original",
         "date": "2023-02-09",
-        "tradeDescription": "Knicks' own second-round pick",
+        "tradeDescription": "NYK's own 2023 second-round pick",
+        "note": "NYK's own 2023 second-round pick sent to Portland in Josh Hart trade. Subsequently traded by Portland.",
         "isOrigin": true
       }
     ]

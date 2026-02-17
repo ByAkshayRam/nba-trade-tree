@@ -1,0 +1,40 @@
+{
+  "_meta": {
+    "team": "LAC",
+    "player": "Kobe Sanders",
+    "source": "Basketball-Reference, NBA.com",
+    "originYear": 2024,
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Kobe Sanders",
+    "acquisitionType": "trade",
+    "date": "2025-06-26",
+    "currentTeam": "LAC",
+    "tradePartner": "NYK",
+    "tradeDescription": "Traded from Knicks for Mohamed Diawara and Luka Mitrovic",
+    "note": "Guard acquired on draft night",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Mohamed Diawara",
+        "acquisitionType": "draft",
+        "date": "2025-06-25",
+        "draftPick": 51,
+        "draftRound": 2,
+        "note": "Drafted by Clippers 51st overall in the 2025 NBA Draft (with pick acquired from ATL via MIN)",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Luka Mitrovic",
+        "acquisitionType": "other",
+        "note": "International player/draft rights",
+        "isOrigin": true
+      }
+    ]
+  }
+}

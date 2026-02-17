@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "LAC",
+    "player": "TyTy Washington Jr.",
+    "source": "Basketball-Reference, NBA.com, Hoops Rumors",
+    "originYear": 2022,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "TyTy Washington Jr.",
+    "acquisitionType": "free-agent",
+    "date": "2025-12-27",
+    "currentTeam": "LAC",
+    "note": "Signed two-way contract, Kentucky guard previously with Rockets, Bucks, and Suns",
+    "isOrigin": true
+  }
+}

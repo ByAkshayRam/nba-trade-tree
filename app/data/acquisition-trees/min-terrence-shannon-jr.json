@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "MIN",
+    "player": "Terrence Shannon Jr.",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Terrence Shannon Jr.",
+    "acquisitionType": "draft",
+    "date": "2024-06-26",
+    "currentTeam": "MIN",
+    "draftPick": 27,
+    "draftRound": 1,
+    "note": "Illinois guard, 2024 1st round pick",
+    "isOrigin": true
+  }
+}

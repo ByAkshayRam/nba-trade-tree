@@ -13,6 +13,18 @@
     "acquisitionType": "trade",
     "date": "2026-02-06",
     "currentTeam": "CHI",
-    "tradePartner": "CHA"
+    "tradePartner": "CHA",
+    "tradeDescription": "Bulls acquire Nick Richards from Charlotte Hornets for draft considerations",
+    "note": "Kentucky center, solid backup big acquired at trade deadline",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2026 CHI 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2026-02-06",
+        "note": "Chicago's own 2026 second-round pick",
+        "isOrigin": true
+      }
+    ]
   }
 }

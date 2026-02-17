@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "team": "DEN",
+    "player": "Christian Braun",
+    "source": "ESPN, Basketball-Reference, Wikipedia",
+    "originYear": 2022,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Christian Braun",
+    "acquisitionType": "draft",
+    "date": "2022-06-23",
+    "currentTeam": "DEN",
+    "draftPick": 21,
+    "draftRound": 1,
+    "note": "Guard/forward from Kansas, drafted 21st overall",
+    "isOrigin": true,
+    "assetsGivenUp": []
+  }
+}

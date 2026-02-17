@@ -2,18 +2,30 @@
   "_meta": {
     "team": "IND",
     "player": "Johnny Furphy",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "Basketball-Reference, ESPN, NBA Trade History",
     "originYear": 2024,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
     "name": "Johnny Furphy",
-    "acquisitionType": "draft",
-    "date": "2024-06-26",
+    "acquisitionType": "draft-night-trade",
+    "date": "2024-06-27",
     "currentTeam": "IND",
+    "tradePartner": "SAS",
     "draftPick": 35,
-    "draftRound": 2
+    "draftRound": 2,
+    "note": "Guard from Kansas, 35th overall pick in 2024 NBA Draft. Drafted by SAS, traded to IND for 36th pick.",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2024 36th Overall Pick",
+        "becamePlayer": "Juan Núñez",
+        "draftPick": 36,
+        "note": "Sent to SAS",
+        "isOrigin": true
+      }
+    ]
   }
 }

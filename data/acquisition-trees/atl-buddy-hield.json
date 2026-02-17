@@ -2,10 +2,10 @@
   "_meta": {
     "team": "ATL",
     "player": "Buddy Hield",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2026,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "NBA.com - same trade as Kuminga",
+    "originYear": 2025,
+    "depth": 4,
+    "lastUpdated": "2026-02-14"
   },
   "tree": {
     "type": "player",
@@ -14,6 +14,29 @@
     "date": "2026-02-06",
     "currentTeam": "ATL",
     "tradePartner": "GSW",
-    "note": "Sharpshooting guard"
+    "tradeDescription": "Hawks acquire Kuminga and Buddy Hield from Warriors for Kristaps Porzingis",
+    "note": "Elite 3-point shooter, career 40% from deep",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Kristaps Porzingis",
+        "acquisitionType": "trade",
+        "date": "2025-07-07",
+        "tradePartner": "BOS",
+        "tradeDescription": "3-team trade: Hawks acquired Porzingis from Celtics",
+        "note": "2024 NBA Champion with Celtics",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2025 #22 Pick",
+            "acquisitionType": "original",
+            "date": "2025-06-26",
+            "becamePlayer": "Drake Powell (to BKN)",
+            "tradeDescription": "Hawks' own 2025 first-round pick, sent to Brooklyn in Porzingis trade",
+            "note": "Hawks' draft capital used to acquire Porzingis - ORIGIN"
+          }
+        ]
+      }
+    ]
   }
 }

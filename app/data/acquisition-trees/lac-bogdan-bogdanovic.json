@@ -1,0 +1,63 @@
+{
+  "_meta": {
+    "team": "LAC",
+    "player": "Bogdan Bogdanovic",
+    "source": "NBA.com, The Athletic, Bleacher Report, Basketball-Reference",
+    "originYear": 2014,
+    "depth": 3,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Bogdan Bogdanovic",
+    "acquisitionType": "trade",
+    "date": "2025-02-06",
+    "currentTeam": "LAC",
+    "tradePartner": "ATL",
+    "tradeDescription": "Traded from Hawks with a 2025 2nd round draft pick (Mohamed Diawara) for Terance Mann and Bones Hyland",
+    "note": "Serbian sharpshooter",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Terance Mann",
+        "acquisitionType": "draft",
+        "date": "2019-06-20",
+        "draftPick": 48,
+        "draftRound": 2,
+        "note": "Drafted by Clippers 48th overall, Florida State wing",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Bones Hyland",
+        "acquisitionType": "trade",
+        "date": "2023-02-09",
+        "tradePartner": "DEN",
+        "tradeDescription": "Acquired from Nuggets in 4-team trade involving LAL and ORL",
+        "note": "High-energy scoring guard",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2024 2nd Round Pick",
+            "acquisitionType": "original",
+            "date": "2024-06-26",
+            "becamePlayer": "Bronny James",
+            "note": "Clippers' own second-round pick, sent to Lakers in 4-team trade",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2025 2nd Round Pick",
+            "acquisitionType": "original",
+            "date": "2025-06-25",
+            "becamePlayer": "John Tonje",
+            "note": "Clippers' own second-round pick, sent to Lakers in 4-team trade",
+            "isOrigin": true
+          }
+        ]
+      }
+    ]
+  }
+}

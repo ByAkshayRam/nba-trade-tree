@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "GSW",
+    "player": "Will Richard",
+    "source": "Basketball-Reference, ESPN",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Will Richard",
+    "acquisitionType": "undrafted",
+    "date": "2024-07-01",
+    "currentTeam": "GSW",
+    "note": "Florida guard, signed as undrafted free agent",
+    "isOrigin": true
+  }
+}

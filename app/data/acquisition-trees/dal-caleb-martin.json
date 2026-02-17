@@ -1,0 +1,42 @@
+{
+  "_meta": {
+    "team": "DAL",
+    "player": "Caleb Martin",
+    "source": "NBA.com, Basketball-Reference",
+    "originYear": 2019,
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Caleb Martin",
+    "acquisitionType": "trade",
+    "date": "2025-02-05",
+    "currentTeam": "DAL",
+    "tradePartner": "PHI",
+    "tradeDescription": "Dallas acquired Caleb Martin from Philadelphia for Quentin Grimes and a 2025 2nd round pick",
+    "note": "Nevada forward, undrafted 2019",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Quentin Grimes",
+        "acquisitionType": "trade",
+        "date": "2024-02-08",
+        "tradePartner": "NYK",
+        "tradeDescription": "Dallas acquired Grimes from New York in the Tim Hardaway Jr. trade",
+        "note": "Houston guard, 2021 #25 pick by LA Clippers, traded to NYK on draft night",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2025 DAL 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2025-06-26",
+        "becamePlayer": "Johni Broome",
+        "note": "Dallas own 2025 second-round pick, sent to Philadelphia as #35 overall",
+        "isOrigin": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "team": "POR",
+    "player": "Sidy Cissoko",
+    "source": "Basketball-Reference.com 2024-25 POR transactions",
+    "originYear": 2025,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Sidy Cissoko",
+    "acquisitionType": "free-agent",
+    "date": "2025-02-08",
+    "currentTeam": "POR",
+    "note": "Signed to a two-way contract. French international guard, formerly with San Antonio Spurs.",
+    "isOrigin": true,
+    "assetsGivenUp": []
+  }
+}

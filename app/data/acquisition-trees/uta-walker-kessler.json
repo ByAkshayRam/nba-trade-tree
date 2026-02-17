@@ -1,0 +1,32 @@
+{
+  "_meta": {
+    "team": "UTA",
+    "player": "Walker Kessler",
+    "source": "Basketball-Reference",
+    "originYear": 2022,
+    "depth": 2,
+    "lastUpdated": "2026-02-17"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Walker Kessler",
+    "acquisitionType": "trade",
+    "date": "2022-07-06",
+    "currentTeam": "UTA",
+    "tradePartner": "MIN",
+    "tradeDescription": "Rudy Gobert mega-trade - Jazz received Kessler, Beasley, Beverley, Bolmaro, Vanderbilt, and 5 future 1sts",
+    "note": "Auburn center, 7'1\" rim protector, led college basketball in blocks",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Rudy Gobert",
+        "acquisitionType": "draft",
+        "date": "2013-06-27",
+        "draftPick": 27,
+        "draftRound": 1,
+        "note": "3x DPOY, French center from SLUC Nancy",
+        "isOrigin": true
+      }
+    ]
+  }
+}

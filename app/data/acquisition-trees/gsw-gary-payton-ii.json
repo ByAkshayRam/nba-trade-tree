@@ -1,0 +1,75 @@
+{
+  "_meta": {
+    "team": "GSW",
+    "player": "Gary Payton II",
+    "source": "Basketball-Reference, ESPN, Bleacher Report",
+    "originYear": 2016,
+    "depth": 5,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Gary Payton II",
+    "acquisitionType": "trade",
+    "date": "2023-02-09",
+    "currentTeam": "GSW",
+    "tradePartner": "POR",
+    "tradeDescription": "4-team trade: Warriors re-acquired Payton from Trail Blazers",
+    "note": "Defensive specialist, son of Hall of Famer Gary Payton",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2023 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2023-06-22",
+        "becamePlayer": "Rayan Rupert",
+        "note": "Warriors' own second-round pick, sent to POR, became #43 overall",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2025 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2025-06-26",
+        "becamePlayer": "Koby Brea",
+        "note": "Warriors' own second-round pick, sent to POR, traded to PHX, became #41 overall",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2026 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2026-06-26",
+        "note": "Warriors' own second-round pick (3 of 5 picks)",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2027 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2027-06-26",
+        "note": "Warriors' own second-round pick (4 of 5 picks)",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2028 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2028-06-26",
+        "note": "Warriors' own second-round pick (5 of 5 picks)",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "James Wiseman",
+        "acquisitionType": "draft",
+        "date": "2020-11-18",
+        "draftPick": 2,
+        "draftRound": 1,
+        "note": "Memphis center, drafted #2 overall by Golden State. Sent to DET in 4-team trade.",
+        "isOrigin": true
+      }
+    ]
+  }
+}

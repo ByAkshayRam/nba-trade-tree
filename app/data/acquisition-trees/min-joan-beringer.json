@@ -1,0 +1,34 @@
+{
+  "_meta": {
+    "team": "MIN",
+    "player": "Joan Beringer",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2025,
+    "depth": 3,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Joan Beringer",
+    "acquisitionType": "draft",
+    "date": "2025-06-25",
+    "currentTeam": "MIN",
+    "draftPick": 17,
+    "draftRound": 1,
+    "note": "French center, 2025 #17 overall pick. Pick was originally DET's (top-13 protected), acquired by MIN via NYK in the Karl-Anthony Towns trade.",
+    "tradePartner": "NYK",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Karl-Anthony Towns",
+        "acquisitionType": "draft",
+        "date": "2015-06-25",
+        "draftPick": 1,
+        "draftRound": 1,
+        "note": "Part of KAT trade to NYK (shared cost with Randle/DiVincenzo)",
+        "isOrigin": true
+      }
+    ],
+    "isOrigin": true
+  }
+}

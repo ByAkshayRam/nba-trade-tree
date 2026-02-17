@@ -1,0 +1,56 @@
+{
+  "_meta": {
+    "team": "DAL",
+    "player": "Max Christie",
+    "source": "NBA.com, Basketball-Reference",
+    "originYear": 2018,
+    "depth": 4,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Max Christie",
+    "acquisitionType": "trade",
+    "date": "2025-02-02",
+    "currentTeam": "DAL",
+    "tradePartner": "LAL",
+    "tradeDescription": "Dallas acquired Christie, Anthony Davis and a 2029 1st from Lakers for Luka Doncic",
+    "note": "Michigan State guard, 2022 #35 pick by Los Angeles Lakers",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Luka Doncic",
+        "acquisitionType": "draft-night-trade",
+        "date": "2018-06-21",
+        "tradePartner": "ATL",
+        "draftPick": 3,
+        "draftRound": 1,
+        "tradeDescription": "Atlanta traded #3 pick (Doncic) to Dallas for #5 pick (Trae Young) and a protected 2019 first-round pick",
+        "note": "Real Madrid guard, drafted #3 by Atlanta, traded to Dallas on draft night",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Trae Young",
+            "acquisitionType": "draft",
+            "date": "2018-06-21",
+            "draftPick": 5,
+            "draftRound": 1,
+            "note": "Oklahoma guard, drafted #5 by Dallas, sent to Atlanta in draft-night swap",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2019 DAL 1st Round Pick",
+            "acquisitionType": "original",
+            "date": "2019-06-20",
+            "becamePlayer": "Cam Reddish",
+            "note": "Protected first-round pick sent to Atlanta, became #10 overall",
+            "isOrigin": true
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "GSW",
+    "player": "L.J. Cryer",
+    "source": "Basketball-Reference, ESPN",
+    "originYear": 2023,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "L.J. Cryer",
+    "acquisitionType": "undrafted",
+    "date": "2023-07-01",
+    "currentTeam": "GSW",
+    "note": "Houston guard, signed as undrafted free agent",
+    "isOrigin": true
+  }
+}

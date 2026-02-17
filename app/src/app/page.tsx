@@ -23,6 +23,24 @@ const EAST_TEAMS = [
   { abbr: "WAS", name: "Wizards", emoji: "🧙" },
 ];
 
+const WEST_TEAMS = [
+  { abbr: "DAL", name: "Mavericks", emoji: "🐴" },
+  { abbr: "DEN", name: "Nuggets", emoji: "⛏️" },
+  { abbr: "GSW", name: "Warriors", emoji: "🌉" },
+  { abbr: "HOU", name: "Rockets", emoji: "🚀" },
+  { abbr: "LAC", name: "Clippers", emoji: "⛵" },
+  { abbr: "LAL", name: "Lakers", emoji: "💜" },
+  { abbr: "MEM", name: "Grizzlies", emoji: "🐻" },
+  { abbr: "MIN", name: "Timberwolves", emoji: "🐺" },
+  { abbr: "NOP", name: "Pelicans", emoji: "⚜️" },
+  { abbr: "OKC", name: "Thunder", emoji: "⚡" },
+  { abbr: "PHX", name: "Suns", emoji: "☀️" },
+  { abbr: "POR", name: "Trail Blazers", emoji: "🌲" },
+  { abbr: "SAC", name: "Kings", emoji: "👑" },
+  { abbr: "SAS", name: "Spurs", emoji: "🤠" },
+  { abbr: "UTA", name: "Jazz", emoji: "🎵" },
+];
+
 interface SelectedPlayer {
   id: number;
   name: string;
@@ -172,8 +190,23 @@ export default function Home() {
             <p className="text-center text-zinc-400 mb-6">
               See how every player on a team&apos;s roster was acquired — the full web of trades, picks, and transactions.
             </p>
-            <div className="grid grid-cols-3 sm:grid-cols-5 gap-3">
+            <p className="text-xs text-zinc-500 mb-2 font-semibold uppercase tracking-wider">Eastern Conference</p>
+            <div className="grid grid-cols-3 sm:grid-cols-5 gap-3 mb-4">
               {EAST_TEAMS.map((team) => (
+                <Link
+                  key={team.abbr}
+                  href={`/team/${team.abbr}`}
+                  className="flex flex-col items-center p-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg transition-colors group"
+                >
+                  <span className="text-2xl mb-1">{team.emoji}</span>
+                  <span className="text-sm font-medium text-white group-hover:text-green-400">{team.abbr}</span>
+                  <span className="text-xs text-zinc-500">{team.name}</span>
+                </Link>
+              ))}
+            </div>
+            <p className="text-xs text-zinc-500 mb-2 font-semibold uppercase tracking-wider">Western Conference</p>
+            <div className="grid grid-cols-3 sm:grid-cols-5 gap-3">
+              {WEST_TEAMS.map((team) => (
                 <Link
                   key={team.abbr}
                   href={`/team/${team.abbr}`}

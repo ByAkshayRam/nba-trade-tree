@@ -2,10 +2,10 @@
   "_meta": {
     "team": "TOR",
     "player": "Jakob Poeltl",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "ESPN/NBA.com Trade History - Feb 2026",
     "originYear": 2023,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
@@ -14,6 +14,44 @@
     "date": "2023-02-09",
     "currentTeam": "TOR",
     "tradePartner": "SAS",
-    "note": "Returned to Toronto"
+    "tradeDescription": "Raptors acquired Poeltl from Spurs for Khem Birch, a 2024 first-round pick (top-6 protected), and second-round picks in 2023 and 2025",
+    "note": "Returned to Toronto where he was originally drafted in 2016",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Khem Birch",
+        "acquisitionType": "free-agent",
+        "date": "2021-04-18",
+        "note": "Signed as free agent during 2020-21 season",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "details": "2024 First Round Pick (top-6 protected in 2024-2026)",
+        "isOrigin": true,
+        "name": "2024 First Round Pick (top-6 protected in 2024-2026)",
+        "becamePlayer": "Rob Dillingham",
+        "draftPick": 8,
+        "note": "TOR's pick conveyed at #8 to SAS (outside top-6 protection). SAS traded Dillingham to MIN on draft night."
+      },
+      {
+        "type": "pick",
+        "details": "2023 Second Round Pick",
+        "isOrigin": true,
+        "name": "2023 Second Round Pick",
+        "becamePlayer": "Sidy Cissoko",
+        "draftPick": 44,
+        "note": "TOR's 2023 second-round pick sent to SAS in Poeltl trade."
+      },
+      {
+        "type": "pick",
+        "details": "2025 Second Round Pick",
+        "isOrigin": true,
+        "name": "2025 Second Round Pick",
+        "becamePlayer": "Ryan Kalkbrenner",
+        "draftPick": 34,
+        "note": "TOR's 2025 second-round pick sent to SAS in Poeltl trade. Subsequently traded to DAL then CHO."
+      }
+    ]
   }
 }

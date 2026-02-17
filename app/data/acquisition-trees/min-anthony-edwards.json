@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "MIN",
+    "player": "Anthony Edwards",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2020,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Anthony Edwards",
+    "acquisitionType": "draft",
+    "date": "2020-11-18",
+    "currentTeam": "MIN",
+    "draftPick": 1,
+    "draftRound": 1,
+    "note": "Georgia guard, 2020 #1 overall pick",
+    "isOrigin": true
+  }
+}

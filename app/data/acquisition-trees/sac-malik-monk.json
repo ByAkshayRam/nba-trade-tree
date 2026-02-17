@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "SAC",
+    "player": "Malik Monk",
+    "source": "Basketball-Reference SAC 2022-23 Transactions",
+    "originYear": 2017,
+    "depth": 1,
+    "lastUpdated": "2026-02-17"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Malik Monk",
+    "acquisitionType": "free-agent",
+    "date": "2022-07-06",
+    "currentTeam": "SAC",
+    "note": "Guard originally drafted 11th overall by Charlotte in 2017. Re-signed July 6, 2024.",
+    "isOrigin": true
+  }
+}

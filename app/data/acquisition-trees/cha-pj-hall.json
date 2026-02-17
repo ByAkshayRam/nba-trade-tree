@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "team": "CHA",
+    "player": "PJ Hall",
+    "source": "ESPN/NBA.com/Wikipedia - Feb 2026",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-15"
+  },
+  "tree": {
+    "type": "player",
+    "name": "PJ Hall",
+    "acquisitionType": "undrafted",
+    "date": "2024-07-01",
+    "currentTeam": "CHA",
+    "note": "Clemson center, went undrafted but signed as free agent",
+    "tradeDescription": "Signed as undrafted free agent from Clemson",
+    "isOrigin": true
+  }
+}

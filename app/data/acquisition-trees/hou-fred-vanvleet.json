@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "HOU",
+    "player": "Fred VanVleet",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2016,
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Fred VanVleet",
+    "acquisitionType": "free-agent",
+    "date": "2023-07-01",
+    "currentTeam": "HOU",
+    "note": "3-year, $130M deal, signed from Toronto Raptors",
+    "isOrigin": true
+  }
+}

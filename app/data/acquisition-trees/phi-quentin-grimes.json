@@ -2,17 +2,40 @@
   "_meta": {
     "team": "PHI",
     "player": "Quentin Grimes",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2026,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "nbaId": 1629656,
+    "espnId": 4397014,
+    "source": "Basketball-Reference Transaction Log",
+    "originYear": 2025,
+    "depth": 2,
+    "lastUpdated": "2026-02-16",
+    "accuracy": "high"
   },
   "tree": {
     "type": "player",
     "name": "Quentin Grimes",
     "acquisitionType": "trade",
-    "date": "2026-02-06",
+    "date": "2025-02-04",
     "currentTeam": "PHI",
-    "tradePartner": "DAL"
+    "tradePartner": "DAL",
+    "note": "Acquired from Dallas Mavericks for Caleb Martin and a 2025 2nd round pick. Re-signed September 30, 2025.",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Caleb Martin",
+        "acquisitionType": "free-agent",
+        "date": "2024-07-06",
+        "note": "Signed as free agent from Miami Heat.",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2025 2nd Round Pick",
+        "year": 2025,
+        "round": 2,
+        "details": "More favorable of available 2nd round picks",
+        "becamePlayer": "Johni Broome",
+        "isOrigin": true
+      }
+    ]
   }
 }

@@ -1,0 +1,52 @@
+{
+  "_meta": {
+    "team": "MEM",
+    "player": "Brandon Clarke",
+    "source": "Basketball-Reference, ESPN, NBA.com",
+    "originYear": 2019,
+    "depth": 4,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Brandon Clarke",
+    "acquisitionType": "trade",
+    "date": "2019-07-06",
+    "currentTeam": "MEM",
+    "tradePartner": "OKC",
+    "tradeDescription": "Memphis traded Darius Bazley and a 2024 2nd round pick to Oklahoma City for Brandon Clarke",
+    "note": "Gonzaga forward, acquired via trade from Oklahoma City",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Darius Bazley",
+        "acquisitionType": "trade",
+        "date": "2019-07-06",
+        "tradePartner": "UTA",
+        "tradeDescription": "Acquired from Utah in Mike Conley trade",
+        "note": "Acquired from Utah as part of Mike Conley trade package",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Mike Conley",
+            "acquisitionType": "draft",
+            "date": "2007-06-28",
+            "draftPick": 4,
+            "draftRound": 1,
+            "note": "Ohio State guard, drafted by Memphis in 2007",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2024 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2024-06-26",
+        "becamePlayer": "Bobi Klintman",
+        "note": "Memphis' own 2024 second-round pick, conveyed to OKC",
+        "isOrigin": true
+      }
+    ]
+  }
+}

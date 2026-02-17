@@ -1,0 +1,57 @@
+{
+  "_meta": {
+    "team": "LAL",
+    "player": "Rui Hachimura",
+    "source": "Basketball-Reference",
+    "originYear": 2019,
+    "depth": 3,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Rui Hachimura",
+    "acquisitionType": "trade",
+    "date": "2023-01-23",
+    "currentTeam": "LAL",
+    "tradePartner": "WAS",
+    "tradeDescription": "Lakers acquired Hachimura from Wizards for Kendrick Nunn, a 2023 2nd round pick (CHI own), a 2028 2nd round pick, and a 2029 2nd round pick",
+    "note": "Japanese forward from Gonzaga",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Kendrick Nunn",
+        "acquisitionType": "free-agent",
+        "date": "2021-08-06",
+        "note": "Former Heat guard, signed with Lakers as free agent in 2021",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2023 2nd Round Pick (CHI own)",
+        "acquisitionType": "trade",
+        "date": "2021-08-06",
+        "tradePartner": "WAS",
+        "tradeDescription": "Received from Wizards as part of the 5-team Russell Westbrook trade",
+        "becamePlayer": "Tristan Vukcevic",
+        "note": "Originally CHI own 2nd round pick, acquired from WAS in Westbrook trade, sent to WAS in Hachimura trade",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2028 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2028-06-01",
+        "note": "2028 2nd round pick, least favorable of LAL/WAS per BBRef",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2029 LAL 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2029-06-01",
+        "note": "Lakers' own 2nd round pick",
+        "isOrigin": true
+      }
+    ]
+  }
+}

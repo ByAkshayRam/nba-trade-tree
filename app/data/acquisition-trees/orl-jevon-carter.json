@@ -2,16 +2,18 @@
   "_meta": {
     "team": "ORL",
     "player": "Jevon Carter",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2025,
+    "source": "Orlando Magic press release - Feb 2026",
+    "originYear": 2026,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
     "name": "Jevon Carter",
     "acquisitionType": "free-agent",
-    "date": "2025-07-01",
-    "currentTeam": "ORL"
+    "date": "2026-02-06",
+    "currentTeam": "ORL",
+    "note": "Signed rest-of-season deal after trade deadline",
+    "isOrigin": true
   }
 }

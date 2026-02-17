@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "team": "DEN",
+    "player": "Bruce Brown",
+    "source": "ESPN, Basketball-Reference, NBA.com, Wikipedia",
+    "originYear": 2018,
+    "depth": 8,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Bruce Brown",
+    "acquisitionType": "free-agent",
+    "date": "2025-07-09",
+    "currentTeam": "DEN",
+    "note": "Guard signed as free agent, returning to Denver for second stint",
+    "isOrigin": true,
+    "assetsGivenUp": []
+  }
+}

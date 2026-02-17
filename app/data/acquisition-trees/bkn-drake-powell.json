@@ -2,18 +2,31 @@
   "_meta": {
     "team": "BKN",
     "player": "Drake Powell",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2025,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "ESPN, NBA.com, Wikipedia",
+    "originYear": 2023,
+    "depth": 2,
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Drake Powell",
     "acquisitionType": "draft",
-    "date": "2025-06-26",
+    "date": "2025-06-25",
+    "draftPick": 22,
+    "draftRound": 1,
     "currentTeam": "BKN",
-    "draftPick": 24,
-    "draftRound": 1
+    "note": "UNC guard, drafted with ATL pick acquired in 3-team Porzingis trade",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2025 ATL 1st Round Pick (#22)",
+        "acquisitionType": "trade",
+        "date": "2025-07-07",
+        "tradePartner": "ATL",
+        "becamePlayer": "Drake Powell",
+        "tradeDescription": "Acquired from Atlanta in 3-team Porzingis trade. BKN also received Terance Mann. Porzingis went to ATL from BOS.",
+        "isOrigin": true
+      }
+    ]
   }
 }

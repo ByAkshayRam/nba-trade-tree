@@ -1,0 +1,47 @@
+{
+  "_meta": {
+    "team": "DAL",
+    "player": "P.J. Washington",
+    "source": "ESPN, Basketball-Reference",
+    "originYear": 2019,
+    "depth": 3,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "P.J. Washington",
+    "acquisitionType": "trade",
+    "date": "2024-02-08",
+    "currentTeam": "DAL",
+    "tradePartner": "CHA",
+    "tradeDescription": "Dallas acquired Washington from Charlotte",
+    "note": "Kentucky forward, 2019 #12 overall pick by Charlotte",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Grant Williams",
+        "acquisitionType": "free-agent",
+        "date": "2023-07-01",
+        "note": "Tennessee forward, signed 4-year $53M contract",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Seth Curry",
+        "acquisitionType": "free-agent",
+        "date": "2023-07-01",
+        "note": "Duke guard, undrafted 2013. Signed 2-year $8M deal to return to Dallas after stints with PHI and BKN.",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2027 DAL 1st Round Pick",
+        "acquisitionType": "original",
+        "date": "2027-06-26",
+        "note": "Dallas own 2027 first-round pick",
+        "isOrigin": true
+      }
+    ]
+  }
+}

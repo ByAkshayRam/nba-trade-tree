@@ -2,17 +2,49 @@
   "_meta": {
     "team": "ATL",
     "player": "Gabe Vincent",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2024,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "ESPN, The Athletic, NBA.com",
+    "originYear": 2018,
+    "depth": 3,
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Gabe Vincent",
-    "acquisitionType": "free-agent",
-    "date": "2024-07-01",
+    "acquisitionType": "trade",
+    "date": "2026-02-05",
     "currentTeam": "ATL",
-    "note": "Veteran guard"
+    "tradePartner": "LAL",
+    "tradeDescription": "Hawks trade Luke Kennard to Lakers for Gabe Vincent and a 2032 2nd-round pick",
+    "note": "2023 NBA Finals starter with Miami, playoff-tested guard",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Luke Kennard",
+        "acquisitionType": "free-agent",
+        "date": "2025-07-01",
+        "tradePartner": "MEM",
+        "tradeDescription": "Hawks signed Kennard as free agent from Memphis, 1-year $11M deal",
+        "note": "Elite 3-point shooter, career 44% from deep. Sent to LAL in Vincent trade."
+      }
+    ],
+    "tradeChain": {
+      "type": "player",
+      "name": "Gabe Vincent",
+      "acquisitionType": "free-agent",
+      "date": "2023-07-06",
+      "tradePartner": "MIA",
+      "tradeDescription": "Lakers signed Vincent as free agent from Heat, 3-year $33M deal",
+      "note": "Signed after 2023 Finals run with Miami",
+      "tradeChain": {
+        "type": "player",
+        "name": "Gabe Vincent",
+        "acquisitionType": "free-agent",
+        "date": "2020-11-27",
+        "tradePartner": "G-League",
+        "tradeDescription": "Heat signed Vincent from G-League",
+        "isOrigin": true,
+        "note": "ORIGIN - Undrafted 2018, UC Santa Barbara. Developed in G-League with Stockton Kings."
+      }
+    }
   }
 }

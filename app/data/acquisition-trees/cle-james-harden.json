@@ -2,20 +2,21 @@
   "_meta": {
     "team": "CLE",
     "player": "James Harden",
-    "source": "NBA Trade History Research",
+    "source": "ESPN, Basketball-Reference, NBA.com trade history",
     "originYear": 2009,
-    "depth": 5,
-    "lastUpdated": "2026-02-11"
+    "depth": 6,
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "James Harden",
     "acquisitionType": "trade",
-    "date": "2026-02-06",
+    "date": "2026-02-04",
     "currentTeam": "CLE",
     "tradePartner": "LAC",
-    "tradeDescription": "Cavaliers acquire Harden at 2026 deadline for Darius Garland and picks",
-    "note": "Former MVP reunites with competitive team",
+    "tradeDescription": "Cavaliers traded Darius Garland and 2026 2nd round pick to Clippers for James Harden",
+    "note": "36-year-old veteran guard, 11-time All-Star",
+    "isOrigin": false,
     "assetsGivenUp": [
       {
         "type": "player",
@@ -24,20 +25,278 @@
         "date": "2019-06-20",
         "draftPick": 5,
         "draftRound": 1,
-        "currentTeam": "LAC",
-        "tradeDescription": "Cavaliers drafted Garland with their OWN pick",
-        "note": "2x All-Star, drafted after Zion/Ja/RJ/DeAndre",
+        "note": "Point guard drafted by Cavaliers",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2026 1st Round Pick",
+        "name": "2026 CLE 2nd Round Pick",
         "acquisitionType": "original",
-        "date": "2026-02-06",
-        "tradeDescription": "Cleveland's own 2026 first rounder",
-        "note": "Protected lottery",
+        "date": "2026-06-26",
+        "note": "Cavaliers' own second-round pick",
         "isOrigin": true
       }
-    ]
+    ],
+    "tradeChain": {
+      "type": "player",
+      "name": "James Harden",
+      "acquisitionType": "trade",
+      "date": "2023-10-31",
+      "tradePartner": "PHI",
+      "tradeDescription": "Clippers traded Marcus Morris, Nic Batum, Robert Covington, KJ Martin, multiple draft picks and pick swap to 76ers for James Harden, P.J. Tucker, Filip Petrusev",
+      "note": "Acquired by Clippers from Philadelphia",
+      "isOrigin": false,
+      "assetsGivenUp": [
+        {
+          "type": "player",
+          "name": "Marcus Morris",
+          "acquisitionType": "free-agent",
+          "date": "2021-08-06",
+          "note": "Veteran forward signed by Clippers",
+          "isOrigin": true
+        },
+        {
+          "type": "player",
+          "name": "Nic Batum",
+          "acquisitionType": "free-agent",
+          "date": "2020-11-23",
+          "note": "Veteran forward signed by Clippers",
+          "isOrigin": true
+        },
+        {
+          "type": "player",
+          "name": "Robert Covington",
+          "acquisitionType": "trade",
+          "date": "2023-02-09",
+          "tradePartner": "POR",
+          "tradeDescription": "Acquired from Trail Blazers",
+          "note": "Wing acquired in separate trade",
+          "isOrigin": false,
+          "assetsGivenUp": [
+            {
+              "type": "other",
+              "name": "Future considerations",
+              "acquisitionType": "original",
+              "note": "Minor consideration",
+              "isOrigin": true
+            }
+          ]
+        },
+        {
+          "type": "player",
+          "name": "KJ Martin",
+          "acquisitionType": "draft",
+          "date": "2020-11-18",
+          "draftPick": 52,
+          "draftRound": 2,
+          "note": "Second-round pick by Houston, later acquired by Clippers",
+          "isOrigin": true
+        }
+      ],
+      "tradeChain": {
+        "type": "player",
+        "name": "James Harden",
+        "acquisitionType": "trade",
+        "date": "2022-02-10",
+        "tradePartner": "BKN",
+        "tradeDescription": "76ers traded Ben Simmons, Seth Curry, Andre Drummond, 2027 1st round pick, 2029 1st round pick to Nets for James Harden and Paul Millsap",
+        "note": "Acquired by 76ers from Brooklyn",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Ben Simmons",
+            "acquisitionType": "draft",
+            "date": "2016-06-23",
+            "draftPick": 1,
+            "draftRound": 1,
+            "note": "First overall pick by Philadelphia",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Seth Curry",
+            "acquisitionType": "trade",
+            "date": "2020-11-16",
+            "tradePartner": "DAL",
+            "tradeDescription": "Acquired from Mavericks in Josh Richardson trade",
+            "note": "Guard acquired in trade with Dallas",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Josh Richardson",
+                "acquisitionType": "trade",
+                "date": "2019-06-30",
+                "tradePartner": "MIA",
+                "tradeDescription": "Acquired from Heat in Jimmy Butler sign-and-trade",
+                "note": "Part of Butler deal",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "other",
+                    "name": "Sign-and-trade facilitation",
+                    "acquisitionType": "original",
+                    "note": "Cap space utilized",
+                    "isOrigin": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Andre Drummond",
+            "acquisitionType": "free-agent",
+            "date": "2021-03-28",
+            "note": "Center signed after buyout with Lakers",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2027 PHI 1st Round Pick",
+            "acquisitionType": "original",
+            "date": "2027-06-24",
+            "note": "76ers' own first-round pick",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2029 PHI 1st Round Pick",
+            "acquisitionType": "original",
+            "date": "2029-06-24",
+            "note": "76ers' own first-round pick",
+            "isOrigin": true
+          }
+        ],
+        "tradeChain": {
+          "type": "player",
+          "name": "James Harden",
+          "acquisitionType": "trade",
+          "date": "2021-01-13",
+          "tradePartner": "HOU",
+          "tradeDescription": "4-team trade: Nets gave up Caris LeVert, Rodions Kurucs, three 1st round picks (2022, 2024, 2026), four 1st round pick swaps (2021, 2023, 2025, 2027) to acquire Harden",
+          "note": "Acquired by Nets from Houston in 4-team trade",
+          "isOrigin": false,
+          "assetsGivenUp": [
+            {
+              "type": "player",
+              "name": "Caris LeVert",
+              "acquisitionType": "draft",
+              "date": "2016-06-23",
+              "draftPick": 20,
+              "draftRound": 1,
+              "note": "Guard drafted by Brooklyn",
+              "isOrigin": true
+            },
+            {
+              "type": "player",
+              "name": "Rodions Kurucs",
+              "acquisitionType": "draft",
+              "date": "2018-06-21",
+              "draftPick": 40,
+              "draftRound": 2,
+              "note": "Forward drafted by Brooklyn",
+              "isOrigin": true
+            },
+            {
+              "type": "pick",
+              "name": "2022 BKN 1st Round Pick",
+              "acquisitionType": "original",
+              "date": "2022-06-23",
+              "becamePlayer": "Tari Eason",
+              "note": "Nets' own first-round pick traded",
+              "isOrigin": true
+            },
+            {
+              "type": "pick",
+              "name": "2024 BKN 1st Round Pick",
+              "acquisitionType": "original", 
+              "date": "2024-06-26",
+              "becamePlayer": "Cam Whitmore",
+              "note": "Nets' own first-round pick traded",
+              "isOrigin": true
+            },
+            {
+              "type": "pick",
+              "name": "2026 BKN 1st Round Pick",
+              "acquisitionType": "original",
+              "date": "2026-06-25",
+              "note": "Nets' own first-round pick traded",
+              "isOrigin": true
+            }
+          ],
+          "tradeChain": {
+            "type": "player",
+            "name": "James Harden",
+            "acquisitionType": "trade",
+            "date": "2012-10-27",
+            "tradePartner": "OKC",
+            "tradeDescription": "Rockets traded Kevin Martin, Jeremy Lamb, two 1st round picks, one 2nd round pick to Thunder for James Harden, Daequan Cook, Cole Aldrich, Lazar Hayward",
+            "note": "Acquired by Houston from Oklahoma City",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Kevin Martin",
+                "acquisitionType": "trade",
+                "date": "2012-07-11",
+                "tradePartner": "LAC",
+                "tradeDescription": "Acquired in Chris Paul trade",
+                "note": "Guard acquired from Clippers",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "other",
+                    "name": "Trade exception",
+                    "acquisitionType": "original",
+                    "note": "Salary matching",
+                    "isOrigin": true
+                  }
+                ]
+              },
+              {
+                "type": "player",
+                "name": "Jeremy Lamb",
+                "acquisitionType": "draft",
+                "date": "2011-06-23",
+                "draftPick": 12,
+                "draftRound": 1,
+                "note": "Guard drafted by Houston",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2013 HOU 1st Round Pick",
+                "acquisitionType": "original",
+                "date": "2013-06-27",
+                "becamePlayer": "Steven Adams",
+                "note": "Houston's own pick, became Steven Adams",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2014 HOU 1st Round Pick",
+                "acquisitionType": "original",
+                "date": "2014-06-26",
+                "becamePlayer": "Mitch McGary",
+                "note": "Houston's own pick, became Mitch McGary",
+                "isOrigin": true
+              }
+            ],
+            "tradeChain": {
+              "type": "player",
+              "name": "James Harden",
+              "acquisitionType": "draft",
+              "date": "2009-06-25",
+              "draftPick": 3,
+              "draftRound": 1,
+              "note": "Guard drafted 3rd overall by Oklahoma City Thunder",
+              "isOrigin": true
+            }
+          }
+        }
+      }
+    }
   }
 }

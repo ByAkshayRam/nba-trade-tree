@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "MIN",
+    "player": "Jaylen Clark",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2023,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jaylen Clark",
+    "acquisitionType": "draft",
+    "date": "2023-06-22",
+    "currentTeam": "MIN",
+    "draftPick": 53,
+    "draftRound": 2,
+    "note": "UCLA guard, 2023 2nd round pick",
+    "isOrigin": true
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "NOP",
+    "player": "Yves Missi",
+    "source": "ESPN, Basketball-Reference",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Yves Missi",
+    "acquisitionType": "draft",
+    "date": "2024-06-26",
+    "currentTeam": "NOP",
+    "draftPick": 21,
+    "draftRound": 1,
+    "note": "Baylor center, 21st overall pick",
+    "isOrigin": true
+  }
+}

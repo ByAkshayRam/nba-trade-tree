@@ -2,17 +2,20 @@
   "_meta": {
     "team": "BKN",
     "player": "Jalen Wilson",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2024,
+    "source": "Basketball-Reference, ESPN, NBA.com",
+    "originYear": 2023,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Jalen Wilson",
-    "acquisitionType": "trade",
-    "date": "2024-02-08",
+    "acquisitionType": "draft",
+    "date": "2023-06-22",
     "currentTeam": "BKN",
-    "tradePartner": "BKN"
+    "draftPick": 51,
+    "draftRound": 2,
+    "note": "Kansas forward, drafted by Brooklyn with #51 overall pick in second round",
+    "isOrigin": true
   }
 }

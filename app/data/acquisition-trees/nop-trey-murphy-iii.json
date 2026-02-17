@@ -1,0 +1,154 @@
+{
+  "_meta": {
+    "team": "NOP",
+    "player": "Trey Murphy III",
+    "source": "ESPN, Basketball-Reference",
+    "originYear": 2021,
+    "depth": 3,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Trey Murphy III",
+    "acquisitionType": "draft-night-trade",
+    "date": "2021-08-07",
+    "currentTeam": "NOP",
+    "draftPick": 17,
+    "draftRound": 1,
+    "tradePartner": "MEM",
+    "tradeDescription": "3-team trade: NOP sends Adams, Bledsoe, picks to MEM; Iwundu, pick to CHA; receives Murphy, Valanciunas from MEM, Graham from CHA",
+    "note": "Virginia forward drafted 17th by Memphis, traded to New Orleans",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Steven Adams",
+        "acquisitionType": "trade",
+        "date": "2020-11-23",
+        "tradePartner": "OKC",
+        "tradeDescription": "4-team Jrue Holiday trade: NOP acquires Adams from OKC",
+        "note": "Center acquired from Oklahoma City in Jrue Holiday trade expansion",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Darius Miller",
+            "acquisitionType": "free-agent",
+            "date": "2018-07-01",
+            "note": "Forward sent to OKC in Jrue Holiday trade",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Kenrich Williams",
+            "acquisitionType": "free-agent",
+            "date": "2020-11-23",
+            "note": "Guard/forward sent to OKC",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2023 2nd Round Pick",
+            "becamePlayer": "Hunter Tyson",
+            "note": "WAS own, sent to OKC",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2024 2nd Round Pick",
+            "becamePlayer": "Tyler Kolek",
+            "note": "CHO own, sent to OKC",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Eric Bledsoe",
+        "acquisitionType": "trade",
+        "date": "2020-11-23",
+        "tradePartner": "MIL",
+        "tradeDescription": "4-team Jrue Holiday trade: NOP acquires Bledsoe + picks from MIL",
+        "note": "Guard acquired from Milwaukee Bucks in Jrue Holiday trade",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Jrue Holiday",
+            "acquisitionType": "trade",
+            "date": "2013-07-12",
+            "tradePartner": "PHI",
+            "tradeDescription": "NOP traded Nerlens Noel (#6 pick) and 2014 1st (Elfrid Payton) to PHI for Jrue Holiday and Pierre Jackson",
+            "note": "All-Star guard, acquired from Philadelphia. Spent 7 seasons with NOP before traded to MIL.",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Nerlens Noel",
+                "acquisitionType": "draft",
+                "date": "2013-06-27",
+                "draftPick": 6,
+                "draftRound": 1,
+                "note": "Kentucky center, drafted #6 overall by NOP in 2013. Never played for NOP — traded to PHI for Jrue Holiday.",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2014 NOP 1st Round Pick",
+                "acquisitionType": "original",
+                "becamePlayer": "Elfrid Payton",
+                "note": "NOP's own 2014 1st round pick; became #10 overall (traded to ORL on draft night)",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2021 #10 Overall Pick",
+        "becamePlayer": "Ziaire Williams",
+        "acquisitionType": "original",
+        "note": "Pelicans own first-round pick, sent to Memphis",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2021 #40 Overall Pick",
+        "becamePlayer": "Jared Butler",
+        "acquisitionType": "original",
+        "note": "Pelicans own second-round pick, sent to Memphis",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2022 2nd Round Pick",
+        "becamePlayer": "Vince Williams Jr.",
+        "acquisitionType": "original",
+        "note": "Sent to Memphis, conditional from original 1st round pick that did not convey",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2025 2nd Round Pick",
+        "becamePlayer": "Ryan Kalkbrenner",
+        "acquisitionType": "original",
+        "note": "NOP own, sent to Memphis",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2022 1st Round Pick",
+        "becamePlayer": "Mark Williams",
+        "acquisitionType": "original",
+        "note": "NOP own conditional pick, sent to Charlotte",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Wesley Iwundu",
+        "acquisitionType": "trade",
+        "date": "2021-03-25",
+        "note": "Forward acquired from Dallas in Melli/Redick trade, sent to Charlotte",
+        "isOrigin": true,
+        "tradePartner": "DAL"
+      }
+    ]
+  }
+}

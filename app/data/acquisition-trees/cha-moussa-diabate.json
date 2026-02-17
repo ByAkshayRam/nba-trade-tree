@@ -12,6 +12,9 @@
     "name": "Moussa Diabate",
     "acquisitionType": "free-agent",
     "date": "2023-07-01",
-    "currentTeam": "CHA"
+    "currentTeam": "CHA",
+    "note": "Former Michigan center, athletic rim protector",
+    "tradeDescription": "Signed as free agent from Detroit",
+    "isOrigin": true
   }
 }

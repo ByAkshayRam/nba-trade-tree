@@ -12,8 +12,8 @@ async function getTeamTree(teamAbbr: string) {
   // Get the host from headers for server-side fetch
   const headersList = await headers();
   const host = headersList.get("host") || "localhost:3456";
-  const protocol = host.includes("localhost") ? "http" : "https";
-  const baseUrl = `${protocol}://${host}`;
+  // Always use http for server-side self-fetch (avoids SSL errors with Tailscale/reverse proxy)
+  const baseUrl = `http://localhost:3456`;
   
   try {
     const res = await fetch(

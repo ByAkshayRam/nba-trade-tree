@@ -2,10 +2,10 @@
   "_meta": {
     "team": "ATL",
     "player": "Nickeil Alexander-Walker",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "NBA/ESPN Trade History",
     "originYear": 2024,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "depth": 2,
+    "lastUpdated": "2026-02-14"
   },
   "tree": {
     "type": "player",
@@ -13,6 +13,17 @@
     "acquisitionType": "trade",
     "date": "2024-02-08",
     "currentTeam": "ATL",
-    "tradePartner": "MIN"
+    "tradePartner": "MIN",
+    "tradeDescription": "Hawks acquire NAW from Timberwolves",
+    "note": "Canadian guard, scoring spark off the bench",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2029 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2024-02-08",
+        "tradeDescription": "Hawks own 2029 2nd sent to Minnesota"
+      }
+    ]
   }
 }

@@ -15,7 +15,9 @@ interface AcquisitionNode {
   currentTeam?: string;
   note?: string;
   isOrigin?: boolean;
+  isHomegrown?: boolean;
   assetsGivenUp?: AcquisitionNode[];
+  tradeChain?: AcquisitionNode | AcquisitionNode[];
 }
 
 interface TreeFile {
@@ -79,14 +81,15 @@ const ROSTER_ORDERS: Record<string, Record<string, { order: number; category: "s
     "Jose Alvarado": { order: 11, category: "bench" },
     "Mitchell Robinson": { order: 12, category: "bench" },
     "Pacome Dadiet": { order: 13, category: "bench" },
-    "Dillon Jones": { order: 14, category: "bench" },
     "Tyler Kolek": { order: 15, category: "bench" },
     "Ariel Hukporti": { order: 16, category: "bench" },
     "Jordan Clarkson": { order: 17, category: "bench" },
     "Landry Shamet": { order: 18, category: "bench" },
+    "Jeremy Sochan": { order: 19, category: "bench" },
     "Mohamed Diawara": { order: 20, category: "two-way" },
     "Trey Jemison III": { order: 21, category: "two-way" },
     "Kevin McCullar Jr.": { order: 22, category: "two-way" },
+    "Dillon Jones": { order: 23, category: "two-way" },
   },
   OKC: {
     "Shai Gilgeous-Alexander": { order: 1, category: "starter" },
@@ -102,6 +105,11 @@ const ROSTER_ORDERS: Record<string, Record<string, { order: number; category: "s
     "Kenrich Williams": { order: 16, category: "bench" },
     "Nikola Topic": { order: 17, category: "bench" },
     "Ajay Mitchell": { order: 18, category: "bench" },
+    "Jared McCain": { order: 19, category: "bench" },
+    "Branden Carlson": { order: 20, category: "two-way" },
+    "Brooks Barnhizer": { order: 21, category: "two-way" },
+    "Buddy Boeheim": { order: 22, category: "two-way" },
+    "Thomas Sorber": { order: 23, category: "two-way" },
   },
   ATL: {
     "Jalen Johnson": { order: 1, category: "starter" },
@@ -134,7 +142,11 @@ const ROSTER_ORDERS: Record<string, Record<string, { order: number; category: "s
     "Nolan Traore": { order: 14, category: "bench" },
     "Danny Wolf": { order: 15, category: "bench" },
     "Drake Powell": { order: 16, category: "bench" },
+    "Chaney Johnson": { order: 17, category: "bench" },
+    "E.J. Liddell": { order: 18, category: "bench" },
+    "Tyson Etienne": { order: 19, category: "bench" },
     "Ben Saraf": { order: 20, category: "two-way" },
+    "Josh Minott": { order: 21, category: "two-way" },
   },
   CHA: {
     "LaMelo Ball": { order: 1, category: "starter" },
@@ -150,8 +162,11 @@ const ROSTER_ORDERS: Record<string, Record<string, { order: number; category: "s
     "Malaki Branham": { order: 15, category: "bench" },
     "Kon Knueppel": { order: 16, category: "bench" },
     "Xavier Tillman": { order: 17, category: "bench" },
+    "PJ Hall": { order: 18, category: "bench" },
     "Liam McNeeley": { order: 20, category: "two-way" },
     "Antonio Reeves": { order: 21, category: "two-way" },
+    "Ryan Kalkbrenner": { order: 22, category: "two-way" },
+    "Sion James": { order: 23, category: "two-way" },
   },
   CHI: {
     "Anfernee Simons": { order: 1, category: "starter" },
@@ -169,6 +184,9 @@ const ROSTER_ORDERS: Record<string, Record<string, { order: number; category: "s
     "Guerschon Yabusele": { order: 17, category: "bench" },
     "Noa Essengue": { order: 20, category: "two-way" },
     "Leonard Miller": { order: 21, category: "two-way" },
+    "Lachlan Olbrich": { order: 22, category: "two-way" },
+    "Mac McClung": { order: 18, category: "bench" },
+    "Yuki Kawamura": { order: 19, category: "bench" },
   },
   CLE: {
     "Donovan Mitchell": { order: 1, category: "starter" },
@@ -184,6 +202,7 @@ const ROSTER_ORDERS: Record<string, Record<string, { order: number; category: "s
     "Thomas Bryant": { order: 15, category: "bench" },
     "Larry Nance Jr.": { order: 16, category: "bench" },
     "Keon Ellis": { order: 17, category: "bench" },
+    "Nae'Qwan Tomlin": { order: 18, category: "bench" },
     "Tyrese Proctor": { order: 20, category: "two-way" },
   },
   DET: {
@@ -200,38 +219,49 @@ const ROSTER_ORDERS: Record<string, Record<string, { order: number; category: "s
     "Paul Reed": { order: 15, category: "bench" },
     "Dario Saric": { order: 16, category: "bench" },
     "Wendell Moore Jr.": { order: 17, category: "bench" },
+    "Chaz Lanier": { order: 18, category: "bench" },
+    "Javonte Green": { order: 19, category: "bench" },
     "Bobi Klintman": { order: 20, category: "two-way" },
     "Daniss Jenkins": { order: 21, category: "two-way" },
   },
   IND: {
-    "Tyrese Haliburton": { order: 1, category: "starter" },
-    "Andrew Nembhard": { order: 2, category: "starter" },
+    "Andrew Nembhard": { order: 1, category: "starter" },
+    "Aaron Nesmith": { order: 2, category: "starter" },
     "Pascal Siakam": { order: 3, category: "starter" },
-    "Ivica Zubac": { order: 4, category: "starter" },
-    "Aaron Nesmith": { order: 5, category: "starter" },
-    "T.J. McConnell": { order: 10, category: "bench" },
-    "Obi Toppin": { order: 11, category: "bench" },
-    "Jarace Walker": { order: 12, category: "bench" },
-    "Ben Sheppard": { order: 13, category: "bench" },
+    "Jarace Walker": { order: 4, category: "starter" },
+    "Ivica Zubac": { order: 5, category: "starter" },
+    "Tyrese Haliburton": { order: 10, category: "bench" },
+    "Ben Sheppard": { order: 11, category: "bench" },
+    "Obi Toppin": { order: 12, category: "bench" },
+    "Kam Jones": { order: 13, category: "bench" },
     "Johnny Furphy": { order: 14, category: "bench" },
-    "Kam Jones": { order: 15, category: "bench" },
-    "Kobe Brown": { order: 20, category: "two-way" },
+    "T.J. McConnell": { order: 15, category: "bench" },
+    "Jay Huff": { order: 16, category: "bench" },
+    "Kobe Brown": { order: 17, category: "bench" },
+    "Micah Potter": { order: 18, category: "bench" },
+    "Tony Bradley": { order: 19, category: "bench" },
+    "Quenton Jackson": { order: 20, category: "two-way" },
+    "Taelon Peter": { order: 21, category: "two-way" },
+    "Ethan Thompson": { order: 22, category: "two-way" },
   },
   MIA: {
     "Bam Adebayo": { order: 1, category: "starter" },
     "Tyler Herro": { order: 2, category: "starter" },
-    "Andrew Wiggins": { order: 3, category: "starter" },
-    "Terry Rozier": { order: 4, category: "starter" },
-    "Jaime Jaquez Jr.": { order: 5, category: "starter" },
-    "Norman Powell": { order: 10, category: "bench" },
-    "Nikola Jovic": { order: 11, category: "bench" },
-    "Kel'el Ware": { order: 12, category: "bench" },
-    "Pelle Larsson": { order: 13, category: "bench" },
-    "Davion Mitchell": { order: 14, category: "bench" },
+    "Norman Powell": { order: 3, category: "starter" },
+    "Andrew Wiggins": { order: 4, category: "starter" },
+    "Davion Mitchell": { order: 5, category: "starter" },
+    "Terry Rozier": { order: 10, category: "bench" },
+    "Jaime Jaquez Jr.": { order: 11, category: "bench" },
+    "Nikola Jovic": { order: 12, category: "bench" },
+    "Kel'el Ware": { order: 13, category: "bench" },
+    "Kasparas Jakucionis": { order: 14, category: "bench" },
     "Simone Fontecchio": { order: 15, category: "bench" },
-    "Kasparas Jakucionis": { order: 16, category: "bench" },
-    "Keshad Johnson": { order: 20, category: "two-way" },
-    "Dru Smith": { order: 21, category: "two-way" },
+    "Keshad Johnson": { order: 16, category: "bench" },
+    "Pelle Larsson": { order: 17, category: "bench" },
+    "Dru Smith": { order: 18, category: "bench" },
+    "Myron Gardner": { order: 20, category: "two-way" },
+    "Vladislav Goldin": { order: 21, category: "two-way" },
+    "Jahmir Young": { order: 22, category: "two-way" },
   },
   MIL: {
     "Giannis Antetokounmpo": { order: 1, category: "starter" },
@@ -248,7 +278,8 @@ const ROSTER_ORDERS: Record<string, Record<string, { order: number; category: "s
     "AJ Green": { order: 16, category: "bench" },
     "Ousmane Dieng": { order: 17, category: "bench" },
     "Jericho Sims": { order: 18, category: "bench" },
-    "Thanasis Antetokounmpo": { order: 20, category: "two-way" },
+    "Thanasis Antetokounmpo": { order: 19, category: "bench" },
+    "Pete Nance": { order: 20, category: "two-way" },
     "Alex Antetokounmpo": { order: 21, category: "two-way" },
   },
   ORL: {
@@ -265,7 +296,10 @@ const ROSTER_ORDERS: Record<string, Record<string, { order: number; category: "s
     "Goga Bitadze": { order: 15, category: "bench" },
     "Jevon Carter": { order: 16, category: "bench" },
     "Jase Richardson": { order: 17, category: "bench" },
+    "Noah Penda": { order: 18, category: "bench" },
     "Colin Castleton": { order: 20, category: "two-way" },
+    "Orlando Robinson": { order: 21, category: "two-way" },
+    "Jamal Cain": { order: 22, category: "two-way" },
   },
   PHI: {
     "Joel Embiid": { order: 1, category: "starter" },
@@ -275,16 +309,17 @@ const ROSTER_ORDERS: Record<string, Record<string, { order: number; category: "s
     "Andre Drummond": { order: 5, category: "starter" },
     "Kyle Lowry": { order: 10, category: "bench" },
     "Quentin Grimes": { order: 11, category: "bench" },
-    "Dalen Terry": { order: 12, category: "bench" },
-    "Trendon Watford": { order: 13, category: "bench" },
-    "MarJon Beauchamp": { order: 14, category: "bench" },
+    "Trendon Watford": { order: 12, category: "bench" },
     "Justin Edwards": { order: 15, category: "bench" },
     "Adem Bona": { order: 16, category: "bench" },
     "VJ Edgecombe": { order: 17, category: "bench" },
     "Johni Broome": { order: 18, category: "bench" },
-    "Jabari Walker": { order: 19, category: "bench" },
-    "Patrick Baldwin Jr.": { order: 20, category: "two-way" },
-    "Dominick Barlow": { order: 21, category: "two-way" },
+    "Charles Bassey": { order: 19, category: "bench" },
+    "Patrick Baldwin Jr.": { order: 20, category: "bench" },
+    "Dominick Barlow": { order: 21, category: "bench" },
+    "Jabari Walker": { order: 30, category: "two-way" },
+    "MarJon Beauchamp": { order: 31, category: "two-way" },
+    "Dalen Terry": { order: 32, category: "two-way" },
   },
   TOR: {
     "Scottie Barnes": { order: 1, category: "starter" },
@@ -299,7 +334,11 @@ const ROSTER_ORDERS: Record<string, Record<string, { order: number; category: "s
     "Jamal Shead": { order: 14, category: "bench" },
     "Trayce Jackson-Davis": { order: 15, category: "bench" },
     "Collin Murray-Boyles": { order: 16, category: "bench" },
-    "Jamison Battle": { order: 20, category: "two-way" },
+    "Sandro Mamukelashvili": { order: 17, category: "bench" },
+    "Chucky Hepburn": { order: 18, category: "bench" },
+    "Alijah Martin": { order: 19, category: "bench" },
+    "Jamison Battle": { order: 30, category: "two-way" },
+    "A.J. Lawson": { order: 31, category: "two-way" },
   },
   WAS: {
     "Trae Young": { order: 1, category: "starter" },
@@ -314,12 +353,280 @@ const ROSTER_ORDERS: Record<string, Record<string, { order: number; category: "s
     "Kyshawn George": { order: 14, category: "bench" },
     "Will Riley": { order: 15, category: "bench" },
     "Justin Champagnie": { order: 16, category: "bench" },
-    "Sharife Cooper": { order: 17, category: "bench" },
+    "Sharife Cooper": { order: 30, category: "two-way" },
     "Anthony Gill": { order: 18, category: "bench" },
     "Skal Labissiere": { order: 19, category: "bench" },
-    "Keshon Gilbert": { order: 20, category: "two-way" },
-    "Tristan Vukcevic": { order: 21, category: "two-way" },
-    "Jamir Watkins": { order: 22, category: "two-way" },
+    "Kadary Richmond": { order: 20, category: "bench" },
+    "Keshon Gilbert": { order: 21, category: "two-way" },
+    "Tristan Vukcevic": { order: 22, category: "two-way" },
+    "Jamir Watkins": { order: 23, category: "two-way" },
+  },
+  // Western Conference
+  DAL: {
+    "Kyrie Irving": { order: 1, category: "starter" },
+    "Cooper Flagg": { order: 2, category: "starter" },
+    "P.J. Washington": { order: 3, category: "starter" },
+    "Daniel Gafford": { order: 4, category: "starter" },
+    "Klay Thompson": { order: 5, category: "starter" },
+    "Brandon Williams": { order: 10, category: "bench" },
+    "Caleb Martin": { order: 11, category: "bench" },
+    "Dereck Lively II": { order: 12, category: "bench" },
+    "Dwight Powell": { order: 13, category: "bench" },
+    "Khris Middleton": { order: 14, category: "bench" },
+    "Marvin Bagley III": { order: 15, category: "bench" },
+    "Max Christie": { order: 16, category: "bench" },
+    "Naji Marshall": { order: 17, category: "bench" },
+    "Ryan Nembhard": { order: 18, category: "bench" },
+    "Tyus Jones": { order: 19, category: "bench" },
+    "AJ Johnson": { order: 20, category: "two-way" },
+    "Miles Kelly": { order: 21, category: "two-way" },
+    "Moussa Cisse": { order: 22, category: "two-way" },
+  },
+  DEN: {
+    "Jamal Murray": { order: 1, category: "starter" },
+    "Christian Braun": { order: 2, category: "starter" },
+    "Cameron Johnson": { order: 3, category: "starter" },
+    "Aaron Gordon": { order: 4, category: "starter" },
+    "Nikola Jokic": { order: 5, category: "starter" },
+    "Bruce Brown": { order: 10, category: "bench" },
+    "DaRon Holmes II": { order: 11, category: "bench" },
+    "Jalen Pickett": { order: 12, category: "bench" },
+    "Jonas Valanciunas": { order: 13, category: "bench" },
+    "Julian Strawther": { order: 14, category: "bench" },
+    "Peyton Watson": { order: 15, category: "bench" },
+    "Spencer Jones": { order: 16, category: "bench" },
+    "Tim Hardaway Jr.": { order: 17, category: "bench" },
+    "Zeke Nnaji": { order: 18, category: "bench" },
+    "Tamar Bates": { order: 20, category: "two-way" },
+    "Curtis Jones": { order: 21, category: "two-way" },
+  },
+  GSW: {
+    "Stephen Curry": { order: 1, category: "starter" },
+    "Jimmy Butler III": { order: 2, category: "starter" },
+    "Draymond Green": { order: 3, category: "starter" },
+    "Kristaps Porzingis": { order: 4, category: "starter" },
+    "Brandin Podziemski": { order: 5, category: "starter" },
+    "Al Horford": { order: 10, category: "bench" },
+    "De'Anthony Melton": { order: 11, category: "bench" },
+    "Gary Payton II": { order: 12, category: "bench" },
+    "Gui Santos": { order: 13, category: "bench" },
+    "Moses Moody": { order: 14, category: "bench" },
+    "Quinten Post": { order: 15, category: "bench" },
+    "Seth Curry": { order: 16, category: "bench" },
+    "Will Richard": { order: 17, category: "bench" },
+    "L.J. Cryer": { order: 20, category: "two-way" },
+    "Malevy Leons": { order: 21, category: "two-way" },
+    "Pat Spencer": { order: 22, category: "two-way" },
+  },
+  HOU: {
+    "Fred VanVleet": { order: 1, category: "starter" },
+    "Amen Thompson": { order: 2, category: "starter" },
+    "Jabari Smith Jr.": { order: 3, category: "starter" },
+    "Kevin Durant": { order: 4, category: "starter" },
+    "Alperen Sengun": { order: 5, category: "starter" },
+    "Aaron Holiday": { order: 10, category: "bench" },
+    "Clint Capela": { order: 11, category: "bench" },
+    "Dorian Finney-Smith": { order: 12, category: "bench" },
+    "Jae'Sean Tate": { order: 13, category: "bench" },
+    "Jeff Green": { order: 14, category: "bench" },
+    "Josh Okogie": { order: 15, category: "bench" },
+    "Reed Sheppard": { order: 16, category: "bench" },
+    "Steven Adams": { order: 17, category: "bench" },
+    "Tari Eason": { order: 18, category: "bench" },
+    "Isaiah Crawford": { order: 20, category: "two-way" },
+    "JD Davison": { order: 21, category: "two-way" },
+    "Tristen Newton": { order: 22, category: "two-way" },
+  },
+  LAC: {
+    "Darius Garland": { order: 1, category: "starter" },
+    "Kawhi Leonard": { order: 2, category: "starter" },
+    "Bradley Beal": { order: 3, category: "starter" },
+    "John Collins": { order: 4, category: "starter" },
+    "Brook Lopez": { order: 5, category: "starter" },
+    "Bennedict Mathurin": { order: 10, category: "bench" },
+    "Bogdan Bogdanovic": { order: 11, category: "bench" },
+    "Dalano Banton": { order: 12, category: "bench" },
+    "Derrick Jones Jr.": { order: 13, category: "bench" },
+    "Isaiah Jackson": { order: 14, category: "bench" },
+    "Jordan Miller": { order: 15, category: "bench" },
+    "Kobe Sanders": { order: 16, category: "bench" },
+    "Kris Dunn": { order: 17, category: "bench" },
+    "Nicolas Batum": { order: 18, category: "bench" },
+    "TyTy Washington Jr.": { order: 19, category: "bench" },
+    "Cam Christie": { order: 20, category: "two-way" },
+    "Yanic Konan Niederhauser": { order: 21, category: "two-way" },
+  },
+  LAL: {
+    "Luka Doncic": { order: 1, category: "starter" },
+    "Austin Reaves": { order: 2, category: "starter" },
+    "Rui Hachimura": { order: 3, category: "starter" },
+    "LeBron James": { order: 4, category: "starter" },
+    "Deandre Ayton": { order: 5, category: "starter" },
+    "Adou Thiero": { order: 10, category: "bench" },
+    "Bronny James": { order: 11, category: "bench" },
+    "Dalton Knecht": { order: 12, category: "bench" },
+    "Drew Timme": { order: 13, category: "bench" },
+    "Jake LaRavia": { order: 14, category: "bench" },
+    "Jarred Vanderbilt": { order: 15, category: "bench" },
+    "Jaxson Hayes": { order: 16, category: "bench" },
+    "Luke Kennard": { order: 17, category: "bench" },
+    "Marcus Smart": { order: 18, category: "bench" },
+    "Maxi Kleber": { order: 19, category: "bench" },
+    "Kobe Bufkin": { order: 20, category: "two-way" },
+    "Nick Smith Jr.": { order: 21, category: "two-way" },
+    "Chris Manon": { order: 22, category: "two-way" },
+  },
+  MEM: {
+    "Ja Morant": { order: 1, category: "starter" },
+    "Jaylen Wells": { order: 2, category: "starter" },
+    "GG Jackson": { order: 3, category: "starter" },
+    "Zach Edey": { order: 4, category: "starter" },
+    "Scotty Pippen Jr.": { order: 5, category: "starter" },
+    "Brandon Clarke": { order: 10, category: "bench" },
+    "Cam Spencer": { order: 11, category: "bench" },
+    "Jahmai Mashack": { order: 12, category: "bench" },
+    "Javon Small": { order: 13, category: "bench" },
+    "Kentavious Caldwell-Pope": { order: 14, category: "bench" },
+    "Kyle Anderson": { order: 15, category: "bench" },
+    "Olivier-Maxence Prosper": { order: 16, category: "bench" },
+    "Santi Aldama": { order: 17, category: "bench" },
+    "Taylor Hendricks": { order: 18, category: "bench" },
+    "Ty Jerome": { order: 19, category: "bench" },
+    "Cedric Coward": { order: 20, category: "two-way" },
+    "Walter Clayton Jr.": { order: 21, category: "two-way" },
+    "Lawson Lovering": { order: 22, category: "two-way" },
+  },
+  MIN: {
+    "Anthony Edwards": { order: 1, category: "starter" },
+    "Donte DiVincenzo": { order: 2, category: "starter" },
+    "Jaden McDaniels": { order: 3, category: "starter" },
+    "Julius Randle": { order: 4, category: "starter" },
+    "Rudy Gobert": { order: 5, category: "starter" },
+    "Ayo Dosunmu": { order: 10, category: "bench" },
+    "Bones Hyland": { order: 11, category: "bench" },
+    "Joan Beringer": { order: 12, category: "bench" },
+    "Joe Ingles": { order: 13, category: "bench" },
+    "Johnny Juzang": { order: 14, category: "bench" },
+    "Julian Phillips": { order: 15, category: "bench" },
+    "Naz Reid": { order: 16, category: "bench" },
+    "Rocco Zikarsky": { order: 17, category: "bench" },
+    "Terrence Shannon Jr.": { order: 18, category: "bench" },
+    "Jaylen Clark": { order: 20, category: "two-way" },
+    "Enrique Freeman": { order: 21, category: "two-way" },
+  },
+  NOP: {
+    "Dejounte Murray": { order: 1, category: "starter" },
+    "Jordan Poole": { order: 2, category: "starter" },
+    "Herbert Jones": { order: 3, category: "starter" },
+    "Zion Williamson": { order: 4, category: "starter" },
+    "Yves Missi": { order: 5, category: "starter" },
+    "DeAndre Jordan": { order: 10, category: "bench" },
+    "Derik Queen": { order: 11, category: "bench" },
+    "Hunter Dickinson": { order: 12, category: "bench" },
+    "Jeremiah Fears": { order: 13, category: "bench" },
+    "Jordan Hawkins": { order: 14, category: "bench" },
+    "Karlo Matkovic": { order: 15, category: "bench" },
+    "Kevon Looney": { order: 16, category: "bench" },
+    "Saddiq Bey": { order: 17, category: "bench" },
+    "Trey Alexander": { order: 18, category: "bench" },
+    "Trey Murphy III": { order: 19, category: "bench" },
+    "Bryce McGowens": { order: 20, category: "two-way" },
+    "Micah Peavy": { order: 21, category: "two-way" },
+  },
+  PHX: {
+    "Devin Booker": { order: 1, category: "starter" },
+    "Jalen Green": { order: 2, category: "starter" },
+    "Dillon Brooks": { order: 3, category: "starter" },
+    "Mark Williams": { order: 4, category: "starter" },
+    "Grayson Allen": { order: 5, category: "starter" },
+    "Amir Coffey": { order: 10, category: "bench" },
+    "Cole Anthony": { order: 11, category: "bench" },
+    "Haywood Highsmith": { order: 12, category: "bench" },
+    "Jordan Goodwin": { order: 13, category: "bench" },
+    "Khaman Maluach": { order: 14, category: "bench" },
+    "Koby Brea": { order: 15, category: "bench" },
+    "Oso Ighodaro": { order: 16, category: "bench" },
+    "Rasheer Fleming": { order: 17, category: "bench" },
+    "Royce O'Neale": { order: 18, category: "bench" },
+    "Ryan Dunn": { order: 19, category: "bench" },
+    "Jamaree Bouyea": { order: 20, category: "two-way" },
+    "Collin Gillespie": { order: 21, category: "two-way" },
+    "Isaiah Livers": { order: 22, category: "two-way" },
+  },
+  POR: {
+    "Scoot Henderson": { order: 1, category: "starter" },
+    "Shaedon Sharpe": { order: 2, category: "starter" },
+    "Deni Avdija": { order: 3, category: "starter" },
+    "Jerami Grant": { order: 4, category: "starter" },
+    "Donovan Clingan": { order: 5, category: "starter" },
+    "Blake Wesley": { order: 10, category: "bench" },
+    "Caleb Love": { order: 11, category: "bench" },
+    "Damian Lillard": { order: 12, category: "bench" },
+    "Jabari Walker": { order: 13, category: "bench" },
+    "Kris Murray": { order: 14, category: "bench" },
+    "Rayan Rupert": { order: 15, category: "bench" },
+    "Robert Williams III": { order: 16, category: "bench" },
+    "Toumani Camara": { order: 17, category: "bench" },
+    "Vit Krejci": { order: 18, category: "bench" },
+    "Javonte Cooke": { order: 20, category: "two-way" },
+    "Yang Hansen": { order: 21, category: "two-way" },
+    "Sidy Cissoko": { order: 22, category: "two-way" },
+  },
+  SAC: {
+    "DeMar DeRozan": { order: 1, category: "starter" },
+    "Keegan Murray": { order: 2, category: "starter" },
+    "Domantas Sabonis": { order: 3, category: "starter" },
+    "Malik Monk": { order: 4, category: "starter" },
+    "Devin Carter": { order: 5, category: "starter" },
+    "De'Andre Hunter": { order: 10, category: "bench" },
+    "Doug McDermott": { order: 11, category: "bench" },
+    "Drew Eubanks": { order: 12, category: "bench" },
+    "Isaiah Stevens": { order: 13, category: "bench" },
+    "Maxime Raynaud": { order: 14, category: "bench" },
+    "Precious Achiuwa": { order: 15, category: "bench" },
+    "Russell Westbrook": { order: 16, category: "bench" },
+    "Zach LaVine": { order: 17, category: "bench" },
+    "Daeqwon Plowden": { order: 20, category: "two-way" },
+    "Dylan Cardwell": { order: 21, category: "two-way" },
+    "Nique Clifford": { order: 22, category: "two-way" },
+  },
+  SAS: {
+    "De'Aaron Fox": { order: 1, category: "starter" },
+    "Devin Vassell": { order: 2, category: "starter" },
+    "Harrison Barnes": { order: 3, category: "starter" },
+    "Victor Wembanyama": { order: 4, category: "starter" },
+    "Stephon Castle": { order: 5, category: "starter" },
+    "Bismack Biyombo": { order: 10, category: "bench" },
+    "Carter Bryant": { order: 11, category: "bench" },
+    "Dylan Harper": { order: 12, category: "bench" },
+    "Harrison Ingram": { order: 13, category: "bench" },
+    "Julian Champagnie": { order: 14, category: "bench" },
+    "Keldon Johnson": { order: 15, category: "bench" },
+    "Kelly Olynyk": { order: 16, category: "bench" },
+    "Lindy Waters III": { order: 17, category: "bench" },
+    "Luke Kornet": { order: 18, category: "bench" },
+    "Jordan McLaughlin": { order: 20, category: "two-way" },
+    "Stanley Umude": { order: 21, category: "two-way" },
+    "David Jones Garcia": { order: 22, category: "two-way" },
+  },
+  UTA: {
+    "Keyonte George": { order: 1, category: "starter" },
+    "Lauri Markkanen": { order: 2, category: "starter" },
+    "Walker Kessler": { order: 3, category: "starter" },
+    "Jaren Jackson Jr.": { order: 4, category: "starter" },
+    "Cody Williams": { order: 5, category: "starter" },
+    "Ace Bailey": { order: 10, category: "bench" },
+    "Brice Sensabaugh": { order: 11, category: "bench" },
+    "Isaiah Collier": { order: 12, category: "bench" },
+    "John Konchar": { order: 13, category: "bench" },
+    "Jusuf Nurkic": { order: 14, category: "bench" },
+    "Kevin Love": { order: 15, category: "bench" },
+    "Kyle Filipowski": { order: 16, category: "bench" },
+    "Svi Mykhailiuk": { order: 17, category: "bench" },
+    "Vince Williams Jr.": { order: 18, category: "bench" },
+    "Blake Hinson": { order: 20, category: "two-way" },
+    "Elijah Harkless": { order: 21, category: "two-way" },
+    "Oscar Tshiebwe": { order: 22, category: "two-way" },
   },
 };
 
@@ -348,6 +655,21 @@ const TEAM_COLORS: Record<string, { primary: string; secondary: string }> = {
   ORL: { primary: "#0077C0", secondary: "#C4CED4" },
   PHI: { primary: "#006BB6", secondary: "#ED174C" },
   TOR: { primary: "#CE1141", secondary: "#000000" },
+  // Western Conference
+  DAL: { primary: "#00538C", secondary: "#002B5E" },
+  DEN: { primary: "#0E2240", secondary: "#FEC524" },
+  GSW: { primary: "#1D428A", secondary: "#FFC72C" },
+  HOU: { primary: "#CE1141", secondary: "#000000" },
+  LAC: { primary: "#C8102E", secondary: "#1D428A" },
+  LAL: { primary: "#552583", secondary: "#FDB927" },
+  MEM: { primary: "#5D76A9", secondary: "#12173F" },
+  MIN: { primary: "#0C2340", secondary: "#236192" },
+  NOP: { primary: "#0C2340", secondary: "#C8102E" },
+  PHX: { primary: "#1D1160", secondary: "#E56020" },
+  POR: { primary: "#E03A3E", secondary: "#000000" },
+  SAC: { primary: "#5A2D81", secondary: "#63727A" },
+  SAS: { primary: "#C4CED4", secondary: "#000000" },
+  UTA: { primary: "#002B5C", secondary: "#00471B" },
 };
 
 const TEAM_NAMES: Record<string, string> = {
@@ -368,6 +690,21 @@ const TEAM_NAMES: Record<string, string> = {
   ORL: "Orlando Magic",
   PHI: "Philadelphia 76ers",
   TOR: "Toronto Raptors",
+  // Western Conference
+  DAL: "Dallas Mavericks",
+  DEN: "Denver Nuggets",
+  GSW: "Golden State Warriors",
+  HOU: "Houston Rockets",
+  LAC: "LA Clippers",
+  LAL: "Los Angeles Lakers",
+  MEM: "Memphis Grizzlies",
+  MIN: "Minnesota Timberwolves",
+  NOP: "New Orleans Pelicans",
+  PHX: "Phoenix Suns",
+  POR: "Portland Trail Blazers",
+  SAC: "Sacramento Kings",
+  SAS: "San Antonio Spurs",
+  UTA: "Utah Jazz",
 };
 
 // Compelling roster narratives for each team - creator-friendly stories
@@ -383,12 +720,27 @@ const ROSTER_NARRATIVES: Record<string, string> = {
   CHI: "The Bulls hit reset at the 2026 deadline. LaVine and Vucevic are gone. In their place: Anfernee Simons from Portland and Jaden Ivey from Detroit — two explosive young guards building around Josh Giddey. Patrick Williams remains from the previous era. It's a youth movement betting on upside over proven success.",
   CLE: "The Cavs went all-in at the deadline. James Harden arrived from the Clippers, and Darius Garland went out. It's a bold bet: pair an aging superstar scorer with their championship-caliber defense. Donovan Mitchell, Evan Mobley, and Jarrett Allen form the core. Harden adds playoff experience — and controversy. The Eastern Conference got a lot more interesting.",
   DET: "Cade Cunningham at #1 (2021) is the franchise. But Jaden Ivey was traded to Chicago at the deadline. Duncan Robinson arrived from Miami to add shooting. Ausar Thompson and Ron Holland II represent the athletic future. The Pistons bet on Cade and patience — rebuilding without the explosive guard combo everyone expected.",
-  IND: "The Haliburton trade was a heist. Sacramento gave up a future All-Star for Sabonis and picks — and Indiana hasn't looked back. But the roster evolved: Myles Turner went to Milwaukee at the deadline; Ivica Zubac arrived from the Clippers. Pascal Siakam remains the veteran anchor. This team plays fast, fun basketball.",
+  IND: "The Pacers acquired Tyrese Haliburton from Sacramento in the 2022 Domantas Sabonis trade, tracing back to the 2017 Paul George deal. Pascal Siakam arrived from Toronto at the 2024 deadline. Ivica Zubac came from the Clippers in February 2026 along with Kobe Brown, costing Bennedict Mathurin and Isaiah Jackson. Haliburton is out for the season with a torn Achilles from the 2025 Finals.",
   MIA: "Heat Culture endured Jimmy Butler's departure. At the deadline, Butler went to Golden State; Andrew Wiggins and Norman Powell came to South Beach. Bam Adebayo runs the show now. Tyler Herro scores in bunches. Jaime Jaquez Jr. (2023 All-Rookie) embodies the culture. It's a new era, but the Miami ethos remains: compete, develop, win.",
   MIL: "Giannis remains, but everything else changed. Damian Lillard was traded at the deadline for Cam Thomas and Myles Turner — a bet on youth and rim protection over the aging superstar backcourt. Kyle Kuzma adds scoring. Bobby Portis is the heart. This is Milwaukee 3.0: built around Giannis, but completely reimagined.",
   ORL: "Paolo Banchero at #1 was just the start. Franz Wagner emerged as a star. Then came the deadline blockbuster: Desmond Bane from Memphis gives them a proven playoff scorer. Jalen Suggs locks down defensively. Wendell Carter Jr. — acquired from Chicago via the Dwight Howard chain — anchors inside. Orlando is no longer rebuilding; they're contending.",
   PHI: "Trust The Process finally produced its star: Joel Embiid, drafted #3 in 2014, is now an MVP. Tyrese Maxey (#21, 2020) became an All-Star. Paul George arrived in free agency. The bench got deeper at the deadline with Quentin Grimes. When healthy, this is the East's most talented starting five.",
   TOR: "The Raptors made their move: Brandon Ingram arrived at the deadline from New Orleans, giving Scottie Barnes a true co-star. RJ Barrett came home via Knicks trade. Immanuel Quickley runs the point. Jakob Poeltl returned from San Antonio. Gradey Dick shoots the lights out. Toronto is building something special — Canadian stars, championship culture.",
+  // Western Conference
+  DAL: "Post-Luka Dallas is unrecognizable. Cooper Flagg (#1, 2025) is the new franchise cornerstone after the Anthony Davis blockbuster sent Luka to LA. Kyrie Irving remains from the championship core. PJ Washington and Daniel Gafford were acquired via trades. Klay Thompson signed as a free agent. It's a full rebuild around a generational rookie.",
+  DEN: "Nikola Jokic at #41 in 2014 is the greatest draft steal in NBA history. Three-time MVP, 2023 champion. Jamal Murray was drafted #7 in 2016. Aaron Gordon was traded from Orlando. Cameron Johnson replaced Michael Porter Jr. The Nuggets' championship window stays open as long as Jokic keeps rewriting what a center can do.",
+  GSW: "The dynasty evolves. Stephen Curry (#7, 2009) and Draymond Green (#35, 2012) anchor the core. Jimmy Butler arrived from Miami at the deadline. Kristaps Porzingis came in a 3-team deal. Andrew Wiggins was flipped for star power. The Warriors traded Jonathan Kuminga for Butler — betting on proven playoff performers over potential.",
+  HOU: "Houston's rebuild is complete. Jalen Green (#2, 2021), Jabari Smith (#3, 2022), Alperen Sengun (#16, 2021), and Amen Thompson (#4, 2023) form one of the NBA's youngest cores. Fred VanVleet signed as the veteran floor general. Then the blockbuster: Kevin Durant arrived from Phoenix in a historic 7-team trade. Rockets are all-in.",
+  LAC: "The Clippers reinvented themselves. James Harden was traded for Darius Garland from Cleveland. Kawhi Leonard is still here but the supporting cast transformed: Ivica Zubac was dealt to Indiana. Bogdan Bogdanovic came from Atlanta. John Collins arrived from Utah. Brook Lopez signed from Milwaukee. It's a new-look Clippers with Garland running the show.",
+  LAL: "The Lakers pulled off the unthinkable: trading Anthony Davis for Luka Doncic from Dallas in February 2025. LeBron James and Luka — two of the greatest playmakers ever — on the same team. Austin Reaves emerged as the undrafted gem. Rui Hachimura was traded from Washington. Dalton Knecht adds 2024 draft firepower. Hollywood has its superteam.",
+  MEM: "Ja Morant (#2, 2019) is back and the Grizzlies are dangerous again. Jaren Jackson Jr. was traded to Utah, but Desmond Bane and Zach Edey (#9, 2024) form the new frontcourt. Marcus Smart brings championship toughness from the Celtics trade. Memphis reloaded through the draft and smart deals, staying competitive in a loaded West.",
+  MIN: "Anthony Edwards (#1, 2020) is the franchise. The Karl-Anthony Towns trade to New York brought back Julius Randle and Donte DiVincenzo. Rudy Gobert anchors the defense — acquired from Utah in a massive package. Jaden McDaniels and Naz Reid are homegrown. Minnesota finally has its star, its identity, and its swagger.",
+  NOP: "Zion Williamson (#1, 2019) remains the centerpiece, but the roster around him transformed. Brandon Ingram was traded to Toronto. CJ McCollum went to Washington. In their place: Jordan Poole arrived from the 3-team WAS deal. Dejounte Murray came from Atlanta. Herb Jones and Trey Murphy are homegrown. It's Zion's team now — no more co-stars, just complementary pieces.",
+  PHX: "Everything changed. Kevin Durant was traded to Houston in a historic 7-team deal. Bradley Beal was bought out. Only Devin Booker (#13, 2015) remains from the Big 3 era. Jalen Green and Dillon Brooks arrived from the KD trade. Mark Williams came from Charlotte. It's a full reset around Booker — the franchise's one constant through every era.",
+  POR: "The post-Dame rebuild is in full swing. Scoot Henderson (#3, 2023) is the point guard of the future. Anfernee Simons was traded to Chicago. Shaedon Sharpe adds athleticism. Donovan Clingan (#7, 2024) anchors the paint. Deni Avdija arrived from Washington. Jerami Grant provides veteran scoring. Portland is young, long, and building toward something.",
+  SAC: "De'Aaron Fox was traded to San Antonio, ending an era. DeMar DeRozan arrived via sign-and-trade from Chicago. Domantas Sabonis — acquired from Indiana for Tyrese Haliburton — is the engine. Keegan Murray (#4, 2022) is the homegrown star. Zach LaVine came from Chicago. It's a retooled roster searching for its identity after losing its franchise point guard.",
+  SAS: "Victor Wembanyama (#1, 2023) is the future of basketball. Stephon Castle (#4, 2024) adds backcourt talent. Then the blockbuster: De'Aaron Fox arrived from Sacramento, giving Wemby an elite point guard. Harrison Barnes came in the DeRozan deal. Keldon Johnson is the homegrown veteran. San Antonio is building something special — again.",
+  UTA: "Full rebuild mode. The Gobert and Mitchell trades netted a war chest of picks and young players. Lauri Markkanen stayed and signed an extension. Walker Kessler came from the Gobert deal. Keyonte George (#16, 2023) runs the point. Then the surprise: Jaren Jackson Jr. arrived from Memphis at the deadline. Ace Bailey (#5, 2025) adds lottery upside. Utah is stockpiling talent for the next era.",
 };
 
 export async function GET(
@@ -419,6 +771,12 @@ export async function GET(
     return JSON.parse(content);
   });
   
+  // Map player names to their tree files (for checking isHomegrown flag)
+  const treeMap = new Map<string, TreeFile>();
+  for (const t of trees) {
+    treeMap.set(t.tree.name, t);
+  }
+
   // Track unique nodes by a key (name + date)
   const nodeMap = new Map<string, FlowNode>();
   const edges: FlowEdge[] = [];
@@ -519,7 +877,9 @@ export async function GET(
       }
     }
     
-    // Process children
+    // Process children (assetsGivenUp only — NOT tradeChain)
+    // tradeChain tracks a player's career journey, which is not part of the acquisition tree.
+    // We only show what assets were traded away at each step.
     if (node.assetsGivenUp) {
       for (const child of node.assetsGivenUp) {
         processNode(child, nodeId, false, currentRosterId);
@@ -534,33 +894,28 @@ export async function GET(
     processNode(treeFile.tree, null, true);
   }
   
-  // Second pass: Find the oldest node in each roster player's chain
-  // Only mark origins for chains that include at least one trade
+  // Second pass: Find the single oldest node across ALL chains for the team
+  // This marks only the earliest influence as the origin (e.g., Dwight Howard for ORL)
   const originNodeKeys = new Set<string>();
   
+  let globalOldestKey: string | null = null;
+  let globalOldestDate = Infinity;
+  
   for (const [rosterId, nodeKeys] of rosterToNodes.entries()) {
-    // Skip chains that don't have any trades (direct signings, waivers, etc.)
-    if (!rosterHasTrades.get(rosterId)) {
-      continue;
-    }
-    
-    let oldestKey: string | null = null;
-    let oldestDate = Infinity;
-    
     for (const nodeKey of nodeKeys) {
       const node = nodeMap.get(nodeKey);
       if (node && node.data.date) {
         const dateMs = parseDate(node.data.date);
-        if (dateMs < oldestDate) {
-          oldestDate = dateMs;
-          oldestKey = nodeKey;
+        if (dateMs < globalOldestDate) {
+          globalOldestDate = dateMs;
+          globalOldestKey = nodeKey;
         }
       }
     }
-    
-    if (oldestKey) {
-      originNodeKeys.add(oldestKey);
-    }
+  }
+  
+  if (globalOldestKey) {
+    originNodeKeys.add(globalOldestKey);
   }
   
   // Mark origin nodes
@@ -580,8 +935,12 @@ export async function GET(
     const playerName = rosterNode.data.label;
     const hasTrades = rosterHasTrades.get(rosterId) || false;
     
-    // Homegrown = no trade history (drafted or signed directly)
-    rosterNode.data.isHomegrown = !hasTrades;
+    // Homegrown = drafted by this team OR UDFA whose first NBA team is this team
+    // Check acquisitionType from data file, plus explicit isHomegrown flag for UDFAs
+    const acqType = rosterNode.data.acquisitionType || "";
+    const treeFile = treeMap.get(playerName);
+    const fileHomegrown = treeFile?.tree?.isHomegrown === true;
+    rosterNode.data.isHomegrown = (acqType === "draft" || acqType === "draft-night-trade" || fileHomegrown);
     
     // Set roster order and category
     const teamRosterOrder = ROSTER_ORDERS[team] || {};

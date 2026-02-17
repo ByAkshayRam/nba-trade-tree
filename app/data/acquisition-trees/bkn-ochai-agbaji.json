@@ -2,17 +2,40 @@
   "_meta": {
     "team": "BKN",
     "player": "Ochai Agbaji",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2026,
+    "source": "ESPN, NBA.com, YES Network",
+    "originYear": 2022,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Ochai Agbaji",
     "acquisitionType": "trade",
-    "date": "2026-02-06",
+    "date": "2026-02-05",
     "currentTeam": "BKN",
-    "tradePartner": "TOR"
+    "tradePartner": "TOR",
+    "tradeDescription": "3-team trade: BKN received Agbaji and 2032 2nd from Toronto, plus cash from LAC",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Vanja Marinkovic (draft rights)",
+        "acquisitionType": "draft",
+        "date": "2019-06-20",
+        "draftPick": 60,
+        "draftRound": 2,
+        "tradeDescription": "Draft rights to 2019 2nd-rounder Vanja Marinkovic sent to LA Clippers as part of 3-team Chris Paul trade",
+        "isOrigin": true
+      }
+    ],
+    "tradeChain": {
+      "type": "player",
+      "name": "Ochai Agbaji",
+      "acquisitionType": "draft",
+      "date": "2022-06-23",
+      "draftPick": 14,
+      "draftRound": 1,
+      "note": "Originally drafted #14 by Cleveland Cavaliers from Kansas",
+      "isOrigin": true
+    }
   }
 }

@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "GSW",
+    "player": "Gui Santos",
+    "source": "Basketball-Reference, ESPN",
+    "originYear": 2022,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Gui Santos",
+    "acquisitionType": "draft",
+    "date": "2022-06-23",
+    "currentTeam": "GSW",
+    "draftPick": 55,
+    "draftRound": 2,
+    "note": "Brazilian forward, drafted 55th overall by GSW in 2022",
+    "isOrigin": true
+  }
+}

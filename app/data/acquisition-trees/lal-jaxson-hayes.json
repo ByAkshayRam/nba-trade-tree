@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "LAL",
+    "player": "Jaxson Hayes",
+    "source": "Basketball-Reference",
+    "originYear": 2023,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jaxson Hayes",
+    "acquisitionType": "free-agent",
+    "date": "2025-07-06",
+    "currentTeam": "LAL",
+    "note": "Center re-signed with Lakers as free agent, originally signed July 2023",
+    "isOrigin": true
+  }
+}

@@ -2,10 +2,10 @@
   "_meta": {
     "team": "IND",
     "player": "Tyrese Haliburton",
-    "source": "NBA Trade History Research",
-    "originYear": 2020,
-    "depth": 4,
-    "lastUpdated": "2026-02-11"
+    "source": "Basketball-Reference, ESPN, NBA Trade History",
+    "originYear": 2010,
+    "depth": 3,
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
@@ -14,8 +14,7 @@
     "date": "2022-02-08",
     "currentTeam": "IND",
     "tradePartner": "SAC",
-    "tradeDescription": "Pacers fleece Kings for Haliburton in Sabonis trade",
-    "note": "2x All-Star, elite playmaker, future franchise cornerstone",
+    "note": "Guard from Iowa State, 12th overall pick in 2020 NBA Draft. Acquired alongside Buddy Hield and Tristan Thompson.",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -23,71 +22,43 @@
         "acquisitionType": "trade",
         "date": "2017-07-07",
         "tradePartner": "OKC",
-        "tradeDescription": "Acquired from Thunder for Victor Oladipo and Sabonis",
-        "note": "2x All-Star, now thriving in Sacramento",
+        "note": "Acquired in Paul George trade",
         "assetsGivenUp": [
           {
             "type": "player",
-            "name": "Victor Oladipo",
-            "acquisitionType": "trade",
-            "date": "2016-06-23",
-            "tradePartner": "ORL",
-            "tradeDescription": "Acquired from Magic for Serge Ibaka",
-            "note": "2x All-Star, had career resurgence in Indy",
-            "assetsGivenUp": [
-              {
-                "type": "player",
-                "name": "Serge Ibaka",
-                "acquisitionType": "trade",
-                "date": "2016-06-23",
-                "tradePartner": "OKC",
-                "tradeDescription": "Acquired from Thunder for Oladipo and Sabonis",
-                "note": "3-and-D big man, traded same day",
-                "assetsGivenUp": [
-                  {
-                    "type": "player",
-                    "name": "Victor Oladipo",
-                    "acquisitionType": "draft",
-                    "date": "2013-06-27",
-                    "draftPick": 2,
-                    "draftRound": 1,
-                    "tradeDescription": "Magic drafted Oladipo #2 overall with their pick",
-                    "note": "Pacers got Oladipo from Magic who drafted him",
-                    "isOrigin": true
-                  },
-                  {
-                    "type": "player",
-                    "name": "Domantas Sabonis",
-                    "acquisitionType": "draft",
-                    "date": "2016-06-23",
-                    "draftPick": 11,
-                    "draftRound": 1,
-                    "tradeDescription": "Thunder drafted Sabonis #11 overall",
-                    "note": "Son of Arvydas Sabonis",
-                    "isOrigin": true
-                  }
-                ]
-              }
-            ]
+            "name": "Paul George",
+            "acquisitionType": "draft",
+            "date": "2010-06-24",
+            "draftPick": 10,
+            "draftRound": 1,
+            "note": "Forward from Fresno State, 10th overall pick in 2010 NBA Draft",
+            "isOrigin": true
           }
         ]
       },
       {
         "type": "player",
+        "name": "Justin Holiday",
+        "acquisitionType": "free-agent",
+        "date": "2021-08-06",
+        "note": "Signed as free agent in 2021",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
         "name": "Jeremy Lamb",
-        "acquisitionType": "trade",
-        "date": "2019-02-07",
-        "tradePartner": "CHA",
-        "tradeDescription": "Filler in trade",
+        "acquisitionType": "free-agent",
+        "date": "2019-07-06",
+        "note": "Signed as free agent in 2019",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2027 2nd Round Pick",
-        "acquisitionType": "original",
-        "date": "2022-02-08",
-        "tradeDescription": "Indiana's own 2nd round pick",
-        "isOrigin": true
+        "name": "2023 2nd Round Pick",
+        "isOrigin": true,
+        "note": "Sent to SAC in Haliburton trade",
+        "becamePlayer": "Jalen Slawson",
+        "draftPick": 54
       }
     ]
   }

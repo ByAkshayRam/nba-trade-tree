@@ -1,0 +1,41 @@
+{
+  "_meta": {
+    "team": "DAL",
+    "player": "Daniel Gafford",
+    "source": "ESPN, Basketball-Reference",
+    "originYear": 2019,
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Daniel Gafford",
+    "acquisitionType": "trade",
+    "date": "2024-02-08",
+    "currentTeam": "DAL",
+    "tradePartner": "WAS",
+    "tradeDescription": "Dallas acquired Gafford from Washington",
+    "note": "Arkansas center, 2019 #38 overall pick by Chicago",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Richaun Holmes",
+        "acquisitionType": "trade",
+        "date": "2023-07-06",
+        "tradePartner": "SAC",
+        "tradeDescription": "Dallas acquired Holmes from Sacramento",
+        "note": "Bowling Green center, undrafted 2015",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2028 DAL 1st Round Pick",
+        "acquisitionType": "original",
+        "date": "2028-06-26",
+        "note": "Dallas own 2028 first-round pick",
+        "isOrigin": true
+      }
+    ]
+  }
+}

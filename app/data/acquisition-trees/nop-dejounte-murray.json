@@ -1,0 +1,85 @@
+{
+  "_meta": {
+    "team": "NOP",
+    "player": "Dejounte Murray",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2016,
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Dejounte Murray",
+    "acquisitionType": "trade",
+    "date": "2024-07-06",
+    "currentTeam": "NOP",
+    "tradePartner": "ATL",
+    "tradeDescription": "Hawks trade Murray to Pelicans for Daniels, Nance Jr., Liddell, Zeller and 2 1st round picks",
+    "note": "All-Star guard acquired from Atlanta",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Dyson Daniels",
+        "acquisitionType": "draft",
+        "date": "2022-06-23",
+        "draftPick": 8,
+        "draftRound": 1,
+        "note": "Guard drafted 8th overall in 2022, Australian playmaker",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Larry Nance Jr.",
+        "acquisitionType": "trade",
+        "date": "2022-02-08",
+        "tradePartner": "POR",
+        "note": "Forward acquired from Portland in CJ McCollum trade",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "CJ McCollum",
+            "acquisitionType": "trade",
+            "date": "2022-02-08",
+            "tradePartner": "POR",
+            "note": "Guard acquired from Portland in 2022 — shared trade cost with Saddiq Bey, Poole trees",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "E.J. Liddell",
+        "acquisitionType": "draft",
+        "date": "2022-06-23",
+        "draftPick": 41,
+        "draftRound": 2,
+        "note": "Forward drafted in 2nd round, Ohio State",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Cody Zeller",
+        "acquisitionType": "free-agent",
+        "date": "2024-07-06",
+        "note": "Center signed and immediately included in Murray trade",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2025 1st Round Pick (via LAL)",
+        "acquisitionType": "trade",
+        "date": "2025-06-25",
+        "becamePlayer": "Drake Powell",
+        "note": "Via Lakers, became 22nd overall pick",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2027 1st Round Pick",
+        "acquisitionType": "original",
+        "note": "Least favorable of Bucks/Pelicans, top-4 protected",
+        "isOrigin": true
+      }
+    ]
+  }
+}

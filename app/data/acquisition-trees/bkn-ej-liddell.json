@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "BKN",
+    "player": "E.J. Liddell",
+    "source": "Basketball-Reference, SI, Eleven Warriors",
+    "originYear": 2022,
+    "depth": 2,
+    "lastUpdated": "2026-02-15"
+  },
+  "tree": {
+    "type": "player",
+    "name": "E.J. Liddell",
+    "acquisitionType": "free-agent",
+    "date": "2025-09-03",
+    "currentTeam": "BKN",
+    "note": "Two-way contract - signed after being waived by various teams",
+    "isOrigin": true
+  }
+}

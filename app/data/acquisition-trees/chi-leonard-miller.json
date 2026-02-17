@@ -2,18 +2,40 @@
   "_meta": {
     "team": "CHI",
     "player": "Leonard Miller",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2023,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "ESPN, NBA.com",
+    "originYear": 2021,
+    "depth": 2,
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Leonard Miller",
-    "acquisitionType": "draft",
-    "date": "2023-06-22",
+    "acquisitionType": "trade",
+    "date": "2026-02-05",
     "currentTeam": "CHI",
-    "draftPick": 33,
-    "draftRound": 2
+    "tradePartner": "MIN",
+    "tradeDescription": "Bulls traded Ayo Dosunmu and Julian Phillips to Timberwolves for Rob Dillingham, Leonard Miller, and four 2nd-round picks",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Ayo Dosunmu",
+        "acquisitionType": "draft",
+        "date": "2021-07-29",
+        "draftPick": 38,
+        "draftRound": 2,
+        "note": "Drafted 38th overall by Chicago Bulls from Illinois in 2021",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Julian Phillips",
+        "acquisitionType": "draft",
+        "date": "2023-06-22",
+        "draftPick": 54,
+        "draftRound": 2,
+        "note": "Drafted 54th overall by Chicago Bulls from Tennessee in 2023",
+        "isOrigin": true
+      }
+    ]
   }
 }

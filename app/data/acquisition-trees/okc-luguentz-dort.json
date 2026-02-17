@@ -11,11 +11,11 @@
   "tree": {
     "type": "player",
     "name": "Luguentz Dort",
-    "acquisitionType": "free-agent",
+    "acquisitionType": "undrafted",
     "date": "2019-07-22",
     "currentTeam": "OKC",
     "tradeDescription": "Signed as undrafted free agent",
-    "note": "Arizona State product, elite on-ball defender. UDFA find, homegrown talent",
+    "note": "Arizona State product, signed as undrafted free agent",
     "isOrigin": true
   }
 }

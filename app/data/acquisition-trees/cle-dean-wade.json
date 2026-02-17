@@ -2,17 +2,20 @@
   "_meta": {
     "team": "CLE",
     "player": "Dean Wade",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2021,
+    "source": "Wikipedia, Basketball-Reference, NBA.com verified",
+    "originYear": 2019,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Dean Wade",
-    "acquisitionType": "free-agent",
-    "date": "2021-10-01",
+    "acquisitionType": "undrafted",
+    "date": "2019-07-09",
     "currentTeam": "CLE",
-    "note": "Homegrown role player"
+    "note": "Undrafted forward from Kansas State, signed two-way contract after 2019 NBA Draft",
+    "isOrigin": true,
+    "assetsGivenUp": [],
+    "espnId": "3912848"
   }
 }

@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "SAC",
+    "player": "Precious Achiuwa",
+    "source": "Basketball-Reference SAC 2025-26 Transactions",
+    "originYear": 2020,
+    "depth": 1,
+    "lastUpdated": "2026-02-17"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Precious Achiuwa",
+    "acquisitionType": "free-agent",
+    "date": "2025-11-04",
+    "currentTeam": "SAC",
+    "note": "Forward originally drafted 20th overall by Miami in 2020. Signed as free agent.",
+    "isOrigin": true
+  }
+}

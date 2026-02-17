@@ -1,0 +1,104 @@
+{
+  "_meta": {
+    "team": "SAC",
+    "player": "De'Andre Hunter",
+    "source": "Basketball-Reference SAC 2025-26 Transactions",
+    "originYear": 2019,
+    "depth": 4,
+    "lastUpdated": "2026-02-17"
+  },
+  "tree": {
+    "type": "player",
+    "name": "De'Andre Hunter",
+    "acquisitionType": "trade",
+    "date": "2026-02-01",
+    "currentTeam": "SAC",
+    "tradePartner": "CLE",
+    "tradeDescription": "3-team trade: SAC sent Keon Ellis and Dennis Schroder to CLE; SAC sent Dario Saric and 2029 2nd to CHI; CLE sent Hunter to SAC; CHI sent Emanuel Miller to CLE; CLE sent 2027 2nd to CHI",
+    "note": "Forward originally drafted 4th overall by Atlanta in 2019",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Keon Ellis",
+        "acquisitionType": "undrafted",
+        "date": "2022-07-02",
+        "note": "Undrafted guard signed to two-way contract, later converted",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Dennis Schroder",
+        "acquisitionType": "trade",
+        "date": "2025-07-07",
+        "tradePartner": "DET",
+        "tradeDescription": "Kings traded 2026 2nd (CHO own) to Pistons for Schroder and 2029 2nd",
+        "note": "Veteran guard",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2026 2nd Round Pick (CHO)",
+            "acquisitionType": "original",
+            "date": "2025-07-07",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Dario Saric",
+        "acquisitionType": "trade",
+        "date": "2025-07-13",
+        "tradePartner": "DEN",
+        "tradeDescription": "Kings traded Jonas Valanciunas to Nuggets for Saric and trade exceptions",
+        "note": "Veteran forward",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Jonas Valanciunas",
+            "acquisitionType": "trade",
+            "date": "2025-02-05",
+            "tradePartner": "WAS",
+            "tradeDescription": "Kings traded Sidy Cissoko, 2028 2nd (DEN own), and 2029 2nd (SAC own) to Wizards for Valanciunas",
+            "note": "Veteran center",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Sidy Cissoko",
+                "acquisitionType": "trade",
+                "date": "2025-02-03",
+                "tradePartner": "SAS",
+                "tradeDescription": "Received from Spurs in the De'Aaron Fox 3-team trade",
+                "note": "Young wing from Spurs",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2028 2nd Round Pick (DEN)",
+                "acquisitionType": "trade",
+                "date": "2025-02-03",
+                "note": "Received from Spurs in Fox trade, DEN own",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2029 2nd Round Pick (SAC)",
+                "acquisitionType": "original",
+                "date": "2025-02-05",
+                "note": "Sacramento's own 2nd round pick",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2029 2nd Round Pick",
+        "acquisitionType": "trade",
+        "date": "2025-07-07",
+        "note": "Acquired from DET in Schroder trade, sent to CHI in Hunter deal",
+        "isOrigin": true
+      }
+    ]
+  }
+}

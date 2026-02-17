@@ -2,18 +2,49 @@
   "_meta": {
     "team": "ATL",
     "player": "Dyson Daniels",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2024,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "NBA/ESPN Trade History",
+    "originYear": 2019,
+    "depth": 3,
+    "lastUpdated": "2026-02-14"
   },
   "tree": {
     "type": "player",
     "name": "Dyson Daniels",
     "acquisitionType": "trade",
-    "date": "2024-09-01",
+    "date": "2024-06-27",
     "currentTeam": "ATL",
     "tradePartner": "NOP",
-    "note": "Defensive guard"
+    "tradeDescription": "Hawks acquire Dyson Daniels from Pelicans",
+    "note": "Australian guard, elite perimeter defender",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "AJ Griffin",
+        "acquisitionType": "draft",
+        "date": "2022-06-23",
+        "draftPick": 16,
+        "draftRound": 1,
+        "tradeDescription": "Hawks drafted Griffin with their own pick",
+        "note": "Duke sharpshooter, lottery talent who slipped due to injury concerns",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2022 #16 Pick",
+            "acquisitionType": "original",
+            "date": "2022-05-17",
+            "becamePlayer": "AJ Griffin",
+            "tradeDescription": "Hawks own pick from 43-39 season",
+            "note": "Hawks made play-in tournament, pick landed at #16"
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2025 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2024-06-27",
+        "tradeDescription": "Hawks own 2025 2nd included in Daniels trade"
+      }
+    ]
   }
 }

@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "team": "PHX",
+    "player": "Isaiah Livers",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2021,
+    "depth": 3,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Isaiah Livers",
+    "acquisitionType": "free-agent",
+    "date": "2025-07-08",
+    "currentTeam": "PHX",
+    "tradeDescription": "Signed two-way contract after missing 2024-25 season due to hip surgery",
+    "note": "Michigan forward, signed two-way contract after recovering from hip surgery",
+    "isOrigin": true
+  }
+}

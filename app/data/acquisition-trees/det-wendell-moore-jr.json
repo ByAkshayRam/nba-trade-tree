@@ -2,18 +2,18 @@
   "_meta": {
     "team": "DET",
     "player": "Wendell Moore Jr.",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "Basketball-Reference DET 2026 transactions",
     "originYear": 2022,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-17"
   },
   "tree": {
     "type": "player",
     "name": "Wendell Moore Jr.",
-    "acquisitionType": "draft",
-    "date": "2022-06-23",
+    "acquisitionType": "free-agent",
+    "date": "2025-11-10",
     "currentTeam": "DET",
-    "draftPick": 26,
-    "draftRound": 1
+    "note": "Guard from Duke, originally drafted 26th overall by MIN in 2022. Traded to DET Jul 2024, waived Feb 2025, re-signed to two-way contract Nov 2025.",
+    "isOrigin": true
   }
 }

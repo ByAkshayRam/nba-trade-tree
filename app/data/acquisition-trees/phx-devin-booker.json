@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "PHX",
+    "player": "Devin Booker",
+    "source": "ESPN, Basketball-Reference",
+    "originYear": 2015,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Devin Booker",
+    "acquisitionType": "draft",
+    "date": "2015-06-25",
+    "currentTeam": "PHX",
+    "draftPick": 13,
+    "draftRound": 1,
+    "note": "Kentucky guard, drafted 13th overall by Phoenix",
+    "isOrigin": true
+  }
+}

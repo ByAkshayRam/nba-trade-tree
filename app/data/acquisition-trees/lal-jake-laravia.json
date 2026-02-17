@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "LAL",
+    "player": "Jake LaRavia",
+    "source": "ESPN, Basketball-Reference, Lakers Nation",
+    "originYear": 2022,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jake LaRavia",
+    "acquisitionType": "free-agent",
+    "date": "2025-07-06",
+    "currentTeam": "LAL",
+    "note": "Forward signed 2-year $12M deal with Lakers after strong finish with Sacramento",
+    "isOrigin": true
+  }
+}

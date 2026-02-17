@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "team": "POR",
+    "player": "Javonte Cooke",
+    "source": "ESPN roster, Basketball-Reference draft records",
+    "originYear": 2022,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Javonte Cooke",
+    "acquisitionType": "undrafted",
+    "date": "2024-09-01",
+    "currentTeam": "POR",
+    "note": "Undrafted guard, Mars Hill College",
+    "isOrigin": true,
+    "assetsGivenUp": []
+  }
+}

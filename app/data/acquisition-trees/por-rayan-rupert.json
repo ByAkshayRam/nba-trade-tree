@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "team": "POR",
+    "player": "Rayan Rupert",
+    "source": "Basketball-Reference.com 2023 NBA Draft",
+    "originYear": 2023,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Rayan Rupert",
+    "acquisitionType": "draft",
+    "date": "2023-06-22",
+    "currentTeam": "POR",
+    "draftPick": 43,
+    "draftRound": 2,
+    "note": "Drafted 43rd overall in 2023, French international guard",
+    "isOrigin": true,
+    "assetsGivenUp": []
+  }
+}

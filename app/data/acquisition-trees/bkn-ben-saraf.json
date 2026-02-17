@@ -2,18 +2,71 @@
   "_meta": {
     "team": "BKN",
     "player": "Ben Saraf",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2025,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "ESPN, NBA.com, Wikipedia",
+    "originYear": 2008,
+    "depth": 7,
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Ben Saraf",
     "acquisitionType": "draft",
-    "date": "2025-06-26",
+    "date": "2025-06-25",
+    "draftPick": 26,
+    "draftRound": 1,
     "currentTeam": "BKN",
-    "draftPick": 37,
-    "draftRound": 2
+    "note": "Israeli guard, drafted with NYK's own pick acquired in Mikal Bridges trade",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2025 NYK 1st Round Pick (#26)",
+        "acquisitionType": "trade",
+        "date": "2024-06-26",
+        "tradePartner": "NYK",
+        "becamePlayer": "Ben Saraf",
+        "tradeDescription": "Knicks sent Bojan Bogdanovic, five 1st-round picks (incl. NYK 2025), 2028 swap, and a 2nd-rounder to Nets for Mikal Bridges",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Mikal Bridges",
+            "acquisitionType": "trade",
+            "date": "2023-02-09",
+            "tradePartner": "PHX",
+            "tradeDescription": "Acquired from Phoenix in Kevin Durant trade. BKN sent KD and TJ Warren to PHX for Cam Johnson, Mikal Bridges, 4 first-round picks, and pick swap rights.",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Kevin Durant",
+                "acquisitionType": "trade",
+                "date": "2019-07-07",
+                "tradePartner": "GSW",
+                "tradeDescription": "Sign-and-trade: Nets sent D'Angelo Russell, Treveon Graham, and Shabazz Napier to Warriors for Kevin Durant and a protected 2020 1st round pick",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "D'Angelo Russell",
+                    "acquisitionType": "trade",
+                    "date": "2017-06-22",
+                    "tradePartner": "LAL",
+                    "tradeDescription": "Nets traded Brook Lopez and the 27th pick (Kyle Kuzma) to Lakers for D'Angelo Russell and Timofey Mozgov",
+                    "assetsGivenUp": [
+                      {
+                        "type": "player",
+                        "name": "Brook Lopez",
+                        "acquisitionType": "draft",
+                        "date": "2008-06-26",
+                        "draftPick": 10,
+                        "note": "Drafted 10th overall by Brooklyn (then New Jersey Nets) in 2008 NBA Draft",
+                        "isOrigin": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

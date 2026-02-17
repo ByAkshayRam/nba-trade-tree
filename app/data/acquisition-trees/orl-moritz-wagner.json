@@ -2,17 +2,18 @@
   "_meta": {
     "team": "ORL",
     "player": "Moritz Wagner",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "NBA.com/Spotrac - Feb 2026",
     "originYear": 2021,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
     "name": "Moritz Wagner",
-    "acquisitionType": "trade",
-    "date": "2021-03-25",
+    "acquisitionType": "free-agent",
+    "date": "2021-04-27",
     "currentTeam": "ORL",
-    "tradePartner": "BOS"
+    "note": "Signed rest-of-season deal after being waived by Boston",
+    "isOrigin": true
   }
 }

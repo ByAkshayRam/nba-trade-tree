@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "team": "CHI",
+    "player": "Yuki Kawamura",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2025,
+    "depth": 1,
+    "lastUpdated": "2026-02-15"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Yuki Kawamura",
+    "acquisitionType": "undrafted",
+    "date": "2025-08-15",
+    "currentTeam": "CHI",
+    "note": "Japanese guard, 5'7\" playmaker signed to two-way contract. Former Japan national team player",
+    "isOrigin": true,
+    "assetsGivenUp": []
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "team": "DEN",
+    "player": "Aaron Gordon",
+    "source": "ESPN, Basketball-Reference, NBA.com, Wikipedia",
+    "originYear": 2014,
+    "depth": 5,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Aaron Gordon",
+    "acquisitionType": "trade",
+    "date": "2021-03-25",
+    "currentTeam": "DEN",
+    "tradePartner": "ORL",
+    "tradeDescription": "Traded from Orlando Magic with Gary Clark for Gary Harris, RJ Hampton, and 2025 1st round pick",
+    "note": "Forward originally drafted 4th overall by Orlando in 2014",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Gary Harris",
+        "acquisitionType": "draft-night-trade",
+        "date": "2014-06-26",
+        "tradePartner": "CHI",
+        "tradeDescription": "Acquired via draft-night trade from Chicago Bulls",
+        "draftPick": 19,
+        "draftRound": 1,
+        "note": "Originally drafted 19th by Chicago, traded to Denver with Jusuf Nurkic",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      },
+      {
+        "type": "player",
+        "name": "RJ Hampton",
+        "acquisitionType": "draft-night-trade",
+        "date": "2020-11-18",
+        "tradePartner": "NOP",
+        "tradeDescription": "Acquired from New Orleans in 4-team Jrue Holiday deal (MIL/NOP/OKC/DEN)",
+        "draftPick": 24,
+        "draftRound": 1,
+        "note": "Originally drafted 24th by Milwaukee, traded to Denver",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2023 DEN 1st Round Pick",
+            "acquisitionType": "original",
+            "date": "2020-11-24",
+            "becamePlayer": "Nick Smith Jr.",
+            "note": "Denver's 2023 first-round pick sent to OKC in 4-team Jrue Holiday deal, became #27 overall",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2025 DEN 1st Round Pick",
+        "acquisitionType": "original",
+        "date": "2021-03-25",
+        "becamePlayer": "Tyler Smith",
+        "note": "Denver's 2025 1st round pick (became #25 overall, top-5 protected)",
+        "isOrigin": true
+      }
+    ]
+  }
+}

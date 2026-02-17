@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "HOU",
+    "player": "Isaiah Crawford",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Isaiah Crawford",
+    "acquisitionType": "undrafted",
+    "date": "2024-07-01",
+    "currentTeam": "HOU",
+    "note": "Undrafted free agent, developmental prospect",
+    "isOrigin": true
+  }
+}

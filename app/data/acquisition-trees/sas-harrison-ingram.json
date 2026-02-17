@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "SAS",
+    "player": "Harrison Ingram",
+    "source": "NBA Draft History",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Harrison Ingram",
+    "acquisitionType": "draft",
+    "date": "2024-06-26",
+    "currentTeam": "SAS",
+    "draftPick": 48,
+    "draftRound": 2,
+    "note": "Forward drafted 48th overall from North Carolina",
+    "isOrigin": true
+  }
+}

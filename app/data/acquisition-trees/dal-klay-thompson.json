@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "DAL",
+    "player": "Klay Thompson",
+    "source": "ESPN, Basketball-Reference",
+    "originYear": 2011,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Klay Thompson",
+    "acquisitionType": "sign-and-trade",
+    "date": "2024-07-01",
+    "currentTeam": "DAL",
+    "tradePartner": "GSW",
+    "note": "Washington State guard, 2011 #11 overall pick by Golden State. Signed via 6-team sign-and-trade from Warriors.",
+    "isOrigin": true,
+    "assetsGivenUp": []
+  }
+}

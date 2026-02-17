@@ -1,0 +1,23 @@
+{
+  "_meta": {
+    "team": "PHI",
+    "player": "Charles Bassey",
+    "nbaId": 1629646,
+    "espnId": 4397886,
+    "source": "Basketball-Reference Transaction Log",
+    "originYear": 2026,
+    "depth": 1,
+    "lastUpdated": "2026-02-16",
+    "accuracy": "high"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Charles Bassey",
+    "acquisitionType": "free-agent",
+    "date": "2026-01-26",
+    "currentTeam": "PHI",
+    "note": "Signed to 10-day contract, then 2nd 10-day on February 5. Originally drafted by Philadelphia in 2021 (#53 overall).",
+    "isOrigin": true,
+    "espnId": "4397886"
+  }
+}

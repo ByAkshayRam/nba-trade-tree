@@ -2,9 +2,9 @@
   "_meta": {
     "team": "WAS",
     "player": "Trae Young",
-    "source": "NBA Trade History Research",
-    "originYear": 2018,
-    "depth": 4,
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2021,
+    "depth": 2,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -14,24 +14,21 @@
     "date": "2026-02-06",
     "currentTeam": "WAS",
     "tradePartner": "ATL",
-    "tradeDescription": "Wizards acquire Ice Trae at 2026 deadline for picks and young players",
-    "note": "3x All-Star, elite playmaker joins AD in DC",
+    "tradeDescription": "Blockbuster deadline deal",
+    "note": "3x All-Star, elite playmaker",
     "assetsGivenUp": [
       {
         "type": "pick",
-        "name": "2026 Unprotected 1st (WAS)",
+        "name": "2026 1st Round Pick",
         "acquisitionType": "original",
         "date": "2026-02-06",
-        "tradeDescription": "Washington's own 2026 unprotected first (likely lottery)",
-        "note": "Wizards gave up significant draft capital",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2028 1st Round Pick (WAS)",
+        "name": "2028 1st Round Pick",
         "acquisitionType": "original",
         "date": "2026-02-06",
-        "tradeDescription": "Washington's own 2028 first",
         "isOrigin": true
       },
       {
@@ -40,10 +37,6 @@
         "acquisitionType": "draft",
         "date": "2021-07-29",
         "draftPick": 15,
-        "draftRound": 1,
-        "currentTeam": "ATL",
-        "tradeDescription": "Wizards drafted with their own pick",
-        "note": "Gonzaga sharpshooter, solid rotation player",
         "isOrigin": true
       }
     ]

@@ -2,16 +2,18 @@
   "_meta": {
     "team": "MIL",
     "player": "AJ Green",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "NBA/ESPN Trade History Research",
     "originYear": 2024,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
     "name": "AJ Green",
     "acquisitionType": "free-agent",
     "date": "2024-07-01",
-    "currentTeam": "MIL"
+    "currentTeam": "MIL",
+    "note": "Signed as undrafted free agent from Northern Iowa",
+    "isOrigin": true
   }
 }

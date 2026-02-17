@@ -4,9 +4,9 @@
     "player": "Shai Gilgeous-Alexander",
     "source": "NBA/ESPN Trade History Research",
     "sourceUrl": "https://www.basketball-reference.com/players/g/gilMDSsha01.html",
-    "originYear": 2008,
-    "depth": 6,
-    "lastUpdated": "2026-02-10"
+    "originYear": 2010,
+    "depth": 8,
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
@@ -15,8 +15,8 @@
     "date": "2019-07-10",
     "tradePartner": "LAC",
     "currentTeam": "OKC",
-    "tradeDescription": "Thunder acquire SGA, Gallinari, and massive pick haul from Clippers for Paul George",
-    "note": "2x All-Star, MVP candidate, 2025 scoring champion",
+    "tradeDescription": "Acquired from Clippers with Danilo Gallinari, 5 first-round picks, and 2 pick swaps for Paul George",
+    "note": "2x All-Star, drafted #11 overall by LAC in 2018",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -25,7 +25,7 @@
         "date": "2017-06-30",
         "tradePartner": "IND",
         "tradeDescription": "Acquired from Indiana for Victor Oladipo and Domantas Sabonis",
-        "note": "7x All-Star, MVP candidate. Only played 2 seasons in OKC",
+        "note": "9x All-Star, played 2 seasons in OKC (2017-2019)",
         "assetsGivenUp": [
           {
             "type": "player",
@@ -34,7 +34,7 @@
             "date": "2016-06-23",
             "tradePartner": "ORL",
             "tradeDescription": "Acquired from Orlando for Serge Ibaka",
-            "note": "2x All-Star, became MIP after leaving OKC",
+            "note": "2x All-Star, won Most Improved Player award with Indiana (2018)",
             "assetsGivenUp": [
               {
                 "type": "player",
@@ -43,8 +43,8 @@
                 "date": "2008-06-26",
                 "draftPick": 24,
                 "draftRound": 1,
-                "tradeDescription": "Drafted 24th overall by Seattle SuperSonics (became OKC Thunder)",
-                "note": "Elite rim protector, 3x All-Defense. Drafted by Seattle, rights held by OKC",
+                "tradeDescription": "Drafted 24th overall by Seattle SuperSonics",
+                "note": "3x NBA All-Defensive Team",
                 "isOrigin": true
               }
             ]
@@ -57,19 +57,8 @@
             "draftPick": 11,
             "draftRound": 1,
             "tradeDescription": "Drafted 11th overall by Thunder",
-            "note": "2x All-Star, son of Arvydas Sabonis. Traded after rookie season",
-            "assetsGivenUp": [
-              {
-                "type": "pick",
-                "name": "2016 #11 Overall Pick",
-                "acquisitionType": "original",
-                "date": "2016-06-23",
-                "draftPick": 11,
-                "becamePlayer": "Domantas Sabonis",
-                "tradeDescription": "Thunder's own first-round pick",
-                "isOrigin": true
-              }
-            ]
+            "note": "3x All-Star, son of Arvydas Sabonis",
+            "isOrigin": true
           }
         ]
       }

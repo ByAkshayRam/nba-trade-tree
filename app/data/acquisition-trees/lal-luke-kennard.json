@@ -1,0 +1,38 @@
+{
+  "_meta": {
+    "team": "LAL",
+    "player": "Luke Kennard",
+    "source": "ESPN, Wikipedia, Yahoo Sports",
+    "originYear": 2017,
+    "depth": 6,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Luke Kennard",
+    "acquisitionType": "trade",
+    "date": "2026-02-05",
+    "currentTeam": "LAL",
+    "tradePartner": "ATL",
+    "tradeDescription": "Lakers acquired Kennard from Hawks for Gabe Vincent and 2032 2nd round pick",
+    "note": "Career 44.2% three-point shooter",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Gabe Vincent",
+        "acquisitionType": "free-agent",
+        "date": "2023-07-01",
+        "note": "Former Heat guard, signed as free agent with Lakers in 2023",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2032 LAL 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2032-06-01",
+        "note": "Lakers' own 2nd round pick",
+        "isOrigin": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "_meta": {
+    "team": "DAL",
+    "player": "Kyrie Irving",
+    "source": "Basketball-Reference, NBA.com",
+    "originYear": 2014,
+    "depth": 4,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Kyrie Irving",
+    "acquisitionType": "trade",
+    "date": "2023-02-05",
+    "currentTeam": "DAL",
+    "tradePartner": "BKN",
+    "note": "Traded from Brooklyn to Dallas with Markieff Morris",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Spencer Dinwiddie",
+        "acquisitionType": "trade",
+        "date": "2022-02-10",
+        "tradePartner": "WAS",
+        "note": "Traded from Washington to Dallas with Davis Bertans for Kristaps Porzingis and a 2022 2nd round pick",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Kristaps Porzingis",
+            "acquisitionType": "trade",
+            "date": "2019-01-31",
+            "tradePartner": "NYK",
+            "note": "Traded from New York to Dallas with Tim Hardaway Jr., Courtney Lee, and Trey Burke for Dennis Smith Jr., DeAndre Jordan, Wesley Matthews, and 2 future 1st round picks",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Dennis Smith Jr.",
+                "acquisitionType": "draft",
+                "date": "2017-06-22",
+                "draftPick": 9,
+                "note": "NC State guard, drafted 9th overall by Dallas",
+                "isOrigin": true
+              },
+              {
+                "type": "player",
+                "name": "DeAndre Jordan",
+                "acquisitionType": "free-agent",
+                "date": "2018-07-06",
+                "note": "Signed as free agent from LA Clippers",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2021 DAL 1st Round Pick",
+                "acquisitionType": "original",
+                "date": "2021-07-29",
+                "becamePlayer": "Keon Johnson",
+                "note": "Unprotected, conveyed to New York as #21 overall",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2023 DAL 1st Round Pick",
+                "acquisitionType": "original",
+                "date": "2024-06-26",
+                "becamePlayer": "Kyshawn George",
+                "note": "Top-10 protected, did not convey in 2023, rolled to 2024 as #24 overall to New York",
+                "isOrigin": true
+              }
+            ]
+          },
+          {
+            "type": "pick",
+            "name": "2022 DAL 2nd Round Pick",
+            "acquisitionType": "original",
+            "date": "2022-06-23",
+            "becamePlayer": "Yannick Nzosa",
+            "note": "Dallas own 2022 second-round pick, sent to Washington as #54 overall",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Dorian Finney-Smith",
+        "acquisitionType": "undrafted",
+        "date": "2016-07-01",
+        "note": "Florida forward, signed by Dallas as undrafted free agent in 2016",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2029 DAL 1st Round Pick",
+        "acquisitionType": "original",
+        "date": "2029-06-26",
+        "note": "Dallas own 2029 first-round pick, sent to Brooklyn",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2027 DAL 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2027-06-26",
+        "note": "Dallas own 2027 second-round pick, sent to Brooklyn",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2029 DAL 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2029-06-26",
+        "note": "Dallas own 2029 second-round pick, sent to Brooklyn",
+        "isOrigin": true
+      }
+    ]
+  }
+}

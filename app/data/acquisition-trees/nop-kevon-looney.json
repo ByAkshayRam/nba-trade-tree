@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "NOP",
+    "player": "Kevon Looney",
+    "source": "ESPN, Basketball-Reference",
+    "originYear": 2015,
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Kevon Looney",
+    "acquisitionType": "free-agent",
+    "date": "2025-06-30",
+    "currentTeam": "NOP",
+    "note": "Center signed from Golden State in free agency",
+    "isOrigin": true
+  }
+}

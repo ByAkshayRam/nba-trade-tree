@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "TOR",
+    "player": "Alijah Martin",
+    "source": "Basketball-Reference",
+    "originYear": 2025,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Alijah Martin",
+    "acquisitionType": "draft",
+    "date": "2025-06-25",
+    "currentTeam": "TOR",
+    "draftPick": 39,
+    "espnId": "4702656",
+    "note": "Drafted #39 overall by Toronto in 2025 out of FAU. Selected with POR 2nd-round pick acquired from SAC in the Jalen McDaniels trade.",
+    "isOrigin": true
+  }
+}

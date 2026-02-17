@@ -2,10 +2,10 @@
   "_meta": {
     "team": "ORL",
     "player": "Wendell Carter Jr.",
-    "source": "NBA Trade History Research",
-    "originYear": 2018,
-    "depth": 5,
-    "lastUpdated": "2026-02-11"
+    "source": "NBA.com/ESPN - Feb 2026",
+    "originYear": 2004,
+    "depth": 3,
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
@@ -14,8 +14,8 @@
     "date": "2021-03-25",
     "currentTeam": "ORL",
     "tradePartner": "CHI",
-    "tradeDescription": "Magic acquired WCJ from Bulls in Vucevic trade",
-    "note": "Versatile big man, solid starter",
+    "tradeDescription": "Part of Nikola Vucevic deal",
+    "note": "Received with Al-Farouq Aminu and two 1st-round picks for Vucevic",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -23,8 +23,8 @@
         "acquisitionType": "trade",
         "date": "2012-08-10",
         "tradePartner": "PHI",
-        "tradeDescription": "Magic acquired Vucevic from 76ers in Dwight Howard blockbuster",
-        "note": "2x All-Star, became franchise center for Magic",
+        "currentTeam": "CHI",
+        "note": "Acquired in four-team Dwight Howard trade",
         "assetsGivenUp": [
           {
             "type": "player",
@@ -33,21 +33,10 @@
             "date": "2004-06-24",
             "draftPick": 1,
             "draftRound": 1,
-            "tradeDescription": "Magic drafted Dwight #1 overall with their OWN pick",
-            "note": "8x All-Star, 3x DPOY. Magic finished 21-61 in 2003-04",
+            "note": "#1 overall pick in 2004, franchise cornerstone",
             "isOrigin": true
           }
         ]
-      },
-      {
-        "type": "pick",
-        "name": "2021 1st Round Pick (CHI)",
-        "acquisitionType": "original",
-        "date": "2021-03-25",
-        "tradeDescription": "Bulls' own pick in Vucevic deal",
-        "becamePlayer": "Franz Wagner",
-        "note": "Pick became Franz Wagner at #8!",
-        "isOrigin": true
       }
     ]
   }

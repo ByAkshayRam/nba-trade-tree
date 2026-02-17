@@ -1,0 +1,42 @@
+{
+  "_meta": {
+    "team": "DEN",
+    "player": "Peyton Watson",
+    "source": "ESPN, NBA.com, Wikipedia, Basketball News",
+    "originYear": 2020,
+    "depth": 3,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Peyton Watson",
+    "acquisitionType": "draft-night-trade",
+    "date": "2022-06-23",
+    "currentTeam": "DEN",
+    "tradePartner": "OKC",
+    "tradeDescription": "Selected 30th by OKC, then traded to Denver with 2 future 2nd round picks",
+    "draftPick": 30,
+    "draftRound": 1,
+    "note": "Guard/forward from UCLA acquired via draft-night trade",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "JaMychal Green",
+        "acquisitionType": "free-agent",
+        "date": "2020-11-30",
+        "note": "Forward signed as free agent, multi-year contract",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      },
+      {
+        "type": "pick",
+        "name": "2027 DEN 1st Round Pick",
+        "acquisitionType": "original",
+        "date": "2022-06-23",
+        "note": "Denver's 2027 first-round pick (protected)",
+        "isOrigin": true
+      }
+    ]
+  }
+}

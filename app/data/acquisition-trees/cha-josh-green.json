@@ -4,15 +4,35 @@
     "player": "Josh Green",
     "source": "ESPN/NBA Trade History - Feb 2026",
     "originYear": 2024,
-    "depth": 1,
+    "depth": 2,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
     "type": "player",
     "name": "Josh Green",
     "acquisitionType": "trade",
-    "date": "2024-02-08",
+    "date": "2024-07-06",
     "currentTeam": "CHA",
-    "tradePartner": "DAL"
+    "tradePartner": "DAL",
+    "tradeDescription": "Acquired in 6-team Klay Thompson sign-and-trade",
+    "note": "Australian wing with defensive versatility",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2029 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2024-07-06",
+        "note": "Hornets' own future second round pick",
+        "isOrigin": true
+      },
+      {
+        "type": "pick", 
+        "name": "2030 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2024-07-06",
+        "note": "Hornets' own future second round pick",
+        "isOrigin": true
+      }
+    ]
   }
 }

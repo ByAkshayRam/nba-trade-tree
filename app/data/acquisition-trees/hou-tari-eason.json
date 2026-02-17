@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "HOU",
+    "player": "Tari Eason",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2022,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Tari Eason",
+    "acquisitionType": "draft",
+    "date": "2022-06-23",
+    "currentTeam": "HOU",
+    "draftPick": 17,
+    "draftRound": 1,
+    "note": "LSU forward, 17th overall pick, defensive specialist",
+    "isOrigin": true
+  }
+}

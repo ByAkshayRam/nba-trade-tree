@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "NOP",
+    "player": "Bryce McGowens",
+    "source": "ESPN, Basketball-Reference",
+    "originYear": 2022,
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Bryce McGowens",
+    "acquisitionType": "free-agent",
+    "date": "2025-07-31",
+    "currentTeam": "NOP",
+    "note": "Guard signed to two-way contract",
+    "isOrigin": true
+  }
+}

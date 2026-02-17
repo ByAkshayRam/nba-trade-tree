@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "LAL",
+    "player": "Kobe Bufkin",
+    "source": "ESPN, Basketball-Reference",
+    "originYear": 2023,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Kobe Bufkin",
+    "acquisitionType": "free-agent",
+    "date": "2026-02-08",
+    "currentTeam": "LAL",
+    "note": "Guard signed 2-year deal after G League stint with South Bay Lakers",
+    "isOrigin": true
+  }
+}

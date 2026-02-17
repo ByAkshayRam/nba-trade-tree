@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "UTA",
+    "player": "Isaiah Collier",
+    "source": "ESPN, Basketball-Reference, Wikipedia, USC Athletics",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Isaiah Collier",
+    "acquisitionType": "draft",
+    "date": "2024-06-26",
+    "currentTeam": "UTA",
+    "draftPick": 29,
+    "draftRound": 1,
+    "note": "USC point guard, 6'5\" playmaker from Atlanta",
+    "isOrigin": true
+  }
+}

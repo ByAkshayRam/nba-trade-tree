@@ -11,8 +11,22 @@
     "type": "player",
     "name": "Tre Jones",
     "acquisitionType": "trade",
-    "date": "2025-02-08",
+    "date": "2025-02-02",
     "currentTeam": "CHI",
-    "tradePartner": "SAS"
+    "tradePartner": "SAS",
+    "tradeDescription": "Part of 3-team Fox/LaVine mega-deal: Bulls sent LaVine + 2nd to SAC, received Huerter, Collins, Tre Jones. Fox to SAS.",
+    "note": "Duke product, steady point guard",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2025 CHI 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2025-02-08",
+        "note": "Chicago's own 2025 second-round pick",
+        "isOrigin": true,
+        "becamePlayer": "Maxime Raynaud",
+        "draftPick": 42
+      }
+    ]
   }
 }

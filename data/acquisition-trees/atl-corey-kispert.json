@@ -2,18 +2,32 @@
   "_meta": {
     "team": "ATL",
     "player": "Corey Kispert",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2026,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "NBA.com Official Trade",
+    "originYear": 2018,
+    "depth": 2,
+    "lastUpdated": "2026-02-14"
   },
   "tree": {
     "type": "player",
     "name": "Corey Kispert",
     "acquisitionType": "trade",
-    "date": "2026-02-06",
+    "date": "2026-01-09",
     "currentTeam": "ATL",
     "tradePartner": "WAS",
-    "note": "Sharpshooter"
+    "tradeDescription": "Hawks acquire CJ McCollum and Corey Kispert for Trae Young",
+    "note": "Gonzaga sharpshooter, 40% career 3-point shooter",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Trae Young",
+        "acquisitionType": "draft",
+        "date": "2018-06-21",
+        "draftPick": 5,
+        "draftRound": 1,
+        "tradePartner": "DAL",
+        "tradeDescription": "Draft night trade - Hawks traded Luka Doncic (#3) to Dallas for Trae Young (#5) and a future 1st",
+        "note": "3x All-Star, Hawks franchise cornerstone 2018-2026"
+      }
+    ]
   }
 }

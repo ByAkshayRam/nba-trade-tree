@@ -17,6 +17,15 @@
     "currentTeam": "NYK",
     "tradeDescription": "Drafted 44th overall by Knicks",
     "note": "French forward, two-way player, homegrown talent",
-    "isOrigin": true
+    "isOrigin": true,
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "details": "2024 #44 Overall Pick (used)",
+        "name": "2024 #44 Overall Pick (used)",
+        "becamePlayer": "Mohamed Diawara",
+        "draftPick": 44
+      }
+    ]
   }
 }

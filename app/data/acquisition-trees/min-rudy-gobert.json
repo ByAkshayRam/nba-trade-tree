@@ -1,0 +1,244 @@
+{
+  "_meta": {
+    "team": "MIN",
+    "player": "Rudy Gobert",
+    "source": "ESPN, NBA.com, Basketball-Reference, Hoops Rumors",
+    "originYear": 2013,
+    "depth": 3,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Rudy Gobert",
+    "acquisitionType": "trade",
+    "date": "2022-07-01",
+    "currentTeam": "MIN",
+    "tradePartner": "UTA",
+    "tradeDescription": "Blockbuster trade: Timberwolves received Rudy Gobert from Jazz for Malik Beasley, Patrick Beverley, Walker Kessler, Jarred Vanderbilt, Leandro Bolmaro, 2023 1st, 2025 1st, 2027 1st, 2029 1st (top-5 protected), 2026 swap",
+    "note": "4x Defensive Player of the Year, French center",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Malik Beasley",
+        "acquisitionType": "trade",
+        "date": "2020-02-05",
+        "tradePartner": "DEN",
+        "note": "Florida State guard, acquired from Denver in 4-team trade. MIN sent Robert Covington + Jordan Bell to HOU, and Keita Bates-Diop + Shabazz Napier + Noah Vonleh to DEN.",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Robert Covington",
+            "acquisitionType": "trade",
+            "date": "2018-11-12",
+            "tradePartner": "PHI",
+            "note": "Acquired from 76ers in Jimmy Butler trade, sent to HOU in 4-team trade",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Jimmy Butler",
+                "acquisitionType": "trade",
+                "date": "2017-06-22",
+                "tradePartner": "CHI",
+                "note": "Acquired from Bulls for Zach LaVine, Kris Dunn, and 2017 #7 pick (Lauri Markkanen)",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Zach LaVine",
+                    "acquisitionType": "draft",
+                    "date": "2014-06-26",
+                    "draftPick": 13,
+                    "draftRound": 1,
+                    "note": "UCLA guard, 2014 #13 overall pick",
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "player",
+                    "name": "Kris Dunn",
+                    "acquisitionType": "draft",
+                    "date": "2016-06-23",
+                    "draftPick": 5,
+                    "draftRound": 1,
+                    "note": "Providence guard, 2016 #5 overall pick",
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2017 1st Round Pick (#7)",
+                    "acquisitionType": "original",
+                    "date": "2017-06-22",
+                    "becamePlayer": "Lauri Markkanen",
+                    "note": "MIN 2017 1st round pick, became Lauri Markkanen for CHI",
+                    "isOrigin": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Keita Bates-Diop",
+            "acquisitionType": "draft",
+            "date": "2018-06-21",
+            "draftPick": 48,
+            "draftRound": 2,
+            "note": "Ohio State forward, 2018 2nd round pick, sent to DEN",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Shabazz Napier",
+            "acquisitionType": "trade",
+            "note": "Guard, sent to DEN in 4-team trade",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Noah Vonleh",
+            "acquisitionType": "free-agent",
+            "note": "Forward, sent to DEN in 4-team trade",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Jordan Bell",
+            "acquisitionType": "free-agent",
+            "note": "Forward, sent to HOU in 4-team trade",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Patrick Beverley",
+        "acquisitionType": "trade",
+        "date": "2021-08-17",
+        "tradePartner": "MEM",
+        "note": "Arkansas guard, acquired from Grizzlies (MEM had just gotten him from LAC). MIN sent Jarrett Culver + Juancho Hernangomez to MEM.",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Jarrett Culver",
+            "acquisitionType": "draft",
+            "date": "2019-06-20",
+            "draftPick": 6,
+            "draftRound": 1,
+            "note": "Texas Tech guard, 2019 #6 overall pick",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Juancho Hernangomez",
+            "acquisitionType": "trade",
+            "date": "2020-02-05",
+            "tradePartner": "DEN",
+            "note": "Spanish forward, acquired from DEN in same 4-team trade as Beasley",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Walker Kessler",
+        "acquisitionType": "draft-night-trade",
+        "date": "2022-06-23",
+        "draftPick": 22,
+        "draftRound": 1,
+        "tradePartner": "MEM",
+        "note": "Auburn center, selected #22 by MEM, traded to MIN. MIN sent #19 pick (Jake LaRavia) + 2023 2nd round pick to MEM, received #22 (Kessler) + #29.",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2022 1st Round Pick (#19)",
+            "acquisitionType": "original",
+            "date": "2022-06-23",
+            "becamePlayer": "Jake LaRavia",
+            "note": "MIN original 2022 1st round pick, selected LaRavia for MEM",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2023 2nd Round Pick",
+            "acquisitionType": "original",
+            "becamePlayer": "GG Jackson II",
+            "note": "MIN 2023 2nd round pick, sent to MEM; became #45 overall",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Jarred Vanderbilt",
+        "acquisitionType": "trade",
+        "date": "2020-02-05",
+        "tradePartner": "DEN",
+        "note": "Kentucky forward, acquired from Denver in same 4-team trade as Beasley. Same assets given up (shared trade).",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Leandro Bolmaro",
+        "acquisitionType": "draft-night-trade",
+        "date": "2020-11-18",
+        "draftPick": 23,
+        "draftRound": 1,
+        "tradePartner": "NYK",
+        "note": "Argentine guard, selected #23 by NYK, traded to MIN for draft rights to Mathias Lessort + DET 2023 2nd round pick. Same draft night trade that brought McDaniels.",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Mathias Lessort",
+            "acquisitionType": "other",
+            "note": "Draft rights sent to NYK",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2023 2nd Round Pick (via DET)",
+            "acquisitionType": "trade",
+            "becamePlayer": "James Nnaji",
+            "note": "Detroit's 2023 2nd round pick, sent to NYK; became #31 overall",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2023 1st Round Pick",
+        "acquisitionType": "original",
+        "date": "2023-06-22",
+        "becamePlayer": "Keyonte George",
+        "note": "MIN 2023 1st round pick (unprotected), conveyed as #16 to UTA",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2025 1st Round Pick",
+        "acquisitionType": "original",
+        "becamePlayer": "Will Riley",
+        "note": "MIN 2025 1st round pick (unprotected), conveyed as #21 to UTA",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2027 1st Round Pick",
+        "acquisitionType": "original",
+        "note": "MIN 2027 1st round pick (unprotected)",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2029 1st Round Pick",
+        "acquisitionType": "original",
+        "note": "MIN 2029 1st round pick (top-5 protected)",
+        "isOrigin": true
+      },
+      {
+        "type": "other",
+        "name": "2026 1st Round Pick Swap",
+        "acquisitionType": "original",
+        "note": "Right to swap first round picks with Utah in 2026",
+        "isOrigin": true
+      }
+    ]
+  }
+}

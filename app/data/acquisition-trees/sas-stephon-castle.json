@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "SAS",
+    "player": "Stephon Castle",
+    "source": "NBA Draft History",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Stephon Castle",
+    "acquisitionType": "draft",
+    "date": "2024-06-26",
+    "currentTeam": "SAS",
+    "draftPick": 4,
+    "draftRound": 1,
+    "note": "Guard drafted 4th overall from UConn",
+    "isOrigin": true
+  }
+}

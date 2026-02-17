@@ -2,17 +2,29 @@
   "_meta": {
     "team": "DET",
     "player": "Paul Reed",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2026,
+    "source": "Basketball-Reference, CBS Sports - July 2024 waiver claim, re-signed June 2025",
+    "originYear": 2020,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Paul Reed",
-    "acquisitionType": "trade",
-    "date": "2026-02-06",
+    "acquisitionType": "free-agent",
+    "date": "2025-07-07",
     "currentTeam": "DET",
-    "tradePartner": "PHI"
+    "note": "DePaul center, re-signed 2-year $11M contract after being claimed off waivers in July 2024",
+    "isOrigin": false,
+    "tradeChain": {
+      "type": "player",
+      "name": "Paul Reed",
+      "acquisitionType": "draft",
+      "date": "2020-11-18",
+      "draftPick": 58,
+      "draftRound": 2,
+      "note": "Center from DePaul University, drafted 58th overall by Philadelphia 76ers in 2020",
+      "isOrigin": true
+    },
+    "espnId": "4278562"
   }
 }

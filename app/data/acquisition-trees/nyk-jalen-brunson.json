@@ -16,6 +16,7 @@
     "currentTeam": "NYK",
     "tradeDescription": "Signed as unrestricted free agent from Dallas Mavericks",
     "note": "All-Star, Villanova NCAA Champion. 4yr/$104M deal. Free agent = no assets given up",
-    "isOrigin": true
+    "isOrigin": true,
+    "assetsGivenUp": []
   }
 }

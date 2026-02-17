@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "team": "IND",
+    "player": "Quenton Jackson",
+    "source": "Basketball-Reference, ESPN, NBA Trade History",
+    "originYear": 2025,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Quenton Jackson",
+    "acquisitionType": "free-agent",
+    "date": "2025-07-08",
+    "currentTeam": "IND",
+    "note": "Guard from Texas A&M, undrafted. Two-way contract.",
+    "isOrigin": true,
+    "isHomegrown": true
+  }
+}

@@ -2,10 +2,10 @@
   "_meta": {
     "team": "CLE",
     "player": "Jaylon Tyson",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "Basketball-Reference, ESPN, NBA Draft records",
     "originYear": 2024,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
@@ -14,6 +14,9 @@
     "date": "2024-06-26",
     "currentTeam": "CLE",
     "draftPick": 20,
-    "draftRound": 1
+    "draftRound": 1,
+    "note": "Guard/Forward from California, 20th overall pick in 2024 NBA Draft",
+    "isOrigin": true,
+    "espnId": "4683747"
   }
 }

@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "DET",
+    "player": "Javonte Green",
+    "source": "Basketball-Reference, HoopsHype, SI - August 2025 free agent signing",
+    "originYear": 2015,
+    "depth": 1,
+    "lastUpdated": "2026-02-15"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Javonte Green",
+    "acquisitionType": "free-agent",
+    "date": "2025-08-14",
+    "currentTeam": "DET",
+    "note": "Radford forward, signed 1-year partially guaranteed deal for $925,000",
+    "isOrigin": true
+  }
+}

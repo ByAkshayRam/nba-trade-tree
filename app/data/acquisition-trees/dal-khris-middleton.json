@@ -1,0 +1,93 @@
+{
+  "_meta": {
+    "team": "DAL",
+    "player": "Khris Middleton",
+    "source": "NBA.com, Basketball-Reference",
+    "originYear": 2018,
+    "depth": 3,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Khris Middleton",
+    "acquisitionType": "trade",
+    "date": "2026-02-05",
+    "currentTeam": "DAL",
+    "tradePartner": "WAS",
+    "tradeDescription": "Dallas traded Anthony Davis, D'Angelo Russell, Jaden Hardy, and Dante Exum to Washington for Middleton, AJ Johnson, Bagley III, Branham, and 5 picks",
+    "note": "Texas A&M forward, 2012 #39 pick by Detroit, 3x All-Star",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Anthony Davis",
+        "acquisitionType": "trade",
+        "date": "2025-02-02",
+        "tradePartner": "LAL",
+        "tradeDescription": "Dallas received AD from Lakers in the Luka Doncic trade",
+        "note": "Kentucky forward, 2012 #1 pick by New Orleans",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Luka Doncic",
+            "acquisitionType": "draft-night-trade",
+            "date": "2018-06-21",
+            "tradePartner": "ATL",
+            "draftPick": 3,
+            "draftRound": 1,
+            "note": "Real Madrid guard, drafted #3 by Atlanta, traded to Dallas on draft night",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Trae Young",
+                "acquisitionType": "draft",
+                "date": "2018-06-21",
+                "draftPick": 5,
+                "draftRound": 1,
+                "note": "Oklahoma guard, drafted #5 by Dallas, sent to Atlanta in draft-night swap",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2019 DAL 1st Round Pick",
+                "acquisitionType": "original",
+                "date": "2019-06-20",
+                "becamePlayer": "Cam Reddish",
+                "note": "Protected first-round pick sent to Atlanta, became #10 overall",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "D'Angelo Russell",
+        "acquisitionType": "free-agent",
+        "date": "2025-06-30",
+        "note": "Ohio State guard, 2015 #2 pick by Los Angeles Lakers. Signed 2-year $13M deal after being waived by Brooklyn.",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Jaden Hardy",
+        "acquisitionType": "draft",
+        "date": "2022-06-23",
+        "draftPick": 37,
+        "draftRound": 2,
+        "note": "G League Ignite guard, drafted by Dallas",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Dante Exum",
+        "acquisitionType": "free-agent",
+        "date": "2023-07-01",
+        "note": "Australian guard, 2014 #5 pick by Utah. Signed 2-year $6.15M deal after playing overseas (Barcelona, Partizan). Re-signed Sep 2025.",
+        "isOrigin": true
+      }
+    ]
+  }
+}

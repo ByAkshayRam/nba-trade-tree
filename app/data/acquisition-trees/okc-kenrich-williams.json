@@ -2,20 +2,33 @@
   "_meta": {
     "team": "OKC",
     "player": "Kenrich Williams",
-    "source": "NBA/ESPN Trade History Research",
-    "originYear": 2021,
-    "depth": 1,
-    "lastUpdated": "2026-02-10"
+    "source": "Basketball Reference Transaction Logs",
+    "sourceUrl": "https://www.basketball-reference.com/teams/OKC/2021_transactions.html",
+    "originYear": 2018,
+    "depth": 5,
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
     "name": "Kenrich Williams",
     "acquisitionType": "trade",
-    "date": "2021-03-25",
+    "date": "2020-11-23",
     "tradePartner": "NOP",
     "currentTeam": "OKC",
-    "tradeDescription": "Acquired from New Orleans in multi-team trade deadline deal",
-    "note": "TCU product, glue guy, defensive versatility",
-    "isOrigin": true
+    "tradeDescription": "Acquired from New Orleans Pelicans as part of 4-team Jrue Holiday trade. OKC sent Steven Adams to NOP.",
+    "note": "TCU product, acquired in blockbuster Jrue Holiday deal",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Steven Adams",
+        "acquisitionType": "draft",
+        "date": "2013-06-27",
+        "draftPick": 12,
+        "draftRound": 1,
+        "tradeDescription": "Drafted 12th overall by Thunder",
+        "note": "New Zealand center, OKC mainstay 2013-2020",
+        "isOrigin": true
+      }
+    ]
   }
 }

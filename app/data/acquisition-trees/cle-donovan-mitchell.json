@@ -2,10 +2,10 @@
   "_meta": {
     "team": "CLE",
     "player": "Donovan Mitchell",
-    "source": "NBA Trade History Research",
-    "originYear": 2017,
-    "depth": 4,
-    "lastUpdated": "2026-02-11"
+    "source": "ESPN, Basketball-Reference, NBA.com",
+    "originYear": 2004,
+    "depth": 8,
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
@@ -14,17 +14,19 @@
     "date": "2022-09-01",
     "currentTeam": "CLE",
     "tradePartner": "UTA",
-    "tradeDescription": "Cavaliers acquire Spida for Lauri Markkanen, Collin Sexton, Ochai Agbaji, and 3 unprotected 1sts",
-    "note": "3x All-Star, franchise cornerstone",
+    "tradeDescription": "Cavaliers traded Lauri Markkanen, Collin Sexton, Ochai Agbaji, three 1st round picks, two pick swaps to Jazz for Donovan Mitchell",
+    "note": "3-time All-Star guard from Louisville",
+    "isOrigin": false,
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Lauri Markkanen",
         "acquisitionType": "trade",
-        "date": "2021-08-27",
+        "date": "2021-08-06",
         "tradePartner": "CHI",
-        "tradeDescription": "Acquired in 3-team trade involving Larry Nance Jr.",
-        "note": "Breakout All-Star in Utah",
+        "tradeDescription": "Acquired from Bulls in sign-and-trade for Larry Nance Jr.",
+        "note": "Forward acquired from Chicago",
+        "isOrigin": false,
         "assetsGivenUp": [
           {
             "type": "player",
@@ -32,8 +34,9 @@
             "acquisitionType": "trade",
             "date": "2018-02-08",
             "tradePartner": "LAL",
-            "tradeDescription": "Acquired from Lakers with Jordan Clarkson for Isaiah Thomas, Channing Frye, and a 1st",
-            "note": "Hometown hero, Oregon native",
+            "tradeDescription": "Acquired from Lakers in Isaiah Thomas trade",
+            "note": "Forward acquired from Lakers",
+            "isOrigin": false,
             "assetsGivenUp": [
               {
                 "type": "player",
@@ -41,8 +44,9 @@
                 "acquisitionType": "trade",
                 "date": "2017-08-22",
                 "tradePartner": "BOS",
-                "tradeDescription": "Acquired in Kyrie Irving trade",
-                "note": "Former All-NBA, hip injury derailed career",
+                "tradeDescription": "Acquired from Celtics in Kyrie Irving trade",
+                "note": "Point guard from Boston",
+                "isOrigin": false,
                 "assetsGivenUp": [
                   {
                     "type": "player",
@@ -51,18 +55,57 @@
                     "date": "2011-06-23",
                     "draftPick": 1,
                     "draftRound": 1,
-                    "tradeDescription": "Cavaliers drafted Kyrie #1 overall with pick from LAC via trade",
-                    "note": "2016 NBA Champion, hit THE SHOT. Pick came from Baron Davis trade.",
+                    "note": "Point guard drafted 1st overall by Cleveland using pick acquired from LAC",
+                    "isOrigin": false,
                     "assetsGivenUp": [
                       {
-                        "type": "player",
-                        "name": "Baron Davis",
+                        "type": "pick",
+                        "name": "2011 LAC 1st Round Pick",
                         "acquisitionType": "trade",
                         "date": "2011-02-24",
                         "tradePartner": "LAC",
-                        "tradeDescription": "Cavaliers took on Davis' expiring contract for Clippers unprotected 2011 1st",
-                        "note": "Contract dump turned into #1 pick (Kyrie). Cavs were tanking after LeBron left.",
-                        "isOrigin": true
+                        "tradeDescription": "Cavaliers traded Mo Williams and Jamario Moon to Clippers for Baron Davis and LAC unprotected 1st round pick (won lottery, became #1 overall)",
+                        "becamePlayer": "Kyrie Irving",
+                        "note": "Clippers pick had 8th best lottery odds, won the #1 overall selection",
+                        "isOrigin": false,
+                        "assetsGivenUp": [
+                          {
+                            "type": "player",
+                            "name": "Mo Williams",
+                            "acquisitionType": "trade",
+                            "date": "2008-08-13",
+                            "tradePartner": "MIL",
+                            "tradeDescription": "3-team trade: Cavaliers acquired Mo Williams from Bucks, sent Damon Jones and Joe Smith",
+                            "note": "Guard acquired from Milwaukee in 3-team deal",
+                            "isOrigin": false,
+                            "assetsGivenUp": [
+                              {
+                                "type": "player",
+                                "name": "Damon Jones",
+                                "acquisitionType": "free-agent",
+                                "date": "2004-08-02",
+                                "note": "Guard signed as free agent by Cleveland in 2004",
+                                "isOrigin": true
+                              },
+                              {
+                                "type": "player",
+                                "name": "Joe Smith",
+                                "acquisitionType": "free-agent",
+                                "date": "2007-10-01",
+                                "note": "Forward signed as free agent by Cleveland in 2007",
+                                "isOrigin": true
+                              }
+                            ]
+                          },
+                          {
+                            "type": "player",
+                            "name": "Jamario Moon",
+                            "acquisitionType": "free-agent",
+                            "date": "2009-07-27",
+                            "note": "Forward signed as free agent from Miami Heat, 2-year $6M deal",
+                            "isOrigin": true
+                          }
+                        ]
                       }
                     ]
                   }
@@ -79,9 +122,7 @@
         "date": "2018-06-21",
         "draftPick": 8,
         "draftRound": 1,
-        "currentTeam": "UTA",
-        "tradeDescription": "Cavaliers drafted Sexton with pick from BKN (Kyrie trade)",
-        "note": "Young Bull, 20+ PPG scorer",
+        "note": "Guard drafted 8th overall by Cleveland",
         "isOrigin": true
       },
       {
@@ -91,35 +132,46 @@
         "date": "2022-06-23",
         "draftPick": 14,
         "draftRound": 1,
-        "currentTeam": "UTA",
-        "tradeDescription": "Cavaliers drafted with their own pick",
-        "note": "National champion at Kansas",
+        "note": "Guard drafted 14th overall by Cleveland",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2025 Unprotected 1st (CLE)",
+        "name": "2025 CLE 1st Round Pick",
         "acquisitionType": "original",
-        "date": "2022-09-01",
-        "tradeDescription": "Cleveland's own unprotected 2025 first",
+        "date": "2025-06-25",
+        "becamePlayer": "Donovan Clingan",
+        "note": "Cavaliers' own first-round pick",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2027 Unprotected 1st (CLE)",
+        "name": "2027 CLE 1st Round Pick",
         "acquisitionType": "original",
-        "date": "2022-09-01",
-        "tradeDescription": "Cleveland's own unprotected 2027 first",
+        "date": "2027-06-24",
+        "note": "Cavaliers' own first-round pick",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2029 Unprotected 1st (CLE)",
+        "name": "2029 CLE 1st Round Pick",
         "acquisitionType": "original",
-        "date": "2022-09-01",
-        "tradeDescription": "Cleveland's own unprotected 2029 first",
+        "date": "2029-06-24",
+        "note": "Cavaliers' own first-round pick",
         "isOrigin": true
       }
-    ]
+    ],
+    "tradeChain": {
+      "type": "player",
+      "name": "Donovan Mitchell",
+      "acquisitionType": "draft-night-trade",
+      "date": "2017-06-22",
+      "tradePartner": "DEN",
+      "tradeDescription": "Jazz acquired Mitchell from Nuggets for 2017 24th pick (Tyler Lydon) and Trey Lyles",
+      "draftPick": 13,
+      "draftRound": 1,
+      "note": "Guard from Louisville, drafted 13th overall by Denver, traded to Utah same night",
+      "isOrigin": true
+    }
   }
 }

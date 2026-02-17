@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "LAC",
+    "player": "Cam Christie",
+    "source": "Basketball-Reference, Wikipedia, University of Minnesota",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Cam Christie",
+    "acquisitionType": "draft",
+    "date": "2024-06-27",
+    "currentTeam": "LAC",
+    "draftPick": 46,
+    "draftRound": 2,
+    "note": "Drafted by Clippers 46th overall, Minnesota guard",
+    "isOrigin": true
+  }
+}

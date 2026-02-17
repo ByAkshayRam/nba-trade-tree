@@ -2,18 +2,55 @@
   "_meta": {
     "team": "MIA",
     "player": "Norman Powell",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2026,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "Basketball-Reference, ESPN - Feb 2026",
+    "originYear": 2019,
+    "depth": 4,
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
     "name": "Norman Powell",
     "acquisitionType": "trade",
-    "date": "2026-02-06",
+    "date": "2025-07-07",
     "currentTeam": "MIA",
     "tradePartner": "LAC",
-    "note": "Scoring guard"
+    "tradeDescription": "3-team trade: MIA sent Kyle Anderson and Kevin Love to UTA; LAC sent Norman Powell to MIA; LAC sent 2027 2nd round pick to UTA; UTA sent John Collins to LAC",
+    "note": "Acquired from LAC in 3-team trade with Utah",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Kyle Anderson",
+        "acquisitionType": "trade",
+        "date": "2025-02-06",
+        "tradePartner": "GSW",
+        "note": "Received from GSW in Butler 5-team trade, sent to UTA",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Jimmy Butler",
+            "acquisitionType": "trade",
+            "date": "2019-07-06",
+            "tradePartner": "PHI",
+            "note": "Sign-and-trade from PHI in 4-team deal",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Josh Richardson",
+                "note": "Sent to PHI",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Kevin Love",
+        "acquisitionType": "free-agent",
+        "date": "2024-09-25",
+        "note": "Signed as free agent, sent to UTA",
+        "isOrigin": true
+      }
+    ]
   }
 }

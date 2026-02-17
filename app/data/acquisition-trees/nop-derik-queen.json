@@ -1,0 +1,37 @@
+{
+  "_meta": {
+    "team": "NOP",
+    "player": "Derik Queen",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2025,
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Derik Queen",
+    "acquisitionType": "draft-night-trade",
+    "date": "2025-06-26",
+    "currentTeam": "NOP",
+    "draftPick": 13,
+    "draftRound": 1,
+    "tradePartner": "ATL",
+    "tradeDescription": "Pelicans trade up from #23 to acquire Queen",
+    "note": "Maryland center, traded up to acquire at #13",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2025 #23 Overall Pick",
+        "becamePlayer": "Asa Newell",
+        "note": "Traded to Atlanta in draft-night deal",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2026 1st Round Pick",
+        "note": "2026 first-round pick, most favorable of NOP/MIL",
+        "isOrigin": true
+      }
+    ]
+  }
+}

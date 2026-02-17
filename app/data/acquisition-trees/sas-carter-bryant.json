@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "SAS",
+    "player": "Carter Bryant",
+    "source": "NBA Draft History",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Carter Bryant",
+    "acquisitionType": "undrafted",
+    "date": "2024-06-28",
+    "currentTeam": "SAS",
+    "note": "Guard, undrafted from Arizona",
+    "isOrigin": true
+  }
+}

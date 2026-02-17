@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "SAC",
+    "player": "Devin Carter",
+    "source": "NBA Draft History",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Devin Carter",
+    "acquisitionType": "draft",
+    "date": "2024-06-26",
+    "currentTeam": "SAC",
+    "draftPick": 13,
+    "draftRound": 1,
+    "note": "Guard drafted 13th overall from Providence",
+    "isOrigin": true
+  }
+}

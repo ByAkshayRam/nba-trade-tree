@@ -1,0 +1,180 @@
+{
+  "_meta": {
+    "team": "PHX",
+    "player": "Royce O'Neale",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2017,
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Royce O'Neale",
+    "acquisitionType": "trade",
+    "date": "2024-02-08",
+    "currentTeam": "PHX",
+    "tradePartner": "BKN",
+    "tradeDescription": "3-team trade: Suns sent Bates-Diop, Goodwin, 3 2nds to Nets; Metu, Watanabe, 2026 1st swap to Grizzlies; received O'Neale from Nets, Roddy from Grizzlies",
+    "note": "Baylor forward, acquired from Brooklyn in 3-team trade at 2024 deadline",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Keita Bates-Diop",
+        "acquisitionType": "free-agent",
+        "date": "2023-07-02",
+        "note": "Ohio State forward, signed as free agent",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Jordan Goodwin",
+        "acquisitionType": "trade",
+        "date": "2023-06-24",
+        "tradePartner": "WAS",
+        "tradeDescription": "Acquired from Washington in Bradley Beal trade",
+        "note": "Saint Louis guard, acquired from Washington in Bradley Beal trade",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Chris Paul",
+            "acquisitionType": "trade",
+            "date": "2020-11-16",
+            "tradePartner": "OKC",
+            "tradeDescription": "PHX traded Ty Jerome, Jalen Lecque, Kelly Oubre Jr., Ricky Rubio and 2022 1st (Peyton Watson) to OKC for Chris Paul and Abdel Nader",
+            "note": "All-Star point guard acquired from Oklahoma City",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Kelly Oubre Jr.",
+                "acquisitionType": "trade",
+                "date": "2018-12-17",
+                "tradePartner": "WAS",
+                "tradeDescription": "PHX traded Trevor Ariza to WAS for Kelly Oubre Jr. and Austin Rivers",
+                "note": "Wing acquired from Washington in Trevor Ariza trade. Sent to OKC for CP3.",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Trevor Ariza",
+                    "acquisitionType": "free-agent",
+                    "date": "2018-07-06",
+                    "note": "Veteran wing, signed as FA by PHX summer 2018. Sent to WAS for Oubre.",
+                    "isOrigin": true
+                  }
+                ]
+              },
+              {
+                "type": "player",
+                "name": "Ricky Rubio",
+                "acquisitionType": "free-agent",
+                "date": "2019-07-08",
+                "note": "Spanish guard, signed as free agent by PHX. Sent to OKC for CP3.",
+                "isOrigin": true
+              },
+              {
+                "type": "player",
+                "name": "Ty Jerome",
+                "acquisitionType": "draft",
+                "date": "2019-06-20",
+                "draftPick": 24,
+                "draftRound": 1,
+                "note": "Virginia guard, PHX 2019 1st round pick. Sent to OKC for CP3.",
+                "isOrigin": true
+              },
+              {
+                "type": "player",
+                "name": "Jalen Lecque",
+                "acquisitionType": "draft",
+                "date": "2019-06-20",
+                "draftPick": 47,
+                "draftRound": 2,
+                "note": "PHX 2019 2nd round pick. Sent to OKC for CP3.",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2022 PHX 1st Round Pick",
+                "acquisitionType": "original",
+                "becamePlayer": "Peyton Watson",
+                "note": "PHX own 2022 1st, sent to OKC for CP3; became #30 overall (traded to DEN)",
+                "isOrigin": true
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Landry Shamet",
+            "acquisitionType": "trade",
+            "date": "2021-08-06",
+            "tradePartner": "BKN",
+            "tradeDescription": "PHX traded Jevon Carter and #29 pick (Day'Ron Sharpe) to BKN for Landry Shamet",
+            "note": "Wichita State guard, acquired from Brooklyn Nets",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Jevon Carter",
+                "acquisitionType": "draft",
+                "date": "2018-06-21",
+                "draftPick": 32,
+                "draftRound": 2,
+                "note": "West Virginia guard, PHX 2018 2nd round pick. Sent to BKN for Shamet.",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2021 PHX 1st Round Pick (#29)",
+                "acquisitionType": "original",
+                "becamePlayer": "Day'Ron Sharpe",
+                "note": "PHX own 2021 1st, sent to BKN for Shamet; became #29 overall",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Chimezie Metu",
+        "acquisitionType": "free-agent",
+        "date": "2023-07-02",
+        "note": "USC forward, signed as free agent (sent to Memphis in 3-team trade)",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Yuta Watanabe",
+        "acquisitionType": "free-agent",
+        "date": "2023-07-02",
+        "note": "George Washington forward, signed as free agent (sent to Memphis in 3-team trade)",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2026 1st Round Pick Swap",
+        "acquisitionType": "original",
+        "note": "Phoenix's right to swap 2026 first-round picks, sent to Memphis",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2026 2nd Round Pick",
+        "acquisitionType": "original",
+        "note": "Least favorable 2026 second-round pick, sent to Brooklyn",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2028 2nd Round Pick",
+        "acquisitionType": "original",
+        "note": "Memphis's own 2028 second-round pick, sent to Brooklyn",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2029 2nd Round Pick",
+        "acquisitionType": "original",
+        "note": "Memphis's own 2029 second-round pick, sent to Brooklyn",
+        "isOrigin": true
+      }
+    ]
+  }
+}

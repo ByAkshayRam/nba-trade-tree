@@ -1,0 +1,32 @@
+{
+  "_meta": {
+    "team": "DEN",
+    "player": "Jonas Valanciunas",
+    "source": "ESPN, Basketball-Reference, NBA.com, Wikipedia",
+    "originYear": 2011,
+    "depth": 8,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jonas Valanciunas",
+    "acquisitionType": "trade",
+    "date": "2025-07-13",
+    "currentTeam": "DEN",
+    "tradePartner": "SAC",
+    "tradeDescription": "Traded from Sacramento Kings for Dario Saric",
+    "note": "Lithuanian center acquired to provide depth behind Jokic",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Dario Saric",
+        "acquisitionType": "free-agent",
+        "date": "2024-07-06",
+        "note": "Croatian forward signed as free agent, 2-year $10.6M deal",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      }
+    ]
+  }
+}

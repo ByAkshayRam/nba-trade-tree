@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "LAC",
+    "player": "Kawhi Leonard",
+    "source": "ESPN, Basketball-Reference, Forbes",
+    "originYear": 2011,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Kawhi Leonard",
+    "acquisitionType": "free-agent",
+    "date": "2019-07-10",
+    "currentTeam": "LAC",
+    "note": "Signed 3-year, $103 million contract after leaving Toronto",
+    "isOrigin": true
+  }
+}

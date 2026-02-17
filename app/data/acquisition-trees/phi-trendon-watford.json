@@ -2,17 +2,21 @@
   "_meta": {
     "team": "PHI",
     "player": "Trendon Watford",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2026,
+    "nbaId": 1630570,
+    "espnId": 4431675,
+    "source": "Basketball-Reference Transaction Log",
+    "originYear": 2025,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-16",
+    "accuracy": "high"
   },
   "tree": {
     "type": "player",
     "name": "Trendon Watford",
-    "acquisitionType": "trade",
-    "date": "2026-02-06",
+    "acquisitionType": "free-agent",
+    "date": "2025-07-02",
     "currentTeam": "PHI",
-    "tradePartner": "BKN"
+    "note": "Signed to multi-year contract as free agent.",
+    "isOrigin": true
   }
 }

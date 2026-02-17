@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "MIN",
+    "player": "Naz Reid",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2019,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Naz Reid",
+    "acquisitionType": "undrafted",
+    "date": "2019-07-01",
+    "currentTeam": "MIN",
+    "note": "LSU center, undrafted free agent",
+    "isOrigin": true
+  }
+}

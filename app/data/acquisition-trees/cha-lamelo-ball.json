@@ -2,9 +2,9 @@
   "_meta": {
     "team": "CHA",
     "player": "LaMelo Ball",
-    "source": "NBA Trade History Research",
+    "source": "ESPN/NBA Trade History - Feb 2026",
     "originYear": 2020,
-    "depth": 3,
+    "depth": 1,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -15,19 +15,8 @@
     "currentTeam": "CHA",
     "draftPick": 3,
     "draftRound": 1,
-    "tradeDescription": "Hornets drafted LaMelo #3 overall with their OWN pick",
-    "note": "ROY 2021, All-Star, franchise cornerstone. Flashy playmaker.",
-    "assetsGivenUp": [
-      {
-        "type": "pick",
-        "name": "2020 #3 Overall Pick (CHA own)",
-        "acquisitionType": "original",
-        "date": "2020-11-18",
-        "tradeDescription": "Charlotte's own lottery pick after 23-42 bubble season",
-        "becamePlayer": "LaMelo Ball",
-        "note": "Won lottery, drafted Ball over Edwards (taken #1), Wiseman (#2)",
-        "isOrigin": true
-      }
-    ]
+    "note": "All-Star franchise player, Rookie of the Year 2021",
+    "tradeDescription": "Drafted by Hornets with 3rd overall pick",
+    "isOrigin": true
   }
 }

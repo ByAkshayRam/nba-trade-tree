@@ -1,0 +1,55 @@
+{
+  "_meta": {
+    "team": "POR",
+    "player": "Toumani Camara",
+    "source": "Basketball-Reference.com 2023-24 POR transactions",
+    "originYear": 2012,
+    "depth": 4,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Toumani Camara",
+    "acquisitionType": "trade",
+    "date": "2023-09-27",
+    "currentTeam": "POR",
+    "tradePartner": "PHX",
+    "tradeDescription": "3-team trade: POR traded Lillard to MIL, and Nurkic/K.Johnson/N.Little to PHX. POR received Holiday/3 1st-rd picks from MIL, and Ayton/Camara from PHX.",
+    "note": "Belgian forward, 52nd overall pick 2023. Received from Phoenix as part of Lillard mega-trade.",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Damian Lillard",
+        "acquisitionType": "draft",
+        "date": "2012-06-28",
+        "draftPick": 6,
+        "draftRound": 1,
+        "note": "Drafted 6th overall by Portland in 2012, Weber State guard. Sent to Milwaukee.",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      },
+      {
+        "type": "player",
+        "name": "Jusuf Nurkic",
+        "note": "Center, sent to Phoenix in 3-team trade",
+        "isOrigin": false,
+        "assetsGivenUp": []
+      },
+      {
+        "type": "player",
+        "name": "Keon Johnson",
+        "note": "Guard, sent to Phoenix in 3-team trade",
+        "isOrigin": false,
+        "assetsGivenUp": []
+      },
+      {
+        "type": "player",
+        "name": "Nassir Little",
+        "note": "Forward, sent to Phoenix in 3-team trade",
+        "isOrigin": false,
+        "assetsGivenUp": []
+      }
+    ]
+  }
+}

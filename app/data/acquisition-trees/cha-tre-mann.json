@@ -3,8 +3,8 @@
     "team": "CHA",
     "player": "Tre Mann",
     "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2024,
-    "depth": 1,
+    "originYear": 2020,
+    "depth": 3,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -13,6 +13,30 @@
     "acquisitionType": "trade",
     "date": "2024-02-08",
     "currentTeam": "CHA",
-    "tradePartner": "OKC"
+    "tradePartner": "OKC",
+    "tradeDescription": "Acquired from Thunder (with Vasilije Micic, Davis Bertans, 2 picks) for Gordon Hayward",
+    "note": "Florida guard, explosive scorer off the bench",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Gordon Hayward",
+        "acquisitionType": "trade",
+        "date": "2020-11-29",
+        "tradePartner": "BOS",
+        "tradeDescription": "Sign-and-trade from Celtics",
+        "note": "Former All-Star forward",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2022 2nd Round Pick",
+            "acquisitionType": "original",
+            "date": "2020-11-29",
+            "note": "Conditional pick sent to Boston",
+            "becamePlayer": "Trevor Keels",
+            "isOrigin": true
+          }
+        ]
+      }
+    ]
   }
 }

@@ -2,16 +2,18 @@
   "_meta": {
     "team": "TOR",
     "player": "Jamison Battle",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "ESPN/NBA.com - Feb 2026",
     "originYear": 2024,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
     "name": "Jamison Battle",
     "acquisitionType": "free-agent",
     "date": "2024-07-01",
-    "currentTeam": "TOR"
+    "currentTeam": "TOR",
+    "note": "Undrafted free agent, two-way contract",
+    "isOrigin": true
   }
 }

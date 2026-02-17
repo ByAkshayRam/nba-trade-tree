@@ -2,16 +2,19 @@
   "_meta": {
     "team": "IND",
     "player": "Kobe Brown",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2024,
+    "source": "Basketball-Reference, ESPN, NBA Trade History",
+    "originYear": 2026,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
     "name": "Kobe Brown",
-    "acquisitionType": "free-agent",
-    "date": "2024-07-01",
-    "currentTeam": "IND"
+    "acquisitionType": "trade",
+    "date": "2026-02-05",
+    "currentTeam": "IND",
+    "tradePartner": "LAC",
+    "note": "Forward from Missouri, undrafted. Acquired alongside Ivica Zubac in Clippers trade. Assets listed on ind-ivica-zubac.json.",
+    "isOrigin": true
   }
 }

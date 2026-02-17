@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "GSW",
+    "player": "Al Horford",
+    "source": "Basketball-Reference, ESPN, Thunder OKC",
+    "originYear": 2007,
+    "depth": 6,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Al Horford",
+    "acquisitionType": "free-agent",
+    "date": "2025-09-28",
+    "currentTeam": "GSW",
+    "note": "5x All-Star, signed from Boston Celtics",
+    "isOrigin": true
+  }
+}

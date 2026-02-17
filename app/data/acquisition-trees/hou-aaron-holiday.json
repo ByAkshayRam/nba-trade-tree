@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "HOU",
+    "player": "Aaron Holiday",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2018,
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Aaron Holiday",
+    "acquisitionType": "free-agent",
+    "date": "2024-07-01",
+    "currentTeam": "HOU",
+    "note": "Guard, brother of Jrue and Justin Holiday",
+    "isOrigin": true
+  }
+}

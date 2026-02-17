@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "DAL",
+    "player": "Cooper Flagg",
+    "source": "NBA.com",
+    "originYear": 2025,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Cooper Flagg",
+    "acquisitionType": "draft",
+    "date": "2025-06-26",
+    "currentTeam": "DAL",
+    "draftPick": 1,
+    "draftRound": 1,
+    "note": "Duke forward, drafted #1 overall by Dallas with their own pick",
+    "isOrigin": true
+  }
+}

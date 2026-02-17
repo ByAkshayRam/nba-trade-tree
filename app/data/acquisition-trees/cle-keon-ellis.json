@@ -2,17 +2,82 @@
   "_meta": {
     "team": "CLE",
     "player": "Keon Ellis",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2026,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "ESPN, NBA.com, NBA transaction history",
+    "originYear": 2022,
+    "depth": 2,
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Keon Ellis",
     "acquisitionType": "trade",
-    "date": "2026-02-06",
+    "date": "2026-01-31",
     "currentTeam": "CLE",
-    "tradePartner": "SAC"
+    "tradePartner": "SAC",
+    "tradeDescription": "3-team trade: Cavaliers traded De'Andre Hunter to Kings for Dennis Schroder and Keon Ellis, Bulls received Dario Saric and picks",
+    "note": "Defensive guard from Alabama",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "De'Andre Hunter",
+        "acquisitionType": "trade",
+        "date": "2025-02-06",
+        "tradePartner": "ATL",
+        "tradeDescription": "Cavaliers traded Caris LeVert, Georges Niang, three 2nd round picks, two pick swaps to Hawks for De'Andre Hunter",
+        "note": "Forward acquired from Atlanta Hawks",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Caris LeVert",
+            "acquisitionType": "trade",
+            "date": "2021-01-13",
+            "tradePartner": "IND",
+            "tradeDescription": "Part of 4-team James Harden trade, acquired from Pacers",
+            "note": "Guard originally from Brooklyn, via Indiana",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "pick",
+                "name": "2021 CLE 1st Round Pick",
+                "acquisitionType": "original",
+                "date": "2021-07-29",
+                "becamePlayer": "Chris Duarte",
+                "note": "Cleveland's own first-round pick",
+                "isOrigin": true
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Georges Niang",
+            "acquisitionType": "free-agent",
+            "date": "2022-07-01",
+            "note": "Forward signed as free agent",
+            "isOrigin": true
+          }
+        ],
+        "tradeChain": {
+          "type": "player",
+          "name": "De'Andre Hunter",
+          "acquisitionType": "draft",
+          "date": "2019-06-20",
+          "draftPick": 4,
+          "draftRound": 1,
+          "note": "Forward drafted 4th overall by Atlanta Hawks from Virginia",
+          "isOrigin": true
+        }
+      }
+    ],
+    "tradeChain": {
+      "type": "player",
+      "name": "Keon Ellis",
+      "acquisitionType": "undrafted",
+      "date": "2022-07-02",
+      "note": "Guard from Alabama, signed two-way contract with Sacramento Kings after going undrafted",
+      "isOrigin": true
+    },
+    "espnId": "4702177"
   }
 }

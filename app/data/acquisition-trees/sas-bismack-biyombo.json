@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "SAS",
+    "player": "Bismack Biyombo",
+    "source": "NBA Free Agency Reports",
+    "originYear": 2011,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Bismack Biyombo",
+    "acquisitionType": "free-agent",
+    "date": "2025-08-01",
+    "currentTeam": "SAS",
+    "note": "Veteran center originally drafted 7th overall by Sacramento in 2011",
+    "isOrigin": true
+  }
+}

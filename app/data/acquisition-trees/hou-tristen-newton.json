@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "HOU",
+    "player": "Tristen Newton",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Tristen Newton",
+    "acquisitionType": "undrafted",
+    "date": "2024-07-01",
+    "currentTeam": "HOU",
+    "note": "UConn guard, undrafted free agent",
+    "isOrigin": true
+  }
+}

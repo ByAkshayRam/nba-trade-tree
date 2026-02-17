@@ -2,17 +2,21 @@
   "_meta": {
     "team": "PHI",
     "player": "Paul George",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "nbaId": 202331,
+    "espnId": 4251,
+    "source": "Basketball-Reference Transaction Log",
     "originYear": 2024,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-16",
+    "accuracy": "high"
   },
   "tree": {
     "type": "player",
     "name": "Paul George",
     "acquisitionType": "free-agent",
-    "date": "2024-07-01",
+    "date": "2024-07-06",
     "currentTeam": "PHI",
-    "note": "9x All-Star, chose Philly"
+    "note": "9x All-Star. Signed as unrestricted free agent from Los Angeles Clippers. 4-year max contract.",
+    "isOrigin": true
   }
 }

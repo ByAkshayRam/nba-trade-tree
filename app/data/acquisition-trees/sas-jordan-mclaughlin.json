@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "SAS",
+    "player": "Jordan McLaughlin",
+    "source": "NBA.com, ESPN",
+    "originYear": 2019,
+    "depth": 3,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jordan McLaughlin",
+    "acquisitionType": "trade",
+    "date": "2025-02-03",
+    "currentTeam": "SAS",
+    "tradePartner": "SAC",
+    "tradeDescription": "3-team trade: Spurs got Fox + McLaughlin from Kings in blockbuster deal",
+    "note": "Point guard acquired alongside De'Aaron Fox from Sacramento",
+    "assetsGivenUp": []
+  }
+}

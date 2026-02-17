@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "NOP",
+    "player": "Jeremiah Fears",
+    "source": "ESPN, Basketball-Reference",
+    "originYear": 2025,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jeremiah Fears",
+    "acquisitionType": "draft",
+    "date": "2025-06-25",
+    "currentTeam": "NOP",
+    "draftPick": 7,
+    "draftRound": 1,
+    "note": "Oklahoma point guard, 7th overall pick",
+    "isOrigin": true
+  }
+}

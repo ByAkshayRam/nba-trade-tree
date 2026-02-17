@@ -2,10 +2,10 @@
   "_meta": {
     "team": "WAS",
     "player": "Will Riley",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "2025 NBA Draft / ESPN Trade Reports",
     "originYear": 2025,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
@@ -13,7 +13,20 @@
     "acquisitionType": "draft",
     "date": "2025-06-26",
     "currentTeam": "WAS",
-    "draftPick": 22,
-    "draftRound": 1
+    "draftPick": 21,
+    "draftRound": 1,
+    "note": "#21 overall pick from Illinois. WAS traded #18 pick (from MEM) to UTA for #21, #43, and two future 2nd-round picks.",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2025 1st Round Pick (#18)",
+        "acquisitionType": "trade",
+        "date": "2025-02-08",
+        "tradePartner": "MEM",
+        "becamePlayer": "Walter Clayton Jr.",
+        "note": "Originally Memphis's pick, acquired by WAS in Feb 2025 trade. Traded to UTA on draft night.",
+        "isOrigin": true
+      }
+    ]
   }
 }

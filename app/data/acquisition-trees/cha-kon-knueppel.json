@@ -13,7 +13,10 @@
     "acquisitionType": "draft",
     "date": "2025-06-26",
     "currentTeam": "CHA",
-    "draftPick": 14,
-    "draftRound": 1
+    "draftPick": 4,
+    "draftRound": 1,
+    "note": "Duke wing, highly regarded prospect",
+    "tradeDescription": "Drafted by Hornets with 4th overall pick", 
+    "isOrigin": true
   }
 }

@@ -1,0 +1,34 @@
+{
+  "_meta": {
+    "team": "POR",
+    "player": "Yang Hansen",
+    "source": "Basketball-Reference.com 2024-25 POR transactions",
+    "originYear": 2025,
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Yang Hansen",
+    "acquisitionType": "trade",
+    "date": "2025-06-25",
+    "currentTeam": "POR",
+    "tradePartner": "MEM",
+    "tradeDescription": "Traded Cedric Coward (#11 pick) to Memphis for Yang Hansen, 2027 2nd (ATL own), 2028 1st (ORL own), and 2028 2nd (SAC own)",
+    "note": "Chinese international center",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Cedric Coward",
+        "acquisitionType": "draft",
+        "date": "2025-06-25",
+        "draftPick": 11,
+        "draftRound": 1,
+        "note": "Drafted 11th overall in 2025, Washington State forward. Traded on draft night.",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      }
+    ]
+  }
+}

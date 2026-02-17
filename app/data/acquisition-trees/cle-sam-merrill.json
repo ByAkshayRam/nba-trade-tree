@@ -2,16 +2,32 @@
   "_meta": {
     "team": "CLE",
     "player": "Sam Merrill",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2023,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "Wikipedia, Basketball-Reference, Spotrac, NBA trade history verified",
+    "originYear": 2020,
+    "depth": 2,
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Sam Merrill",
     "acquisitionType": "free-agent",
-    "date": "2023-07-01",
-    "currentTeam": "CLE"
+    "date": "2023-03-03",
+    "currentTeam": "CLE",
+    "note": "Guard signed to 10-day contract after being waived by Sacramento, converted to multi-year deal",
+    "isOrigin": false,
+    "assetsGivenUp": [],
+    "tradeChain": {
+      "type": "player",
+      "name": "Sam Merrill",
+      "acquisitionType": "draft-night-trade",
+      "date": "2020-11-18",
+      "tradePartner": "MIL",
+      "tradeDescription": "Drafted 60th overall by New Orleans, traded to Milwaukee on draft night",
+      "draftPick": 60,
+      "draftRound": 2,
+      "note": "Guard from Utah State, last pick in 2020 NBA Draft, acquired by Bucks from Pelicans",
+      "isOrigin": true
+    },
+    "espnId": "4066757"
   }
 }

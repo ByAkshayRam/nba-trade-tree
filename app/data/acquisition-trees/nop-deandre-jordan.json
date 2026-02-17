@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "NOP",
+    "player": "DeAndre Jordan",
+    "source": "ESPN, Basketball-Reference",
+    "originYear": 2008,
+    "depth": 5,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "DeAndre Jordan",
+    "acquisitionType": "free-agent",
+    "date": "2025-10-24",
+    "currentTeam": "NOP",
+    "note": "Veteran center signed from free agency",
+    "isOrigin": true
+  }
+}

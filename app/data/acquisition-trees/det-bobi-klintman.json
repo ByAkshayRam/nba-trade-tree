@@ -2,18 +2,34 @@
   "_meta": {
     "team": "DET",
     "player": "Bobi Klintman",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "NBA Draft records - June 2023 draft",
     "originYear": 2023,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Bobi Klintman",
-    "acquisitionType": "draft",
-    "date": "2023-06-22",
+    "acquisitionType": "trade",
+    "date": "2024-06-27",
     "currentTeam": "DET",
     "draftPick": 37,
-    "draftRound": 2
+    "draftRound": 2,
+    "note": "Forward from Wake Forest, drafted 37th overall by Minnesota, traded to Detroit",
+    "isOrigin": false,
+    "tradePartner": "MIN",
+    "tradeDescription": "Pistons acquired Klintman (#37) and Wendell Moore Jr. from Timberwolves for #53 pick, future pick, and cash",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2024 DET 2nd Round Pick (#53)",
+        "acquisitionType": "original",
+        "date": "2024-06-27",
+        "note": "Pistons' own second-round pick sent to Minnesota",
+        "isOrigin": true,
+        "becamePlayer": "Cam Spencer",
+        "draftPick": 53
+      }
+    ]
   }
 }

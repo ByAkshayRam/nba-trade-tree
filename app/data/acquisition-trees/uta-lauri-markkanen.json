@@ -1,0 +1,32 @@
+{
+  "_meta": {
+    "team": "UTA",
+    "player": "Lauri Markkanen",
+    "source": "ESPN, Basketball-Reference, NBA.com",
+    "originYear": 2017,
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Lauri Markkanen",
+    "acquisitionType": "trade",
+    "date": "2022-09-01",
+    "currentTeam": "UTA",
+    "tradePartner": "CLE",
+    "tradeDescription": "Donovan Mitchell mega-trade: Jazz received Markkanen, Sexton, Agbaji, 3 1sts, 2 swaps for Mitchell",
+    "note": "Finnish forward, 7'1\" stretch big from Arizona",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Donovan Mitchell",
+        "acquisitionType": "draft",
+        "date": "2017-06-22",
+        "draftPick": 13,
+        "draftRound": 1,
+        "note": "Louisville guard, Jazz drafted 13th overall 2017",
+        "isOrigin": true
+      }
+    ]
+  }
+}

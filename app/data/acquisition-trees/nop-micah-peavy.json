@@ -1,0 +1,48 @@
+{
+  "_meta": {
+    "team": "NOP",
+    "player": "Micah Peavy",
+    "source": "ESPN, Wikipedia",
+    "originYear": 2025,
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Micah Peavy",
+    "acquisitionType": "draft-night-trade",
+    "date": "2025-07-06",
+    "currentTeam": "NOP",
+    "draftPick": 40,
+    "draftRound": 2,
+    "tradePartner": "WAS",
+    "tradeDescription": "Draft rights acquired as #40 pick in McCollum-Poole trade with Washington",
+    "note": "Georgetown guard acquired via draft rights trade",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "CJ McCollum",
+        "note": "Guard sent to Washington (same trade as Poole/Bey)",
+        "isOrigin": true,
+        "date": "2022-02-08",
+        "acquisitionType": "trade",
+        "tradePartner": "POR"
+      },
+      {
+        "type": "player",
+        "name": "Kelly Olynyk",
+        "note": "Forward-center acquired from Toronto in Brandon Ingram trade",
+        "isOrigin": true,
+        "date": "2025-02-06",
+        "acquisitionType": "trade",
+        "tradePartner": "TOR"
+      },
+      {
+        "type": "pick",
+        "name": "2027 2nd Round Pick",
+        "note": "Chicago own 2nd round pick sent to Washington",
+        "isOrigin": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "_meta": {
+    "team": "PHX",
+    "player": "Koby Brea",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2025,
+    "depth": 4,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Koby Brea",
+    "acquisitionType": "trade",
+    "date": "2025-07-06",
+    "currentTeam": "PHX",
+    "tradePartner": "HOU",
+    "tradeDescription": "7-team trade: Suns received Brea (2025 #41 pick), Green, Brooks, Maluach, Fleming, picks from Rockets for Durant",
+    "draftPick": 41,
+    "draftRound": 2,
+    "note": "Kentucky guard, acquired as 2025 #41 pick in Durant trade",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Kevin Durant",
+        "acquisitionType": "trade",
+        "date": "2023-02-09",
+        "tradePartner": "BKN",
+        "tradeDescription": "Suns traded Mikal Bridges, Cam Johnson, 4 first-round picks, pick swap for Durant",
+        "note": "2x NBA Finals MVP, acquired from Brooklyn via trade",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Mikal Bridges",
+            "acquisitionType": "draft",
+            "date": "2018-06-21",
+            "draftPick": 10,
+            "draftRound": 1,
+            "note": "Villanova forward, drafted 10th overall by Phoenix",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Cam Johnson",
+            "acquisitionType": "draft",
+            "date": "2019-06-20",
+            "draftPick": 11,
+            "draftRound": 1,
+            "note": "North Carolina forward, drafted 11th overall by Phoenix",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Alex Toohey",
+        "acquisitionType": "draft",
+        "date": "2025-06-25",
+        "draftPick": 52,
+        "draftRound": 2,
+        "note": "Drafted 52nd overall by Phoenix, sent to Golden State in KD trade",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2026 2nd Round Pick",
+        "acquisitionType": "original",
+        "note": "Sent to Minnesota Timberwolves in KD trade",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2032 2nd Round Pick",
+        "acquisitionType": "original",
+        "note": "Sent to Minnesota Timberwolves in KD trade",
+        "isOrigin": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "GSW",
+    "player": "Quinten Post",
+    "source": "Basketball-Reference, ESPN",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Quinten Post",
+    "acquisitionType": "draft",
+    "date": "2024-06-26",
+    "currentTeam": "GSW",
+    "draftPick": 52,
+    "draftRound": 2,
+    "note": "Boston College center, drafted 52nd overall by GSW in 2024",
+    "isOrigin": true
+  }
+}

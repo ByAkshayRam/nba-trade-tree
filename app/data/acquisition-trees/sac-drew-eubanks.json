@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "SAC",
+    "player": "Drew Eubanks",
+    "source": "Basketball-Reference SAC 2025-26 Transactions",
+    "originYear": 2018,
+    "depth": 1,
+    "lastUpdated": "2026-02-17"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Drew Eubanks",
+    "acquisitionType": "free-agent",
+    "date": "2025-07-08",
+    "currentTeam": "SAC",
+    "note": "Center, undrafted from Oregon State in 2018",
+    "isOrigin": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "UTA",
+    "player": "Oscar Tshiebwe",
+    "source": "Basketball-Reference",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Oscar Tshiebwe",
+    "acquisitionType": "free-agent",
+    "date": "2024-10-01",
+    "currentTeam": "UTA",
+    "note": "Undrafted center from Kentucky. 2022 AP Player of the Year. Signed by UTA.",
+    "isOrigin": true
+  }
+}

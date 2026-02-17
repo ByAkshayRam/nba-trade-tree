@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "LAL",
+    "player": "Dalton Knecht",
+    "source": "Wikipedia, NBA.com, Basketball-Reference",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Dalton Knecht",
+    "acquisitionType": "draft",
+    "date": "2024-06-26",
+    "currentTeam": "LAL",
+    "draftPick": 17,
+    "draftRound": 1,
+    "note": "Tennessee forward, drafted 17th overall by Lakers",
+    "isOrigin": true
+  }
+}

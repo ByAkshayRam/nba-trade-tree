@@ -3,17 +3,31 @@
     "team": "CHA",
     "player": "Liam McNeeley",
     "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2025,
-    "depth": 1,
+    "originYear": 2022,
+    "depth": 2,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
     "type": "player",
     "name": "Liam McNeeley",
-    "acquisitionType": "draft",
-    "date": "2025-06-26",
+    "acquisitionType": "trade",
+    "date": "2025-06-30",
     "currentTeam": "CHA",
-    "draftPick": 45,
-    "draftRound": 2
+    "tradePartner": "PHX",
+    "tradeDescription": "Acquired from Phoenix in Mark Williams trade",
+    "note": "UConn wing, drafted 29th overall by Phoenix in 2025",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Mark Williams",
+        "acquisitionType": "draft",
+        "date": "2022-06-23",
+        "draftPick": 15,
+        "draftRound": 1,
+        "note": "Hornets' own pick, promising young center",
+        "tradeDescription": "Drafted by Hornets with 15th overall pick",
+        "isOrigin": true
+      }
+    ]
   }
 }

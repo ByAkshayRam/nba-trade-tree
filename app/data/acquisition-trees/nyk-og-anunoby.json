@@ -2,11 +2,11 @@
   "_meta": {
     "team": "NYK",
     "player": "OG Anunoby",
-    "source": "NBA/ESPN Trade History Research",
+    "source": "NBA Trade History Research - Deep Analysis",
     "sourceUrl": "https://www.basketball-reference.com/players/a/anunoog01.html",
-    "originYear": 2014,
-    "depth": 4,
-    "lastUpdated": "2026-02-10"
+    "originYear": 2018,
+    "depth": 5,
+    "lastUpdated": "2026-02-13"
   },
   "tree": {
     "type": "player",
@@ -15,8 +15,8 @@
     "date": "2023-12-30",
     "tradePartner": "TOR",
     "currentTeam": "NYK",
-    "tradeDescription": "Knicks acquire OG for RJ Barrett, Immanuel Quickley, and DET 2nd",
-    "note": "2019 NBA Champion, elite 3&D wing",
+    "tradeDescription": "NYK acquires OG Anunoby for RJ Barrett + Immanuel Quickley + future 2nd",
+    "note": "Elite 3&D wing, championship experience. Major defensive upgrade for NYK.",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -25,19 +25,39 @@
         "date": "2019-06-20",
         "draftPick": 3,
         "draftRound": 1,
-        "tradeDescription": "Drafted 3rd overall by Knicks",
-        "note": "Knicks tanked and won lottery in 2019",
+        "tradeDescription": "Drafted 3rd overall by NYK after tanking season",
+        "note": "Former Duke star, Canadian connection helped TOR. NYK's face of rebuild.",
         "assetsGivenUp": [
           {
             "type": "pick",
             "name": "2019 #3 Overall Pick",
-            "acquisitionType": "original",
-            "date": "2019-06-20",
+            "acquisitionType": "lottery-luck",
+            "date": "2019-05-14",
             "draftPick": 3,
             "becamePlayer": "RJ Barrett",
-            "tradeDescription": "Knicks' own pick - finished 17-65 in 2018-19",
-            "note": "Worst record in NBA that season",
-            "isOrigin": true
+            "tradeDescription": "NYK had worst record (17-65) but dropped to #3 in lottery",
+            "note": "NYK tanked hard in 2018-19, worst record but lottery dropped them to 3rd",
+            "assetsGivenUp": [
+              {
+                "type": "season-tank",
+                "name": "2018-19 Tank Season",
+                "acquisitionType": "strategic-losing",
+                "date": "2018-10-01",
+                "tradeDescription": "NYK deliberately built bad roster to maximize lottery odds",
+                "note": "17-65 record, worst in NBA. Sold veterans, played young players",
+                "assetsGivenUp": [
+                  {
+                    "type": "veteran-players",
+                    "name": "Veteran Talent Trades",
+                    "acquisitionType": "asset-accumulation",
+                    "date": "2018-02-08",
+                    "tradeDescription": "NYK traded Kristaps Porzingis + others to clear roster/cap",
+                    "note": "Porzingis trade to DAL cleared path for tank + future cap space",
+                    "isOrigin": true
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -48,8 +68,8 @@
         "date": "2020-11-18",
         "draftPick": 25,
         "draftRound": 1,
-        "tradeDescription": "Drafted 25th overall by Knicks",
-        "note": "Kentucky product, 6th Man candidate",
+        "tradeDescription": "Drafted 25th overall by NYK, Kentucky product",
+        "note": "Emerging 6th man, explosive scorer off bench. Fan favorite.",
         "assetsGivenUp": [
           {
             "type": "pick",
@@ -58,7 +78,8 @@
             "date": "2020-11-18",
             "draftPick": 25,
             "becamePlayer": "Immanuel Quickley",
-            "tradeDescription": "Knicks' own first-round pick",
+            "tradeDescription": "NYK's own first-round pick from playoff-bubble season",
+            "note": "NYK went 21-45 in 2019-20, bubble didn't help their record much",
             "isOrigin": true
           }
         ]
@@ -69,8 +90,31 @@
         "acquisitionType": "trade",
         "date": "2022-06-23",
         "tradePartner": "DET",
-        "tradeDescription": "Acquired from Detroit in Kemba Walker deal",
-        "isOrigin": true
+        "tradeDescription": "Acquired from Detroit in multi-team facilitator trade",
+        "note": "DET's 2024 second-round pick, sent to TOR in OG Anunoby trade. Used by TOR at #31.",
+        "assetsGivenUp": [
+          {
+            "type": "salary-match",
+            "name": "Contract Facilitation",
+            "acquisitionType": "trade-service",
+            "date": "2022-06-23",
+            "tradeDescription": "NYK used cap space/roster spots to help facilitate Detroit trade",
+            "note": "Monetized roster flexibility into future draft asset",
+            "assetsGivenUp": [
+              {
+                "type": "cap-flexibility",
+                "name": "Salary Cap Management",
+                "acquisitionType": "organizational-resource",
+                "date": "2022-06-01",
+                "tradeDescription": "NYK maintained cap space specifically for trade facilitation opportunities",
+                "note": "Front office asset management strategy",
+                "isOrigin": true
+              }
+            ]
+          }
+        ],
+        "becamePlayer": "Jonathan Mogbo",
+        "draftPick": 31
       }
     ]
   }

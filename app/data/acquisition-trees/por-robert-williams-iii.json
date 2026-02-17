@@ -1,0 +1,46 @@
+{
+  "_meta": {
+    "team": "POR",
+    "player": "Robert Williams III",
+    "source": "NBA.com, Basketball-Reference.com 2018 NBA Draft",
+    "originYear": 2012,
+    "depth": 6,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Robert Williams III",
+    "acquisitionType": "trade",
+    "date": "2023-10-01",
+    "currentTeam": "POR",
+    "tradePartner": "BOS",
+    "tradeDescription": "3-team trade: Blazers got Williams, Brogdon, and picks from Celtics for Holiday",
+    "note": "Texas A&M center, 27th overall pick 2018",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Jrue Holiday",
+        "acquisitionType": "trade",
+        "date": "2023-09-27",
+        "tradePartner": "MIL",
+        "tradeDescription": "3-team trade: Blazers got Holiday from Bucks as part of Lillard trade",
+        "note": "UCLA guard, All-Star point guard",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Damian Lillard",
+            "acquisitionType": "draft",
+            "date": "2012-06-28",
+            "draftPick": 6,
+            "draftRound": 1,
+            "note": "Drafted 6th overall by Portland in 2012, Weber State guard",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          }
+        ]
+      }
+    ]
+  }
+}

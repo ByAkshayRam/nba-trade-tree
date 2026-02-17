@@ -15,6 +15,7 @@
     "currentTeam": "NYK",
     "tradeDescription": "Signed as two-way player",
     "note": "UAB product, two-way contract. Free agent = no assets given up",
-    "isOrigin": true
+    "isOrigin": true,
+    "assetsGivenUp": []
   }
 }

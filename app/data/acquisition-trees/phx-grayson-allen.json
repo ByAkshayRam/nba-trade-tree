@@ -1,0 +1,42 @@
+{
+  "_meta": {
+    "team": "PHX",
+    "player": "Grayson Allen",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2018,
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Grayson Allen",
+    "acquisitionType": "trade",
+    "date": "2023-09-27",
+    "currentTeam": "PHX",
+    "tradePartner": "MIL",
+    "tradeDescription": "3-team trade: Lillard to Bucks, Ayton/Camara to Blazers, Allen/Nurkić/Little/Johnson to Suns",
+    "note": "Duke guard, acquired from Milwaukee in Lillard trade",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Deandre Ayton",
+        "acquisitionType": "draft",
+        "date": "2018-06-21",
+        "draftPick": 1,
+        "draftRound": 1,
+        "note": "Arizona center, drafted 1st overall by Phoenix",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Toumani Camara",
+        "acquisitionType": "draft",
+        "date": "2023-06-22",
+        "draftPick": 52,
+        "draftRound": 2,
+        "note": "Dayton forward, drafted 52nd overall by Phoenix",
+        "isOrigin": true
+      }
+    ]
+  }
+}

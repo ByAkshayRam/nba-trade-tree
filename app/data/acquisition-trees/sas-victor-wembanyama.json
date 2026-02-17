@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "SAS",
+    "player": "Victor Wembanyama",
+    "source": "NBA Draft History, Basketball-Reference",
+    "originYear": 2023,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Victor Wembanyama",
+    "acquisitionType": "draft",
+    "date": "2023-06-22",
+    "currentTeam": "SAS",
+    "draftPick": 1,
+    "draftRound": 1,
+    "note": "7'4\" center drafted 1st overall from Metropolitans 92 (France), 2024 NBA Rookie of the Year",
+    "isOrigin": true
+  }
+}

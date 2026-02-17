@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "SAC",
+    "player": "Maxime Raynaud",
+    "source": "Basketball-Reference SAC 2024-25 Transactions",
+    "originYear": 2025,
+    "depth": 1,
+    "lastUpdated": "2026-02-17"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Maxime Raynaud",
+    "acquisitionType": "draft",
+    "date": "2025-06-25",
+    "currentTeam": "SAC",
+    "draftPick": 42,
+    "draftRound": 2,
+    "note": "Center drafted 42nd overall from Stanford in 2025",
+    "isOrigin": true
+  }
+}

@@ -2,10 +2,10 @@
   "_meta": {
     "team": "DET",
     "player": "Ron Holland II",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "NBA Draft records, Basketball-Reference - June 2024 draft",
     "originYear": 2024,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
@@ -14,6 +14,9 @@
     "date": "2024-06-26",
     "currentTeam": "DET",
     "draftPick": 5,
-    "draftRound": 1
+    "draftRound": 1,
+    "note": "Forward from G League Ignite, drafted 5th overall by Detroit with their own pick",
+    "isOrigin": true,
+    "espnId": "4683771"
   }
 }

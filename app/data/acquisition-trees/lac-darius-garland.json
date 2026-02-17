@@ -1,0 +1,152 @@
+{
+  "_meta": {
+    "team": "LAC",
+    "player": "Darius Garland",
+    "source": "ESPN, NBA.com, Basketball-Reference, The Athletic",
+    "originYear": 2019,
+    "depth": 4,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Darius Garland",
+    "acquisitionType": "trade",
+    "date": "2026-02-04",
+    "currentTeam": "LAC",
+    "tradePartner": "CLE",
+    "tradeDescription": "Traded from Cavaliers with a 2026 2nd round pick in exchange for James Harden",
+    "note": "Two-time All-Star point guard",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "James Harden",
+        "acquisitionType": "trade",
+        "date": "2023-11-01",
+        "tradePartner": "PHI",
+        "tradeDescription": "3-team trade: LAC sent Batum, Covington, KJ Martin, Marcus Morris, picks to PHI; sent 2027 1st swap to OKC; received Harden, PJ Tucker, Filip Petrusev from PHI",
+        "note": "11-time All-Star guard",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Nicolas Batum",
+            "acquisitionType": "free-agent",
+            "date": "2021-08-13",
+            "note": "Re-signed with Clippers as free agent",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Robert Covington",
+            "acquisitionType": "trade",
+            "date": "2022-02-04",
+            "tradePartner": "POR",
+            "tradeDescription": "Traded from Trail Blazers with Norman Powell for Eric Bledsoe, Keon Johnson, Justise Winslow, and a 2025 2nd round pick",
+            "note": "3-and-D wing, acquired in same trade as Powell",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Eric Bledsoe",
+                "acquisitionType": "trade",
+                "date": "2021-08-16",
+                "tradePartner": "MEM",
+                "tradeDescription": "Traded from Grizzlies for Patrick Beverley, Daniel Oturu, and Rajon Rondo",
+                "note": "Veteran guard",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Patrick Beverley",
+                    "acquisitionType": "free-agent",
+                    "date": "2017-07-01",
+                    "note": "Defensive-minded guard",
+                    "isOrigin": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "KJ Martin",
+            "acquisitionType": "trade",
+            "date": "2023-07-08",
+            "tradePartner": "HOU",
+            "tradeDescription": "Acquired from Rockets (as Kenyon Martin Jr.) in 5-team trade involving MEM, ATL, OKC",
+            "note": "Athletic forward",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "pick",
+                "name": "2026 2nd Round Pick",
+                "acquisitionType": "original",
+                "date": "2026-06-26",
+                "note": "LAC own 2nd round pick, sent to HOU in 5-team trade",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2027 2nd Round Pick",
+                "acquisitionType": "original",
+                "date": "2027-06-26",
+                "note": "MEM own 2nd round pick, sent to HOU in 5-team trade (LAC also received via MEM)",
+                "isOrigin": true
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Marcus Morris",
+            "acquisitionType": "free-agent",
+            "date": "2019-07-15",
+            "note": "Veteran forward, signed as free agent",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2024 2nd Round Pick",
+            "acquisitionType": "original",
+            "date": "2024-06-26",
+            "becamePlayer": "Juan Nunez",
+            "note": "More favorable of LAC/TOR 2nd round picks, sent to PHI",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2028 1st Round Pick",
+            "acquisitionType": "original",
+            "date": "2028-06-20",
+            "note": "Clippers' own first-round pick, sent to PHI",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2029 1st Round Pick",
+            "acquisitionType": "original",
+            "date": "2029-06-21",
+            "note": "Clippers' own first-round pick swap, sent to PHI",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2029 2nd Round Pick",
+            "acquisitionType": "original",
+            "date": "2029-06-21",
+            "note": "Clippers' own second-round pick, sent to PHI",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2027 1st Round Pick Swap",
+            "acquisitionType": "original",
+            "date": "2027-06-24",
+            "note": "Right to swap first-round picks, sent to OKC in 3-team trade",
+            "isOrigin": true
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "_meta": {
+    "team": "PHX",
+    "player": "Oso Ighodaro",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2024,
+    "depth": 3,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Oso Ighodaro",
+    "acquisitionType": "trade",
+    "date": "2024-06-27",
+    "currentTeam": "PHX",
+    "tradePartner": "NYK",
+    "tradeDescription": "Traded Kevin McCullar Jr. and 2028 2nd round pick (BOS own) to Knicks for Ighodaro (#40 pick)",
+    "draftPick": 40,
+    "draftRound": 2,
+    "note": "Marquette forward, acquired from Knicks on draft night",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Kevin McCullar Jr.",
+        "acquisitionType": "draft",
+        "date": "2024-06-27",
+        "draftPick": 56,
+        "draftRound": 2,
+        "note": "Kansas guard, drafted 56th overall by Phoenix (received from Denver in Dunn trade), traded same day to NYK",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2028 2nd Round Pick",
+        "acquisitionType": "original",
+        "note": "Boston's own 2028 second-round pick",
+        "isOrigin": true
+      }
+    ]
+  }
+}

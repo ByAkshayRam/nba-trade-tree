@@ -2,39 +2,36 @@
   "_meta": {
     "team": "CHI",
     "player": "Anfernee Simons",
-    "source": "NBA Trade History Research",
-    "originYear": 2018,
+    "source": "ESPN, NBA.com",
+    "originYear": 2021,
     "depth": 4,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Anfernee Simons",
     "acquisitionType": "trade",
-    "date": "2026-02-06",
+    "date": "2026-02-05",
     "currentTeam": "CHI",
-    "tradePartner": "POR",
-    "tradeDescription": "Bulls acquire Simons at 2026 deadline for Zach LaVine",
-    "note": "Explosive scoring guard, MIP candidate",
+    "tradePartner": "BOS",
+    "tradeDescription": "Bulls traded Nikola Vucevic and a 2027 2nd round pick (DEN own) to Celtics for Anfernee Simons and a 2026 2nd round pick (more favorable)",
     "assetsGivenUp": [
       {
         "type": "player",
-        "name": "Zach LaVine",
+        "name": "Nikola Vucevic",
         "acquisitionType": "trade",
-        "date": "2017-06-23",
-        "tradePartner": "MIN",
-        "tradeDescription": "Bulls acquired LaVine from Wolves for Jimmy Butler",
-        "note": "2x All-Star, high-flying scorer",
+        "date": "2021-03-25",
+        "tradePartner": "ORL",
+        "tradeDescription": "Bulls traded Wendell Carter Jr., Otto Porter Jr., and two 1st-round picks to Magic for Vucevic and Al-Farouq Aminu",
         "assetsGivenUp": [
           {
             "type": "player",
-            "name": "Jimmy Butler",
+            "name": "Wendell Carter Jr.",
             "acquisitionType": "draft",
-            "date": "2011-06-23",
-            "draftPick": 30,
+            "date": "2018-06-21",
+            "draftPick": 7,
             "draftRound": 1,
-            "tradeDescription": "Bulls drafted Jimmy with their own pick",
-            "note": "6x All-Star, transformed from late pick to superstar",
+            "note": "Drafted 7th overall by Chicago Bulls from Duke in 2018 NBA Draft",
             "isOrigin": true
           }
         ]

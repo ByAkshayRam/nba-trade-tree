@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "MEM",
+    "player": "Zach Edey",
+    "source": "Basketball-Reference, ESPN, NBA.com",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Zach Edey",
+    "acquisitionType": "draft",
+    "date": "2024-06-26",
+    "currentTeam": "MEM",
+    "draftPick": 9,
+    "draftRound": 1,
+    "note": "Purdue center, 2024 Naismith Player of the Year",
+    "isOrigin": true
+  }
+}

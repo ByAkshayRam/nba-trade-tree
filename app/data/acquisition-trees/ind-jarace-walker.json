@@ -2,18 +2,30 @@
   "_meta": {
     "team": "IND",
     "player": "Jarace Walker",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "Basketball-Reference, ESPN, NBA Trade History",
     "originYear": 2023,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
     "name": "Jarace Walker",
-    "acquisitionType": "draft",
+    "acquisitionType": "draft-night-trade",
     "date": "2023-06-22",
     "currentTeam": "IND",
+    "tradePartner": "WAS",
     "draftPick": 8,
-    "draftRound": 1
+    "draftRound": 1,
+    "note": "Forward from Houston, 8th overall pick in 2023 NBA Draft. Drafted by WAS, traded to IND on draft night for 7th pick. IND also received PHX 2028 2nd and WAS 2029 2nd.",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2023 7th Overall Pick",
+        "becamePlayer": "Bilal Coulibaly",
+        "draftPick": 7,
+        "note": "IND's own 7th overall pick",
+        "isOrigin": true
+      }
+    ]
   }
 }

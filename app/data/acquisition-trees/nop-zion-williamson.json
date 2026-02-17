@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "NOP",
+    "player": "Zion Williamson",
+    "source": "ESPN, Basketball-Reference",
+    "originYear": 2019,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Zion Williamson",
+    "acquisitionType": "draft",
+    "date": "2019-06-20",
+    "currentTeam": "NOP",
+    "draftPick": 1,
+    "draftRound": 1,
+    "note": "Duke forward, #1 overall pick in 2019",
+    "isOrigin": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "LAL",
+    "player": "Marcus Smart",
+    "source": "ESPN, Wikipedia, Basketball-Reference",
+    "originYear": 2014,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Marcus Smart",
+    "acquisitionType": "free-agent",
+    "date": "2025-07-22",
+    "currentTeam": "LAL",
+    "note": "Former Boston guard, signed after buyout from Washington",
+    "isOrigin": true
+  }
+}

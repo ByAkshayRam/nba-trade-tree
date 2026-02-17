@@ -3,16 +3,72 @@
     "team": "CHA",
     "player": "Pat Connaughton",
     "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2026,
-    "depth": 1,
+    "originYear": 2020,
+    "depth": 5,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
     "type": "player",
     "name": "Pat Connaughton",
     "acquisitionType": "trade",
-    "date": "2026-02-06",
+    "date": "2025-07-06",
     "currentTeam": "CHA",
-    "tradePartner": "MIL"
+    "tradePartner": "MIL",
+    "tradeDescription": "Acquired from Bucks (with 2 second round picks) for Vasilije Micic",
+    "note": "Notre Dame guard, athletic shooter and dunker",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Vasilije Micic",
+        "acquisitionType": "trade",
+        "date": "2025-06-30",
+        "tradePartner": "PHX",
+        "tradeDescription": "Re-acquired from Suns with Liam McNeeley and 2029 1st for Mark Williams",
+        "note": "Serbian guard",
+        "tradeChain": {
+          "type": "player",
+          "name": "Vasilije Micic",
+          "acquisitionType": "trade",
+          "date": "2024-02-08",
+          "tradePartner": "OKC",
+          "tradeDescription": "Originally acquired in Gordon Hayward trade",
+          "assetsGivenUp": [
+            {
+              "type": "player",
+              "name": "Gordon Hayward",
+              "acquisitionType": "trade",
+              "date": "2020-11-29",
+              "tradePartner": "BOS",
+              "tradeDescription": "Sign-and-trade from Celtics",
+              "note": "Former All-Star forward",
+              "assetsGivenUp": [
+                {
+                  "type": "pick",
+                  "name": "2022 2nd Round Pick",
+                  "acquisitionType": "original",
+                  "date": "2020-11-29",
+                  "note": "Conditional pick sent to Boston",
+                  "becamePlayer": "Trevor Keels",
+                  "isOrigin": true
+                }
+              ]
+            }
+          ]
+        },
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Mark Williams",
+            "acquisitionType": "draft",
+            "date": "2022-06-23",
+            "draftPick": 15,
+            "draftRound": 1,
+            "note": "Hornets' own pick, promising young center",
+            "tradeDescription": "Drafted by Hornets with 15th overall pick",
+            "isOrigin": true
+          }
+        ]
+      }
+    ]
   }
 }

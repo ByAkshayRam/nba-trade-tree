@@ -2,20 +2,20 @@
   "_meta": {
     "team": "MIA",
     "player": "Andrew Wiggins",
-    "source": "NBA Trade History Research",
-    "originYear": 2014,
-    "depth": 5,
-    "lastUpdated": "2026-02-11"
+    "source": "ESPN, Basketball-Reference, NBA.com - Feb 2026",
+    "originYear": 2019,
+    "depth": 4,
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
     "name": "Andrew Wiggins",
     "acquisitionType": "trade",
-    "date": "2026-02-06",
+    "date": "2025-02-06",
     "currentTeam": "MIA",
     "tradePartner": "GSW",
-    "tradeDescription": "Heat acquire Wiggins in Jimmy Butler blockbuster",
-    "note": "2022 NBA Champion, All-Star starter, Finals key performer",
+    "tradeDescription": "Part of 5-team Jimmy Butler trade. MIA received Wiggins, PJ Tucker, and GSW 2025 1st round pick (top-10 protected)",
+    "note": "Acquired from Golden State in 5-team trade involving MIA, GSW, DET, UTA, TOR",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -23,27 +23,25 @@
         "acquisitionType": "trade",
         "date": "2019-07-06",
         "tradePartner": "PHI",
-        "tradeDescription": "Heat acquired Jimmy in sign-and-trade for Josh Richardson",
-        "note": "6x All-Star, Heat Culture embodiment",
+        "tradeDescription": "4-team sign-and-trade. MIA received Butler and Meyers Leonard. PHI received Josh Richardson. POR received Hassan Whiteside. LAC received Maurice Harkless and a future 1st round pick.",
+        "note": "Sign-and-trade with Philadelphia, Portland, and LA Clippers",
         "assetsGivenUp": [
           {
             "type": "player",
             "name": "Josh Richardson",
-            "acquisitionType": "draft",
-            "date": "2015-06-25",
-            "draftPick": 40,
-            "draftRound": 2,
-            "tradeDescription": "Heat drafted J-Rich with their own 2nd round pick",
-            "note": "Undrafted talent find, developed into starter",
+            "note": "Sent to PHI. Undrafted by MIA, signed 2015",
             "isOrigin": true
           },
           {
             "type": "player",
             "name": "Hassan Whiteside",
-            "acquisitionType": "free-agent",
-            "date": "2016-07-01",
-            "tradeDescription": "Re-signed own free agent (cap space)",
-            "note": "Shot blocking big, cap space used",
+            "note": "Sent to POR. Signed as free agent by MIA in 2014",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Maurice Harkless",
+            "note": "Sent to LAC with a future 1st round pick",
             "isOrigin": true
           }
         ]

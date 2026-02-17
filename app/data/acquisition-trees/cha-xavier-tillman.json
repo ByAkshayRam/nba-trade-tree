@@ -2,16 +2,20 @@
   "_meta": {
     "team": "CHA",
     "player": "Xavier Tillman",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2024,
+    "source": "ESPN, Hoops Rumors",
+    "originYear": 2026,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Xavier Tillman",
-    "acquisitionType": "free-agent",
-    "date": "2024-07-01",
-    "currentTeam": "CHA"
+    "acquisitionType": "trade",
+    "date": "2026-02-06",
+    "currentTeam": "CHA",
+    "tradePartner": "BOS",
+    "tradeDescription": "Celtics traded Tillman and $3.5M cash to Hornets to get under luxury tax. No assets sent back by Charlotte.",
+    "note": "Buzzer-beater deadline deal. CHA received Tillman + cash for nothing.",
+    "isOrigin": true
   }
 }

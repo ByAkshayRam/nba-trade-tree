@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "team": "POR",
+    "player": "Jabari Walker",
+    "source": "Basketball-Reference.com 2022 NBA Draft",
+    "originYear": 2022,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jabari Walker",
+    "acquisitionType": "draft",
+    "date": "2022-06-23",
+    "currentTeam": "POR",
+    "draftPick": 57,
+    "draftRound": 2,
+    "note": "Drafted 57th overall in 2022, Colorado forward",
+    "isOrigin": true,
+    "assetsGivenUp": []
+  }
+}

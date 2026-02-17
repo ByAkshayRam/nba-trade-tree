@@ -2,10 +2,10 @@
   "_meta": {
     "team": "ATL",
     "player": "Zaccharie Risacher",
-    "source": "NBA Trade History Research",
+    "source": "NBA/ESPN Trade History",
     "originYear": 2024,
-    "depth": 2,
-    "lastUpdated": "2026-02-11"
+    "depth": 1,
+    "lastUpdated": "2026-02-14"
   },
   "tree": {
     "type": "player",
@@ -15,19 +15,7 @@
     "currentTeam": "ATL",
     "draftPick": 1,
     "draftRound": 1,
-    "tradeDescription": "Hawks drafted Risacher #1 OVERALL with their OWN pick",
-    "note": "French forward, 2024 #1 pick, future cornerstone",
-    "assetsGivenUp": [
-      {
-        "type": "pick",
-        "name": "2024 #1 Overall Pick (ATL own)",
-        "acquisitionType": "original",
-        "date": "2024-06-26",
-        "tradeDescription": "Atlanta won 2024 draft lottery after post-Murray struggles",
-        "becamePlayer": "Zaccharie Risacher",
-        "note": "First French player to go #1 overall. Hawks rebuilt around young talent.",
-        "isOrigin": true
-      }
-    ]
+    "note": "French forward, #1 overall pick, cornerstone of Hawks rebuild",
+    "isOrigin": true
   }
 }

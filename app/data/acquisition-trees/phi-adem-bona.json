@@ -2,10 +2,13 @@
   "_meta": {
     "team": "PHI",
     "player": "Adem Bona",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "nbaId": 1641737,
+    "espnId": 5105637,
+    "source": "Basketball-Reference/NBA Draft History",
     "originYear": 2024,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-16",
+    "accuracy": "high"
   },
   "tree": {
     "type": "player",
@@ -14,6 +17,8 @@
     "date": "2024-06-26",
     "currentTeam": "PHI",
     "draftPick": 41,
-    "draftRound": 2
+    "draftRound": 2,
+    "note": "Drafted #41 overall by Philadelphia from UCLA. Signed July 21, 2024.",
+    "isOrigin": true
   }
 }

@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "MIN",
+    "player": "Enrique Freeman",
+    "source": "ESPN, NBA.com, Basketball-Reference, Wikipedia",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Enrique Freeman",
+    "acquisitionType": "free-agent",
+    "date": "2025-08-01",
+    "currentTeam": "MIN",
+    "note": "Akron forward, 2024 2nd round pick by IND. Indiana rescinded his qualifying offer, signed two-way contract with MIN as unrestricted free agent.",
+    "isOrigin": true
+  }
+}

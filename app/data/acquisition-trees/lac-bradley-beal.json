@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "LAC",
+    "player": "Bradley Beal",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2012,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Bradley Beal",
+    "acquisitionType": "free-agent",
+    "date": "2025-07-16",
+    "currentTeam": "LAC",
+    "note": "Signed 2-year, $11 million contract after Phoenix buyout",
+    "isOrigin": true
+  }
+}

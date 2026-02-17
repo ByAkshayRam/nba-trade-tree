@@ -1,0 +1,49 @@
+{
+  "_meta": {
+    "team": "SAS",
+    "player": "Kelly Olynyk",
+    "source": "NBA Trade Reports, ESPN, Basketball-Reference",
+    "originYear": 2013,
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Kelly Olynyk",
+    "acquisitionType": "trade",
+    "date": "2025-07-09",
+    "currentTeam": "SAS",
+    "tradePartner": "WAS",
+    "tradeDescription": "Spurs acquired Olynyk from Wizards for Branham + Wesley + 2026 2nd round pick",
+    "note": "Center originally drafted 13th overall by Dallas in 2013, immediately traded to Boston",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Malaki Branham",
+        "acquisitionType": "draft",
+        "date": "2022-06-23",
+        "draftPick": 20,
+        "draftRound": 1,
+        "note": "Guard drafted 20th overall from Ohio State",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Blake Wesley",
+        "acquisitionType": "draft",
+        "date": "2022-06-23",
+        "draftPick": 25,
+        "draftRound": 1,
+        "note": "Guard drafted 25th overall from Notre Dame",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2026 2nd Round Pick",
+        "acquisitionType": "trade",
+        "note": "Least favorable of Dallas, Philadelphia, Oklahoma City 2026 2nd round picks",
+        "isOrigin": true
+      }
+    ]
+  }
+}

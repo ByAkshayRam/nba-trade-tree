@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "team": "POR",
+    "player": "Scoot Henderson",
+    "source": "Basketball-Reference.com 2023 NBA Draft",
+    "originYear": 2023,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Scoot Henderson",
+    "acquisitionType": "draft",
+    "date": "2023-06-22",
+    "currentTeam": "POR",
+    "draftPick": 3,
+    "draftRound": 1,
+    "note": "Drafted 3rd overall in 2023, G-League Ignite guard",
+    "isOrigin": true,
+    "assetsGivenUp": []
+  }
+}

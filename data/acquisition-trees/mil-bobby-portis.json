@@ -2,17 +2,18 @@
   "_meta": {
     "team": "MIL",
     "player": "Bobby Portis",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "NBA/ESPN Trade History Research",
     "originYear": 2020,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
     "name": "Bobby Portis",
     "acquisitionType": "free-agent",
-    "date": "2020-11-29",
+    "date": "2025-07-06",
     "currentTeam": "MIL",
-    "note": "Fan favorite, 2021 champion"
+    "note": "Re-signed with Milwaukee in 2025 free agency. Originally signed with MIL in November 2020.",
+    "isOrigin": true
   }
 }

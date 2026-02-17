@@ -89,7 +89,7 @@
                                     "date": "2003-06-26",
                                     "draftPick": 20,
                                     "draftRound": 1,
-                                    "tradeDescription": "Drafted with pick acquired from 76ers (Moïso trade)",
+                                    "tradeDescription": "Drafted with pick acquired from 76ers (Mo\u00efso trade)",
                                     "assetsGivenUp": [
                                       {
                                         "type": "pick",
@@ -97,18 +97,18 @@
                                         "acquisitionType": "trade",
                                         "date": "2001-08-03",
                                         "tradePartner": "PHI",
-                                        "tradeDescription": "Celtics trade Jérôme Moïso for Roshown McLeod and lottery-protected 1st",
+                                        "tradeDescription": "Celtics trade J\u00e9r\u00f4me Mo\u00efso for Roshown McLeod and lottery-protected 1st",
                                         "becamePlayer": "Dahntay Jones",
                                         "assetsGivenUp": [
                                           {
                                             "type": "player",
-                                            "name": "Jérôme Moïso",
+                                            "name": "J\u00e9r\u00f4me Mo\u00efso",
                                             "acquisitionType": "draft",
                                             "date": "2000-06-28",
                                             "draftPick": 11,
                                             "draftRound": 1,
                                             "tradeDescription": "Drafted by Celtics with their OWN pick",
-                                            "note": "THE ULTIMATE ORIGIN. Celtics drafted Moïso 11th overall out of UCLA. Massive bust - played 24 games, averaged 1.5 PPG. His selection started a 26-year chain.",
+                                            "note": "THE ULTIMATE ORIGIN. Celtics drafted Mo\u00efso 11th overall out of UCLA. Massive bust - played 24 games, averaged 1.5 PPG. His selection started a 26-year chain.",
                                             "isOrigin": true
                                           }
                                         ]

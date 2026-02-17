@@ -2,19 +2,20 @@
   "_meta": {
     "team": "OKC",
     "player": "Isaiah Joe",
-    "source": "NBA/ESPN Trade History Research",
+    "source": "Basketball Reference Transaction Logs",
+    "sourceUrl": "https://www.basketball-reference.com/teams/OKC/2023_transactions.html",
     "originYear": 2022,
     "depth": 1,
-    "lastUpdated": "2026-02-10"
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
     "name": "Isaiah Joe",
-    "acquisitionType": "waiver",
-    "date": "2022-10-15",
+    "acquisitionType": "free-agent",
+    "date": "2022-10-16",
     "currentTeam": "OKC",
-    "tradeDescription": "Claimed off waivers from Philadelphia 76ers",
-    "note": "Arkansas product, elite three-point shooter. Waiver claim = no assets given up",
+    "tradeDescription": "Signed as free agent after being waived by Philadelphia 76ers",
+    "note": "Arkansas product, sharpshooter signed from free agency",
     "isOrigin": true
   }
 }

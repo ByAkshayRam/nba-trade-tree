@@ -1,0 +1,118 @@
+{
+  "_meta": {
+    "team": "PHX",
+    "player": "Khaman Maluach",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2025,
+    "depth": 4,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Khaman Maluach",
+    "acquisitionType": "trade",
+    "date": "2025-07-06",
+    "currentTeam": "PHX",
+    "tradePartner": "HOU",
+    "tradeDescription": "7-team trade: Suns received Maluach (2025 #10 pick), Green, Brooks, Fleming, Brea, picks from Rockets for Durant",
+    "draftPick": 10,
+    "draftRound": 1,
+    "note": "Duke center, acquired as 2025 #10 pick in Durant trade",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Kevin Durant",
+        "acquisitionType": "trade",
+        "date": "2023-02-09",
+        "tradePartner": "BKN",
+        "tradeDescription": "Suns traded Mikal Bridges, Cam Johnson, 4 first-round picks, pick swap for Durant",
+        "note": "2x NBA Finals MVP, acquired from Brooklyn via trade",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Mikal Bridges",
+            "acquisitionType": "draft",
+            "date": "2018-06-21",
+            "draftPick": 10,
+            "draftRound": 1,
+            "note": "Villanova forward, drafted 10th overall by Phoenix",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Cam Johnson",
+            "acquisitionType": "draft",
+            "date": "2019-06-20",
+            "draftPick": 11,
+            "draftRound": 1,
+            "note": "North Carolina forward, drafted 11th overall by Phoenix",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2023 1st Round Pick",
+            "acquisitionType": "original",
+            "date": "2023-06-22",
+            "becamePlayer": "Cam Whitmore",
+            "note": "Phoenix's own 2023 first-round pick",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2025 1st Round Pick",
+            "acquisitionType": "original",
+            "date": "2025-06-26",
+            "becamePlayer": "Drake Powell",
+            "note": "Phoenix's own 2025 first-round pick",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2027 1st Round Pick",
+            "acquisitionType": "original",
+            "note": "Phoenix's own 2027 first-round pick",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2029 1st Round Pick",
+            "acquisitionType": "original",
+            "note": "Phoenix's own 2029 first-round pick",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2028 Pick Swap",
+            "acquisitionType": "original",
+            "note": "Phoenix's right to swap 2028 first-round picks",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Alex Toohey",
+        "acquisitionType": "draft",
+        "date": "2025-06-25",
+        "draftPick": 52,
+        "draftRound": 2,
+        "note": "Drafted 52nd overall by Phoenix, sent to Golden State in KD trade",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2026 2nd Round Pick",
+        "acquisitionType": "original",
+        "note": "Sent to Minnesota Timberwolves in KD trade",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2032 2nd Round Pick",
+        "acquisitionType": "original",
+        "note": "Sent to Minnesota Timberwolves in KD trade",
+        "isOrigin": true
+      }
+    ]
+  }
+}

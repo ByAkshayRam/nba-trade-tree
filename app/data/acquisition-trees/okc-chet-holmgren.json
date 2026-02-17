@@ -5,8 +5,8 @@
     "source": "NBA/ESPN Trade History Research",
     "sourceUrl": "https://www.basketball-reference.com/players/h/holmgch01.html",
     "originYear": 2022,
-    "depth": 1,
-    "lastUpdated": "2026-02-10"
+    "depth": 3,
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
@@ -17,7 +17,7 @@
     "draftRound": 1,
     "currentTeam": "OKC",
     "tradeDescription": "Drafted 2nd overall by Thunder",
-    "note": "2024 ROY, unicorn big man. Missed entire 2022-23 with injury, homegrown talent",
+    "note": "2024 NBA Rookie of the Year, Gonzaga product",
     "isOrigin": true
   }
 }

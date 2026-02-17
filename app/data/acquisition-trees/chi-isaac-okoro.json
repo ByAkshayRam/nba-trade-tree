@@ -2,17 +2,30 @@
   "_meta": {
     "team": "CHI",
     "player": "Isaac Okoro",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2026,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "NBA.com, RotoWire, Bleacher Report",
+    "originYear": 2020,
+    "depth": 2,
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Isaac Okoro",
     "acquisitionType": "trade",
-    "date": "2026-02-06",
+    "date": "2025-07-06",
     "currentTeam": "CHI",
-    "tradePartner": "CLE"
+    "tradePartner": "CLE",
+    "tradeDescription": "Bulls traded Lonzo Ball to Cavaliers for Isaac Okoro",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Lonzo Ball",
+        "acquisitionType": "trade",
+        "date": "2021-08-06",
+        "tradePartner": "NOP",
+        "tradeDescription": "Sign-and-trade: Bulls acquired Lonzo Ball from Pelicans",
+        "note": "Signed 4-year, $85M deal via sign-and-trade from New Orleans",
+        "isOrigin": true
+      }
+    ]
   }
 }

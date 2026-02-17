@@ -5,13 +5,14 @@
     "source": "ESPN/NBA Trade History - Feb 2026",
     "originYear": 2024,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
     "name": "Justin Champagnie",
     "acquisitionType": "free-agent",
     "date": "2024-07-01",
-    "currentTeam": "WAS"
+    "currentTeam": "WAS",
+    "isOrigin": true
   }
 }

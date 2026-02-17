@@ -1,0 +1,94 @@
+{
+  "_meta": {
+    "team": "LAC",
+    "player": "John Collins",
+    "source": "NBA.com, The Athletic, ESPN, NBC Sports",
+    "originYear": 2017,
+    "depth": 3,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "John Collins",
+    "acquisitionType": "trade",
+    "date": "2025-07-08",
+    "currentTeam": "LAC",
+    "tradePartner": "UTA",
+    "tradeDescription": "3-team trade: LAC got Collins from Jazz; Heat got Powell from LAC; Jazz got Kevin Love, Kyle Anderson, and a 2027 LAC 2nd from Heat",
+    "note": "Power forward from Wake Forest",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Norman Powell",
+        "acquisitionType": "trade",
+        "date": "2022-02-04",
+        "tradePartner": "POR",
+        "tradeDescription": "Traded from Trail Blazers with Robert Covington for Eric Bledsoe, Keon Johnson, Justise Winslow, and a 2025 2nd round pick",
+        "note": "Scoring guard",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Eric Bledsoe",
+            "acquisitionType": "trade",
+            "date": "2021-08-16",
+            "tradePartner": "MEM",
+            "tradeDescription": "Traded from Grizzlies for Patrick Beverley, Daniel Oturu, and Rajon Rondo",
+            "note": "Veteran guard",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Patrick Beverley",
+                "acquisitionType": "free-agent",
+                "date": "2017-07-01",
+                "note": "Defensive-minded guard, re-signed with Clippers",
+                "isOrigin": true
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Justise Winslow",
+            "acquisitionType": "free-agent",
+            "date": "2021-08-07",
+            "note": "Signed with Clippers as free agent",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Keon Johnson",
+            "acquisitionType": "trade",
+            "date": "2021-07-30",
+            "tradePartner": "NYK",
+            "tradeDescription": "Traded from Knicks for Quentin Grimes and a 2024 2nd round pick (DET own)",
+            "note": "Athletic guard",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Quentin Grimes",
+                "acquisitionType": "draft",
+                "date": "2021-07-29",
+                "draftPick": 25,
+                "draftRound": 1,
+                "note": "Drafted by Clippers 25th overall, traded to Knicks on draft night",
+                "isOrigin": true
+              }
+            ]
+          },
+          {
+            "type": "pick",
+            "name": "2025 2nd Round Pick",
+            "acquisitionType": "original",
+            "date": "2025-06-25",
+            "becamePlayer": "Bogoljub Markovic",
+            "note": "DET own 2nd round pick, sent to Portland",
+            "isOrigin": true
+          }
+        ]
+      }
+    ]
+  }
+}

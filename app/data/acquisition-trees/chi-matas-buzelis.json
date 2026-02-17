@@ -2,10 +2,10 @@
   "_meta": {
     "team": "CHI",
     "player": "Matas Buzelis",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "ESPN, NBA.com",
     "originYear": 2024,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
@@ -14,6 +14,8 @@
     "date": "2024-06-26",
     "currentTeam": "CHI",
     "draftPick": 11,
-    "draftRound": 1
+    "draftRound": 1,
+    "note": "Drafted 11th overall by Chicago Bulls in 2024 NBA Draft",
+    "isOrigin": true
   }
 }

@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "SAS",
+    "player": "David Jones Garcia",
+    "source": "NBA Draft History",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "David Jones Garcia",
+    "acquisitionType": "undrafted",
+    "date": "2024-06-28",
+    "currentTeam": "SAS",
+    "note": "Forward, undrafted from Memphis",
+    "isOrigin": true
+  }
+}

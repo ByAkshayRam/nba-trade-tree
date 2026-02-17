@@ -2,16 +2,18 @@
   "_meta": {
     "team": "ORL",
     "player": "Colin Castleton",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "NBA.com/ESPN - Feb 2026",
     "originYear": 2024,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
     "name": "Colin Castleton",
     "acquisitionType": "free-agent",
     "date": "2024-07-01",
-    "currentTeam": "ORL"
+    "currentTeam": "ORL",
+    "note": "Two-way contract",
+    "isOrigin": true
   }
 }

@@ -2,9 +2,9 @@
   "_meta": {
     "team": "CHA",
     "player": "Grant Williams",
-    "source": "NBA Trade History Research",
+    "source": "ESPN/NBA Trade History - Feb 2026",
     "originYear": 2019,
-    "depth": 4,
+    "depth": 2,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -14,23 +14,18 @@
     "date": "2024-02-08",
     "currentTeam": "CHA",
     "tradePartner": "DAL",
-    "tradeDescription": "Hornets acquire Williams at 2024 deadline for future picks",
-    "note": "3-and-D forward, 2022 playoff hero",
+    "tradeDescription": "Acquired from Dallas with Seth Curry and 2027 1st for PJ Washington",
+    "note": "Tennessee forward, versatile role player",
     "assetsGivenUp": [
       {
-        "type": "pick",
-        "name": "2025 2nd Round Pick (CHA)",
-        "acquisitionType": "original",
-        "date": "2024-02-08",
-        "tradeDescription": "Charlotte's own second rounder",
-        "isOrigin": true
-      },
-      {
-        "type": "pick",
-        "name": "2026 2nd Round Pick (CHA)",
-        "acquisitionType": "original",
-        "date": "2024-02-08",
-        "tradeDescription": "Charlotte's own second rounder",
+        "type": "player",
+        "name": "PJ Washington",
+        "acquisitionType": "draft",
+        "date": "2019-06-20",
+        "draftPick": 12,
+        "draftRound": 1,
+        "note": "Kentucky forward, Hornets drafted him 12th overall",
+        "tradeDescription": "Drafted by Hornets with 12th overall pick",
         "isOrigin": true
       }
     ]

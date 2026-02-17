@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "team": "POR",
+    "player": "Damian Lillard",
+    "source": "NBA.com, ESPN, Basketball-Reference.com",
+    "originYear": 2025,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Damian Lillard",
+    "acquisitionType": "free-agent",
+    "date": "2025-07-19",
+    "currentTeam": "POR",
+    "note": "Signed 3-year deal as free agent after being waived by Milwaukee Bucks. Originally drafted #6 by Portland in 2012, traded to Milwaukee in September 2023, returned as free agent in July 2025. Tore Achilles in 2025 playoffs, expected to miss 2025-26 season.",
+    "isOrigin": true,
+    "assetsGivenUp": []
+  }
+}

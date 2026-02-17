@@ -18,6 +18,15 @@
     "currentTeam": "NYK",
     "tradeDescription": "Drafted 36th overall by Knicks",
     "note": "West Virginia product, defensive guard, homegrown talent",
-    "isOrigin": true
+    "isOrigin": true,
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "details": "2021 #36 Overall Pick (used)",
+        "name": "2021 #36 Overall Pick (used)",
+        "becamePlayer": "Miles McBride",
+        "draftPick": 36
+      }
+    ]
   }
 }

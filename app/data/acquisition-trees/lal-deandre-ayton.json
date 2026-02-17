@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "LAL",
+    "player": "Deandre Ayton",
+    "source": "ESPN, Basketball-Reference, The Athletic",
+    "originYear": 2018,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Deandre Ayton",
+    "acquisitionType": "free-agent",
+    "date": "2025-07-06",
+    "currentTeam": "LAL",
+    "note": "Former #1 overall pick, signed after Portland buyout",
+    "isOrigin": true
+  }
+}

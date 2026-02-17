@@ -17,6 +17,15 @@
     "currentTeam": "NYK",
     "tradeDescription": "Drafted 34th overall by Knicks",
     "note": "Marquette product, playmaking guard, homegrown talent",
-    "isOrigin": true
+    "isOrigin": true,
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "details": "2024 #34 Overall Pick (used)",
+        "name": "2024 #34 Overall Pick (used)",
+        "becamePlayer": "Tyler Kolek",
+        "draftPick": 34
+      }
+    ]
   }
 }

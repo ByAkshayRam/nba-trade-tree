@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "CLE",
+    "player": "Nae'Qwan Tomlin",
+    "source": "Wikipedia, ESPN, NBA.com, Cleveland.com verified",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-15"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Nae'Qwan Tomlin",
+    "acquisitionType": "undrafted",
+    "date": "2025-02-20",
+    "currentTeam": "CLE",
+    "note": "Undrafted forward from Memphis, signed 10-day contract, converted to two-way then standard contract",
+    "isOrigin": true,
+    "assetsGivenUp": [],
+    "espnId": "5106268"
+  }
+}

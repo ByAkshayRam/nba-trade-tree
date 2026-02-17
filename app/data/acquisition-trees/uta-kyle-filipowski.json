@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "UTA",
+    "player": "Kyle Filipowski",
+    "source": "ESPN, Basketball-Reference, Duke Athletics, NBA.com",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Kyle Filipowski",
+    "acquisitionType": "draft",
+    "date": "2024-06-26",
+    "currentTeam": "UTA",
+    "draftPick": 32,
+    "draftRound": 2,
+    "note": "Duke center/forward, 7'0\" versatile big man",
+    "isOrigin": true
+  }
+}

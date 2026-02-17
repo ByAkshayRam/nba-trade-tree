@@ -2,16 +2,30 @@
   "_meta": {
     "team": "CHI",
     "player": "Guerschon Yabusele",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2024,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "ESPN, SI, Bleacher Nation",
+    "originYear": 2022,
+    "depth": 2,
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Guerschon Yabusele",
-    "acquisitionType": "free-agent",
-    "date": "2024-07-01",
-    "currentTeam": "CHI"
+    "acquisitionType": "trade",
+    "date": "2026-02-05",
+    "currentTeam": "CHI",
+    "tradePartner": "NYK",
+    "tradeDescription": "Bulls traded Dalen Terry to Knicks for Guerschon Yabusele, straight 1-for-1 swap",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Dalen Terry",
+        "acquisitionType": "draft",
+        "date": "2022-06-23",
+        "draftPick": 18,
+        "draftRound": 1,
+        "note": "Drafted 18th overall by Chicago Bulls from Arizona in 2022 NBA Draft",
+        "isOrigin": true
+      }
+    ]
   }
 }

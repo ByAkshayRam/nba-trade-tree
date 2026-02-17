@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "team": "NYK",
+    "player": "Jeremy Sochan",
+    "source": "Basketball-Reference Transaction History",
+    "originYear": 2026,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jeremy Sochan",
+    "acquisitionType": "free-agent",
+    "date": "2026-02-12",
+    "currentTeam": "NYK",
+    "espnId": "4610139",
+    "note": "Signed to minimum deal after being waived by San Antonio Spurs. Originally drafted #9 overall by SAS in 2022.",
+    "isOrigin": true
+  }
+}

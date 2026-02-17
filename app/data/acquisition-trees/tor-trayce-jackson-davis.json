@@ -2,16 +2,29 @@
   "_meta": {
     "team": "TOR",
     "player": "Trayce Jackson-Davis",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2024,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "Basketball-Reference Transaction History",
+    "originYear": 2026,
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
     "name": "Trayce Jackson-Davis",
-    "acquisitionType": "free-agent",
-    "date": "2024-07-01",
-    "currentTeam": "TOR"
+    "acquisitionType": "trade",
+    "date": "2026-02-04",
+    "currentTeam": "TOR",
+    "tradePartner": "GSW",
+    "espnId": "4431684",
+    "note": "Acquired from Golden State Warriors for a 2026 2nd-round pick (LAL own).",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2026 2nd-Round Pick",
+        "acquisitionType": "original",
+        "date": "2026-02-04",
+        "note": "LAL own 2nd-round pick, sent to GSW for Trayce Jackson-Davis.",
+        "isOrigin": true
+      }
+    ]
   }
 }

@@ -14,6 +14,9 @@
     "date": "2018-06-21",
     "currentTeam": "CHA",
     "draftPick": 12,
-    "draftRound": 1
+    "draftRound": 1,
+    "note": "Michigan State forward, athletic versatile player",
+    "tradeDescription": "Drafted by Hornets with 12th overall pick", 
+    "isOrigin": true
   }
 }

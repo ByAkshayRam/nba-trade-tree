@@ -1,0 +1,32 @@
+{
+  "_meta": {
+    "team": "IND",
+    "player": "Jay Huff",
+    "source": "Basketball-Reference, ESPN, NBA Trade History",
+    "originYear": 2025,
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jay Huff",
+    "acquisitionType": "trade",
+    "date": "2025-07-06",
+    "currentTeam": "IND",
+    "tradePartner": "MEM",
+    "note": "Center from Virginia, undrafted",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2029 2nd Round Pick (POR own)",
+        "note": "Portland's own 2nd round pick",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2031 2nd Round Pick Swap Rights",
+        "isOrigin": true
+      }
+    ]
+  }
+}

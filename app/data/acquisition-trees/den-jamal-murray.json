@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "team": "DEN",
+    "player": "Jamal Murray",
+    "source": "ESPN, Basketball-Reference, Wikipedia",
+    "originYear": 2016,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jamal Murray",
+    "acquisitionType": "draft",
+    "date": "2016-06-23",
+    "currentTeam": "DEN",
+    "draftPick": 7,
+    "draftRound": 1,
+    "note": "Canadian guard from Kentucky, drafted 7th overall by Denver",
+    "isOrigin": true,
+    "assetsGivenUp": []
+  }
+}

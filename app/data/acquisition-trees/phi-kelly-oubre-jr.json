@@ -2,10 +2,13 @@
   "_meta": {
     "team": "PHI",
     "player": "Kelly Oubre Jr.",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "nbaId": 1626162,
+    "espnId": 3133603,
+    "source": "Basketball-Reference Transaction Log",
     "originYear": 2023,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-16",
+    "accuracy": "high"
   },
   "tree": {
     "type": "player",
@@ -13,6 +16,7 @@
     "acquisitionType": "free-agent",
     "date": "2023-07-01",
     "currentTeam": "PHI",
-    "note": "Athletic wing scorer"
+    "note": "Signed as free agent. Re-signed July 7, 2024.",
+    "isOrigin": true
   }
 }

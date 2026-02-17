@@ -1,0 +1,108 @@
+{
+  "_meta": {
+    "team": "NOP",
+    "player": "Saddiq Bey",
+    "source": "ESPN, Wikipedia, Basketball-Reference",
+    "originYear": 2020,
+    "depth": 3,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Saddiq Bey",
+    "acquisitionType": "trade",
+    "date": "2025-07-06",
+    "currentTeam": "NOP",
+    "tradePartner": "WAS",
+    "tradeDescription": "Pelicans acquired Poole, Bey, and 40th pick for McCollum, Olynyk, and 2027 2nd",
+    "note": "Forward acquired in McCollum-Poole trade",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "CJ McCollum",
+        "acquisitionType": "trade",
+        "date": "2022-02-08",
+        "tradePartner": "POR",
+        "tradeDescription": "Acquired from Portland Trail Blazers at trade deadline",
+        "note": "Guard acquired from Portland in 2022",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Josh Hart",
+            "acquisitionType": "draft",
+            "date": "2017-06-22",
+            "draftPick": 30,
+            "draftRound": 1,
+            "note": "Villanova guard drafted 30th overall",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Nickeil Alexander-Walker",
+            "acquisitionType": "draft",
+            "date": "2019-06-20",
+            "draftPick": 17,
+            "draftRound": 1,
+            "note": "Virginia Tech guard drafted by Pelicans",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Tomas Satoransky",
+            "acquisitionType": "trade",
+            "date": "2021-08-08",
+            "tradePartner": "CHI",
+            "note": "Acquired from Chicago in Lonzo Ball sign-and-trade",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Didi Louzada",
+            "acquisitionType": "free-agent",
+            "date": "2021-04-27",
+            "note": "Brazilian guard signed by Pelicans",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2025 1st Round Pick",
+            "becamePlayer": "Nolan Traor\u00e9",
+            "acquisitionType": "original",
+            "note": "NOP own conditional pick (originally 2022 1st that did not convey)",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2026 2nd Round Pick",
+            "acquisitionType": "original",
+            "note": "More favorable of two teams, sent to Portland",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2027 2nd Round Pick",
+            "acquisitionType": "original",
+            "note": "NOP own, sent to Portland",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Kelly Olynyk",
+        "acquisitionType": "trade",
+        "date": "2025-02-06",
+        "note": "Forward-center acquired from Toronto in Brandon Ingram trade",
+        "isOrigin": true,
+        "tradePartner": "TOR"
+      },
+      {
+        "type": "pick",
+        "name": "2027 2nd Round Pick",
+        "acquisitionType": "original",
+        "note": "Pelicans' own future second-round pick",
+        "isOrigin": true
+      }
+    ]
+  }
+}

@@ -2,45 +2,61 @@
   "_meta": {
     "team": "TOR",
     "player": "Brandon Ingram",
-    "source": "NBA Trade History Research",
-    "originYear": 2016,
-    "depth": 4,
-    "lastUpdated": "2026-02-11"
+    "source": "ESPN/NBA.com Trade History - Feb 2026",
+    "originYear": 2025,
+    "depth": 3,
+    "lastUpdated": "2026-02-17"
   },
   "tree": {
     "type": "player",
     "name": "Brandon Ingram",
     "acquisitionType": "trade",
-    "date": "2026-02-06",
+    "date": "2025-02-06",
     "currentTeam": "TOR",
     "tradePartner": "NOP",
-    "tradeDescription": "Raptors acquire Ingram at 2026 deadline for picks and young players",
-    "note": "All-Star scorer, former #2 pick, MIP winner",
+    "tradeDescription": "Pelicans traded Ingram to Raptors for Bruce Brown, Kelly Olynyk, a 2026 first-round pick (top-4 protected via IND) and a 2031 second-round pick",
+    "note": "Signed 3-year $120M extension after trade",
     "assetsGivenUp": [
       {
-        "type": "pick",
-        "name": "2026 Unprotected 1st (TOR)",
-        "acquisitionType": "original",
-        "date": "2026-02-06",
-        "tradeDescription": "Toronto's own 2026 first round pick",
-        "isOrigin": true
-      },
-      {
-        "type": "pick",
-        "name": "2028 1st Round Pick (TOR)",
-        "acquisitionType": "original",
-        "date": "2026-02-06",
-        "tradeDescription": "Toronto's own 2028 first round pick",
-        "isOrigin": true
+        "type": "player",
+        "name": "Bruce Brown",
+        "acquisitionType": "trade",
+        "date": "2024-01-17",
+        "tradePartner": "IND",
+        "note": "Acquired from Pacers in Pascal Siakam trade",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Pascal Siakam",
+            "acquisitionType": "draft",
+            "date": "2016-06-23",
+            "draftPick": 27,
+            "draftRound": 1,
+            "note": "Drafted 27th overall in 2016 out of New Mexico State",
+            "isOrigin": true
+          }
+        ]
       },
       {
         "type": "player",
         "name": "Kelly Olynyk",
-        "acquisitionType": "trade",
-        "date": "2023-02-09",
-        "tradePartner": "UTA",
-        "tradeDescription": "Salary filler",
+        "acquisitionType": "free-agent",
+        "date": "2023-07-06",
+        "note": "Signed as free agent in 2023",
         "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "details": "2026 First Round Pick (top-4 protected, via IND)",
+        "isOrigin": true,
+        "name": "2026 First Round Pick (top-4 protected, via IND)"
+      },
+      {
+        "type": "pick",
+        "details": "2031 Second Round Pick",
+        "isOrigin": true,
+        "name": "2031 Second Round Pick"
       }
     ]
   }

@@ -2,17 +2,21 @@
   "_meta": {
     "team": "PHI",
     "player": "Dalen Terry",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "nbaId": 1631207,
+    "espnId": 4433159,
+    "source": "Basketball-Reference Transaction Log",
     "originYear": 2026,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-16",
+    "accuracy": "high"
   },
   "tree": {
     "type": "player",
     "name": "Dalen Terry",
-    "acquisitionType": "trade",
-    "date": "2026-02-06",
+    "acquisitionType": "free-agent",
+    "date": "2026-02-10",
     "currentTeam": "PHI",
-    "tradePartner": "CHI"
+    "note": "Signed to two-way contract. Previously with Chicago Bulls (2022 draft, #18 overall).",
+    "isOrigin": true
   }
 }

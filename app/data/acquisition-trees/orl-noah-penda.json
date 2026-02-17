@@ -1,0 +1,40 @@
+{
+  "_meta": {
+    "team": "ORL",
+    "player": "Noah Penda",
+    "source": "Basketball-Reference Transaction History",
+    "originYear": 2025,
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Noah Penda",
+    "acquisitionType": "trade",
+    "date": "2025-06-26",
+    "currentTeam": "ORL",
+    "note": "Acquired from Boston for Amari Williams, Max Shulga, and 2 second-round picks in June 2025. Originally drafted #32 by BOS in 2025.",
+    "espnId": "5214637",
+    "tradePartner": "BOS",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Amari Williams",
+        "acquisitionType": "draft",
+        "date": "2025-06-25",
+        "draftPick": 46,
+        "note": "Drafted #46 by ORL in 2025 out of Kentucky. Traded to BOS for Noah Penda.",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Max Shulga",
+        "acquisitionType": "draft",
+        "date": "2025-06-25",
+        "draftPick": 57,
+        "note": "Drafted #57 by ORL in 2025 out of VCU. Traded to BOS for Noah Penda.",
+        "isOrigin": true
+      }
+    ]
+  }
+}

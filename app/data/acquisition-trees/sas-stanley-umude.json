@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "SAS",
+    "player": "Stanley Umude",
+    "source": "NBA Draft History",
+    "originYear": 2022,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Stanley Umude",
+    "acquisitionType": "undrafted",
+    "date": "2022-06-24",
+    "currentTeam": "SAS",
+    "note": "Forward, undrafted from Arkansas",
+    "isOrigin": true
+  }
+}

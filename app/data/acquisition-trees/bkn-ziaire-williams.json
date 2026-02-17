@@ -2,37 +2,38 @@
   "_meta": {
     "team": "BKN",
     "player": "Ziaire Williams",
-    "source": "NBA Trade History Research",
+    "source": "ESPN, NBA.com, Basketball-Reference",
     "originYear": 2021,
-    "depth": 4,
-    "lastUpdated": "2026-02-11"
+    "depth": 2,
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Ziaire Williams",
     "acquisitionType": "trade",
-    "date": "2024-02-08",
+    "date": "2024-07-19",
     "currentTeam": "BKN",
     "tradePartner": "MEM",
-    "tradeDescription": "Nets acquire Williams at 2024 deadline for future picks",
-    "note": "Young wing, high upside from Stanford",
+    "tradeDescription": "Nets traded Mamadi Diakite and draft rights to Nemanja Dangubic to Grizzlies for Ziaire Williams and a 2030 DAL 2nd round pick",
     "assetsGivenUp": [
       {
-        "type": "pick",
-        "name": "2025 2nd Round Pick (BKN)",
-        "acquisitionType": "original",
-        "date": "2024-02-08",
-        "tradeDescription": "Brooklyn's own second round pick",
-        "isOrigin": true
-      },
-      {
-        "type": "pick",
-        "name": "2027 2nd Round Pick (BKN)",
-        "acquisitionType": "original",
-        "date": "2024-02-08",
-        "tradeDescription": "Brooklyn's own second round pick",
+        "type": "player",
+        "name": "Mamadi Diakite",
+        "acquisitionType": "free-agent",
+        "date": "2023-10-01",
+        "note": "Signed as free agent by Brooklyn",
         "isOrigin": true
       }
-    ]
+    ],
+    "tradeChain": {
+      "type": "player",
+      "name": "Ziaire Williams",
+      "acquisitionType": "draft",
+      "date": "2021-07-29",
+      "draftPick": 10,
+      "draftRound": 1,
+      "note": "Drafted #10 overall by Memphis Grizzlies from Stanford",
+      "isOrigin": true
+    }
   }
 }

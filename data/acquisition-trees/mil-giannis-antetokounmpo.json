@@ -2,10 +2,10 @@
   "_meta": {
     "team": "MIL",
     "player": "Giannis Antetokounmpo",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "NBA/ESPN Trade History Research",
     "originYear": 2013,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
@@ -15,6 +15,7 @@
     "currentTeam": "MIL",
     "draftPick": 15,
     "draftRound": 1,
-    "note": "2x MVP, DPOY, 2021 Champion, Finals MVP"
+    "note": "2x MVP (2019, 2020), DPOY (2020), 2021 Finals MVP. Drafted 15th overall from Greece.",
+    "isOrigin": true
   }
 }

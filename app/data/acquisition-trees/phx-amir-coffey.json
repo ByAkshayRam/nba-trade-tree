@@ -1,0 +1,70 @@
+{
+  "_meta": {
+    "team": "PHX",
+    "player": "Amir Coffey",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2019,
+    "depth": 3,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Amir Coffey",
+    "acquisitionType": "trade",
+    "date": "2026-02-05",
+    "currentTeam": "PHX",
+    "tradePartner": "MIL",
+    "tradeDescription": "3-team trade: Suns received Coffey, Anthony from Bucks for Richards to Bulls, Hayes-Davis to Bucks",
+    "note": "Minnesota guard, acquired from Milwaukee in 3-team deadline deal",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Nick Richards",
+        "acquisitionType": "trade",
+        "date": "2025-01-15",
+        "tradePartner": "CHA",
+        "tradeDescription": "PHX traded Josh Okogie and 3 second-round picks (2026 DEN, 2031 DEN, 2031 PHX) to CHA for Nick Richards and a 2025 2nd",
+        "note": "Kentucky center, acquired from Charlotte",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Josh Okogie",
+            "acquisitionType": "free-agent",
+            "date": "2022-07-01",
+            "note": "Wing signed as FA by PHX in 2022. Sent to CHA for Richards.",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2026 2nd Round Pick (via DEN)",
+            "acquisitionType": "trade",
+            "note": "Denver's 2026 2nd, sent to CHA for Richards",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2031 2nd Round Pick (via DEN)",
+            "acquisitionType": "trade",
+            "note": "Denver's 2031 2nd, sent to CHA for Richards",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2031 2nd Round Pick (PHX own)",
+            "acquisitionType": "original",
+            "note": "PHX own 2031 2nd, sent to CHA for Richards",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Nigel Hayes-Davis",
+        "acquisitionType": "undrafted",
+        "date": "2017-07-01",
+        "note": "Wisconsin forward, undrafted free agent",
+        "isOrigin": true
+      }
+    ]
+  }
+}

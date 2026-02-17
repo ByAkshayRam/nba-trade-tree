@@ -1,0 +1,59 @@
+{
+  "_meta": {
+    "team": "DEN",
+    "player": "DaRon Holmes II",
+    "source": "ESPN, NBA.com, Yahoo Sports, Denver Post",
+    "originYear": 2024,
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "DaRon Holmes II",
+    "acquisitionType": "draft-night-trade",
+    "date": "2024-06-26",
+    "currentTeam": "DEN",
+    "tradePartner": "PHX",
+    "tradeDescription": "Selected 22nd by Phoenix, traded to Denver on draft night",
+    "draftPick": 22,
+    "draftRound": 1,
+    "note": "Forward from Dayton acquired via draft-night trade",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2024 #28 Pick",
+        "acquisitionType": "original",
+        "date": "2024-06-26",
+        "becamePlayer": "Ryan Dunn",
+        "note": "Denver's 28th overall pick (1st round)",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2024 #56 Pick", 
+        "acquisitionType": "original",
+        "date": "2024-06-26",
+        "becamePlayer": "Jamal Shead",
+        "note": "Denver's 56th overall pick (2nd round)",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2026 DEN 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2024-06-26",
+        "note": "Denver's 2026 second-round pick",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2031 DEN 2nd Round Pick",
+        "acquisitionType": "original", 
+        "date": "2024-06-26",
+        "note": "Denver's 2031 second-round pick",
+        "isOrigin": true
+      }
+    ]
+  }
+}

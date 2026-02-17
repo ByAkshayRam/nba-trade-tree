@@ -17,6 +17,15 @@
     "currentTeam": "NYK",
     "tradeDescription": "Drafted 26th overall by Knicks",
     "note": "Weber State product, versatile forward, homegrown talent",
-    "isOrigin": true
+    "isOrigin": true,
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "details": "2024 #26 Overall Pick (used)",
+        "name": "2024 #26 Overall Pick (used)",
+        "becamePlayer": "Dillon Jones",
+        "draftPick": 26
+      }
+    ]
   }
 }

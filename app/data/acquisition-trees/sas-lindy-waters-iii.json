@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "SAS",
+    "player": "Lindy Waters III",
+    "source": "NBA Free Agency Reports",
+    "originYear": 2022,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Lindy Waters III",
+    "acquisitionType": "free-agent",
+    "date": "2024-08-01",
+    "currentTeam": "SAS",
+    "note": "Guard, undrafted from Oklahoma State in 2022",
+    "isOrigin": true
+  }
+}

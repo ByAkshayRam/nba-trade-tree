@@ -1,0 +1,30 @@
+{
+  "_meta": {
+    "team": "SAC",
+    "player": "Nique Clifford",
+    "source": "Basketball-Reference SAC 2024-25 Transactions",
+    "originYear": 2024,
+    "depth": 2,
+    "lastUpdated": "2026-02-17"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Nique Clifford",
+    "acquisitionType": "trade",
+    "date": "2025-06-25",
+    "currentTeam": "SAC",
+    "tradePartner": "OKC",
+    "tradeDescription": "Kings traded a 2027 1st round draft pick (protected) to Thunder for Nique Clifford",
+    "note": "Forward originally drafted 46th overall from Colorado State in 2024 by OKC",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2027 1st Round Pick (SAC, protected)",
+        "acquisitionType": "original",
+        "date": "2025-06-25",
+        "note": "Sacramento's own 1st round pick, protected",
+        "isOrigin": true
+      }
+    ]
+  }
+}

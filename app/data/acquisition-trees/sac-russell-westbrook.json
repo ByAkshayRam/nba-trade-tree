@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "SAC",
+    "player": "Russell Westbrook",
+    "source": "Basketball-Reference SAC 2025-26 Transactions",
+    "originYear": 2008,
+    "depth": 1,
+    "lastUpdated": "2026-02-17"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Russell Westbrook",
+    "acquisitionType": "free-agent",
+    "date": "2025-10-16",
+    "currentTeam": "SAC",
+    "note": "Former MVP, originally drafted 4th overall by Seattle in 2008. Signed as free agent.",
+    "isOrigin": true
+  }
+}

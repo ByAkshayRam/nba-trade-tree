@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "BKN",
+    "player": "Chaney Johnson",
+    "source": "NBA.com, Yahoo Sports, Wikipedia",
+    "originYear": 2025,
+    "depth": 1,
+    "lastUpdated": "2026-02-15"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Chaney Johnson",
+    "acquisitionType": "undrafted",
+    "date": "2025-12-27",
+    "currentTeam": "BKN",
+    "note": "Two-way contract - undrafted from Auburn, helped Tigers reach 2025 Final Four",
+    "isOrigin": true
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "_meta": {
+    "team": "LAC",
+    "player": "Kris Dunn",
+    "source": "NBA.com, Wikipedia, Deseret News",
+    "originYear": 2016,
+    "depth": 3,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Kris Dunn",
+    "acquisitionType": "sign-and-trade",
+    "date": "2024-07-18",
+    "currentTeam": "LAC",
+    "tradePartner": "UTA",
+    "tradeDescription": "Sign-and-trade from Jazz for Russell Westbrook and assets",
+    "note": "3-year, $17 million deal, defensive guard",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Russell Westbrook",
+        "acquisitionType": "free-agent",
+        "date": "2023-07-01",
+        "note": "Former MVP point guard",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2030 2nd Round Pick Swap",
+        "acquisitionType": "original",
+        "date": "2030-06-26",
+        "note": "Right to swap second-round picks",
+        "isOrigin": true
+      },
+      {
+        "type": "other",
+        "name": "Draft Rights to Balsa Koprivica",
+        "note": "International draft rights",
+        "isOrigin": true
+      },
+      {
+        "type": "other",
+        "name": "Cash Considerations",
+        "note": "Cash sent in sign-and-trade",
+        "isOrigin": true
+      }
+    ]
+  }
+}

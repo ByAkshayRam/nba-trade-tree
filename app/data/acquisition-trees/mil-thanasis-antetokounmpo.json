@@ -2,10 +2,10 @@
   "_meta": {
     "team": "MIL",
     "player": "Thanasis Antetokounmpo",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "NBA/ESPN Trade History Research",
     "originYear": 2019,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
@@ -13,6 +13,7 @@
     "acquisitionType": "free-agent",
     "date": "2019-07-22",
     "currentTeam": "MIL",
-    "note": "Giannis brother"
+    "note": "Signed as free agent in July 2019. Brother of Giannis Antetokounmpo.",
+    "isOrigin": true
   }
 }

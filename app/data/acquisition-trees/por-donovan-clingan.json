@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "team": "POR",
+    "player": "Donovan Clingan",
+    "source": "Basketball-Reference.com 2024 NBA Draft",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Donovan Clingan",
+    "acquisitionType": "draft",
+    "date": "2024-06-26",
+    "currentTeam": "POR",
+    "draftPick": 7,
+    "draftRound": 1,
+    "note": "Drafted 7th overall in 2024, UConn center",
+    "isOrigin": true,
+    "assetsGivenUp": []
+  }
+}

@@ -2,10 +2,10 @@
   "_meta": {
     "team": "ATL",
     "player": "Buddy Hield",
-    "source": "NBA Trade History Research",
-    "originYear": 2016,
-    "depth": 5,
-    "lastUpdated": "2026-02-11"
+    "source": "NBA.com, Wikipedia, Bleacher Report",
+    "originYear": 2025,
+    "depth": 3,
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
@@ -14,35 +14,91 @@
     "date": "2026-02-06",
     "currentTeam": "ATL",
     "tradePartner": "GSW",
-    "tradeDescription": "Hawks acquire Hield at 2026 deadline as part of multi-team Butler mega-deal",
-    "note": "Elite 3-point shooter, journeyman veteran",
+    "tradeDescription": "Hawks trade Porzingis to Warriors for Kuminga and Buddy Hield",
+    "note": "Elite 3-point shooter, career 40% from deep",
     "assetsGivenUp": [
       {
         "type": "player",
-        "name": "Bogdan Bogdanovic",
+        "name": "Kristaps Porzingis",
         "acquisitionType": "trade",
-        "date": "2020-11-21",
-        "tradePartner": "SAC",
-        "tradeDescription": "Hawks acquired Bogdan via sign-and-trade from Kings",
-        "note": "Serbian sharpshooter, solid scorer",
+        "date": "2025-07-07",
+        "tradePartner": "BOS",
+        "tradeDescription": "3-team trade: Hawks got Porzingis from Celtics, sent Niang to BOS, Mann + #22 pick to BKN",
+        "note": "2024 NBA Champion with Celtics, 7'2\" unicorn",
         "assetsGivenUp": [
           {
+            "type": "player",
+            "name": "Georges Niang",
+            "acquisitionType": "trade",
+            "date": "2025-02-07",
+            "tradePartner": "CLE",
+            "tradeDescription": "Hawks traded De'Andre Hunter to Cavaliers for Niang, Caris LeVert, 3 second-round picks, and 2 pick swaps",
+            "note": "The Minivan - stretch four, career 40% 3PT shooter. Sent to BOS in Porzingis deal.",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "De'Andre Hunter",
+                "acquisitionType": "trade",
+                "date": "2019-07-08",
+                "tradePartner": "DAL",
+                "tradeDescription": "Hawks acquired the #4 pick from Mavericks (via draft night trade involving Luka Doncic) and selected Hunter",
+                "draftPick": 4,
+                "note": "Virginia product, #4 overall pick in 2019. Hawks' own pick from Luka trade compensation.",
+                "isOrigin": true
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Terance Mann",
+            "acquisitionType": "trade",
+            "date": "2025-02-06",
+            "tradePartner": "LAC",
+            "tradeDescription": "Hawks traded Bogdan Bogdanović + 3 second-round picks to Clippers for Mann and Bones Hyland",
+            "note": "Versatile wing, 2021 playoff hero vs Utah. Sent to BKN in Porzingis deal.",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Bogdan Bogdanović",
+                "acquisitionType": "free-agent",
+                "date": "2020-11-21",
+                "note": "Signed via sign-and-trade from Sacramento Kings, 4-year $72M deal",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2025 MIN #31 Pick",
+                "becamePlayer": "Rasheer Fleming",
+                "acquisitionType": "original",
+                "note": "Minnesota's 2025 2nd-round pick, sent to LAC in Mann trade",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2026 MEM 2nd Round Pick (protected 43-60)",
+                "acquisitionType": "original",
+                "note": "Memphis' 2026 2nd-round pick, protected 43-60, sent to LAC in Mann trade",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2027 LAC 2nd Round Pick",
+                "acquisitionType": "original",
+                "note": "Clippers' own 2027 2nd-round pick, sent to LAC in Mann trade",
+                "isOrigin": true
+              }
+            ]
+          },
+          {
             "type": "pick",
-            "name": "2024 2nd Round Pick (ATL)",
+            "name": "2025 #22 Pick",
+            "becamePlayer": "Drake Powell",
             "acquisitionType": "original",
-            "date": "2020-11-21",
-            "tradeDescription": "Atlanta's own 2nd rounder plus cap space",
+            "date": "2025-06-26",
+            "note": "Hawks' own 2025 first-round pick, sent to Brooklyn in Porzingis 3-team deal",
             "isOrigin": true
           }
         ]
-      },
-      {
-        "type": "pick",
-        "name": "2027 2nd Round Pick (ATL)",
-        "acquisitionType": "original",
-        "date": "2026-02-06",
-        "tradeDescription": "Atlanta's own 2nd rounder",
-        "isOrigin": true
       }
     ]
   }

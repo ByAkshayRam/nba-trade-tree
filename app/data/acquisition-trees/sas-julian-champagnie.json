@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "SAS",
+    "player": "Julian Champagnie",
+    "source": "NBA Draft History, Basketball-Reference",
+    "originYear": 2022,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Julian Champagnie",
+    "acquisitionType": "undrafted",
+    "date": "2022-06-23",
+    "currentTeam": "SAS",
+    "note": "Forward signed as undrafted free agent from St. John's after 2022 NBA Draft",
+    "isOrigin": true
+  }
+}

@@ -2,10 +2,10 @@
   "_meta": {
     "team": "TOR",
     "player": "RJ Barrett",
-    "source": "NBA Trade History Research",
-    "originYear": 2019,
-    "depth": 4,
-    "lastUpdated": "2026-02-11"
+    "source": "ESPN/NBA.com Trade History - Feb 2026",
+    "originYear": 2017,
+    "depth": 3,
+    "lastUpdated": "2026-02-17"
   },
   "tree": {
     "type": "player",
@@ -14,48 +14,51 @@
     "date": "2023-12-30",
     "currentTeam": "TOR",
     "tradePartner": "NYK",
-    "tradeDescription": "Raptors acquire RJ for Immanuel Quickley and a 2nd",
-    "note": "Canadian star comes home, former #3 pick",
+    "tradeDescription": "Raptors traded OG Anunoby, Precious Achiuwa, and Malachi Flynn to Knicks for RJ Barrett, Immanuel Quickley, and a 2024 second-round pick (via DET)",
+    "note": "Canadian star homecoming",
     "assetsGivenUp": [
       {
         "type": "player",
-        "name": "Immanuel Quickley",
+        "name": "OG Anunoby",
         "acquisitionType": "draft",
-        "date": "2020-11-18",
-        "draftPick": 25,
+        "date": "2017-06-22",
+        "draftPick": 23,
         "draftRound": 1,
-        "currentTeam": "TOR",
-        "tradeDescription": "Knicks drafted IQ with pick acquired from OKC",
-        "note": "Scoring guard, stayed in Toronto after trade",
+        "note": "Drafted 23rd overall in 2017 out of Indiana",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Precious Achiuwa",
+        "acquisitionType": "trade",
+        "date": "2021-08-06",
+        "tradePartner": "MIA",
+        "note": "Came in Kyle Lowry sign-and-trade to Miami",
+        "isOrigin": false,
         "assetsGivenUp": [
           {
-            "type": "pick",
-            "name": "2020 #25 Pick (from OKC via LAC)",
-            "acquisitionType": "trade",
-            "date": "2019-07-06",
-            "tradePartner": "LAC",
-            "tradeDescription": "Knicks got pick in Marcus Morris sign-and-trade",
-            "becamePlayer": "Immanuel Quickley",
-            "assetsGivenUp": [
-              {
-                "type": "player",
-                "name": "Marcus Morris Sr.",
-                "acquisitionType": "free-agent",
-                "date": "2019-07-06",
-                "tradeDescription": "Knicks signed Morris as free agent, then traded for pick",
-                "note": "Sign-and-trade",
-                "isOrigin": true
-              }
-            ]
+            "type": "player",
+            "name": "Kyle Lowry",
+            "acquisitionType": "free-agent",
+            "date": "2012-07-18",
+            "note": "Signed as free agent from HOU in 2012. Became franchise cornerstone.",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Goran Dragic",
+            "note": "Also received in Lowry S&T, later waived",
+            "isOrigin": true
           }
         ]
       },
       {
-        "type": "pick",
-        "name": "2024 2nd Round Pick",
-        "acquisitionType": "original",
-        "date": "2023-12-30",
-        "tradeDescription": "Knicks own 2nd round pick",
+        "type": "player",
+        "name": "Malachi Flynn",
+        "acquisitionType": "draft",
+        "date": "2020-11-18",
+        "draftPick": 29,
+        "draftRound": 1,
         "isOrigin": true
       }
     ]

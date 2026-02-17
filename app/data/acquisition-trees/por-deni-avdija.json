@@ -1,0 +1,117 @@
+{
+  "_meta": {
+    "team": "POR",
+    "player": "Deni Avdija",
+    "source": "Basketball-Reference.com 2024-25 POR transactions",
+    "originYear": 2012,
+    "depth": 8,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Deni Avdija",
+    "acquisitionType": "trade",
+    "date": "2024-07-06",
+    "currentTeam": "POR",
+    "tradePartner": "WAS",
+    "tradeDescription": "Traded Brogdon, Carlton Carrington (#14 pick), 2028 2nd (GSW own), 2029 1st (POR own), and 2030 2nd (POR own) to Washington for Avdija and a trade exception",
+    "note": "Israeli forward, 9th overall pick 2020",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Malcolm Brogdon",
+        "acquisitionType": "trade",
+        "date": "2023-10-01",
+        "tradePartner": "BOS",
+        "tradeDescription": "Acquired from Celtics along with Robert Williams, 2024 1st (GSW own), and 2029 1st (BOS own) for Jrue Holiday",
+        "note": "Virginia guard, 2016 ROY",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Jrue Holiday",
+            "acquisitionType": "trade",
+            "date": "2023-09-27",
+            "tradePartner": "MIL",
+            "tradeDescription": "3-team trade: Blazers got Holiday from Bucks as part of Lillard trade",
+            "note": "UCLA guard, All-Star point guard",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Damian Lillard",
+                "acquisitionType": "draft",
+                "date": "2012-06-28",
+                "draftPick": 6,
+                "draftRound": 1,
+                "note": "Drafted 6th overall by Portland in 2012, Weber State guard",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Carlton Carrington",
+        "acquisitionType": "draft",
+        "date": "2024-06-26",
+        "draftPick": 14,
+        "draftRound": 1,
+        "note": "Drafted 14th overall in 2024 (pick acquired from GSW via BOS in Holiday trade). Also known as Bub Carrington.",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Jrue Holiday",
+            "acquisitionType": "trade",
+            "date": "2023-09-27",
+            "tradePartner": "MIL",
+            "tradeDescription": "3-team trade: Blazers got Holiday from Bucks as part of Lillard trade",
+            "note": "UCLA guard, All-Star point guard",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Damian Lillard",
+                "acquisitionType": "draft",
+                "date": "2012-06-28",
+                "draftPick": 6,
+                "draftRound": 1,
+                "note": "Drafted 6th overall by Portland in 2012, Weber State guard",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2028 2nd Round Pick (GSW own)",
+        "acquisitionType": "original",
+        "date": "2024-07-06",
+        "note": "Golden State's own 2nd round pick",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2029 1st Round Pick (POR own)",
+        "acquisitionType": "original",
+        "date": "2024-07-06",
+        "note": "Portland's own 1st round pick",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2030 2nd Round Pick (POR own)",
+        "acquisitionType": "original",
+        "date": "2024-07-06",
+        "note": "Portland's own 2nd round pick",
+        "isOrigin": true
+      }
+    ]
+  }
+}

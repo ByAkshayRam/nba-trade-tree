@@ -2,18 +2,23 @@
   "_meta": {
     "team": "PHI",
     "player": "Johni Broome",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "nbaId": 1641780,
+    "espnId": 4433569,
+    "source": "Basketball-Reference/NBA Draft History",
     "originYear": 2025,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-16",
+    "accuracy": "high"
   },
   "tree": {
     "type": "player",
     "name": "Johni Broome",
     "acquisitionType": "draft",
-    "date": "2025-06-26",
+    "date": "2025-06-25",
     "currentTeam": "PHI",
-    "draftPick": 25,
-    "draftRound": 1
+    "draftPick": 35,
+    "draftRound": 2,
+    "note": "Drafted #35 overall by Philadelphia from Auburn. Selected with the 2025 2nd round pick acquired from Dallas in the Caleb Martin/Quentin Grimes trade.",
+    "isOrigin": true
   }
 }

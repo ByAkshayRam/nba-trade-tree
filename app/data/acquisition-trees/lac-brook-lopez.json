@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "LAC",
+    "player": "Brook Lopez",
+    "source": "ESPN, Wikipedia, Basketball-Reference, Spotrac",
+    "originYear": 2008,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Brook Lopez",
+    "acquisitionType": "free-agent",
+    "date": "2025-07-06",
+    "currentTeam": "LAC",
+    "note": "Signed 2-year, $18 million contract after leaving Milwaukee",
+    "isOrigin": true
+  }
+}

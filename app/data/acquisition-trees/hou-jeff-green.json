@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "HOU",
+    "player": "Jeff Green",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2007,
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jeff Green",
+    "acquisitionType": "free-agent",
+    "date": "2025-07-01",
+    "currentTeam": "HOU",
+    "note": "Veteran forward, signed as free agent",
+    "isOrigin": true
+  }
+}

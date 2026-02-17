@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "team": "DEN",
+    "player": "Zeke Nnaji",
+    "source": "ESPN, Basketball-Reference, Wikipedia, NBA.com",
+    "originYear": 2020,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Zeke Nnaji",
+    "acquisitionType": "draft",
+    "date": "2020-11-18",
+    "currentTeam": "DEN",
+    "draftPick": 22,
+    "draftRound": 1,
+    "note": "Power forward from Arizona, drafted 22nd overall by Denver",
+    "isOrigin": true,
+    "assetsGivenUp": []
+  }
+}

@@ -2,18 +2,41 @@
   "_meta": {
     "team": "BKN",
     "player": "Day'Ron Sharpe",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2021,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "Wikipedia, ESPN, NBA.com",
+    "originYear": 2020,
+    "depth": 3,
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Day'Ron Sharpe",
-    "acquisitionType": "draft",
-    "date": "2021-07-29",
+    "acquisitionType": "draft-night-trade",
+    "date": "2021-08-06",
     "currentTeam": "BKN",
     "draftPick": 29,
-    "draftRound": 1
+    "draftRound": 1,
+    "tradePartner": "PHX",
+    "tradeDescription": "Nets traded Landry Shamet to Suns for draft rights to Day'Ron Sharpe (#29) and Jevon Carter",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Landry Shamet",
+        "acquisitionType": "trade",
+        "date": "2020-11-19",
+        "tradePartner": "LAC",
+        "tradeDescription": "3-team trade: Nets received Shamet and Reggie Perry rights from LAC, Bruce Brown from DET. BKN sent draft rights to Jay Scrubb (#55) to LAC.",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2020 BKN 2nd Round Pick (#55)",
+            "acquisitionType": "original",
+            "date": "2020-11-18",
+            "becamePlayer": "Jay Scrubb",
+            "note": "Draft rights to Jay Scrubb, sent to LAC in Shamet trade",
+            "isOrigin": true
+          }
+        ]
+      }
+    ]
   }
 }

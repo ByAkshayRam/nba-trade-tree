@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "team": "POR",
+    "player": "Caleb Love",
+    "source": "ESPN roster, Basketball-Reference draft records",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Caleb Love",
+    "acquisitionType": "undrafted",
+    "date": "2024-06-30",
+    "currentTeam": "POR",
+    "note": "Undrafted guard, Arizona transfer",
+    "isOrigin": true,
+    "assetsGivenUp": []
+  }
+}

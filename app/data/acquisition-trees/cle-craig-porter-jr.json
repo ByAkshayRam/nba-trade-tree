@@ -2,16 +2,20 @@
   "_meta": {
     "team": "CLE",
     "player": "Craig Porter Jr.",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "Wikipedia, ESPN, NBA.com, Cleveland.com verified",
     "originYear": 2023,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Craig Porter Jr.",
-    "acquisitionType": "free-agent",
-    "date": "2023-09-01",
-    "currentTeam": "CLE"
+    "acquisitionType": "undrafted",
+    "date": "2023-07-07",
+    "currentTeam": "CLE",
+    "note": "Undrafted guard from Wichita State, signed two-way contract after 2023 NBA Draft",
+    "isOrigin": true,
+    "assetsGivenUp": [],
+    "espnId": "4701233"
   }
 }

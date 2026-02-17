@@ -2,22 +2,33 @@
   "_meta": {
     "team": "OKC",
     "player": "Cason Wallace",
-    "source": "NBA/ESPN Trade History Research",
-    "sourceUrl": "https://www.basketball-reference.com/players/w/wallaca01.html",
+    "source": "Basketball Reference Transaction Logs",
+    "sourceUrl": "https://www.basketball-reference.com/teams/OKC/2024_transactions.html",
     "originYear": 2023,
-    "depth": 1,
-    "lastUpdated": "2026-02-10"
+    "depth": 3,
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
     "name": "Cason Wallace",
-    "acquisitionType": "draft",
-    "date": "2023-06-22",
-    "draftPick": 10,
-    "draftRound": 1,
+    "acquisitionType": "trade",
+    "date": "2023-07-06",
+    "tradePartner": "DAL",
     "currentTeam": "OKC",
-    "tradeDescription": "Drafted 10th overall by Thunder",
-    "note": "Kentucky product, defensive-minded guard, homegrown talent",
-    "isOrigin": true
+    "tradeDescription": "Acquired from Dallas Mavericks with Davis Bertans for Dereck Lively II (draft-night trade)",
+    "note": "Kentucky guard, drafted 10th overall by Dallas in 2023",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Dereck Lively II",
+        "acquisitionType": "draft",
+        "date": "2023-06-22",
+        "draftPick": 12,
+        "draftRound": 1,
+        "tradeDescription": "Drafted 12th overall by Thunder",
+        "note": "Duke center, traded to Dallas on draft night",
+        "isOrigin": true
+      }
+    ]
   }
 }

@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "HOU",
+    "player": "Reed Sheppard",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Reed Sheppard",
+    "acquisitionType": "draft",
+    "date": "2024-06-26",
+    "currentTeam": "HOU",
+    "draftPick": 3,
+    "draftRound": 1,
+    "note": "Kentucky guard, 3rd overall pick, son of former NBA player Jeff Sheppard",
+    "isOrigin": true
+  }
+}

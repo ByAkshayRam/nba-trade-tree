@@ -2,16 +2,18 @@
   "_meta": {
     "team": "MIA",
     "player": "Keshad Johnson",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2025,
+    "source": "Basketball-Reference, Wikipedia - Feb 2026",
+    "originYear": 2024,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
     "name": "Keshad Johnson",
     "acquisitionType": "free-agent",
-    "date": "2025-07-01",
-    "currentTeam": "MIA"
+    "date": "2024-07-01",
+    "currentTeam": "MIA",
+    "note": "Undrafted in 2024. Signed two-way contract July 1, 2024. Converted to standard contract December 26, 2024.",
+    "isOrigin": true
   }
 }

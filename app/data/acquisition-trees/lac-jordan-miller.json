@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "LAC",
+    "player": "Jordan Miller",
+    "source": "Basketball-Reference, NBA.com",
+    "originYear": 2023,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jordan Miller",
+    "acquisitionType": "undrafted",
+    "date": "2023-06-23",
+    "currentTeam": "LAC",
+    "note": "Undrafted wing from Miami, signed to two-way contract",
+    "isOrigin": true
+  }
+}

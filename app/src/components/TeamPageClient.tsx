@@ -24,9 +24,29 @@ const EAST_TEAMS = [
   { abbr: "WAS", name: "Washington Wizards", emoji: "🧙" },
 ];
 
+const WEST_TEAMS = [
+  { abbr: "DAL", name: "Dallas Mavericks", emoji: "🐴" },
+  { abbr: "DEN", name: "Denver Nuggets", emoji: "⛏️" },
+  { abbr: "GSW", name: "Golden State Warriors", emoji: "🌉" },
+  { abbr: "HOU", name: "Houston Rockets", emoji: "🚀" },
+  { abbr: "LAC", name: "LA Clippers", emoji: "⛵" },
+  { abbr: "LAL", name: "Los Angeles Lakers", emoji: "💜" },
+  { abbr: "MEM", name: "Memphis Grizzlies", emoji: "🐻" },
+  { abbr: "MIN", name: "Minnesota Timberwolves", emoji: "🐺" },
+  { abbr: "NOP", name: "New Orleans Pelicans", emoji: "⚜️" },
+  { abbr: "OKC", name: "Oklahoma City Thunder", emoji: "⚡" },
+  { abbr: "PHX", name: "Phoenix Suns", emoji: "☀️" },
+  { abbr: "POR", name: "Portland Trail Blazers", emoji: "🌲" },
+  { abbr: "SAC", name: "Sacramento Kings", emoji: "👑" },
+  { abbr: "SAS", name: "San Antonio Spurs", emoji: "🤠" },
+  { abbr: "UTA", name: "Utah Jazz", emoji: "🎵" },
+];
+
+const ALL_TEAMS = [...EAST_TEAMS, ...WEST_TEAMS];
+
 // Get team emoji
 function getTeamEmoji(abbr: string): string {
-  return EAST_TEAMS.find(t => t.abbr === abbr.toUpperCase())?.emoji || "🏀";
+  return ALL_TEAMS.find(t => t.abbr === abbr.toUpperCase())?.emoji || "🏀";
 }
 
 interface SelectedPlayerInfo {
@@ -188,7 +208,14 @@ export default function TeamPageClient({ data, teamAbbr }: TeamPageClientProps) 
                 className="appearance-none bg-gray-800 border border-gray-700 text-white px-4 py-2 pr-10 rounded-lg cursor-pointer hover:border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent text-sm font-medium"
               >
                 <option value="" disabled>Switch Team</option>
+                <option disabled>── Eastern Conference ──</option>
                 {EAST_TEAMS.map(team => (
+                  <option key={team.abbr} value={team.abbr}>
+                    {team.emoji} {team.abbr} - {team.name}
+                  </option>
+                ))}
+                <option disabled>── Western Conference ──</option>
+                {WEST_TEAMS.map(team => (
                   <option key={team.abbr} value={team.abbr}>
                     {team.emoji} {team.abbr} - {team.name}
                   </option>
@@ -206,7 +233,7 @@ export default function TeamPageClient({ data, teamAbbr }: TeamPageClientProps) 
 
       {/* Stats Row */}
       <div className="max-w-7xl mx-auto px-6 py-6">
-        <div className="grid grid-cols-7 gap-4">
+        <div className="grid grid-cols-6 gap-4">
           <div className="bg-gray-900 rounded-lg p-4 text-center">
             <div className="text-3xl font-bold text-green-500">{data.rosterCount}</div>
             <div className="text-xs text-gray-400 mt-1">Current Roster</div>
@@ -222,10 +249,6 @@ export default function TeamPageClient({ data, teamAbbr }: TeamPageClientProps) 
           <div className="bg-gray-900 rounded-lg p-4 text-center">
             <div className="text-3xl font-bold text-purple-500">{data.edgeCount}</div>
             <div className="text-xs text-gray-400 mt-1">Transactions</div>
-          </div>
-          <div className="bg-gray-900 rounded-lg p-4 text-center">
-            <div className="text-3xl font-bold text-amber-500">{data.originCount}</div>
-            <div className="text-xs text-gray-400 mt-1">True Origins</div>
           </div>
           <div className="bg-gray-900 rounded-lg p-4 text-center">
             <div className="text-3xl font-bold text-cyan-500">{data.tradeCount}</div>

@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "MEM",
+    "player": "Ja Morant",
+    "source": "Basketball-Reference, ESPN, NBA.com",
+    "originYear": 2019,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Ja Morant",
+    "acquisitionType": "draft",
+    "date": "2019-06-20",
+    "currentTeam": "MEM",
+    "draftPick": 2,
+    "draftRound": 1,
+    "note": "Murray State guard, 2019 Rookie of the Year",
+    "isOrigin": true
+  }
+}

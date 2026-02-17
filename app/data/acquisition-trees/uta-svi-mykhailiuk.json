@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "UTA",
+    "player": "Svi Mykhailiuk",
+    "source": "Basketball-Reference",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-17"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Svi Mykhailiuk",
+    "acquisitionType": "free-agent",
+    "date": "2024-08-10",
+    "currentTeam": "UTA",
+    "note": "Ukrainian guard/forward, signed as free agent",
+    "isOrigin": true
+  }
+}

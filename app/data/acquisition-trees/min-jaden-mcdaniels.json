@@ -1,0 +1,46 @@
+{
+  "_meta": {
+    "team": "MIN",
+    "player": "Jaden McDaniels",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2020,
+    "depth": 3,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jaden McDaniels",
+    "acquisitionType": "draft-night-trade",
+    "date": "2020-11-18",
+    "currentTeam": "MIN",
+    "tradePartner": "OKC",
+    "tradeDescription": "3-team draft night trade: MIN acquired Ricky Rubio and draft rights to Jaden McDaniels (#28) from OKC, and draft rights to Leandro Bolmaro (#23) from NYK. MIN sent James Johnson and draft rights to Aleksej Pokuševski (#17) to OKC, and draft rights to Mathias Lessort + DET 2023 2nd round pick to NYK.",
+    "note": "Washington forward, drafted 28th overall by LAL (on behalf of OKC via Schroder trade), then traded to MIN",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "James Johnson",
+        "acquisitionType": "trade",
+        "note": "Veteran forward, sent to OKC",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2020 1st Round Pick (#17)",
+        "acquisitionType": "original",
+        "date": "2020-11-18",
+        "becamePlayer": "Aleksej Pokuševski",
+        "note": "MIN original 2020 1st round pick, used to select Pokuševski for OKC",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2024 2nd Round Pick",
+        "acquisitionType": "original",
+        "becamePlayer": "Kevin McCullar Jr.",
+        "note": "MIN 2024 2nd round pick, sent to OKC",
+        "isOrigin": true
+      }
+    ]
+  }
+}

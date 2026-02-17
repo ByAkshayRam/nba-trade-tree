@@ -2,17 +2,32 @@
   "_meta": {
     "team": "IND",
     "player": "Obi Toppin",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "Basketball-Reference, ESPN, NBA Trade History",
     "originYear": 2023,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
     "name": "Obi Toppin",
     "acquisitionType": "trade",
-    "date": "2023-06-23",
+    "date": "2023-07-07",
     "currentTeam": "IND",
-    "tradePartner": "NYK"
+    "tradePartner": "NYK",
+    "note": "Forward from Dayton, 8th overall pick in 2020 NBA Draft",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2028 2nd Round Pick (least favorable of PHX/IND)",
+        "note": "Sent to NYK",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2029 2nd Round Pick (least favorable of IND/WAS)",
+        "note": "Sent to NYK",
+        "isOrigin": true
+      }
+    ]
   }
 }

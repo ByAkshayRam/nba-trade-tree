@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "MIN",
+    "player": "Johnny Juzang",
+    "source": "ESPN, NBA.com, Basketball-Reference, Wikipedia",
+    "originYear": 2022,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Johnny Juzang",
+    "acquisitionType": "free-agent",
+    "date": "2025-08-01",
+    "currentTeam": "MIN",
+    "note": "UCLA guard, undrafted in 2022. Spent 3 years with Utah Jazz. Signed 1-year non-guaranteed deal with MIN.",
+    "isOrigin": true
+  }
+}

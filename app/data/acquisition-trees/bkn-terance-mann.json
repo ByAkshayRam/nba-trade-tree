@@ -2,17 +2,30 @@
   "_meta": {
     "team": "BKN",
     "player": "Terance Mann",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2025,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "ESPN, NBA.com, Wikipedia",
+    "originYear": 2019,
+    "depth": 2,
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Terance Mann",
     "acquisitionType": "trade",
-    "date": "2025-02-08",
+    "date": "2025-07-07",
     "currentTeam": "BKN",
-    "tradePartner": "LAC"
+    "tradePartner": "ATL",
+    "tradeDescription": "3-team trade: BKN received Mann and #22 pick (Drake Powell) from ATL. Porzingis to ATL from BOS, Niang to BOS.",
+    "note": "BKN did not send out assets in this deal — received Mann and #22 pick as facilitator",
+    "assetsGivenUp": [],
+    "tradeChain": {
+      "type": "player",
+      "name": "Terance Mann",
+      "acquisitionType": "draft",
+      "date": "2019-06-20",
+      "draftPick": 48,
+      "draftRound": 2,
+      "note": "Drafted by LA Clippers from Florida State",
+      "isOrigin": true
+    }
   }
 }

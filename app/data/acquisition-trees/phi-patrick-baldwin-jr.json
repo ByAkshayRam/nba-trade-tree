@@ -2,16 +2,21 @@
   "_meta": {
     "team": "PHI",
     "player": "Patrick Baldwin Jr.",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2025,
+    "nbaId": 1631116,
+    "espnId": 4433246,
+    "source": "Basketball-Reference Transaction Log",
+    "originYear": 2026,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-16",
+    "accuracy": "high"
   },
   "tree": {
     "type": "player",
     "name": "Patrick Baldwin Jr.",
     "acquisitionType": "free-agent",
-    "date": "2025-07-01",
-    "currentTeam": "PHI"
+    "date": "2026-02-05",
+    "currentTeam": "PHI",
+    "note": "Signed to 10-day contract. 2022 first-round pick (#28 by Golden State).",
+    "isOrigin": true
   }
 }

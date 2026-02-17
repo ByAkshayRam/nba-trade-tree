@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "SAS",
+    "player": "Luke Kornet",
+    "source": "NBA Trade Reports, ESPN, Basketball-Reference",
+    "originYear": 2017,
+    "depth": 1,
+    "lastUpdated": "2026-02-17"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Luke Kornet",
+    "acquisitionType": "free-agent",
+    "date": "2025-07-07",
+    "currentTeam": "SAS",
+    "note": "Signed 4-year, $41 million contract with Spurs after leaving Boston",
+    "isOrigin": true
+  }
+}

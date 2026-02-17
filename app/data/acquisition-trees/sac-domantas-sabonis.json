@@ -1,0 +1,80 @@
+{
+  "_meta": {
+    "team": "SAC",
+    "player": "Domantas Sabonis",
+    "source": "Basketball-Reference SAC 2021-22 Transactions",
+    "originYear": 2016,
+    "depth": 6,
+    "lastUpdated": "2026-02-17"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Domantas Sabonis",
+    "acquisitionType": "trade",
+    "date": "2022-02-08",
+    "currentTeam": "SAC",
+    "tradePartner": "IND",
+    "tradeDescription": "Kings traded Haliburton, Hield, and Thompson to Pacers for Sabonis, Justin Holiday, Jeremy Lamb, and 2023 2nd (Jordan Walsh)",
+    "note": "All-Star center, originally drafted 11th overall by Orlando in 2016",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Tyrese Haliburton",
+        "acquisitionType": "draft",
+        "date": "2020-11-18",
+        "draftPick": 12,
+        "draftRound": 1,
+        "note": "Guard drafted 12th overall from Iowa State",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Buddy Hield",
+        "acquisitionType": "trade",
+        "date": "2017-02-20",
+        "tradePartner": "NOP",
+        "tradeDescription": "Kings traded DeMarcus Cousins and Omri Casspi to Pelicans for Hield, Tyreke Evans, Langston Galloway, 2017 1st (Zach Collins), and 2017 2nd (Frank Mason III)",
+        "note": "Originally drafted 6th overall by New Orleans in 2016",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "DeMarcus Cousins",
+            "acquisitionType": "draft",
+            "date": "2010-06-24",
+            "draftPick": 5,
+            "draftRound": 1,
+            "note": "Center drafted 5th overall from Kentucky",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Omri Casspi",
+            "acquisitionType": "free-agent",
+            "date": "2014-07-18",
+            "note": "Veteran forward, returned to Kings as free agent",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Tristan Thompson",
+        "acquisitionType": "trade",
+        "date": "2021-08-07",
+        "tradePartner": "BOS",
+        "tradeDescription": "3-team trade: SAC sent Delon Wright to ATL; BOS sent Tristan Thompson to SAC; ATL sent Kris Dunn, Bruno Fernando, and 2023 2nd to BOS",
+        "note": "Veteran center",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Delon Wright",
+            "acquisitionType": "free-agent",
+            "date": "2020-11-21",
+            "note": "Guard signed as free agent",
+            "isOrigin": true
+          }
+        ]
+      }
+    ]
+  }
+}

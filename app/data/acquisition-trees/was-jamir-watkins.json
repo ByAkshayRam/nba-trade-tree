@@ -2,16 +2,31 @@
   "_meta": {
     "team": "WAS",
     "player": "Jamir Watkins",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "2025 NBA Draft / ESPN Trade Reports",
     "originYear": 2025,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
     "name": "Jamir Watkins",
-    "acquisitionType": "free-agent",
-    "date": "2025-07-01",
-    "currentTeam": "WAS"
+    "acquisitionType": "draft",
+    "date": "2025-06-26",
+    "currentTeam": "WAS",
+    "draftPick": 43,
+    "draftRound": 2,
+    "note": "#43 overall pick from Florida State. Two-way contract. WAS acquired this pick by trading #18 to UTA for #21, #43, and future 2nds.",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2025 1st Round Pick (#18)",
+        "acquisitionType": "trade",
+        "date": "2025-02-08",
+        "tradePartner": "MEM",
+        "becamePlayer": "Walter Clayton Jr.",
+        "note": "Originally Memphis's pick, acquired by WAS Feb 2025. Same pick also used to draft Will Riley (#21).",
+        "isOrigin": true
+      }
+    ]
   }
 }

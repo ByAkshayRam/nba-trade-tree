@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "team": "BKN",
+    "player": "Josh Minott",
+    "source": "ESPN, NBA.com, NetsDaily",
+    "originYear": 2022,
+    "depth": 1,
+    "lastUpdated": "2026-02-15"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Josh Minott",
+    "acquisitionType": "trade",
+    "date": "2026-02-06",
+    "currentTeam": "BKN",
+    "tradePartner": "BOS",
+    "tradeDescription": "Acquired from Boston for cash considerations",
+    "assetsGivenUp": [
+      {
+        "type": "other",
+        "name": "Cash considerations ($110K)",
+        "acquisitionType": "original",
+        "date": "2026-02-06",
+        "tradeDescription": "Minimum cash sent to Boston to make deal legal",
+        "isOrigin": true
+      }
+    ]
+  }
+}

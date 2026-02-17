@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "team": "DAL",
+    "player": "Tyus Jones",
+    "source": "ESPN, Basketball-Reference",
+    "originYear": 2015,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Tyus Jones",
+    "acquisitionType": "free-agent",
+    "date": "2025-07-01",
+    "currentTeam": "DAL",
+    "note": "Duke guard, 2015 #24 overall pick by Cleveland",
+    "isOrigin": true,
+    "assetsGivenUp": []
+  }
+}

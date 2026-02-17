@@ -1,0 +1,110 @@
+{
+  "_meta": {
+    "team": "GSW",
+    "player": "Jimmy Butler III",
+    "source": "Basketball-Reference, ESPN, The Athletic",
+    "originYear": 2015,
+    "depth": 6,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jimmy Butler III",
+    "acquisitionType": "trade",
+    "date": "2025-02-05",
+    "currentTeam": "GSW",
+    "tradePartner": "MIA",
+    "tradeDescription": "5-team trade: Warriors acquired Butler from Heat",
+    "note": "6x All-Star, signed 2-year extension through 2026-27",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Andrew Wiggins",
+        "acquisitionType": "trade",
+        "date": "2020-02-06",
+        "tradePartner": "MIN",
+        "tradeDescription": "Traded from Minnesota with picks for D'Angelo Russell and others",
+        "note": "Former #1 overall pick, 2022 All-Star",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "D'Angelo Russell",
+            "acquisitionType": "trade",
+            "date": "2019-07-01",
+            "tradePartner": "BKN",
+            "tradeDescription": "Sign-and-trade from Brooklyn Nets for Kevin Durant",
+            "note": "2019 All-Star, part of Durant trade",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Kevin Durant",
+                "acquisitionType": "free-agent",
+                "date": "2016-07-04",
+                "note": "Signed as free agent from Oklahoma City Thunder. Sent to BKN in sign-and-trade.",
+                "isOrigin": true
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Jacob Evans",
+            "acquisitionType": "draft",
+            "date": "2018-06-21",
+            "draftPick": 28,
+            "draftRound": 1,
+            "note": "Drafted 28th overall by GSW in 2018",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Omari Spellman",
+            "acquisitionType": "trade",
+            "date": "2019-07-08",
+            "tradePartner": "ATL",
+            "tradeDescription": "Acquired from Atlanta for Damian Jones and a 2026 2nd round pick",
+            "note": "Villanova forward, 2018 #30 pick by Atlanta",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Kyle Anderson",
+        "acquisitionType": "sign-and-trade",
+        "date": "2024-07-01",
+        "tradePartner": "MIN",
+        "note": "UCLA forward, joined via sign-and-trade from Minnesota Timberwolves",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Dennis Schroder",
+        "acquisitionType": "trade",
+        "date": "2024-12-15",
+        "tradePartner": "BKN",
+        "tradeDescription": "Traded from Brooklyn Nets to Warriors",
+        "note": "German point guard, veteran leader",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Lindy Waters III",
+        "acquisitionType": "undrafted",
+        "date": "2022-09-01",
+        "note": "Signed as undrafted free agent by Oklahoma City Thunder in 2022",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2025 1st Round Pick (top-10 protected)",
+        "acquisitionType": "original",
+        "date": "2025-06-26",
+        "note": "Warriors' own first-round pick sent to MIA, top-10 protected. Did NOT convey in 2025 (GSW had #1 pick). Rolls to 2026 top-10 protected.",
+        "isOrigin": true
+      }
+    ]
+  }
+}

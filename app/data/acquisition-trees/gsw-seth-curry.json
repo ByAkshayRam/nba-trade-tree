@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "GSW",
+    "player": "Seth Curry",
+    "source": "Basketball-Reference, ESPN, Wikipedia",
+    "originYear": 2013,
+    "depth": 6,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Seth Curry",
+    "acquisitionType": "free-agent",
+    "date": "2025-12-01",
+    "currentTeam": "GSW",
+    "note": "3-point specialist, brother of Stephen Curry",
+    "isOrigin": true
+  }
+}

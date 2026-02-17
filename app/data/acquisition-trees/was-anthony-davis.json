@@ -2,9 +2,9 @@
   "_meta": {
     "team": "WAS",
     "player": "Anthony Davis",
-    "source": "NBA Trade History Research",
-    "originYear": 2012,
-    "depth": 5,
+    "source": "ESPN/NBA Trade History - Feb 2026",
+    "originYear": 2021,
+    "depth": 2,
     "lastUpdated": "2026-02-11"
   },
   "tree": {
@@ -14,89 +14,29 @@
     "date": "2026-02-06",
     "currentTeam": "WAS",
     "tradePartner": "LAL",
-    "tradeDescription": "Wizards acquire AD at 2026 deadline for Kyle Kuzma, Jordan Poole, picks",
-    "note": "8x All-Star, 2020 Champion rebuilding in DC",
+    "tradeDescription": "Massive deadline blockbuster",
+    "note": "9x All-Star, Champion",
     "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2027 1st Round Pick",
+        "acquisitionType": "original",
+        "date": "2026-02-06",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2029 1st Round Pick",
+        "acquisitionType": "original",
+        "date": "2026-02-06",
+        "isOrigin": true
+      },
       {
         "type": "player",
         "name": "Kyle Kuzma",
         "acquisitionType": "trade",
-        "date": "2021-08-06",
+        "date": "2021-08-02",
         "tradePartner": "LAL",
-        "tradeDescription": "Acquired in Russell Westbrook trade",
-        "note": "Fan favorite in DC, former Laker",
-        "assetsGivenUp": [
-          {
-            "type": "player",
-            "name": "Russell Westbrook",
-            "acquisitionType": "trade",
-            "date": "2020-12-02",
-            "tradePartner": "HOU",
-            "tradeDescription": "Acquired from Rockets for John Wall and a 1st",
-            "note": "Former MVP, triple-double machine",
-            "assetsGivenUp": [
-              {
-                "type": "player",
-                "name": "John Wall",
-                "acquisitionType": "draft",
-                "date": "2010-06-24",
-                "draftPick": 1,
-                "draftRound": 1,
-                "tradeDescription": "Wizards drafted Wall #1 overall with their OWN pick",
-                "note": "5x All-Star, franchise icon. Wizards finished 26-56 in 2009-10.",
-                "isOrigin": true
-              },
-              {
-                "type": "pick",
-                "name": "2023 1st Round Pick (Protected)",
-                "acquisitionType": "original",
-                "date": "2020-12-02",
-                "tradeDescription": "Washington's own 2023 first (became #7 overall - Bilal Coulibaly)",
-                "becamePlayer": "Bilal Coulibaly",
-                "isOrigin": true
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "player",
-        "name": "Jordan Poole",
-        "acquisitionType": "trade",
-        "date": "2023-06-22",
-        "tradePartner": "GSW",
-        "tradeDescription": "Acquired from Warriors for Chris Paul",
-        "note": "Former champion, struggling in DC",
-        "assetsGivenUp": [
-          {
-            "type": "player",
-            "name": "Chris Paul",
-            "acquisitionType": "trade",
-            "date": "2023-06-18",
-            "tradePartner": "PHO",
-            "tradeDescription": "Acquired from Suns for Landry Shamet, cash",
-            "note": "Point God, cap flexibility move",
-            "assetsGivenUp": [
-              {
-                "type": "player",
-                "name": "Landry Shamet",
-                "acquisitionType": "trade",
-                "date": "2021-03-25",
-                "tradePartner": "BKN",
-                "tradeDescription": "Acquired from Nets for future 2nd round picks",
-                "note": "Sharpshooting guard",
-                "isOrigin": true
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "pick",
-        "name": "2026 1st Round Pick (WAS)",
-        "acquisitionType": "original",
-        "date": "2026-02-06",
-        "tradeDescription": "Washington's own 2026 first",
         "isOrigin": true
       }
     ]

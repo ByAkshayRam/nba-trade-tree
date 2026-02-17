@@ -1,0 +1,59 @@
+{
+  "_meta": {
+    "team": "POR",
+    "player": "Kris Murray",
+    "source": "Basketball-Reference.com",
+    "originYear": 2023,
+    "depth": 3,
+    "lastUpdated": "2026-02-17"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Kris Murray",
+    "acquisitionType": "draft-night-trade",
+    "date": "2023-06-22",
+    "currentTeam": "POR",
+    "draftPick": 23,
+    "draftRound": 1,
+    "tradePartner": "NYK",
+    "tradeDescription": "4-team trade: POR sent Josh Hart to NYK for #23 pick (Kris Murray), Cam Reddish, Arcidiacono, Thybulle; also sent picks to PHI and CHA",
+    "note": "Iowa forward, drafted with NYK's 1st round pick acquired in Josh Hart 4-team trade (Feb 2023)",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Josh Hart",
+        "acquisitionType": "trade",
+        "date": "2022-02-08",
+        "tradePartner": "NOP",
+        "tradeDescription": "POR sent CJ McCollum to NOP for Josh Hart, Nickeil Alexander-Walker, Satoransky, Louzada, picks",
+        "note": "Villanova guard, acquired from New Orleans in CJ McCollum trade. Sent to NYK for Kris Murray pick.",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "CJ McCollum",
+            "acquisitionType": "draft",
+            "date": "2013-06-27",
+            "draftPick": 10,
+            "draftRound": 1,
+            "note": "Lehigh guard, drafted #10 overall by POR in 2013. Franchise cornerstone for 9 years.",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2029 POR 2nd Round Pick",
+        "acquisitionType": "original",
+        "note": "POR own 2029 2nd, sent to PHI in 4-team Hart trade",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2027 2nd Round Pick",
+        "acquisitionType": "trade",
+        "note": "Sent to CHA in 4-team Hart trade",
+        "isOrigin": true
+      }
+    ]
+  }
+}

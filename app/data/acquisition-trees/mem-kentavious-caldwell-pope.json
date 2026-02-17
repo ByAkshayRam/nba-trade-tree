@@ -1,0 +1,65 @@
+{
+  "_meta": {
+    "team": "MEM",
+    "player": "Kentavious Caldwell-Pope",
+    "source": "Basketball-Reference, NBA.com, ESPN",
+    "originYear": 2025,
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Kentavious Caldwell-Pope",
+    "acquisitionType": "trade",
+    "date": "2025-06-15",
+    "currentTeam": "MEM",
+    "tradePartner": "ORL",
+    "tradeDescription": "Memphis traded Desmond Bane and a 2026 1st round pick swap to Orlando for KCP, Cole Anthony, 2025 1st (16th pick, Yang Hansen), 2028 1st (ORL), 2029 1st pick swap, and 2030 1st (ORL)",
+    "note": "Georgia guard, acquired from Orlando in Desmond Bane trade",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Desmond Bane",
+        "acquisitionType": "trade",
+        "date": "2020-11-20",
+        "draftPick": 30,
+        "draftRound": 1,
+        "tradePartner": "BOS",
+        "tradeDescription": "3-team trade: MEM sent 2023 2nd (Keyonte Johnson) and 2025 2nd (Kobe Sanders) to BOS, cash to POR; BOS sent Bane (#30 pick) to MEM and Enes Kanter to POR; POR sent Mario Hezonja to MEM",
+        "note": "TCU guard, drafted 30th overall by Boston Celtics; traded to MEM on draft night. BOS had pick #30 as their own (2020 ECF team).",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2023 MEM 2nd Round Pick",
+            "acquisitionType": "original",
+            "becamePlayer": "Keyonte Johnson",
+            "note": "Sent to Boston in Bane 3-team trade; originally from MIA via DAL, ended up as MIA's pick",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2025 MEM 2nd Round Pick",
+            "acquisitionType": "original",
+            "becamePlayer": "Kobe Sanders",
+            "note": "Memphis' own 2025 2nd round pick; sent to Boston, who traded it to NYK, then to LAC; #50 overall",
+            "isOrigin": true
+          },
+          {
+            "type": "other",
+            "name": "Cash Considerations",
+            "acquisitionType": "original",
+            "note": "Cash sent to Portland in 3-team trade",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2026 1st Round Pick Swap Rights",
+        "acquisitionType": "original",
+        "note": "Memphis' own 2026 first-round pick swap rights, sent to Orlando",
+        "isOrigin": true
+      }
+    ]
+  }
+}

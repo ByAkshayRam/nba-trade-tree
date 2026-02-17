@@ -2,10 +2,10 @@
   "_meta": {
     "team": "TOR",
     "player": "Immanuel Quickley",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2023,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "ESPN/NBA.com Trade History - Feb 2026",
+    "originYear": 2017,
+    "depth": 3,
+    "lastUpdated": "2026-02-17"
   },
   "tree": {
     "type": "player",
@@ -14,6 +14,53 @@
     "date": "2023-12-30",
     "currentTeam": "TOR",
     "tradePartner": "NYK",
-    "note": "Came with RJ Barrett"
+    "tradeDescription": "Raptors traded OG Anunoby, Precious Achiuwa, and Malachi Flynn to Knicks for RJ Barrett, Immanuel Quickley, and a 2024 second-round pick (via DET)",
+    "note": "Came with RJ Barrett in the OG Anunoby trade",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "OG Anunoby",
+        "acquisitionType": "draft",
+        "date": "2017-06-22",
+        "draftPick": 23,
+        "draftRound": 1,
+        "note": "Drafted 23rd overall in 2017 out of Indiana",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Precious Achiuwa",
+        "acquisitionType": "trade",
+        "date": "2021-08-06",
+        "tradePartner": "MIA",
+        "note": "Came in Kyle Lowry sign-and-trade to Miami",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Kyle Lowry",
+            "acquisitionType": "free-agent",
+            "date": "2012-07-18",
+            "note": "Signed as free agent from HOU in 2012. Became franchise cornerstone.",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Goran Dragic",
+            "note": "Also received in Lowry S&T, later waived",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Malachi Flynn",
+        "acquisitionType": "draft",
+        "date": "2020-11-18",
+        "draftPick": 29,
+        "draftRound": 1,
+        "isOrigin": true
+      }
+    ]
   }
 }

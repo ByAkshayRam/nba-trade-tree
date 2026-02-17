@@ -1,0 +1,89 @@
+{
+  "_meta": {
+    "team": "HOU",
+    "player": "Kevin Durant",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2007,
+    "depth": 5,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Kevin Durant",
+    "acquisitionType": "trade",
+    "date": "2025-07-06",
+    "currentTeam": "HOU",
+    "tradePartner": "PHX",
+    "tradeDescription": "Centerpiece of historic 7-team trade: Rockets sent Green, Brooks, #10 pick and multiple 2nd-rounders to Suns for Durant",
+    "note": "Two-time Finals MVP joins Houston from Phoenix in first 7-team trade in NBA history",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Jalen Green",
+        "acquisitionType": "draft",
+        "date": "2021-07-29",
+        "draftPick": 2,
+        "draftRound": 1,
+        "note": "2021 #2 overall pick; sent to Phoenix",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Dillon Brooks",
+        "acquisitionType": "free-agent",
+        "date": "2023-07-01",
+        "note": "Signed from Memphis Grizzlies; sent to Phoenix",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2025 #10 Overall Pick",
+        "acquisitionType": "original",
+        "date": "2025-06-25",
+        "becamePlayer": "Khaman Maluach",
+        "note": "Rockets' own lottery pick; used by Phoenix to draft Maluach",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Daeqwon Plowden",
+        "acquisitionType": "undrafted",
+        "date": "2025-06-25",
+        "note": "Two-way player sent to Phoenix",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2025 #31 Overall Pick",
+        "acquisitionType": "original",
+        "date": "2025-06-25",
+        "becamePlayer": "Rasheer Fleming",
+        "note": "2nd round pick sent to Phoenix; used to draft Fleming",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2025 #41 Overall Pick",
+        "acquisitionType": "original",
+        "date": "2025-06-25",
+        "becamePlayer": "Koby Brea",
+        "note": "2nd round pick sent to Phoenix; used to draft Brea",
+        "isOrigin": true
+      },
+      {
+        "type": "other",
+        "name": "2026 2nd Round Pick",
+        "acquisitionType": "original",
+        "note": "Sent to Phoenix as part of Durant trade package",
+        "isOrigin": true
+      },
+      {
+        "type": "other",
+        "name": "2032 2nd Round Pick",
+        "acquisitionType": "original",
+        "note": "Sent to Phoenix as part of Durant trade package",
+        "isOrigin": true
+      }
+    ]
+  }
+}

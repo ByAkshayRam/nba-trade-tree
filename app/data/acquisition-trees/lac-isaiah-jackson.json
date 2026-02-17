@@ -1,0 +1,53 @@
+{
+  "_meta": {
+    "team": "LAC",
+    "player": "Isaiah Jackson",
+    "source": "ESPN, Los Angeles Times, NBA.com",
+    "originYear": 2021,
+    "depth": 3,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Isaiah Jackson",
+    "acquisitionType": "trade",
+    "date": "2026-02-05",
+    "currentTeam": "LAC",
+    "tradePartner": "IND",
+    "tradeDescription": "Traded from Pacers with Bennedict Mathurin, a protected 2026 1st and an unprotected 2029 1st for Ivica Zubac and Kobe Brown",
+    "note": "Kentucky big man with shot-blocking ability",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Ivica Zubac",
+        "acquisitionType": "trade",
+        "date": "2019-02-07",
+        "tradePartner": "LAL",
+        "tradeDescription": "Traded from Lakers with Michael Beasley for Mike Muscala",
+        "note": "Croatian center",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Mike Muscala",
+            "acquisitionType": "free-agent",
+            "date": "2018-07-01",
+            "note": "Veteran big man",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Kobe Brown",
+        "acquisitionType": "draft",
+        "date": "2023-06-22",
+        "draftPick": 30,
+        "draftRound": 1,
+        "note": "Drafted by Clippers 30th overall in 2023 (pick acquired from HOU via MEM trade)",
+        "isOrigin": true
+      }
+    ]
+  }
+}

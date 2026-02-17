@@ -2,16 +2,18 @@
   "_meta": {
     "team": "MIA",
     "player": "Dru Smith",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2024,
+    "source": "Basketball-Reference, Miami Herald - Feb 2026",
+    "originYear": 2021,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
     "name": "Dru Smith",
     "acquisitionType": "free-agent",
-    "date": "2024-07-01",
-    "currentTeam": "MIA"
+    "date": "2021-09-10",
+    "currentTeam": "MIA",
+    "note": "Undrafted in 2021. Originally signed by MIA Sept 2021. Multiple two-way contracts before standard deal Aug 2025.",
+    "isOrigin": true
   }
 }

@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "LAL",
+    "player": "Bronny James",
+    "source": "NBA.com, USC Athletics, LA Times",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Bronny James",
+    "acquisitionType": "draft",
+    "date": "2024-06-27",
+    "currentTeam": "LAL",
+    "draftPick": 55,
+    "draftRound": 2,
+    "note": "USC guard, son of LeBron James, historic father-son duo",
+    "isOrigin": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "HOU",
+    "player": "Dorian Finney-Smith",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2016,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Dorian Finney-Smith",
+    "acquisitionType": "free-agent",
+    "date": "2025-07-01",
+    "currentTeam": "HOU",
+    "note": "4-year, $53M contract, forward from Lakers",
+    "isOrigin": true
+  }
+}

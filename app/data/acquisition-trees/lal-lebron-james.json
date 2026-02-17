@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "LAL",
+    "player": "LeBron James",
+    "source": "ESPN, Wikipedia, New York Times",
+    "originYear": 2018,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "LeBron James",
+    "acquisitionType": "free-agent",
+    "date": "2018-07-01",
+    "currentTeam": "LAL",
+    "note": "Signed 4-year $153.3M contract with Lakers as free agent",
+    "isOrigin": true
+  }
+}

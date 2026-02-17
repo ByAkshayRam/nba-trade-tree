@@ -2,10 +2,10 @@
   "_meta": {
     "team": "IND",
     "player": "Pascal Siakam",
-    "source": "NBA Trade History Research",
-    "originYear": 2016,
-    "depth": 4,
-    "lastUpdated": "2026-02-11"
+    "source": "Basketball-Reference, ESPN, NBA Trade History",
+    "originYear": 2023,
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
@@ -14,49 +14,46 @@
     "date": "2024-01-17",
     "currentTeam": "IND",
     "tradePartner": "TOR",
-    "tradeDescription": "Pacers acquire Siakam at 2024 deadline for Bruce Brown, Jordan Nwora, 3 1sts",
-    "note": "2019 MIP, 2019 Champion, All-Star caliber",
+    "note": "Forward from New Mexico State, 27th overall pick in 2016 NBA Draft. 3-team trade with NOP.",
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Bruce Brown",
-        "acquisitionType": "trade",
+        "acquisitionType": "free-agent",
         "date": "2023-07-06",
-        "tradePartner": "DEN",
-        "tradeDescription": "Signed via cap space created from trades",
-        "note": "2023 Champion with Denver, versatile guard",
+        "note": "Signed as free agent from DEN in July 2023",
         "isOrigin": true
       },
       {
         "type": "player",
         "name": "Jordan Nwora",
-        "acquisitionType": "free-agent",
-        "date": "2023-07-10",
-        "tradeDescription": "Signed as free agent",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Kira Lewis Jr.",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2024 1st Round Pick (IND)",
-        "acquisitionType": "original",
-        "date": "2024-01-17",
-        "tradeDescription": "Indiana's own 2024 first",
-        "isOrigin": true
+        "name": "2024 IND 1st Round Pick",
+        "note": "IND's own pick",
+        "isOrigin": true,
+        "becamePlayer": "Ja'Kobe Walter",
+        "draftPick": 19
       },
       {
         "type": "pick",
-        "name": "2026 1st Round Pick (IND)",
-        "acquisitionType": "original",
-        "date": "2024-01-17",
-        "tradeDescription": "Indiana's own 2026 first",
-        "isOrigin": true
+        "name": "2024 1st Round Pick (lesser of UTA/LAC/HOU/OKC)",
+        "note": "Conveyed as UTA's pick (#29). Traded by TOR to UTA in Kelly Olynyk deal.",
+        "isOrigin": true,
+        "becamePlayer": "Isaiah Collier",
+        "draftPick": 29
       },
       {
         "type": "pick",
-        "name": "2031 1st Round Pick (IND)",
-        "acquisitionType": "original",
-        "date": "2024-01-17",
-        "tradeDescription": "Indiana's own 2031 first",
+        "name": "2026 IND 1st Round Pick (protected 1-4)",
+        "note": "IND's own pick",
         "isOrigin": true
       }
     ]

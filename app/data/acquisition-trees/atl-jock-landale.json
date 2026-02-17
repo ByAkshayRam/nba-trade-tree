@@ -2,17 +2,71 @@
   "_meta": {
     "team": "ATL",
     "player": "Jock Landale",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2024,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "ESPN, Wikipedia, NBA.com",
+    "originYear": 2021,
+    "depth": 4,
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Jock Landale",
-    "acquisitionType": "free-agent",
-    "date": "2024-07-01",
+    "acquisitionType": "trade",
+    "date": "2026-02-05",
     "currentTeam": "ATL",
-    "note": "Stretch big"
+    "tradePartner": "UTA",
+    "tradeDescription": "Hawks acquired Landale from Jazz for cash considerations",
+    "note": "Australian center, skilled post player. Jazz had just acquired him from Memphis in JJJ deal 2 days prior.",
+    "assetsGivenUp": [
+      {
+        "type": "cash",
+        "name": "Cash Considerations",
+        "acquisitionType": "original",
+        "note": "Hawks sent cash to Utah for Landale"
+      }
+    ],
+    "tradeChain": {
+      "type": "player",
+      "name": "Jock Landale",
+      "acquisitionType": "trade",
+      "date": "2026-02-03",
+      "tradePartner": "MEM",
+      "tradeDescription": "Jazz acquired Landale (with Jaren Jackson Jr., Konchar, Vince Williams Jr.) from Grizzlies for Anderson, Clayton, Hendricks, Niang, and 3 first-round picks",
+      "note": "Part of blockbuster JJJ trade to Utah",
+      "tradeChain": {
+        "type": "player",
+        "name": "Jock Landale",
+        "acquisitionType": "free-agent",
+        "date": "2025-07-15",
+        "tradePartner": "HOU",
+        "tradeDescription": "Grizzlies signed Landale as free agent after Rockets waived him, 1-year minimum deal",
+        "note": "Waived by Houston Jul 3, signed with Memphis Jul 15",
+        "tradeChain": {
+          "type": "player",
+          "name": "Jock Landale",
+          "acquisitionType": "trade",
+          "date": "2023-07-07",
+          "tradePartner": "PHX",
+          "tradeDescription": "Rockets acquired Landale from Suns in Kevin Durant related moves",
+          "tradeChain": {
+            "type": "player",
+            "name": "Jock Landale",
+            "acquisitionType": "trade",
+            "date": "2022-07-08",
+            "tradePartner": "SAS",
+            "tradeDescription": "Suns acquired Landale from Spurs",
+            "tradeChain": {
+              "type": "player",
+              "name": "Jock Landale",
+              "acquisitionType": "free-agent",
+              "date": "2021-08-06",
+              "tradePartner": "NBL",
+              "tradeDescription": "Spurs signed Landale from Melbourne United (NBL Australia)",
+              "isOrigin": true,
+              "note": "ORIGIN - Undrafted 2018, Saint Mary's. NBL champion & Finals MVP 2021."
+            }
+          }
+        }
+      }
+    }
   }
 }

@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "MEM",
+    "player": "GG Jackson",
+    "source": "Basketball-Reference, NBA.com",
+    "originYear": 2023,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "GG Jackson",
+    "acquisitionType": "draft",
+    "date": "2023-06-22",
+    "currentTeam": "MEM",
+    "draftPick": 45,
+    "draftRound": 2,
+    "note": "South Carolina forward, selected in second round",
+    "isOrigin": true
+  }
+}

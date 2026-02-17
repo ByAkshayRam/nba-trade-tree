@@ -1,0 +1,33 @@
+{
+  "_meta": {
+    "team": "MIN",
+    "player": "Rocco Zikarsky",
+    "source": "ESPN, NBA.com, Basketball-Reference, Wikipedia",
+    "originYear": 2025,
+    "depth": 3,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Rocco Zikarsky",
+    "acquisitionType": "draft-night-trade",
+    "date": "2025-06-26",
+    "currentTeam": "MIN",
+    "tradePartner": "CHI",
+    "draftPick": 45,
+    "draftRound": 2,
+    "tradeDescription": "Part of 7-team Kevin Durant trade: Bulls selected Zikarsky #45 on behalf of Timberwolves. MIN had acquired the pick by trading #36 (Adou Thiero) to LAL for #45 + cash. MIN originally got #36 by trading #31 (Rasheer Fleming) to PHX for #36 + 2 future 2nds + cash.",
+    "note": "Australian center, 7'3\", Brisbane Bullets (NBL)",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2025 2nd Round Pick (#31)",
+        "acquisitionType": "original",
+        "date": "2025-06-26",
+        "becamePlayer": "Rasheer Fleming",
+        "note": "MIN original 2nd round pick, traded to PHX as part of 7-team KD trade",
+        "isOrigin": true
+      }
+    ]
+  }
+}

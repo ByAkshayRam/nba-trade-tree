@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "team": "GSW",
+    "player": "De'Anthony Melton",
+    "source": "Basketball-Reference, ESPN",
+    "originYear": 2018,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "De'Anthony Melton",
+    "acquisitionType": "free-agent",
+    "date": "2024-07-01",
+    "currentTeam": "GSW",
+    "note": "USC guard, signed via mid-level exception after leaving Philadelphia",
+    "isOrigin": true,
+    "assetsGivenUp": []
+  }
+}

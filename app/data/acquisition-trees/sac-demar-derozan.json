@@ -1,0 +1,103 @@
+{
+  "_meta": {
+    "team": "SAC",
+    "player": "DeMar DeRozan",
+    "source": "Basketball-Reference SAC 2024-25 Transactions",
+    "originYear": 2009,
+    "depth": 7,
+    "lastUpdated": "2026-02-17"
+  },
+  "tree": {
+    "type": "player",
+    "name": "DeMar DeRozan",
+    "acquisitionType": "sign-and-trade",
+    "date": "2024-07-08",
+    "currentTeam": "SAC",
+    "tradePartner": "CHI",
+    "tradeDescription": "3-team sign-and-trade: SAC sent Harrison Barnes + 2031 1st swap to SAS; SAC sent cash, Chris Duarte, 2025 2nd (SAC own, became Zikarsky), and 2028 2nd (SAC own) to CHI; CHI sent DeRozan to SAC",
+    "note": "6-time All-Star, originally drafted 9th overall by Toronto in 2009",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Harrison Barnes",
+        "acquisitionType": "trade",
+        "date": "2019-02-07",
+        "tradePartner": "DAL",
+        "tradeDescription": "Kings traded Justin Jackson and Zach Randolph to Mavericks for Harrison Barnes",
+        "note": "Originally drafted 7th overall by Golden State in 2012",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Justin Jackson",
+            "acquisitionType": "draft",
+            "date": "2017-06-22",
+            "draftPick": 15,
+            "draftRound": 1,
+            "note": "Drafted 15th overall from North Carolina",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Zach Randolph",
+            "acquisitionType": "free-agent",
+            "date": "2017-07-07",
+            "note": "Veteran forward signed as free agent",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2031 1st Round Pick Swap",
+        "acquisitionType": "original",
+        "date": "2024-07-08",
+        "note": "Sacramento's 2031 first round pick swap rights, sent to SAS",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Chris Duarte",
+        "acquisitionType": "trade",
+        "date": "2023-07-06",
+        "tradePartner": "IND",
+        "tradeDescription": "Kings traded 2028 2nd (DAL own) and 2030 2nd (SAC own) to Pacers for Chris Duarte",
+        "note": "Originally drafted 13th overall by Indiana in 2021",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2028 2nd Round Pick (DAL)",
+            "acquisitionType": "trade",
+            "date": "2022-06-23",
+            "note": "Originally acquired from Dallas in Jaden Hardy trade",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2030 2nd Round Pick (SAC)",
+            "acquisitionType": "original",
+            "date": "2023-07-06",
+            "note": "Sacramento's own 2nd round pick",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2025 2nd Round Pick (SAC)",
+        "acquisitionType": "original",
+        "date": "2024-07-08",
+        "becamePlayer": "Rocco Zikarsky",
+        "note": "Sacramento's own 2nd round pick, sent to CHI",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2028 2nd Round Pick (SAC)",
+        "acquisitionType": "original",
+        "date": "2024-07-08",
+        "note": "Sacramento's own 2nd round pick, sent to CHI",
+        "isOrigin": true
+      }
+    ]
+  }
+}

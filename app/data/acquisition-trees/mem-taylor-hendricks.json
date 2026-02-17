@@ -1,0 +1,56 @@
+{
+  "_meta": {
+    "team": "MEM",
+    "player": "Taylor Hendricks",
+    "source": "Basketball-Reference, ESPN, NBA.com",
+    "originYear": 2023,
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Taylor Hendricks",
+    "acquisitionType": "trade",
+    "date": "2026-02-03",
+    "currentTeam": "MEM",
+    "tradePartner": "UTA",
+    "tradeDescription": "8-player trade: Grizzlies got Clayton Jr., Anderson, Hendricks, Niang + 3 first-round picks for JJJ, Konchar, Landale, Williams Jr.",
+    "note": "Central Florida forward acquired in Jaren Jackson Jr. trade",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Jaren Jackson Jr.",
+        "acquisitionType": "draft",
+        "date": "2018-06-21",
+        "draftPick": 4,
+        "draftRound": 1,
+        "note": "Michigan State forward, 2023 Defensive Player of the Year",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "John Konchar",
+        "acquisitionType": "undrafted",
+        "date": "2019-07-01",
+        "note": "Purdue Fort Wayne guard, signed as undrafted free agent",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Jock Landale",
+        "acquisitionType": "free-agent",
+        "date": "2025-07-15",
+        "note": "Australian center, signed as free agent",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Vince Williams Jr.",
+        "acquisitionType": "undrafted",
+        "date": "2022-07-01",
+        "note": "VCU guard, signed as undrafted free agent",
+        "isOrigin": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "LAC",
+    "player": "Dalano Banton",
+    "source": "Wikipedia, Basketball-Reference, Hoops Rumors",
+    "originYear": 2021,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Dalano Banton",
+    "acquisitionType": "free-agent",
+    "date": "2026-02-08",
+    "currentTeam": "LAC",
+    "note": "Signed 10-day contract, Canadian guard from Western Kentucky",
+    "isOrigin": true
+  }
+}

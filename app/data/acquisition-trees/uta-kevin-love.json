@@ -1,0 +1,48 @@
+{
+  "_meta": {
+    "team": "UTA",
+    "player": "Kevin Love",
+    "source": "Basketball-Reference",
+    "originYear": 2008,
+    "depth": 4,
+    "lastUpdated": "2026-02-17"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Kevin Love",
+    "acquisitionType": "trade",
+    "date": "2025-07-07",
+    "currentTeam": "UTA",
+    "tradePartner": "MIA",
+    "tradeDescription": "3-team trade: Collins to LAC, Powell to MIA, Love and Kyle Anderson to UTA, cash and 2027 2nd (LAC) to UTA",
+    "note": "UCLA forward, traded from Miami Heat in 3-team deal",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "John Collins",
+        "acquisitionType": "trade",
+        "date": "2023-07-07",
+        "tradePartner": "ATL",
+        "tradeDescription": "Traded Rudy Gay and 2026 2nd (MEM own) to Atlanta for Collins",
+        "note": "Wake Forest forward, acquired from Hawks",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Rudy Gay",
+            "acquisitionType": "free-agent",
+            "date": "2022-09-01",
+            "note": "Veteran forward, signed as free agent",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2026 2nd Round Pick (MEM own)",
+            "acquisitionType": "original",
+            "note": "Second-round pick traded to Atlanta",
+            "isOrigin": true
+          }
+        ]
+      }
+    ]
+  }
+}

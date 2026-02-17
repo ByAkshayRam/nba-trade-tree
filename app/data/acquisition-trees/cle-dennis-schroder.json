@@ -2,17 +2,166 @@
   "_meta": {
     "team": "CLE",
     "player": "Dennis Schroder",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2026,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "ESPN, Basketball-Reference, NBA trade history",
+    "originYear": 2013,
+    "depth": 4,
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Dennis Schroder",
     "acquisitionType": "trade",
-    "date": "2026-02-06",
+    "date": "2026-02-01",
     "currentTeam": "CLE",
-    "tradePartner": "BKN"
+    "tradePartner": "SAC",
+    "tradeDescription": "3-team trade: Cavaliers traded De'Andre Hunter to Kings for Dennis Schroder and Keon Ellis, Bulls received Dario Saric and picks",
+    "note": "Veteran point guard from Germany",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "De'Andre Hunter",
+        "acquisitionType": "trade",
+        "date": "2025-02-06",
+        "tradePartner": "ATL",
+        "tradeDescription": "Cavaliers traded Caris LeVert, Georges Niang, three 2nd round picks, two pick swaps to Hawks for De'Andre Hunter",
+        "note": "Forward acquired from Atlanta Hawks",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Caris LeVert",
+            "acquisitionType": "trade",
+            "date": "2021-01-13",
+            "tradePartner": "IND",
+            "tradeDescription": "Part of 4-team James Harden trade, acquired from Pacers",
+            "note": "Guard originally from Brooklyn, via Indiana",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "pick",
+                "name": "2021 CLE 1st Round Pick",
+                "acquisitionType": "original",
+                "date": "2021-07-29",
+                "becamePlayer": "Chris Duarte",
+                "note": "Cleveland's own first-round pick",
+                "isOrigin": true
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Georges Niang",
+            "acquisitionType": "free-agent",
+            "date": "2022-07-01",
+            "note": "Forward signed as free agent",
+            "isOrigin": true
+          }
+        ],
+        "tradeChain": {
+          "type": "player",
+          "name": "De'Andre Hunter",
+          "acquisitionType": "draft",
+          "date": "2019-06-20",
+          "draftPick": 4,
+          "draftRound": 1,
+          "note": "Forward drafted 4th overall by Atlanta Hawks from Virginia",
+          "isOrigin": true
+        }
+      }
+    ],
+    "tradeChain": {
+      "type": "player",
+      "name": "Dennis Schroder",
+      "acquisitionType": "trade",
+      "date": "2025-07-08",
+      "tradePartner": "DET",
+      "tradeDescription": "Sign-and-trade: Kings traded protected 2026 2nd round pick to Pistons for Dennis Schroder and 2029 2nd round pick",
+      "note": "Acquired by Sacramento from Detroit in sign-and-trade",
+      "isOrigin": false,
+      "assetsGivenUp": [
+        {
+          "type": "pick",
+          "name": "2026 SAC 2nd Round Pick (protected)",
+          "acquisitionType": "original",
+          "date": "2026-06-25",
+          "note": "Sacramento's own protected second-round pick",
+          "isOrigin": true
+        }
+      ],
+      "tradeChain": {
+        "type": "player",
+        "name": "Dennis Schroder",
+        "acquisitionType": "free-agent",
+        "date": "2024-07-01",
+        "note": "Signed as free agent with Detroit after playing for multiple teams in 2023-24",
+        "isOrigin": false,
+        "tradeChain": {
+          "type": "player",
+          "name": "Dennis Schroder",
+          "acquisitionType": "trade",
+          "date": "2018-07-19",
+          "tradePartner": "ATL",
+          "tradeDescription": "Thunder traded Carmelo Anthony and 2022 1st round pick to Hawks for Dennis Schroder, Mike Muscala, Timthe Luwawu-Cabarrot",
+          "note": "Acquired by OKC from Atlanta Hawks",
+          "isOrigin": false,
+          "assetsGivenUp": [
+            {
+              "type": "player",
+              "name": "Carmelo Anthony",
+              "acquisitionType": "trade",
+              "date": "2017-09-25",
+              "tradePartner": "NYK",
+              "tradeDescription": "Acquired from Knicks",
+              "note": "Forward acquired from New York",
+              "isOrigin": false,
+              "assetsGivenUp": [
+                {
+                  "type": "player",
+                  "name": "Enes Kanter",
+                  "acquisitionType": "trade",
+                  "date": "2015-02-19",
+                  "tradePartner": "UTA",
+                  "tradeDescription": "Acquired from Jazz",
+                  "note": "Center acquired in trade",
+                  "isOrigin": false,
+                  "assetsGivenUp": [
+                    {
+                      "type": "pick",
+                      "name": "2015 OKC 1st Round Pick",
+                      "acquisitionType": "original",
+                      "date": "2015-06-25",
+                      "becamePlayer": "Dakari Johnson",
+                      "note": "Thunder's own first-round pick",
+                      "isOrigin": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "pick",
+              "name": "2022 OKC 1st Round Pick",
+              "acquisitionType": "original",
+              "date": "2022-06-23",
+              "becamePlayer": "AJ Griffin",
+              "note": "Thunder's own first-round pick",
+              "isOrigin": true
+            }
+          ],
+          "tradeChain": {
+            "type": "player",
+            "name": "Dennis Schroder",
+            "acquisitionType": "draft",
+            "date": "2013-06-27",
+            "draftPick": 17,
+            "draftRound": 1,
+            "note": "Point guard drafted 17th overall by Atlanta Hawks from Germany",
+            "isOrigin": true
+          }
+        }
+      }
+    },
+    "espnId": "3032979"
   }
 }

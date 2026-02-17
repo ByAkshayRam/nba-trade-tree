@@ -1,0 +1,80 @@
+{
+  "_meta": {
+    "team": "MEM",
+    "player": "Cedric Coward",
+    "source": "Basketball-Reference, NBA.com, ESPN",
+    "originYear": 2025,
+    "depth": 3,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Cedric Coward",
+    "acquisitionType": "trade",
+    "date": "2025-06-25",
+    "currentTeam": "MEM",
+    "tradePartner": "POR",
+    "tradeDescription": "Memphis traded Yang Hansen (16th pick), 2027 2nd (ATL own), 2028 1st (ORL own), and 2028 2nd (SAC own) to Portland for Cedric Coward",
+    "note": "Eastern Washington forward, acquired from Portland on draft night",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Yang Hansen",
+        "acquisitionType": "draft",
+        "date": "2025-06-25",
+        "draftPick": 16,
+        "draftRound": 1,
+        "note": "Drafted 16th overall by Memphis with pick acquired from Orlando in KCP trade, sent to Portland",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Desmond Bane",
+            "acquisitionType": "trade",
+            "date": "2020-11-20",
+            "draftPick": 30,
+            "draftRound": 1,
+            "tradePartner": "BOS",
+            "note": "TCU guard, drafted 30th overall by BOS. Acquired by MEM in 3-team trade. Traded to ORL for KCP package including this pick.",
+            "isOrigin": true
+          }
+        ],
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2028 1st Round Pick (ORL own)",
+        "acquisitionType": "trade",
+        "date": "2025-06-15",
+        "tradePartner": "ORL",
+        "note": "Acquired from Orlando in Desmond Bane trade, sent to Portland",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Desmond Bane",
+            "acquisitionType": "trade",
+            "date": "2020-11-20",
+            "draftPick": 30,
+            "draftRound": 1,
+            "tradePartner": "BOS",
+            "note": "TCU guard, drafted 30th overall by BOS. Acquired by MEM in 3-team trade.",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2027 2nd Round Pick (ATL own)",
+        "acquisitionType": "trade",
+        "note": "Sent to Portland in Coward trade",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2028 2nd Round Pick (SAC own)",
+        "acquisitionType": "trade",
+        "note": "Sent to Portland in Coward trade",
+        "isOrigin": true
+      }
+    ]
+  }
+}

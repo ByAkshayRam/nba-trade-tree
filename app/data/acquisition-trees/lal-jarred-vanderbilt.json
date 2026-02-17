@@ -1,0 +1,101 @@
+{
+  "_meta": {
+    "team": "LAL",
+    "player": "Jarred Vanderbilt",
+    "source": "Basketball-Reference",
+    "originYear": 2018,
+    "depth": 5,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Jarred Vanderbilt",
+    "acquisitionType": "trade",
+    "date": "2023-02-09",
+    "currentTeam": "LAL",
+    "tradePartner": "UTA",
+    "tradeDescription": "3-team trade: Lakers acquired Vanderbilt, Malik Beasley from Jazz and D'Angelo Russell from Timberwolves; sent Westbrook, Damian Jones, Juan Toscano-Anderson, 2027 1st to Jazz; sent 2024 2nd to Timberwolves",
+    "note": "Forward known for defense and rebounding",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Russell Westbrook",
+        "acquisitionType": "trade",
+        "date": "2021-08-06",
+        "tradePartner": "WAS",
+        "tradeDescription": "5-team trade: Lakers acquired Westbrook from Wizards, sent Kuzma, KCP, Harrell to Wizards and Isaiah Jackson to Pacers",
+        "note": "Former MVP, traded from Washington Wizards to Lakers",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Kyle Kuzma",
+            "acquisitionType": "draft",
+            "date": "2017-06-22",
+            "draftPick": 27,
+            "draftRound": 1,
+            "note": "Utah forward, drafted 27th overall by Lakers",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Kentavious Caldwell-Pope",
+            "acquisitionType": "free-agent",
+            "date": "2017-07-13",
+            "note": "Guard signed as free agent by Lakers from Pistons",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Montrezl Harrell",
+            "acquisitionType": "free-agent",
+            "date": "2020-11-21",
+            "note": "Center signed as free agent by Lakers from Clippers",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2021 LAL 1st Round Pick",
+            "acquisitionType": "original",
+            "date": "2021-07-29",
+            "becamePlayer": "Isaiah Jackson",
+            "note": "Lakers' own 1st round pick, became #22 overall, sent to Pacers",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Damian Jones",
+        "acquisitionType": "free-agent",
+        "date": "2022-07-01",
+        "note": "Center signed multi-year deal with Lakers as free agent in 2022",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Juan Toscano-Anderson",
+        "acquisitionType": "free-agent",
+        "date": "2022-07-01",
+        "note": "Forward signed with Lakers as free agent from Warriors in 2022",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2027 LAL 1st Round Pick",
+        "acquisitionType": "original",
+        "date": "2027-06-01",
+        "note": "Lakers' own 1st round pick, sent to Utah Jazz",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2024 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2024-06-01",
+        "becamePlayer": "Bobi Klintman",
+        "note": "Least favorable 2nd round pick, sent to Minnesota Timberwolves",
+        "isOrigin": true
+      }
+    ]
+  }
+}

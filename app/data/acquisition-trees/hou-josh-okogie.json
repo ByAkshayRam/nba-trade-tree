@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "HOU",
+    "player": "Josh Okogie",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2018,
+    "depth": 3,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Josh Okogie",
+    "acquisitionType": "free-agent",
+    "date": "2024-07-01",
+    "currentTeam": "HOU",
+    "note": "Defensive wing, signed as free agent from Phoenix",
+    "isOrigin": true
+  }
+}

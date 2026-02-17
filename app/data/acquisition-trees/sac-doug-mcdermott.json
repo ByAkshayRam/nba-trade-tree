@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "SAC",
+    "player": "Doug McDermott",
+    "source": "Basketball-Reference SAC 2025-26 Transactions",
+    "originYear": 2014,
+    "depth": 1,
+    "lastUpdated": "2026-02-17"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Doug McDermott",
+    "acquisitionType": "free-agent",
+    "date": "2025-07-30",
+    "currentTeam": "SAC",
+    "note": "Forward originally drafted 11th overall by Denver in 2014",
+    "isOrigin": true
+  }
+}

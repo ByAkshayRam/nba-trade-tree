@@ -1,0 +1,39 @@
+{
+  "_meta": {
+    "team": "MEM",
+    "player": "Cam Spencer",
+    "source": "Basketball-Reference, NBA.com, ESPN",
+    "originYear": 2024,
+    "depth": 3,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Cam Spencer",
+    "acquisitionType": "trade",
+    "date": "2024-07-06",
+    "currentTeam": "MEM",
+    "tradePartner": "DET",
+    "tradeDescription": "4-team trade: MEM sent Ulrich Chomche to TOR and 2030 2nd to MIN; DET sent Cam Spencer to MEM; MIN sent Klintman and Wendell Moore Jr. to DET",
+    "note": "UConn guard, acquired from Detroit in 4-team trade",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Ulrich Chomche",
+        "acquisitionType": "draft",
+        "date": "2024-06-26",
+        "draftPick": 40,
+        "draftRound": 2,
+        "note": "Cameroonian center, drafted by Memphis and sent to Toronto in 4-team trade",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2030 2nd Round Pick (MEM own)",
+        "acquisitionType": "original",
+        "note": "Memphis' own 2030 second-round pick, sent to Minnesota",
+        "isOrigin": true
+      }
+    ]
+  }
+}

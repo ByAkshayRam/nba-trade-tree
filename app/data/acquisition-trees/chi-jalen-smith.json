@@ -2,16 +2,19 @@
   "_meta": {
     "team": "CHI",
     "player": "Jalen Smith",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "ESPN, NBA.com, Basketball-Reference",
     "originYear": 2023,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Jalen Smith",
     "acquisitionType": "free-agent",
     "date": "2023-07-01",
-    "currentTeam": "CHI"
+    "currentTeam": "CHI",
+    "note": "",
+    "isOrigin": true,
+    "assetsGivenUp": []
   }
 }

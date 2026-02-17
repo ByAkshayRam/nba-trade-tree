@@ -1,0 +1,62 @@
+{
+  "_meta": {
+    "team": "MEM",
+    "player": "Javon Small",
+    "source": "Basketball-Reference, NBA.com, ESPN",
+    "originYear": 2025,
+    "depth": 3,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Javon Small",
+    "acquisitionType": "draft",
+    "date": "2025-06-25",
+    "currentTeam": "MEM",
+    "draftPick": 48,
+    "draftRound": 2,
+    "note": "West Virginia guard, drafted 48th overall by Memphis using pick acquired from Washington in 3-team trade",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2025 2nd Round Pick (WAS own)",
+        "acquisitionType": "trade",
+        "date": "2025-02-06",
+        "tradePartner": "WAS",
+        "tradeDescription": "3-team trade: MEM sent Marcus Smart and 2025 1st to WAS, Jake LaRavia to SAC; received Bagley, Johnny Davis, this 2nd pick, and a 2028 2nd from SAC",
+        "becamePlayer": "Javon Small",
+        "note": "Washington's own 2025 2nd round pick, acquired in Marcus Smart 3-team trade",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Marcus Smart",
+            "acquisitionType": "trade",
+            "date": "2023-06-23",
+            "tradePartner": "BOS",
+            "note": "Oklahoma State guard, acquired from Boston in Kristaps Porzingis trade",
+            "assetsGivenUp": []
+          },
+          {
+            "type": "player",
+            "name": "Jake LaRavia",
+            "acquisitionType": "draft",
+            "date": "2022-06-23",
+            "draftPick": 19,
+            "draftRound": 1,
+            "note": "Wake Forest forward, drafted by Memphis. Sent to Sacramento in this trade.",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2025 1st Round Pick (MEM own)",
+            "acquisitionType": "original",
+            "becamePlayer": "Walter Clayton Jr.",
+            "note": "Memphis' own 2025 first-round pick, sent to Washington",
+            "isOrigin": true
+          }
+        ]
+      }
+    ],
+    "isOrigin": true
+  }
+}

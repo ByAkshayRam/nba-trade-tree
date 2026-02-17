@@ -2,36 +2,49 @@
   "_meta": {
     "team": "CHI",
     "player": "Jaden Ivey",
-    "source": "NBA Trade History Research",
-    "originYear": 2022,
+    "source": "ESPN, NBA.com, Hoops Rumors",
+    "originYear": 2021,
     "depth": 4,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Jaden Ivey",
     "acquisitionType": "trade",
-    "date": "2026-02-06",
+    "date": "2026-02-03",
     "currentTeam": "CHI",
     "tradePartner": "DET",
-    "tradeDescription": "Bulls acquire Ivey at 2026 deadline for picks",
-    "note": "Explosive athleticism, high upside guard",
+    "tradeDescription": "3-team trade: Bulls sent Kevin Huerter and Dario Saric to Pistons, received Jaden Ivey (DET) and Mike Conley (MIN)",
     "assetsGivenUp": [
       {
-        "type": "pick",
-        "name": "2026 1st Round Pick (CHI)",
-        "acquisitionType": "original",
-        "date": "2026-02-06",
-        "tradeDescription": "Chicago's own 2026 first round pick",
-        "isOrigin": true
-      },
-      {
-        "type": "pick",
-        "name": "2028 1st Round Pick (CHI)",
-        "acquisitionType": "original",
-        "date": "2026-02-06",
-        "tradeDescription": "Chicago's own 2028 first round pick",
-        "isOrigin": true
+        "type": "player",
+        "name": "Kevin Huerter",
+        "acquisitionType": "trade",
+        "date": "2025-02-02",
+        "tradePartner": "SAC",
+        "tradeDescription": "3-team trade: Bulls sent Zach LaVine to Kings, received Kevin Huerter. De'Aaron Fox to Spurs.",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Zach LaVine",
+            "acquisitionType": "trade",
+            "date": "2017-06-22",
+            "tradePartner": "MIN",
+            "tradeDescription": "Bulls traded Jimmy Butler to Timberwolves for Zach LaVine, Kris Dunn, and the 7th pick (Lauri Markkanen)",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Jimmy Butler",
+                "acquisitionType": "draft",
+                "date": "2011-06-23",
+                "draftPick": 30,
+                "draftRound": 1,
+                "note": "Drafted 30th overall by Chicago Bulls from Marquette in 2011 NBA Draft",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
       }
     ]
   }

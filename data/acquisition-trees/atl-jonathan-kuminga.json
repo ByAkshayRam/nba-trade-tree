@@ -2,10 +2,10 @@
   "_meta": {
     "team": "ATL",
     "player": "Jonathan Kuminga",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2026,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "NBA.com, Gemini research - 3-team trade verified",
+    "originYear": 2025,
+    "depth": 4,
+    "lastUpdated": "2026-02-14"
   },
   "tree": {
     "type": "player",
@@ -14,7 +14,46 @@
     "date": "2026-02-06",
     "currentTeam": "ATL",
     "tradePartner": "GSW",
-    "tradeDescription": "Acquired from Warriors",
-    "note": "Young athletic forward"
+    "tradeDescription": "Hawks acquire Kuminga and Buddy Hield from Warriors for Kristaps Porzingis",
+    "note": "Former #7 pick, explosive athletic wing with star potential",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Kristaps Porzingis",
+        "acquisitionType": "trade",
+        "date": "2025-07-07",
+        "tradePartner": "BOS",
+        "tradeDescription": "3-team trade: Hawks acquired Porzingis from Celtics, sent Niang to BOS, Mann and #22 pick to BKN",
+        "note": "2024 NBA Champion with Celtics, 7'2\" unicorn big man",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Georges Niang",
+            "acquisitionType": "free-agent",
+            "date": "2024-07-15",
+            "tradeDescription": "Signed as free agent, later traded to Boston in Porzingis deal",
+            "note": "Stretch four, career 38% 3-point shooter"
+          },
+          {
+            "type": "player",
+            "name": "Terance Mann",
+            "acquisitionType": "trade",
+            "date": "2024-02-08",
+            "tradePartner": "LAC",
+            "tradeDescription": "Acquired from Clippers, later sent to Brooklyn in Porzingis deal",
+            "note": "Versatile wing, former Clipper playoff hero"
+          },
+          {
+            "type": "pick",
+            "name": "2025 #22 Pick",
+            "acquisitionType": "original",
+            "date": "2025-06-26",
+            "becamePlayer": "Drake Powell (to BKN)",
+            "tradeDescription": "Hawks' own 2025 first-round pick, sent to Brooklyn in Porzingis trade",
+            "note": "Hawks' draft capital used to acquire Porzingis - ORIGIN"
+          }
+        ]
+      }
+    ]
   }
 }

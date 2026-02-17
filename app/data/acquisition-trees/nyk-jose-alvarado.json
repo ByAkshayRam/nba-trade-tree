@@ -2,11 +2,11 @@
   "_meta": {
     "team": "NYK",
     "player": "Jose Alvarado",
-    "source": "NBA/ESPN Trade History Research",
+    "source": "Basketball-Reference Transaction History",
     "sourceUrl": "https://www.basketball-reference.com/players/a/alvarjo01.html",
     "originYear": 2024,
     "depth": 2,
-    "lastUpdated": "2026-02-10"
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
@@ -16,7 +16,7 @@
     "tradePartner": "NOP",
     "currentTeam": "NYK",
     "tradeDescription": "Knicks acquire Alvarado for Dalen Terry and two second-round picks",
-    "note": "Georgia Tech product, fan favorite, defensive pest",
+    "note": "Acquired from New Orleans for Dalen Terry and two 2nd-round picks at 2026 trade deadline.",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -32,7 +32,7 @@
             "acquisitionType": "free-agent",
             "date": "2024-07-15",
             "tradeDescription": "Signed as free agent after Olympic standout performance",
-            "note": "French Olympian, returnee from Europe",
+            "note": "Signed as free agent in July 2024 after playing for Real Madrid.",
             "isOrigin": true
           }
         ]
@@ -53,6 +53,7 @@
         "tradeDescription": "Knicks' own second-round pick",
         "isOrigin": true
       }
-    ]
+    ],
+    "espnId": "4277869"
   }
 }

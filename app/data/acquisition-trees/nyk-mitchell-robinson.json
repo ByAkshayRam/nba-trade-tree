@@ -18,6 +18,15 @@
     "currentTeam": "NYK",
     "tradeDescription": "Drafted 36th overall by Knicks",
     "note": "Second-round steal, elite shot blocker, homegrown talent",
-    "isOrigin": true
+    "isOrigin": true,
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "details": "2018 #36 Overall Pick (used)",
+        "name": "2018 #36 Overall Pick (used)",
+        "becamePlayer": "Mitchell Robinson",
+        "draftPick": 36
+      }
+    ]
   }
 }

@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "LAL",
+    "player": "Nick Smith Jr.",
+    "source": "ESPN, Basketball-Reference",
+    "originYear": 2023,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Nick Smith Jr.",
+    "acquisitionType": "free-agent",
+    "date": "2025-09-29",
+    "currentTeam": "LAL",
+    "note": "Guard waived by Charlotte, signed two-way contract with Lakers",
+    "isOrigin": true
+  }
+}

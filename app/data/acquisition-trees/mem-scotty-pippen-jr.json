@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "team": "MEM",
+    "player": "Scotty Pippen Jr.",
+    "source": "NBA.com, ESPN",
+    "originYear": 2022,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Scotty Pippen Jr.",
+    "acquisitionType": "undrafted",
+    "date": "2022-07-01",
+    "currentTeam": "MEM",
+    "note": "Vanderbilt guard, son of Scottie Pippen, signed as undrafted free agent",
+    "isOrigin": true
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "team": "TOR",
+    "player": "Chucky Hepburn",
+    "source": "Wikipedia",
+    "originYear": 2025,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Chucky Hepburn",
+    "acquisitionType": "free-agent",
+    "date": "2025-07-01",
+    "currentTeam": "TOR",
+    "espnId": "4590360",
+    "note": "Signed two-way contract as UDFA out of Louisville after going undrafted in 2025.",
+    "isOrigin": true
+  }
+}

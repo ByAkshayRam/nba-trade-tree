@@ -15,6 +15,7 @@
     "currentTeam": "NYK",
     "tradeDescription": "Signed as free agent",
     "note": "Veteran sharpshooter. Free agent = no assets given up",
-    "isOrigin": true
+    "isOrigin": true,
+    "assetsGivenUp": []
   }
 }

@@ -2,10 +2,10 @@
   "_meta": {
     "team": "ATL",
     "player": "Mouhamed Gueye",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "NBA/ESPN Trade History",
     "originYear": 2023,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-14"
   },
   "tree": {
     "type": "player",
@@ -14,6 +14,7 @@
     "date": "2023-06-22",
     "currentTeam": "ATL",
     "draftPick": 39,
-    "draftRound": 1
+    "draftRound": 2,
+    "note": "Washington State big, developmental prospect on two-way"
   }
 }

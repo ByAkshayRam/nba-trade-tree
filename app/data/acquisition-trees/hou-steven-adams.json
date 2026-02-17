@@ -1,0 +1,85 @@
+{
+  "_meta": {
+    "team": "HOU",
+    "player": "Steven Adams",
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2013,
+    "depth": 2,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Steven Adams",
+    "acquisitionType": "trade",
+    "date": "2024-02-01",
+    "currentTeam": "HOU",
+    "tradePartner": "MEM",
+    "tradeDescription": "Rockets got Adams from Grizzlies for Oladipo and 3 second round picks",
+    "note": "New Zealand center acquired from Memphis Grizzlies",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Victor Oladipo",
+        "acquisitionType": "trade",
+        "date": "2023-10-17",
+        "tradePartner": "OKC",
+        "tradeDescription": "Rockets traded Kevin Porter Jr., 2027 2nd (MIN own) and 2028 2nd (MIL own) to OKC for Oladipo and Robinson-Earl",
+        "note": "Salary dump to move off Kevin Porter Jr. after off-court issues",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Kevin Porter Jr.",
+            "acquisitionType": "trade",
+            "date": "2021-01-22",
+            "tradePartner": "CLE",
+            "tradeDescription": "Rockets sent a 2024 2nd round pick (GSW own, did not convey) to Cleveland for KPJ",
+            "note": "USC guard, acquired from Cleveland for a conditional 2nd round pick",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2027 2nd Round Pick (MIN)",
+            "acquisitionType": "trade",
+            "note": "Originally MIN's pick; sent to OKC in Oladipo trade",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2028 2nd Round Pick (MIL)",
+            "acquisitionType": "trade",
+            "note": "Originally MIL's pick; sent to OKC in Oladipo trade",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2024 2nd Round Pick (OKC)",
+        "acquisitionType": "trade",
+        "date": "2024-06-27",
+        "becamePlayer": "Jaylen Wells",
+        "note": "Originally OKC's 2nd round pick; became #39 overall, MEM drafted Jaylen Wells (Washington State) — breakout rookie",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2024 2nd Round Pick (HOU)",
+        "acquisitionType": "original",
+        "date": "2024-06-27",
+        "becamePlayer": "Ulrich Chomche",
+        "note": "More favorable of HOU's available 2nds; became #57 overall, MEM drafted Ulrich Chomche (NBA Academy Africa) and traded to TOR",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2025 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2025-06-26",
+        "becamePlayer": "Will Richard",
+        "note": "Rockets' own 2nd round pick (#56 overall), sent to MEM who drafted Will Richard (Florida) and traded him to GSW",
+        "isOrigin": true
+      }
+    ]
+  }
+}

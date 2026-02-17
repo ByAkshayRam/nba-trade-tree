@@ -5,8 +5,8 @@
     "source": "NBA/ESPN Trade History Research",
     "sourceUrl": "https://www.basketball-reference.com/players/m/mccaija01.html",
     "originYear": 2024,
-    "depth": 2,
-    "lastUpdated": "2026-02-10"
+    "depth": 6,
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
@@ -15,8 +15,8 @@
     "date": "2026-02-04",
     "tradePartner": "PHI",
     "currentTeam": "OKC",
-    "tradeDescription": "Thunder acquire McCain from 76ers for first-round pick and three seconds",
-    "note": "Duke product, ROTY candidate, explosive scorer",
+    "tradeDescription": "Acquired from 76ers for 2026 first-round pick and three second-round picks",
+    "note": "Duke product, drafted #16 overall by Philadelphia in 2024",
     "assetsGivenUp": [
       {
         "type": "pick",
@@ -24,8 +24,8 @@
         "acquisitionType": "trade",
         "date": "2021-08-25",
         "tradePartner": "HOU",
-        "tradeDescription": "Acquired from Houston in massive Sam Presti pick collection",
-        "note": "Part of Thunder's legendary draft capital stockpile",
+        "tradeDescription": "Acquired from Houston in previous trade",
+        "note": "Houston's 2026 first-round pick",
         "isOrigin": true
       },
       {
@@ -33,12 +33,12 @@
         "name": "2027 Second-Round Pick",
         "acquisitionType": "original",
         "date": "2026-02-04",
-        "tradeDescription": "Most favorable of picks from OKC/HOU/IND/MIA",
+        "tradeDescription": "Most favorable of OKC/HOU/IND/MIA second-round picks",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2028 Second-Round Pick (from OKC)",
+        "name": "2028 Second-Round Pick",
         "acquisitionType": "original",
         "date": "2026-02-04",
         "tradeDescription": "Thunder's own second-round pick",
@@ -50,7 +50,7 @@
         "acquisitionType": "trade",
         "date": "2023-09-29",
         "tradePartner": "MIL",
-        "tradeDescription": "Acquired via previous trade",
+        "tradeDescription": "Acquired from Milwaukee in previous trade",
         "isOrigin": true
       }
     ]

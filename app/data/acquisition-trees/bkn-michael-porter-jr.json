@@ -2,49 +2,58 @@
   "_meta": {
     "team": "BKN",
     "player": "Michael Porter Jr.",
-    "source": "NBA Trade History Research",
-    "originYear": 2018,
-    "depth": 4,
-    "lastUpdated": "2026-02-11"
+    "source": "ESPN, NBA.com, Basketball-Reference",
+    "originYear": 2015,
+    "depth": 6,
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Michael Porter Jr.",
     "acquisitionType": "trade",
-    "date": "2026-02-06",
+    "date": "2025-07-08",
     "currentTeam": "BKN",
     "tradePartner": "DEN",
-    "tradeDescription": "Nets acquire MPJ at 2026 deadline for Cam Thomas and picks",
-    "note": "Sharpshooting forward, 2023 Champion, injury history",
+    "tradeDescription": "Nets traded Cam Johnson to Nuggets for Michael Porter Jr. and 2032 1st round pick",
     "assetsGivenUp": [
       {
         "type": "player",
-        "name": "Cam Thomas",
-        "acquisitionType": "draft",
-        "date": "2021-07-29",
-        "draftPick": 27,
-        "draftRound": 1,
-        "currentTeam": "MIL",
-        "tradeDescription": "Nets drafted Cam Thomas with their own pick",
-        "note": "Bucket getter, 40+ point games, traded to MIL in same deadline",
-        "isOrigin": true
-      },
-      {
-        "type": "pick",
-        "name": "2026 1st Round Pick (BKN)",
-        "acquisitionType": "original",
-        "date": "2026-02-06",
-        "tradeDescription": "Brooklyn's own 2026 first",
-        "note": "Another first from the perpetually rebuilding Nets",
-        "isOrigin": true
-      },
-      {
-        "type": "pick",
-        "name": "2028 1st Round Pick (BKN)",
-        "acquisitionType": "original",
-        "date": "2026-02-06",
-        "tradeDescription": "Brooklyn's own 2028 first",
-        "isOrigin": true
+        "name": "Cam Johnson",
+        "acquisitionType": "trade",
+        "date": "2023-02-09",
+        "tradePartner": "PHX",
+        "tradeDescription": "Nets traded Kevin Durant and TJ Warren to Suns for Cam Johnson, Mikal Bridges, Jae Crowder, 4 first-round picks, and 2028 pick swap",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Kevin Durant",
+            "acquisitionType": "trade",
+            "date": "2019-07-07",
+            "tradePartner": "GSW",
+            "tradeDescription": "Sign-and-trade: Nets sent D'Angelo Russell, Treveon Graham, and Shabazz Napier to Warriors for Kevin Durant and a protected 2020 1st round pick",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "D'Angelo Russell",
+                "acquisitionType": "trade",
+                "date": "2017-06-22",
+                "tradePartner": "LAL",
+                "tradeDescription": "Nets traded Brook Lopez and the 27th pick (Kyle Kuzma) to Lakers for D'Angelo Russell and Timofey Mozgov",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Brook Lopez",
+                    "acquisitionType": "draft",
+                    "date": "2008-06-26",
+                    "draftPick": 10,
+                    "note": "Drafted 10th overall by Brooklyn (then New Jersey Nets) in 2008 NBA Draft",
+                    "isOrigin": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }

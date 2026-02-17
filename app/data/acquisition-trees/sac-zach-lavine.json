@@ -1,0 +1,78 @@
+{
+  "_meta": {
+    "team": "SAC",
+    "player": "Zach LaVine",
+    "source": "Basketball-Reference SAC 2024-25 Transactions",
+    "originYear": 2014,
+    "depth": 5,
+    "lastUpdated": "2026-02-17"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Zach LaVine",
+    "acquisitionType": "trade",
+    "date": "2025-02-03",
+    "currentTeam": "SAC",
+    "tradePartner": "CHI",
+    "tradeDescription": "3-team trade: SAC sent De'Aaron Fox and Jordan McLaughlin to SAS; SAC sent Kevin Huerter to CHI; CHI sent LaVine and 2028 2nd (CHI own) to SAC; SAS sent Cissoko, 2025 2nd (CHI own), 2026 2nd, 2027 1st (SAS own), 2027 2nd, 2028 2nd (DEN own), and 2031 1st (MIN own) to SAC",
+    "note": "2-time All-Star guard, originally drafted 13th overall by Minnesota in 2014",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "De'Aaron Fox",
+        "acquisitionType": "draft",
+        "date": "2017-06-22",
+        "draftPick": 5,
+        "draftRound": 1,
+        "note": "Guard drafted 5th overall from Kentucky",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Jordan McLaughlin",
+        "acquisitionType": "free-agent",
+        "date": "2024-07-09",
+        "note": "Guard signed as free agent",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Kevin Huerter",
+        "acquisitionType": "trade",
+        "date": "2022-07-06",
+        "tradePartner": "ATL",
+        "tradeDescription": "Kings traded Maurice Harkless, Justin Holiday, and a conditional 2024 1st (did not convey, became 2025 1st, Derik Queen selected) to Hawks for Kevin Huerter",
+        "note": "Originally drafted 19th overall by Atlanta in 2018",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Maurice Harkless",
+            "acquisitionType": "free-agent",
+            "date": "2021-08-07",
+            "note": "Veteran forward signed as free agent",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Justin Holiday",
+            "acquisitionType": "trade",
+            "date": "2022-02-08",
+            "tradePartner": "IND",
+            "tradeDescription": "Received from Pacers in the Sabonis trade",
+            "note": "Veteran guard/forward",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2025 1st Round Pick (SAC)",
+            "acquisitionType": "original",
+            "date": "2022-07-06",
+            "becamePlayer": "Derik Queen",
+            "note": "Originally conditional 2024 1st that did not convey, became 2025 1st",
+            "isOrigin": true
+          }
+        ]
+      }
+    ]
+  }
+}

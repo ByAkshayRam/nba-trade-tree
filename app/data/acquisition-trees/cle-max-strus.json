@@ -2,17 +2,67 @@
   "_meta": {
     "team": "CLE",
     "player": "Max Strus",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2023,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "ESPN, Basketball-Reference, NBA transaction history",
+    "originYear": 2019,
+    "depth": 2,
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Max Strus",
-    "acquisitionType": "free-agent",
-    "date": "2023-07-01",
+    "acquisitionType": "trade",
+    "date": "2023-07-06",
     "currentTeam": "CLE",
-    "note": "Elite shooter from Miami"
+    "tradePartner": "MIA",
+    "tradeDescription": "3-team sign-and-trade: Cavaliers acquired Max Strus from Heat, sent Cedi Osman and Lamar Stevens to Spurs, 2nd round picks to Miami and San Antonio",
+    "note": "Guard from DePaul, signed 4-year, $63 million deal",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Cedi Osman",
+        "acquisitionType": "draft",
+        "date": "2017-06-22",
+        "draftPick": 31,
+        "draftRound": 2,
+        "note": "Forward drafted 31st overall by Cleveland",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Lamar Stevens",
+        "acquisitionType": "undrafted",
+        "date": "2020-11-20",
+        "note": "Forward signed as undrafted free agent from Penn State",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2024 CLE 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2024-06-26",
+        "becamePlayer": "Kyle Filipowski",
+        "note": "Cavaliers' own second-round pick to Miami",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2025 CLE 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2025-06-25",
+        "becamePlayer": "Cam Christie",
+        "note": "Cavaliers' own second-round pick to San Antonio",
+        "isOrigin": true
+      }
+    ],
+    "tradeChain": {
+      "type": "player",
+      "name": "Max Strus",
+      "acquisitionType": "undrafted",
+      "date": "2020-09-15",
+      "note": "Guard from DePaul, signed training camp contract with Miami Heat after being waived by Celtics and Bulls",
+      "isOrigin": true
+    },
+    "espnId": "4065778"
   }
 }

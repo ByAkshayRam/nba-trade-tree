@@ -11,8 +11,20 @@
     "type": "player",
     "name": "Jaden Hardy",
     "acquisitionType": "trade",
-    "date": "2025-02-08",
+    "date": "2026-02-05",
     "currentTeam": "WAS",
-    "tradePartner": "DAL"
+    "tradePartner": "DAL",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "details": "2025 Second Round Pick",
+        "name": "2025 Second Round Pick",
+        "note": "WAS's 2025 second-round pick sent to DAL in Jaden Hardy trade."
+      },
+      {
+        "type": "cash",
+        "details": "Cash Considerations"
+      }
+    ]
   }
 }

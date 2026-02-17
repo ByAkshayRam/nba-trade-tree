@@ -2,18 +2,42 @@
   "_meta": {
     "team": "MIL",
     "player": "Kyle Kuzma",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2026,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "NBA/ESPN Trade History Research",
+    "originYear": 2013,
+    "depth": 3,
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
     "name": "Kyle Kuzma",
     "acquisitionType": "trade",
-    "date": "2026-02-06",
+    "date": "2025-02-06",
     "currentTeam": "MIL",
     "tradePartner": "WAS",
-    "note": "Scoring forward"
+    "tradeDescription": "Bucks trade Khris Middleton to Wizards for Kyle Kuzma and Jericho Sims",
+    "note": "Part of midseason trade that also returned Jericho Sims",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Khris Middleton",
+        "acquisitionType": "trade",
+        "date": "2013-07-31",
+        "tradePartner": "DET",
+        "tradeDescription": "Pistons trade Middleton and Brandon Knight to Bucks for Brandon Jennings",
+        "note": "Middleton played 12 seasons for MIL, 3x All-Star, 2021 NBA Champion",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Brandon Jennings",
+            "acquisitionType": "draft",
+            "date": "2009-06-25",
+            "draftPick": 10,
+            "draftRound": 1,
+            "note": "Drafted 10th overall by Milwaukee in 2009",
+            "isOrigin": true
+          }
+        ]
+      }
+    ]
   }
 }

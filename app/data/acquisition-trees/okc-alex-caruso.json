@@ -4,19 +4,19 @@
     "player": "Alex Caruso",
     "source": "NBA/ESPN Trade History Research",
     "sourceUrl": "https://www.basketball-reference.com/players/c/carusal01.html",
-    "originYear": 2022,
-    "depth": 3,
-    "lastUpdated": "2026-02-10"
+    "originYear": 2016,
+    "depth": 7,
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
     "name": "Alex Caruso",
     "acquisitionType": "trade",
-    "date": "2024-06-20",
+    "date": "2024-06-21",
     "tradePartner": "CHI",
     "currentTeam": "OKC",
-    "tradeDescription": "Thunder acquire Caruso from Chicago for Josh Giddey",
-    "note": "2020 NBA Champion, elite perimeter defender, All-Defense caliber",
+    "tradeDescription": "Acquired from Chicago Bulls for Josh Giddey",
+    "note": "Played four seasons with Lakers (2017-2021), signed with Bulls in 2021",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -26,19 +26,8 @@
         "draftPick": 6,
         "draftRound": 1,
         "tradeDescription": "Drafted 6th overall by Thunder",
-        "note": "Australian point guard, triple-double threat",
-        "assetsGivenUp": [
-          {
-            "type": "pick",
-            "name": "2021 #6 Overall Pick",
-            "acquisitionType": "original",
-            "date": "2021-07-29",
-            "draftPick": 6,
-            "becamePlayer": "Josh Giddey",
-            "tradeDescription": "Thunder's own first-round pick",
-            "isOrigin": true
-          }
-        ]
+        "note": "Australian point guard, youngest player in NBA history to record triple-double",
+        "isOrigin": true
       }
     ]
   }

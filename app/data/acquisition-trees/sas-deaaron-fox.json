@@ -1,0 +1,159 @@
+{
+  "_meta": {
+    "team": "SAS",
+    "player": "De'Aaron Fox",
+    "source": "NBA.com, ESPN, Basketball-Reference",
+    "originYear": 2017,
+    "depth": 6,
+    "lastUpdated": "2026-02-17"
+  },
+  "tree": {
+    "type": "player",
+    "name": "De'Aaron Fox",
+    "acquisitionType": "trade",
+    "date": "2025-02-03",
+    "currentTeam": "SAS",
+    "tradePartner": "SAC",
+    "tradeDescription": "3-team trade: SAS sent Collins/Jones/2025 CHI 1st to CHI; SAS sent Cissoko + 6 picks to SAC; CHI sent LaVine + 2028 2nd to SAC; SAC sent Huerter to CHI; SAC sent Fox + McLaughlin to SAS",
+    "note": "All-Star guard originally drafted 5th overall by Sacramento in 2017",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Zach Collins",
+        "destination": "CHI",
+        "acquisitionType": "trade",
+        "date": "2021-08-06",
+        "tradePartner": "POR",
+        "tradeDescription": "Spurs acquired Collins from Trail Blazers in sign-and-trade",
+        "note": "Center originally drafted 10th overall by Portland in 2017",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Al-Farouq Aminu",
+            "acquisitionType": "sign-and-trade",
+            "date": "2021-08-11",
+            "tradePartner": "CHI",
+            "tradeDescription": "CHI sent Aminu, Thaddeus Young, 2025 1st, 2022 2nd (LAL), 2025 2nd (CHI) to SAS for DeMar DeRozan S&T",
+            "note": "Salary filler acquired from Chicago in DeMar DeRozan sign-and-trade. Waived Oct 2021.",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "DeMar DeRozan",
+                "acquisitionType": "trade",
+                "date": "2018-07-18",
+                "tradePartner": "TOR",
+                "note": "All-Star guard acquired from Toronto in Kawhi Leonard trade. Sent to CHI in S&T.",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Tre Jones",
+        "destination": "CHI",
+        "acquisitionType": "draft",
+        "date": "2020-11-18",
+        "draftPick": 41,
+        "draftRound": 2,
+        "note": "Point guard drafted 41st overall from Duke",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2025 CHI 1st Round Pick",
+        "destination": "CHI",
+        "acquisitionType": "trade",
+        "date": "2021-08-27",
+        "note": "Chicago's own 2025 1st round pick, acquired from Bulls in DeMar DeRozan sign-and-trade. Sent back to Chicago in this deal.",
+        "becamePlayer": "Noa Essengue",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "DeMar DeRozan",
+            "acquisitionType": "trade",
+            "date": "2018-07-18",
+            "tradePartner": "TOR",
+            "tradeDescription": "Spurs acquired DeRozan + Poeltl from Raptors for Leonard + Green",
+            "note": "All-Star guard originally drafted 9th overall by Toronto in 2009",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Sidy Cissoko",
+        "destination": "SAC",
+        "acquisitionType": "draft",
+        "date": "2023-06-22",
+        "draftPick": 44,
+        "draftRound": 2,
+        "note": "Guard drafted 44th overall from Metropolitans 92 (France)",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2025 CHI 2nd Round Pick",
+        "destination": "SAC",
+        "acquisitionType": "trade",
+        "note": "Chicago's own 2025 2nd round pick, sent to Sacramento",
+        "becamePlayer": "Maxime Raynaud",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2026 2nd Round Pick",
+        "destination": "SAC",
+        "acquisitionType": "trade",
+        "note": "Originally a conditional 2025 CHO 1st round pick owed to SAC that did not convey; converted to this 2026 2nd round pick",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2027 SAS 1st Round Pick",
+        "destination": "SAC",
+        "acquisitionType": "original",
+        "date": "2025-02-03",
+        "note": "San Antonio's own 2027 first round pick",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2027 2nd Round Pick",
+        "destination": "SAC",
+        "acquisitionType": "trade",
+        "note": "Originally a conditional 2025 CHO 1st round pick owed to SAC that did not convey; converted to this 2027 2nd round pick",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2028 DEN 2nd Round Pick",
+        "destination": "SAC",
+        "acquisitionType": "trade",
+        "note": "Denver's 2028 2nd round pick (conditional), sent to Sacramento",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2031 MIN 1st Round Pick",
+        "destination": "SAC",
+        "acquisitionType": "trade",
+        "date": "2024-06-26",
+        "note": "Minnesota's 2031 1st round pick, acquired from Timberwolves in Rob Dillingham draft-night trade (June 26, 2024)",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Rob Dillingham",
+            "acquisitionType": "draft",
+            "date": "2024-06-26",
+            "draftPick": 8,
+            "draftRound": 1,
+            "note": "Guard drafted 8th overall, immediately traded to Minnesota for 2030 swap + 2031 1st",
+            "isOrigin": true
+          }
+        ]
+      }
+    ]
+  }
+}

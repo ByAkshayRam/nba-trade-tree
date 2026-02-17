@@ -1,0 +1,75 @@
+{
+  "_meta": {
+    "team": "GSW",
+    "player": "Kristaps Porzingis",
+    "source": "Basketball-Reference, ESPN, NBA.com",
+    "originYear": 2015,
+    "depth": 7,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Kristaps Porzingis",
+    "acquisitionType": "trade",
+    "date": "2026-02-05",
+    "currentTeam": "GSW",
+    "tradePartner": "ATL",
+    "tradeDescription": "Warriors traded Kuminga, Buddy Hield, and 2026 1st to Hawks for Porzingis",
+    "note": "7'3\" center, 2024 NBA champion with Boston",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Jonathan Kuminga",
+        "acquisitionType": "draft",
+        "date": "2021-07-29",
+        "draftPick": 7,
+        "draftRound": 1,
+        "note": "G League Ignite forward, drafted 7th overall by GSW using pick acquired from Minnesota in Andrew Wiggins trade",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2021 MIN 1st Round Pick (top-3 protected)",
+            "acquisitionType": "trade",
+            "date": "2020-02-06",
+            "tradePartner": "MIN",
+            "becamePlayer": "Jonathan Kuminga",
+            "note": "Acquired from Minnesota in Andrew Wiggins trade, conveyed as #7 overall",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Buddy Hield",
+        "acquisitionType": "sign-and-trade",
+        "date": "2024-07-06",
+        "tradePartner": "PHI",
+        "tradeDescription": "6-team sign-and-trade: GSW sent Klay Thompson to DAL, received Hield from PHI and Anderson from MIN",
+        "note": "Oklahoma guard, signed 2yr/$21M via first 6-team trade in NBA history",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Klay Thompson",
+            "acquisitionType": "draft",
+            "date": "2011-06-23",
+            "draftPick": 11,
+            "draftRound": 1,
+            "note": "Washington State guard, drafted #11 overall by Golden State. 4x NBA champion, one of the greatest shooters in NBA history. Left via sign-and-trade to Dallas after 13 seasons.",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2026 1st Round Pick",
+        "acquisitionType": "original",
+        "date": "2026-06-26",
+        "note": "Warriors' own first-round pick",
+        "isOrigin": true
+      }
+    ]
+  }
+}

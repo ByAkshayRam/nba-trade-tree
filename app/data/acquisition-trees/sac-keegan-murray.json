@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "SAC",
+    "player": "Keegan Murray",
+    "source": "NBA Draft History, ESPN",
+    "originYear": 2022,
+    "depth": 1,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Keegan Murray",
+    "acquisitionType": "draft",
+    "date": "2022-06-23",
+    "currentTeam": "SAC",
+    "draftPick": 4,
+    "draftRound": 1,
+    "note": "Iowa forward, drafted 4th overall in 2022",
+    "isOrigin": true
+  }
+}

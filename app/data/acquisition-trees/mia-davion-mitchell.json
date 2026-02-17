@@ -2,17 +2,54 @@
   "_meta": {
     "team": "MIA",
     "player": "Davion Mitchell",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2026,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "Basketball-Reference, ESPN, The Athletic - Feb 2026",
+    "originYear": 2025,
+    "depth": 3,
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
     "name": "Davion Mitchell",
     "acquisitionType": "trade",
-    "date": "2026-02-06",
+    "date": "2025-02-06",
     "currentTeam": "MIA",
-    "tradePartner": "SAC"
+    "tradePartner": "TOR",
+    "tradeDescription": "MIA sent PJ Tucker and a 2nd round pick to TOR for Davion Mitchell",
+    "note": "Traded from Toronto. Re-signed with MIA on 2-year deal in July 2025",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "PJ Tucker",
+        "acquisitionType": "trade",
+        "date": "2025-02-06",
+        "tradePartner": "GSW",
+        "note": "Received from GSW in Butler 5-team trade, sent to TOR",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Jimmy Butler",
+            "acquisitionType": "trade",
+            "date": "2019-07-06",
+            "tradePartner": "PHI",
+            "note": "Sign-and-trade from PHI",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Josh Richardson",
+                "note": "Sent to PHI",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "details": "2027 2nd Round Pick",
+        "note": "Sent to TOR",
+        "isOrigin": true,
+        "name": "2027 2nd Round Pick"
+      }
+    ]
   }
 }

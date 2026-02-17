@@ -4,9 +4,9 @@
     "player": "Isaiah Hartenstein",
     "source": "NBA/ESPN Trade History Research",
     "sourceUrl": "https://www.basketball-reference.com/players/h/harteis01.html",
-    "originYear": 2024,
-    "depth": 1,
-    "lastUpdated": "2026-02-10"
+    "originYear": 2017,
+    "depth": 8,
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
@@ -14,8 +14,8 @@
     "acquisitionType": "free-agent",
     "date": "2024-07-06",
     "currentTeam": "OKC",
-    "tradeDescription": "Signed as unrestricted free agent from New York Knicks",
-    "note": "3yr/$87M deal, dominant rebounder. Free agent = no assets given up",
+    "tradeDescription": "Signed 3-year, $87M contract as unrestricted free agent",
+    "note": "Signed with Thunder in 2024 after two seasons with Knicks",
     "isOrigin": true
   }
 }

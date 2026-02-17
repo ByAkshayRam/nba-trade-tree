@@ -1,0 +1,129 @@
+{
+  "_meta": {
+    "team": "LAL",
+    "player": "Maxi Kleber",
+    "source": "Basketball-Reference",
+    "originYear": 2017,
+    "depth": 4,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Maxi Kleber",
+    "acquisitionType": "trade",
+    "date": "2025-02-02",
+    "currentTeam": "LAL",
+    "tradePartner": "DAL",
+    "tradeDescription": "3-team trade: Lakers acquired Doncic, Kleber, Markieff Morris from Mavericks; sent AD, Max Christie, 2029 1st to Dallas; sent Hood-Schifino and 2025 2nd (LAC own) to Utah",
+    "note": "German forward/center, undrafted international signing",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Anthony Davis",
+        "acquisitionType": "trade",
+        "date": "2019-07-06",
+        "tradePartner": "NOP",
+        "tradeDescription": "3-team trade: Lakers acquired Davis from Pelicans for Lonzo Ball, Brandon Ingram, Josh Hart, De'Andre Hunter (#4 pick), 2022 1st, 2023 1st (swap), 2025 1st",
+        "note": "Traded from Lakers to Dallas Mavericks",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Lonzo Ball",
+            "acquisitionType": "draft",
+            "date": "2017-06-22",
+            "draftPick": 2,
+            "draftRound": 1,
+            "note": "UCLA point guard, drafted 2nd overall by Lakers",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Brandon Ingram",
+            "acquisitionType": "draft",
+            "date": "2016-06-23",
+            "draftPick": 2,
+            "draftRound": 1,
+            "note": "Duke forward, drafted 2nd overall by Lakers",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Josh Hart",
+            "acquisitionType": "draft",
+            "date": "2017-06-22",
+            "draftPick": 30,
+            "draftRound": 1,
+            "note": "Villanova guard, drafted 30th overall by Lakers",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2019 LAL 1st Round Pick",
+            "acquisitionType": "original",
+            "date": "2019-06-20",
+            "becamePlayer": "De'Andre Hunter",
+            "note": "Lakers' own 1st round pick, became #4 overall, sent to NOP then traded to ATL",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2022 LAL 1st Round Pick",
+            "acquisitionType": "original",
+            "date": "2022-06-23",
+            "becamePlayer": "Dyson Daniels",
+            "note": "Lakers' own 1st round pick, sent to NOP",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2025 LAL 1st Round Pick",
+            "acquisitionType": "original",
+            "date": "2025-06-25",
+            "becamePlayer": "Drake Powell",
+            "note": "Lakers' own 1st round pick, NOP deferred from 2024 to 2025",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Max Christie",
+        "acquisitionType": "draft",
+        "date": "2022-06-23",
+        "draftPick": 35,
+        "draftRound": 2,
+        "note": "Michigan State guard, drafted 35th overall by Lakers",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2029 LAL 1st Round Pick",
+        "acquisitionType": "original",
+        "date": "2029-06-01",
+        "note": "Lakers' own 1st round pick, sent to Dallas",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Jalen Hood-Schifino",
+        "acquisitionType": "draft",
+        "date": "2023-06-22",
+        "draftPick": 17,
+        "draftRound": 1,
+        "note": "Indiana guard, drafted 17th overall by Lakers, sent to Utah Jazz",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2025 2nd Round Pick (LAC own)",
+        "acquisitionType": "trade",
+        "date": "2023-02-09",
+        "tradePartner": "LAC",
+        "tradeDescription": "Received from Clippers via 4-team trade on Feb 9, 2023",
+        "becamePlayer": "John Tonje",
+        "note": "LAC own 2nd round pick, acquired in Feb 2023 4-team trade, sent to Utah Jazz",
+        "isOrigin": true
+      }
+    ]
+  }
+}

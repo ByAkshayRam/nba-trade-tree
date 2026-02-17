@@ -2,20 +2,20 @@
   "_meta": {
     "team": "MIA",
     "player": "Terry Rozier",
-    "source": "NBA Trade History Research",
-    "originYear": 2015,
-    "depth": 4,
-    "lastUpdated": "2026-02-11"
+    "source": "ESPN, Basketball-Reference - Feb 2026",
+    "originYear": 2019,
+    "depth": 5,
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
     "name": "Terry Rozier",
     "acquisitionType": "trade",
-    "date": "2024-02-08",
+    "date": "2024-01-23",
     "currentTeam": "MIA",
     "tradePartner": "CHA",
-    "tradeDescription": "Heat acquire Rozier at 2024 deadline for Kyle Lowry and a 1st",
-    "note": "Scoring point guard, playoff performer",
+    "tradeDescription": "MIA sent Kyle Lowry and 2027 lottery-protected 1st round pick to CHA for Terry Rozier",
+    "note": "Traded from Charlotte for Lowry and a protected 1st",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -23,59 +23,36 @@
         "acquisitionType": "trade",
         "date": "2021-08-06",
         "tradePartner": "TOR",
-        "tradeDescription": "Heat acquired Lowry via sign-and-trade for Goran Dragic and Precious Achiuwa",
-        "note": "2019 Champion with Toronto, leadership presence",
+        "tradeDescription": "Sign-and-trade. MIA sent Goran Dragic, Precious Achiuwa, and a future 2nd round pick to TOR",
+        "note": "Sign-and-trade from Toronto",
         "assetsGivenUp": [
           {
             "type": "player",
             "name": "Goran Dragic",
-            "acquisitionType": "trade",
-            "date": "2015-02-19",
-            "tradePartner": "PHO",
-            "tradeDescription": "Acquired from Suns in deadline deal",
-            "note": "All-Star caliber, longtime Heat player",
-            "assetsGivenUp": [
-              {
-                "type": "player",
-                "name": "Danny Granger",
-                "acquisitionType": "trade",
-                "date": "2014-02-20",
-                "tradePartner": "IND",
-                "tradeDescription": "Salary filler from Pacers",
-                "isOrigin": true
-              },
-              {
-                "type": "pick",
-                "name": "2017 1st Round Pick (MIA)",
-                "acquisitionType": "original",
-                "date": "2015-02-19",
-                "tradeDescription": "Miami's own pick",
-                "becamePlayer": "Bam Adebayo",
-                "note": "Pick conveyed and became Bam!",
-                "isOrigin": true
-              }
-            ]
+            "note": "Sent to TOR. Signed as free agent by MIA in 2015",
+            "isOrigin": true
           },
           {
             "type": "player",
             "name": "Precious Achiuwa",
-            "acquisitionType": "draft",
-            "date": "2020-11-18",
-            "draftPick": 20,
-            "draftRound": 1,
-            "currentTeam": "TOR",
-            "tradeDescription": "Heat drafted with their own pick",
+            "note": "Sent to TOR. Drafted 20th overall by MIA in 2020",
             "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "details": "2025 2nd Round Pick",
+            "note": "Sent to TOR in Lowry S&T. Subsequently traded by Toronto.",
+            "isOrigin": true,
+            "name": "2025 2nd Round Pick"
           }
         ]
       },
       {
         "type": "pick",
-        "name": "2024 1st Round Pick (MIA)",
-        "acquisitionType": "original",
-        "date": "2024-02-08",
-        "tradeDescription": "Miami's own protected first",
-        "isOrigin": true
+        "details": "2027 1st Round Pick (lottery-protected)",
+        "note": "MIA own pick, sent to CHA",
+        "isOrigin": true,
+        "name": "2027 1st Round Pick (lottery-protected)"
       }
     ]
   }

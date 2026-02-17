@@ -2,10 +2,10 @@
   "_meta": {
     "team": "ORL",
     "player": "Tristan da Silva",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "NBA.com/ESPN - Feb 2026",
     "originYear": 2024,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-16"
   },
   "tree": {
     "type": "player",
@@ -14,6 +14,7 @@
     "date": "2024-06-26",
     "currentTeam": "ORL",
     "draftPick": 18,
-    "draftRound": 1
+    "draftRound": 1,
+    "isOrigin": true
   }
 }

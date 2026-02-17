@@ -2,54 +2,43 @@
   "_meta": {
     "team": "ATL",
     "player": "CJ McCollum",
-    "source": "NBA Trade History Research",
-    "originYear": 2013,
-    "depth": 4,
-    "lastUpdated": "2026-02-11"
+    "source": "NBA.com Official Trade",
+    "originYear": 2018,
+    "depth": 3,
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "CJ McCollum",
     "acquisitionType": "trade",
-    "date": "2026-02-06",
+    "date": "2026-01-09",
     "currentTeam": "ATL",
-    "tradePartner": "NOP",
-    "tradeDescription": "Hawks acquire CJ at 2026 deadline as part of Trae Young reshuffling",
-    "note": "Elite scorer, veteran leadership",
+    "tradePartner": "WAS",
+    "tradeDescription": "Hawks acquire CJ McCollum and Corey Kispert for Trae Young",
+    "note": "Veteran scorer, 3x 20+ PPG seasons",
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Trae Young",
-        "acquisitionType": "draft",
+        "acquisitionType": "draft-night-trade",
         "date": "2018-06-21",
         "draftPick": 5,
         "draftRound": 1,
-        "currentTeam": "WAS",
         "tradePartner": "DAL",
-        "tradeDescription": "Hawks drafted Luka Doncic #3 then traded for #5 pick (Trae) + future 1st",
-        "note": "3x All-Star, elite playmaker traded to WAS at 2026 deadline",
+        "tradeDescription": "Draft night swap: Hawks selected Luka Doncic #3, traded him to Dallas for the #5 pick (Trae Young) and a 2019 protected 1st rounder",
+        "note": "3x All-Star, Hawks franchise cornerstone 2018-2026. The Luka-Trae swap defined both franchises.",
+        "isOrigin": true,
         "assetsGivenUp": [
           {
             "type": "pick",
-            "name": "2018 #3 Overall Pick (Luka Doncic)",
-            "acquisitionType": "draft",
+            "name": "2018 #3 Overall Pick",
+            "acquisitionType": "original",
             "date": "2018-06-21",
-            "draftPick": 3,
-            "draftRound": 1,
             "becamePlayer": "Luka Doncic",
-            "tradeDescription": "Hawks own pick, used on Luka then traded to Dallas",
-            "note": "Controversial trade in hindsight - Luka became superstar",
-            "isOrigin": true
+            "tradeDescription": "Hawks selected Doncic #3 overall, immediately traded to Dallas in swap for #5 pick (Trae Young)",
+            "note": "Slovenian prodigy, EuroLeague MVP at 19. Became 5x All-Star with Mavericks."
           }
         ]
-      },
-      {
-        "type": "pick",
-        "name": "2026 1st Round Pick (ATL)",
-        "acquisitionType": "original",
-        "date": "2026-02-06",
-        "tradeDescription": "Hawks own first round pick",
-        "isOrigin": true
       }
     ]
   }

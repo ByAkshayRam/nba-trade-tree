@@ -2,18 +2,43 @@
   "_meta": {
     "team": "DET",
     "player": "Marcus Sasser",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "NBA Draft records, Basketball-Reference - June 2023 draft",
     "originYear": 2023,
     "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Marcus Sasser",
-    "acquisitionType": "draft",
+    "acquisitionType": "draft-night-trade",
     "date": "2023-06-22",
     "currentTeam": "DET",
     "draftPick": 25,
-    "draftRound": 1
+    "draftRound": 1,
+    "note": "Guard from Houston, drafted 25th overall by Memphis (via BOS in Marcus Smart trade), traded to Detroit on draft night",
+    "isOrigin": false,
+    "espnId": "4432107",
+    "tradePartner": "BOS",
+    "tradeDescription": "Pistons traded up from #31 to #25, acquiring Sasser from Celtics for James Nnaji (#31) and a 2025 2nd round pick",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2023 DET 2nd Round Pick (#31)",
+        "acquisitionType": "original",
+        "date": "2023-06-22",
+        "becamePlayer": "James Nnaji",
+        "note": "Pistons' own second-round pick, sent to Boston",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2025 DET 2nd Round Pick",
+        "acquisitionType": "original",
+        "note": "Pistons' own future second-round pick sent to Boston",
+        "isOrigin": true,
+        "becamePlayer": "Bogoljub Markovic",
+        "draftPick": 47
+      }
+    ]
   }
 }

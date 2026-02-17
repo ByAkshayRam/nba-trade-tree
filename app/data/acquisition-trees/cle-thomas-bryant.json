@@ -2,16 +2,31 @@
   "_meta": {
     "team": "CLE",
     "player": "Thomas Bryant",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2025,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "Wikipedia, ESPN, Hoops Rumors, NBA trade history verified",
+    "originYear": 2017,
+    "depth": 2,
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Thomas Bryant",
     "acquisitionType": "free-agent",
-    "date": "2025-07-01",
-    "currentTeam": "CLE"
+    "date": "2025-09-23",
+    "currentTeam": "CLE",
+    "note": "Center signed one-year contract after playing for Miami and Indiana previous season",
+    "isOrigin": false,
+    "assetsGivenUp": [],
+    "tradeChain": {
+      "type": "player",
+      "name": "Thomas Bryant",
+      "acquisitionType": "draft-night-trade",
+      "date": "2017-06-22",
+      "tradePartner": "LAL",
+      "tradeDescription": "Drafted 42nd overall by Utah, traded to Lakers along with Josh Hart for Lakers' 28th pick (Tony Bradley)",
+      "draftPick": 42,
+      "draftRound": 2,
+      "note": "Center from Indiana University, acquired by Lakers from Jazz on draft night",
+      "isOrigin": true
+    }
   }
 }

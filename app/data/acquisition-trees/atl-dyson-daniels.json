@@ -2,72 +2,30 @@
   "_meta": {
     "team": "ATL",
     "player": "Dyson Daniels",
-    "source": "NBA Trade History Research",
+    "source": "NBA/ESPN Trade History",
     "originYear": 2022,
-    "depth": 4,
-    "lastUpdated": "2026-02-11"
+    "depth": 2,
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Dyson Daniels",
     "acquisitionType": "trade",
-    "date": "2024-09-01",
+    "date": "2024-06-27",
     "currentTeam": "ATL",
     "tradePartner": "NOP",
-    "tradeDescription": "Hawks acquire Daniels from Pelicans for Dejounte Murray",
-    "note": "Elite perimeter defender, high upside guard",
+    "tradeDescription": "Hawks acquire Dyson Daniels from Pelicans in Dejounte Murray trade",
+    "note": "Australian guard, elite perimeter defender",
     "assetsGivenUp": [
       {
         "type": "player",
-        "name": "Dejounte Murray",
-        "acquisitionType": "trade",
-        "date": "2022-06-29",
-        "tradePartner": "SAS",
-        "tradeDescription": "Hawks acquired Murray from Spurs for Danilo Gallinari, 3 first round picks",
-        "note": "All-Star guard, franchise trade at the time",
-        "assetsGivenUp": [
-          {
-            "type": "player",
-            "name": "Danilo Gallinari",
-            "acquisitionType": "free-agent",
-            "date": "2020-11-21",
-            "tradeDescription": "Hawks signed Gallo as free agent from OKC",
-            "note": "Veteran scorer, signed for $61M/3yr",
-            "isOrigin": true
-          },
-          {
-            "type": "pick",
-            "name": "2023 Unprotected 1st (CHA via ATL)",
-            "acquisitionType": "original",
-            "date": "2022-06-29",
-            "tradeDescription": "Pick originally from Charlotte to Atlanta",
-            "becamePlayer": "Cason Wallace (OKC)",
-            "isOrigin": true
-          },
-          {
-            "type": "pick",
-            "name": "2025 1st Round Pick (ATL)",
-            "acquisitionType": "original",
-            "date": "2022-06-29",
-            "tradeDescription": "Atlanta's own first",
-            "isOrigin": true
-          },
-          {
-            "type": "pick",
-            "name": "2027 1st Round Pick (ATL)",
-            "acquisitionType": "original",
-            "date": "2022-06-29",
-            "tradeDescription": "Atlanta's own first",
-            "isOrigin": true
-          }
-        ]
-      },
-      {
-        "type": "pick",
-        "name": "2026 2nd Round Pick",
-        "acquisitionType": "original",
-        "date": "2024-09-01",
-        "tradeDescription": "Additional pick in Murray trade",
+        "name": "AJ Griffin",
+        "acquisitionType": "draft",
+        "date": "2022-06-23",
+        "draftPick": 16,
+        "draftRound": 1,
+        "tradeDescription": "Hawks drafted Griffin with #16 pick",
+        "note": "Duke sharpshooter, lottery talent who slipped due to injury concerns. Drafted by ATL with #16 pick in 2022.",
         "isOrigin": true
       }
     ]

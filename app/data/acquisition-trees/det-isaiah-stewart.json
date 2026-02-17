@@ -2,18 +2,43 @@
   "_meta": {
     "team": "DET",
     "player": "Isaiah Stewart",
-    "source": "ESPN/NBA Trade History - Feb 2026",
+    "source": "Basketball-Reference, ESPN, NBA Draft trade records",
     "originYear": 2020,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "depth": 2,
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Isaiah Stewart",
-    "acquisitionType": "draft",
-    "date": "2020-11-18",
+    "acquisitionType": "trade",
+    "date": "2020-11-24",
     "currentTeam": "DET",
-    "draftPick": 16,
-    "draftRound": 1
+    "tradePartner": "HOU",
+    "tradeDescription": "Sign-and-trade: Pistons signed Christian Wood then traded him to Rockets for Isaiah Stewart, Trevor Ariza, 2nd round pick, and cash",
+    "note": "Forward/Center from Washington, acquired via draft-night trades",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Christian Wood",
+        "acquisitionType": "free-agent",
+        "date": "2019-07-23",
+        "note": "Undrafted forward, signed by Pistons off waivers from Milwaukee in 2019, then signed 3-year $41M deal for sign-and-trade",
+        "isOrigin": true
+      }
+    ],
+    "tradeChain": {
+      "type": "player",
+      "name": "Isaiah Stewart",
+      "acquisitionType": "draft-night-trade",
+      "date": "2020-11-18",
+      "tradePartner": "POR",
+      "tradeDescription": "Rockets traded Robert Covington to Trail Blazers for Isaiah Stewart, Trevor Ariza, future 1st round pick",
+      "draftPick": 16,
+      "draftRound": 1,
+      "note": "Forward/Center drafted 16th overall by Portland, traded to Houston same night",
+      "isOrigin": true
+    },
+    "espnId": "4432810"
   }
 }

@@ -17,6 +17,15 @@
     "currentTeam": "NYK",
     "tradeDescription": "Drafted 25th overall by Knicks",
     "note": "French prospect, homegrown talent",
-    "isOrigin": true
+    "isOrigin": true,
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "details": "2024 #25 Overall Pick (used)",
+        "name": "2024 #25 Overall Pick (used)",
+        "becamePlayer": "Pacome Dadiet",
+        "draftPick": 25
+      }
+    ]
   }
 }

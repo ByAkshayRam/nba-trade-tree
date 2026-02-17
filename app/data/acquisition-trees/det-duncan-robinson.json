@@ -2,20 +2,20 @@
   "_meta": {
     "team": "DET",
     "player": "Duncan Robinson",
-    "source": "NBA Trade History Research",
+    "source": "ESPN, Detroit Free Press, Hoops Rumors - July 2025 sign-and-trade",
     "originYear": 2018,
-    "depth": 4,
-    "lastUpdated": "2026-02-11"
+    "depth": 2,
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Duncan Robinson",
     "acquisitionType": "trade",
-    "date": "2026-02-06",
+    "date": "2025-07-07",
     "currentTeam": "DET",
     "tradePartner": "MIA",
-    "tradeDescription": "Pistons acquire Robinson at 2026 deadline as salary filler in Butler deal",
-    "note": "Elite 3-point shooter, fell out of rotation in Miami",
+    "tradeDescription": "Pistons traded Simone Fontecchio to Heat for Duncan Robinson",
+    "note": "Michigan sharpshooter, acquired via trade from Miami",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -23,27 +23,45 @@
         "acquisitionType": "trade",
         "date": "2024-02-08",
         "tradePartner": "UTA",
-        "tradeDescription": "Acquired from Jazz as rotation piece",
-        "note": "Italian national team star",
+        "tradeDescription": "Pistons traded Kevin Knox II, rights to Gabriele Procida, and 2024 2nd round pick to Jazz for Fontecchio",
+        "note": "Italian forward acquired from Utah Jazz at 2024 trade deadline",
+        "isOrigin": false,
+        "tradeChain": {
+          "type": "player",
+          "name": "Simone Fontecchio",
+          "acquisitionType": "undrafted",
+          "date": "2019-07-15",
+          "note": "Italian forward, undrafted international signing with Utah Jazz in 2019",
+          "isOrigin": true
+        },
         "assetsGivenUp": [
           {
-            "type": "pick",
-            "name": "2024 2nd Round Pick",
-            "acquisitionType": "original",
-            "date": "2024-02-08",
-            "tradeDescription": "Detroit's own 2nd round pick",
+            "type": "player",
+            "name": "Kevin Knox II",
+            "acquisitionType": "free-agent",
+            "date": "2023-09-21",
+            "note": "Forward signed as free agent by Detroit in 2023",
             "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2024 DET 2nd Round Pick",
+            "acquisitionType": "original",
+            "note": "Pistons' own second-round pick sent to Utah",
+            "isOrigin": true,
+            "becamePlayer": "Cam Spencer",
+            "draftPick": 53
           }
         ]
-      },
-      {
-        "type": "pick",
-        "name": "2028 2nd Round Pick",
-        "acquisitionType": "original",
-        "date": "2026-02-06",
-        "tradeDescription": "Detroit's own 2nd round pick",
-        "isOrigin": true
       }
-    ]
+    ],
+    "tradeChain": {
+      "type": "player",
+      "name": "Duncan Robinson",
+      "acquisitionType": "undrafted",
+      "date": "2018-04-16",
+      "note": "Michigan forward, undrafted free agent signing with Miami Heat in 2018",
+      "isOrigin": true
+    }
   }
 }

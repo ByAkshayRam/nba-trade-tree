@@ -2,41 +2,82 @@
   "_meta": {
     "team": "DET",
     "player": "Jalen Duren",
-    "source": "NBA Trade History Research",
-    "originYear": 2022,
+    "source": "ESPN, Basketball-Reference, NBA Draft records",
+    "originYear": 2020,
     "depth": 4,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-15"
   },
   "tree": {
     "type": "player",
     "name": "Jalen Duren",
-    "acquisitionType": "trade",
+    "acquisitionType": "draft-night-trade",
     "date": "2022-06-23",
     "currentTeam": "DET",
-    "tradePartner": "CHA",
-    "tradeDescription": "Pistons acquired Duren from Hornets for Kemba Walker contract",
-    "note": "Athletic big man, young rim protector",
+    "tradePartner": "NYK",
+    "tradeDescription": "3-team trade: Pistons acquired Jalen Duren (#13) and Kemba Walker from Knicks, sent 2025 MIL 1st round pick (top-4 protected) to New York",
+    "draftPick": 13,
+    "draftRound": 1,
+    "note": "Center from Memphis, drafted 13th overall by Charlotte, traded to Detroit via New York",
+    "isOrigin": false,
     "assetsGivenUp": [
       {
-        "type": "player",
-        "name": "Kemba Walker",
+        "type": "pick",
+        "name": "2025 MIL 1st Round Pick (top-4 protected)",
         "acquisitionType": "trade",
         "date": "2022-06-23",
-        "tradePartner": "NYK",
-        "tradeDescription": "Pistons took on Kemba's bad contract from Knicks to get #13 pick",
-        "note": "Contract dump - Kemba was bought out",
-        "assetsGivenUp": [
-          {
-            "type": "pick",
-            "name": "2025 Protected 1st (DET via NYK)",
-            "acquisitionType": "trade",
-            "date": "2022-06-23",
-            "tradePartner": "NYK",
-            "tradeDescription": "Pistons received future pick protection for absorbing salary",
-            "isOrigin": true
-          }
-        ]
+        "tradeDescription": "Sent to New York Knicks as part of 3-team draft night trade for Jalen Duren (#13)",
+        "becamePlayer": "Nolan Traore",
+        "note": "Originally acquired from Portland in the Jerami Grant trade (Jul 6, 2022). Conveyed as #19 pick in 2025, selected Nolan Traore.",
+        "isOrigin": false
       }
-    ]
+    ],
+    "tradeChain": {
+      "type": "pick",
+      "name": "2022 CHA 1st Round Pick (#13)",
+      "acquisitionType": "trade",
+      "date": "2022-06-23",
+      "tradePartner": "NYK",
+      "tradeDescription": "Pistons sent 2025 MIL 1st round pick to Knicks, received #13 pick (Jalen Duren, drafted by Charlotte) and Kemba Walker",
+      "becamePlayer": "Jalen Duren",
+      "draftPick": 13,
+      "draftRound": 1,
+      "note": "Charlotte drafted Duren #13, sent to Detroit via New York in 3-team draft night trade",
+      "isOrigin": false,
+      "assetsGivenUp": [
+        {
+          "type": "pick",
+          "name": "2025 MIL 1st Round Pick (protected)",
+          "acquisitionType": "trade",
+          "date": "2025-06-25",
+          "becamePlayer": "Nolan Traore",
+          "tradePartner": "POR",
+          "tradeDescription": "Acquired from Trail Blazers in Jerami Grant trade (Jul 6, 2022)",
+          "note": "Milwaukee's 2025 1st round pick (top-4 protected), sent to NYK then to BKN in Bridges trade, became #19 Nolan Traore",
+          "isOrigin": false,
+          "assetsGivenUp": [
+            {
+              "type": "player",
+              "name": "Jerami Grant",
+              "acquisitionType": "trade",
+              "date": "2020-11-24",
+              "tradePartner": "DEN",
+              "tradeDescription": "Sign-and-trade: Pistons signed Grant to 3-year $60M deal, Nuggets received trade exception and cash",
+              "note": "Forward acquired via sign-and-trade from Denver",
+              "isOrigin": false,
+              "assetsGivenUp": [
+                {
+                  "type": "other",
+                  "name": "Cash considerations",
+                  "acquisitionType": "original",
+                  "note": "Sign-and-trade, Detroit sent only cash/trade exception to Denver",
+                  "isOrigin": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "espnId": "4433621"
   }
 }

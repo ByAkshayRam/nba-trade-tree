@@ -1,0 +1,102 @@
+{
+  "_meta": {
+    "team": "MIN",
+    "player": "Ayo Dosunmu",
+    "source": "ESPN, NBA.com, Basketball-Reference, Wikipedia",
+    "originYear": 2021,
+    "depth": 4,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Ayo Dosunmu",
+    "acquisitionType": "trade",
+    "date": "2026-02-05",
+    "currentTeam": "MIN",
+    "tradePartner": "CHI",
+    "tradeDescription": "Trade deadline deal: Timberwolves acquired Ayo Dosunmu and Julian Phillips from Bulls for Rob Dillingham, Leonard Miller, and 4 second-round picks",
+    "note": "Illinois guard, 2021 2nd round pick (#38)",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Rob Dillingham",
+        "acquisitionType": "draft-night-trade",
+        "date": "2024-06-26",
+        "draftPick": 8,
+        "draftRound": 1,
+        "tradePartner": "SAS",
+        "note": "Kentucky guard, selected #8 by SAS, traded to MIN for 2031 unprotected 1st + 2030 pick swap",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2031 1st Round Pick",
+            "acquisitionType": "original",
+            "note": "MIN 2031 unprotected 1st round pick, sent to SAS",
+            "isOrigin": true
+          },
+          {
+            "type": "other",
+            "name": "2030 1st Round Pick Swap",
+            "acquisitionType": "original",
+            "note": "Right for SAS to swap 1st round picks with MIN in 2030",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Leonard Miller",
+        "acquisitionType": "draft-night-trade",
+        "date": "2023-06-22",
+        "draftPick": 33,
+        "draftRound": 2,
+        "tradePartner": "SAS",
+        "note": "Canadian forward, selected #33 by SAS, traded to MIN on draft night",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2026 2nd Round Pick (via UTA)",
+            "acquisitionType": "trade",
+            "note": "Utah's 2026 2nd round pick, acquired by MIN in Conley 3-team trade, sent to SAS for Miller",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2028 2nd Round Pick (MIN own)",
+            "acquisitionType": "original",
+            "note": "Minnesota's own 2028 2nd round pick, sent to SAS for Miller",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2026 2nd Round Pick",
+        "acquisitionType": "trade",
+        "note": "Least favorable of Denver or Golden State 2nd round picks",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2027 2nd Round Pick (via CLE)",
+        "acquisitionType": "trade",
+        "note": "Cleveland's 2027 2nd round pick",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2031 2nd Round Pick",
+        "acquisitionType": "original",
+        "note": "Most favorable of Minnesota or Golden State 2nd round picks",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2032 2nd Round Pick",
+        "acquisitionType": "trade",
+        "note": "Most favorable of Phoenix or Houston 2nd round picks",
+        "isOrigin": true
+      }
+    ]
+  }
+}

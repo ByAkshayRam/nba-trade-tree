@@ -1,0 +1,24 @@
+{
+  "_meta": {
+    "team": "CHI",
+    "player": "Lachlan Olbrich",
+    "source": "Basketball-Reference, ESPN, NBA.com",
+    "originYear": 2025,
+    "depth": 2,
+    "lastUpdated": "2026-02-15"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Lachlan Olbrich",
+    "acquisitionType": "draft-night-trade",
+    "date": "2025-06-26",
+    "currentTeam": "CHI",
+    "tradePartner": "LAL",
+    "tradeDescription": "Bulls acquire draft rights to Lachlan Olbrich (55th pick) from Lakers on draft night",
+    "draftPick": 55,
+    "draftRound": 2,
+    "note": "Australian center from UC Riverside, acquired via draft night trade with Lakers",
+    "isOrigin": true,
+    "assetsGivenUp": []
+  }
+}

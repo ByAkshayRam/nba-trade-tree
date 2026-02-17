@@ -1,0 +1,94 @@
+{
+  "_meta": {
+    "team": "DAL",
+    "player": "Dereck Lively II",
+    "source": "NBA.com, Basketball-Reference",
+    "originYear": 2011,
+    "depth": 4,
+    "lastUpdated": "2026-02-16"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Dereck Lively II",
+    "acquisitionType": "draft-night-trade",
+    "date": "2023-06-22",
+    "currentTeam": "DAL",
+    "tradePartner": "OKC",
+    "draftPick": 12,
+    "draftRound": 1,
+    "tradeDescription": "Dallas traded #10 pick (Cason Wallace) and Davis Bertans to OKC for #12 pick (Dereck Lively II)",
+    "note": "Duke center, drafted #12 overall",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2023 DAL #10 Overall Pick",
+        "acquisitionType": "original",
+        "date": "2023-06-22",
+        "becamePlayer": "Cason Wallace",
+        "note": "Dallas own 2023 first-round pick, traded to OKC on draft night",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Davis Bertans",
+        "acquisitionType": "trade",
+        "date": "2022-02-10",
+        "tradePartner": "WAS",
+        "tradeDescription": "DAL acquired Bertans and Dinwiddie from WAS for Porzingis and a 2nd round pick",
+        "note": "Latvian forward, 2011 #42 pick by Indiana, rights traded to SAS with Kawhi Leonard",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Kristaps Porzingis",
+            "acquisitionType": "trade",
+            "date": "2019-01-31",
+            "tradePartner": "NYK",
+            "tradeDescription": "DAL acquired Porzingis from NYK for Dennis Smith Jr., DeAndre Jordan, and 2 future 1sts",
+            "note": "Latvian forward, 2015 #4 pick by New York",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Dennis Smith Jr.",
+                "acquisitionType": "draft",
+                "date": "2017-06-22",
+                "draftPick": 9,
+                "draftRound": 1,
+                "note": "NC State guard, drafted #9 by Dallas",
+                "isOrigin": true
+              },
+              {
+                "type": "player",
+                "name": "DeAndre Jordan",
+                "acquisitionType": "free-agent",
+                "date": "2018-07-06",
+                "note": "Signed as free agent from LA Clippers",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2021 DAL 1st Round Pick",
+                "acquisitionType": "original",
+                "date": "2021-07-29",
+                "becamePlayer": "Keon Johnson",
+                "note": "Unprotected, conveyed to New York as #21 overall",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2023 DAL 1st Round Pick",
+                "acquisitionType": "original",
+                "date": "2024-06-26",
+                "becamePlayer": "Kyshawn George",
+                "note": "Top-10 protected, did not convey in 2023, rolled to 2024 as #24 overall to New York",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
