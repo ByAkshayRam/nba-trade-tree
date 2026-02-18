@@ -92,7 +92,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex items-center gap-3">
-            <Link href="/faq" className="text-xs text-zinc-500 hover:text-fuchsia-400 transition-colors">
+            <Link href="/faq" className="text-xs text-zinc-500 hover:text-fuchsia-400 transition-colors py-2 px-1 min-h-[44px] flex items-center">
               FAQ
             </Link>
             <WhatsNew />
@@ -118,12 +118,12 @@ export default function Home() {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-fuchsia-500/10 border border-fuchsia-500/20 text-fuchsia-400 text-xs font-medium mb-6">
             <span>🧬</span> 512 players · 30 teams · every acquisition traced
           </div>
-          <h2 className="text-5xl sm:text-6xl font-extrabold mb-5 leading-tight">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold mb-5 leading-tight">
             <span className="bg-gradient-to-r from-fuchsia-400 via-violet-400 to-blue-400 bg-clip-text text-transparent">
               How Was Your Team Built?
             </span>
           </h2>
-          <p className="text-lg text-zinc-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="text-base sm:text-lg text-zinc-400 max-w-2xl mx-auto mb-10 leading-relaxed px-2 sm:px-0">
             Trace the chain of trades, draft picks, and signings that built every NBA roster. 
             From the Celtics-Nets heist to OKC&apos;s draft empire — see the full story.
           </p>
@@ -283,7 +283,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t border-zinc-800/50 mt-16">
-        <div className="max-w-6xl mx-auto px-4 py-6 flex items-center justify-between text-xs text-zinc-600">
+        <div className="max-w-6xl mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-zinc-600">
           <div className="flex items-center gap-2">
             <span>🧬</span>
             <span className="font-semibold">RosterDNA</span>

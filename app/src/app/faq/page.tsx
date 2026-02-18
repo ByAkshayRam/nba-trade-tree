@@ -83,7 +83,7 @@ function FAQAccordion({ item }: { item: FAQItem }) {
     <div className="border-b border-zinc-800/50">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex items-center justify-between py-5 text-left group"
+        className="w-full flex items-center justify-between py-4 sm:py-5 text-left group min-h-[48px]"
       >
         <span className="text-sm sm:text-base font-medium text-white group-hover:text-fuchsia-400 transition-colors pr-4">
           {item.question}
@@ -123,7 +123,7 @@ export default function FAQPage() {
           </Link>
           <Link
             href="/"
-            className="text-xs text-zinc-500 hover:text-fuchsia-400 transition-colors"
+            className="text-xs text-zinc-500 hover:text-fuchsia-400 transition-colors py-2 px-1 min-h-[44px] flex items-center"
           >
             ← Back to Home
           </Link>
@@ -135,7 +135,7 @@ export default function FAQPage() {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-fuchsia-500/10 border border-fuchsia-500/20 text-fuchsia-400 text-xs font-medium mb-6">
             <span>❓</span> Frequently Asked Questions
           </div>
-          <h2 className="text-4xl font-extrabold mb-4">
+          <h2 className="text-3xl sm:text-4xl font-extrabold mb-4">
             <span className="bg-gradient-to-r from-fuchsia-400 via-violet-400 to-blue-400 bg-clip-text text-transparent">
               How It Works
             </span>
@@ -194,7 +194,7 @@ export default function FAQPage() {
       </main>
 
       <footer className="border-t border-zinc-800/50 mt-16">
-        <div className="max-w-3xl mx-auto px-4 py-6 flex items-center justify-between text-xs text-zinc-600">
+        <div className="max-w-3xl mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-zinc-600">
           <div className="flex items-center gap-2">
             <span>🧬</span>
             <span className="font-semibold">RosterDNA</span>

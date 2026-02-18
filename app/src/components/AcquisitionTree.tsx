@@ -367,7 +367,7 @@ export default function AcquisitionTree({
 
   if (isLoading) {
     return (
-      <div className="h-[600px] flex items-center justify-center bg-zinc-950 rounded-lg border border-zinc-800">
+      <div className="h-[400px] sm:h-[600px] flex items-center justify-center bg-zinc-950 rounded-lg border border-zinc-800">
         <div className="flex flex-col items-center gap-4">
           <div className="w-12 h-12 border-4 border-zinc-700 border-t-green-500 rounded-full animate-spin" />
           <div className="text-zinc-400">Building tree...</div>
@@ -377,7 +377,7 @@ export default function AcquisitionTree({
   }
 
   return (
-    <div className="h-[600px] bg-zinc-950 rounded-lg border border-zinc-800 overflow-hidden relative">
+    <div className="h-[400px] sm:h-[600px] bg-zinc-950 rounded-lg border border-zinc-800 overflow-hidden relative">
       <ReactFlow
         nodes={nodes}
         edges={edges}
@@ -408,21 +408,21 @@ export default function AcquisitionTree({
             return "#3b82f6";
           }}
           maskColor="rgba(0, 0, 0, 0.8)"
-          className="!bg-zinc-900 !border-zinc-700"
+          className="!bg-zinc-900 !border-zinc-700 !hidden sm:!block"
           position="bottom-right"
         />
       </ReactFlow>
 
       {/* Title */}
-      <div className="absolute top-4 left-4 bg-zinc-900/90 backdrop-blur rounded-lg px-4 py-2 border border-zinc-700">
-        <div className="text-xs text-zinc-500 uppercase tracking-wide">Asset Chain</div>
-        <div className="font-bold text-white">
+      <div className="absolute top-2 left-2 sm:top-4 sm:left-4 bg-zinc-900/90 backdrop-blur rounded-lg px-3 py-1.5 sm:px-4 sm:py-2 border border-zinc-700 max-w-[60%] sm:max-w-none">
+        <div className="text-[10px] sm:text-xs text-zinc-500 uppercase tracking-wide">Asset Chain</div>
+        <div className="font-bold text-white text-xs sm:text-base truncate">
           {primaryOriginNode?.data.label || "Origin"} → {player}
         </div>
       </div>
 
       {/* Legend */}
-      <div className="absolute bottom-4 left-4 bg-zinc-900/90 backdrop-blur rounded-lg p-3 border border-zinc-700 text-xs">
+      <div className="absolute bottom-2 left-2 sm:bottom-4 sm:left-4 bg-zinc-900/90 backdrop-blur rounded-lg p-2 sm:p-3 border border-zinc-700 text-[10px] sm:text-xs">
         <div className="flex flex-wrap gap-3">
           <div className="flex items-center gap-1.5">
             <div className="w-3 h-3 rounded bg-amber-950 border border-amber-400" />
@@ -444,7 +444,7 @@ export default function AcquisitionTree({
       </div>
 
       {/* Debug */}
-      <div className="absolute bottom-4 right-24 bg-zinc-900/90 backdrop-blur rounded px-2 py-1 text-[10px] text-zinc-500 border border-zinc-700">
+      <div className="absolute bottom-2 right-2 sm:bottom-4 sm:right-24 bg-zinc-900/90 backdrop-blur rounded px-2 py-1 text-[10px] text-zinc-500 border border-zinc-700 hidden sm:block">
         {nodes.length} nodes · {edges.length} edges
       </div>
     </div>

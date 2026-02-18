@@ -1385,6 +1385,8 @@ export default function TeamAcquisitionTree({
   });
   const [exportMode, setExportMode] = useState<'dark' | 'light'>('dark');
   const exportRef = useRef<HTMLDivElement>(null);
+  const [graphInteractive, setGraphInteractive] = useState(false);
+  const graphContainerRef = useRef<HTMLDivElement>(null);
 
   // Build adjacency map for path finding (edge source -> edge targets)
   const adjacencyMap = useMemo(() => {
@@ -1748,6 +1750,18 @@ export default function TeamAcquisitionTree({
       setSelectedNodeId(matchNode.id);
     }
   }, [highlightPlayer, isLoading, baseNodes, selectedNodeId]);
+
+  // Deactivate graph interaction when user taps outside
+  useEffect(() => {
+    if (!graphInteractive) return;
+    const handleTouchOutside = (e: TouchEvent) => {
+      if (graphContainerRef.current && !graphContainerRef.current.contains(e.target as globalThis.Node)) {
+        setGraphInteractive(false);
+      }
+    };
+    document.addEventListener('touchstart', handleTouchOutside);
+    return () => document.removeEventListener('touchstart', handleTouchOutside);
+  }, [graphInteractive]);
 
   // Click on background to deselect
   const onPaneClick = useCallback(() => {
@@ -2691,7 +2705,20 @@ export default function TeamAcquisitionTree({
   const selectedPlayerName = selectedNode ? (selectedNode.data as NodeData).label : null;
 
   return (
-    <div className="h-[800px] bg-zinc-950 rounded-lg border border-zinc-800 overflow-hidden relative">
+    <div ref={graphContainerRef} className="h-[800px] bg-zinc-950 rounded-lg border border-zinc-800 overflow-hidden relative">
+      {/* Mobile: tap-to-interact overlay */}
+      {!graphInteractive && (
+        <div
+          className="absolute inset-0 z-10 sm:hidden flex items-end justify-center pb-6 pointer-events-none"
+        >
+          <button
+            onClick={() => setGraphInteractive(true)}
+            className="pointer-events-auto bg-zinc-800/90 backdrop-blur text-zinc-300 text-sm px-4 py-2 rounded-full border border-zinc-600 shadow-lg animate-pulse"
+          >
+            Tap to explore graph
+          </button>
+        </div>
+      )}
       <ReactFlow
         nodes={nodes}
         edges={edges}
@@ -2706,8 +2733,10 @@ export default function TeamAcquisitionTree({
         elementsSelectable={true}
         onNodeClick={onNodeClick}
         onPaneClick={onPaneClick}
-        panOnDrag
-        zoomOnScroll
+        panOnDrag={graphInteractive}
+        zoomOnScroll={graphInteractive}
+        zoomOnPinch={graphInteractive}
+        preventScrolling={graphInteractive}
         proOptions={{ hideAttribution: true }}
       >
         <Background color="#3f3f46" gap={20} />

@@ -90,19 +90,19 @@ export default async function AcquisitionTreePage({ params }: PageProps) {
   return (
     <div className="min-h-screen bg-gray-950 text-white">
       {/* Header */}
-      <header className="border-b border-gray-800 px-6 py-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <header className="border-b border-gray-800 px-4 sm:px-6 py-4">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div>
-            <Link href="/" className="text-gray-400 hover:text-white text-sm mb-1 block">
+            <Link href="/" className="text-gray-400 hover:text-white text-sm mb-1 inline-flex items-center min-h-[44px]">
               ← Back to Search
             </Link>
-            <h1 className="text-2xl font-bold">
+            <h1 className="text-xl sm:text-2xl font-bold">
               {data.team} Acquisition Tree
             </h1>
           </div>
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-4 sm:gap-6 flex-wrap">
             <PlayerSelector currentPlayer={playerId} teamAbbr={teamAbbr} />
-            <div className="text-right">
+            <div className="text-right hidden sm:block">
               <div className="text-sm text-gray-400">Source</div>
               {data.sourceUrl ? (
                 <a
@@ -122,7 +122,7 @@ export default async function AcquisitionTreePage({ params }: PageProps) {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-6 py-8">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
         {/* Story Summary - Now at top */}
         <div className="mb-8 bg-gray-900 rounded-lg p-6">
           <h3 className="text-xl font-bold mb-4">The Story</h3>
@@ -144,24 +144,24 @@ export default async function AcquisitionTreePage({ params }: PageProps) {
         />
 
         {/* Stats */}
-        <div className="mt-8 grid grid-cols-3 gap-6">
-          <div className="bg-gray-900 rounded-lg p-6 text-center">
-            <div className="text-4xl font-bold text-green-500">
+        <div className="mt-6 sm:mt-8 grid grid-cols-3 gap-2 sm:gap-6">
+          <div className="bg-gray-900 rounded-lg p-4 sm:p-6 text-center">
+            <div className="text-2xl sm:text-4xl font-bold text-green-500">
               {2026 - data.originYear}
             </div>
-            <div className="text-gray-400 mt-1">Years of History</div>
+            <div className="text-[10px] sm:text-base text-gray-400 mt-1">Years of History</div>
           </div>
-          <div className="bg-gray-900 rounded-lg p-6 text-center">
-            <div className="text-4xl font-bold text-blue-500">
+          <div className="bg-gray-900 rounded-lg p-4 sm:p-6 text-center">
+            <div className="text-2xl sm:text-4xl font-bold text-blue-500">
               {data.depth}
             </div>
-            <div className="text-gray-400 mt-1">Trade Depth</div>
+            <div className="text-[10px] sm:text-base text-gray-400 mt-1">Trade Depth</div>
           </div>
-          <div className="bg-gray-900 rounded-lg p-6 text-center">
-            <div className="text-4xl font-bold text-amber-500">
+          <div className="bg-gray-900 rounded-lg p-4 sm:p-6 text-center">
+            <div className="text-2xl sm:text-4xl font-bold text-amber-500">
               {data.originYear}
             </div>
-            <div className="text-gray-400 mt-1">Origin Year</div>
+            <div className="text-[10px] sm:text-base text-gray-400 mt-1">Origin Year</div>
           </div>
         </div>
       </main>

@@ -197,15 +197,15 @@ export default function TeamPageClient({ data, teamAbbr }: TeamPageClientProps) 
   return (
     <div className="min-h-screen bg-gray-950 text-white">
       {/* Header */}
-      <header className="border-b border-gray-800 px-6 py-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <header className="border-b border-gray-800 px-4 sm:px-6 py-4">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div>
-            <Link href="/" className="text-gray-400 hover:text-white text-sm mb-1 inline-flex items-center gap-2">
+            <Link href="/" className="text-gray-400 hover:text-white text-sm mb-1 inline-flex items-center gap-2 min-h-[44px]">
               ← <span className="font-semibold text-white">RosterDNA</span> <span className="text-xs font-semibold px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-400 border border-amber-500/30">BETA</span>
             </Link>
-            <h1 className="text-2xl font-bold flex items-center gap-3">
-              <span className="text-3xl">{currentTeamEmoji}</span>
-              {data.teamName} Acquisition Tree
+            <h1 className="text-xl sm:text-2xl font-bold flex items-center gap-2 sm:gap-3">
+              <span className="text-2xl sm:text-3xl">{currentTeamEmoji}</span>
+              <span className="truncate">{data.teamName} Acquisition Tree</span>
             </h1>
           </div>
           <div className="flex items-center gap-4">
@@ -214,7 +214,7 @@ export default function TeamPageClient({ data, teamAbbr }: TeamPageClientProps) 
               <select
                 value={teamAbbr.toUpperCase()}
                 onChange={handleTeamChange}
-                className="appearance-none bg-gray-800 border border-gray-700 text-white px-4 py-2 pr-10 rounded-lg cursor-pointer hover:border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent text-sm font-medium"
+                className="appearance-none bg-gray-800 border border-gray-700 text-white px-4 py-2.5 pr-10 rounded-lg cursor-pointer hover:border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent text-sm font-medium min-h-[44px]"
               >
                 <option value="" disabled>Switch Team</option>
                 <option disabled>── Eastern Conference ──</option>
@@ -241,37 +241,37 @@ export default function TeamPageClient({ data, teamAbbr }: TeamPageClientProps) 
       </header>
 
       {/* Stats Row */}
-      <div className="max-w-7xl mx-auto px-6 py-6">
-        <div className="grid grid-cols-6 gap-4">
-          <div className="bg-gray-900 rounded-lg p-4 text-center">
-            <div className="text-3xl font-bold text-green-500">{data.rosterCount}</div>
-            <div className="text-xs text-gray-400 mt-1">Current Roster</div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-6">
+        <div className="grid grid-cols-3 sm:grid-cols-6 gap-2 sm:gap-4">
+          <div className="bg-gray-900 rounded-lg p-3 sm:p-4 text-center">
+            <div className="text-xl sm:text-3xl font-bold text-green-500">{data.rosterCount}</div>
+            <div className="text-[10px] sm:text-xs text-gray-400 mt-1">Roster</div>
           </div>
-          <div className="bg-gray-900 rounded-lg p-4 text-center">
-            <div className="text-3xl font-bold text-emerald-400">{data.homegrownCount}</div>
-            <div className="text-xs text-gray-400 mt-1">🏠 Homegrown</div>
+          <div className="bg-gray-900 rounded-lg p-3 sm:p-4 text-center">
+            <div className="text-xl sm:text-3xl font-bold text-emerald-400">{data.homegrownCount}</div>
+            <div className="text-[10px] sm:text-xs text-gray-400 mt-1">🏠 Homegrown</div>
           </div>
-          <div className="bg-gray-900 rounded-lg p-4 text-center">
-            <div className="text-3xl font-bold text-blue-500">{data.nodeCount}</div>
-            <div className="text-xs text-gray-400 mt-1">Total Assets</div>
+          <div className="bg-gray-900 rounded-lg p-3 sm:p-4 text-center">
+            <div className="text-xl sm:text-3xl font-bold text-blue-500">{data.nodeCount}</div>
+            <div className="text-[10px] sm:text-xs text-gray-400 mt-1">Assets</div>
           </div>
-          <div className="bg-gray-900 rounded-lg p-4 text-center">
-            <div className="text-3xl font-bold text-purple-500">{data.edgeCount}</div>
-            <div className="text-xs text-gray-400 mt-1">Transactions</div>
+          <div className="bg-gray-900 rounded-lg p-3 sm:p-4 text-center">
+            <div className="text-xl sm:text-3xl font-bold text-purple-500">{data.edgeCount}</div>
+            <div className="text-[10px] sm:text-xs text-gray-400 mt-1">Transactions</div>
           </div>
-          <div className="bg-gray-900 rounded-lg p-4 text-center">
-            <div className="text-3xl font-bold text-cyan-500">{data.tradeCount}</div>
-            <div className="text-xs text-gray-400 mt-1">Trades Made</div>
+          <div className="bg-gray-900 rounded-lg p-3 sm:p-4 text-center">
+            <div className="text-xl sm:text-3xl font-bold text-cyan-500">{data.tradeCount}</div>
+            <div className="text-[10px] sm:text-xs text-gray-400 mt-1">Trades</div>
           </div>
-          <div className="bg-gray-900 rounded-lg p-4 text-center">
-            <div className="text-3xl font-bold text-rose-500">{data.earliestOrigin}</div>
-            <div className="text-xs text-gray-400 mt-1">Earliest Origin</div>
+          <div className="bg-gray-900 rounded-lg p-3 sm:p-4 text-center">
+            <div className="text-xl sm:text-3xl font-bold text-rose-500">{data.earliestOrigin}</div>
+            <div className="text-[10px] sm:text-xs text-gray-400 mt-1">Earliest</div>
           </div>
         </div>
       </div>
 
       {/* Main Tree */}
-      <main className="max-w-7xl mx-auto px-6 pb-8">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 pb-8">
         {/* Dynamic Narrative Section */}
         {currentNarrative && (
           <div className={`rounded-lg p-5 mb-6 border-l-4 transition-all duration-300 ${

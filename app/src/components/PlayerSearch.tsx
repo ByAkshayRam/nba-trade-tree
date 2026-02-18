@@ -163,9 +163,9 @@ export function PlayerSearch({ onSelect, onSelectTeam }: PlayerSearchProps) {
           onFocus={() => { setIsFocused(true); hasResults && setIsOpen(true); }}
           onBlur={() => { setTimeout(() => setIsFocused(false), 200); }}
           placeholder={isFocused ? "Search players or teams..." : ""}
-          className="w-full px-4 py-3 pl-12 text-lg bg-zinc-900 border border-zinc-700 rounded-lg 
+          className="w-full px-4 py-3.5 pl-12 text-base sm:text-lg bg-zinc-900 border border-zinc-700 rounded-lg 
                      text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-green-500 
-                     focus:border-transparent transition-all"
+                     focus:border-transparent transition-all min-h-[48px]"
         />
         {/* Typewriter overlay */}
         {showTypewriter && (
@@ -199,7 +199,7 @@ export function PlayerSearch({ onSelect, onSelectTeam }: PlayerSearchProps) {
 
       {/* Dropdown results */}
       {isOpen && hasResults && (
-        <div className="absolute z-50 w-full mt-2 bg-zinc-900 border border-zinc-700 rounded-lg shadow-xl overflow-hidden">
+        <div className="absolute z-50 w-full mt-2 bg-zinc-900 border border-zinc-700 rounded-lg shadow-xl overflow-hidden max-h-[60vh] overflow-y-auto">
           {/* Team results */}
           {teamResults.length > 0 && (
             <>
