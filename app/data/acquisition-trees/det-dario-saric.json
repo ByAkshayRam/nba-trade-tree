@@ -12,6 +12,8 @@
     "name": "Dario Saric",
     "acquisitionType": "free-agent",
     "date": "2025-07-01",
-    "currentTeam": "DET"
+    "currentTeam": "DET",
+    "note": "Veteran forward. Est. 1-2yr/$4-6M (~$2-3M/yr)",
+    "isOrigin": true
   }
 }
