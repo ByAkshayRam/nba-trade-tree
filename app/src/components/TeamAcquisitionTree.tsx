@@ -1178,7 +1178,11 @@ function RosterNode({ data }: NodeProps) {
             {isHomegrown && <span title="Homegrown talent">🏠</span>}
           </div>
           <div className="font-bold text-white text-xs">{nodeData.label}</div>
-          {/* Acquisition type badge — salary data available in JSON but hidden for now */}
+          {acqInfo.label && (
+            <div className="flex items-center gap-1 mt-0.5">
+              <span className={`text-[8px] font-semibold ${acqInfo.color}`}>{acqInfo.label}</span>
+            </div>
+          )}
         </div>
       </div>
     </div>
