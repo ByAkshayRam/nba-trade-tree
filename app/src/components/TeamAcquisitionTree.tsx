@@ -1385,7 +1385,8 @@ export default function TeamAcquisitionTree({
   });
   const [exportMode, setExportMode] = useState<'dark' | 'light'>('dark');
   const exportRef = useRef<HTMLDivElement>(null);
-  const [graphInteractive, setGraphInteractive] = useState(false);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
+  const [graphInteractive, setGraphInteractive] = useState(true);
   const graphContainerRef = useRef<HTMLDivElement>(null);
 
   // Build adjacency map for path finding (edge source -> edge targets)
@@ -1750,6 +1751,13 @@ export default function TeamAcquisitionTree({
       setSelectedNodeId(matchNode.id);
     }
   }, [highlightPlayer, isLoading, baseNodes, selectedNodeId]);
+
+  // Detect touch device — only gate graph interaction on mobile/touch
+  useEffect(() => {
+    const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    setIsTouchDevice(isTouch);
+    if (isTouch) setGraphInteractive(false);
+  }, []);
 
   // Deactivate graph interaction when user taps outside
   useEffect(() => {
@@ -2706,10 +2714,10 @@ export default function TeamAcquisitionTree({
 
   return (
     <div ref={graphContainerRef} className="h-[800px] bg-zinc-950 rounded-lg border border-zinc-800 overflow-hidden relative">
-      {/* Mobile: tap-to-interact overlay */}
-      {!graphInteractive && (
+      {/* Mobile/touch: tap-to-interact overlay */}
+      {isTouchDevice && !graphInteractive && (
         <div
-          className="absolute inset-0 z-10 sm:hidden flex items-end justify-center pb-6 pointer-events-none"
+          className="absolute inset-0 z-10 flex items-end justify-center pb-6 pointer-events-none"
         >
           <button
             onClick={() => setGraphInteractive(true)}
