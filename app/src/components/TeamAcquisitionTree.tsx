@@ -1113,6 +1113,19 @@ function getHeadshotUrl(playerName: string): string {
 }
 
 // Roster player node (green, with headshot)
+// Format acquisition type for display
+function formatAcquisitionType(acqType?: string): { label: string; color: string } {
+  switch (acqType) {
+    case "trade": return { label: "TRADE", color: "text-blue-400" };
+    case "draft": return { label: "DRAFT", color: "text-emerald-400" };
+    case "draft-night-trade": return { label: "DRAFT-NIGHT TRADE", color: "text-teal-400" };
+    case "free-agent": return { label: "SIGNED FA", color: "text-amber-400" };
+    case "undrafted": return { label: "SIGNED UDFA", color: "text-orange-400" };
+    case "sign-and-trade": return { label: "SIGN & TRADE", color: "text-purple-400" };
+    default: return { label: acqType?.toUpperCase() || "", color: "text-zinc-400" };
+  }
+}
+
 function RosterNode({ data }: NodeProps) {
   const nodeData = data as NodeData;
   const espnUrl = getHeadshotUrl(nodeData.label);
@@ -1129,6 +1142,13 @@ function RosterNode({ data }: NodeProps) {
     : category === "two-way" 
       ? "text-purple-300" 
       : "text-green-300";
+  
+  // Acquisition type badge
+  const acqInfo = formatAcquisitionType(nodeData.acquisitionType);
+  
+  // Extract salary from note if it's a FA signing
+  const salaryMatch = nodeData.note?.match(/\$[\d,.]+[MmKk]?\b/);
+  const salary = salaryMatch ? salaryMatch[0] : null;
   
   return (
     <div 
@@ -1158,6 +1178,14 @@ function RosterNode({ data }: NodeProps) {
             {isHomegrown && <span title="Homegrown talent">🏠</span>}
           </div>
           <div className="font-bold text-white text-xs">{nodeData.label}</div>
+          {acqInfo.label && (
+            <div className="flex items-center gap-1 mt-0.5">
+              <span className={`text-[8px] font-semibold ${acqInfo.color}`}>{acqInfo.label}</span>
+              {salary && (nodeData.acquisitionType === "free-agent" || nodeData.acquisitionType === "undrafted" || nodeData.acquisitionType === "sign-and-trade") && (
+                <span className="text-[8px] text-zinc-500">{salary}</span>
+              )}
+            </div>
+          )}
         </div>
       </div>
     </div>
