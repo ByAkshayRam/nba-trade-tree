@@ -34,19 +34,22 @@
                 "type": "player",
                 "name": "Josh Richardson",
                 "note": "Sent to PHI",
-                "isOrigin": true
+                "isOrigin": true,
+                "acquisitionType": "free-agent"
               },
               {
                 "type": "player",
                 "name": "Hassan Whiteside",
                 "note": "Sent to POR",
-                "isOrigin": true
+                "isOrigin": true,
+                "acquisitionType": "free-agent"
               },
               {
                 "type": "player",
                 "name": "Maurice Harkless",
                 "note": "Sent to LAC with future 1st",
-                "isOrigin": true
+                "isOrigin": true,
+                "acquisitionType": "free-agent"
               }
             ]
           }

@@ -32,23 +32,169 @@
       {
         "type": "player",
         "name": "Jusuf Nurkic",
-        "note": "Center, sent to Phoenix in 3-team trade",
+        "acquisitionType": "trade",
+        "date": "2017-02-12",
+        "tradePartner": "DEN",
+        "note": "Center, acquired from Denver for Mason Plumlee and 2017 second round pick",
         "isOrigin": false,
-        "assetsGivenUp": []
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Mason Plumlee",
+            "acquisitionType": "trade",
+            "date": "2015-06-25",
+            "tradePartner": "BKN",
+            "note": "Duke center, acquired from Brooklyn for Steve Blake and Rondae Hollis-Jefferson draft rights",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Steve Blake",
+                "acquisitionType": "free-agent",
+                "date": "2014-07-15",
+                "note": "Veteran guard, signed as free agent from Golden State",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2015 1st Round Pick #23 (Rondae Hollis-Jefferson)",
+                "acquisitionType": "original",
+                "date": "2015-06-25",
+                "becamePlayer": "Rondae Hollis-Jefferson",
+                "note": "Portland's own 2015 1st round pick, used to draft RHJ then traded to Brooklyn",
+                "isOrigin": true
+              }
+            ]
+          },
+          {
+            "type": "pick",
+            "name": "2017 2nd Round Pick (POR own)",
+            "acquisitionType": "original",
+            "note": "Portland's own 2017 second round pick, sent with Plumlee for Nurkic",
+            "isOrigin": true
+          }
+        ]
       },
       {
         "type": "player",
         "name": "Keon Johnson",
-        "note": "Guard, sent to Phoenix in 3-team trade",
+        "acquisitionType": "trade",
+        "date": "2022-02-04",
+        "tradePartner": "LAC",
+        "note": "Guard, acquired from Clippers (part of Powell/Covington trade)",
         "isOrigin": false,
-        "assetsGivenUp": []
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Norman Powell",
+            "acquisitionType": "trade",
+            "date": "2021-03-25",
+            "tradePartner": "TOR",
+            "note": "Guard, acquired from Toronto for Gary Trent Jr. and Rodney Hood",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Gary Trent Jr.",
+                "acquisitionType": "draft",
+                "date": "2018-06-21",
+                "draftPick": 37,
+                "draftRound": 2,
+                "note": "Duke guard, drafted 37th overall by Portland",
+                "isOrigin": true
+              },
+              {
+                "type": "player",
+                "name": "Rodney Hood",
+                "acquisitionType": "trade",
+                "date": "2019-02-07",
+                "tradePartner": "CLE",
+                "note": "Guard/forward, acquired from Cleveland for Nik Stauskas, Wade Baldwin IV and two 2nd round picks",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Nik Stauskas",
+                    "acquisitionType": "trade",
+                    "date": "2018-07-10",
+                    "tradePartner": "BKN",
+                    "note": "Guard, acquired from Brooklyn",
+                    "isOrigin": false,
+                    "assetsGivenUp": []
+                  },
+                  {
+                    "type": "player",
+                    "name": "Wade Baldwin IV",
+                    "acquisitionType": "trade",
+                    "date": "2018-07-03",
+                    "tradePartner": "MEM",
+                    "note": "Guard, acquired from Memphis",
+                    "isOrigin": false,
+                    "assetsGivenUp": []
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2020 2nd Round Pick (POR own)",
+                    "acquisitionType": "original",
+                    "note": "Portland's own 2020 second round pick",
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2021 2nd Round Pick (POR own)",
+                    "acquisitionType": "original",
+                    "note": "Portland's own 2021 second round pick",
+                    "isOrigin": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Robert Covington",
+            "acquisitionType": "trade",
+            "date": "2020-11-22",
+            "tradePartner": "HOU",
+            "note": "Forward, acquired from Houston for Trevor Ariza and draft picks",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Trevor Ariza",
+                "acquisitionType": "free-agent",
+                "date": "2019-07-18",
+                "note": "Forward, signed as free agent",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2020 1st Round Pick #16 (Isaiah Stewart)",
+                "acquisitionType": "original",
+                "becamePlayer": "Isaiah Stewart",
+                "note": "Portland's own 2020 1st round pick, drafted Isaiah Stewart",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2021 1st Round Pick (protected)",
+                "acquisitionType": "original", 
+                "note": "Portland's own protected 2021 first round pick",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
       },
       {
         "type": "player",
         "name": "Nassir Little",
-        "note": "Forward, sent to Phoenix in 3-team trade",
-        "isOrigin": false,
-        "assetsGivenUp": []
+        "acquisitionType": "draft",
+        "date": "2019-06-20",
+        "draftPick": 25,
+        "draftRound": 1,
+        "note": "North Carolina forward, drafted 25th overall by Portland",
+        "isOrigin": true
       }
     ]
   }

@@ -24,11 +24,32 @@
         "type": "pick",
         "name": "2025 MIL 1st Round Pick (top-4 protected)",
         "acquisitionType": "trade",
-        "date": "2022-06-23",
-        "tradeDescription": "Sent to New York Knicks as part of 3-team draft night trade for Jalen Duren (#13)",
+        "date": "2022-07-06",
+        "tradePartner": "POR",
+        "tradeDescription": "Acquired from Portland in Jerami Grant trade, then sent to New York Knicks",
         "becamePlayer": "Nolan Traore",
         "note": "Originally acquired from Portland in the Jerami Grant trade (Jul 6, 2022). Conveyed as #19 pick in 2025, selected Nolan Traore.",
-        "isOrigin": false
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Jerami Grant",
+            "acquisitionType": "trade",
+            "date": "2020-11-24",
+            "tradePartner": "DEN",
+            "note": "Forward, acquired via sign-and-trade from Denver",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "other",
+                "name": "Cash considerations",
+                "acquisitionType": "original",
+                "note": "Sign-and-trade, Detroit sent only cash/trade exception to Denver",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
       }
     ],
     "tradeChain": {

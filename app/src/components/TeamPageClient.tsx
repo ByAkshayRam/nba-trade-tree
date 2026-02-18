@@ -2,7 +2,7 @@
 
 import { useState, useCallback, useEffect } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import TeamAcquisitionTree from "./TeamAcquisitionTree";
 import { trackPageView, trackTeamView, startPageTimer } from "@/lib/analytics";
 
@@ -163,6 +163,8 @@ function generatePlayerNarrative(player: SelectedPlayerInfo, teamName: string): 
 export default function TeamPageClient({ data, teamAbbr }: TeamPageClientProps) {
   const [selectedPlayer, setSelectedPlayer] = useState<SelectedPlayerInfo | null>(null);
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const highlightPlayer = searchParams.get('player');
 
   useEffect(() => {
     trackPageView(`/team/${teamAbbr}`);
@@ -311,6 +313,7 @@ export default function TeamPageClient({ data, teamAbbr }: TeamPageClientProps) 
           teamColors={data.teamColors}
           teamName={data.teamName}
           onPlayerSelect={handlePlayerSelect}
+          highlightPlayer={highlightPlayer}
         />
       </main>
     </div>

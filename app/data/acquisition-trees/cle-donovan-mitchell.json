@@ -122,8 +122,33 @@
         "date": "2018-06-21",
         "draftPick": 8,
         "draftRound": 1,
-        "note": "Guard drafted 8th overall by Cleveland",
-        "isOrigin": true
+        "note": "Guard drafted 8th overall by Cleveland using Brooklyn's pick from Kyrie Irving trade",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2018 BKN 1st Round Pick (via BOS)",
+            "acquisitionType": "trade",
+            "date": "2017-08-22",
+            "tradePartner": "BOS",
+            "tradeDescription": "Part of Kyrie Irving trade. Celtics sent Isaiah Thomas, Jae Crowder, Ante Zizic, and 2018 BKN 1st round pick to Cavaliers for Kyrie Irving",
+            "becamePlayer": "Collin Sexton",
+            "note": "Brooklyn's pick held by Boston, sent to Cleveland in Kyrie trade. Became #8 overall.",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Kyrie Irving",
+                "acquisitionType": "draft",
+                "date": "2011-06-23",
+                "draftPick": 1,
+                "draftRound": 1,
+                "note": "Point guard drafted 1st overall by Cleveland Cavaliers",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
       },
       {
         "type": "player",

@@ -37,7 +37,8 @@
                 "type": "player",
                 "name": "Josh Richardson",
                 "note": "Sent to PHI",
-                "isOrigin": true
+                "isOrigin": true,
+                "acquisitionType": "free-agent"
               }
             ]
           }

@@ -182,12 +182,316 @@
             {
               "type": "player",
               "name": "Caris LeVert",
-              "acquisitionType": "draft",
-              "date": "2016-06-23",
-              "draftPick": 20,
-              "draftRound": 1,
-              "note": "Guard drafted by Brooklyn",
-              "isOrigin": true
+              "acquisitionType": "trade",
+              "date": "2022-02-06",
+              "tradePartner": "IND",
+              "tradeDescription": "Cavaliers traded Ricky Rubio, lottery-protected 2023 1st round pick, 2022 2nd round pick (via HOU), 2027 2nd round pick (via UTA) to Pacers for Caris LeVert and 2022 2nd round pick (via MIA)",
+              "note": "Guard acquired from Indiana Pacers",
+              "isOrigin": false,
+              "assetsGivenUp": [
+                {
+                  "type": "player",
+                  "name": "Ricky Rubio",
+                  "acquisitionType": "trade",
+                  "date": "2021-07-29",
+                  "tradePartner": "MIN",
+                  "tradeDescription": "Cavaliers traded Taurean Prince, 2022 2nd round pick, and cash to Timberwolves for Ricky Rubio",
+                  "note": "Expiring contract, out with torn ACL. 1yr/$17.8M",
+                  "isOrigin": false,
+                  "assetsGivenUp": [
+                    {
+                      "type": "player",
+                      "name": "Taurean Prince",
+                      "acquisitionType": "trade",
+                      "date": "2021-01-14",
+                      "tradePartner": "BKN",
+                      "tradeDescription": "Part of 4-team James Harden trade. Cavaliers sent Dante Exum, 2022 MIL 1st round pick, 2024 2nd round pick to Nets for Jarrett Allen and Taurean Prince",
+                      "note": "Forward acquired from Brooklyn in Harden mega-trade",
+                      "isOrigin": false,
+                      "assetsGivenUp": [
+                        {
+                          "type": "player",
+                          "name": "Dante Exum",
+                          "acquisitionType": "trade",
+                          "date": "2019-12-24",
+                          "tradePartner": "UTA",
+                          "tradeDescription": "Cavaliers traded Jordan Clarkson to Jazz for Dante Exum and two 2nd round picks",
+                          "note": "Guard from Utah",
+                          "isOrigin": false,
+                          "assetsGivenUp": [
+                            {
+                              "type": "player",
+                              "name": "Jordan Clarkson",
+                              "acquisitionType": "trade",
+                              "date": "2018-02-08",
+                              "tradePartner": "LAL",
+                              "tradeDescription": "Cavaliers traded Isaiah Thomas, Channing Frye, and 2018 CLE 1st round pick to Lakers for Jordan Clarkson and Larry Nance Jr.",
+                              "note": "Guard from Los Angeles Lakers",
+                              "isOrigin": false,
+                              "assetsGivenUp": [
+                                {
+                                  "type": "player",
+                                  "name": "Isaiah Thomas",
+                                  "acquisitionType": "trade",
+                                  "date": "2017-08-22",
+                                  "tradePartner": "BOS",
+                                  "tradeDescription": "Cavaliers traded Kyrie Irving to Celtics for Isaiah Thomas, Jae Crowder, Ante Zizic, and 2018 BKN 1st round pick",
+                                  "note": "Guard from Boston, part of Kyrie Irving trade",
+                                  "isOrigin": false,
+                                  "assetsGivenUp": [
+                                    {
+                                      "type": "player",
+                                      "name": "Kyrie Irving",
+                                      "acquisitionType": "draft",
+                                      "date": "2011-06-23",
+                                      "draftPick": 1,
+                                      "draftRound": 1,
+                                      "note": "Point guard drafted 1st overall by Cleveland Cavaliers",
+                                      "isOrigin": true
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "player",
+                                  "name": "Channing Frye",
+                                  "acquisitionType": "trade",
+                                  "date": "2016-02-18",
+                                  "tradePartner": "ORL",
+                                  "tradeDescription": "3-team trade: Cavaliers sent Anderson Varejao and conditional 1st to Trail Blazers, Jared Cunningham and 2nd round pick to Magic for Channing Frye",
+                                  "note": "Stretch big from Orlando",
+                                  "isOrigin": false,
+                                  "assetsGivenUp": [
+                                    {
+                                      "type": "player",
+                                      "name": "Anderson Varejao",
+                                      "acquisitionType": "trade",
+                                      "date": "2004-07-23",
+                                      "tradePartner": "ORL",
+                                      "tradeDescription": "Cavaliers sent Tony Battie, 2005 2nd round pick, and 2007 2nd round pick to Magic for Drew Gooden, Anderson Varejao, and Steven Hunter",
+                                      "note": "Center drafted 30th overall by Orlando Magic in 2004, acquired by Cleveland on draft night",
+                                      "isOrigin": false,
+                                      "assetsGivenUp": [
+                                        {
+                                          "type": "player",
+                                          "name": "Tony Battie",
+                                          "acquisitionType": "trade",
+                                          "date": "2003-12-15",
+                                          "tradePartner": "BOS",
+                                          "tradeDescription": "Cavaliers traded Ricky Davis, Chris Mihm, Michael Stewart, and a 2nd round pick to Celtics for Tony Battie, Eric Williams, and Kedrick Brown",
+                                          "note": "Center from Boston Celtics",
+                                          "isOrigin": false,
+                                          "assetsGivenUp": [
+                                            {
+                                              "type": "player",
+                                              "name": "Ricky Davis",
+                                              "acquisitionType": "trade",
+                                              "date": "2001-10-26",
+                                              "tradePartner": "MIA",
+                                              "tradeDescription": "3-team trade: Cavaliers sent Chris Gatling to Heat, received Ricky Davis from Heat. Raptors received Don MacLean and cash from Heat, sent Zeljko Rebraca to Cavaliers",
+                                              "note": "Guard from Miami Heat",
+                                              "isOrigin": false,
+                                              "assetsGivenUp": [
+                                                {
+                                                  "type": "player",
+                                                  "name": "Chris Gatling",
+                                                  "acquisitionType": "free-agent",
+                                                  "date": "2001-08-02",
+                                                  "note": "Forward signed as free agent by Cleveland. Veteran journeyman.",
+                                                  "isOrigin": true
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "pick",
+                                          "name": "2005 CLE 2nd Round Pick",
+                                          "acquisitionType": "original",
+                                          "date": "2005-06-28",
+                                          "becamePlayer": "Martynas Andriuskevicius",
+                                          "note": "Cleveland's 2nd round pick, became #44 overall",
+                                          "isOrigin": true
+                                        },
+                                        {
+                                          "type": "pick",
+                                          "name": "2007 CLE 2nd Round Pick",
+                                          "acquisitionType": "original",
+                                          "date": "2007-06-28",
+                                          "becamePlayer": "Brad Newley",
+                                          "note": "Cleveland's 2nd round pick, became #54 overall (ended up with Houston)",
+                                          "isOrigin": true
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "pick",
+                                      "name": "2018 CLE 1st Round Pick",
+                                      "acquisitionType": "original",
+                                      "date": "2018-06-21",
+                                      "note": "Cavaliers' own first-round pick sent to Portland in Channing Frye trade, became #25",
+                                      "isOrigin": true,
+                                      "becamePlayer": "Moritz Wagner"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "pick",
+                                  "name": "2018 CLE 1st Round Pick",
+                                  "acquisitionType": "original",
+                                  "date": "2018-06-21",
+                                  "becamePlayer": "Moritz Wagner",
+                                  "note": "Cavaliers' own first-round pick, became #25 Moritz Wagner",
+                                  "isOrigin": true
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "pick",
+                          "name": "2022 MIL 1st Round Pick",
+                          "acquisitionType": "trade",
+                          "date": "2018-12-07",
+                          "tradePartner": "MIL",
+                          "tradeDescription": "Cavaliers traded George Hill and Sam Dekker to Bucks for Matthew Dellavedova, John Henson, and a protected 1st round pick (later became unprotected 2022)",
+                          "note": "Originally protected 2021 1st, protections lifted in Nov 2020 and changed to unprotected 2022",
+                          "isOrigin": false,
+                          "assetsGivenUp": [
+                            {
+                              "type": "player",
+                              "name": "George Hill",
+                              "acquisitionType": "trade",
+                              "date": "2018-02-08",
+                              "tradePartner": "SAC",
+                              "tradeDescription": "3-team trade: Cavaliers sent Iman Shumpert to Kings, Jae Crowder and Derrick Rose to Jazz for George Hill (from SAC) and Rodney Hood (from UTA)",
+                              "note": "Veteran guard from Sacramento Kings",
+                              "isOrigin": false,
+                              "assetsGivenUp": [
+                                {
+                                  "type": "player",
+                                  "name": "Iman Shumpert",
+                                  "acquisitionType": "trade",
+                                  "date": "2015-01-05",
+                                  "tradePartner": "NYK",
+                                  "tradeDescription": "3-team trade: Cavaliers sent Dion Waiters to Thunder, received Iman Shumpert and J.R. Smith from Knicks and a protected 2015 1st from OKC",
+                                  "note": "Guard/wing from New York Knicks",
+                                  "isOrigin": false,
+                                  "assetsGivenUp": [
+                                    {
+                                      "type": "player",
+                                      "name": "Dion Waiters",
+                                      "acquisitionType": "draft",
+                                      "date": "2012-06-28",
+                                      "draftPick": 4,
+                                      "draftRound": 1,
+                                      "note": "Guard drafted 4th overall by Cleveland Cavaliers",
+                                      "isOrigin": true
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "player",
+                                  "name": "Jae Crowder",
+                                  "acquisitionType": "trade",
+                                  "date": "2017-08-22",
+                                  "tradePartner": "BOS",
+                                  "tradeDescription": "Part of Kyrie Irving trade. Celtics sent Isaiah Thomas, Jae Crowder, Ante Zizic, and 2018 BKN 1st round pick to Cavaliers",
+                                  "note": "Forward from Boston, part of Kyrie Irving trade",
+                                  "isOrigin": false,
+                                  "assetsGivenUp": [
+                                    {
+                                      "type": "player",
+                                      "name": "Kyrie Irving",
+                                      "acquisitionType": "draft",
+                                      "date": "2011-06-23",
+                                      "draftPick": 1,
+                                      "draftRound": 1,
+                                      "note": "Point guard drafted 1st overall by Cleveland Cavaliers",
+                                      "isOrigin": true
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "player",
+                                  "name": "Derrick Rose",
+                                  "acquisitionType": "free-agent",
+                                  "date": "2017-07-24",
+                                  "note": "Guard signed as free agent by Cleveland. 1yr/$2.1M",
+                                  "isOrigin": true
+                                }
+                              ]
+                            },
+                            {
+                              "type": "player",
+                              "name": "Sam Dekker",
+                              "acquisitionType": "trade",
+                              "date": "2018-07-19",
+                              "tradePartner": "LAC",
+                              "tradeDescription": "Cavaliers used Kyrie Irving trade exception to acquire Sam Dekker from Clippers for draft rights to Vladimir Veremeenko and cash",
+                              "note": "Forward from LA Clippers, acquired using Kyrie trade exception",
+                              "isOrigin": false,
+                              "assetsGivenUp": [
+                                {
+                                  "type": "other",
+                                  "name": "Cash considerations",
+                                  "acquisitionType": "original",
+                                  "note": "Cash and draft rights to Vladimir Veremeenko sent to Clippers",
+                                  "isOrigin": true
+                                }
+                              ]
+                            }
+                          ],
+                          "becamePlayer": "MarJon Beauchamp"
+                        },
+                        {
+                          "type": "pick",
+                          "name": "2024 2nd Round Pick",
+                          "acquisitionType": "original",
+                          "date": "2024-06-26",
+                          "note": "Cleveland's own second-round pick",
+                          "isOrigin": true,
+                          "becamePlayer": "Tristen Newton"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "pick",
+                      "name": "2022 CLE 2nd Round Pick",
+                      "acquisitionType": "original",
+                      "date": "2022-06-23",
+                      "note": "Cleveland's own second-round pick sent to Minnesota",
+                      "isOrigin": true,
+                      "becamePlayer": "Bryce McGowens"
+                    }
+                  ]
+                },
+                {
+                  "type": "pick",
+                  "name": "2023 CLE 1st Round Pick",
+                  "acquisitionType": "original",
+                  "date": "2023-06-22",
+                  "becamePlayer": "Ben Sheppard",
+                  "note": "Lottery-protected, conveyed in 2023 as pick #26",
+                  "isOrigin": true
+                },
+                {
+                  "type": "pick",
+                  "name": "2022 2nd Round Pick (via HOU)",
+                  "acquisitionType": "trade",
+                  "date": "2022-06-23",
+                  "note": "Second-round pick originally from Houston",
+                  "isOrigin": true,
+                  "becamePlayer": "Andrew Nembhard"
+                },
+                {
+                  "type": "pick",
+                  "name": "2027 2nd Round Pick (via UTA)",
+                  "acquisitionType": "trade",
+                  "date": "2027-06-24",
+                  "note": "Second-round pick originally from Utah",
+                  "isOrigin": true
+                }
+              ]
             },
             {
               "type": "player",
@@ -211,7 +515,7 @@
             {
               "type": "pick",
               "name": "2024 BKN 1st Round Pick",
-              "acquisitionType": "original", 
+              "acquisitionType": "original",
               "date": "2024-06-26",
               "becamePlayer": "Cam Whitmore",
               "note": "Nets' own first-round pick traded",

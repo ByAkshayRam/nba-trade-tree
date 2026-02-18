@@ -30,19 +30,22 @@
             "type": "player",
             "name": "Josh Richardson",
             "note": "Sent to PHI. Undrafted by MIA, signed 2015",
-            "isOrigin": true
+            "isOrigin": true,
+            "acquisitionType": "free-agent"
           },
           {
             "type": "player",
             "name": "Hassan Whiteside",
             "note": "Sent to POR. Signed as free agent by MIA in 2014",
-            "isOrigin": true
+            "isOrigin": true,
+            "acquisitionType": "free-agent"
           },
           {
             "type": "player",
             "name": "Maurice Harkless",
             "note": "Sent to LAC with a future 1st round pick",
-            "isOrigin": true
+            "isOrigin": true,
+            "acquisitionType": "free-agent"
           }
         ]
       }

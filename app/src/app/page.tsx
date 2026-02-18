@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { PlayerSearch } from "@/components/PlayerSearch";
+import { WhatsNew } from "@/components/WhatsNew";
 import { trackPageView, startPageTimer } from "@/lib/analytics";
 
 const EAST_TEAMS = [
@@ -91,11 +92,15 @@ export default function Home() {
             </div>
           </div>
           <div className="flex items-center gap-3">
+            <Link href="/faq" className="text-xs text-zinc-500 hover:text-fuchsia-400 transition-colors">
+              FAQ
+            </Link>
+            <WhatsNew />
             <a
               href="https://twitter.com/RosterDNA"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs text-zinc-500 hover:text-fuchsia-400 transition-colors"
+              className="text-xs text-zinc-500 hover:text-fuchsia-400 transition-colors hidden sm:inline"
             >
               @RosterDNA
             </a>
@@ -125,48 +130,19 @@ export default function Home() {
           
           {/* Search */}
           <div className="flex justify-center mb-8">
-            <PlayerSearch onSelect={(player) => {
-              const slug = player.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-              router.push(`/team/${player.teamAbbr}?player=${slug}`);
-            }} />
+            <PlayerSearch 
+              onSelect={(player) => {
+                const slug = player.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+                router.push(`/team/${player.teamAbbr}?player=${slug}`);
+              }}
+              onSelectTeam={(team) => {
+                router.push(`/team/${team.abbr}`);
+              }}
+            />
           </div>
           
-          {/* Quick examples */}
-          <div className="flex flex-wrap justify-center gap-2 text-sm">
-            <span className="text-zinc-600">Try:</span>
-            {[
-              { name: "Jayson Tatum", team: "BOS" },
-              { name: "Jaylen Brown", team: "BOS" },
-            ].map(({ name, team }) => (
-              <button
-                key={name}
-                onClick={() => {
-                  const slug = name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-                  router.push(`/team/${team}?player=${slug}`);
-                }}
-                className="px-4 py-1.5 bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 hover:border-fuchsia-500/30 rounded-full text-zinc-300 transition-all"
-              >
-                {name}
-              </button>
-            ))}
-          </div>
-        </div>
 
-        {/* Stats banner */}
-        {(
-          <div className="grid grid-cols-3 gap-4 mb-12">
-            {[
-              { value: "30", label: "Teams", color: "text-fuchsia-400" },
-              { value: "512", label: "Players Traced", color: "text-violet-400" },
-              { value: "100%", label: "Roster Coverage", color: "text-emerald-400" },
-            ].map((stat) => (
-              <div key={stat.label} className="text-center p-4 bg-zinc-900/50 rounded-xl border border-zinc-800/50">
-                <div className={`text-2xl sm:text-3xl font-extrabold font-mono ${stat.color}`}>{stat.value}</div>
-                <div className="text-[10px] text-zinc-600 uppercase tracking-widest mt-1">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        )}
+        </div>
 
         {/* Browse by Team */}
         {(
@@ -314,14 +290,19 @@ export default function Home() {
             <span>·</span>
             <span>Data from Basketball-Reference</span>
           </div>
-          <a
-            href="https://twitter.com/RosterDNA"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-fuchsia-400 transition-colors"
-          >
-            Follow @RosterDNA
-          </a>
+          <div className="flex items-center gap-4">
+            <Link href="/faq" className="hover:text-fuchsia-400 transition-colors">
+              FAQ
+            </Link>
+            <a
+              href="https://twitter.com/RosterDNA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-fuchsia-400 transition-colors"
+            >
+              @RosterDNA
+            </a>
+          </div>
         </div>
       </footer>
     </div>

@@ -19,7 +19,41 @@
       {
         "type": "player",
         "name": "Kyle Kuzma",
-        "playerId": "kyle-kuzma"
+        "playerId": "kyle-kuzma",
+        "acquisitionType": "trade",
+        "date": "2021-07-29",
+        "tradePartner": "LAL",
+        "note": "Forward, acquired from Lakers in Russell Westbrook trade (Washington received assets without giving up players)",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Russell Westbrook",
+            "acquisitionType": "trade",
+            "date": "2020-12-03",
+            "tradePartner": "HOU",
+            "note": "Guard, acquired from Houston for John Wall and a first-round pick",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "John Wall",
+                "acquisitionType": "draft",
+                "date": "2010-06-24",
+                "draftPick": 1,
+                "draftRound": 1,
+                "note": "Kentucky guard, drafted 1st overall by Washington",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2023 1st Round Pick (WAS protected)",
+                "acquisitionType": "original",
+                "note": "Washington's own protected 2023 first round pick, sent to Houston",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
       },
       {
         "type": "pick",

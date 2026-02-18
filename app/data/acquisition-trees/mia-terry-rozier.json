@@ -30,13 +30,15 @@
             "type": "player",
             "name": "Goran Dragic",
             "note": "Sent to TOR. Signed as free agent by MIA in 2015",
-            "isOrigin": true
+            "isOrigin": true,
+            "acquisitionType": "free-agent"
           },
           {
             "type": "player",
             "name": "Precious Achiuwa",
             "note": "Sent to TOR. Drafted 20th overall by MIA in 2020",
-            "isOrigin": true
+            "isOrigin": true,
+            "acquisitionType": "free-agent"
           },
           {
             "type": "pick",

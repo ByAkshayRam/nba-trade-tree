@@ -27,12 +27,14 @@
       {
         "type": "player",
         "name": "Jordan Nwora",
-        "isOrigin": true
+        "isOrigin": true,
+        "acquisitionType": "free-agent"
       },
       {
         "type": "player",
         "name": "Kira Lewis Jr.",
-        "isOrigin": true
+        "isOrigin": true,
+        "acquisitionType": "free-agent"
       },
       {
         "type": "pick",

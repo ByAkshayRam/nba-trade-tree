@@ -34,7 +34,16 @@
             "date": "2023-06-23",
             "tradePartner": "BOS",
             "note": "Oklahoma State guard, acquired from Boston in Kristaps Porzingis trade",
-            "assetsGivenUp": []
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Tyus Jones",
+                "acquisitionType": "free-agent",
+                "date": "2019-07-11",
+                "note": "Duke guard, signed as restricted free agent after Minnesota declined to match offer sheet",
+                "isOrigin": true
+              }
+            ]
           },
           {
             "type": "player",

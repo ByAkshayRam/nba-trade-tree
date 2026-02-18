@@ -48,7 +48,8 @@
             "type": "player",
             "name": "Goran Dragic",
             "note": "Also received in Lowry S&T, later waived",
-            "isOrigin": true
+            "isOrigin": true,
+            "acquisitionType": "free-agent"
           }
         ]
       },

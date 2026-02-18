@@ -79,6 +79,7 @@ interface TeamAcquisitionTreeProps {
   };
   teamName?: string;
   onPlayerSelect?: (player: SelectedPlayerInfo | null) => void;
+  highlightPlayer?: string | null;
 }
 
 function formatDate(dateStr?: string): string {
@@ -1194,6 +1195,7 @@ function PlayerNode({ data }: NodeProps) {
   const nodeData = data as NodeData;
   const isHighlighted = nodeData.isHighlighted;
   const isDimmed = nodeData.isDimmed;
+  const acqInfo = formatAcquisitionType(nodeData.acquisitionType);
   
   return (
     <div 
@@ -1212,6 +1214,7 @@ function PlayerNode({ data }: NodeProps) {
       </div>
       <div className="font-medium text-white text-xs">{nodeData.label}</div>
       {nodeData.sublabel && <div className="text-[9px] text-zinc-400">{nodeData.sublabel}</div>}
+      {acqInfo.label && <div className={`text-[8px] font-semibold ${acqInfo.color}`}>{acqInfo.label}</div>}
       {nodeData.date && <div className="text-[8px] text-zinc-500">{formatDate(nodeData.date)}</div>}
     </div>
   );
@@ -1294,6 +1297,7 @@ function OriginNode({ data }: NodeProps) {
         )}
         <div>
           <div className="font-bold text-white text-xs">{nodeData.label}</div>
+          {(() => { const ai = formatAcquisitionType(nodeData.acquisitionType); return ai.label ? <div className={`text-[8px] font-semibold ${ai.color}`}>{ai.label}</div> : null; })()}
           {nodeData.date && <div className={`text-[8px] ${isHighlighted ? "text-amber-200" : "text-amber-300"}`}>
             {formatDate(nodeData.date)}
           </div>}
@@ -1303,10 +1307,39 @@ function OriginNode({ data }: NodeProps) {
   );
 }
 
+function OtherNode({ data }: NodeProps) {
+  const nodeData = data as NodeData;
+  const isHighlighted = nodeData.isHighlighted;
+  const isDimmed = nodeData.isDimmed;
+  
+  return (
+    <div className="relative">
+      <div 
+        className={`px-3 py-2 rounded-lg shadow-lg min-w-[120px] relative cursor-pointer transition-all duration-300 ${
+          isHighlighted 
+            ? "bg-cyan-900 border-l-4 border-l-cyan-400 ring-2 ring-cyan-400/50 scale-105" 
+            : isDimmed 
+              ? "bg-zinc-900/40 border-l-4 border-l-cyan-500/30 opacity-40" 
+              : "bg-zinc-900 border-l-4 border-l-cyan-500 hover:border-l-cyan-400"
+        }`}
+      >
+        <Handle type="source" position={Position.Left} className="!bg-cyan-500 !w-2 !h-2" />
+        <Handle type="target" position={Position.Right} className="!bg-cyan-500 !w-2 !h-2" />
+        <div className={`text-[9px] font-semibold uppercase ${isHighlighted ? "text-cyan-300" : "text-cyan-400"}`}>
+          Other
+        </div>
+        <div className="font-medium text-white text-xs">{nodeData.label}</div>
+        {nodeData.date && <div className="text-[8px] text-zinc-500">{formatDate(nodeData.date)}</div>}
+      </div>
+    </div>
+  );
+}
+
 const nodeTypes = {
   target: RosterNode,
   player: PlayerNode,
   pick: PickNode,
+  other: OtherNode,
   origin: OriginNode,
   acquisition: PlayerNode,
 };
@@ -1335,6 +1368,7 @@ export default function TeamAcquisitionTree({
   teamColors,
   teamName = "Boston Celtics",
   onPlayerSelect,
+  highlightPlayer,
 }: TeamAcquisitionTreeProps) {
   const [nodes, setNodes] = useState<Node[]>([]);
   const [edges, setEdges] = useState<Edge[]>([]);
@@ -1532,7 +1566,8 @@ export default function TeamAcquisitionTree({
         let nodeType: string;
         if (n.data.isRosterPlayer) nodeType = "target";
         else if (n.data.isOrigin) nodeType = "origin";
-        else if (n.data.nodeType === "pick" || (n.data.nodeType as string) === "other") nodeType = "pick";
+        else if (n.data.nodeType === "pick") nodeType = "pick";
+        else if ((n.data.nodeType as string) === "other") nodeType = "other";
         else nodeType = "player";
 
         return {
@@ -1696,6 +1731,23 @@ export default function TeamAcquisitionTree({
 
     buildGraph();
   }, [initialNodes, initialEdges]);
+
+  // Auto-highlight player from search query param
+  useEffect(() => {
+    if (!highlightPlayer || isLoading || baseNodes.length === 0) return;
+    
+    // Find the roster node matching the player slug
+    const slug = highlightPlayer.toLowerCase();
+    const matchNode = baseNodes.find(n => {
+      const label = (n.data as NodeData).label?.toLowerCase() || '';
+      const nodeSlug = label.replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+      return nodeSlug === slug || label === slug.replace(/-/g, ' ');
+    });
+    
+    if (matchNode && !selectedNodeId) {
+      setSelectedNodeId(matchNode.id);
+    }
+  }, [highlightPlayer, isLoading, baseNodes, selectedNodeId]);
 
   // Click on background to deselect
   const onPaneClick = useCallback(() => {
@@ -2512,12 +2564,13 @@ export default function TeamAcquisitionTree({
       { color: accentGold, label: 'Origin' },
       { color: '#3b82f6', label: 'Player' },
       { color: accentGreen, label: 'Pick' },
+      { color: '#06b6d4', label: 'Other' },
       { color: textColor, label: '🏠 Homegrown' },
     ];
     
     let legendX = padding - 25;
     legendItems.forEach((item, i) => {
-      if (i < 3) {
+      if (i < 4) {
         ctx.beginPath();
         ctx.roundRect(legendX, legendY + 28, 14, 14, 4);
         ctx.fillStyle = item.color;
@@ -2696,6 +2749,10 @@ export default function TeamAcquisitionTree({
           <div className="flex items-center gap-1.5">
             <div className="w-3 h-3 rounded bg-zinc-900 border-l-2 border-l-fuchsia-500" />
             <span className="text-zinc-400">Pick</span>
+          </div>
+          <div className="flex items-center gap-1.5">
+            <div className="w-3 h-3 rounded bg-zinc-900 border-l-2 border-l-cyan-500" />
+            <span className="text-zinc-400">Other</span>
           </div>
           <div className="flex items-center gap-1.5">
             <span>🏠</span>
