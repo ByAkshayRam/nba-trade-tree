@@ -43,6 +43,15 @@ const WEST_TEAMS = [
   { abbr: "UTA", name: "Jazz", emoji: "🎵" },
 ];
 
+const TEAM_COLORS: Record<string, string> = {
+  ATL: "#E03A3E", BKN: "#000000", BOS: "#007A33", CHA: "#1D1160", CHI: "#CE1141",
+  CLE: "#860038", DET: "#C8102E", IND: "#002D62", MIA: "#98002E", MIL: "#00471B",
+  NYK: "#006BB6", ORL: "#0077C0", PHI: "#006BB6", TOR: "#CE1141", WAS: "#002B5C",
+  DAL: "#00538C", DEN: "#0E2240", GSW: "#1D428A", HOU: "#CE1141", LAC: "#C8102E",
+  LAL: "#552583", MEM: "#5D76A9", MIN: "#0C2340", NOP: "#0C2340", OKC: "#007AC1",
+  PHX: "#1D1160", POR: "#E03A3E", SAC: "#5A2D81", SAS: "#C4CED4", UTA: "#002B5C",
+};
+
 export default function Home() {
   const router = useRouter();
   const [email, setEmail] = useState("");
@@ -163,9 +172,13 @@ export default function Home() {
                     href={`/team/${team.abbr}?src=grid`}
                     className="flex flex-col items-center p-3 bg-zinc-800/50 hover:bg-zinc-800 border border-zinc-800/50 hover:border-fuchsia-500/30 rounded-xl transition-all group"
                   >
-                    <span className="text-2xl mb-1 group-hover:scale-110 transition-transform">{team.emoji}</span>
-                    <span className="text-sm font-bold text-white group-hover:text-fuchsia-400 transition-colors">{team.abbr}</span>
-                    <span className="text-[10px] text-zinc-600">{team.name}</span>
+                    <div
+                      className="w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold text-xs mb-1 group-hover:scale-110 transition-transform"
+                      style={{ backgroundColor: TEAM_COLORS[team.abbr] || "#333" }}
+                    >
+                      {team.abbr}
+                    </div>
+                    <span className="text-[10px] text-zinc-500 group-hover:text-zinc-300 transition-colors">{team.name}</span>
                   </Link>
                 ))}
               </div>
@@ -180,9 +193,13 @@ export default function Home() {
                     href={`/team/${team.abbr}?src=grid`}
                     className="flex flex-col items-center p-3 bg-zinc-800/50 hover:bg-zinc-800 border border-zinc-800/50 hover:border-fuchsia-500/30 rounded-xl transition-all group"
                   >
-                    <span className="text-2xl mb-1 group-hover:scale-110 transition-transform">{team.emoji}</span>
-                    <span className="text-sm font-bold text-white group-hover:text-fuchsia-400 transition-colors">{team.abbr}</span>
-                    <span className="text-[10px] text-zinc-600">{team.name}</span>
+                    <div
+                      className="w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold text-xs mb-1 group-hover:scale-110 transition-transform"
+                      style={{ backgroundColor: TEAM_COLORS[team.abbr] || "#333" }}
+                    >
+                      {team.abbr}
+                    </div>
+                    <span className="text-[10px] text-zinc-500 group-hover:text-zinc-300 transition-colors">{team.name}</span>
                   </Link>
                 ))}
               </div>
