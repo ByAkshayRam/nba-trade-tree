@@ -69,9 +69,9 @@ export function trackPageView(path?: string) {
   track('page_view', { path: path || window.location.pathname });
 }
 
-// Track team view
-export function trackTeamView(teamAbbr: string, teamName: string) {
-  track('team_view', { teamAbbr, teamName });
+// Track team view with discovery source
+export function trackTeamView(teamAbbr: string, teamName: string, source?: string) {
+  track('team_view', { teamAbbr, teamName, source: source || 'unknown' });
 }
 
 // Track player click (trace)

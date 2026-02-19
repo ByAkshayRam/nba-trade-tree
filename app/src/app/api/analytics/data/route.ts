@@ -141,6 +141,13 @@ function buildSummary(events: AnalyticsEvent[]) {
     hourMap[hour] = (hourMap[hour] || 0) + 1;
   });
 
+  // Discovery sources (how users find team pages)
+  const discoveryMap: Record<string, number> = {};
+  teamViews.forEach(e => {
+    const src = (e.properties?.source as string) || 'unknown';
+    discoveryMap[src] = (discoveryMap[src] || 0) + 1;
+  });
+
   return {
     totalPageViews: pageViews.length,
     uniqueVisitors,
@@ -154,5 +161,6 @@ function buildSummary(events: AnalyticsEvent[]) {
     deviceBreakdown: devices,
     referrerBreakdown: referrerMap,
     hourlyActivity: hourMap,
+    discoveryBreakdown: discoveryMap,
   };
 }

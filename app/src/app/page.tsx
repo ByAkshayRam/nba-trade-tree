@@ -136,7 +136,7 @@ export default function Home() {
                 router.push(`/team/${player.teamAbbr}?player=${slug}`);
               }}
               onSelectTeam={(team) => {
-                router.push(`/team/${team.abbr}`);
+                router.push(`/team/${team.abbr}?src=search`);
               }}
             />
           </div>
@@ -160,7 +160,7 @@ export default function Home() {
                 {EAST_TEAMS.map((team) => (
                   <Link
                     key={team.abbr}
-                    href={`/team/${team.abbr}`}
+                    href={`/team/${team.abbr}?src=grid`}
                     className="flex flex-col items-center p-3 bg-zinc-800/50 hover:bg-zinc-800 border border-zinc-800/50 hover:border-fuchsia-500/30 rounded-xl transition-all group"
                   >
                     <span className="text-2xl mb-1 group-hover:scale-110 transition-transform">{team.emoji}</span>
@@ -177,7 +177,7 @@ export default function Home() {
                 {WEST_TEAMS.map((team) => (
                   <Link
                     key={team.abbr}
-                    href={`/team/${team.abbr}`}
+                    href={`/team/${team.abbr}?src=grid`}
                     className="flex flex-col items-center p-3 bg-zinc-800/50 hover:bg-zinc-800 border border-zinc-800/50 hover:border-fuchsia-500/30 rounded-xl transition-all group"
                   >
                     <span className="text-2xl mb-1 group-hover:scale-110 transition-transform">{team.emoji}</span>
@@ -231,7 +231,7 @@ export default function Home() {
             </div>
             <div className="text-center mt-6">
               <Link
-                href="/team/BOS"
+                href="/team/BOS?src=featured"
                 className="inline-flex items-center gap-2 px-5 py-2.5 bg-fuchsia-600/20 hover:bg-fuchsia-600/30 border border-fuchsia-500/30 text-fuchsia-400 rounded-xl text-sm font-medium transition-all"
               >
                 Explore the full Celtics tree →

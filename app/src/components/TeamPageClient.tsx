@@ -167,8 +167,31 @@ export default function TeamPageClient({ data, teamAbbr }: TeamPageClientProps) 
   const highlightPlayer = searchParams.get('player');
 
   useEffect(() => {
+    // Detect discovery source
+    let source = 'direct'; // default: typed URL or shared link
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('player')) {
+      source = 'search_player'; // came from player search
+    } else if (params.get('src') === 'search') {
+      source = 'search_team'; // came from team search
+    } else if (params.get('src') === 'grid') {
+      source = 'homepage_grid'; // clicked team icon on homepage
+    } else if (params.get('src') === 'switcher') {
+      source = 'team_switcher'; // used dropdown on another team page
+    } else if (params.get('src') === 'chain') {
+      source = 'trade_chain_link'; // clicked trade partner link in a chain
+    } else if (document.referrer) {
+      try {
+        const refHost = new URL(document.referrer).hostname;
+        if (refHost.includes('rosterdna') || refHost.includes('100.100.180.42') || refHost.includes('localhost')) {
+          source = 'internal_nav'; // navigated from another page on the site
+        } else {
+          source = 'external_referral'; // came from external site
+        }
+      } catch { source = 'external_referral'; }
+    }
     trackPageView(`/team/${teamAbbr}`);
-    trackTeamView(teamAbbr.toUpperCase(), data.teamName);
+    trackTeamView(teamAbbr.toUpperCase(), data.teamName, source);
     startPageTimer();
   }, [teamAbbr, data.teamName]);
   
@@ -179,7 +202,7 @@ export default function TeamPageClient({ data, teamAbbr }: TeamPageClientProps) 
   const handleTeamChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const newTeam = e.target.value;
     if (newTeam && newTeam !== teamAbbr.toUpperCase()) {
-      router.push(`/team/${newTeam}`);
+      router.push(`/team/${newTeam}?src=switcher`);
     }
   };
   

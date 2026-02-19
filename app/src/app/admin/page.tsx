@@ -15,6 +15,7 @@ interface Summary {
   deviceBreakdown: { desktop: number; mobile: number; tablet: number };
   referrerBreakdown: Record<string, number>;
   hourlyActivity: Record<number, number>;
+  discoveryBreakdown: Record<string, number>;
 }
 
 interface RecentEvent {
@@ -40,7 +41,7 @@ export default function AdminPage() {
   const [loading, setLoading] = useState(false);
   const [timeFilter, setTimeFilter] = useState<string>("all");
   const [autoRefresh, setAutoRefresh] = useState(false);
-  const [tab, setTab] = useState<"overview" | "teams" | "players" | "events" | "live">("overview");
+  const [tab, setTab] = useState<"overview" | "teams" | "players" | "events" | "live" | "discovery">("overview");
 
   const fetchData = useCallback(async (pwd?: string) => {
     setLoading(true);
@@ -191,7 +192,7 @@ export default function AdminPage() {
 
         {/* Tabs */}
         <div className="flex gap-1 mb-6 bg-zinc-900 rounded-lg p-1 w-fit">
-          {(["overview", "teams", "players", "events", "live"] as const).map((t) => (
+          {(["overview", "teams", "players", "discovery", "events", "live"] as const).map((t) => (
             <button
               key={t}
               onClick={() => setTab(t)}
@@ -202,6 +203,7 @@ export default function AdminPage() {
               {t === "overview" ? "📊 Overview" : 
                t === "teams" ? "🏀 Teams" :
                t === "players" ? "👤 Players" :
+               t === "discovery" ? "🔍 Discovery" :
                t === "events" ? "📋 Events" : "🔴 Live Feed"}
             </button>
           ))}
@@ -353,6 +355,51 @@ export default function AdminPage() {
                     </div>
                   </div>
                 ))}
+              </div>
+            )}
+          </div>
+        )}
+
+        {tab === "discovery" && (
+          <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-5">
+            <h3 className="text-sm font-semibold text-zinc-400 mb-4">🔍 How Users Find Team Pages</h3>
+            <p className="text-xs text-zinc-600 mb-4">Tracks how visitors navigate to team pages — search, grid icons, direct links, team switcher, or referrals.</p>
+            {Object.keys(s.discoveryBreakdown || {}).length === 0 ? (
+              <p className="text-zinc-600">No discovery data yet. This tracks team_view events with source attribution.</p>
+            ) : (
+              <div className="space-y-2">
+                {Object.entries(s.discoveryBreakdown || {})
+                  .sort((a, b) => b[1] - a[1])
+                  .map(([source, count]) => {
+                    const total = Object.values(s.discoveryBreakdown || {}).reduce((a, b) => a + b, 0);
+                    const pct = total > 0 ? Math.round((count / total) * 100) : 0;
+                    const labels: Record<string, string> = {
+                      'search_player': '🔍 Player Search',
+                      'search_team': '🔍 Team Search',
+                      'homepage_grid': '🏠 Homepage Grid',
+                      'team_switcher': '🔄 Team Switcher',
+                      'trade_chain_link': '🔗 Trade Chain Link',
+                      'direct': '🔗 Direct Link / Shared URL',
+                      'internal_nav': '📄 Internal Navigation',
+                      'external_referral': '🌐 External Referral',
+                      'featured': '⭐ Featured Section',
+                      'unknown': '❓ Unknown',
+                    };
+                    return (
+                      <div key={source} className="flex items-center gap-3">
+                        <div className="w-44 text-sm text-zinc-300 truncate">{labels[source] || source}</div>
+                        <div className="flex-1 bg-zinc-800 rounded-full h-5 overflow-hidden">
+                          <div
+                            className="h-full bg-fuchsia-500/60 rounded-full flex items-center pl-2"
+                            style={{ width: `${Math.max(pct, 8)}%` }}
+                          >
+                            <span className="text-xs text-white font-medium">{count}</span>
+                          </div>
+                        </div>
+                        <span className="text-xs text-zinc-500 w-12 text-right">{pct}%</span>
+                      </div>
+                    );
+                  })}
               </div>
             )}
           </div>
