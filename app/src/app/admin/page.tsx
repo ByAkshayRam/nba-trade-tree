@@ -133,56 +133,56 @@ export default function AdminPage() {
   return (
     <div className="min-h-screen bg-zinc-950 text-white">
       {/* Header */}
-      <header className="border-b border-zinc-800 px-6 py-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <h1 className="text-lg font-bold">🧬 RosterDNA Admin Console</h1>
-            <span className="text-xs px-2 py-0.5 rounded bg-fuchsia-500/20 text-fuchsia-400 border border-fuchsia-500/30 font-semibold">
-              PRIVATE
-            </span>
-          </div>
-          <div className="flex items-center gap-3">
-            {/* Auto-refresh toggle */}
-            <label className="flex items-center gap-2 text-xs text-zinc-400 cursor-pointer">
-              <input
-                type="checkbox"
-                checked={autoRefresh}
-                onChange={(e) => setAutoRefresh(e.target.checked)}
-                className="rounded bg-zinc-800 border-zinc-600"
-              />
-              Auto-refresh (15s)
-            </label>
-            {/* Time filter */}
-            <select
-              value={timeFilter}
-              onChange={(e) => { setTimeFilter(e.target.value); }}
-              className="bg-zinc-800 border border-zinc-700 text-sm text-white px-3 py-1.5 rounded-lg"
-            >
-              <option value="all">All Time</option>
-              <option value="today">Today</option>
-              <option value="7d">Last 7 Days</option>
-              <option value="30d">Last 30 Days</option>
-            </select>
-            <button
-              onClick={() => fetchData()}
-              disabled={loading}
-              className="px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 rounded-lg text-sm transition-colors"
-            >
-              {loading ? "⏳" : "🔄"} Refresh
-            </button>
-            <button
-              onClick={() => { setAuthenticated(false); sessionStorage.removeItem("rdna_admin_key"); }}
-              className="px-3 py-1.5 text-zinc-500 hover:text-white text-sm transition-colors"
-            >
-              Logout
-            </button>
+      <header className="border-b border-zinc-800 px-4 sm:px-6 py-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center justify-between mb-3 sm:mb-0">
+            <div className="flex items-center gap-2 sm:gap-3">
+              <h1 className="text-base sm:text-lg font-bold">🧬 RosterDNA</h1>
+              <span className="text-[10px] sm:text-xs px-1.5 sm:px-2 py-0.5 rounded bg-fuchsia-500/20 text-fuchsia-400 border border-fuchsia-500/30 font-semibold">
+                PRIVATE
+              </span>
+            </div>
+            <div className="flex items-center gap-2">
+              <label className="hidden sm:flex items-center gap-2 text-xs text-zinc-400 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={autoRefresh}
+                  onChange={(e) => setAutoRefresh(e.target.checked)}
+                  className="rounded bg-zinc-800 border-zinc-600"
+                />
+                Auto-refresh (15s)
+              </label>
+              <select
+                value={timeFilter}
+                onChange={(e) => { setTimeFilter(e.target.value); }}
+                className="bg-zinc-800 border border-zinc-700 text-xs sm:text-sm text-white px-2 sm:px-3 py-1.5 rounded-lg"
+              >
+                <option value="all">All Time</option>
+                <option value="today">Today</option>
+                <option value="7d">Last 7 Days</option>
+                <option value="30d">Last 30 Days</option>
+              </select>
+              <button
+                onClick={() => fetchData()}
+                disabled={loading}
+                className="px-2 sm:px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 rounded-lg text-sm transition-colors"
+              >
+                {loading ? "⏳" : "🔄"}
+              </button>
+              <button
+                onClick={() => { setAuthenticated(false); sessionStorage.removeItem("rdna_admin_key"); }}
+                className="hidden sm:block px-3 py-1.5 text-zinc-500 hover:text-white text-sm transition-colors"
+              >
+                Logout
+              </button>
+            </div>
           </div>
         </div>
       </header>
 
-      <div className="max-w-7xl mx-auto px-6 py-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-6">
         {/* Stat Cards */}
-        <div className="grid grid-cols-5 gap-4 mb-6">
+        <div className="grid grid-cols-3 sm:grid-cols-5 gap-2 sm:gap-4 mb-4 sm:mb-6">
           <StatCard label="Page Views" value={s.totalPageViews} color="text-blue-400" />
           <StatCard label="Unique Visitors" value={s.uniqueVisitors} color="text-green-400" />
           <StatCard label="Sessions" value={s.uniqueSessions} color="text-purple-400" />
@@ -191,12 +191,12 @@ export default function AdminPage() {
         </div>
 
         {/* Tabs */}
-        <div className="flex gap-1 mb-6 bg-zinc-900 rounded-lg p-1 w-fit">
+        <div className="flex gap-1 mb-4 sm:mb-6 bg-zinc-900 rounded-lg p-1 overflow-x-auto no-scrollbar">
           {(["overview", "teams", "players", "discovery", "events", "live"] as const).map((t) => (
             <button
               key={t}
               onClick={() => setTab(t)}
-              className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+              className={`px-3 sm:px-4 py-2 rounded-md text-xs sm:text-sm font-medium transition-colors whitespace-nowrap ${
                 tab === t ? "bg-zinc-700 text-white" : "text-zinc-400 hover:text-white"
               }`}
             >
@@ -211,7 +211,7 @@ export default function AdminPage() {
 
         {/* Tab Content */}
         {tab === "overview" && (
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             {/* Views by Day Chart */}
             <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-5">
               <h3 className="text-sm font-semibold text-zinc-400 mb-4">📈 Page Views by Day</h3>
@@ -286,7 +286,7 @@ export default function AdminPage() {
             </div>
 
             {/* Event Type Breakdown */}
-            <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-5 col-span-2">
+            <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-5 sm:col-span-2">
               <h3 className="text-sm font-semibold text-zinc-400 mb-4">⚡ Event Types</h3>
               <div className="flex flex-wrap gap-3">
                 {Object.entries(s.eventCounts)
@@ -387,7 +387,7 @@ export default function AdminPage() {
                     };
                     return (
                       <div key={source} className="flex items-center gap-3">
-                        <div className="w-44 text-sm text-zinc-300 truncate">{labels[source] || source}</div>
+                        <div className="w-28 sm:w-44 text-xs sm:text-sm text-zinc-300 truncate shrink-0">{labels[source] || source}</div>
                         <div className="flex-1 bg-zinc-800 rounded-full h-5 overflow-hidden">
                           <div
                             className="h-full bg-fuchsia-500/60 rounded-full flex items-center pl-2"
@@ -471,9 +471,9 @@ export default function AdminPage() {
 
 function StatCard({ label, value, color }: { label: string; value: string | number; color: string }) {
   return (
-    <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-4 text-center">
-      <div className={`text-3xl font-bold ${color}`}>{value}</div>
-      <div className="text-xs text-zinc-500 mt-1">{label}</div>
+    <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-3 sm:p-4 text-center">
+      <div className={`text-xl sm:text-3xl font-bold ${color}`}>{value}</div>
+      <div className="text-[10px] sm:text-xs text-zinc-500 mt-1">{label}</div>
     </div>
   );
 }
