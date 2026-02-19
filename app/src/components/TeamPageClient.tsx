@@ -4,7 +4,10 @@ import { useState, useCallback, useEffect } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import TeamAcquisitionTree from "./TeamAcquisitionTree";
-import { trackPageView, trackTeamView, startPageTimer } from "@/lib/analytics";
+import TradePartners from "./TradePartners";
+import { PlayerSearch } from "./PlayerSearch";
+import type { PlayerResult, TeamResult } from "./PlayerSearch";
+import { track, trackPageView, trackTeamView, startPageTimer } from "@/lib/analytics";
 
 // All Eastern Conference teams
 const EAST_TEAMS = [
@@ -81,6 +84,7 @@ interface TeamPageClientProps {
     nodes: any[];
     edges: any[];
     teamColors: { primary: string; secondary: string };
+    tradePartners?: { abbr: string; name: string; count: number; players: string[]; color: string }[];
   };
   teamAbbr: string;
 }
@@ -165,6 +169,7 @@ export default function TeamPageClient({ data, teamAbbr }: TeamPageClientProps) 
   const router = useRouter();
   const searchParams = useSearchParams();
   const highlightPlayer = searchParams.get('player');
+  const highlightPartner = searchParams.get('from');
 
   useEffect(() => {
     // Detect discovery source
@@ -199,13 +204,6 @@ export default function TeamPageClient({ data, teamAbbr }: TeamPageClientProps) 
     setSelectedPlayer(player);
   }, []);
 
-  const handleTeamChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const newTeam = e.target.value;
-    if (newTeam && newTeam !== teamAbbr.toUpperCase()) {
-      router.push(`/team/${newTeam}?src=switcher`);
-    }
-  };
-  
   // Generate dynamic narrative
   const currentNarrative = selectedPlayer 
     ? generatePlayerNarrative(selectedPlayer, data.teamName)
@@ -214,8 +212,6 @@ export default function TeamPageClient({ data, teamAbbr }: TeamPageClientProps) 
   const narrativeTitle = selectedPlayer 
     ? `🔍 ${selectedPlayer.name}'s Acquisition Chain`
     : "📖 Roster Story";
-
-  const currentTeamEmoji = getTeamEmoji(teamAbbr);
 
   return (
     <div className="min-h-screen bg-gray-950 text-white">
@@ -227,38 +223,25 @@ export default function TeamPageClient({ data, teamAbbr }: TeamPageClientProps) 
               ← <span className="font-semibold text-white">RosterDNA</span> <span className="text-xs font-semibold px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-400 border border-amber-500/30">BETA</span>
             </Link>
             <h1 className="text-xl sm:text-2xl font-bold flex items-center gap-2 sm:gap-3">
-              <span className="text-2xl sm:text-3xl">{currentTeamEmoji}</span>
+              <span
+                className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg flex items-center justify-center text-white font-bold text-xs shrink-0"
+                style={{ backgroundColor: data.teamColors?.primary || "#333" }}
+              >
+                {teamAbbr.toUpperCase()}
+              </span>
               <span className="truncate">{data.teamName} Acquisition Tree</span>
             </h1>
           </div>
-          <div className="flex items-center gap-4">
-            {/* Team Switcher Dropdown */}
-            <div className="relative">
-              <select
-                value={teamAbbr.toUpperCase()}
-                onChange={handleTeamChange}
-                className="appearance-none bg-gray-800 border border-gray-700 text-white px-4 py-2.5 pr-10 rounded-lg cursor-pointer hover:border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent text-sm font-medium min-h-[44px]"
-              >
-                <option value="" disabled>Switch Team</option>
-                <option disabled>── Eastern Conference ──</option>
-                {EAST_TEAMS.map(team => (
-                  <option key={team.abbr} value={team.abbr}>
-                    {team.emoji} {team.abbr} - {team.name}
-                  </option>
-                ))}
-                <option disabled>── Western Conference ──</option>
-                {WEST_TEAMS.map(team => (
-                  <option key={team.abbr} value={team.abbr}>
-                    {team.emoji} {team.abbr} - {team.name}
-                  </option>
-                ))}
-              </select>
-              <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </div>
-            </div>
+          <div className="w-64 sm:w-72">
+            <PlayerSearch
+              staticPlaceholder="Search players or teams..."
+              onSelect={(player: PlayerResult) => {
+                router.push(`/team/${player.teamAbbr}?player=${player.name.toLowerCase().replace(/\s+/g, '-')}&source=team_search`);
+              }}
+              onSelectTeam={(team: TeamResult) => {
+                router.push(`/team/${team.abbr}?source=team_search`);
+              }}
+            />
           </div>
         </div>
       </header>
@@ -337,7 +320,22 @@ export default function TeamPageClient({ data, teamAbbr }: TeamPageClientProps) 
           teamName={data.teamName}
           onPlayerSelect={handlePlayerSelect}
           highlightPlayer={highlightPlayer}
+          highlightPartner={highlightPartner}
         />
+
+        {data.tradePartners && data.tradePartners.length > 0 && (
+          <TradePartners
+            partners={data.tradePartners}
+            currentTeam={data.team}
+            onNavigate={(toTeam, source) => {
+              track("cross_team_click", {
+                source,
+                fromTeam: data.team,
+                toTeam,
+              });
+            }}
+          />
+        )}
       </main>
     </div>
   );

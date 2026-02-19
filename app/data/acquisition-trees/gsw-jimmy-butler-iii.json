@@ -85,9 +85,52 @@
         "acquisitionType": "trade",
         "date": "2024-12-15",
         "tradePartner": "BKN",
-        "tradeDescription": "Traded from Brooklyn Nets to Warriors",
-        "note": "German point guard, veteran leader",
-        "isOrigin": true
+        "tradeDescription": "Warriors acquire Schroder and 2025 2nd (via MIA) from Nets for Melton, Beekman, and three 2nd-round picks",
+        "note": "German veteran PG, averaging 18.4 ppg and 6.6 apg at time of trade",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "De'Anthony Melton",
+            "acquisitionType": "free-agent",
+            "date": "2024-07-01",
+            "note": "Signed via mid-level exception from Philadelphia. Out for season with torn ACL at time of trade.",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Reece Beekman",
+            "acquisitionType": "draft",
+            "date": "2024-06-27",
+            "draftPick": 39,
+            "draftRound": 2,
+            "note": "Virginia guard, 2024 2nd round pick",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2026 2nd Round Pick",
+            "acquisitionType": "own",
+            "date": "2024-12-15",
+            "note": "GSW own 2nd rounder sent to Brooklyn",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2027 2nd Round Pick",
+            "acquisitionType": "own",
+            "date": "2024-12-15",
+            "note": "GSW own 2nd rounder sent to Brooklyn",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2029 2nd Round Pick",
+            "acquisitionType": "own",
+            "date": "2024-12-15",
+            "note": "GSW own 2nd rounder sent to Brooklyn",
+            "isOrigin": true
+          }
+        ]
       },
       {
         "type": "player",

@@ -639,13 +639,13 @@ interface FlowEdge {
 
 const TEAM_COLORS: Record<string, { primary: string; secondary: string }> = {
   BOS: { primary: "#007A33", secondary: "#BA9653" },
-  NYK: { primary: "#006BB6", secondary: "#F58426" },
+  NYK: { primary: "#F58426", secondary: "#006BB6" },
   OKC: { primary: "#007AC1", secondary: "#EF3B24" },
   WAS: { primary: "#002B5C", secondary: "#E31837" },
   // Eastern Conference
   ATL: { primary: "#E03A3E", secondary: "#C1D32F" },
   BKN: { primary: "#000000", secondary: "#FFFFFF" },
-  CHA: { primary: "#1D1160", secondary: "#00788C" },
+  CHA: { primary: "#00788C", secondary: "#1D1160" },
   CHI: { primary: "#CE1141", secondary: "#000000" },
   CLE: { primary: "#860038", secondary: "#FDBB30" },
   DET: { primary: "#C8102E", secondary: "#1D42BA" },
@@ -658,18 +658,18 @@ const TEAM_COLORS: Record<string, { primary: string; secondary: string }> = {
   // Western Conference
   DAL: { primary: "#00538C", secondary: "#002B5E" },
   DEN: { primary: "#0E2240", secondary: "#FEC524" },
-  GSW: { primary: "#1D428A", secondary: "#FFC72C" },
+  GSW: { primary: "#FFC72C", secondary: "#1D428A" },
   HOU: { primary: "#CE1141", secondary: "#000000" },
   LAC: { primary: "#C8102E", secondary: "#1D428A" },
   LAL: { primary: "#552583", secondary: "#FDB927" },
   MEM: { primary: "#5D76A9", secondary: "#12173F" },
   MIN: { primary: "#0C2340", secondary: "#236192" },
-  NOP: { primary: "#0C2340", secondary: "#C8102E" },
+  NOP: { primary: "#B4975A", secondary: "#0C2340" },
   PHX: { primary: "#1D1160", secondary: "#E56020" },
   POR: { primary: "#E03A3E", secondary: "#000000" },
   SAC: { primary: "#5A2D81", secondary: "#63727A" },
   SAS: { primary: "#C4CED4", secondary: "#000000" },
-  UTA: { primary: "#002B5C", secondary: "#00471B" },
+  UTA: { primary: "#3E1175", secondary: "#002B5C" },
 };
 
 const TEAM_NAMES: Record<string, string> = {
@@ -977,6 +977,32 @@ export async function GET(
   const trades = nodes.filter(n => n.data.acquisitionType === "trade").length;
   const earliestYear = Math.min(...trees.map(t => t._meta.originYear));
   
+  // Build trade partner map
+  const partnerMap = new Map<string, { count: number; players: Set<string> }>();
+  for (const t of trees) {
+    function walkPartners(node: any) {
+      if (node.tradePartner && node.tradePartner !== team) {
+        const partner = node.tradePartner;
+        if (!partnerMap.has(partner)) partnerMap.set(partner, { count: 0, players: new Set() });
+        const entry = partnerMap.get(partner)!;
+        entry.count++;
+        if (node.name && node.type === 'player') entry.players.add(node.name);
+      }
+      if (node.assetsGivenUp) node.assetsGivenUp.forEach(walkPartners);
+    }
+    walkPartners(t.tree);
+  }
+  const tradePartners = Array.from(partnerMap.entries())
+    .map(([abbr, data]) => ({
+      abbr,
+      name: TEAM_NAMES[abbr] || abbr,
+      count: data.count,
+      players: Array.from(data.players).slice(0, 3),
+      color: TEAM_COLORS[abbr]?.primary || "#666",
+    }))
+    .sort((a, b) => b.count - a.count)
+    .slice(0, 8);
+
   return NextResponse.json({
     team,
     teamName: TEAM_NAMES[team] || team,
@@ -991,5 +1017,6 @@ export async function GET(
     nodes,
     edges,
     teamColors: TEAM_COLORS[team] || { primary: "#666", secondary: "#333" },
+    tradePartners,
   });
 }

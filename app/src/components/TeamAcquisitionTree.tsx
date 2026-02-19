@@ -80,6 +80,7 @@ interface TeamAcquisitionTreeProps {
   teamName?: string;
   onPlayerSelect?: (player: SelectedPlayerInfo | null) => void;
   highlightPlayer?: string | null;
+  highlightPartner?: string | null;
 }
 
 function formatDate(dateStr?: string): string {
@@ -1369,6 +1370,7 @@ export default function TeamAcquisitionTree({
   teamName = "Boston Celtics",
   onPlayerSelect,
   highlightPlayer,
+  highlightPartner,
 }: TeamAcquisitionTreeProps) {
   const [nodes, setNodes] = useState<Node[]>([]);
   const [edges, setEdges] = useState<Edge[]>([]);
@@ -1376,6 +1378,7 @@ export default function TeamAcquisitionTree({
   const [baseEdges, setBaseEdges] = useState<Edge[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
+  const [partnerHighlightCleared, setPartnerHighlightCleared] = useState(false);
   const [showExportMenu, setShowExportMenu] = useState(false);
   const [isExporting, setIsExporting] = useState(false);
   const [exportSelections, setExportSelections] = useState({
@@ -1425,6 +1428,7 @@ export default function TeamAcquisitionTree({
 
   // Handle node click
   const onNodeClick = useCallback((event: React.MouseEvent, node: Node) => {
+    setPartnerHighlightCleared(true);
     if (selectedNodeId === node.id) {
       // Clicking same node deselects
       setSelectedNodeId(null);
@@ -1495,6 +1499,85 @@ export default function TeamAcquisitionTree({
     if (baseNodes.length === 0) return;
 
     if (!selectedNodeId) {
+      if (highlightPartner && !partnerHighlightCleared) {
+        // Partner highlight mode — find nodes traded with the partner team, then trace up to roster
+        const partnerNodeIds = new Set<string>();
+        
+        // Find all nodes with tradePartner matching
+        const tradeNodes: string[] = [];
+        for (const node of baseNodes) {
+          const nd = node.data as NodeData;
+          if (nd.tradePartner === highlightPartner) {
+            tradeNodes.push(node.id);
+          }
+        }
+        
+        // For each trade node, find its roster player (walk edges target direction)
+        // Then highlight the full chain from roster to origins via findPathToOrigins
+        // Build adjacency: edge source -> target (deeper -> shallower toward roster)
+        const childToParent = new Map<string, string>();
+        for (const edge of baseEdges) {
+          childToParent.set(edge.source, edge.target);
+        }
+        
+        for (const tradeNodeId of tradeNodes) {
+          // Walk up to find the roster node
+          let current = tradeNodeId;
+          let rosterNodeId: string | null = null;
+          const visited = new Set<string>();
+          while (current && !visited.has(current)) {
+            visited.add(current);
+            const node = baseNodes.find(n => n.id === current);
+            if (node && (node.data as NodeData).isRosterPlayer) {
+              rosterNodeId = current;
+              break;
+            }
+            const parent = childToParent.get(current);
+            if (parent) current = parent;
+            else break;
+          }
+          
+          // Highlight the full chain for this roster player
+          if (rosterNodeId) {
+            const pathIds = findPathToOrigins(rosterNodeId);
+            for (const id of pathIds) partnerNodeIds.add(id);
+          }
+        }
+        
+        // If we found partner nodes, highlight them
+        if (partnerNodeIds.size > 0) {
+          setNodes(baseNodes.map(node => ({
+            ...node,
+            data: {
+              ...node.data,
+              isHighlighted: partnerNodeIds.has(node.id),
+              isDimmed: !partnerNodeIds.has(node.id),
+            }
+          })));
+          setEdges(baseEdges.map(edge => {
+            const isInPath = partnerNodeIds.has(edge.source) && partnerNodeIds.has(edge.target);
+            const sourceNode = initialNodes.find(n => n.id === edge.source);
+            const isOriginEdge = sourceNode?.data.isOrigin;
+            return {
+              ...edge,
+              style: {
+                stroke: isInPath ? (isOriginEdge ? "#fbbf24" : "#4ade80") : "#3f3f46",
+                strokeWidth: isInPath ? 3 : 1,
+                opacity: isInPath ? 1 : 0.3,
+              },
+              markerEnd: {
+                type: MarkerType.ArrowClosed,
+                color: isInPath ? (isOriginEdge ? "#fbbf24" : "#4ade80") : "#3f3f46",
+                width: isInPath ? 18 : 12,
+                height: isInPath ? 18 : 12,
+              },
+              animated: isInPath && isOriginEdge,
+            };
+          }));
+          return;
+        }
+      }
+      
       // No selection - reset all to normal
       setNodes(baseNodes.map(node => ({
         ...node,
@@ -1558,7 +1641,7 @@ export default function TeamAcquisitionTree({
 
     setNodes(updatedNodes);
     setEdges(updatedEdges);
-  }, [selectedNodeId, baseNodes, baseEdges, findPathToOrigins, initialNodes]);
+  }, [selectedNodeId, baseNodes, baseEdges, findPathToOrigins, initialNodes, highlightPartner, partnerHighlightCleared]);
 
   // Build initial graph layout
   useEffect(() => {

@@ -10,6 +10,22 @@ interface ChangelogEntry {
 
 const changelog: ChangelogEntry[] = [
   {
+    date: "Feb 19, 2026",
+    version: "0.6.0",
+    items: [
+      { type: "feature", text: "Trade Partners section — see which teams each franchise trades with most" },
+      { type: "feature", text: "Cross-team navigation — click a trade partner to jump to their page with trades highlighted" },
+      { type: "feature", text: "Trade chain highlighting — nodes involved in a trade partner relationship glow on arrival" },
+      { type: "feature", text: "Consistent team icons — solid color badges replace emojis across all UI" },
+      { type: "feature", text: "Redesigned team page search bar with player + team search" },
+      { type: "feature", text: "Card Builder tool in admin for creating custom trade odyssey graphics" },
+      { type: "data", text: "Dennis Schröder chain extended with full GSW trade details" },
+      { type: "data", text: "Team colors updated: NYK (orange), CHA (teal), NOP (gold), UTA (purple), GSW (gold)" },
+      { type: "fix", text: "Fixed old team abbreviations (PHO→PHX, CHO→CHA, NOLA→NOP) across all data files" },
+      { type: "fix", text: "Mobile scroll fix — touch devices require tap-to-interact, desktop always interactive" },
+    ],
+  },
+  {
     date: "Feb 18, 2026",
     version: "0.5.0",
     items: [

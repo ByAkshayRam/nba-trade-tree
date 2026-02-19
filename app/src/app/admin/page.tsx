@@ -141,6 +141,9 @@ export default function AdminPage() {
               <span className="text-[10px] sm:text-xs px-1.5 sm:px-2 py-0.5 rounded bg-fuchsia-500/20 text-fuchsia-400 border border-fuchsia-500/30 font-semibold">
                 PRIVATE
               </span>
+              <a href="/admin/card-builder" className="text-[10px] sm:text-xs px-2 sm:px-3 py-1 rounded bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 font-semibold hover:bg-cyan-500/30 transition-colors">
+                🎨 Card Builder
+              </a>
             </div>
             <div className="flex items-center gap-2">
               <label className="hidden sm:flex items-center gap-2 text-xs text-zinc-400 cursor-pointer">

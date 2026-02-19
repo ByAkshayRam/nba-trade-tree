@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9333ea"/>
+      <stop offset="50%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <clipPath id="rounded">
+      <rect width="512" height="512" rx="112" ry="112"/>
+    </clipPath>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" ry="112" fill="url(#bg)"/>
+  
+  <g clip-path="url(#rounded)">
+    <!-- DNA Double Helix -->
+    <g transform="translate(256, 256)" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      
+      <!-- Strand 1 -->
+      <path d="M -90,140 
+               C -90,115 90,85 90,55 
+               C 90,25 -90,-5 -90,-35 
+               C -90,-65 90,-95 90,-140" 
+            stroke-width="22" opacity="1"/>
+      
+      <!-- Strand 2 -->
+      <path d="M 90,140 
+               C 90,115 -90,85 -90,55 
+               C -90,25 90,-5 90,-35 
+               C 90,-65 -90,-95 -90,-140" 
+            stroke-width="22" opacity="1"/>
+      
+      <!-- Base pairs (crossbars) -->
+      <line x1="-45" y1="112" x2="45" y2="112" stroke-width="12" opacity="0.7"/>
+      <line x1="-82" y1="70" x2="82" y2="70" stroke-width="12" opacity="0.7"/>
+      <line x1="-50" y1="28" x2="50" y2="28" stroke-width="12" opacity="0.7"/>
+      <line x1="55" y1="-14" x2="-55" y2="-14" stroke-width="12" opacity="0.7"/>
+      <line x1="82" y1="-56" x2="-82" y2="-56" stroke-width="12" opacity="0.7"/>
+      <line x1="50" y1="-98" x2="-50" y2="-98" stroke-width="12" opacity="0.7"/>
+      
+      <!-- Dots at intersections -->
+      <g fill="white" stroke="none">
+        <!-- Strand 1 dots -->
+        <circle cx="-45" cy="112" r="9"/>
+        <circle cx="-82" cy="70" r="9"/>
+        <circle cx="-50" cy="28" r="9"/>
+        <circle cx="55" cy="-14" r="9"/>
+        <circle cx="82" cy="-56" r="9"/>
+        <circle cx="50" cy="-98" r="9"/>
+        <!-- Strand 2 dots -->
+        <circle cx="45" cy="112" r="9"/>
+        <circle cx="82" cy="70" r="9"/>
+        <circle cx="50" cy="28" r="9"/>
+        <circle cx="-55" cy="-14" r="9"/>
+        <circle cx="-82" cy="-56" r="9"/>
+        <circle cx="-50" cy="-98" r="9"/>
+      </g>
+    </g>
+  </g>
+</svg>

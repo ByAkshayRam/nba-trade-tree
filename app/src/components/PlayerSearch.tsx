@@ -24,7 +24,17 @@ interface TeamResult {
 interface PlayerSearchProps {
   onSelect: (player: PlayerResult) => void;
   onSelectTeam?: (team: TeamResult) => void;
+  staticPlaceholder?: string;
 }
+
+const TEAM_EMOJIS: Record<string, string> = {
+  ATL: "🦅", BKN: "🌃", BOS: "🍀", CHA: "🐝", CHI: "🐂",
+  CLE: "⚔️", DET: "🔧", IND: "🏎️", MIA: "🔥", MIL: "🦌",
+  NYK: "🗽", ORL: "✨", PHI: "🔔", TOR: "🦖", WAS: "🧙",
+  DAL: "🐴", DEN: "⛏️", GSW: "🌉", HOU: "🚀", LAC: "⛵",
+  LAL: "👑", MEM: "🐻", MIN: "🐺", NOP: "⚜️", OKC: "⛈️",
+  PHX: "☀️", POR: "🌹", SAC: "👑", SAS: "🖤", UTA: "🏔️",
+};
 
 export type { PlayerResult, TeamResult };
 
@@ -91,7 +101,7 @@ function useTypewriter(suggestions: string[], enabled: boolean) {
   return displayText;
 }
 
-export function PlayerSearch({ onSelect, onSelectTeam }: PlayerSearchProps) {
+export function PlayerSearch({ onSelect, onSelectTeam, staticPlaceholder }: PlayerSearchProps) {
   const [query, setQuery] = useState("");
   const [isFocused, setIsFocused] = useState(false);
   const [playerResults, setPlayerResults] = useState<PlayerResult[]>([]);
@@ -101,7 +111,7 @@ export function PlayerSearch({ onSelect, onSelectTeam }: PlayerSearchProps) {
   const inputRef = useRef<HTMLInputElement>(null);
   const debounceRef = useRef<NodeJS.Timeout>(undefined);
 
-  const showTypewriter = !isFocused && query === "";
+  const showTypewriter = !staticPlaceholder && !isFocused && query === "";
   const typewriterText = useTypewriter(TYPEWRITER_SUGGESTIONS, showTypewriter);
 
   useEffect(() => {
@@ -162,7 +172,7 @@ export function PlayerSearch({ onSelect, onSelectTeam }: PlayerSearchProps) {
           onChange={(e) => setQuery(e.target.value)}
           onFocus={() => { setIsFocused(true); hasResults && setIsOpen(true); }}
           onBlur={() => { setTimeout(() => setIsFocused(false), 200); }}
-          placeholder={isFocused ? "Search players or teams..." : ""}
+          placeholder={staticPlaceholder || (isFocused ? "Search players or teams..." : "")}
           className="w-full px-4 py-3.5 pl-12 text-base sm:text-lg bg-zinc-900 border border-zinc-700 rounded-lg 
                      text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-green-500 
                      focus:border-transparent transition-all min-h-[48px]"
@@ -213,10 +223,10 @@ export function PlayerSearch({ onSelect, onSelectTeam }: PlayerSearchProps) {
                   className="w-full flex items-center gap-3 px-4 py-3 hover:bg-zinc-800 transition-colors text-left"
                 >
                   <div
-                    className="w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold text-sm"
+                    className="w-10 h-10 rounded-lg flex items-center justify-center text-2xl"
                     style={{ backgroundColor: team.color || "#333" }}
                   >
-                    {team.abbr}
+                    {TEAM_EMOJIS[team.abbr] || team.abbr}
                   </div>
                   <div className="flex-1">
                     <div className="text-white font-medium">{team.name}</div>
