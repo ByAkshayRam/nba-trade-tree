@@ -39,7 +39,14 @@ export async function GET(request: NextRequest) {
       return NextResponse.json({ error: 'Failed to read events' }, { status: 500 });
     }
 
-    const typedEvents = (events || []) as AnalyticsEvent[];
+    // Filter out local/dev traffic (Tailscale IPs, localhost)
+    const LOCAL_PATTERNS = ['100.100.180.42', '127.0.0.1', 'localhost'];
+    const typedEvents = ((events || []) as AnalyticsEvent[]).filter(e => {
+      const ref = (e.properties?.referrer as string) || '';
+      const url = (e.properties?.url as string) || '';
+      const ip = e.ip || '';
+      return !LOCAL_PATTERNS.some(p => ref.includes(p) || url.includes(p) || ip.startsWith('100.'));
+    });
     const summary = buildSummary(typedEvents);
 
     return NextResponse.json({

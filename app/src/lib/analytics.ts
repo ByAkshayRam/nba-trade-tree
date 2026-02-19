@@ -35,6 +35,9 @@ function getVisitorId(): string {
 // Track an event
 export function track(event: string, properties?: Record<string, string | number | boolean | null>) {
   if (typeof window === 'undefined') return;
+  // Skip tracking on local/dev instances
+  const host = window.location.hostname;
+  if (host === 'localhost' || host === '127.0.0.1' || host.startsWith('100.') || host.startsWith('192.168.') || host.startsWith('10.')) return;
   
   const payload = {
     event,
