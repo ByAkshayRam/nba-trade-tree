@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useCallback } from "react";
+import { useState, useRef, useCallback, useEffect } from "react";
 import { toPng } from "html-to-image";
 
 const TEAM_COLORS: Record<string, string> = {
@@ -118,6 +118,78 @@ export default function CardBuilderPage() {
   const [brandName, setBrandName] = useState('RosterDNA');
   const [brandTagline, setBrandTagline] = useState('Trade Chain Intelligence');
 
+  // Player selector state
+  const [playersByTeam, setPlayersByTeam] = useState<Record<string, { name: string; slug: string; depth: number }[]>>({});
+  const [playerSearch, setPlayerSearch] = useState('');
+  const [showPlayerDropdown, setShowPlayerDropdown] = useState(false);
+  const [loadingPlayer, setLoadingPlayer] = useState(false);
+  const [playerLoaded, setPlayerLoaded] = useState(false);
+  const searchRef = useRef<HTMLDivElement>(null);
+
+  // Fetch all players on mount
+  useEffect(() => {
+    fetch('/api/card-builder/players')
+      .then(r => r.json())
+      .then(data => setPlayersByTeam(data))
+      .catch(() => {});
+  }, []);
+
+  // Click outside to close dropdown
+  useEffect(() => {
+    function handleClick(e: MouseEvent) {
+      if (searchRef.current && !searchRef.current.contains(e.target as HTMLElement)) {
+        setShowPlayerDropdown(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClick);
+    return () => document.removeEventListener('mousedown', handleClick);
+  }, []);
+
+  // Filter players by search
+  const filteredPlayers = (() => {
+    const q = playerSearch.toLowerCase().trim();
+    const results: { team: string; name: string; slug: string; depth: number }[] = [];
+    const teams = Object.keys(playersByTeam).sort();
+    for (const team of teams) {
+      for (const p of playersByTeam[team]) {
+        if (!q || p.name.toLowerCase().includes(q) || team.toLowerCase().includes(q)) {
+          results.push({ team, ...p });
+        }
+      }
+    }
+    return results.slice(0, 50); // limit dropdown
+  })();
+
+  // Group filtered results by team for display
+  const groupedResults = (() => {
+    const groups: Record<string, typeof filteredPlayers> = {};
+    for (const p of filteredPlayers) {
+      if (!groups[p.team]) groups[p.team] = [];
+      groups[p.team].push(p);
+    }
+    return groups;
+  })();
+
+  // Load a player's data into the card builder
+  const loadPlayer = async (slug: string) => {
+    setLoadingPlayer(true);
+    setShowPlayerDropdown(false);
+    setPlayerSearch('');
+    try {
+      const res = await fetch(`/api/card-builder/player/${slug}`);
+      const data = await res.json();
+      if (data.playerName) {
+        setPlayerName(data.playerName);
+        setPlayerLoaded(true);
+        setSubtitle('');
+        if (data.headshotUrl) setHeadshotUrl(data.headshotUrl);
+        if (data.stops?.length > 0) setStops(data.stops);
+        if (data.stats?.length > 0) setStats(data.stats);
+      }
+    } catch {}
+    setLoadingPlayer(false);
+  };
+
   const cardRef = useRef<HTMLDivElement>(null);
 
   const autoSubtitle = `${stops.length} teams · ${Math.max(stops.length - 1, 0)} trades`;
@@ -159,6 +231,7 @@ export default function CardBuilderPage() {
       <header className="border-b border-zinc-800 px-4 py-3 flex items-center justify-between shrink-0">
         <div className="flex items-center gap-3">
           <a href="/admin" className="text-zinc-500 hover:text-white text-sm">← Admin</a>
+          <a href="/admin/chart-builder" className="text-zinc-500 hover:text-white text-sm ml-4">📊 Chart Builder</a>
           <h1 className="text-lg font-bold">🎨 Trade Odyssey Card Builder</h1>
         </div>
         <button onClick={handleDownload} className="px-4 py-2 bg-cyan-600 hover:bg-cyan-500 rounded-lg font-semibold text-sm transition-colors">
@@ -171,8 +244,43 @@ export default function CardBuilderPage() {
         <div className="w-[380px] shrink-0 border-r border-zinc-800 overflow-y-auto p-4 space-y-4">
           {/* Header Section */}
           <Section title="Header">
+            {/* Player Selector */}
+            <Label text="Load Player from Data">
+              <div ref={searchRef} className="relative">
+                <input
+                  value={playerSearch}
+                  onChange={e => { setPlayerSearch(e.target.value); setShowPlayerDropdown(true); }}
+                  onFocus={() => setShowPlayerDropdown(true)}
+                  placeholder={loadingPlayer ? "Loading..." : "Search players by name or team..."}
+                  className="input-field"
+                  disabled={loadingPlayer}
+                />
+                {showPlayerDropdown && Object.keys(groupedResults).length > 0 && (
+                  <div className="absolute z-50 top-full left-0 right-0 mt-1 max-h-64 overflow-y-auto bg-zinc-800 border border-zinc-700 rounded-lg shadow-xl">
+                    {Object.entries(groupedResults).map(([team, players]) => (
+                      <div key={team}>
+                        <div className="px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-zinc-500 bg-zinc-900/50 sticky top-0 flex items-center gap-2">
+                          <span className="inline-block w-3 h-3 rounded" style={{ background: TEAM_COLORS[team] || '#666' }} />
+                          {team}
+                        </div>
+                        {players.map(p => (
+                          <button
+                            key={p.slug}
+                            onClick={() => loadPlayer(p.slug)}
+                            className="w-full text-left px-3 py-1.5 hover:bg-zinc-700 text-sm flex justify-between items-center"
+                          >
+                            <span className="text-white">{p.name}</span>
+                            {p.depth > 3 && <span className="text-[10px] text-fuchsia-400">{p.depth}-deep</span>}
+                          </button>
+                        ))}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </Label>
             <Label text="Player Name">
-              <input value={playerName} onChange={e => setPlayerName(e.target.value)} className="input-field" />
+              <input value={playerName} onChange={e => { if (!playerLoaded) setPlayerName(e.target.value); }} readOnly={playerLoaded} className={`input-field ${playerLoaded ? 'opacity-60 cursor-not-allowed' : ''}`} />
             </Label>
             <Label text="Eyebrow Text">
               <input value={eyebrow} onChange={e => setEyebrow(e.target.value)} className="input-field" />
@@ -180,10 +288,12 @@ export default function CardBuilderPage() {
             <Label text="Subtitle (auto if empty)">
               <input value={subtitle} onChange={e => setSubtitle(e.target.value)} placeholder={autoSubtitle} className="input-field" />
             </Label>
-            <Label text="Headshot URL">
-              <input value={headshotUrl} onChange={e => setHeadshotUrl(e.target.value)} placeholder="https://..." className="input-field" />
-            </Label>
-            {headshotUrl && <img src={headshotUrl} alt="" className="w-12 h-12 rounded-full object-cover border border-zinc-700" />}
+            {headshotUrl && (
+              <div className="flex items-center gap-3">
+                <img src={headshotUrl} alt="" className="w-12 h-12 rounded-full object-cover border border-zinc-700" />
+                <span className="text-xs text-zinc-500 truncate flex-1">{playerName} headshot loaded</span>
+              </div>
+            )}
             <Toggle label="Show Headshot" checked={showHeadshot} onChange={setShowHeadshot} />
           </Section>
 
@@ -293,7 +403,7 @@ export default function CardBuilderPage() {
                 }} />
               )}
 
-              <div style={{ position: 'relative', zIndex: 1, padding: '24px 32px 20px', height: '100%', display: 'flex', flexDirection: 'column' }}>
+              <div style={{ position: 'relative', zIndex: 1, padding: '24px 32px 20px', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                 {/* Header */}
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 18 }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
@@ -327,7 +437,7 @@ export default function CardBuilderPage() {
                 )}
 
                 {/* Timeline */}
-                <div style={{ flex: 1, display: 'flex', gap: 6, position: 'relative', marginTop: 10 }}>
+                <div style={{ display: 'flex', gap: 6, position: 'relative', marginTop: 10 }}>
                   {stops.map((stop, si) => (
                     <div key={si} style={{ display: 'contents' }}>
                       {si > 0 && (

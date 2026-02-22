@@ -10,6 +10,26 @@ interface ChangelogEntry {
 
 const changelog: ChangelogEntry[] = [
   {
+    date: "Feb 22, 2026",
+    version: "0.7.0",
+    items: [
+      { type: "feature", text: "Chain navigation arrows — traverse nodes within a trade chain using ◀ ▶ buttons" },
+      { type: "feature", text: "Chart Builder tool in admin — stacked bar charts, scatter plots, 3 export sizes" },
+      { type: "feature", text: "Chain Builder tool in admin — horizontal & vertical chain graphics with PNG/JPEG export" },
+      { type: "feature", text: "Connection dots only show on roster players with trade chains to explore" },
+      { type: "feature", text: "Removed arrow markers on edges pointing to roster players for cleaner visuals" },
+      { type: "data", text: "DAL: Extended Klay Thompson chain — Josh Green + 2 picks from sign-and-trade" },
+      { type: "data", text: "DAL: Added Maxi Kleber & Markieff Morris to Bagley/Christie chains (Luka→LAL trade)" },
+      { type: "data", text: "DAL: Extended Holmes chain with $17M trade exception from Bertans→OKC deal" },
+      { type: "data", text: "ATL: Extended Hunter chain — traces back to 2018 #3 pick (Luka draft-night trade)" },
+      { type: "data", text: "ATL: Extended Kuminga/Hield chains to depth 6 via Porzingis→Niang→Hunter" },
+      { type: "data", text: "CHA: Extended Xavier Tillman chain with $7M trade exception from Tyus Jones deal" },
+      { type: "data", text: "SAC: Extended LaVine, Sabonis, DeRozan chains — verified against Basketball Reference" },
+      { type: "fix", text: "Cash Considerations nodes now correctly show as \"Other\" (cyan) instead of \"Player\"" },
+      { type: "fix", text: "Origin node handles now accept edges from the correct side" },
+    ],
+  },
+  {
     date: "Feb 19, 2026",
     version: "0.6.0",
     items: [

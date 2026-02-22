@@ -32,12 +32,40 @@ function getVisitorId(): string {
   return vid;
 }
 
+// Simple bot detection
+function isBot(): boolean {
+  if (typeof navigator === 'undefined') return true;
+  const ua = navigator.userAgent.toLowerCase();
+  return /bot|crawl|spider|slurp|facebook|twitter|whatsapp|telegram|preview|lighthouse|pagespeed|pingdom|gtmetrix/i.test(ua);
+}
+
+// Dedup: track recent events to prevent duplicates within 2 seconds
+const recentEvents = new Map<string, number>();
+function isDuplicate(event: string, path: string): boolean {
+  const key = `${event}::${path}`;
+  const now = Date.now();
+  const last = recentEvents.get(key);
+  if (last && now - last < 2000) return true;
+  recentEvents.set(key, now);
+  // Clean old entries
+  if (recentEvents.size > 50) {
+    for (const [k, t] of recentEvents) {
+      if (now - t > 10000) recentEvents.delete(k);
+    }
+  }
+  return false;
+}
+
 // Track an event
 export function track(event: string, properties?: Record<string, string | number | boolean | null>) {
   if (typeof window === 'undefined') return;
   // Skip tracking on local/dev instances
   const host = window.location.hostname;
   if (host === 'localhost' || host === '127.0.0.1' || host.startsWith('100.') || host.startsWith('192.168.') || host.startsWith('10.')) return;
+  // Skip bots
+  if (isBot()) return;
+  // Skip duplicate events (same event+path within 2s)
+  if (isDuplicate(event, window.location.pathname)) return;
   
   const payload = {
     event,
@@ -94,13 +122,31 @@ export function trackSearch(query: string) {
 
 // Track time on page (fires on unload)
 let pageLoadTime: number | null = null;
+let pageTimerBound = false;
+let pageDurationFired = false;
+
+function handlePageUnload() {
+  if (pageLoadTime && !pageDurationFired) {
+    pageDurationFired = true;
+    const duration = Math.round((Date.now() - pageLoadTime) / 1000);
+    // Cap at 30 minutes — anything longer is an idle tab
+    const cappedDuration = Math.min(duration, 1800);
+    // Only track if user spent at least 2 seconds (filter bots/accidental loads)
+    if (cappedDuration >= 2) {
+      track('page_duration', { seconds: cappedDuration, path: window.location.pathname });
+    }
+  }
+}
+
 export function startPageTimer() {
   pageLoadTime = Date.now();
-  if (typeof window !== 'undefined') {
-    window.addEventListener('beforeunload', () => {
-      if (pageLoadTime) {
-        const duration = Math.round((Date.now() - pageLoadTime) / 1000);
-        track('page_duration', { seconds: duration, path: window.location.pathname });
+  pageDurationFired = false;
+  if (typeof window !== 'undefined' && !pageTimerBound) {
+    pageTimerBound = true;
+    window.addEventListener('beforeunload', handlePageUnload);
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'hidden') {
+        handlePageUnload();
       }
     });
   }

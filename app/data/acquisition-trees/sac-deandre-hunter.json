@@ -68,8 +68,19 @@
                 "date": "2025-02-03",
                 "tradePartner": "SAS",
                 "tradeDescription": "Received from Spurs in the De'Aaron Fox 3-team trade",
-                "note": "Young wing from Spurs",
-                "isOrigin": true
+                "note": "Wing drafted #44 overall by SAS in 2023. Shared cost with Zach LaVine trade",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "De'Aaron Fox",
+                    "acquisitionType": "draft",
+                    "date": "2017-06-22",
+                    "draftPick": 5,
+                    "draftRound": 1,
+                    "note": "Guard drafted 5th overall from Kentucky. Shared cost \u2014 also produced Zach LaVine",
+                    "isOrigin": true
+                  }
+                ]
               },
               {
                 "type": "pick",

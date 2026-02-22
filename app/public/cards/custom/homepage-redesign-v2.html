@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=General+Sans:wght@400;500;600;700;800&family=Newsreader:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1400px; min-height: 1800px;
+    background: #0c0c0e;
+    font-family: 'General Sans', system-ui, sans-serif;
+    color: #e4e4e7;
+    overflow-x: hidden;
+  }
+
+  /* --- Header --- */
+  header {
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    padding: 18px 48px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo { display: flex; align-items: center; gap: 10px; }
+  .logo-mark {
+    width: 32px; height: 32px; border-radius: 8px;
+    background: linear-gradient(135deg, #16a34a, #059669);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px; font-weight: 800; color: white;
+  }
+  .logo-text { font-size: 18px; font-weight: 800; color: white; letter-spacing: -0.3px; }
+  .logo-sub { font-size: 9px; color: #52525b; text-transform: uppercase; letter-spacing: 2px; margin-top: 1px; }
+  .header-nav { display: flex; align-items: center; gap: 20px; }
+  .header-nav a { font-size: 13px; color: #71717a; text-decoration: none; }
+  .beta-tag { font-size: 10px; font-weight: 700; color: #16a34a; background: rgba(22,163,74,0.1); border: 1px solid rgba(22,163,74,0.2); padding: 3px 10px; border-radius: 20px; }
+
+  /* --- Hero --- */
+  .hero {
+    padding: 80px 48px 60px;
+    max-width: 900px;
+    /* LEFT aligned, not centered */
+  }
+  .hero-eyebrow {
+    font-size: 12px; font-weight: 600; color: #16a34a;
+    text-transform: uppercase; letter-spacing: 2.5px; margin-bottom: 16px;
+  }
+  .hero h2 {
+    font-size: 64px; font-weight: 800; color: #fafafa;
+    line-height: 1.05; letter-spacing: -2px; margin-bottom: 20px;
+    /* NO gradient — bold white */
+  }
+  .hero h2 em {
+    font-family: 'Newsreader', Georgia, serif;
+    font-style: italic; font-weight: 600;
+    color: #a1a1aa;
+  }
+  .hero p {
+    font-size: 18px; color: #71717a; line-height: 1.6;
+    max-width: 560px; margin-bottom: 32px;
+  }
+  .search-bar {
+    width: 480px; padding: 14px 20px;
+    background: #18181b; border: 1px solid #27272a;
+    border-radius: 12px; color: #71717a; font-size: 15px;
+    font-family: 'General Sans', system-ui; outline: none;
+  }
+  .search-bar:focus { border-color: #16a34a; }
+
+  /* --- Teams Section --- */
+  .teams-section {
+    padding: 0 48px 60px;
+    /* NO outer card wrapper — teams breathe on page bg */
+  }
+  .section-label {
+    font-size: 11px; font-weight: 700; color: #52525b;
+    text-transform: uppercase; letter-spacing: 2px; margin-bottom: 16px;
+  }
+  .teams-grid {
+    display: grid; grid-template-columns: repeat(5, 1fr);
+    gap: 8px; margin-bottom: 40px;
+  }
+  .team-card {
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px 14px;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    cursor: pointer; transition: all 0.15s;
+    text-decoration: none;
+  }
+  .team-card:hover {
+    background: #18181b;
+    border-color: #27272a;
+  }
+  .team-dot {
+    width: 32px; height: 32px; border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 10px; font-weight: 800; color: white; flex-shrink: 0;
+  }
+  .team-info { display: flex; flex-direction: column; }
+  .team-name { font-size: 13px; font-weight: 600; color: #d4d4d8; }
+  .team-abbr-label { font-size: 10px; color: #52525b; }
+
+  /* --- Featured --- */
+  .featured {
+    padding: 0 48px 60px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+  }
+  .feature-card {
+    padding: 32px;
+    border: 1px solid #1c1c1f;
+    border-radius: 16px;
+    background: #111113;
+    position: relative; overflow: hidden;
+  }
+  .feature-card.primary {
+    grid-column: span 2;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;
+  }
+  .feature-label {
+    font-size: 10px; font-weight: 700; color: #16a34a;
+    text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;
+  }
+  .feature-title {
+    font-size: 28px; font-weight: 800; color: #fafafa;
+    line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 10px;
+  }
+  .feature-desc {
+    font-size: 14px; color: #71717a; line-height: 1.5; margin-bottom: 16px;
+  }
+  .feature-link {
+    font-size: 13px; font-weight: 600; color: #16a34a;
+    text-decoration: none; display: inline-flex; align-items: center; gap: 6px;
+  }
+  .chain-preview {
+    display: flex; flex-direction: column; gap: 6px;
+  }
+  .chain-step {
+    display: flex; align-items: center; gap: 10px;
+    padding: 8px 12px; border-radius: 8px;
+    background: #18181b; border-left: 3px solid;
+  }
+  .chain-step.origin { border-left-color: #16a34a; }
+  .chain-step.trade { border-left-color: #3b82f6; }
+  .chain-step.pick { border-left-color: #a855f7; }
+  .chain-step.star { border-left-color: #f59e0b; }
+  .chain-year { font-size: 10px; color: #52525b; font-weight: 600; width: 36px; }
+  .chain-name { font-size: 13px; font-weight: 600; color: #d4d4d8; }
+  .chain-note { font-size: 10px; color: #52525b; margin-left: auto; }
+  .chain-connector { width: 36px; text-align: center; color: #27272a; font-size: 10px; padding: 0 0 0 8px; }
+
+  /* Small feature cards */
+  .feature-stat { font-size: 48px; font-weight: 800; color: #fafafa; letter-spacing: -2px; line-height: 1; margin-bottom: 4px; }
+  .feature-stat-label { font-size: 12px; color: #52525b; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
+
+  /* --- Email --- */
+  .email-section {
+    padding: 0 48px 80px;
+  }
+  .email-box {
+    padding: 40px 48px;
+    border: 1px solid #1c1c1f;
+    border-radius: 16px;
+    background: #111113;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .email-text h3 { font-size: 22px; font-weight: 800; color: #fafafa; margin-bottom: 4px; }
+  .email-text p { font-size: 14px; color: #52525b; }
+  .email-form { display: flex; gap: 8px; }
+  .email-input {
+    padding: 12px 18px; background: #18181b; border: 1px solid #27272a;
+    border-radius: 10px; color: white; font-size: 14px; width: 260px;
+    font-family: 'General Sans', system-ui; outline: none;
+  }
+  .email-btn {
+    padding: 12px 24px; background: #16a34a; border: none;
+    border-radius: 10px; color: white; font-size: 14px; font-weight: 700;
+    font-family: 'General Sans', system-ui; cursor: pointer;
+  }
+
+  /* --- Footer --- */
+  footer {
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding: 20px 48px;
+    display: flex; align-items: center; justify-content: space-between;
+    font-size: 12px; color: #3f3f46;
+  }
+  footer a { color: #52525b; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="logo">
+    <div class="logo-mark">R</div>
+    <div>
+      <div class="logo-text">RosterDNA</div>
+      <div class="logo-sub">Trade chain intelligence</div>
+    </div>
+  </div>
+  <div class="header-nav">
+    <a href="#">FAQ</a>
+    <a href="#">@RosterDNA</a>
+    <span class="beta-tag">BETA</span>
+  </div>
+</header>
+
+<!-- Hero — LEFT ALIGNED, no gradient text -->
+<section class="hero">
+  <div class="hero-eyebrow">512 players · 30 teams · every chain traced</div>
+  <h2>How was your<br>team <em>actually</em> built?</h2>
+  <p>Trace the chain of trades, draft picks, and signings behind every NBA roster. From the Celtics-Nets heist to OKC's draft empire — the full story, visualized.</p>
+  <input class="search-bar" placeholder="Search any player or team..." />
+</section>
+
+<!-- Teams — NO wrapper card, horizontal list style -->
+<section class="teams-section">
+  <div class="section-label">Eastern Conference</div>
+  <div class="teams-grid">
+    <a class="team-card"><div class="team-dot" style="background:#E03A3E">ATL</div><div class="team-info"><span class="team-name">Hawks</span></div></a>
+    <a class="team-card"><div class="team-dot" style="background:#000000">BKN</div><div class="team-info"><span class="team-name">Nets</span></div></a>
+    <a class="team-card"><div class="team-dot" style="background:#007A33">BOS</div><div class="team-info"><span class="team-name">Celtics</span></div></a>
+    <a class="team-card"><div class="team-dot" style="background:#00788C">CHA</div><div class="team-info"><span class="team-name">Hornets</span></div></a>
+    <a class="team-card"><div class="team-dot" style="background:#CE1141">CHI</div><div class="team-info"><span class="team-name">Bulls</span></div></a>
+    <a class="team-card"><div class="team-dot" style="background:#860038">CLE</div><div class="team-info"><span class="team-name">Cavaliers</span></div></a>
+    <a class="team-card"><div class="team-dot" style="background:#C8102E">DET</div><div class="team-info"><span class="team-name">Pistons</span></div></a>
+    <a class="team-card"><div class="team-dot" style="background:#002D62">IND</div><div class="team-info"><span class="team-name">Pacers</span></div></a>
+    <a class="team-card"><div class="team-dot" style="background:#98002E">MIA</div><div class="team-info"><span class="team-name">Heat</span></div></a>
+    <a class="team-card"><div class="team-dot" style="background:#00471B">MIL</div><div class="team-info"><span class="team-name">Bucks</span></div></a>
+    <a class="team-card"><div class="team-dot" style="background:#F58426">NYK</div><div class="team-info"><span class="team-name">Knicks</span></div></a>
+    <a class="team-card"><div class="team-dot" style="background:#0077C0">ORL</div><div class="team-info"><span class="team-name">Magic</span></div></a>
+    <a class="team-card"><div class="team-dot" style="background:#006BB6">PHI</div><div class="team-info"><span class="team-name">76ers</span></div></a>
+    <a class="team-card"><div class="team-dot" style="background:#CE1141">TOR</div><div class="team-info"><span class="team-name">Raptors</span></div></a>
+    <a class="team-card"><div class="team-dot" style="background:#002B5C">WAS</div><div class="team-info"><span class="team-name">Wizards</span></div></a>
+  </div>
+
+  <div class="section-label">Western Conference</div>
+  <div class="teams-grid">
+    <a class="team-card"><div class="team-dot" style="background:#00538C">DAL</div><div class="team-info"><span class="team-name">Mavericks</span></div></a>
+    <a class="team-card"><div class="team-dot" style="background:#0E2240">DEN</div><div class="team-info"><span class="team-name">Nuggets</span></div></a>
+    <a class="team-card"><div class="team-dot" style="background:#FFC72C">GSW</div><div class="team-info"><span class="team-name">Warriors</span></div></a>
+    <a class="team-card"><div class="team-dot" style="background:#CE1141">HOU</div><div class="team-info"><span class="team-name">Rockets</span></div></a>
+    <a class="team-card"><div class="team-dot" style="background:#C8102E">LAC</div><div class="team-info"><span class="team-name">Clippers</span></div></a>
+    <a class="team-card"><div class="team-dot" style="background:#552583">LAL</div><div class="team-info"><span class="team-name">Lakers</span></div></a>
+    <a class="team-card"><div class="team-dot" style="background:#5D76A9">MEM</div><div class="team-info"><span class="team-name">Grizzlies</span></div></a>
+    <a class="team-card"><div class="team-dot" style="background:#0C2340">MIN</div><div class="team-info"><span class="team-name">Timberwolves</span></div></a>
+    <a class="team-card"><div class="team-dot" style="background:#B4975A">NOP</div><div class="team-info"><span class="team-name">Pelicans</span></div></a>
+    <a class="team-card"><div class="team-dot" style="background:#007AC1">OKC</div><div class="team-info"><span class="team-name">Thunder</span></div></a>
+    <a class="team-card"><div class="team-dot" style="background:#1D1160">PHX</div><div class="team-info"><span class="team-name">Suns</span></div></a>
+    <a class="team-card"><div class="team-dot" style="background:#E03A3E">POR</div><div class="team-info"><span class="team-name">Trail Blazers</span></div></a>
+    <a class="team-card"><div class="team-dot" style="background:#5A2D81">SAC</div><div class="team-info"><span class="team-name">Kings</span></div></a>
+    <a class="team-card"><div class="team-dot" style="background:#C4CED4">SAS</div><div class="team-info"><span class="team-name">Spurs</span></div></a>
+    <a class="team-card"><div class="team-dot" style="background:#3E1175">UTA</div><div class="team-info"><span class="team-name">Jazz</span></div></a>
+  </div>
+</section>
+
+<!-- Featured Stories — asymmetric grid -->
+<section class="featured">
+  <!-- Primary: Celtics-Nets chain -->
+  <div class="feature-card primary">
+    <div>
+      <div class="feature-label">Featured Chain</div>
+      <div class="feature-title">The trade that built<br>a dynasty</div>
+      <div class="feature-desc">In 2013, Boston sent KG and Pierce to Brooklyn for unprotected first-round picks. Those picks became Jaylen Brown, Jayson Tatum, and eventually Jrue Holiday. One trade. Three starters. One championship.</div>
+      <a class="feature-link" href="#">Explore the full Celtics tree →</a>
+    </div>
+    <div class="chain-preview">
+      <div class="chain-step origin">
+        <span class="chain-year">2013</span>
+        <span class="chain-name">KG + Pierce → Brooklyn</span>
+        <span class="chain-note">4 unprotected 1sts</span>
+      </div>
+      <div class="chain-connector">↓</div>
+      <div class="chain-step pick">
+        <span class="chain-year">2016</span>
+        <span class="chain-name">Pick #3 → Jaylen Brown</span>
+        <span class="chain-note">🏆 Finals MVP</span>
+      </div>
+      <div class="chain-connector">↓</div>
+      <div class="chain-step pick">
+        <span class="chain-year">2017</span>
+        <span class="chain-name">Pick #1 → Jayson Tatum</span>
+        <span class="chain-note">5× All-Star</span>
+      </div>
+      <div class="chain-connector">↓</div>
+      <div class="chain-step trade">
+        <span class="chain-year">2023</span>
+        <span class="chain-name">Picks → Jrue Holiday</span>
+        <span class="chain-note">via Lillard trade</span>
+      </div>
+      <div class="chain-connector">↓</div>
+      <div class="chain-step star">
+        <span class="chain-year">2024</span>
+        <span class="chain-name">NBA Champions</span>
+        <span class="chain-note">🏆</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Secondary cards -->
+  <div class="feature-card">
+    <div class="feature-label">Deepest Chain</div>
+    <div class="feature-stat">11</div>
+    <div class="feature-stat-label">Levels deep</div>
+    <div class="feature-title" style="font-size:20px; margin-top:12px;">Moïso → Vucevic</div>
+    <div class="feature-desc">A 2000 draft bust became a 2× All-Star through 26 years and 9 teams.</div>
+    <a class="feature-link" href="#">Trace the chain →</a>
+  </div>
+
+  <div class="feature-card">
+    <div class="feature-label">Butterfly Effect</div>
+    <div class="feature-stat">2008</div>
+    <div class="feature-stat-label">Seattle SuperSonics</div>
+    <div class="feature-title" style="font-size:20px; margin-top:12px;">Ibaka → SGA</div>
+    <div class="feature-desc">A mid-first pick by a team that no longer exists became the best player in basketball.</div>
+    <a class="feature-link" href="#">Trace the chain →</a>
+  </div>
+</section>
+
+<!-- Email — horizontal layout, no card-in-card -->
+<section class="email-section">
+  <div class="email-box">
+    <div class="email-text">
+      <h3>Get updates as RosterDNA evolves</h3>
+      <p>New features, new chains, new stories. No spam, ever.</p>
+    </div>
+    <div class="email-form">
+      <input class="email-input" placeholder="your@email.com" />
+      <button class="email-btn">Notify Me</button>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div>
+    <span style="font-weight:700; color:#52525b;">RosterDNA</span>
+    <span style="margin:0 8px;">·</span>
+    <span>Data from Basketball-Reference</span>
+  </div>
+  <div style="display:flex; gap:16px;">
+    <a href="#">FAQ</a>
+    <a href="#">@RosterDNA</a>
+  </div>
+</footer>
+
+</body>
+</html>

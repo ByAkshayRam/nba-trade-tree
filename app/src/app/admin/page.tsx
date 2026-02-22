@@ -144,6 +144,9 @@ export default function AdminPage() {
               <a href="/admin/card-builder" className="text-[10px] sm:text-xs px-2 sm:px-3 py-1 rounded bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 font-semibold hover:bg-cyan-500/30 transition-colors">
                 🎨 Card Builder
               </a>
+              <a href="/admin/chain-builder" className="text-[10px] sm:text-xs px-2 sm:px-3 py-1 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 font-semibold hover:bg-emerald-500/30 transition-colors">
+                🔗 Chain Builder
+              </a>
             </div>
             <div className="flex items-center gap-2">
               <label className="hidden sm:flex items-center gap-2 text-xs text-zinc-400 cursor-pointer">

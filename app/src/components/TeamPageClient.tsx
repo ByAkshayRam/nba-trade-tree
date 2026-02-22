@@ -84,6 +84,8 @@ interface TeamPageClientProps {
     nodes: any[];
     edges: any[];
     teamColors: { primary: string; secondary: string };
+    avgExperience?: number;
+    experienceRank?: number;
     tradePartners?: { abbr: string; name: string; count: number; players: string[]; color: string }[];
   };
   teamAbbr: string;
@@ -248,7 +250,7 @@ export default function TeamPageClient({ data, teamAbbr }: TeamPageClientProps) 
 
       {/* Stats Row */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-6">
-        <div className="grid grid-cols-3 sm:grid-cols-6 gap-2 sm:gap-4">
+        <div className="grid grid-cols-3 sm:grid-cols-7 gap-2 sm:gap-4">
           <div className="bg-gray-900 rounded-lg p-3 sm:p-4 text-center">
             <div className="text-xl sm:text-3xl font-bold text-green-500">{data.rosterCount}</div>
             <div className="text-[10px] sm:text-xs text-gray-400 mt-1">Roster</div>
@@ -273,6 +275,12 @@ export default function TeamPageClient({ data, teamAbbr }: TeamPageClientProps) 
             <div className="text-xl sm:text-3xl font-bold text-rose-500">{data.earliestOrigin}</div>
             <div className="text-[10px] sm:text-xs text-gray-400 mt-1">Earliest</div>
           </div>
+          {data.avgExperience != null && (
+            <div className="bg-gray-900 rounded-lg p-3 sm:p-4 text-center">
+              <div className="text-xl sm:text-3xl font-bold text-amber-400">{data.avgExperience}<span className="text-sm text-gray-500">yr</span></div>
+              <div className="text-[10px] sm:text-xs text-gray-400 mt-1">Avg Experience {data.experienceRank && <span className="text-[9px] text-gray-500">(#{data.experienceRank})</span>}</div>
+            </div>
+          )}
         </div>
       </div>
 

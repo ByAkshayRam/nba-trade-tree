@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1200px; height: 1500px;
+    background: #0a0a0f;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    overflow: hidden;
+    position: relative;
+  }
+
+  body::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: 
+      linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .container { position: relative; z-index: 1; padding: 40px 48px; height: 100%; display: flex; flex-direction: column; }
+
+  .header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 32px; }
+  .header-left { display: flex; align-items: center; gap: 18px; }
+  .headshot-wrap {
+    width: 72px; height: 72px; border-radius: 50%; overflow: hidden; border: 3px solid #22d3ee;
+    background: #1a1a2e; flex-shrink: 0;
+  }
+  .headshot-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+  .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #22d3ee; margin-bottom: 4px; }
+  .title { font-size: 32px; font-weight: 900; line-height: 1.1; }
+  .subtitle { font-size: 13px; color: #94a3b8; margin-top: 4px; font-weight: 500; }
+  .subtitle span { color: #22d3ee; font-weight: 700; }
+  .brand { text-align: right; }
+  .brand-name { font-size: 16px; font-weight: 800; color: white; }
+  .brand-tag { font-size: 9px; font-weight: 600; color: #22d3ee; letter-spacing: 2px; text-transform: uppercase; margin-top: 2px; }
+
+  .chain { flex: 1; display: flex; flex-direction: column; gap: 0; position: relative; }
+
+  .link { display: flex; align-items: stretch; gap: 16px; }
+
+  .spine { display: flex; flex-direction: column; align-items: center; width: 48px; flex-shrink: 0; }
+  .dot {
+    width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center;
+    font-size: 9px; font-weight: 800; color: white; flex-shrink: 0; z-index: 2;
+  }
+  .line { flex: 1; width: 2px; background: linear-gradient(180deg, #22d3ee44, #22d3ee11); }
+
+  .card {
+    flex: 1; background: #1e1e2e; border-radius: 12px; padding: 12px 16px;
+    margin-bottom: 8px; border-left: 3px solid; position: relative;
+  }
+  .card.origin { border-left-color: #22c55e; background: #1a2e1e; }
+  .card.draft { border-left-color: #d946ef; }
+  .card.trade { border-left-color: #0066ff; }
+  .card.pick { border-left-color: #d946ef; }
+
+  .card-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px; }
+  .card-type { font-size: 8px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
+  .card.origin .card-type { color: #22c55e; }
+  .card.draft .card-type { color: #d946ef; }
+  .card.trade .card-type { color: #0066ff; }
+  .card.pick .card-type { color: #d946ef; }
+  .card-year { font-size: 10px; color: #64748b; font-weight: 600; }
+
+  .card-name { font-size: 16px; font-weight: 800; color: white; line-height: 1.2; }
+  .card-detail { font-size: 11px; color: #94a3b8; margin-top: 2px; line-height: 1.3; }
+  .card-detail em { color: #64748b; font-style: normal; }
+
+  .depth-badge {
+    position: absolute; right: 14px; top: 50%; transform: translateY(-50%);
+    font-size: 28px; font-weight: 900; color: #22d3ee10;
+  }
+
+  .arrow-label {
+    font-size: 9px; color: #22d3ee; font-weight: 600; letter-spacing: 0.5px;
+    padding: 2px 0 2px 64px; opacity: 0.7;
+  }
+
+  .footer {
+    display: flex; gap: 48px; margin-top: 24px; padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    align-items: center;
+  }
+  .stat-value { font-size: 36px; font-weight: 900; color: #22d3ee; }
+  .stat-label { font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #64748b; margin-top: 2px; }
+
+  .callout {
+    margin-left: auto; background: #22c55e15; border: 1px solid #22c55e30;
+    border-radius: 10px; padding: 10px 18px; text-align: center;
+  }
+  .callout-text { font-size: 12px; font-weight: 700; color: #22c55e; }
+  .callout-sub { font-size: 9px; color: #64748b; margin-top: 2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <div class="header-left">
+      <div class="headshot-wrap">
+        <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/202696.png" alt="Vucevic">
+      </div>
+      <div>
+        <div class="eyebrow">The Longest Active Chain in the NBA</div>
+        <div class="title">Nikola Vucevic</div>
+        <div class="subtitle">11 levels deep · 26 years · Origin: <span>Jérôme Moïso (2000)</span></div>
+      </div>
+    </div>
+    <div class="brand">
+      <div class="brand-name">RosterDNA</div>
+      <div class="brand-tag">Trade Chain Intelligence</div>
+    </div>
+  </div>
+
+  <div class="chain">
+
+    <!-- Level 1: Moïso (Origin) -->
+    <div class="link">
+      <div class="spine">
+        <div class="dot" style="background:#007A33;">BOS</div>
+        <div class="line"></div>
+      </div>
+      <div class="card origin">
+        <div class="card-top"><span class="card-type">🌱 Origin · Draft</span><span class="card-year">2000</span></div>
+        <div class="card-name">Jérôme Moïso</div>
+        <div class="card-detail">#11 overall pick · Averaged 1.5 PPG · Out of league in 4 years</div>
+        <div class="depth-badge">1</div>
+      </div>
+    </div>
+    <div class="arrow-label">↓ Traded to PHI for pick that became…</div>
+
+    <!-- Level 2: Dahntay Jones -->
+    <div class="link">
+      <div class="spine">
+        <div class="dot" style="background:#006BB6;">PHI</div>
+        <div class="line"></div>
+      </div>
+      <div class="card pick">
+        <div class="card-top"><span class="card-type">Draft Pick</span><span class="card-year">2003</span></div>
+        <div class="card-name">Dahntay Jones</div>
+        <div class="card-detail">2003 1st Round Pick (#20 from PHI) · Used in draft night trade</div>
+        <div class="depth-badge">2</div>
+      </div>
+    </div>
+    <div class="arrow-label">↓ Packaged with Troy Bell to MEM for…</div>
+
+    <!-- Level 3: Kendrick Perkins -->
+    <div class="link">
+      <div class="spine">
+        <div class="dot" style="background:#5D76A9;">MEM</div>
+        <div class="line"></div>
+      </div>
+      <div class="card trade">
+        <div class="card-top"><span class="card-type">Trade</span><span class="card-year">2003</span></div>
+        <div class="card-name">Kendrick Perkins</div>
+        <div class="card-detail">Draft night swap · Key to 2008 championship · Tore ACL in 2010 Finals G6</div>
+        <div class="depth-badge">3</div>
+      </div>
+    </div>
+    <div class="arrow-label">↓ Traded to OKC with Nate Robinson for…</div>
+
+    <!-- Level 4: Jeff Green -->
+    <div class="link">
+      <div class="spine">
+        <div class="dot" style="background:#007AC1;">OKC</div>
+        <div class="line"></div>
+      </div>
+      <div class="card trade">
+        <div class="card-top"><span class="card-type">Trade</span><span class="card-year">2011</span></div>
+        <div class="card-name">Jeff Green</div>
+        <div class="card-detail">Missed entire 2012 season for heart surgery</div>
+        <div class="depth-badge">4</div>
+      </div>
+    </div>
+    <div class="arrow-label">↓ Traded to MEM · Pick finally conveyed in 2020 as…</div>
+
+    <!-- Level 5: Aaron Nesmith -->
+    <div class="link">
+      <div class="spine">
+        <div class="dot" style="background:#5D76A9;">MEM</div>
+        <div class="line"></div>
+      </div>
+      <div class="card draft">
+        <div class="card-top"><span class="card-type">Draft Pick</span><span class="card-year">2020</span></div>
+        <div class="card-name">Aaron Nesmith</div>
+        <div class="card-detail">2020 1st Round (#14 from MEM) · Pick was heavily protected, took 5 years to convey</div>
+        <div class="depth-badge">5</div>
+      </div>
+    </div>
+    <div class="arrow-label">↓ Packaged to IND for…</div>
+
+    <!-- Level 6: Malcolm Brogdon -->
+    <div class="link">
+      <div class="spine">
+        <div class="dot" style="background:#002D62;">IND</div>
+        <div class="line"></div>
+      </div>
+      <div class="card trade">
+        <div class="card-top"><span class="card-type">Trade</span><span class="card-year">2022</span></div>
+        <div class="card-name">Malcolm Brogdon</div>
+        <div class="card-detail">2023 Sixth Man of the Year</div>
+        <div class="depth-badge">6</div>
+      </div>
+    </div>
+    <div class="arrow-label">↓ Included in Lillard mega-trade to POR for…</div>
+
+    <!-- Level 7: Jrue Holiday -->
+    <div class="link">
+      <div class="spine">
+        <div class="dot" style="background:#E03A3E;">POR</div>
+        <div class="line"></div>
+      </div>
+      <div class="card trade">
+        <div class="card-top"><span class="card-type">Trade</span><span class="card-year">2023</span></div>
+        <div class="card-name">Jrue Holiday</div>
+        <div class="card-detail">Part of Damian Lillard mega-trade · 2024 NBA Champion 🏆</div>
+        <div class="depth-badge">7</div>
+      </div>
+    </div>
+    <div class="arrow-label">↓ Traded to POR for…</div>
+
+    <!-- Level 8: Anfernee Simons -->
+    <div class="link">
+      <div class="spine">
+        <div class="dot" style="background:#E03A3E;">POR</div>
+        <div class="line"></div>
+      </div>
+      <div class="card trade">
+        <div class="card-top"><span class="card-type">Trade</span><span class="card-year">2025</span></div>
+        <div class="card-name">Anfernee Simons</div>
+        <div class="card-detail">Traded from Portland for Holiday · Brief Celtics tenure before being flipped</div>
+        <div class="depth-badge">8</div>
+      </div>
+    </div>
+    <div class="arrow-label">↓ Flipped to CHI for…</div>
+
+    <!-- Level 9: Nikola Vucevic -->
+    <div class="link">
+      <div class="spine">
+        <div class="dot" style="background:#CE1141;">CHI</div>
+        <div class="line"></div>
+      </div>
+      <div class="card trade" style="border-left-color: #22d3ee; background: #1e2430; box-shadow: 0 0 20px #22d3ee15;">
+        <div class="card-top"><span class="card-type" style="color:#22d3ee;">★ Current Player</span><span class="card-year">2026</span></div>
+        <div class="card-name" style="font-size: 20px;">Nikola Vucevic</div>
+        <div class="card-detail">2x All-Star · Acquired from Chicago for Simons + 2026 2nd</div>
+        <div class="depth-badge" style="color: #22d3ee20;">9</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div>
+      <div class="stat-value">11</div>
+      <div class="stat-label">Chain Depth</div>
+    </div>
+    <div>
+      <div class="stat-value">26</div>
+      <div class="stat-label">Years</div>
+    </div>
+    <div>
+      <div class="stat-value">7</div>
+      <div class="stat-label">Teams Touched</div>
+    </div>
+    <div>
+      <div class="stat-value">1</div>
+      <div class="stat-label">Championship</div>
+    </div>
+    <div class="callout">
+      <div class="callout-text">From the biggest bust to a 2x All-Star</div>
+      <div class="callout-sub">The ultimate butterfly effect</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -58,9 +58,79 @@
             "acquisitionType": "trade",
             "date": "2022-02-08",
             "tradePartner": "IND",
-            "tradeDescription": "Received from Pacers in the Sabonis trade",
-            "note": "Veteran guard/forward",
-            "isOrigin": true
+            "tradeDescription": "Received from Pacers along with Sabonis and Jeremy Lamb for Tyrese Haliburton, Buddy Hield, and Tristan Thompson",
+            "note": "Shared cost with Domantas Sabonis trade",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Tyrese Haliburton",
+                "acquisitionType": "draft",
+                "date": "2020-11-18",
+                "draftPick": 12,
+                "draftRound": 1,
+                "note": "Guard drafted 12th overall from Iowa State",
+                "isOrigin": true
+              },
+              {
+                "type": "player",
+                "name": "Buddy Hield",
+                "acquisitionType": "trade",
+                "date": "2017-02-20",
+                "tradePartner": "NOP",
+                "tradeDescription": "Traded from Pelicans to Kings along with Tyreke Evans, Langston Galloway, 2017 1st and 2017 2nd for DeMarcus Cousins and Omri Casspi",
+                "note": "Guard, originally drafted 6th overall by New Orleans in 2016",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "DeMarcus Cousins",
+                    "acquisitionType": "draft",
+                    "date": "2010-06-24",
+                    "draftPick": 5,
+                    "draftRound": 1,
+                    "note": "Center drafted 5th overall from Kentucky",
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "player",
+                    "name": "Omri Casspi",
+                    "acquisitionType": "free-agent",
+                    "date": "2015-07-14",
+                    "note": "Forward re-signed as free agent (second stint with Kings)",
+                    "isOrigin": true
+                  }
+                ]
+              },
+              {
+                "type": "player",
+                "name": "Tristan Thompson",
+                "acquisitionType": "trade",
+                "date": "2021-08-07",
+                "tradePartner": "BOS",
+                "tradeDescription": "3-team trade: SAC sent Delon Wright to ATL; BOS sent Tristan Thompson to SAC; ATL sent Kris Dunn and Bruno Fernando to BOS",
+                "note": "Veteran center",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Delon Wright",
+                    "acquisitionType": "trade",
+                    "date": "2021-03-25",
+                    "tradePartner": "DET",
+                    "tradeDescription": "Traded from Pistons for Cory Joseph and two 2nd-round picks",
+                    "note": "Guard acquired at 2021 trade deadline",
+                    "assetsGivenUp": [
+                      {
+                        "type": "player",
+                        "name": "Cory Joseph",
+                        "acquisitionType": "free-agent",
+                        "date": "2019-07-06",
+                        "note": "Guard signed as free agent",
+                        "isOrigin": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           },
           {
             "type": "pick",

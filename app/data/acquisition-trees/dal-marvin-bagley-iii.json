@@ -24,7 +24,7 @@
         "acquisitionType": "trade",
         "date": "2025-02-02",
         "tradePartner": "LAL",
-        "tradeDescription": "Dallas received AD from Lakers in the Luka Doncic trade",
+        "tradeDescription": "Dallas received AD, Max Christie, and a 2029 1st from Lakers for Luka Doncic, Maxi Kleber, and Markieff Morris",
         "note": "Kentucky forward, 2012 #1 pick by New Orleans",
         "isOrigin": false,
         "assetsGivenUp": [
@@ -59,6 +59,22 @@
                 "isOrigin": true
               }
             ]
+          },
+          {
+            "type": "player",
+            "name": "Maxi Kleber",
+            "acquisitionType": "free-agent",
+            "date": "2017-07-20",
+            "note": "German forward, signed as international free agent from Brose Bamberg in 2017. Sent to LAL with Doncic in AD trade.",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Markieff Morris",
+            "acquisitionType": "free-agent",
+            "date": "2024-09-20",
+            "note": "Veteran forward, signed as free agent. Sent to LAL with Doncic in AD trade.",
+            "isOrigin": true
           }
         ]
       }

@@ -14,7 +14,7 @@
     "date": "2025-02-02",
     "currentTeam": "DAL",
     "tradePartner": "LAL",
-    "tradeDescription": "Dallas acquired Christie, Anthony Davis and a 2029 1st from Lakers for Luka Doncic",
+    "tradeDescription": "Dallas acquired Christie, Anthony Davis and a 2029 1st from Lakers for Luka Doncic, Maxi Kleber, and Markieff Morris",
     "note": "Michigan State guard, 2022 #35 pick by Los Angeles Lakers",
     "isOrigin": false,
     "assetsGivenUp": [
@@ -50,6 +50,22 @@
             "isOrigin": true
           }
         ]
+      },
+      {
+        "type": "player",
+        "name": "Maxi Kleber",
+        "acquisitionType": "free-agent",
+        "date": "2017-07-20",
+        "note": "German forward, signed as international free agent from Brose Bamberg in 2017. Shared cost with Bagley (AD trade).",
+        "isOrigin": true
+      },
+      {
+        "type": "player",
+        "name": "Markieff Morris",
+        "acquisitionType": "free-agent",
+        "date": "2024-09-20",
+        "note": "Veteran forward, signed as free agent. Shared cost with Bagley (AD trade).",
+        "isOrigin": true
       }
     ]
   }

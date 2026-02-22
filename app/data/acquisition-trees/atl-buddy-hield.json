@@ -38,12 +38,11 @@
               {
                 "type": "player",
                 "name": "De'Andre Hunter",
-                "acquisitionType": "trade",
-                "date": "2019-07-08",
-                "tradePartner": "DAL",
-                "tradeDescription": "Hawks acquired the #4 pick from Mavericks (via draft night trade involving Luka Doncic) and selected Hunter",
+                "acquisitionType": "draft",
+                "date": "2019-06-20",
                 "draftPick": 4,
-                "note": "Virginia product, #4 overall pick in 2019. Hawks' own pick from Luka trade compensation.",
+                "draftRound": 1,
+                "note": "Virginia product, #4 overall pick 2019. Atlanta's own draft pick.",
                 "isOrigin": true
               }
             ]
@@ -54,12 +53,12 @@
             "acquisitionType": "trade",
             "date": "2025-02-06",
             "tradePartner": "LAC",
-            "tradeDescription": "Hawks traded Bogdan Bogdanović + 3 second-round picks to Clippers for Mann and Bones Hyland",
+            "tradeDescription": "Hawks traded Bogdan Bogdanovi\u0107 + 3 second-round picks to Clippers for Mann and Bones Hyland",
             "note": "Versatile wing, 2021 playoff hero vs Utah. Sent to BKN in Porzingis deal.",
             "assetsGivenUp": [
               {
                 "type": "player",
-                "name": "Bogdan Bogdanović",
+                "name": "Bogdan Bogdanovi\u0107",
                 "acquisitionType": "free-agent",
                 "date": "2020-11-21",
                 "note": "Signed via sign-and-trade from Sacramento Kings, 4-year $72M deal",

@@ -50,8 +50,8 @@
             "type": "player",
             "name": "Omri Casspi",
             "acquisitionType": "free-agent",
-            "date": "2014-07-18",
-            "note": "Veteran forward, returned to Kings as free agent",
+            "date": "2015-07-14",
+            "note": "Forward re-signed as free agent (second stint with Kings)",
             "isOrigin": true
           }
         ]
@@ -68,10 +68,21 @@
           {
             "type": "player",
             "name": "Delon Wright",
-            "acquisitionType": "free-agent",
-            "date": "2020-11-21",
-            "note": "Guard signed as free agent",
-            "isOrigin": true
+            "acquisitionType": "trade",
+            "date": "2021-03-25",
+            "note": "Guard acquired at 2021 trade deadline",
+            "tradePartner": "DET",
+            "tradeDescription": "Traded from Pistons for Cory Joseph and two 2nd-round picks",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Cory Joseph",
+                "acquisitionType": "free-agent",
+                "date": "2019-07-06",
+                "note": "Guard signed as free agent",
+                "isOrigin": true
+              }
+            ]
           }
         ]
       }

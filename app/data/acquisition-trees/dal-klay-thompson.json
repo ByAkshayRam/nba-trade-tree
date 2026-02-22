@@ -2,20 +2,47 @@
   "_meta": {
     "team": "DAL",
     "player": "Klay Thompson",
-    "source": "ESPN, Basketball-Reference",
+    "source": "ESPN, Basketball-Reference, NBA.com",
     "originYear": 2011,
-    "depth": 1,
-    "lastUpdated": "2026-02-16"
+    "depth": 2,
+    "lastUpdated": "2026-02-22"
   },
   "tree": {
     "type": "player",
     "name": "Klay Thompson",
     "acquisitionType": "sign-and-trade",
-    "date": "2024-07-01",
+    "date": "2024-07-06",
     "currentTeam": "DAL",
     "tradePartner": "GSW",
-    "note": "Washington State guard, 2011 #11 overall pick by Golden State. Signed via 6-team sign-and-trade from Warriors. | 3yr/$50M",
-    "isOrigin": true,
-    "assetsGivenUp": []
+    "note": "Washington State guard, 2011 #11 overall pick by Golden State. 6-team sign-and-trade, 3yr/$50M. | 3yr/$50M",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Josh Green",
+        "acquisitionType": "draft",
+        "date": "2020-11-18",
+        "draftPick": 18,
+        "draftRound": 1,
+        "note": "Arizona wing, drafted #18 by Dallas in 2020. Sent to Charlotte as part of 6-team Klay Thompson sign-and-trade.",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2025 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2024-07-06",
+        "note": "Sent to Golden State as part of Klay Thompson sign-and-trade",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2026 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2024-07-06",
+        "note": "Sent to Golden State as part of Klay Thompson sign-and-trade",
+        "isOrigin": true
+      }
+    ]
   }
 }

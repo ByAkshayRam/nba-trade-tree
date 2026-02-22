@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800;900&family=Satoshi:wght@400;500;700;900&family=General+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1200px;
+    background: #0a0a0f;
+    color: white;
+    padding: 40px;
+  }
+
+  .page-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px; font-weight: 600; color: #71717a;
+    text-transform: uppercase; letter-spacing: 3px;
+    margin-bottom: 40px; padding-bottom: 16px;
+    border-bottom: 1px solid #27272a;
+  }
+
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+
+  .option {
+    background: #111116;
+    border: 1px solid #1e1e24;
+    border-radius: 16px;
+    padding: 32px;
+    position: relative;
+  }
+  .option-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px; font-weight: 700; color: #22d3ee;
+    text-transform: uppercase; letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+  .option-fonts {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px; color: #52525b; margin-bottom: 24px;
+  }
+
+  /* Simulated card preview inside each option */
+  .card-preview {
+    background: #0a0a0f;
+    border: 1px solid #1e1e24;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 16px;
+  }
+  .cp-eyebrow {
+    font-size: 9px; font-weight: 700; letter-spacing: 2.5px;
+    text-transform: uppercase; color: #22d3ee; margin-bottom: 6px;
+  }
+  .cp-title {
+    font-size: 28px; font-weight: 800; color: white;
+    line-height: 1.1; margin-bottom: 6px;
+  }
+  .cp-subtitle {
+    font-size: 12px; color: #71717a; margin-bottom: 16px;
+  }
+  .cp-hero {
+    font-size: 42px; font-weight: 800; line-height: 1.05;
+    margin-bottom: 8px;
+  }
+  .cp-hero .gradient {
+    background: linear-gradient(90deg, #d946ef, #8b5cf6, #3b82f6);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .cp-body {
+    font-size: 14px; color: #a1a1aa; line-height: 1.5;
+  }
+  .cp-stat {
+    font-size: 36px; font-weight: 900; color: #22d3ee;
+    line-height: 1;
+  }
+  .cp-stat-label {
+    font-size: 9px; font-weight: 600; color: #52525b;
+    text-transform: uppercase; letter-spacing: 1.5px; margin-top: 2px;
+  }
+
+  /* Node preview */
+  .node-row { display: flex; gap: 8px; margin-top: 12px; }
+  .node {
+    padding: 6px 10px; border-radius: 6px; border-left: 3px solid;
+    background: #18181b;
+  }
+  .node.player { border-left-color: #3b82f6; }
+  .node.pick { border-left-color: #d946ef; }
+  .node-type { font-size: 7px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+  .node.player .node-type { color: #3b82f6; }
+  .node.pick .node-type { color: #d946ef; }
+  .node-name { font-size: 12px; font-weight: 700; color: white; }
+
+  .divider { grid-column: span 2; height: 1px; background: #1e1e24; margin: 8px 0; }
+
+  .verdict {
+    grid-column: span 2;
+    background: #111116;
+    border: 1px solid #22d3ee30;
+    border-radius: 16px;
+    padding: 32px;
+  }
+  .verdict h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px; font-weight: 800; color: #22d3ee; margin-bottom: 12px;
+  }
+  .verdict p {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px; color: #a1a1aa; line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+
+<div class="page-title">RosterDNA — Font Pairing Options for Site + Social Cards</div>
+
+<div class="grid">
+
+  <!-- Option A: Space Grotesk + DM Sans -->
+  <div class="option">
+    <div class="option-label">Option A — Technical Edge</div>
+    <div class="option-fonts">Display: <strong>Space Grotesk</strong> · Body: <strong>DM Sans</strong></div>
+    <div class="card-preview">
+      <div class="cp-eyebrow" style="font-family:'DM Sans'">The Longest Active Chain</div>
+      <div class="cp-title" style="font-family:'Space Grotesk'">Nikola Vucevic</div>
+      <div class="cp-subtitle" style="font-family:'DM Sans'">11 levels · 26 years · Origin: Moïso (2000)</div>
+      <div style="display:flex; gap:24px; margin-top:12px;">
+        <div><div class="cp-stat" style="font-family:'Space Grotesk'">11</div><div class="cp-stat-label" style="font-family:'DM Sans'">Chain Depth</div></div>
+        <div><div class="cp-stat" style="font-family:'Space Grotesk'">26</div><div class="cp-stat-label" style="font-family:'DM Sans'">Years</div></div>
+      </div>
+      <div class="node-row">
+        <div class="node player"><div class="node-type" style="font-family:'DM Sans'">Trade</div><div class="node-name" style="font-family:'Space Grotesk'">Jrue Holiday</div></div>
+        <div class="node pick"><div class="node-type" style="font-family:'DM Sans'">Draft Pick</div><div class="node-name" style="font-family:'Space Grotesk'">Aaron Nesmith</div></div>
+      </div>
+    </div>
+    <div class="card-preview">
+      <div class="cp-hero" style="font-family:'Space Grotesk'"><span class="gradient">How Was Your Team Built?</span></div>
+      <div class="cp-body" style="font-family:'DM Sans'">Trace the chain of trades, draft picks, and signings behind every NBA roster.</div>
+    </div>
+  </div>
+
+  <!-- Option B: Outfit + Inter -->
+  <div class="option">
+    <div class="option-label">Option B — Clean & Modern</div>
+    <div class="option-fonts">Display: <strong>Outfit</strong> · Body: <strong>Inter</strong></div>
+    <div class="card-preview">
+      <div class="cp-eyebrow" style="font-family:'Inter'">The Longest Active Chain</div>
+      <div class="cp-title" style="font-family:'Outfit'">Nikola Vucevic</div>
+      <div class="cp-subtitle" style="font-family:'Inter'">11 levels · 26 years · Origin: Moïso (2000)</div>
+      <div style="display:flex; gap:24px; margin-top:12px;">
+        <div><div class="cp-stat" style="font-family:'Outfit'">11</div><div class="cp-stat-label" style="font-family:'Inter'">Chain Depth</div></div>
+        <div><div class="cp-stat" style="font-family:'Outfit'">26</div><div class="cp-stat-label" style="font-family:'Inter'">Years</div></div>
+      </div>
+      <div class="node-row">
+        <div class="node player"><div class="node-type" style="font-family:'Inter'">Trade</div><div class="node-name" style="font-family:'Outfit'">Jrue Holiday</div></div>
+        <div class="node pick"><div class="node-type" style="font-family:'Inter'">Draft Pick</div><div class="node-name" style="font-family:'Outfit'">Aaron Nesmith</div></div>
+      </div>
+    </div>
+    <div class="card-preview">
+      <div class="cp-hero" style="font-family:'Outfit'"><span class="gradient">How Was Your Team Built?</span></div>
+      <div class="cp-body" style="font-family:'Inter'">Trace the chain of trades, draft picks, and signings behind every NBA roster.</div>
+    </div>
+  </div>
+
+  <!-- Option C: Sora + Manrope -->
+  <div class="option">
+    <div class="option-label">Option C — Geometric & Bold</div>
+    <div class="option-fonts">Display: <strong>Sora</strong> · Body: <strong>Manrope</strong></div>
+    <div class="card-preview">
+      <div class="cp-eyebrow" style="font-family:'Manrope'">The Longest Active Chain</div>
+      <div class="cp-title" style="font-family:'Sora'">Nikola Vucevic</div>
+      <div class="cp-subtitle" style="font-family:'Manrope'">11 levels · 26 years · Origin: Moïso (2000)</div>
+      <div style="display:flex; gap:24px; margin-top:12px;">
+        <div><div class="cp-stat" style="font-family:'Sora'">11</div><div class="cp-stat-label" style="font-family:'Manrope'">Chain Depth</div></div>
+        <div><div class="cp-stat" style="font-family:'Sora'">26</div><div class="cp-stat-label" style="font-family:'Manrope'">Years</div></div>
+      </div>
+      <div class="node-row">
+        <div class="node player"><div class="node-type" style="font-family:'Manrope'">Trade</div><div class="node-name" style="font-family:'Sora'">Jrue Holiday</div></div>
+        <div class="node pick"><div class="node-type" style="font-family:'Manrope'">Draft Pick</div><div class="node-name" style="font-family:'Sora'">Aaron Nesmith</div></div>
+      </div>
+    </div>
+    <div class="card-preview">
+      <div class="cp-hero" style="font-family:'Sora'"><span class="gradient">How Was Your Team Built?</span></div>
+      <div class="cp-body" style="font-family:'Manrope'">Trace the chain of trades, draft picks, and signings behind every NBA roster.</div>
+    </div>
+  </div>
+
+  <!-- Option D: Plus Jakarta Sans + General Sans -->
+  <div class="option">
+    <div class="option-label">Option D — Warm & Editorial</div>
+    <div class="option-fonts">Display: <strong>Plus Jakarta Sans</strong> · Body: <strong>General Sans</strong></div>
+    <div class="card-preview">
+      <div class="cp-eyebrow" style="font-family:'General Sans'">The Longest Active Chain</div>
+      <div class="cp-title" style="font-family:'Plus Jakarta Sans'">Nikola Vucevic</div>
+      <div class="cp-subtitle" style="font-family:'General Sans'">11 levels · 26 years · Origin: Moïso (2000)</div>
+      <div style="display:flex; gap:24px; margin-top:12px;">
+        <div><div class="cp-stat" style="font-family:'Plus Jakarta Sans'">11</div><div class="cp-stat-label" style="font-family:'General Sans'">Chain Depth</div></div>
+        <div><div class="cp-stat" style="font-family:'Plus Jakarta Sans'">26</div><div class="cp-stat-label" style="font-family:'General Sans'">Years</div></div>
+      </div>
+      <div class="node-row">
+        <div class="node player"><div class="node-type" style="font-family:'General Sans'">Trade</div><div class="node-name" style="font-family:'Plus Jakarta Sans'">Jrue Holiday</div></div>
+        <div class="node pick"><div class="node-type" style="font-family:'General Sans'">Draft Pick</div><div class="node-name" style="font-family:'Plus Jakarta Sans'">Aaron Nesmith</div></div>
+      </div>
+    </div>
+    <div class="card-preview">
+      <div class="cp-hero" style="font-family:'Plus Jakarta Sans'"><span class="gradient">How Was Your Team Built?</span></div>
+      <div class="cp-body" style="font-family:'General Sans'">Trace the chain of trades, draft picks, and signings behind every NBA roster.</div>
+    </div>
+  </div>
+
+  <!-- Verdict -->
+  <div class="verdict">
+    <h3>💡 Recommendation</h3>
+    <p>
+      <strong>Option A (Space Grotesk + DM Sans)</strong> gives RosterDNA a distinctive "data intelligence" feel — Space Grotesk has a monospaced DNA that pairs well with analytics content, while DM Sans is warm enough for body text. It renders sharply on social cards at all sizes and the slightly technical character gives your brand personality without feeling generic.<br><br>
+      <strong>Option C (Sora + Manrope)</strong> is the runner-up — geometric, modern, works great for large stat numbers on cards. More "premium sports brand" energy.<br><br>
+      All four options keep the current fuchsia/cyan/dark palette. The font is the only variable.
+    </p>
+  </div>
+
+</div>
+
+</body>
+</html>

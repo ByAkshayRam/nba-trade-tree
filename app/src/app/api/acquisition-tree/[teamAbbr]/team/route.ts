@@ -944,7 +944,8 @@ export async function GET(
     const acqType = rosterNode.data.acquisitionType || "";
     const treeFile = treeMap.get(playerName);
     const fileHomegrown = treeFile?.tree?.isHomegrown === true;
-    rosterNode.data.isHomegrown = (acqType === "draft" || acqType === "draft-night-trade" || fileHomegrown);
+    const fileIsOrigin = treeFile?.tree?.isOrigin === true;
+    rosterNode.data.isHomegrown = (acqType === "draft" || acqType === "draft-night-trade" || fileHomegrown || (acqType === "undrafted" && (fileHomegrown || fileIsOrigin)));
     
     // Set roster order and category
     const teamRosterOrder = ROSTER_ORDERS[team] || {};
@@ -976,6 +977,30 @@ export async function GET(
   const origins = nodes.filter(n => n.data.isOrigin).length;
   const trades = nodes.filter(n => n.data.acquisitionType === "trade").length;
   const earliestYear = Math.min(...trees.map(t => t._meta.originYear));
+  
+  // Calculate average experience (years since origin)
+  const currentYear = new Date().getFullYear();
+  const experienceYears = trees.map(t => currentYear - t._meta.originYear);
+  const avgExperience = experienceYears.length > 0 
+    ? Math.round((experienceYears.reduce((a, b) => a + b, 0) / experienceYears.length) * 10) / 10
+    : 0;
+
+  // Calculate experience rank across all 30 teams
+  const allTeamAbbs = [...new Set(
+    fs.readdirSync(dataDir)
+      .filter(f => f.endsWith('.json'))
+      .map(f => f.split('-')[0].toUpperCase())
+  )];
+  const allTeamAvgs: { abbr: string; avg: number }[] = allTeamAbbs.map(abbr => {
+    const teamFiles = fs.readdirSync(dataDir).filter(f => f.startsWith(abbr.toLowerCase() + '-') && f.endsWith('.json'));
+    const origins = teamFiles.map(f => {
+      try { return JSON.parse(fs.readFileSync(path.join(dataDir, f), 'utf-8'))._meta.originYear; } catch { return currentYear; }
+    });
+    const avg = origins.length > 0 ? origins.reduce((a: number, b: number) => a + (currentYear - b), 0) / origins.length : 0;
+    return { abbr, avg };
+  });
+  allTeamAvgs.sort((a, b) => b.avg - a.avg); // highest experience first
+  const experienceRank = allTeamAvgs.findIndex(t => t.abbr === team) + 1;
   
   // Build trade partner map
   const partnerMap = new Map<string, { count: number; players: Set<string> }>();
@@ -1016,6 +1041,8 @@ export async function GET(
     earliestOrigin: earliestYear,
     nodes,
     edges,
+    avgExperience,
+    experienceRank,
     teamColors: TEAM_COLORS[team] || { primary: "#666", secondary: "#333" },
     tradePartners,
   });

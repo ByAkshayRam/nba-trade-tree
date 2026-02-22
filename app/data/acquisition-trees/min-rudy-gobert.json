@@ -88,8 +88,18 @@
             "type": "player",
             "name": "Shabazz Napier",
             "acquisitionType": "trade",
-            "note": "Guard, sent to DEN in 4-team trade",
-            "isOrigin": true
+            "date": "2019-07-07",
+            "tradePartner": "GSW",
+            "note": "UConn guard, acquired from Golden State (via Brooklyn). MIN sent draft rights to Lior Eliyahu.",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Lior Eliyahu",
+                "acquisitionType": "other",
+                "note": "Draft rights sent to Golden State Warriors",
+                "isOrigin": true
+              }
+            ]
           },
           {
             "type": "player",
@@ -171,8 +181,35 @@
         "acquisitionType": "trade",
         "date": "2020-02-05",
         "tradePartner": "DEN",
-        "note": "Kentucky forward, acquired from Denver in same 4-team trade as Beasley. Same assets given up (shared trade).",
-        "isOrigin": true
+        "note": "Kentucky forward, drafted #41 overall by Denver in 2018. Part of same 4-team trade as Beasley.",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Robert Covington",
+            "acquisitionType": "trade",
+            "date": "2018-11-12",
+            "tradePartner": "PHI",
+            "note": "Shared cost with Beasley — acquired from 76ers in Jimmy Butler trade, sent to HOU in 4-team trade",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Keita Bates-Diop",
+            "acquisitionType": "draft",
+            "date": "2018-06-21",
+            "draftPick": 48,
+            "draftRound": 2,
+            "note": "Shared cost with Beasley — Ohio State forward, 2018 2nd round pick, sent to DEN",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Noah Vonleh",
+            "acquisitionType": "free-agent",
+            "note": "Shared cost with Beasley — forward, sent to DEN in 4-team trade",
+            "isOrigin": true
+          }
+        ]
       },
       {
         "type": "player",
@@ -233,10 +270,10 @@
         "isOrigin": true
       },
       {
-        "type": "other",
-        "name": "2026 1st Round Pick Swap",
+        "type": "pick",
+        "name": "2026 1st Round Pick Swap (UTA has rights)",
         "acquisitionType": "original",
-        "note": "Right to swap first round picks with Utah in 2026",
+        "note": "Utah Jazz hold the right to swap 1st round picks with Minnesota in 2026",
         "isOrigin": true
       }
     ]

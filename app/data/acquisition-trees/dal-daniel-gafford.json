@@ -4,7 +4,7 @@
     "player": "Daniel Gafford",
     "source": "ESPN, Basketball-Reference",
     "originYear": 2019,
-    "depth": 2,
+    "depth": 4,
     "lastUpdated": "2026-02-16"
   },
   "tree": {
@@ -24,9 +24,42 @@
         "acquisitionType": "trade",
         "date": "2023-07-06",
         "tradePartner": "SAC",
-        "tradeDescription": "Dallas acquired Holmes from Sacramento",
-        "note": "Bowling Green center, undrafted 2015",
-        "isOrigin": true
+        "tradeDescription": "Dallas absorbed Holmes from Sacramento using a $17M traded player exception",
+        "note": "Bowling Green center, undrafted 2015. Also received O-Max Prosper (#24 pick) in same deal.",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "other",
+            "name": "$17M Trade Exception",
+            "acquisitionType": "trade",
+            "date": "2023-06-22",
+            "tradePartner": "OKC",
+            "tradeDescription": "Created by sending Davis Bertans and #10 pick to OKC for #12 pick (Dereck Lively)",
+            "note": "$17M traded player exception generated from the Bertans salary leaving Dallas",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Davis Bertans",
+                "acquisitionType": "trade",
+                "date": "2022-02-10",
+                "tradePartner": "WAS",
+                "tradeDescription": "Acquired from Washington in the Kristaps Porzingis trade",
+                "note": "Latvian forward, salary filler in KP deal",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2023 DAL 1st Round Pick (#10)",
+                "acquisitionType": "original",
+                "date": "2023-06-22",
+                "becamePlayer": "Cason Wallace",
+                "note": "Sent to OKC along with Bertans, became #10 pick Cason Wallace",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
       },
       {
         "type": "pick",
