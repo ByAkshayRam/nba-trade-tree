@@ -5,7 +5,7 @@
     "source": "ESPN, NBA.com, Basketball-Reference, Hoops Rumors",
     "originYear": 2013,
     "depth": 3,
-    "lastUpdated": "2026-02-16"
+    "lastUpdated": "2026-02-27"
   },
   "tree": {
     "type": "player",
@@ -106,7 +106,8 @@
             "name": "Noah Vonleh",
             "acquisitionType": "free-agent",
             "note": "Forward, sent to DEN in 4-team trade",
-            "isOrigin": true
+            "isOrigin": true,
+            "date": "2019-07-08"
           },
           {
             "type": "player",
@@ -207,7 +208,8 @@
             "name": "Noah Vonleh",
             "acquisitionType": "free-agent",
             "note": "Shared cost with Beasley — forward, sent to DEN in 4-team trade",
-            "isOrigin": true
+            "isOrigin": true,
+            "date": "2019-07-08"
           }
         ]
       },
@@ -230,7 +232,7 @@
           },
           {
             "type": "pick",
-            "name": "2023 2nd Round Pick (via DET)",
+            "name": "2023 2nd Round Pick via DET",
             "acquisitionType": "trade",
             "becamePlayer": "James Nnaji",
             "note": "Detroit's 2023 2nd round pick, sent to NYK; became #31 overall",
