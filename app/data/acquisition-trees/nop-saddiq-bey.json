@@ -62,19 +62,8 @@
                 "date": "2019-06-15",
                 "tradePartner": "LAL",
                 "tradeDescription": "Acquired from Lakers in Anthony Davis trade",
-                "note": "Shared cost with Brandon Ingram",
-                "assetsGivenUp": [
-                  {
-                    "type": "player",
-                    "name": "Anthony Davis",
-                    "acquisitionType": "draft",
-                    "date": "2012-06-28",
-                    "draftPick": 1,
-                    "draftRound": 1,
-                    "note": "1st overall pick, traded to LAL June 2019",
-                    "isOrigin": true
-                  }
-                ]
+                "note": "Shared cost with Brandon Ingram — both traded for Anthony Davis (#1 pick, 2012)",
+                "isOrigin": true
               },
               {
                 "type": "pick",
