@@ -5,7 +5,7 @@
     "source": "Basketball-Reference.com 2023-24 POR transactions",
     "originYear": 2012,
     "depth": 4,
-    "lastUpdated": "2026-02-16"
+    "lastUpdated": "2026-02-27"
   },
   "tree": {
     "type": "player",
@@ -57,7 +57,7 @@
               },
               {
                 "type": "pick",
-                "name": "2015 1st Round Pick #23 (Rondae Hollis-Jefferson)",
+                "name": "2015 1st Round Pick (#23)",
                 "acquisitionType": "original",
                 "date": "2015-06-25",
                 "becamePlayer": "Rondae Hollis-Jefferson",
@@ -68,9 +68,10 @@
           },
           {
             "type": "pick",
-            "name": "2017 2nd Round Pick (POR own)",
+            "name": "2018 2nd Round Pick",
+            "becamePlayer": "Shake Milton",
             "acquisitionType": "original",
-            "note": "Portland's own 2017 second round pick, sent with Plumlee for Nurkic",
+            "note": "Portland's own 2018 2nd round pick, sent to Denver with Plumlee for Nurkic",
             "isOrigin": true
           }
         ]
@@ -115,35 +116,33 @@
                   {
                     "type": "player",
                     "name": "Nik Stauskas",
-                    "acquisitionType": "trade",
-                    "date": "2018-07-10",
-                    "tradePartner": "BKN",
-                    "note": "Guard, acquired from Brooklyn",
-                    "isOrigin": false,
-                    "assetsGivenUp": []
+                    "acquisitionType": "free-agent",
+                    "date": "2018-07-05",
+                    "note": "Guard, signed as free agent by Portland",
+                    "isOrigin": true
                   },
                   {
                     "type": "player",
                     "name": "Wade Baldwin IV",
-                    "acquisitionType": "trade",
-                    "date": "2018-07-03",
-                    "tradePartner": "MEM",
-                    "note": "Guard, acquired from Memphis",
-                    "isOrigin": false,
-                    "assetsGivenUp": []
-                  },
-                  {
-                    "type": "pick",
-                    "name": "2020 2nd Round Pick (POR own)",
-                    "acquisitionType": "original",
-                    "note": "Portland's own 2020 second round pick",
+                    "acquisitionType": "free-agent",
+                    "date": "2018-03-12",
+                    "note": "Guard, signed to standard contract by Portland",
                     "isOrigin": true
                   },
                   {
                     "type": "pick",
-                    "name": "2021 2nd Round Pick (POR own)",
+                    "name": "2021 2nd Round Pick",
+                    "becamePlayer": "Brandon Boston Jr.",
                     "acquisitionType": "original",
-                    "note": "Portland's own 2021 second round pick",
+                    "note": "Portland's own 2021 2nd round pick, sent to Cleveland",
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2023 2nd Round Pick",
+                    "becamePlayer": "Julian Phillips",
+                    "acquisitionType": "original",
+                    "note": "Portland's own 2023 2nd round pick, sent to Cleveland",
                     "isOrigin": true
                   }
                 ]
@@ -169,7 +168,7 @@
               },
               {
                 "type": "pick",
-                "name": "2020 1st Round Pick #16 (Isaiah Stewart)",
+                "name": "2020 1st Round Pick (#16)",
                 "acquisitionType": "original",
                 "becamePlayer": "Isaiah Stewart",
                 "note": "Portland's own 2020 1st round pick, drafted Isaiah Stewart",
@@ -177,9 +176,10 @@
               },
               {
                 "type": "pick",
-                "name": "2021 1st Round Pick (protected)",
-                "acquisitionType": "original", 
-                "note": "Portland's own protected 2021 first round pick",
+                "name": "2021 1st Round Pick",
+                "becamePlayer": "Usman Garuba",
+                "acquisitionType": "original",
+                "note": "Portland's own lottery-protected 2021 1st, sent to Houston",
                 "isOrigin": true
               }
             ]
