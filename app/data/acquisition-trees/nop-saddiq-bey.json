@@ -4,8 +4,8 @@
     "player": "Saddiq Bey",
     "source": "ESPN, Wikipedia, Basketball-Reference",
     "originYear": 2020,
-    "depth": 3,
-    "lastUpdated": "2026-02-16"
+    "depth": 4,
+    "lastUpdated": "2026-02-27"
   },
   "tree": {
     "type": "player",
@@ -52,8 +52,27 @@
             "acquisitionType": "trade",
             "date": "2021-08-08",
             "tradePartner": "CHI",
+            "tradeDescription": "Acquired from Chicago in Lonzo Ball sign-and-trade",
             "note": "Acquired from Chicago in Lonzo Ball sign-and-trade",
-            "isOrigin": true
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Lonzo Ball",
+                "acquisitionType": "trade",
+                "date": "2019-06-15",
+                "tradePartner": "LAL",
+                "note": "Acquired from Lakers in Anthony Davis trade",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2024 2nd Round Pick",
+                "becamePlayer": "Adem Bona",
+                "acquisitionType": "original",
+                "note": "CHI own 2nd rounder sent to Chicago",
+                "isOrigin": true
+              }
+            ]
           },
           {
             "type": "player",
@@ -66,7 +85,7 @@
           {
             "type": "pick",
             "name": "2025 1st Round Pick",
-            "becamePlayer": "Nolan Traor\u00e9",
+            "becamePlayer": "Nolan Traoré",
             "acquisitionType": "original",
             "note": "NOP own conditional pick (originally 2022 1st that did not convey)",
             "isOrigin": true
@@ -92,9 +111,20 @@
         "name": "Kelly Olynyk",
         "acquisitionType": "trade",
         "date": "2025-02-06",
+        "tradePartner": "TOR",
+        "tradeDescription": "Acquired from Toronto in Brandon Ingram trade",
         "note": "Forward-center acquired from Toronto in Brandon Ingram trade",
-        "isOrigin": true,
-        "tradePartner": "TOR"
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Brandon Ingram",
+            "acquisitionType": "trade",
+            "date": "2019-06-15",
+            "tradePartner": "LAL",
+            "note": "Acquired from Lakers in Anthony Davis trade",
+            "isOrigin": true
+          }
+        ]
       },
       {
         "type": "pick",
