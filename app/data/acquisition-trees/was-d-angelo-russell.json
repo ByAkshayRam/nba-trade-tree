@@ -2,63 +2,38 @@
   "_meta": {
     "team": "WAS",
     "player": "D'Angelo Russell",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2026,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "ESPN, NBA.com",
+    "originYear": 2015,
+    "depth": 2,
+    "lastUpdated": "2026-02-27"
   },
   "tree": {
     "type": "player",
     "name": "D'Angelo Russell",
     "acquisitionType": "trade",
-    "date": "2026-02-06",
+    "date": "2026-02-04",
     "currentTeam": "WAS",
-    "tradePartner": "LAL",
-    "note": "Part of AD deal",
+    "tradePartner": "DAL",
+    "tradeDescription": "Acquired with Anthony Davis, Hardy, Exum from Dallas",
+    "note": "Shared cost with Anthony Davis — guard from Dallas",
     "assetsGivenUp": [
       {
         "type": "player",
-        "name": "Kyle Kuzma",
-        "playerId": "kyle-kuzma",
+        "name": "Khris Middleton",
         "acquisitionType": "trade",
-        "date": "2021-07-29",
-        "tradePartner": "LAL",
-        "note": "Forward, acquired from Lakers in Russell Westbrook trade (Washington received assets without giving up players)",
+        "date": "2025-02-06",
+        "tradePartner": "MIL",
+        "note": "Shared cost with AJ Johnson — 3x All-Star from Milwaukee",
         "assetsGivenUp": [
           {
             "type": "player",
-            "name": "Russell Westbrook",
-            "acquisitionType": "trade",
-            "date": "2020-12-03",
-            "tradePartner": "HOU",
-            "note": "Guard, acquired from Houston for John Wall and a first-round pick",
-            "isOrigin": false,
-            "assetsGivenUp": [
-              {
-                "type": "player",
-                "name": "John Wall",
-                "acquisitionType": "draft",
-                "date": "2010-06-24",
-                "draftPick": 1,
-                "draftRound": 1,
-                "note": "Kentucky guard, drafted 1st overall by Washington",
-                "isOrigin": true
-              },
-              {
-                "type": "pick",
-                "name": "2023 1st Round Pick (WAS protected)",
-                "acquisitionType": "original",
-                "note": "Washington's own protected 2023 first round pick, sent to Houston",
-                "isOrigin": true
-              }
-            ]
+            "name": "Kyle Kuzma",
+            "acquisitionType": "free-agent",
+            "date": "2023-07-07",
+            "note": "Re-signed to multi-year contract with Washington",
+            "isOrigin": true
           }
         ]
-      },
-      {
-        "type": "pick",
-        "details": "2027 First Round Pick",
-        "name": "2027 First Round Pick"
       }
     ]
   }

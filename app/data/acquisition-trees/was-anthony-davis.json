@@ -2,41 +2,105 @@
   "_meta": {
     "team": "WAS",
     "player": "Anthony Davis",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2021,
+    "source": "ESPN, NBA.com",
+    "originYear": 2012,
     "depth": 2,
-    "lastUpdated": "2026-02-11"
+    "lastUpdated": "2026-02-27"
   },
   "tree": {
     "type": "player",
     "name": "Anthony Davis",
     "acquisitionType": "trade",
-    "date": "2026-02-06",
+    "date": "2026-02-04",
     "currentTeam": "WAS",
-    "tradePartner": "LAL",
-    "tradeDescription": "Massive deadline blockbuster",
-    "note": "9x All-Star, Champion",
+    "tradePartner": "DAL",
+    "tradeDescription": "8-player trade: WAS sent Middleton, AJ Johnson, Branham, Bagley, 2 1sts + 3 2nds to DAL for AD, Hardy, Russell, Exum",
+    "note": "10x All-Star acquired from Dallas",
     "assetsGivenUp": [
       {
-        "type": "pick",
-        "name": "2027 1st Round Pick",
-        "acquisitionType": "original",
-        "date": "2026-02-06",
-        "isOrigin": true
+        "type": "player",
+        "name": "Khris Middleton",
+        "acquisitionType": "trade",
+        "date": "2025-02-06",
+        "tradePartner": "MIL",
+        "tradeDescription": "4-team trade: WAS sent Kuzma to MIL, received Middleton + AJ Johnson + 2028 1st",
+        "note": "Shared cost with AJ Johnson — 3x All-Star from Milwaukee",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Kyle Kuzma",
+            "acquisitionType": "free-agent",
+            "date": "2023-07-07",
+            "note": "Re-signed to multi-year contract with Washington",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2025 2nd Round Pick",
+            "becamePlayer": "Bogoljub Markovic",
+            "acquisitionType": "original",
+            "note": "Most favorable of DET/PHO/GSW picks, sent to Milwaukee",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2026 2nd Round Pick",
+            "acquisitionType": "original",
+            "note": "Protected top 55, sent to Milwaukee",
+            "isOrigin": true
+          }
+        ]
       },
       {
-        "type": "pick",
-        "name": "2029 1st Round Pick",
-        "acquisitionType": "original",
-        "date": "2026-02-06",
+        "type": "player",
+        "name": "AJ Johnson",
+        "acquisitionType": "trade",
+        "date": "2025-02-06",
+        "tradePartner": "MIL",
+        "tradeDescription": "4-team trade: received with Middleton from Milwaukee",
+        "note": "Shared cost with Khris Middleton",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Kyle Kuzma",
+            "acquisitionType": "free-agent",
+            "date": "2023-07-07",
+            "note": "Re-signed to multi-year contract with Washington",
+            "isOrigin": true
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Malaki Branham",
+        "acquisitionType": "draft",
+        "date": "2022-06-23",
+        "draftPick": 20,
+        "draftRound": 1,
+        "note": "Ohio State guard, drafted 20th overall by San Antonio, acquired by WAS",
         "isOrigin": true
       },
       {
         "type": "player",
-        "name": "Kyle Kuzma",
+        "name": "Marvin Bagley III",
         "acquisitionType": "trade",
-        "date": "2021-08-02",
-        "tradePartner": "LAL",
+        "date": "2025-02-06",
+        "tradePartner": "MEM",
+        "note": "Acquired from Memphis in 3-team trade",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2026 1st Round Pick (OKC)",
+        "acquisitionType": "original",
+        "note": "Thunder's 2026 1st round pick, sent to Dallas",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2030 1st Round Pick (GSW)",
+        "acquisitionType": "original",
+        "note": "Warriors' 2030 1st, top-20 protected, sent to Dallas",
         "isOrigin": true
       }
     ]

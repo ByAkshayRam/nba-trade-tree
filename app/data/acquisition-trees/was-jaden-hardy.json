@@ -2,30 +2,38 @@
   "_meta": {
     "team": "WAS",
     "player": "Jaden Hardy",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2025,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "ESPN, NBA.com",
+    "originYear": 2022,
+    "depth": 2,
+    "lastUpdated": "2026-02-27"
   },
   "tree": {
     "type": "player",
     "name": "Jaden Hardy",
     "acquisitionType": "trade",
-    "date": "2026-02-05",
+    "date": "2026-02-04",
     "currentTeam": "WAS",
     "tradePartner": "DAL",
+    "tradeDescription": "Acquired with Anthony Davis, Russell, Exum from Dallas",
+    "note": "Shared cost with Anthony Davis — guard from Dallas",
     "assetsGivenUp": [
       {
-        "type": "pick",
-        "details": "2025 Second Round Pick",
-        "name": "2025 2nd Round Pick",
-        "note": "WAS's 2025 second-round pick sent to DAL in Jaden Hardy trade."
-      },
-      {
-        "type": "other",
-        "name": "Cash Considerations",
-        "note": "Cash sent to Dallas in Hardy trade",
-        "isOrigin": true
+        "type": "player",
+        "name": "Khris Middleton",
+        "acquisitionType": "trade",
+        "date": "2025-02-06",
+        "tradePartner": "MIL",
+        "note": "Shared cost with AJ Johnson — 3x All-Star from Milwaukee",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Kyle Kuzma",
+            "acquisitionType": "free-agent",
+            "date": "2023-07-07",
+            "note": "Re-signed to multi-year contract with Washington",
+            "isOrigin": true
+          }
+        ]
       }
     ]
   }
