@@ -124,7 +124,7 @@
           },
           {
             "type": "pick",
-            "name": "2027 2nd Round Pick",
+            "name": "2027 2nd Round Pick (NOP)",
             "acquisitionType": "original",
             "note": "NOP own, sent to Portland",
             "isOrigin": true
@@ -165,9 +165,9 @@
       },
       {
         "type": "pick",
-        "name": "2027 2nd Round Pick",
+        "name": "2027 2nd Round Pick (CHI)",
         "acquisitionType": "original",
-        "note": "Pelicans' own future second-round pick",
+        "note": "Chicago's 2027 2nd rounder, sent to Washington",
         "isOrigin": true
       }
     ]
