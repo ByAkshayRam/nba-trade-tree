@@ -4,7 +4,7 @@
     "player": "Saddiq Bey",
     "source": "ESPN, Wikipedia, Basketball-Reference",
     "originYear": 2020,
-    "depth": 4,
+    "depth": 5,
     "lastUpdated": "2026-02-27"
   },
   "tree": {
@@ -61,8 +61,20 @@
                 "acquisitionType": "trade",
                 "date": "2019-06-15",
                 "tradePartner": "LAL",
-                "note": "Acquired from Lakers in Anthony Davis trade",
-                "isOrigin": true
+                "tradeDescription": "Acquired from Lakers in Anthony Davis trade",
+                "note": "Shared cost with Brandon Ingram",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Anthony Davis",
+                    "acquisitionType": "draft",
+                    "date": "2012-06-28",
+                    "draftPick": 1,
+                    "draftRound": 1,
+                    "note": "1st overall pick, traded to LAL June 2019",
+                    "isOrigin": true
+                  }
+                ]
               },
               {
                 "type": "pick",
@@ -121,8 +133,20 @@
             "acquisitionType": "trade",
             "date": "2019-06-15",
             "tradePartner": "LAL",
-            "note": "Acquired from Lakers in Anthony Davis trade",
-            "isOrigin": true
+            "tradeDescription": "Acquired from Lakers in Anthony Davis trade",
+            "note": "Shared cost with Lonzo Ball",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Anthony Davis",
+                "acquisitionType": "draft",
+                "date": "2012-06-28",
+                "draftPick": 1,
+                "draftRound": 1,
+                "note": "1st overall pick, traded to LAL June 2019",
+                "isOrigin": true
+              }
+            ]
           }
         ]
       },
