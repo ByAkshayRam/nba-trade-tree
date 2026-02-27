@@ -18,12 +18,14 @@
       {
         "type": "pick",
         "details": "2025 Second Round Pick",
-        "name": "2025 Second Round Pick",
+        "name": "2025 2nd Round Pick",
         "note": "WAS's 2025 second-round pick sent to DAL in Jaden Hardy trade."
       },
       {
-        "type": "cash",
-        "details": "Cash Considerations"
+        "type": "other",
+        "name": "Cash Considerations",
+        "note": "Cash sent to Dallas in Hardy trade",
+        "isOrigin": true
       }
     ]
   }
