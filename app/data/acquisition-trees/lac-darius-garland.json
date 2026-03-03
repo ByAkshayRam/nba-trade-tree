@@ -2,10 +2,9 @@
   "_meta": {
     "team": "LAC",
     "player": "Darius Garland",
-    "source": "ESPN, NBA.com, Basketball-Reference, The Athletic",
-    "originYear": 2019,
-    "depth": 4,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/g/garlada01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,7 +13,7 @@
     "date": "2026-02-04",
     "currentTeam": "LAC",
     "tradePartner": "CLE",
-    "tradeDescription": "Traded from Cavaliers with a 2026 2nd round pick in exchange for James Harden",
+    "tradeDescription": "Traded from Cavaliers with a 2026 2nd round pick (CLE own) in exchange for James Harden",
     "note": "Two-time All-Star point guard",
     "isOrigin": false,
     "assetsGivenUp": [
@@ -24,7 +23,7 @@
         "acquisitionType": "trade",
         "date": "2023-11-01",
         "tradePartner": "PHI",
-        "tradeDescription": "3-team trade: LAC sent Batum, Covington, KJ Martin, Marcus Morris, picks to PHI; sent 2027 1st swap to OKC; received Harden, PJ Tucker, Filip Petrusev from PHI",
+        "tradeDescription": "3-team trade: LAC sent Batum, Covington, KJ Martin, Marcus Morris, cash, 2024 2nd (became Juan Nunez), 2028 1st, 2029 1st swap, 2029 2nd to PHI; sent 2027 1st swap to OKC; OKC sent 2026 2nd to PHI; received Harden, PJ Tucker, Filip Petrusev from PHI",
         "note": "11-time All-Star guard",
         "isOrigin": false,
         "assetsGivenUp": [
@@ -32,9 +31,10 @@
             "type": "player",
             "name": "Nicolas Batum",
             "acquisitionType": "free-agent",
-            "date": "2021-08-13",
+            "date": "2022-07-06",
             "note": "Re-signed with Clippers as free agent",
-            "isOrigin": true
+            "isOrigin": true,
+            "assetsGivenUp": []
           },
           {
             "type": "player",
@@ -42,7 +42,7 @@
             "acquisitionType": "trade",
             "date": "2022-02-04",
             "tradePartner": "POR",
-            "tradeDescription": "Traded from Trail Blazers with Norman Powell for Eric Bledsoe, Keon Johnson, Justise Winslow, and a 2025 2nd round pick",
+            "tradeDescription": "Traded from Trail Blazers with Norman Powell for Eric Bledsoe, Keon Johnson, Justise Winslow, and a 2025 2nd round pick (DET own, became Bogoljub Markovic)",
             "note": "3-and-D wing, acquired in same trade as Powell",
             "isOrigin": false,
             "assetsGivenUp": [
@@ -60,11 +60,205 @@
                     "type": "player",
                     "name": "Patrick Beverley",
                     "acquisitionType": "free-agent",
-                    "date": "2017-07-01",
-                    "note": "Defensive-minded guard",
-                    "isOrigin": true
+                    "date": "2019-07-11",
+                    "note": "Signed as free agent",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  },
+                  {
+                    "type": "player",
+                    "name": "Daniel Oturu",
+                    "acquisitionType": "trade",
+                    "date": "2020-11-19",
+                    "tradePartner": "MIN",
+                    "tradeDescription": "Traded from Timberwolves for Mathias Lessort and a 2023 2nd round pick (DET own, became James Nnaji)",
+                    "note": "Young center",
+                    "isOrigin": false,
+                    "assetsGivenUp": [
+                      {
+                        "type": "player",
+                        "name": "Mathias Lessort",
+                        "acquisitionType": "trade",
+                        "date": "2019-07-06",
+                        "tradePartner": "PHI",
+                        "tradeDescription": "Acquired from 76ers in 4-team Jimmy Butler sign-and-trade (LAC sent cash to MIA; received Lessort from PHI and Harkless from POR)",
+                        "note": "International big man",
+                        "isOrigin": false,
+                        "assetsGivenUp": [
+                          {
+                            "type": "other",
+                            "name": "Cash Considerations",
+                            "acquisitionType": "original",
+                            "date": "2019-07-06",
+                            "note": "Cash sent to Miami in 4-team trade",
+                            "isOrigin": true,
+                            "assetsGivenUp": []
+                          }
+                        ]
+                      },
+                      {
+                        "type": "pick",
+                        "name": "2023 2nd Round Pick",
+                        "acquisitionType": "trade",
+                        "date": "2023-06-22",
+                        "becamePlayer": "James Nnaji",
+                        "note": "DET own 2nd round pick (acquired from PHI in Tobias Harris trade), sent to MIN",
+                        "isOrigin": true,
+                        "assetsGivenUp": []
+                      }
+                    ]
+                  },
+                  {
+                    "type": "player",
+                    "name": "Rajon Rondo",
+                    "acquisitionType": "trade",
+                    "date": "2021-03-25",
+                    "tradePartner": "ATL",
+                    "tradeDescription": "Traded from Hawks for Lou Williams, a 2023 2nd round pick (POR own, became Julian Phillips) and a 2027 2nd round pick (LAC own)",
+                    "note": "Veteran point guard",
+                    "isOrigin": false,
+                    "assetsGivenUp": [
+                      {
+                        "type": "player",
+                        "name": "Lou Williams",
+                        "acquisitionType": "trade",
+                        "date": "2017-06-28",
+                        "tradePartner": "HOU",
+                        "tradeDescription": "Acquired from Rockets in Chris Paul trade (LAC sent Chris Paul to HOU for Beverley, Dekker, Harrell, Hilliard, Liggins, Lou Williams, Wiltjer, cash, and a 2018 1st)",
+                        "note": "Three-time Sixth Man of the Year",
+                        "isOrigin": false,
+                        "assetsGivenUp": [
+                          {
+                            "type": "player",
+                            "name": "Chris Paul",
+                            "acquisitionType": "trade",
+                            "date": "2011-12-14",
+                            "tradePartner": "NOH",
+                            "tradeDescription": "Traded from New Orleans Hornets for Eric Gordon, Chris Kaman, Al-Farouq Aminu, a 2012 1st round pick (became Austin Rivers), and a 2015 2nd round pick",
+                            "note": "Hall of Fame point guard",
+                            "isOrigin": false,
+                            "assetsGivenUp": [
+                              {
+                                "type": "player",
+                                "name": "Eric Gordon",
+                                "acquisitionType": "draft",
+                                "date": "2008-06-26",
+                                "draftPick": 7,
+                                "draftRound": 1,
+                                "note": "Drafted by Clippers 7th overall in 2008",
+                                "isOrigin": true,
+                                "assetsGivenUp": []
+                              },
+                              {
+                                "type": "player",
+                                "name": "Chris Kaman",
+                                "acquisitionType": "draft",
+                                "date": "2003-06-26",
+                                "draftPick": 6,
+                                "draftRound": 1,
+                                "note": "Drafted by Clippers 6th overall in 2003",
+                                "isOrigin": true,
+                                "assetsGivenUp": []
+                              },
+                              {
+                                "type": "player",
+                                "name": "Al-Farouq Aminu",
+                                "acquisitionType": "draft",
+                                "date": "2010-06-24",
+                                "draftPick": 8,
+                                "draftRound": 1,
+                                "note": "Drafted by Clippers 8th overall in 2010",
+                                "isOrigin": true,
+                                "assetsGivenUp": []
+                              },
+                              {
+                                "type": "pick",
+                                "name": "2012 1st Round Pick (#10)",
+                                "acquisitionType": "own",
+                                "date": "2012-06-28",
+                                "becamePlayer": "Austin Rivers",
+                                "note": "Clippers' own 1st round pick, sent to New Orleans",
+                                "isOrigin": true,
+                                "assetsGivenUp": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "pick",
+                        "name": "2023 2nd Round Pick",
+                        "acquisitionType": "trade",
+                        "date": "2023-06-22",
+                        "becamePlayer": "Julian Phillips",
+                        "note": "POR own 2nd round pick (acquired from DET in Kennard 3-team trade), sent to ATL",
+                        "isOrigin": true,
+                        "assetsGivenUp": []
+                      },
+                      {
+                        "type": "pick",
+                        "name": "2027 2nd Round Pick",
+                        "acquisitionType": "own",
+                        "date": "2027-06-24",
+                        "note": "Clippers' own 2nd round pick, sent to ATL",
+                        "isOrigin": true,
+                        "assetsGivenUp": []
+                      }
+                    ]
                   }
                 ]
+              },
+              {
+                "type": "player",
+                "name": "Keon Johnson",
+                "acquisitionType": "trade",
+                "date": "2021-07-30",
+                "tradePartner": "NYK",
+                "tradeDescription": "Traded from Knicks for Quentin Grimes and a 2024 2nd round draft pick (DET own, became Jonathan Mogbo)",
+                "note": "Athletic guard",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Quentin Grimes",
+                    "acquisitionType": "draft",
+                    "date": "2021-07-29",
+                    "draftPick": 25,
+                    "draftRound": 1,
+                    "note": "Drafted by Clippers 25th overall in 2021, traded to Knicks the next day",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2024 2nd Round Pick",
+                    "acquisitionType": "own",
+                    "date": "2024-06-26",
+                    "becamePlayer": "Jonathan Mogbo",
+                    "note": "DET own 2nd round pick, sent to Knicks",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  }
+                ]
+              },
+              {
+                "type": "player",
+                "name": "Justise Winslow",
+                "acquisitionType": "free-agent",
+                "date": "2021-08-07",
+                "note": "Signed with Clippers as free agent",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              },
+              {
+                "type": "pick",
+                "name": "2025 2nd Round Pick (#39)",
+                "acquisitionType": "own",
+                "date": "2025-06-25",
+                "becamePlayer": "Bogoljub Markovic",
+                "note": "DET own 2nd round pick, sent to Portland",
+                "isOrigin": true,
+                "assetsGivenUp": []
               }
             ]
           },
@@ -74,76 +268,196 @@
             "acquisitionType": "trade",
             "date": "2023-07-08",
             "tradePartner": "HOU",
-            "tradeDescription": "Acquired from Rockets (as Kenyon Martin Jr.) in 5-team trade involving MEM, ATL, OKC",
-            "note": "Athletic forward",
+            "tradeDescription": "5-team trade: LAC sent Vanja Marinkovic to MEM; LAC sent 2026 2nd (LAC own) and 2027 2nd (MEM own) to HOU; HOU sent Kenyon Martin Jr. to LAC",
+            "note": "Athletic forward (Kenyon Martin Jr.)",
             "isOrigin": false,
             "assetsGivenUp": [
               {
+                "type": "player",
+                "name": "Vanja Marinkovic",
+                "acquisitionType": "trade",
+                "date": "2022-02-10",
+                "tradePartner": "SAC",
+                "tradeDescription": "4-team trade: LAC sent Michineau to SAC, Ibaka and cash to MIL; received Marinkovic from SAC and Hood/Ojeleye from MIL; DET sent Jackson/Lyles to SAC and a 2023 2nd to MIL; SAC sent Bagley to DET and DiVincenzo to SAC; MIL sent DiVincenzo to SAC",
+                "note": "International player acquired in Ibaka trade",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "David Michineau",
+                    "acquisitionType": "free-agent",
+                    "date": "2021-10-01",
+                    "note": "International player signed by Clippers, sent to SAC",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  },
+                  {
+                    "type": "player",
+                    "name": "Serge Ibaka",
+                    "acquisitionType": "free-agent",
+                    "date": "2020-11-25",
+                    "note": "Signed as free agent, sent to MIL",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  },
+                  {
+                    "type": "other",
+                    "name": "Cash Considerations",
+                    "acquisitionType": "original",
+                    "date": "2022-02-10",
+                    "note": "Cash sent to MIL in 4-team trade",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  }
+                ]
+              },
+              {
                 "type": "pick",
                 "name": "2026 2nd Round Pick",
-                "acquisitionType": "original",
-                "date": "2026-06-26",
+                "acquisitionType": "own",
+                "date": "2026-06-25",
                 "note": "LAC own 2nd round pick, sent to HOU in 5-team trade",
-                "isOrigin": true
+                "isOrigin": true,
+                "assetsGivenUp": []
               },
               {
                 "type": "pick",
                 "name": "2027 2nd Round Pick",
-                "acquisitionType": "original",
-                "date": "2027-06-26",
-                "note": "MEM own 2nd round pick, sent to HOU in 5-team trade (LAC also received via MEM)",
-                "isOrigin": true
+                "acquisitionType": "trade",
+                "date": "2027-06-24",
+                "note": "MEM own 2nd round pick, sent to HOU in 5-team trade",
+                "isOrigin": true,
+                "assetsGivenUp": []
               }
             ]
           },
           {
             "type": "player",
             "name": "Marcus Morris",
-            "acquisitionType": "free-agent",
-            "date": "2019-07-15",
-            "note": "Veteran forward, signed as free agent",
-            "isOrigin": true
+            "acquisitionType": "trade",
+            "date": "2020-02-06",
+            "tradePartner": "NYK",
+            "tradeDescription": "3-team trade: LAC sent Jerome Robinson to WAS; Harkless, 2020 1st (became Udoka Azubuike), 2021 1st swap (did not convey), 2021 2nd (DET own, became Jeremiah Robinson-Earl) to NYK; received Morris from NYK and Isaiah Thomas from WAS",
+            "note": "Veteran forward",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Jerome Robinson",
+                "acquisitionType": "draft",
+                "date": "2018-06-21",
+                "draftPick": 13,
+                "draftRound": 1,
+                "note": "Drafted by Clippers 13th overall in 2018, sent to WAS",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              },
+              {
+                "type": "player",
+                "name": "Maurice Harkless",
+                "acquisitionType": "trade",
+                "date": "2019-07-06",
+                "tradePartner": "POR",
+                "tradeDescription": "Acquired from Trail Blazers in 4-team Jimmy Butler sign-and-trade (LAC sent cash to MIA; received Harkless from POR and Lessort from PHI)",
+                "note": "Versatile forward, sent to NYK",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "other",
+                    "name": "Cash Considerations",
+                    "acquisitionType": "original",
+                    "date": "2019-07-06",
+                    "note": "Cash sent to Miami in 4-team trade",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  }
+                ]
+              },
+              {
+                "type": "pick",
+                "name": "2020 1st Round Pick (#27)",
+                "acquisitionType": "own",
+                "date": "2020-11-18",
+                "becamePlayer": "Udoka Azubuike",
+                "note": "Clippers' own 1st round pick, sent to NYK",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              },
+              {
+                "type": "pick",
+                "name": "2021 1st Round Pick Swap",
+                "acquisitionType": "own",
+                "date": "2021-07-29",
+                "note": "Right to swap first-round picks, sent to NYK (did not convey, top-4 protected)",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              },
+              {
+                "type": "pick",
+                "name": "2021 2nd Round Pick",
+                "acquisitionType": "trade",
+                "date": "2021-07-29",
+                "becamePlayer": "Jeremiah Robinson-Earl",
+                "note": "DET own 2nd round pick, sent to NYK",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              }
+            ]
           },
           {
             "type": "pick",
-            "name": "2024 2nd Round Pick",
-            "acquisitionType": "original",
+            "name": "2024 2nd Round Pick (#36)",
+            "acquisitionType": "own",
             "date": "2024-06-26",
             "becamePlayer": "Juan Nunez",
             "note": "More favorable of LAC/TOR 2nd round picks, sent to PHI",
-            "isOrigin": true
+            "isOrigin": true,
+            "assetsGivenUp": []
           },
           {
             "type": "pick",
             "name": "2028 1st Round Pick",
-            "acquisitionType": "original",
+            "acquisitionType": "own",
             "date": "2028-06-20",
             "note": "Clippers' own first-round pick, sent to PHI",
-            "isOrigin": true
+            "isOrigin": true,
+            "assetsGivenUp": []
           },
           {
             "type": "pick",
-            "name": "2029 1st Round Pick",
-            "acquisitionType": "original",
+            "name": "2029 1st Round Pick Swap",
+            "acquisitionType": "own",
             "date": "2029-06-21",
-            "note": "Clippers' own first-round pick swap, sent to PHI",
-            "isOrigin": true
+            "note": "Clippers' own first-round pick swap right, sent to PHI",
+            "isOrigin": true,
+            "assetsGivenUp": []
           },
           {
             "type": "pick",
             "name": "2029 2nd Round Pick",
-            "acquisitionType": "original",
+            "acquisitionType": "own",
             "date": "2029-06-21",
             "note": "Clippers' own second-round pick, sent to PHI",
-            "isOrigin": true
+            "isOrigin": true,
+            "assetsGivenUp": []
           },
           {
             "type": "pick",
             "name": "2027 1st Round Pick Swap",
-            "acquisitionType": "original",
+            "acquisitionType": "own",
             "date": "2027-06-24",
             "note": "Right to swap first-round picks, sent to OKC in 3-team trade",
-            "isOrigin": true
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "other",
+            "name": "Cash Considerations",
+            "acquisitionType": "original",
+            "date": "2023-11-01",
+            "note": "Cash sent to PHI in Harden trade",
+            "isOrigin": true,
+            "assetsGivenUp": []
           }
         ]
       }

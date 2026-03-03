@@ -2,10 +2,9 @@
   "_meta": {
     "team": "HOU",
     "player": "Steven Adams",
-    "source": "ESPN, NBA.com, Basketball-Reference",
-    "originYear": 2013,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/a/adamsst01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,7 +13,7 @@
     "date": "2024-02-01",
     "currentTeam": "HOU",
     "tradePartner": "MEM",
-    "tradeDescription": "Rockets got Adams from Grizzlies for Oladipo and 3 second round picks",
+    "tradeDescription": "Rockets traded Victor Oladipo, a 2024 2nd round pick (OKC own, Jaylen Wells #39), a 2024 2nd round pick (more favorable, Ulrich Chomche #57) and a 2025 2nd round pick (more favorable of HOU/OKC, Will Richard) to Memphis Grizzlies for Steven Adams",
     "note": "New Zealand center acquired from Memphis Grizzlies",
     "assetsGivenUp": [
       {
@@ -23,9 +22,8 @@
         "acquisitionType": "trade",
         "date": "2023-10-17",
         "tradePartner": "OKC",
-        "tradeDescription": "Rockets traded Kevin Porter Jr., 2027 2nd (MIN own) and 2028 2nd (MIL own) to OKC for Oladipo and Robinson-Earl",
+        "tradeDescription": "Rockets traded Kevin Porter Jr., 2027 2nd (MIN own) and 2028 2nd (MIL own) to OKC for Oladipo and Jeremiah Robinson-Earl. Houston also received trade exception.",
         "note": "Salary dump to move off Kevin Porter Jr. after off-court issues",
-        "isOrigin": false,
         "assetsGivenUp": [
           {
             "type": "player",
@@ -33,52 +31,138 @@
             "acquisitionType": "trade",
             "date": "2021-01-22",
             "tradePartner": "CLE",
-            "tradeDescription": "Rockets sent a 2024 2nd round pick (GSW own, did not convey) to Cleveland for KPJ",
-            "note": "USC guard, acquired from Cleveland for a conditional 2nd round pick",
-            "isOrigin": true
+            "tradeDescription": "Rockets sent a 2024 2nd round pick (GSW own, did not convey) to Cleveland for Kevin Porter Jr. Cleveland also received trade exception.",
+            "note": "Guard acquired from Cleveland for a conditional 2nd round pick",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "pick",
+                "name": "2024 2nd Round Pick via GSW",
+                "acquisitionType": "draft",
+                "note": "Conditional pick; did not convey. Sent to CLE for KPJ.",
+                "isOrigin": true,
+                "assetsGivenUp": [],
+                "date": "2021-01-22",
+                "becamePlayer": "Did not convey",
+                "tradePartner": "CLE"
+              }
+            ]
           },
           {
             "type": "pick",
-            "name": "2027 2nd Round Pick (MIN)",
+            "name": "2027 2nd Round Pick via MIN",
             "acquisitionType": "trade",
-            "note": "Originally MIN's pick; sent to OKC in Oladipo trade",
-            "isOrigin": true
+            "tradePartner": "MIN",
+            "note": "Originally MIN's pick, acquired by HOU in TyTy Washington trade (June 24, 2022); sent to OKC",
+            "isOrigin": false,
+            "assetsGivenUp": [],
+            "date": "2023-10-17"
           },
           {
             "type": "pick",
-            "name": "2028 2nd Round Pick (MIL)",
+            "name": "2028 2nd Round Pick via MIL",
             "acquisitionType": "trade",
-            "note": "Originally MIL's pick; sent to OKC in Oladipo trade",
-            "isOrigin": true
+            "tradePartner": "BKN",
+            "note": "Originally MIL's pick, acquired by HOU in Patty Mills trade with BRK (July 6, 2023); sent to OKC",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "pick",
+                "name": "2024 2nd Round Pick via BKN",
+                "acquisitionType": "draft",
+                "note": "Did not convey. Sent to BKN for Mills and this pick.",
+                "isOrigin": true,
+                "assetsGivenUp": [],
+                "date": "2023-10-17",
+                "becamePlayer": "Did not convey"
+              }
+            ],
+            "date": "2023-10-17"
           }
         ]
       },
       {
         "type": "pick",
-        "name": "2024 2nd Round Pick (OKC)",
+        "name": "2024 2nd Round Pick (#39, more favorable)",
         "acquisitionType": "trade",
         "date": "2024-06-27",
+        "tradePartner": "BKN",
         "becamePlayer": "Jaylen Wells",
-        "note": "Originally OKC's 2nd round pick; became #39 overall, MEM drafted Jaylen Wells (Washington State) — breakout rookie",
-        "isOrigin": true
+        "note": "Originally BRK's 2nd round pick; acquired by HOU from BKN for cash and Sekou Doumbouya (Oct 6, 2021). Sent to MEM who drafted Jaylen Wells.",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "other",
+            "name": "Cash Considerations",
+            "acquisitionType": "free-agent",
+            "note": "Cash sent to BKN for Doumbouya (waived) and this pick",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          }
+        ]
       },
       {
         "type": "pick",
-        "name": "2024 2nd Round Pick (HOU)",
-        "acquisitionType": "original",
+        "name": "2024 2nd Round Pick (#57) via OKC",
+        "acquisitionType": "trade",
         "date": "2024-06-27",
+        "tradePartner": "ATL",
         "becamePlayer": "Ulrich Chomche",
-        "note": "More favorable of HOU's available 2nds; became #57 overall, MEM drafted Ulrich Chomche (NBA Academy Africa) and traded to TOR",
-        "isOrigin": true
+        "note": "Originally OKC's 2nd round pick; acquired by HOU from ATL in Bruno Fernando/Garrison Mathews trade (Feb 9, 2023). Sent to MEM who drafted Chomche.",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Bruno Fernando",
+            "acquisitionType": "trade",
+            "date": "2022-02-10",
+            "tradePartner": "BOS",
+            "tradeDescription": "Rockets traded Daniel Theis to Celtics for Bruno Fernando, Enes Freedom and Dennis Schroder",
+            "note": "Acquired from BOS in Theis trade; sent to ATL for picks",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Daniel Theis",
+                "acquisitionType": "trade",
+                "date": "2021-08-07",
+                "tradePartner": "CHI",
+                "tradeDescription": "Rockets traded cash to Chicago Bulls for Daniel Theis",
+                "note": "Acquired from CHI for cash",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "other",
+                    "name": "Cash Considerations",
+                    "acquisitionType": "free-agent",
+                    "note": "Cash sent to CHI for Theis",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Garrison Mathews",
+            "acquisitionType": "free-agent",
+            "date": "2021-10-18",
+            "note": "Claimed on waivers from BOS; later signed to contract. Sent to ATL for picks.",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          }
+        ]
       },
       {
         "type": "pick",
-        "name": "2025 2nd Round Pick",
-        "acquisitionType": "original",
+        "name": "2025 2nd Round Pick (more favorable of HOU/OKC)",
+        "acquisitionType": "draft",
         "date": "2025-06-26",
         "becamePlayer": "Will Richard",
-        "note": "Rockets' own 2nd round pick (#56 overall), sent to MEM who drafted Will Richard (Florida) and traded him to GSW",
-        "isOrigin": true
+        "note": "Became HOU's own pick; sent to MEM who drafted Will Richard",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

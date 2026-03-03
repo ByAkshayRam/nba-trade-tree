@@ -3,27 +3,28 @@
     "team": "MEM",
     "player": "Javon Small",
     "source": "Basketball-Reference, NBA.com, ESPN",
-    "originYear": 2025,
-    "depth": 3,
-    "lastUpdated": "2026-02-16"
+    "sourceUrl": "https://www.basketball-reference.com/players/s/smallja01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Javon Small",
-    "acquisitionType": "draft",
-    "date": "2025-06-25",
+    "acquisitionType": "trade",
+    "date": "2025-02-06",
     "currentTeam": "MEM",
     "draftPick": 48,
     "draftRound": 2,
-    "note": "West Virginia guard, drafted 48th overall by Memphis using pick acquired from Washington in 3-team trade",
+    "tradePartner": "WAS",
+    "tradeDescription": "3-team trade: MEM sent Marcus Smart and 2025 1st to WAS, Jake LaRavia to SAC; received Bagley, Johnny Davis, and this 2nd round pick (#48, Javon Small) from WAS",
+    "note": "West Virginia guard; pick acquired from WAS in Marcus Smart 3-team trade (Feb 6, 2025)",
     "assetsGivenUp": [
       {
         "type": "pick",
-        "name": "2025 2nd Round Pick (WAS own)",
+        "name": "2025 2nd Round Pick (#48)",
         "acquisitionType": "trade",
         "date": "2025-02-06",
         "tradePartner": "WAS",
-        "tradeDescription": "3-team trade: MEM sent Marcus Smart and 2025 1st to WAS, Jake LaRavia to SAC; received Bagley, Johnny Davis, this 2nd pick, and a 2028 2nd from SAC",
+        "tradeDescription": "3-team trade: MEM sent Marcus Smart and 2025 1st (MEM own, became Walter Clayton Jr.) to WAS, Jake LaRavia to SAC; received Bagley, Johnny Davis, this 2nd round pick from WAS, and a 2028 2nd from SAC",
         "becamePlayer": "Javon Small",
         "note": "Washington's own 2025 2nd round pick, acquired in Marcus Smart 3-team trade",
         "assetsGivenUp": [
@@ -33,39 +34,106 @@
             "acquisitionType": "trade",
             "date": "2023-06-23",
             "tradePartner": "BOS",
-            "note": "Oklahoma State guard, acquired from Boston in Kristaps Porzingis trade",
+            "tradeDescription": "3-team trade: MEM traded Tyus Jones to WAS, Marcus Sasser and 2024 1st (GSW own, became Bub Carrington) to BOS; BOS traded Marcus Smart to MEM; BOS traded Gallinari, Muscala, Julian Phillips to WAS; WAS traded Kristaps Porzingis to BOS",
+            "note": "Oklahoma State guard, acquired from Boston in Kristaps Porzingis 3-team trade",
             "assetsGivenUp": [
               {
                 "type": "player",
                 "name": "Tyus Jones",
                 "acquisitionType": "free-agent",
-                "date": "2019-07-11",
-                "note": "Duke guard, signed as restricted free agent after Minnesota declined to match offer sheet",
+                "date": "2019-07-07",
+                "note": "Duke guard, signed as free agent from Minnesota",
                 "isOrigin": true
+              },
+              {
+                "type": "player",
+                "name": "Marcus Sasser",
+                "acquisitionType": "draft",
+                "date": "2023-06-22",
+                "draftPick": 25,
+                "draftRound": 1,
+                "note": "Houston guard, drafted 25th overall by Memphis, sent to Boston in Smart trade",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2024 1st Round Pick (#14)",
+                "acquisitionType": "trade",
+                "date": "2019-07-07",
+                "tradePartner": "GSW",
+                "tradeDescription": "Memphis traded Julian Washburn to Golden State for Andre Iguodala, cash and this 2024 1st round pick (top-4 protected)",
+                "becamePlayer": "Bub Carrington",
+                "note": "Golden State's own 2024 1st round pick, acquired in Iguodala trade, sent to Boston in Smart trade",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Julian Washburn",
+                    "acquisitionType": "free-agent",
+                    "date": "2019-01-15",
+                    "note": "UTEP forward, signed to two-way contract as undrafted free agent",
+                    "isOrigin": true
+                  }
+                ]
               }
             ]
           },
           {
             "type": "player",
             "name": "Jake LaRavia",
-            "acquisitionType": "draft",
-            "date": "2022-06-23",
+            "acquisitionType": "trade",
+            "date": "2022-06-24",
             "draftPick": 19,
             "draftRound": 1,
-            "note": "Wake Forest forward, drafted by Memphis. Sent to Sacramento in this trade.",
-            "isOrigin": true
+            "tradePartner": "MIN",
+            "tradeDescription": "Memphis traded Walker Kessler and TyTy Washington Jr. to Minnesota for Jake LaRavia and a 2023 2nd round pick (GG Jackson)",
+            "note": "Wake Forest forward, acquired from MIN in draft-night trade. Sent to Sacramento in Smart 3-team trade.",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Walker Kessler",
+                "acquisitionType": "draft",
+                "date": "2022-06-23",
+                "draftPick": 22,
+                "draftRound": 1,
+                "tradePartner": "UTA",
+                "tradeDescription": "Pick from Utah as part of Mike Conley trade (Jul 6, 2019); conveyed in 2022 as #22",
+                "note": "Auburn center, drafted with UTA's pick from Conley trade, sent to MIN",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Mike Conley",
+                    "acquisitionType": "draft",
+                    "date": "2007-06-28",
+                    "draftPick": 4,
+                    "draftRound": 1,
+                    "note": "Ohio State guard, drafted 4th overall by Memphis in 2007",
+                    "isOrigin": true
+                  }
+                ]
+              },
+              {
+                "type": "player",
+                "name": "TyTy Washington Jr.",
+                "acquisitionType": "draft",
+                "date": "2022-06-23",
+                "draftPick": 29,
+                "draftRound": 1,
+                "note": "Kentucky guard, drafted 29th overall by Memphis with MEM's own pick, sent to MIN",
+                "isOrigin": true
+              }
+            ]
           },
           {
             "type": "pick",
-            "name": "2025 1st Round Pick (MEM own)",
-            "acquisitionType": "original",
+            "name": "2025 1st Round Pick (#18)",
+            "acquisitionType": "draft",
             "becamePlayer": "Walter Clayton Jr.",
             "note": "Memphis' own 2025 first-round pick, sent to Washington",
-            "isOrigin": true
+            "isOrigin": true,
+            "date": "2025-06-25"
           }
         ]
       }
-    ],
-    "isOrigin": true
+    ]
   }
 }

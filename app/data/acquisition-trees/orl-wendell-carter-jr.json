@@ -2,10 +2,9 @@
   "_meta": {
     "team": "ORL",
     "player": "Wendell Carter Jr.",
-    "source": "NBA.com/ESPN - Feb 2026",
-    "originYear": 2004,
-    "depth": 3,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/c/cartewe01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,8 +13,7 @@
     "date": "2021-03-25",
     "currentTeam": "ORL",
     "tradePartner": "CHI",
-    "tradeDescription": "Part of Nikola Vucevic deal",
-    "note": "Received with Al-Farouq Aminu and two 1st-round picks for Vucevic",
+    "tradeDescription": "Orlando traded Nikola Vucevic and Al-Farouq Aminu to Chicago for Wendell Carter Jr., Otto Porter, 2021 1st round pick (top-4 protected, became Franz Wagner) and 2023 1st round pick (became Jett Howard). Orlando also received a trade exception",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -23,8 +21,8 @@
         "acquisitionType": "trade",
         "date": "2012-08-10",
         "tradePartner": "PHI",
-        "currentTeam": "CHI",
-        "note": "Acquired in four-team Dwight Howard trade",
+        "tradeDescription": "4-team trade: Orlando sent Dwight Howard, Earl Clark, Chris Duhon (to LAL) and Jason Richardson (to PHI). Orlando received Nikola Vucevic, Maurice Harkless, 2018 1st round pick (from PHI); Arron Afflalo, Al Harrington, 2013 2nd round pick, 2014 1st round pick (from DEN); Christian Eyenga, Josh McRoberts, 2017 2nd round pick (from LAL). Philadelphia received Andrew Bynum (from LAL) and Jason Richardson (from ORL). Denver received Andre Iguodala (from PHI)",
+        "isOrigin": false,
         "assetsGivenUp": [
           {
             "type": "player",
@@ -33,10 +31,308 @@
             "date": "2004-06-24",
             "draftPick": 1,
             "draftRound": 1,
-            "note": "#1 overall pick in 2004, franchise cornerstone",
-            "isOrigin": true
+            "tradeDescription": "Drafted #1 overall by Orlando in the 2004 NBA Draft",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "player",
+            "name": "Jason Richardson",
+            "acquisitionType": "trade",
+            "date": "2010-12-18",
+            "tradePartner": "PHO",
+            "tradeDescription": "Orlando traded Vince Carter, Marcin Gortat, Mickaël Piétrus, cash and 2011 1st round pick (became Nikola Mirotić) to Phoenix for Jason Richardson, Earl Clark and Hedo Türkoğlu",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Vince Carter",
+                "acquisitionType": "trade",
+                "date": "2009-06-25",
+                "tradePartner": "NJN",
+                "tradeDescription": "Orlando traded Rafer Alston, Tony Battie and Courtney Lee to New Jersey for Vince Carter and Ryan Anderson",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Courtney Lee",
+                    "acquisitionType": "draft",
+                    "date": "2008-06-26",
+                    "draftPick": 22,
+                    "draftRound": 1,
+                    "tradeDescription": "Drafted #22 overall by Orlando in the 2008 NBA Draft",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  },
+                  {
+                    "type": "player",
+                    "name": "Rafer Alston",
+                    "acquisitionType": "trade",
+                    "date": "2009-02-19",
+                    "tradePartner": "HOU",
+                    "tradeDescription": "3-team trade: Orlando sent Adonal Foyle, Mike Wilks, Brian Cook (to HOU) and 2009 1st round pick (to MEM, became DeMarre Carroll). Houston sent Rafer Alston to Orlando. Memphis sent Kyle Lowry to Houston",
+                    "isOrigin": false,
+                    "assetsGivenUp": [
+                      {
+                        "type": "player",
+                        "name": "Adonal Foyle",
+                        "acquisitionType": "free-agent",
+                        "date": "2007-08-24",
+                        "tradeDescription": "Signed as free agent",
+                        "isOrigin": true,
+                        "assetsGivenUp": []
+                      },
+                      {
+                        "type": "player",
+                        "name": "Mike Wilks",
+                        "acquisitionType": "free-agent",
+                        "date": "2008-09-25",
+                        "tradeDescription": "Signed as free agent",
+                        "isOrigin": true,
+                        "assetsGivenUp": []
+                      },
+                      {
+                        "type": "pick",
+                        "name": "2009 1st Round Pick (#23)",
+                        "acquisitionType": "own",
+                        "becamePlayer": "DeMarre Carroll",
+                        "isOrigin": true,
+                        "assetsGivenUp": []
+                      },
+                      {
+                        "type": "player",
+                        "name": "Brian Cook",
+                        "acquisitionType": "trade",
+                        "date": "2007-11-20",
+                        "tradePartner": "LAL",
+                        "tradeDescription": "Orlando traded Trevor Ariza to LA Lakers for Brian Cook and Maurice Evans",
+                        "isOrigin": false,
+                        "assetsGivenUp": [
+                          {
+                            "type": "player",
+                            "name": "Trevor Ariza",
+                            "acquisitionType": "trade",
+                            "date": "2006-02-22",
+                            "tradePartner": "NYK",
+                            "tradeDescription": "Orlando traded Steve Francis to New York for Trevor Ariza and Anfernee Hardaway",
+                            "isOrigin": false,
+                            "assetsGivenUp": [
+                              {
+                                "type": "player",
+                                "name": "Steve Francis",
+                                "acquisitionType": "trade",
+                                "date": "2004-06-29",
+                                "tradePartner": "HOU",
+                                "tradeDescription": "Orlando traded Tracy McGrady, Reece Gaines, Juwan Howard and Tyronn Lue to Houston for Steve Francis, Cuttino Mobley and Kelvin Cato",
+                                "isOrigin": false,
+                                "assetsGivenUp": [
+                                  {
+                                    "type": "player",
+                                    "name": "Tracy McGrady",
+                                    "acquisitionType": "trade",
+                                    "date": "2000-08-03",
+                                    "tradePartner": "TOR",
+                                    "tradeDescription": "Orlando traded 2005 1st round pick (became Fran Vázquez) to Toronto for Tracy McGrady",
+                                    "isOrigin": false,
+                                    "assetsGivenUp": [
+                                      {
+                                        "type": "pick",
+                                        "name": "2005 1st Round Pick (#11)",
+                                        "acquisitionType": "own",
+                                        "becamePlayer": "Fran Vázquez",
+                                        "isOrigin": true,
+                                        "assetsGivenUp": []
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "player",
+                                    "name": "Reece Gaines",
+                                    "acquisitionType": "draft",
+                                    "date": "2003-06-26",
+                                    "draftPick": 15,
+                                    "draftRound": 1,
+                                    "tradeDescription": "Drafted #15 overall by Orlando in the 2003 NBA Draft",
+                                    "isOrigin": true,
+                                    "assetsGivenUp": []
+                                  },
+                                  {
+                                    "type": "player",
+                                    "name": "Juwan Howard",
+                                    "acquisitionType": "free-agent",
+                                    "date": "2003-07-16",
+                                    "tradeDescription": "Signed as free agent",
+                                    "isOrigin": true,
+                                    "assetsGivenUp": []
+                                  },
+                                  {
+                                    "type": "player",
+                                    "name": "Tyronn Lue",
+                                    "acquisitionType": "free-agent",
+                                    "date": "2003-07-23",
+                                    "tradeDescription": "Signed as free agent",
+                                    "isOrigin": true,
+                                    "assetsGivenUp": []
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "player",
+                    "name": "Tony Battie",
+                    "acquisitionType": "trade",
+                    "date": "2004-07-23",
+                    "tradePartner": "CLE",
+                    "tradeDescription": "Orlando traded Drew Gooden, Steven Hunter and Anderson Varejão to Cleveland for Tony Battie, 2005 2nd round pick and 2007 2nd round pick",
+                    "isOrigin": false,
+                    "assetsGivenUp": [
+                      {
+                        "type": "player",
+                        "name": "Drew Gooden",
+                        "acquisitionType": "trade",
+                        "date": "2003-02-19",
+                        "tradePartner": "MEM",
+                        "tradeDescription": "Orlando traded Mike Miller, Ryan Humphrey, 2003 1st round pick (became Kendrick Perkins) and 2004 2nd round pick to Memphis for Drew Gooden and Gordan Giriček",
+                        "isOrigin": false,
+                        "assetsGivenUp": [
+                          {
+                            "type": "player",
+                            "name": "Mike Miller",
+                            "acquisitionType": "draft",
+                            "date": "2000-06-28",
+                            "draftPick": 5,
+                            "draftRound": 1,
+                            "tradeDescription": "Drafted #5 overall by Orlando in the 2000 NBA Draft",
+                            "isOrigin": true,
+                            "assetsGivenUp": []
+                          },
+                          {
+                            "type": "player",
+                            "name": "Ryan Humphrey",
+                            "acquisitionType": "trade",
+                            "date": "2002-06-26",
+                            "tradePartner": "UTA",
+                            "tradeDescription": "Orlando traded Curtis Borchardt to Utah for Ryan Humphrey and Jamal Sampson (draft-night trade)",
+                            "isOrigin": false,
+                            "assetsGivenUp": [
+                              {
+                                "type": "player",
+                                "name": "Curtis Borchardt",
+                                "acquisitionType": "draft",
+                                "date": "2002-06-26",
+                                "draftPick": 18,
+                                "draftRound": 1,
+                                "tradeDescription": "Drafted #18 overall by Orlando in the 2002 NBA Draft",
+                                "isOrigin": true,
+                                "assetsGivenUp": []
+                              }
+                            ]
+                          },
+                          {
+                            "type": "pick",
+                            "name": "2003 1st Round Pick (#27)",
+                            "acquisitionType": "own",
+                            "becamePlayer": "Kendrick Perkins",
+                            "isOrigin": true,
+                            "assetsGivenUp": []
+                          },
+                          {
+                            "type": "pick",
+                            "name": "2004 2nd Round Pick",
+                            "acquisitionType": "own",
+                            "becamePlayer": "Sergei Lishouk",
+                            "isOrigin": true,
+                            "assetsGivenUp": []
+                          }
+                        ]
+                      },
+                      {
+                        "type": "player",
+                        "name": "Steven Hunter",
+                        "acquisitionType": "draft",
+                        "date": "2001-06-27",
+                        "draftPick": 15,
+                        "draftRound": 1,
+                        "tradeDescription": "Drafted #15 overall by Orlando in the 2001 NBA Draft",
+                        "isOrigin": true,
+                        "assetsGivenUp": []
+                      },
+                      {
+                        "type": "player",
+                        "name": "Anderson Varejão",
+                        "acquisitionType": "draft",
+                        "date": "2004-06-24",
+                        "draftPick": 30,
+                        "draftRound": 2,
+                        "tradeDescription": "Drafted #30 overall by Orlando in the 2004 NBA Draft",
+                        "isOrigin": true,
+                        "assetsGivenUp": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "player",
+                "name": "Marcin Gortat",
+                "acquisitionType": "trade",
+                "date": "2005-06-28",
+                "tradePartner": "PHO",
+                "tradeDescription": "Orlando traded future considerations to Phoenix for Marcin Gortat",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "other",
+                    "name": "Future Considerations",
+                    "acquisitionType": "own",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  }
+                ]
+              },
+              {
+                "type": "player",
+                "name": "Mickaël Piétrus",
+                "acquisitionType": "free-agent",
+                "date": "2008-07-10",
+                "tradeDescription": "Signed as free agent",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              },
+              {
+                "type": "pick",
+                "name": "2011 1st Round Pick (#23)",
+                "acquisitionType": "own",
+                "becamePlayer": "Nikola Mirotić",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Chris Duhon",
+            "acquisitionType": "free-agent",
+            "date": "2010-07-08",
+            "tradeDescription": "Signed as free agent",
+            "isOrigin": true,
+            "assetsGivenUp": []
           }
         ]
+      },
+      {
+        "type": "player",
+        "name": "Al-Farouq Aminu",
+        "acquisitionType": "free-agent",
+        "date": "2019-07-06",
+        "tradeDescription": "Signed as free agent",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

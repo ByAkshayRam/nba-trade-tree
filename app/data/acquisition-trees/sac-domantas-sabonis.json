@@ -3,9 +3,8 @@
     "team": "SAC",
     "player": "Domantas Sabonis",
     "source": "Basketball-Reference SAC 2021-22 Transactions",
-    "originYear": 2016,
-    "depth": 6,
-    "lastUpdated": "2026-02-17"
+    "sourceUrl": "https://www.basketball-reference.com/players/s/sabondo01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,7 +13,7 @@
     "date": "2022-02-08",
     "currentTeam": "SAC",
     "tradePartner": "IND",
-    "tradeDescription": "Kings traded Haliburton, Hield, and Thompson to Pacers for Sabonis, Justin Holiday, Jeremy Lamb, and 2023 2nd (Jordan Walsh)",
+    "tradeDescription": "Kings traded Tyrese Haliburton, Buddy Hield, and Tristan Thompson to Pacers for Domantas Sabonis, Justin Holiday, Jeremy Lamb, and a 2023 2nd round pick (Jordan Walsh). Indiana also received a trade exception.",
     "note": "All-Star center, originally drafted 11th overall by Orlando in 2016",
     "assetsGivenUp": [
       {
@@ -25,7 +24,8 @@
         "draftPick": 12,
         "draftRound": 1,
         "note": "Guard drafted 12th overall from Iowa State",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "player",
@@ -33,7 +33,7 @@
         "acquisitionType": "trade",
         "date": "2017-02-20",
         "tradePartner": "NOP",
-        "tradeDescription": "Kings traded DeMarcus Cousins and Omri Casspi to Pelicans for Hield, Tyreke Evans, Langston Galloway, 2017 1st (Zach Collins), and 2017 2nd (Frank Mason III)",
+        "tradeDescription": "Kings traded DeMarcus Cousins and Omri Casspi to Pelicans for Buddy Hield, Tyreke Evans, Langston Galloway, a 2017 1st round pick (Zach Collins, top-3 protected), and a 2017 2nd round pick (Frank Mason III, PHI own)",
         "note": "Originally drafted 6th overall by New Orleans in 2016",
         "assetsGivenUp": [
           {
@@ -44,7 +44,8 @@
             "draftPick": 5,
             "draftRound": 1,
             "note": "Center drafted 5th overall from Kentucky",
-            "isOrigin": true
+            "isOrigin": true,
+            "assetsGivenUp": []
           },
           {
             "type": "player",
@@ -52,7 +53,8 @@
             "acquisitionType": "free-agent",
             "date": "2015-07-14",
             "note": "Forward re-signed as free agent (second stint with Kings)",
-            "isOrigin": true
+            "isOrigin": true,
+            "assetsGivenUp": []
           }
         ]
       },
@@ -62,7 +64,7 @@
         "acquisitionType": "trade",
         "date": "2021-08-07",
         "tradePartner": "BOS",
-        "tradeDescription": "3-team trade: SAC sent Delon Wright to ATL; BOS sent Tristan Thompson to SAC; ATL sent Kris Dunn, Bruno Fernando, and 2023 2nd to BOS",
+        "tradeDescription": "3-team trade: SAC sent Delon Wright to ATL; ATL sent Kris Dunn, Bruno Fernando, and a 2023 2nd round draft pick (Julian Phillips, POR own) to BOS; BOS sent Tristan Thompson to SAC. Boston also received a trade exception.",
         "note": "Veteran center",
         "assetsGivenUp": [
           {
@@ -70,9 +72,9 @@
             "name": "Delon Wright",
             "acquisitionType": "trade",
             "date": "2021-03-25",
-            "note": "Guard acquired at 2021 trade deadline",
             "tradePartner": "DET",
-            "tradeDescription": "Traded from Pistons for Cory Joseph and two 2nd-round picks",
+            "tradeDescription": "Kings traded Cory Joseph, a 2021 2nd round pick (Luka Garza, LAL own), and a 2024 2nd round pick (SAC own, did not convey) to Pistons for Delon Wright. Sacramento also received a trade exception.",
+            "note": "Guard acquired at 2021 trade deadline",
             "assetsGivenUp": [
               {
                 "type": "player",
@@ -80,7 +82,41 @@
                 "acquisitionType": "free-agent",
                 "date": "2019-07-06",
                 "note": "Guard signed as free agent",
-                "isOrigin": true
+                "isOrigin": true,
+                "assetsGivenUp": []
+              },
+              {
+                "type": "pick",
+                "name": "2021 2nd Round Pick via LAL",
+                "acquisitionType": "trade",
+                "date": "2020-11-25",
+                "tradePartner": "HOU",
+                "tradeDescription": "Kings traded Kenyon Martin Jr. to Rockets for cash and a 2021 2nd round pick (LAL own, Luka Garza)",
+                "becamePlayer": "Luka Garza",
+                "note": "LAL own, acquired from HOU via Kenyon Martin Jr. trade",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Kenyon Martin Jr.",
+                    "acquisitionType": "draft",
+                    "date": "2020-11-18",
+                    "draftPick": 52,
+                    "draftRound": 2,
+                    "note": "Forward drafted 52nd overall",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  }
+                ]
+              },
+              {
+                "type": "pick",
+                "name": "2024 2nd Round Pick via SAC",
+                "acquisitionType": "own",
+                "date": "2021-03-25",
+                "note": "Sacramento's own 2nd round pick, did not convey",
+                "isOrigin": true,
+                "assetsGivenUp": []
               }
             ]
           }

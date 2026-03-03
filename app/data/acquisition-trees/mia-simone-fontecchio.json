@@ -2,10 +2,9 @@
   "_meta": {
     "team": "MIA",
     "player": "Simone Fontecchio",
-    "source": "Basketball-Reference - Feb 2026",
-    "originYear": 2025,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/f/fontesi01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,16 +13,16 @@
     "date": "2025-07-07",
     "currentTeam": "MIA",
     "tradePartner": "DET",
-    "tradeDescription": "MIA sent Duncan Robinson to DET for Simone Fontecchio. MIA also received a trade exception.",
-    "note": "Traded from Detroit for Duncan Robinson",
+    "tradeDescription": "MIA sent Duncan Robinson to DET for Simone Fontecchio. Miami also received a trade exception.",
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Duncan Robinson",
         "acquisitionType": "free-agent",
         "date": "2018-07-01",
-        "note": "Undrafted, signed by MIA in 2018. Re-signed July 7, 2025, then traded same day.",
-        "isOrigin": true
+        "note": "Undrafted, originally signed by MIA in 2018. Re-signed July 7, 2025, then traded same day.",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

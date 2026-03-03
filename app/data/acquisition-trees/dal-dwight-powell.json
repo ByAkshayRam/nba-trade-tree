@@ -2,10 +2,9 @@
   "_meta": {
     "team": "DAL",
     "player": "Dwight Powell",
-    "source": "Wikipedia, Basketball-Reference",
-    "originYear": 2014,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/p/poweldw01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,9 +13,8 @@
     "date": "2014-12-18",
     "currentTeam": "DAL",
     "tradePartner": "BOS",
-    "tradeDescription": "Dallas acquired Powell and Rajon Rondo from Boston for Jae Crowder, Brandan Wright, Jameer Nelson, a 2015 1st and a 2016 2nd",
+    "tradeDescription": "DAL traded Jae Crowder, Brandan Wright, Jameer Nelson, a 2016 1st round pick (Guerschon Yabusele #16), and a 2016 2nd round pick (Demetrius Jackson #45) to BOS for Dwight Powell and Rajon Rondo",
     "note": "Stanford forward, 2014 #45 pick by Charlotte, traded to Boston on draft night",
-    "isOrigin": false,
     "assetsGivenUp": [
       {
         "type": "player",
@@ -28,16 +26,16 @@
         "draftRound": 2,
         "tradeDescription": "CLE traded Crowder (#34), Jared Cunningham (#24), and Bernard James (#33) to DAL for Tyler Zeller (#17) and Kelenna Azubuike",
         "note": "Marquette forward, drafted #34 by Cleveland, traded to Dallas on draft night",
-        "isOrigin": false,
         "assetsGivenUp": [
           {
             "type": "pick",
-            "name": "2012 DAL #17 Overall Pick",
-            "acquisitionType": "original",
+            "name": "2012 1st Round Pick (#17) via DAL",
+            "acquisitionType": "own",
             "date": "2012-06-28",
             "becamePlayer": "Tyler Zeller",
             "note": "Dallas own 2012 first-round pick, sent to Cleveland on draft night",
-            "isOrigin": true
+            "isOrigin": true,
+            "assetsGivenUp": []
           },
           {
             "type": "player",
@@ -45,7 +43,8 @@
             "acquisitionType": "free-agent",
             "date": "2012-03-23",
             "note": "Kentucky guard, signed by Dallas",
-            "isOrigin": true
+            "isOrigin": true,
+            "assetsGivenUp": []
           }
         ]
       },
@@ -55,7 +54,8 @@
         "acquisitionType": "free-agent",
         "date": "2011-12-09",
         "note": "UNC forward, 2007 #8 pick by Charlotte. Signed as free agent after being waived by New Jersey Nets.",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "player",
@@ -63,25 +63,28 @@
         "acquisitionType": "free-agent",
         "date": "2014-07-24",
         "note": "Saint Joseph's guard, signed as free agent from Orlando",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2016 DAL 1st Round Pick",
-        "acquisitionType": "original",
+        "name": "2016 1st Round Pick (#16) via DAL",
+        "acquisitionType": "own",
         "date": "2016-06-23",
         "becamePlayer": "Guerschon Yabusele",
         "note": "Sent to Boston, became #16 overall",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2016 DAL 2nd Round Pick",
-        "acquisitionType": "original",
+        "name": "2016 2nd Round Pick (#45) via DAL",
+        "acquisitionType": "own",
         "date": "2016-06-23",
         "becamePlayer": "Demetrius Jackson",
         "note": "Sent to Boston, became #45 overall",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

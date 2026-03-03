@@ -2,10 +2,9 @@
   "_meta": {
     "team": "SAS",
     "player": "Kelly Olynyk",
-    "source": "NBA Trade Reports, ESPN, Basketball-Reference",
-    "originYear": 2013,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/o/olynyke01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -20,6 +19,7 @@
       {
         "type": "player",
         "name": "Malaki Branham",
+        "destination": "WAS",
         "acquisitionType": "draft",
         "date": "2022-06-23",
         "draftPick": 20,
@@ -30,6 +30,7 @@
       {
         "type": "player",
         "name": "Blake Wesley",
+        "destination": "WAS",
         "acquisitionType": "draft",
         "date": "2022-06-23",
         "draftPick": 25,
@@ -40,9 +41,11 @@
       {
         "type": "pick",
         "name": "2026 2nd Round Pick",
-        "acquisitionType": "trade",
+        "destination": "WAS",
+        "acquisitionType": "own",
         "note": "Least favorable of Dallas, Philadelphia, Oklahoma City 2026 2nd round picks",
-        "isOrigin": true
+        "isOrigin": true,
+        "date": "2025-07-09"
       }
     ]
   }

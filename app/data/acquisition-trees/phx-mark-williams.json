@@ -2,10 +2,9 @@
   "_meta": {
     "team": "PHX",
     "player": "Mark Williams",
-    "source": "ESPN, NBA.com, Basketball-Reference",
-    "originYear": 2014,
-    "depth": 7,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/w/willima07.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,8 +13,7 @@
     "date": "2025-06-30",
     "currentTeam": "PHX",
     "tradePartner": "CHA",
-    "tradeDescription": "Suns traded McNeeley, Micić, 2029 1st (least favorable) for Williams and 2029 2nd (PHO own)",
-    "note": "Duke center, traded from Charlotte",
+    "tradeDescription": "PHX traded Liam McNeeley, Vasilije Micic, and a 2029 1st round pick (least favorable of CLE/UTA/MIN) to CHA for Mark Williams and a 2029 2nd round pick (PHO own). PHX also received a trade exception.",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -24,26 +22,24 @@
         "date": "2025-06-25",
         "draftPick": 29,
         "draftRound": 1,
-        "note": "Drafted 29th overall by Phoenix (pick acquired from Utah via Cleveland)",
+        "tradeDescription": "Drafted 29th overall by Phoenix (pick acquired from Utah, originally Cleveland's)",
         "isOrigin": true
       },
       {
         "type": "player",
-        "name": "Vasilije Micić",
+        "name": "Vasilije Mici\u0107",
         "acquisitionType": "trade",
         "date": "2025-02-06",
         "tradePartner": "CHA",
-        "tradeDescription": "Suns traded Nurkić to Hornets for Martin and Micić",
-        "note": "Serbian guard, acquired from Charlotte in Nurkić trade",
+        "tradeDescription": "PHX traded Jusuf Nurkic to CHA for Cody Martin and Vasilije Micic. PHX also received a trade exception.",
         "assetsGivenUp": [
           {
             "type": "player",
-            "name": "Jusuf Nurkić",
+            "name": "Jusuf Nurki\u0107",
             "acquisitionType": "trade",
             "date": "2023-09-27",
             "tradePartner": "POR",
-            "tradeDescription": "3-team trade: Lillard to Bucks, Ayton/Camara to Blazers, Allen/Nurkić/Little/Johnson to Suns",
-            "note": "Bosnian center, acquired from Portland in Lillard 3-team trade. PHX sent Ayton + Camara to POR.",
+            "tradeDescription": "3-team trade: PHX sent Deandre Ayton and Toumani Camara to POR; MIL sent Grayson Allen to PHX, Jrue Holiday and 3 1st-round picks to POR; POR sent Damian Lillard to MIL, Jusuf Nurkic, Nassir Little, and Keon Johnson to PHX",
             "assetsGivenUp": [
               {
                 "type": "player",
@@ -52,7 +48,6 @@
                 "date": "2018-06-21",
                 "draftPick": 1,
                 "draftRound": 1,
-                "note": "2018 #1 overall pick by Phoenix. Sent to POR in Lillard 3-team trade.",
                 "isOrigin": true
               },
               {
@@ -62,7 +57,6 @@
                 "date": "2023-06-22",
                 "draftPick": 52,
                 "draftRound": 2,
-                "note": "2023 #52 pick by Phoenix. Sent to POR in Lillard 3-team trade.",
                 "isOrigin": true
               }
             ]
@@ -72,9 +66,10 @@
       {
         "type": "pick",
         "name": "2029 1st Round Pick",
-        "acquisitionType": "original",
-        "note": "Least favorable of CLE, UTA, MIN picks (acquired from Utah Jan 21, 2025)",
-        "isOrigin": true
+        "acquisitionType": "own",
+        "tradeDescription": "Least favorable of CLE, UTA, MIN picks; acquired from Utah on Jan 21, 2025 (PHX sent 2031 1st PHO own to UTA for 2025 1st, 2027 1st, 2029 1st)",
+        "isOrigin": true,
+        "date": "2025-06-30"
       }
     ]
   }

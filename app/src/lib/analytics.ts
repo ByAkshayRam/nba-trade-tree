@@ -72,6 +72,7 @@ export function track(event: string, properties?: Record<string, string | number
     properties: {
       ...properties,
       url: window.location.pathname,
+      hostname: window.location.hostname,
       referrer: document.referrer || null,
       screen: `${window.innerWidth}x${window.innerHeight}`,
       userAgent: navigator.userAgent,

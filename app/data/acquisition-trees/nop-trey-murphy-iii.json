@@ -2,21 +2,19 @@
   "_meta": {
     "team": "NOP",
     "player": "Trey Murphy III",
-    "source": "ESPN, Basketball-Reference",
-    "originYear": 2021,
-    "depth": 3,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/m/murphtr02.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Trey Murphy III",
     "acquisitionType": "draft-night-trade",
     "date": "2021-08-07",
-    "currentTeam": "NOP",
     "draftPick": 17,
     "draftRound": 1,
     "tradePartner": "MEM",
-    "tradeDescription": "3-team trade: NOP sends Adams, Bledsoe, picks to MEM; Iwundu, pick to CHA; receives Murphy, Valanciunas from MEM, Graham from CHA",
+    "tradeDescription": "3-team trade: NOP sends Adams, Bledsoe, Ziaire Williams (#10), Jared Butler (#40), 2022 2nd, 2025 2nd to MEM; Iwundu, cash, 2022 1st (#15) to CHA. NOP receives Murphy, Valanciunas, Boston Jr. from MEM; Graham from CHA.",
     "note": "Virginia forward drafted 17th by Memphis, traded to New Orleans",
     "assetsGivenUp": [
       {
@@ -25,38 +23,78 @@
         "acquisitionType": "trade",
         "date": "2020-11-23",
         "tradePartner": "OKC",
-        "tradeDescription": "4-team Jrue Holiday trade: NOP acquires Adams from OKC",
-        "note": "Center acquired from Oklahoma City in Jrue Holiday trade expansion",
+        "tradeDescription": "4-team Jrue Holiday trade: NOP sent Holiday, Merrill to MIL; Miller, Williams, Cheatham, Gray, 2023 2nd, 2024 2nd to OKC. NOP received Bledsoe + picks from MIL; Adams from OKC.",
+        "note": "Center acquired from Oklahoma City in Jrue Holiday 4-team trade",
         "assetsGivenUp": [
           {
             "type": "player",
             "name": "Darius Miller",
             "acquisitionType": "free-agent",
-            "date": "2018-07-01",
-            "note": "Forward sent to OKC in Jrue Holiday trade",
-            "isOrigin": true
+            "date": "2019-07-21",
+            "note": "Forward re-signed as free agent",
+            "isOrigin": true,
+            "assetsGivenUp": []
           },
           {
             "type": "player",
             "name": "Kenrich Williams",
             "acquisitionType": "free-agent",
             "date": "2020-11-23",
-            "note": "Guard/forward sent to OKC",
-            "isOrigin": true
+            "note": "Guard/forward signed and sent to OKC in Jrue Holiday trade",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "player",
+            "name": "Zylan Cheatham",
+            "acquisitionType": "free-agent",
+            "date": "2020-11-23",
+            "note": "Signed and sent to OKC in Jrue Holiday trade",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "player",
+            "name": "Joshia Gray",
+            "acquisitionType": "free-agent",
+            "date": "2020-11-23",
+            "note": "Signed and sent to OKC in Jrue Holiday trade",
+            "isOrigin": true,
+            "assetsGivenUp": []
           },
           {
             "type": "pick",
-            "name": "2023 2nd Round Pick",
+            "name": "2023 2nd Round Pick (#51) via WAS",
+            "acquisitionType": "own",
             "becamePlayer": "Hunter Tyson",
             "note": "WAS own, sent to OKC",
-            "isOrigin": true
+            "isOrigin": true,
+            "assetsGivenUp": [],
+            "date": "2023-06-22"
           },
           {
             "type": "pick",
-            "name": "2024 2nd Round Pick",
+            "name": "2024 2nd Round Pick (#34) via CHO",
+            "acquisitionType": "trade",
+            "date": "2020-11-19",
+            "tradePartner": "CHO",
+            "tradeDescription": "NOP traded Nick Richards to CHO for 2024 2nd (CHO own)",
             "becamePlayer": "Tyler Kolek",
-            "note": "CHO own, sent to OKC",
-            "isOrigin": true
+            "note": "Acquired from CHO in Nick Richards trade, sent to OKC",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Nick Richards",
+                "acquisitionType": "draft",
+                "date": "2020-11-18",
+                "draftPick": 42,
+                "draftRound": 2,
+                "note": "Kentucky center, drafted #42 overall in 2020, traded to Charlotte",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              }
+            ]
           }
         ]
       },
@@ -66,7 +104,7 @@
         "acquisitionType": "trade",
         "date": "2020-11-23",
         "tradePartner": "MIL",
-        "tradeDescription": "4-team Jrue Holiday trade: NOP acquires Bledsoe + picks from MIL",
+        "tradeDescription": "4-team Jrue Holiday trade: NOP acquires Bledsoe + picks from MIL for Jrue Holiday",
         "note": "Guard acquired from Milwaukee Bucks in Jrue Holiday trade",
         "assetsGivenUp": [
           {
@@ -75,8 +113,8 @@
             "acquisitionType": "trade",
             "date": "2013-07-12",
             "tradePartner": "PHI",
-            "tradeDescription": "NOP traded Nerlens Noel (#6 pick) and 2014 1st (Elfrid Payton) to PHI for Jrue Holiday and Pierre Jackson",
-            "note": "All-Star guard, acquired from Philadelphia. Spent 7 seasons with NOP before traded to MIL.",
+            "tradeDescription": "NOP traded Nerlens Noel (#6 pick) and 2014 1st (#10, Elfrid Payton) to PHI for Jrue Holiday",
+            "note": "All-Star guard acquired from Philadelphia, spent 7 seasons with NOP",
             "assetsGivenUp": [
               {
                 "type": "player",
@@ -85,16 +123,19 @@
                 "date": "2013-06-27",
                 "draftPick": 6,
                 "draftRound": 1,
-                "note": "Kentucky center, drafted #6 overall by NOP in 2013. Never played for NOP — traded to PHI for Jrue Holiday.",
-                "isOrigin": true
+                "note": "Kentucky center, drafted #6 overall in 2013, traded to PHI for Jrue Holiday",
+                "isOrigin": true,
+                "assetsGivenUp": []
               },
               {
                 "type": "pick",
-                "name": "2014 NOP 1st Round Pick",
-                "acquisitionType": "original",
+                "name": "2014 1st Round Pick (#10) via NOP",
+                "acquisitionType": "own",
                 "becamePlayer": "Elfrid Payton",
-                "note": "NOP's own 2014 1st round pick; became #10 overall (traded to ORL on draft night)",
-                "isOrigin": true
+                "note": "NOP own 2014 1st, became #10 (traded to ORL on draft night)",
+                "isOrigin": true,
+                "assetsGivenUp": [],
+                "date": "2014-06-26"
               }
             ]
           }
@@ -102,52 +143,83 @@
       },
       {
         "type": "pick",
-        "name": "2021 #10 Overall Pick",
+        "name": "2021 1st Round Pick (#10)",
+        "acquisitionType": "own",
         "becamePlayer": "Ziaire Williams",
-        "acquisitionType": "original",
         "note": "Pelicans own first-round pick, sent to Memphis",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": [],
+        "date": "2021-07-29"
       },
       {
         "type": "pick",
-        "name": "2021 #40 Overall Pick",
+        "name": "2021 2nd Round Pick (#40)",
+        "acquisitionType": "own",
         "becamePlayer": "Jared Butler",
-        "acquisitionType": "original",
         "note": "Pelicans own second-round pick, sent to Memphis",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": [],
+        "date": "2021-07-29"
       },
       {
         "type": "pick",
-        "name": "2022 2nd Round Pick",
+        "name": "2022 2nd Round Pick (#47)",
+        "acquisitionType": "own",
         "becamePlayer": "Vince Williams Jr.",
-        "acquisitionType": "original",
-        "note": "Sent to Memphis, conditional from original 1st round pick that did not convey",
-        "isOrigin": true
+        "note": "NOP own conditional pick that did not convey as 1st, sent to Memphis as 2nd",
+        "isOrigin": true,
+        "assetsGivenUp": [],
+        "date": "2022-06-23"
       },
       {
         "type": "pick",
-        "name": "2025 2nd Round Pick",
+        "name": "2025 2nd Round Pick (#40) via NOP",
+        "acquisitionType": "own",
         "becamePlayer": "Ryan Kalkbrenner",
-        "acquisitionType": "original",
         "note": "NOP own, sent to Memphis",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": [],
+        "date": "2025-06-25"
       },
       {
         "type": "pick",
-        "name": "2022 1st Round Pick",
+        "name": "2022 1st Round Pick (#15) via NOP",
+        "acquisitionType": "own",
         "becamePlayer": "Mark Williams",
-        "acquisitionType": "original",
         "note": "NOP own conditional pick, sent to Charlotte",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": [],
+        "date": "2022-06-23"
       },
       {
         "type": "player",
         "name": "Wesley Iwundu",
         "acquisitionType": "trade",
         "date": "2021-03-25",
-        "note": "Forward acquired from Dallas in Melli/Redick trade, sent to Charlotte",
-        "isOrigin": true,
-        "tradePartner": "DAL"
+        "tradePartner": "DAL",
+        "tradeDescription": "NOP traded Melli, Redick to DAL for Iwundu, James Johnson, cash, 2021 2nd (DAL own)",
+        "note": "Forward acquired from Dallas, sent to Charlotte",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Nicol\u00f2 Melli",
+            "acquisitionType": "free-agent",
+            "date": "2019-07-17",
+            "note": "Italian forward signed as free agent",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "player",
+            "name": "J.J. Redick",
+            "acquisitionType": "free-agent",
+            "date": "2019-07-15",
+            "note": "Veteran guard signed as free agent",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          }
+        ]
       }
     ]
   }

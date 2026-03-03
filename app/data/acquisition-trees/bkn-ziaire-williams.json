@@ -2,10 +2,11 @@
   "_meta": {
     "team": "BKN",
     "player": "Ziaire Williams",
-    "source": "ESPN, NBA.com, Basketball-Reference",
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/w/willizi02.html",
     "originYear": 2021,
     "depth": 2,
-    "lastUpdated": "2026-02-15"
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,26 +15,143 @@
     "date": "2024-07-19",
     "currentTeam": "BKN",
     "tradePartner": "MEM",
-    "tradeDescription": "Nets traded Mamadi Diakite and draft rights to Nemanja Dangubic to Grizzlies for Ziaire Williams and a 2030 DAL 2nd round pick",
+    "tradeDescription": "Nets traded Mamadi Diakite and draft rights to Nemanja Dangubic to Grizzlies for Ziaire Williams and a 2030 2nd (DAL own). Brooklyn also received a trade exception. Memphis also received a trade exception.",
+    "note": "Stanford wing, #10 pick in 2021 draft by Memphis. Young upside play for BKN's rebuild.",
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Mamadi Diakite",
-        "acquisitionType": "free-agent",
-        "date": "2023-10-01",
-        "note": "Signed as free agent by Brooklyn",
-        "isOrigin": true
+        "acquisitionType": "trade",
+        "date": "2024-07-06",
+        "tradePartner": "NYK",
+        "tradeDescription": "Acquired from NYK as part of the Mikal Bridges trade. Knicks sent Bogdanovic, Diakite, Shake Milton, 5 first-round picks, a 2nd-round pick, and a swap to Nets for Bridges, Keita Bates-Diop, Vaulet, and a 2026 2nd.",
+        "note": "Virginia big man. Came to BKN in the massive Mikal Bridges trade haul, immediately flipped to Memphis for Ziaire Williams.",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Mikal Bridges",
+            "acquisitionType": "trade",
+            "date": "2023-02-09",
+            "tradePartner": "PHX",
+            "tradeDescription": "Acquired from Phoenix in Kevin Durant trade. BKN sent KD and TJ Warren to PHX for Cam Johnson, Mikal Bridges, 4 first-round picks, and pick swap rights.",
+            "note": "Villanova product, elite 3-and-D wing. Acquired in KD trade, became centerpiece BKN flipped to NYK for massive pick haul.",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Kevin Durant",
+                "acquisitionType": "sign-and-trade",
+                "date": "2019-07-07",
+                "tradePartner": "GSW",
+                "tradeDescription": "Sign-and-trade: Nets traded D'Angelo Russell, Treveon Graham, and Shabazz Napier to Warriors for Kevin Durant. Conditional 2020 1st did not convey; became 2025 2nd (Javon Small).",
+                "note": "4x scoring champ, 2x Finals MVP. Signed with BKN as FA, structured as sign-and-trade with GSW.",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "D'Angelo Russell",
+                    "acquisitionType": "trade",
+                    "date": "2017-06-22",
+                    "tradePartner": "LAL",
+                    "tradeDescription": "Nets traded Brook Lopez and the #27 pick (Kyle Kuzma) to Lakers for D'Angelo Russell and Timofey Mozgov.",
+                    "note": "Young guard, traded from LAL to BKN alongside Mozgov's contract. Became All-Star in Brooklyn before KD sign-and-trade.",
+                    "isOrigin": false,
+                    "assetsGivenUp": [
+                      {
+                        "type": "player",
+                        "name": "Brook Lopez",
+                        "acquisitionType": "draft",
+                        "date": "2008-06-26",
+                        "draftPick": 10,
+                        "draftRound": 1,
+                        "note": "Drafted #10 overall by New Jersey Nets in 2008. Franchise cornerstone for a decade. Sent to LAL in the D'Angelo Russell trade.",
+                        "isOrigin": true
+                      },
+                      {
+                        "type": "pick",
+                        "name": "2017 1st Round Pick (#27 via pick swap)",
+                        "becamePlayer": "Kyle Kuzma",
+                        "acquisitionType": "original",
+                        "date": "2017-06-22",
+                        "note": "BKN had the worst record in 2017 (#1 pick), but owed it to BOS from the KG/Pierce trade. BOS swapped #1 to PHI for #3 (Jayson Tatum). BKN got BOS's pick position (#27) via the swap. LAL drafted Kyle Kuzma.",
+                        "isOrigin": false,
+                        "assetsGivenUp": [
+                          {
+                            "type": "pick",
+                            "name": "2017 1st Round Pick (#1 overall)",
+                            "becamePlayer": "Markelle Fultz",
+                            "acquisitionType": "original",
+                            "date": "2017-06-22",
+                            "note": "BKN's own pick — worst record in NBA, #1 overall. Owed to BOS from the 2013 KG/Pierce trade. BOS traded #1 to PHI for #3 (Jayson Tatum) and a future 1st. PHI drafted Markelle Fultz.",
+                            "isOrigin": true
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "player",
+                    "name": "Treveon Graham",
+                    "acquisitionType": "free-agent",
+                    "date": "2018-08-01",
+                    "note": "Signed as free agent by BKN. Sent to GSW in KD sign-and-trade.",
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "player",
+                    "name": "Shabazz Napier",
+                    "acquisitionType": "free-agent",
+                    "date": "2018-07-14",
+                    "note": "UConn guard, signed as free agent by BKN (2yr deal, July 2018). Sent to GSW in KD sign-and-trade.",
+                    "isOrigin": true
+                  }
+                ]
+              },
+              {
+                "type": "player",
+                "name": "TJ Warren",
+                "acquisitionType": "free-agent",
+                "date": "2022-07-01",
+                "note": "Signed as free agent by BKN. Sent to PHX in Kevin Durant trade.",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Nemanja Dangubic",
+        "acquisitionType": "trade",
+        "date": "2019-07-06",
+        "tradePartner": "SAS",
+        "tradeDescription": "3-team trade: BKN traded DeMarre Carroll to SAS; SAS traded Nemanja Dangubic to BKN and Davis Bertans to WAS; WAS traded Aaron White to BKN.",
+        "note": "Serbian guard, stash player. Draft rights acquired by BKN in the DeMarre Carroll 3-team trade. Sent to Memphis in Ziaire Williams trade.",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "DeMarre Carroll",
+            "acquisitionType": "trade",
+            "date": "2017-07-13",
+            "tradePartner": "TOR",
+            "tradeDescription": "Raptors traded DeMarre Carroll, a 2018 1st-round pick, and a 2018 2nd-round pick to BKN for Justin Hamilton. Salary dump for Toronto.",
+            "note": "Veteran wing, acquired from Toronto as a salary dump (BKN got picks too). Sent to SAS in 3-team deal that brought Dangubic.",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Justin Hamilton",
+                "acquisitionType": "free-agent",
+                "date": "2016-07-11",
+                "note": "Center, signed as free agent by BKN (2yr/$6M, July 2016). Sent to TOR in DeMarre Carroll salary dump trade.",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
       }
-    ],
-    "tradeChain": {
-      "type": "player",
-      "name": "Ziaire Williams",
-      "acquisitionType": "draft",
-      "date": "2021-07-29",
-      "draftPick": 10,
-      "draftRound": 1,
-      "note": "Drafted #10 overall by Memphis Grizzlies from Stanford",
-      "isOrigin": true
-    }
+    ]
   }
 }

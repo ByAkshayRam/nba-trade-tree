@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "team": "ATL",
+    "player": "Keaton Wallace",
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/teams/ATL/2026_transactions.html",
+    "originYear": 2024,
+    "depth": 1,
+    "lastUpdated": "2026-03-02"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Keaton Wallace",
+    "acquisitionType": "free-agent",
+    "date": "2024-07-15",
+    "currentTeam": "ATL",
+    "note": "Signed to a two-way contract July 15, 2024. Converted to regular contract October 18, 2025.",
+    "isOrigin": true
+  }
+}

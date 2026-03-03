@@ -2,10 +2,9 @@
   "_meta": {
     "team": "TOR",
     "player": "Immanuel Quickley",
-    "source": "ESPN/NBA.com Trade History - Feb 2026",
-    "originYear": 2017,
-    "depth": 3,
-    "lastUpdated": "2026-02-17"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/q/quickim01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,7 +13,7 @@
     "date": "2023-12-30",
     "currentTeam": "TOR",
     "tradePartner": "NYK",
-    "tradeDescription": "Raptors traded OG Anunoby, Precious Achiuwa, and Malachi Flynn to Knicks for RJ Barrett, Immanuel Quickley, and a 2024 second-round pick (via DET)",
+    "tradeDescription": "Raptors traded OG Anunoby, Precious Achiuwa, and Malachi Flynn to Knicks for RJ Barrett, Immanuel Quickley, and a 2024 second-round pick (DET own, became Jonathan Mogbo #31). Toronto also received a trade exception.",
     "note": "Came with RJ Barrett in the OG Anunoby trade",
     "assetsGivenUp": [
       {
@@ -25,31 +24,50 @@
         "draftPick": 23,
         "draftRound": 1,
         "note": "Drafted 23rd overall in 2017 out of Indiana",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "player",
         "name": "Precious Achiuwa",
-        "acquisitionType": "trade",
+        "acquisitionType": "sign-and-trade",
         "date": "2021-08-06",
         "tradePartner": "MIA",
+        "tradeDescription": "Raptors sign-and-traded Kyle Lowry to Miami Heat for Precious Achiuwa and Goran Dragic. Toronto also received a trade exception.",
         "note": "Came in Kyle Lowry sign-and-trade to Miami",
-        "isOrigin": false,
         "assetsGivenUp": [
           {
             "type": "player",
             "name": "Kyle Lowry",
-            "acquisitionType": "free-agent",
-            "date": "2012-07-18",
-            "note": "Signed as free agent from HOU in 2012. Became franchise cornerstone.",
-            "isOrigin": true
-          },
-          {
-            "type": "player",
-            "name": "Goran Dragic",
-            "note": "Also received in Lowry S&T, later waived",
-            "isOrigin": true,
-            "acquisitionType": "free-agent"
+            "acquisitionType": "trade",
+            "date": "2012-07-11",
+            "tradePartner": "HOU",
+            "tradeDescription": "Raptors traded Gary Forbes and a 2013 first-round pick (#12, became Steven Adams) to Houston Rockets for Kyle Lowry.",
+            "note": "Acquired via trade from Houston in 2012. Became franchise cornerstone and 2019 champion.",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Gary Forbes",
+                "acquisitionType": "free-agent",
+                "date": "2011-12-14",
+                "note": "Signed as free agent December 14, 2011",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              },
+              {
+                "type": "pick",
+                "name": "2013 1st Round Pick (#12)",
+                "acquisitionType": "draft",
+                "details": "2013 First Round Pick (TOR own). Became Steven Adams.",
+                "becamePlayer": "Steven Adams",
+                "draftPick": 12,
+                "isOrigin": true,
+                "assetsGivenUp": [],
+                "date": "2012-07-11",
+                "draftRound": 1
+              }
+            ]
           }
         ]
       },
@@ -60,7 +78,9 @@
         "date": "2020-11-18",
         "draftPick": 29,
         "draftRound": 1,
-        "isOrigin": true
+        "note": "Drafted 29th overall in 2020",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

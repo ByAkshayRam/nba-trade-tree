@@ -2,18 +2,18 @@
   "_meta": {
     "team": "HOU",
     "player": "Jeff Green",
-    "source": "ESPN, NBA.com, Basketball-Reference",
-    "originYear": 2007,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/g/greenje02.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Jeff Green",
     "acquisitionType": "free-agent",
-    "date": "2025-07-01",
+    "date": "2023-07-06",
     "currentTeam": "HOU",
-    "note": "Veteran forward, signed as free agent. Signed 1yr/$3.63M (vet min)",
-    "isOrigin": true
+    "note": "Veteran forward, signed multi-year contract as free agent",
+    "isOrigin": true,
+    "assetsGivenUp": []
   }
 }

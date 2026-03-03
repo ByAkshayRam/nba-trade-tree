@@ -2,10 +2,9 @@
   "_meta": {
     "team": "TOR",
     "player": "Brandon Ingram",
-    "source": "ESPN/NBA.com Trade History - Feb 2026",
-    "originYear": 2025,
-    "depth": 3,
-    "lastUpdated": "2026-02-17"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/i/ingrabr01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,7 +13,7 @@
     "date": "2025-02-06",
     "currentTeam": "TOR",
     "tradePartner": "NOP",
-    "tradeDescription": "Pelicans traded Ingram to Raptors for Bruce Brown, Kelly Olynyk, a 2026 first-round pick (top-4 protected via IND) and a 2031 second-round pick",
+    "tradeDescription": "Raptors traded Bruce Brown, Kelly Olynyk, a 2026 first-round pick (IND own, top-4 protected) and a 2031 second-round pick (TOR own) to Pelicans for Brandon Ingram. New Orleans also received a trade exception.",
     "note": "Signed 3-year $120M extension after trade",
     "assetsGivenUp": [
       {
@@ -23,8 +22,8 @@
         "acquisitionType": "trade",
         "date": "2024-01-17",
         "tradePartner": "IND",
+        "tradeDescription": "Raptors traded Pascal Siakam to Pacers for Bruce Brown, Kira Lewis Jr., Jordan Nwora, two 2024 first-round picks and a 2026 first-round pick (IND own). Toronto also received a trade exception.",
         "note": "Acquired from Pacers in Pascal Siakam trade",
-        "isOrigin": false,
         "assetsGivenUp": [
           {
             "type": "player",
@@ -34,29 +33,88 @@
             "draftPick": 27,
             "draftRound": 1,
             "note": "Drafted 27th overall in 2016 out of New Mexico State",
-            "isOrigin": true
+            "isOrigin": true,
+            "assetsGivenUp": []
           }
         ]
       },
       {
         "type": "player",
         "name": "Kelly Olynyk",
-        "acquisitionType": "free-agent",
-        "date": "2023-07-06",
-        "note": "Signed as free agent in 2023",
-        "isOrigin": true
+        "acquisitionType": "trade",
+        "date": "2024-02-08",
+        "tradePartner": "UTA",
+        "tradeDescription": "Raptors traded Kira Lewis Jr., Otto Porter Jr. and a 2024 first-round pick (least favorable, IND own) to Utah Jazz for Ochai Agbaji and Kelly Olynyk. Both teams received trade exceptions.",
+        "note": "Acquired from Jazz in Feb 2024 trade",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Kira Lewis Jr.",
+            "acquisitionType": "trade",
+            "date": "2024-01-17",
+            "tradePartner": "IND",
+            "tradeDescription": "Raptors traded Pascal Siakam to Pacers for Bruce Brown, Kira Lewis Jr., Jordan Nwora, two 2024 first-round picks and a 2026 first-round pick (IND own).",
+            "note": "Acquired from Pacers in Pascal Siakam trade",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Pascal Siakam",
+                "acquisitionType": "draft",
+                "date": "2016-06-23",
+                "draftPick": 27,
+                "draftRound": 1,
+                "note": "Drafted 27th overall in 2016 out of New Mexico State",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Otto Porter Jr.",
+            "acquisitionType": "free-agent",
+            "date": "2022-07-06",
+            "note": "Signed as free agent July 6, 2022. 2-year, $12.4M contract.",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "pick",
+            "name": "2024 1st Round Pick (#29)",
+            "acquisitionType": "trade",
+            "details": "2024 First Round Pick (IND own, least favorable of two). Acquired from IND in Siakam trade. Became Isaiah Collier.",
+            "becamePlayer": "Isaiah Collier",
+            "draftPick": 29,
+            "note": "Least favorable of two IND 1st-round picks from Siakam trade. Sent to UTA, who selected Collier.",
+            "isOrigin": true,
+            "assetsGivenUp": [],
+            "tradePartner": "IND",
+            "tradeDescription": "Acquired from IND in the Pascal Siakam trade (Jan 17, 2024)",
+            "date": "2024-01-17"
+          }
+        ]
       },
       {
         "type": "pick",
-        "details": "2026 First Round Pick (top-4 protected, via IND)",
+        "name": "2026 1st Round Pick via IND",
+        "acquisitionType": "trade",
+        "details": "2026 First Round Pick (top-4 protected, IND own). Acquired from IND in Siakam trade.",
         "isOrigin": true,
-        "name": "2026 First Round Pick (top-4 protected, via IND)"
+        "assetsGivenUp": [],
+        "date": "2025-02-06",
+        "tradePartner": "IND",
+        "tradeDescription": "Acquired from IND in the Pascal Siakam trade (Jan 17, 2024)"
       },
       {
         "type": "pick",
-        "details": "2031 Second Round Pick",
+        "name": "2031 2nd Round Pick via TOR",
+        "acquisitionType": "draft",
+        "details": "2031 Second Round Pick (TOR own)",
         "isOrigin": true,
-        "name": "2031 Second Round Pick"
+        "assetsGivenUp": [],
+        "date": "2025-02-06"
       }
     ]
   }

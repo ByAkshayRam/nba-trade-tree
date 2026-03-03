@@ -2,10 +2,9 @@
   "_meta": {
     "team": "CHI",
     "player": "Jaden Ivey",
-    "source": "ESPN, NBA.com, Hoops Rumors",
-    "originYear": 2021,
-    "depth": 4,
-    "lastUpdated": "2026-02-15"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/i/iveyja01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,15 +13,15 @@
     "date": "2026-02-03",
     "currentTeam": "CHI",
     "tradePartner": "DET",
-    "tradeDescription": "3-team trade: Bulls sent Kevin Huerter and Dario Saric to Pistons, received Jaden Ivey (DET) and Mike Conley (MIN)",
+    "tradeDescription": "3-team trade: Bulls traded Kevin Huerter and Dario Saric to Pistons; Pistons traded Jaden Ivey to Bulls; Timberwolves traded Mike Conley to Bulls; Pistons traded a protected 2026 1st round pick swap to Timberwolves.",
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Kevin Huerter",
         "acquisitionType": "trade",
-        "date": "2025-02-02",
+        "date": "2025-02-03",
         "tradePartner": "SAC",
-        "tradeDescription": "3-team trade: Bulls sent Zach LaVine to Kings, received Kevin Huerter. De'Aaron Fox to Spurs.",
+        "tradeDescription": "3-team trade: Bulls traded Zach LaVine and a 2028 2nd round pick to Kings; Kings traded Kevin Huerter to Bulls; Kings traded De'Aaron Fox and Jordan McLaughlin to Spurs; Spurs traded Zach Collins, Tre Jones and a 2025 1st round pick (Noa Essengue) to Bulls.",
         "assetsGivenUp": [
           {
             "type": "player",
@@ -30,7 +29,7 @@
             "acquisitionType": "trade",
             "date": "2017-06-22",
             "tradePartner": "MIN",
-            "tradeDescription": "Bulls traded Jimmy Butler to Timberwolves for Zach LaVine, Kris Dunn, and the 7th pick (Lauri Markkanen)",
+            "tradeDescription": "Bulls traded Jimmy Butler and Justin Patton to Timberwolves for Zach LaVine, Kris Dunn, and Lauri Markkanen",
             "assetsGivenUp": [
               {
                 "type": "player",
@@ -40,9 +39,39 @@
                 "draftPick": 30,
                 "draftRound": 1,
                 "note": "Drafted 30th overall by Chicago Bulls from Marquette in 2011 NBA Draft",
-                "isOrigin": true
+                "isOrigin": true,
+                "assetsGivenUp": []
               }
             ]
+          },
+          {
+            "type": "pick",
+            "name": "2028 2nd Round Pick via CHI",
+            "acquisitionType": "own",
+            "date": "2025-02-03",
+            "note": "Chicago's own 2028 2nd round pick, sent to SAC in LaVine mega-deal",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Dario Saric",
+        "acquisitionType": "trade",
+        "date": "2026-02-01",
+        "tradePartner": "SAC",
+        "tradeDescription": "3-team trade: Bulls traded Emanuel Miller to Cavaliers; Cavaliers traded De'Andre Hunter to Kings; Kings traded Dario Saric and a 2029 2nd round pick to Bulls; Cavaliers traded a 2027 2nd round pick to Bulls.",
+        "note": "Acquired from SAC Feb 1 in 3-team deal, then sent to DET Feb 3",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Emanuel Miller",
+            "acquisitionType": "free-agent",
+            "date": "2024-12-27",
+            "note": "Signed to two-way contract Dec 27, 2024. Sent to CLE in Saric 3-team deal.",
+            "isOrigin": true,
+            "assetsGivenUp": []
           }
         ]
       }

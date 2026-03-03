@@ -2,18 +2,18 @@
   "_meta": {
     "team": "GSW",
     "player": "Al Horford",
-    "source": "Basketball-Reference, ESPN, Thunder OKC",
-    "originYear": 2007,
-    "depth": 6,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/h/horfoal01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Al Horford",
     "acquisitionType": "free-agent",
-    "date": "2025-09-28",
+    "date": "2025-10-01",
     "currentTeam": "GSW",
-    "note": "5x All-Star, signed from Boston Celtics. Signed 2yr/$12M deal",
-    "isOrigin": true
+    "note": "5x All-Star, signed from Boston Celtics",
+    "isOrigin": true,
+    "assetsGivenUp": []
   }
 }

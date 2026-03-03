@@ -4,56 +4,60 @@
     "player": "Jose Alvarado",
     "source": "Basketball-Reference Transaction History",
     "sourceUrl": "https://www.basketball-reference.com/players/a/alvarjo01.html",
-    "originYear": 2024,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Jose Alvarado",
     "acquisitionType": "trade",
-    "date": "2026-02-05",
+    "date": "2026-02-06",
     "tradePartner": "NOP",
     "currentTeam": "NYK",
-    "tradeDescription": "Knicks acquire Alvarado for Dalen Terry and two second-round picks",
-    "note": "Acquired from New Orleans for Dalen Terry and two 2nd-round picks at 2026 trade deadline.",
+    "espnId": "4277869",
+    "tradeDescription": "NYK traded Dalen Terry, two second-round picks, and cash to New Orleans for Jose Alvarado",
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Dalen Terry",
         "acquisitionType": "trade",
-        "date": "2026-02-04",
+        "date": "2026-02-05",
         "tradePartner": "CHI",
-        "tradeDescription": "Acquired from Chicago for Guerschon Yabusele (held 1 day)",
+        "tradeDescription": "NYK traded Guerschon Yabusele to Chicago for Dalen Terry",
         "assetsGivenUp": [
           {
             "type": "player",
             "name": "Guerschon Yabusele",
             "acquisitionType": "free-agent",
-            "date": "2024-07-15",
-            "tradeDescription": "Signed as free agent after Olympic standout performance",
-            "note": "Signed as free agent in July 2024 after playing for Real Madrid.",
-            "isOrigin": true
+            "date": "2025-07-01",
+            "tradeDescription": "Signed as free agent. 2yr/$12M deal with player option. Came from Real Madrid after Olympic standout performance with France.",
+            "isOrigin": true,
+            "assetsGivenUp": []
           }
         ]
       },
       {
         "type": "pick",
-        "name": "2028 Second-Round Pick",
+        "name": "2026 2nd Round Pick (lesser of NYK/MIN)",
         "acquisitionType": "original",
-        "date": "2026-02-05",
-        "tradeDescription": "Knicks' own second-round pick",
+        "date": "2026-02-06",
+        "tradeDescription": "2026 second-round pick (lesser of New York's or Minnesota's) sent to New Orleans in Alvarado trade",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2030 Second-Round Pick",
+        "name": "2027 2nd Round Pick",
         "acquisitionType": "original",
-        "date": "2026-02-05",
-        "tradeDescription": "Knicks' own second-round pick",
+        "date": "2026-02-06",
+        "tradeDescription": "Second-round pick sent to New Orleans in Alvarado trade",
+        "isOrigin": true
+      },
+      {
+        "type": "other",
+        "name": "Cash Considerations",
+        "acquisitionType": "original",
+        "tradeDescription": "Cash sent to New Orleans in Alvarado trade",
         "isOrigin": true
       }
-    ],
-    "espnId": "4277869"
+    ]
   }
 }

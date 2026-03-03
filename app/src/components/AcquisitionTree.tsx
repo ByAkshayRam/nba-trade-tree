@@ -18,6 +18,37 @@ import ELK from "elkjs/lib/elk.bundled.js";
 
 const elk = new ELK();
 
+// LOCAL-ONLY: Generate Basketball Reference URL from player name
+// Format: /players/{first letter of last name}/{first 5 chars of last + first 2 of first + 01}.html
+function getBBRefUrl(name: string): string | null {
+  if (!name || name.includes("Pick") || name.includes("Cash") || name.includes("Considerations")) return null;
+  const parts = name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").split(" ");
+  if (parts.length < 2) return null;
+  const first = parts[0].toLowerCase().replace(/[^a-z]/g, "");
+  const last = parts[parts.length - 1].toLowerCase().replace(/[^a-z]/g, "");
+  const slug = (last.slice(0, 5) + first.slice(0, 2) + "01").toLowerCase();
+  return `https://www.basketball-reference.com/players/${last[0]}/${slug}.html`;
+}
+
+// Check if running locally (dev mode)
+function isLocalDev(): boolean {
+  if (typeof window === "undefined") return false;
+  return window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1" || window.location.hostname.startsWith("100.");
+}
+
+// Wrapper: clickable player name for local dev, plain text for prod
+function PlayerNameLink({ name, className }: { name: string; className?: string }) {
+  const url = getBBRefUrl(name);
+  if (isLocalDev() && url) {
+    return (
+      <a href={url} target="_blank" rel="noopener noreferrer" className={`${className} hover:underline hover:text-blue-300 cursor-pointer`} onClick={(e) => e.stopPropagation()}>
+        {name}
+      </a>
+    );
+  }
+  return <span className={className}>{name}</span>;
+}
+
 interface AcquisitionNodeData {
   label: string;
   sublabel?: string;
@@ -65,8 +96,9 @@ function PlayerNode({ data }: { data: AcquisitionNodeData }) {
         <div className="w-2 h-2 rounded-full bg-blue-500" />
         <span className="text-[10px] text-blue-400 font-semibold uppercase">Player</span>
       </div>
-      <div className="font-bold text-white text-sm">{data.label}</div>
+      <PlayerNameLink name={data.label} className="font-bold text-white text-sm block" />
       {data.sublabel && <div className="text-xs text-zinc-400">{data.sublabel}</div>}
+      {data.tradePartner && data.acquisitionType === "draft-night-trade" && <div className="text-[10px] text-zinc-500">via {data.tradePartner}</div>}
       {data.date && <div className="text-[10px] text-zinc-500 mt-1">{formatDate(data.date)}</div>}
     </div>
   );
@@ -181,7 +213,7 @@ function TargetNode({ data }: { data: AcquisitionNodeData }) {
             <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
             <span className="text-[10px] text-green-300 font-bold uppercase">{acquisitionLabel}</span>
           </div>
-          <div className="font-bold text-white text-lg">{data.label}</div>
+          <PlayerNameLink name={data.label} className="font-bold text-white text-lg block" />
           {data.sublabel && <div className="text-sm text-green-200">{data.sublabel}</div>}
           {data.date && <div className="text-xs text-green-300 mt-1">{formatDate(data.date)}</div>}
         </div>
@@ -200,7 +232,7 @@ function OriginNode({ data }: { data: AcquisitionNodeData }) {
         <span className="text-amber-400">★</span>
         <span className="text-xs text-amber-300 font-bold uppercase">Origin</span>
       </div>
-      <div className="font-bold text-white text-lg">{data.label}</div>
+      <PlayerNameLink name={data.label} className="font-bold text-white text-lg block" />
       {data.date && <div className="text-sm text-amber-300 mt-1">{formatDate(data.date)}</div>}
     </div>
   );

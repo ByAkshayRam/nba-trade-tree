@@ -4,9 +4,9 @@
     "player": "Ajay Mitchell",
     "source": "Basketball Reference Transaction Logs",
     "sourceUrl": "https://www.basketball-reference.com/teams/OKC/2025_transactions.html",
-    "originYear": 2024,
-    "depth": 3,
-    "lastUpdated": "2026-02-16"
+    "originYear": 2022,
+    "depth": 5,
+    "lastUpdated": "2026-03-03"
   },
   "tree": {
     "type": "player",
@@ -16,23 +16,43 @@
     "tradePartner": "NYK",
     "currentTeam": "OKC",
     "tradeDescription": "Acquired from New York Knicks for Oso Ighodaro and cash",
-    "note": "UC Santa Barbara product, drafted 38th overall by NYK in 2024",
+    "note": "UC Santa Barbara product, drafted 38th overall by NYK in 2024. Three rapid-fire draft night trades: Waters→Post→Ighodaro→Mitchell.",
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Oso Ighodaro",
-        "acquisitionType": "draft",
-        "date": "2024-06-26",
-        "draftPick": 40,
-        "draftRound": 2,
-        "tradeDescription": "Drafted 40th overall by Thunder",
-        "note": "Marquette center, traded to NYK on draft night",
-        "isOrigin": true
+        "acquisitionType": "trade",
+        "date": "2024-06-27",
+        "tradePartner": "POR",
+        "tradeDescription": "Acquired from Portland (who drafted him #40 using ATL's pick) for Quinten Post and cash",
+        "note": "Marquette center, drafted by POR with ATL's pick. Immediately flipped to OKC then to NYK.",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Quinten Post",
+            "acquisitionType": "trade",
+            "date": "2024-06-27",
+            "tradePartner": "GSW",
+            "tradeDescription": "Acquired from Golden State (who drafted him #52) for Lindy Waters III",
+            "note": "Dutch center, drafted by GSW. Immediately flipped to POR for Ighodaro.",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Lindy Waters III",
+                "acquisitionType": "free-agent",
+                "date": "2022-10-14",
+                "tradeDescription": "Signed by OKC as undrafted free agent via Oklahoma City Blue (G-League). Traded to GSW (Jun 27, 2024) for Quinten Post (#52).",
+                "note": "Oklahoma native, OK State product. Undrafted 2020, signed via G-League pipeline. TRUE ORIGIN.",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
       },
       {
         "type": "other",
         "name": "Cash Considerations",
-        "acquisitionType": "original",
+        "acquisitionType": "other",
         "date": "2024-06-27",
         "tradeDescription": "Cash sent to New York",
         "isOrigin": true

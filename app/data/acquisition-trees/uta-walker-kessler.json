@@ -3,9 +3,8 @@
     "team": "UTA",
     "player": "Walker Kessler",
     "source": "Basketball-Reference",
-    "originYear": 2022,
-    "depth": 2,
-    "lastUpdated": "2026-02-17"
+    "sourceUrl": "https://www.basketball-reference.com/players/k/kesslwa01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,7 +13,7 @@
     "date": "2022-07-06",
     "currentTeam": "UTA",
     "tradePartner": "MIN",
-    "tradeDescription": "Rudy Gobert mega-trade - Jazz received Kessler, Beasley, Beverley, Bolmaro, Vanderbilt, and 5 future 1sts",
+    "tradeDescription": "UTA traded Rudy Gobert to MIN for Walker Kessler, Malik Beasley, Patrick Beverley, Leandro Bolmaro, Jarred Vanderbilt, 2023 1st (became Keyonte George), 2025 1st (MIN), 2026 1st swap, 2027 1st (MIN conditional), 2029 1st (MIN).",
     "note": "Auburn center, 7'1\" rim protector, led college basketball in blocks",
     "assetsGivenUp": [
       {
@@ -24,8 +23,9 @@
         "date": "2013-06-27",
         "draftPick": 27,
         "draftRound": 1,
-        "note": "3x DPOY, French center from SLUC Nancy",
-        "isOrigin": true
+        "note": "3x DPOY, French center from SLUC Nancy, Jazz drafted 27th overall 2013",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

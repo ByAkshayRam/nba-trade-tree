@@ -2,19 +2,18 @@
   "_meta": {
     "team": "CLE",
     "player": "Donovan Mitchell",
-    "source": "ESPN, Basketball-Reference, NBA.com",
-    "originYear": 2004,
-    "depth": 8,
-    "lastUpdated": "2026-02-15"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/m/mitchdo01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Donovan Mitchell",
     "acquisitionType": "trade",
-    "date": "2022-09-01",
+    "date": "2022-09-03",
     "currentTeam": "CLE",
     "tradePartner": "UTA",
-    "tradeDescription": "Cavaliers traded Lauri Markkanen, Collin Sexton, Ochai Agbaji, three 1st round picks, two pick swaps to Jazz for Donovan Mitchell",
+    "tradeDescription": "Cavaliers traded Lauri Markkanen, Collin Sexton (S&T), Ochai Agbaji, 2025 1st round pick (CLE own), 2027 1st round pick (CLE own), 2029 1st round pick (CLE own), plus 2026 and 2028 pick swap rights to Jazz for Donovan Mitchell",
     "note": "3-time All-Star guard from Louisville",
     "isOrigin": false,
     "assetsGivenUp": [
@@ -22,10 +21,10 @@
         "type": "player",
         "name": "Lauri Markkanen",
         "acquisitionType": "trade",
-        "date": "2021-08-06",
+        "date": "2021-08-28",
         "tradePartner": "CHI",
-        "tradeDescription": "Acquired from Bulls in sign-and-trade for Larry Nance Jr.",
-        "note": "Forward acquired from Chicago",
+        "tradeDescription": "3-team trade: Cavaliers traded Larry Nance Jr. to Trail Blazers and 2023 2nd round pick to Bulls. Bulls traded Lauri Markkanen to Cavaliers. Trail Blazers traded Derrick Jones Jr. and 2022 1st round pick to Bulls.",
+        "note": "Forward acquired from Chicago in 3-team trade",
         "isOrigin": false,
         "assetsGivenUp": [
           {
@@ -34,8 +33,8 @@
             "acquisitionType": "trade",
             "date": "2018-02-08",
             "tradePartner": "LAL",
-            "tradeDescription": "Acquired from Lakers in Isaiah Thomas trade",
-            "note": "Forward acquired from Lakers",
+            "tradeDescription": "Cavaliers traded Isaiah Thomas, Channing Frye, and 2018 CLE 1st round pick to Lakers for Jordan Clarkson and Larry Nance Jr.",
+            "note": "Forward acquired from Lakers, sent to Portland in Markkanen 3-team trade",
             "isOrigin": false,
             "assetsGivenUp": [
               {
@@ -44,8 +43,8 @@
                 "acquisitionType": "trade",
                 "date": "2017-08-22",
                 "tradePartner": "BOS",
-                "tradeDescription": "Acquired from Celtics in Kyrie Irving trade",
-                "note": "Point guard from Boston",
+                "tradeDescription": "Cavaliers traded Kyrie Irving to Celtics for Isaiah Thomas, Jae Crowder, Ante Zizic, and 2018 BKN 1st round pick",
+                "note": "Guard from Boston, part of Kyrie Irving trade",
                 "isOrigin": false,
                 "assetsGivenUp": [
                   {
@@ -55,19 +54,17 @@
                     "date": "2011-06-23",
                     "draftPick": 1,
                     "draftRound": 1,
-                    "note": "Point guard drafted 1st overall by Cleveland using pick acquired from LAC",
-                    "isOrigin": false,
+                    "tradeDescription": "Drafted #1 overall with pick acquired from Clippers in Baron Davis trade",
+                    "note": "2016 NBA Champion. #1 pick came from LAC via Mo Williams/Jamario Moon trade (Feb 2011).",
                     "assetsGivenUp": [
                       {
                         "type": "pick",
-                        "name": "2011 LAC 1st Round Pick",
+                        "name": "2011 1st Round Pick (#1) via LAC",
                         "acquisitionType": "trade",
                         "date": "2011-02-24",
                         "tradePartner": "LAC",
-                        "tradeDescription": "Cavaliers traded Mo Williams and Jamario Moon to Clippers for Baron Davis and LAC unprotected 1st round pick (won lottery, became #1 overall)",
+                        "tradeDescription": "Cavaliers trade Mo Williams and Jamario Moon to Clippers for Baron Davis and 2011 1st round pick (unprotected)",
                         "becamePlayer": "Kyrie Irving",
-                        "note": "Clippers pick had 8th best lottery odds, won the #1 overall selection",
-                        "isOrigin": false,
                         "assetsGivenUp": [
                           {
                             "type": "player",
@@ -75,25 +72,110 @@
                             "acquisitionType": "trade",
                             "date": "2008-08-13",
                             "tradePartner": "MIL",
-                            "tradeDescription": "3-team trade: Cavaliers acquired Mo Williams from Bucks, sent Damon Jones and Joe Smith",
-                            "note": "Guard acquired from Milwaukee in 3-team deal",
+                            "tradeDescription": "3-team trade: CLE sends Damon Jones to MIL and Joe Smith to OKC; MIL sends Mo Williams to CLE and Desmond Mason to OKC; OKC sends Luke Ridnour and Adrian Griffin to MIL",
+                            "note": "2009 All-Star with Cleveland. Key piece flipped for the #1 pick that became Kyrie.",
                             "isOrigin": false,
                             "assetsGivenUp": [
                               {
                                 "type": "player",
                                 "name": "Damon Jones",
                                 "acquisitionType": "free-agent",
-                                "date": "2004-08-02",
-                                "note": "Guard signed as free agent by Cleveland in 2004",
-                                "isOrigin": true
+                                "date": "2005-09-08",
+                                "note": "Signed 4-year deal. Career journeyman who became a key domino — flipped for Mo Williams, who was flipped for the #1 pick.",
+                                "isOrigin": true,
+                                "assetsGivenUp": []
                               },
                               {
                                 "type": "player",
                                 "name": "Joe Smith",
-                                "acquisitionType": "free-agent",
-                                "date": "2007-10-01",
-                                "note": "Forward signed as free agent by Cleveland in 2007",
-                                "isOrigin": true
+                                "acquisitionType": "trade",
+                                "date": "2008-02-21",
+                                "tradePartner": "CHI",
+                                "tradeDescription": "3-team trade: CLE sends Drew Gooden, Larry Hughes, Shannon Brown, Cedric Simmons to CHI and Donyell Marshall, Ira Newble to SEA; CHI sends Joe Smith, Ben Wallace, 2009 2nd to CLE and Adrian Griffin to SEA; SEA sends Wally Szczerbiak, Delonte West to CLE",
+                                "note": "Veteran big from the massive 2008 deadline deal. Sent to OKC 6 months later for Mo Williams.",
+                                "isOrigin": false,
+                                "assetsGivenUp": [
+                                  {
+                                    "type": "player",
+                                    "name": "Drew Gooden",
+                                    "acquisitionType": "trade",
+                                    "date": "2004-07-23",
+                                    "tradePartner": "ORL",
+                                    "tradeDescription": "CLE sends Tony Battie, 2005 2nd, 2007 2nd to ORL for Drew Gooden, Anderson Varejao, Steven Hunter",
+                                    "note": "Power forward acquired alongside Varejao from Orlando.",
+                                    "isOrigin": false,
+                                    "assetsGivenUp": [
+                                      {
+                                        "type": "player",
+                                        "name": "Tony Battie",
+                                        "acquisitionType": "trade",
+                                        "date": "2003-12-15",
+                                        "tradePartner": "BOS",
+                                        "tradeDescription": "CLE traded Ricky Davis, Chris Mihm, Michael Stewart, and 2005 2nd round pick (became Ryan Gomes) to BOS for Tony Battie, Eric Williams, Kedrick Brown",
+                                        "note": "Acquired in the Ricky Davis trade.",
+                                        "isOrigin": false,
+                                        "assetsGivenUp": [
+                                          {
+                                            "type": "player",
+                                            "name": "Ricky Davis",
+                                            "acquisitionType": "trade",
+                                            "date": "2001-10-26",
+                                            "tradePartner": "MIA",
+                                            "tradeDescription": "3-team trade: CLE traded Chris Gatling to MIA; MIA traded Ricky Davis to CLE and Don MacLean and cash to TOR; TOR traded Brian Skinner to CLE",
+                                            "note": "Flashy guard who briefly lit up Cleveland.",
+                                            "isOrigin": false,
+                                            "assetsGivenUp": [
+                                              {
+                                                "type": "player",
+                                                "name": "Chris Gatling",
+                                                "acquisitionType": "trade",
+                                                "date": "2000-08-30",
+                                                "tradePartner": "MIA",
+                                                "tradeDescription": "3-team trade: CLE traded Shawn Kemp to POR; MIA traded Chris Gatling, Clarence Weatherspoon, and 2001 1st round pick to CLE; POR traded Gary Grant to CLE and Brian Grant to MIA",
+                                                "note": "Forward acquired from Miami in 3-team Shawn Kemp trade.",
+                                                "isOrigin": false,
+                                                "assetsGivenUp": [
+                                                  {
+                                                    "type": "player",
+                                                    "name": "Shawn Kemp",
+                                                    "acquisitionType": "trade",
+                                                    "date": "1997-09-25",
+                                                    "tradePartner": "SEA",
+                                                    "tradeDescription": "3-team trade: CLE traded Terrell Brandon, Tyrone Hill, and 1998 1st round pick to MIL; SEA traded Shawn Kemp to CLE; MIL traded Vin Baker to SEA and Sherman Douglas to CLE",
+                                                    "note": "All-Star power forward from Seattle. Traded to Portland 3 years later for Chris Gatling.",
+                                                    "isOrigin": false,
+                                                    "assetsGivenUp": [
+                                                      {
+                                                        "type": "player",
+                                                        "name": "Terrell Brandon",
+                                                        "acquisitionType": "draft",
+                                                        "date": "1991-06-26",
+                                                        "draftPick": 11,
+                                                        "draftRound": 1,
+                                                        "note": "Drafted 11th overall by Cleveland in 1991. 2x All-Star, sent to MIL in the Shawn Kemp mega-trade.",
+                                                        "isOrigin": true,
+                                                        "assetsGivenUp": []
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "player",
+                                    "name": "Larry Hughes",
+                                    "acquisitionType": "free-agent",
+                                    "date": "2005-07-14",
+                                    "note": "Signed 5-year, $70M deal to pair with LeBron. Never lived up to the contract but became a trade chip.",
+                                    "isOrigin": true,
+                                    "assetsGivenUp": []
+                                  }
+                                ]
                               }
                             ]
                           },
@@ -101,17 +183,146 @@
                             "type": "player",
                             "name": "Jamario Moon",
                             "acquisitionType": "free-agent",
-                            "date": "2009-07-27",
-                            "note": "Forward signed as free agent from Miami Heat, 2-year $6M deal",
-                            "isOrigin": true
+                            "date": "2009-07-24",
+                            "note": "Signed as free agent. Previously played for TOR and MIA. Salary filler in the Baron Davis trade.",
+                            "isOrigin": true,
+                            "assetsGivenUp": []
                           }
                         ]
                       }
                     ]
                   }
                 ]
+              },
+              {
+                "type": "player",
+                "name": "Channing Frye",
+                "acquisitionType": "trade",
+                "date": "2016-02-18",
+                "tradePartner": "ORL",
+                "tradeDescription": "3-team trade: Cavaliers sent Anderson Varejao and conditional 1st to Trail Blazers, Jared Cunningham and 2nd round pick to Magic for Channing Frye",
+                "note": "Stretch big from Orlando",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Anderson Varejao",
+                    "acquisitionType": "trade",
+                    "date": "2004-07-23",
+                    "tradePartner": "ORL",
+                    "tradeDescription": "Cavaliers sent Tony Battie, 2005 2nd round pick, and 2007 2nd round pick to Magic for Drew Gooden, Anderson Varejao, and Steven Hunter",
+                    "note": "Center acquired from Orlando on draft night",
+                    "isOrigin": false,
+                    "assetsGivenUp": [
+                      {
+                        "type": "player",
+                        "name": "Tony Battie",
+                        "acquisitionType": "trade",
+                        "date": "2003-12-15",
+                        "tradePartner": "BOS",
+                        "tradeDescription": "Cavaliers traded Ricky Davis, Chris Mihm, Michael Stewart, and a 2nd round pick to Celtics for Tony Battie, Eric Williams, and Kedrick Brown",
+                        "note": "Center from Boston Celtics",
+                        "isOrigin": false,
+                        "assetsGivenUp": [
+                          {
+                            "type": "player",
+                            "name": "Ricky Davis",
+                            "acquisitionType": "trade",
+                            "date": "2001-10-26",
+                            "tradePartner": "MIA",
+                            "tradeDescription": "3-team trade: Cavaliers sent Chris Gatling to Heat, received Ricky Davis from Heat",
+                            "note": "Guard from Miami Heat",
+                            "isOrigin": false,
+                            "assetsGivenUp": [
+                              {
+                                "type": "player",
+                                "name": "Chris Gatling",
+                                "acquisitionType": "trade",
+                                "date": "2000-08-30",
+                                "note": "Forward acquired from Miami in 3-team Shawn Kemp trade.",
+                                "isOrigin": false,
+                                "assetsGivenUp": [
+                                  {
+                                    "type": "player",
+                                    "name": "Shawn Kemp",
+                                    "acquisitionType": "trade",
+                                    "date": "1997-09-25",
+                                    "tradePartner": "SEA",
+                                    "tradeDescription": "3-team trade: CLE traded Terrell Brandon, Tyrone Hill, and 1998 1st round pick to MIL; SEA traded Shawn Kemp to CLE; MIL traded Vin Baker to SEA and Sherman Douglas to CLE",
+                                    "note": "All-Star power forward from Seattle. Traded to Portland 3 years later for Chris Gatling.",
+                                    "isOrigin": false,
+                                    "assetsGivenUp": [
+                                      {
+                                        "type": "player",
+                                        "name": "Terrell Brandon",
+                                        "acquisitionType": "draft",
+                                        "date": "1991-06-26",
+                                        "draftPick": 11,
+                                        "draftRound": 1,
+                                        "note": "Drafted 11th overall by Cleveland in 1991. 2x All-Star, sent to MIL in the Shawn Kemp mega-trade.",
+                                        "isOrigin": true,
+                                        "assetsGivenUp": []
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "tradePartner": "MIA",
+                                "tradeDescription": "3-team trade: CLE traded Shawn Kemp to POR; MIA traded Chris Gatling, Clarence Weatherspoon, and 2001 1st round pick to CLE; POR traded Gary Grant to CLE and Brian Grant to MIA"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "pick",
+                        "name": "2005 2nd Round Pick (#44) via CLE",
+                        "acquisitionType": "original",
+                        "date": "2005-06-28",
+                        "becamePlayer": "Martynas Andriuskevicius",
+                        "note": "Cleveland's 2nd round pick, became #44 overall",
+                        "isOrigin": true
+                      },
+                      {
+                        "type": "pick",
+                        "name": "2007 2nd Round Pick (#54) via CLE",
+                        "acquisitionType": "original",
+                        "date": "2007-06-28",
+                        "becamePlayer": "Brad Newley",
+                        "note": "Cleveland's 2nd round pick, became #54 overall",
+                        "isOrigin": true
+                      }
+                    ]
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2018 1st Round Pick (#25) via CLE",
+                    "acquisitionType": "original",
+                    "date": "2018-06-21",
+                    "becamePlayer": "Moritz Wagner",
+                    "note": "Cavaliers' own first-round pick sent to Portland in Channing Frye trade",
+                    "isOrigin": true
+                  }
+                ]
+              },
+              {
+                "type": "pick",
+                "name": "2018 1st Round Pick (#25) via CLE",
+                "acquisitionType": "original",
+                "date": "2018-06-21",
+                "becamePlayer": "Moritz Wagner",
+                "note": "Cavaliers' own first-round pick sent to Lakers in IT trade",
+                "isOrigin": true
               }
             ]
+          },
+          {
+            "type": "pick",
+            "name": "2023 2nd Round Pick via CLE",
+            "acquisitionType": "original",
+            "date": "2023-06-22",
+            "note": "Cavaliers' own second-round pick sent to Bulls in Markkanen 3-team trade (eventually forfeited, never used)",
+            "isOrigin": true,
+            "becamePlayer": "Forfeited"
           }
         ]
       },
@@ -122,12 +333,12 @@
         "date": "2018-06-21",
         "draftPick": 8,
         "draftRound": 1,
-        "note": "Guard drafted 8th overall by Cleveland using Brooklyn's pick from Kyrie Irving trade",
+        "note": "Guard drafted 8th overall by Cleveland using Brooklyn's pick from Kyrie Irving trade. Sign-and-traded to Utah.",
         "isOrigin": false,
         "assetsGivenUp": [
           {
             "type": "pick",
-            "name": "2018 BKN 1st Round Pick (via BOS)",
+            "name": "2018 1st Round Pick (#8) via BKN",
             "acquisitionType": "trade",
             "date": "2017-08-22",
             "tradePartner": "BOS",
@@ -144,7 +355,8 @@
                 "draftPick": 1,
                 "draftRound": 1,
                 "note": "Point guard drafted 1st overall by Cleveland Cavaliers",
-                "isOrigin": true
+                "isOrigin": true,
+                "assetsGivenUp": []
               }
             ]
           }
@@ -157,46 +369,35 @@
         "date": "2022-06-23",
         "draftPick": 14,
         "draftRound": 1,
-        "note": "Guard drafted 14th overall by Cleveland",
-        "isOrigin": true
+        "note": "Guard drafted 14th overall by Cleveland from Kansas",
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2025 CLE 1st Round Pick",
+        "name": "2025 1st Round Pick (#29) via CLE",
         "acquisitionType": "original",
-        "date": "2025-06-25",
-        "becamePlayer": "Donovan Clingan",
-        "note": "Cavaliers' own first-round pick",
+        "date": "2025-06-26",
+        "becamePlayer": "Liam McNeeley",
+        "note": "Cavaliers' own first-round pick, became #29 overall (Liam McNeeley)",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2027 CLE 1st Round Pick",
+        "name": "2027 1st Round Pick via CLE",
         "acquisitionType": "original",
         "date": "2027-06-24",
-        "note": "Cavaliers' own first-round pick",
+        "note": "Cavaliers' own first-round pick sent to Utah",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2029 CLE 1st Round Pick",
+        "name": "2029 1st Round Pick via CLE",
         "acquisitionType": "original",
         "date": "2029-06-24",
-        "note": "Cavaliers' own first-round pick",
+        "note": "Cavaliers' own first-round pick sent to Utah",
         "isOrigin": true
       }
-    ],
-    "tradeChain": {
-      "type": "player",
-      "name": "Donovan Mitchell",
-      "acquisitionType": "draft-night-trade",
-      "date": "2017-06-22",
-      "tradePartner": "DEN",
-      "tradeDescription": "Jazz acquired Mitchell from Nuggets for 2017 24th pick (Tyler Lydon) and Trey Lyles",
-      "draftPick": 13,
-      "draftRound": 1,
-      "note": "Guard from Louisville, drafted 13th overall by Denver, traded to Utah same night",
-      "isOrigin": true
-    }
+    ]
   }
 }

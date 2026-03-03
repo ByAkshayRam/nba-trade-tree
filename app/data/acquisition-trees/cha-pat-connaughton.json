@@ -2,10 +2,9 @@
   "_meta": {
     "team": "CHA",
     "player": "Pat Connaughton",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2020,
-    "depth": 5,
-    "lastUpdated": "2026-02-11"
+    "source": "Basketball-Reference, NBA.com",
+    "sourceUrl": "https://www.basketball-reference.com/players/c/connapa01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,8 +13,8 @@
     "date": "2025-07-06",
     "currentTeam": "CHA",
     "tradePartner": "MIL",
-    "tradeDescription": "Acquired from Bucks (with 2 second round picks) for Vasilije Micic",
-    "note": "Notre Dame guard, athletic shooter and dunker",
+    "tradeDescription": "Bucks traded Pat Connaughton and two 2nd-round picks (2031 MIL own, 2032 MIL own) to Hornets for Vasilije Micic.",
+    "note": "Notre Dame guard, athletic shooter. NBA champion with Milwaukee (2021).",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -23,38 +22,8 @@
         "acquisitionType": "trade",
         "date": "2025-06-30",
         "tradePartner": "PHX",
-        "tradeDescription": "Re-acquired from Suns with Liam McNeeley and 2029 1st for Mark Williams",
-        "note": "Serbian guard",
-        "tradeChain": {
-          "type": "player",
-          "name": "Vasilije Micic",
-          "acquisitionType": "trade",
-          "date": "2024-02-08",
-          "tradePartner": "OKC",
-          "tradeDescription": "Originally acquired in Gordon Hayward trade",
-          "assetsGivenUp": [
-            {
-              "type": "player",
-              "name": "Gordon Hayward",
-              "acquisitionType": "trade",
-              "date": "2020-11-29",
-              "tradePartner": "BOS",
-              "tradeDescription": "Sign-and-trade from Celtics",
-              "note": "Former All-Star forward",
-              "assetsGivenUp": [
-                {
-                  "type": "pick",
-                  "name": "2022 2nd Round Pick",
-                  "acquisitionType": "original",
-                  "date": "2020-11-29",
-                  "note": "Conditional pick sent to Boston",
-                  "becamePlayer": "Trevor Keels",
-                  "isOrigin": true
-                }
-              ]
-            }
-          ]
-        },
+        "tradeDescription": "Re-acquired from Suns along with Liam McNeeley and 2029 1st for Mark Williams and 2029 2nd (PHO own). Phoenix also received a trade exception.",
+        "note": "Serbian guard, originally acquired from OKC in Hayward trade (Feb 2024), sent to PHX in Nurkic trade (Feb 2025), re-acquired Jun 2025.",
         "assetsGivenUp": [
           {
             "type": "player",
@@ -63,9 +32,40 @@
             "date": "2022-06-23",
             "draftPick": 15,
             "draftRound": 1,
-            "note": "Hornets' own pick, promising young center",
-            "tradeDescription": "Drafted by Hornets with 15th overall pick",
+            "note": "Duke center, Hornets drafted him 15th overall in 2022",
+            "tradeDescription": "Drafted by Hornets with 15th overall pick in 2022 NBA Draft",
             "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2029 2nd Round Pick via PHO",
+            "acquisitionType": "trade",
+            "tradePartner": "PHX",
+            "date": "2025-01-15",
+            "tradeDescription": "Hornets traded Nick Richards and 2025 2nd (least favorable) to Suns for Josh Okogie, 2026 2nd (DEN own), 2029 2nd (PHO own), and 2031 2nd (PHO own).",
+            "note": "Originally PHO own pick. Sent back to PHX in McNeeley/Micic trade.",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Nick Richards",
+                "acquisitionType": "trade",
+                "date": "2020-11-19",
+                "tradePartner": "NOP",
+                "tradeDescription": "Hornets traded 2024 2nd (CHO own, #44 Tyler Kolek) to Pelicans for Nick Richards.",
+                "note": "Kentucky center, acquired on draft night 2020",
+                "assetsGivenUp": [
+                  {
+                    "type": "pick",
+                    "name": "2024 2nd Round Pick (#44)",
+                    "becamePlayer": "Tyler Kolek",
+                    "acquisitionType": "original",
+                    "date": "2020-11-19",
+                    "note": "Hornets' own 2024 2nd-round pick, sent to NOP for Nick Richards",
+                    "isOrigin": true
+                  }
+                ]
+              }
+            ]
           }
         ]
       }

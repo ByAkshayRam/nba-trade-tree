@@ -2,10 +2,9 @@
   "_meta": {
     "team": "PHX",
     "player": "Collin Gillespie",
-    "source": "ESPN, NBA.com, Basketball-Reference",
-    "originYear": 2022,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/g/gilleco01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -13,8 +12,8 @@
     "acquisitionType": "free-agent",
     "date": "2024-07-02",
     "currentTeam": "PHX",
-    "tradeDescription": "Signed two-way contract with Suns as free agent from Denver",
-    "note": "Villanova guard, signed two-way contract from Denver Nuggets",
-    "isOrigin": true
+    "tradeDescription": "Signed two-way contract with Suns as free agent",
+    "isOrigin": true,
+    "assetsGivenUp": []
   }
 }

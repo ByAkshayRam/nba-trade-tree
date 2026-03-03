@@ -2,10 +2,9 @@
   "_meta": {
     "team": "IND",
     "player": "Ivica Zubac",
-    "source": "Basketball-Reference, ESPN, NBA Trade History",
-    "originYear": 2021,
-    "depth": 3,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/z/zubaciv01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,7 +13,7 @@
     "date": "2026-02-05",
     "currentTeam": "IND",
     "tradePartner": "LAC",
-    "note": "Center from Bosnia, 32nd overall pick in 2016 NBA Draft. Acquired alongside Kobe Brown.",
+    "tradeDescription": "IND traded Isaiah Jackson, Bennedict Mathurin, a 2026 1st round pick (IND own), a 2028 2nd round pick (DAL own), and a 2029 1st round pick (IND own) to LAC for Ivica Zubac and Kobe Brown. LAC also received trade exceptions.",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -24,43 +23,145 @@
         "draftPick": 6,
         "draftRound": 1,
         "note": "Guard from Arizona, 6th overall pick in 2022 NBA Draft",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "player",
         "name": "Isaiah Jackson",
-        "acquisitionType": "draft-night-trade",
-        "date": "2021-07-29",
+        "acquisitionType": "trade",
+        "date": "2021-08-06",
         "tradePartner": "LAL",
         "draftPick": 22,
         "draftRound": 1,
-        "note": "Drafted 22nd overall by LAL in 2021, traded to IND on draft night",
+        "note": "Drafted 22nd overall by LAL in 2021. Acquired in 5-team trade (Westbrook deal). IND sent Aaron Holiday and Isaiah Todd to WAS.",
+        "tradeDescription": "5-team trade: LAL traded Isaiah Jackson to IND; IND traded Aaron Holiday and Isaiah Todd to WAS; WAS traded Russell Westbrook to LAL; BRK traded Spencer Dinwiddie to WAS; SAS traded Nikola Milutinov to BRK.",
         "assetsGivenUp": [
           {
-            "type": "pick",
-            "name": "2027 IND 2nd Round Pick",
-            "note": "IND's own pick sent to LAL",
-            "isOrigin": true
+            "type": "player",
+            "name": "Aaron Holiday",
+            "acquisitionType": "draft",
+            "date": "2018-06-21",
+            "draftPick": 23,
+            "draftRound": 1,
+            "note": "Guard from UCLA, 23rd overall pick in 2018 NBA Draft",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "player",
+            "name": "Isaiah Todd",
+            "acquisitionType": "trade",
+            "date": "2021-07-30",
+            "tradePartner": "MIL",
+            "note": "Acquired from MIL for Georgios Kalaitzakis, Sandro Mamukelashvili, and two 2nd round picks",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Georgios Kalaitzakis",
+                "acquisitionType": "draft",
+                "date": "2021-07-29",
+                "note": "Drafted 60th overall by Indiana in 2021 using a pick acquired from Utah. Sent to MIL the next day in the Isaiah Todd trade.",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "pick",
+                    "name": "2021 2nd Round Pick (#60)",
+                    "acquisitionType": "trade",
+                    "date": "2019-06-21",
+                    "tradePartner": "UTA",
+                    "tradeDescription": "UTA trades 2021 2nd round pick (future) and cash ($1MM) to IND for Jarrell Brantley",
+                    "becamePlayer": "Georgios Kalaitzakis",
+                    "note": "Utah's future 2nd rounder, acquired for Jarrell Brantley.",
+                    "isOrigin": false,
+                    "assetsGivenUp": [
+                      {
+                        "type": "player",
+                        "name": "Jarrell Brantley",
+                        "acquisitionType": "free-agent",
+                        "date": "2019-06-21",
+                        "note": "Undrafted forward from College of Charleston. Sent to Utah for a future 2nd round pick.",
+                        "isOrigin": true,
+                        "assetsGivenUp": []
+                      }
+                    ]
+                  }
+                ],
+                "draftRound": 2,
+                "draftPick": 60
+              },
+              {
+                "type": "player",
+                "name": "Sandro Mamukelashvili",
+                "acquisitionType": "draft",
+                "date": "2021-07-29",
+                "note": "Drafted 54th overall by Indiana in 2021 using a pick acquired from Houston. Sent to MIL the next day in the Isaiah Todd trade.",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "pick",
+                    "name": "2021 2nd Round Pick (#54)",
+                    "acquisitionType": "trade",
+                    "date": "2019-02-07",
+                    "tradePartner": "HOU",
+                    "tradeDescription": "HOU trades 2021 2nd round pick (future), Wade Baldwin, Maarty Leunen, and Nik Stauskas to IND for cash",
+                    "becamePlayer": "Sandro Mamukelashvili",
+                    "note": "Houston's future 2nd rounder, acquired in a cash dump deal.",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  }
+                ],
+                "draftRound": 2,
+                "draftPick": 54
+              },
+              {
+                "type": "pick",
+                "name": "2024 2nd Round Pick (#46)",
+                "acquisitionType": "trade",
+                "date": "2021-07-30",
+                "becamePlayer": "Cam Christie",
+                "note": "Sent to MIL in the Isaiah Todd trade.",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              },
+              {
+                "type": "pick",
+                "name": "2026 2nd Round Pick",
+                "acquisitionType": "trade",
+                "date": "2021-07-30",
+                "note": "Sent to MIL in the Isaiah Todd trade.",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              }
+            ],
+            "tradeDescription": "MIL trades Isaiah Todd (#31 pick) to IND for Georgios Kalaitzakis, Sandro Mamukelashvili, 2024 2nd round pick (Cam Christie), and 2026 2nd round pick"
           }
         ]
       },
       {
         "type": "pick",
-        "name": "2026 IND 1st Round Pick",
+        "name": "2026 1st Round Pick via IND",
+        "acquisitionType": "own",
         "note": "IND's own pick",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2028 2nd Round Pick (DAL own)",
-        "note": "Dallas's own 2nd round pick",
-        "isOrigin": true
+        "name": "2028 2nd Round Pick via DAL",
+        "acquisitionType": "trade",
+        "note": "Dallas's own 2nd round pick, acquired from SAC in Chris Duarte trade (July 6, 2023)",
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2029 IND 1st Round Pick",
+        "name": "2029 1st Round Pick via IND",
+        "acquisitionType": "own",
         "note": "IND's own pick",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

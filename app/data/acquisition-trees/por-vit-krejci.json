@@ -2,39 +2,42 @@
   "_meta": {
     "team": "POR",
     "player": "Vit Krejci",
-    "source": "NBA.com, ESPN",
-    "originYear": 2026,
-    "depth": 2,
-    "lastUpdated": "2026-02-17"
+    "source": "Basketball-Reference.com",
+    "sourceUrl": "https://www.basketball-reference.com/players/k/krejcvi01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Vit Krejci",
     "acquisitionType": "trade",
-    "date": "2026-02-02",
+    "date": "2026-02-01",
     "currentTeam": "POR",
     "tradePartner": "ATL",
-    "tradeDescription": "Acquired from Atlanta Hawks for Duop Reath, 2027 ATL 2nd, and 2030 NYK 2nd",
+    "tradeDescription": "POR traded Duop Reath, 2027 2nd (ATL own), and 2030 2nd (NYK own) to Atlanta for Vit Krejci. Portland also received a trade exception.",
     "note": "Czech international guard",
+    "isOrigin": false,
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Duop Reath",
         "acquisitionType": "free-agent",
-        "note": "Australian center, signed by Portland. Underwent season-ending foot surgery.",
+        "date": "2023-10-02",
+        "note": "Australian center, signed by Portland Oct 2, 2023.",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2027 2nd Round Pick (via ATL)",
-        "acquisitionType": "trade",
-        "note": "Atlanta's 2027 2nd round pick, sent back to ATL in Krejci trade",
+        "name": "2027 2nd Round Pick via ATL",
+        "acquisitionType": "own",
+        "date": "2026-02-01",
+        "note": "Atlanta's own 2027 2nd round pick, sent back to ATL in Krejci trade",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2030 2nd Round Pick (via NYK)",
-        "acquisitionType": "trade",
+        "name": "2030 2nd Round Pick via NYK",
+        "acquisitionType": "own",
+        "date": "2026-02-01",
         "note": "New York Knicks' 2030 2nd round pick, sent to ATL in Krejci trade",
         "isOrigin": true
       }

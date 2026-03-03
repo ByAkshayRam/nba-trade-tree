@@ -2,10 +2,9 @@
   "_meta": {
     "team": "PHX",
     "player": "Haywood Highsmith",
-    "source": "ESPN, NBA.com, Basketball-Reference",
-    "originYear": 2018,
-    "depth": 3,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/h/highsha01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -13,8 +12,8 @@
     "acquisitionType": "free-agent",
     "date": "2026-02-15",
     "currentTeam": "PHX",
-    "tradeDescription": "Signed multi-year contract via buyout market from Miami Heat",
-    "note": "Wheeling Jesuit forward, signed after Miami buyout during All-Star break. 1yr/vet min (~$2.1M)",
-    "isOrigin": true
+    "tradeDescription": "Signed multi-year contract via buyout market after being waived by Brooklyn Nets on Feb 5, 2026",
+    "isOrigin": true,
+    "assetsGivenUp": []
   }
 }

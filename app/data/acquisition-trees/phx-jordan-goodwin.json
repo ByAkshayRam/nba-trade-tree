@@ -2,10 +2,9 @@
   "_meta": {
     "team": "PHX",
     "player": "Jordan Goodwin",
-    "source": "ESPN, NBA.com, Basketball-Reference",
-    "originYear": 2021,
-    "depth": 5,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/g/goodwjo01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -13,8 +12,8 @@
     "acquisitionType": "free-agent",
     "date": "2025-07-24",
     "currentTeam": "PHX",
-    "tradeDescription": "Claimed off waivers after Lakers waived him to create cap room",
-    "note": "Saint Louis guard, claimed off waivers from Lakers, returning to Phoenix. 1yr/vet min (~$2.1M)",
-    "isOrigin": true
+    "tradeDescription": "Claimed off waivers from Lakers",
+    "isOrigin": true,
+    "assetsGivenUp": []
   }
 }

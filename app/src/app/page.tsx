@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { PlayerSearch } from "@/components/PlayerSearch";
 import { WhatsNew } from "@/components/WhatsNew";
-import { trackPageView, startPageTimer } from "@/lib/analytics";
+import { track, trackPageView, startPageTimer } from "@/lib/analytics";
 
 const EAST_TEAMS = [
   { abbr: "ATL", name: "Hawks", emoji: "🦅" },
@@ -59,7 +59,13 @@ export default function Home() {
   const [subscribeMsg, setSubscribeMsg] = useState("");
 
   useEffect(() => {
+    // Capture source param for attribution (e.g. ?src=twitter)
+    const params = new URLSearchParams(window.location.search);
+    const src = params.get('src') || params.get('utm_source');
     trackPageView('/');
+    if (src) {
+      track('discovery_source', { source: src, path: '/' });
+    }
     startPageTimer();
   }, []);
 
@@ -138,7 +144,7 @@ export default function Home() {
           </p>
           
           {/* Search */}
-          <div className="flex justify-center mb-8">
+          <div className="flex justify-center mb-4">
             <PlayerSearch 
               onSelect={(player) => {
                 const slug = player.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
@@ -148,6 +154,34 @@ export default function Home() {
                 router.push(`/team/${team.abbr}?src=search`);
               }}
             />
+          </div>
+          
+          {/* Trending Search Pills */}
+          <div className="flex justify-center mb-8">
+            <div className="flex flex-wrap gap-2 items-center justify-center max-w-lg">
+              <span className="text-xs text-zinc-600 font-medium mr-2">Trending:</span>
+              {[
+                { label: "Celtics", team: "BOS", reason: "Nets trade legacy" },
+                { label: "Thunder", team: "OKC", reason: "Draft dynasty" }, 
+                { label: "Nikola Vucevic", team: "BOS", player: "nikola-vucevic", reason: "Longest chain" }
+              ].map((item) => (
+                <button
+                  key={item.label}
+                  onClick={() => {
+                    track('trending_search_click', { label: item.label, team: item.team });
+                    if (item.player) {
+                      router.push(`/team/${item.team}?player=${item.player}&src=trending`);
+                    } else {
+                      router.push(`/team/${item.team}?src=trending`);
+                    }
+                  }}
+                  className="px-3 py-1.5 bg-zinc-800/50 hover:bg-zinc-800 border border-zinc-700/50 hover:border-fuchsia-500/30 rounded-full text-xs text-zinc-300 hover:text-fuchsia-400 transition-all"
+                  title={item.reason}
+                >
+                  {item.label}
+                </button>
+              ))}
+            </div>
           </div>
           
 
@@ -253,6 +287,65 @@ export default function Home() {
               >
                 Explore the full Celtics tree →
               </Link>
+            </div>
+          </div>
+        )}
+
+        {/* Longest Active Chains */}
+        {(
+          <div className="mt-8 p-6 sm:p-8 bg-zinc-900/50 rounded-2xl border border-zinc-800/50">
+            <div className="flex items-center justify-center gap-2 mb-2">
+              <span className="text-blue-400 text-xs font-bold uppercase tracking-widest">Longest Active Chains</span>
+            </div>
+            <h3 className="text-2xl font-bold mb-2 text-center">
+              The NBA&apos;s Longest Trade Chains
+            </h3>
+            <p className="text-center text-zinc-500 mb-6 text-sm max-w-lg mx-auto">
+              Cleveland dominates with 4 of the top 10 — some chains trace back over 30 years
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3">
+              {[
+                { player: "Dennis Schroder", team: "CLE", depth: 17, origin: "1991", color: TEAM_COLORS["CLE"] },
+                { player: "Keon Ellis", team: "CLE", depth: 17, origin: "1991", color: TEAM_COLORS["CLE"] },
+                { player: "Donovan Mitchell", team: "CLE", depth: 13, origin: "1991", color: TEAM_COLORS["CLE"] },
+                { player: "Jarrett Allen", team: "CLE", depth: 13, origin: "1991", color: TEAM_COLORS["CLE"] },
+                { player: "Nikola Vucevic", team: "BOS", depth: 10, origin: "2000", color: TEAM_COLORS["BOS"] },
+                { player: "Franz Wagner", team: "ORL", depth: 10, origin: "2000", color: TEAM_COLORS["ORL"] },
+                { player: "Jett Howard", team: "ORL", depth: 10, origin: "2000", color: TEAM_COLORS["ORL"] },
+                { player: "Wendell Carter Jr.", team: "ORL", depth: 9, origin: "2000", color: TEAM_COLORS["ORL"] },
+                { player: "Alperen Sengun", team: "HOU", depth: 9, origin: "2005", color: TEAM_COLORS["HOU"] },
+                { player: "Jayson Tatum", team: "BOS", depth: 7, origin: "1996", color: TEAM_COLORS["BOS"] },
+              ].map((item, index) => (
+                <button
+                  key={`${item.player}-${item.team}`}
+                  onClick={() => {
+                    track('longest_chain_click', { player: item.player, team: item.team, depth: item.depth });
+                    const slug = item.player.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+                    router.push(`/team/${item.team}?player=${slug}&src=longest-chains`);
+                  }}
+                  className="p-4 rounded-xl bg-zinc-800/50 hover:bg-zinc-800 border border-zinc-800/50 hover:border-blue-500/30 transition-all text-left group"
+                >
+                  <div className="flex items-center justify-between mb-2">
+                    <div className="text-[10px] text-zinc-600 uppercase tracking-wider">#{index + 1}</div>
+                    <div
+                      className="w-6 h-6 rounded text-white text-[8px] font-bold flex items-center justify-center group-hover:scale-110 transition-transform"
+                      style={{ backgroundColor: item.color }}
+                    >
+                      {item.team}
+                    </div>
+                  </div>
+                  <div className="font-semibold text-sm text-white mb-1 leading-tight">{item.player}</div>
+                  <div className="flex items-center gap-2 text-xs">
+                    <span className="text-blue-400 font-bold">{item.depth} steps</span>
+                    <span className="text-zinc-600">since {item.origin}</span>
+                  </div>
+                </button>
+              ))}
+            </div>
+            <div className="text-center mt-6">
+              <p className="text-xs text-zinc-600">
+                Click any player to explore their full acquisition chain
+              </p>
             </div>
           </div>
         )}

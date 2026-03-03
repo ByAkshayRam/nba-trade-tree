@@ -41,12 +41,28 @@ export async function GET(request: NextRequest) {
 
     // Filter out local/dev traffic (Tailscale IPs, localhost)
     const LOCAL_PATTERNS = ['100.100.180.42', '127.0.0.1', 'localhost'];
-    const typedEvents = ((events || []) as AnalyticsEvent[]).filter(e => {
+    let typedEvents = ((events || []) as AnalyticsEvent[]).filter(e => {
       const ref = (e.properties?.referrer as string) || '';
       const url = (e.properties?.url as string) || '';
       const ip = e.ip || '';
       return !LOCAL_PATTERNS.some(p => ref.includes(p) || url.includes(p) || ip.startsWith('100.'));
     });
+
+    // Backfill hostname: events without hostname are from beta (pre-domain era)
+    typedEvents.forEach(e => {
+      if (!e.properties?.hostname) {
+        e.properties = { ...e.properties, hostname: 'rosterdna.vercel.app' };
+      }
+    });
+
+    // Filter by hostname/domain if specified
+    const hostnameFilter = request.nextUrl.searchParams.get('hostname');
+    if (hostnameFilter && hostnameFilter !== 'all') {
+      typedEvents = typedEvents.filter(e => {
+        const h = (e.properties?.hostname as string) || '';
+        return h === hostnameFilter;
+      });
+    }
     const summary = buildSummary(typedEvents);
 
     return NextResponse.json({
@@ -148,9 +164,14 @@ function buildSummary(events: AnalyticsEvent[]) {
     hourMap[hour] = (hourMap[hour] || 0) + 1;
   });
 
-  // Discovery sources (how users find team pages)
+  // Discovery sources (how users find team pages + external sources)
   const discoveryMap: Record<string, number> = {};
   teamViews.forEach(e => {
+    const src = (e.properties?.source as string) || 'unknown';
+    discoveryMap[src] = (discoveryMap[src] || 0) + 1;
+  });
+  // Also count explicit discovery_source events (e.g. ?src=twitter on homepage)
+  events.filter(e => e.event === 'discovery_source').forEach(e => {
     const src = (e.properties?.source as string) || 'unknown';
     discoveryMap[src] = (discoveryMap[src] || 0) + 1;
   });

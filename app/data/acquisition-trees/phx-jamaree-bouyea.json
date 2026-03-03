@@ -2,10 +2,9 @@
   "_meta": {
     "team": "PHX",
     "player": "Jamaree Bouyea",
-    "source": "ESPN, NBA.com, Basketball-Reference",
-    "originYear": 2022,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/b/bouyeja01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,7 +13,7 @@
     "date": "2025-11-17",
     "currentTeam": "PHX",
     "tradeDescription": "Signed two-way contract with Suns as free agent",
-    "note": "San Francisco guard, signed two-way contract in November 2025",
-    "isOrigin": true
+    "isOrigin": true,
+    "assetsGivenUp": []
   }
 }

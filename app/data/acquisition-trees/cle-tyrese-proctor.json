@@ -2,22 +2,46 @@
   "_meta": {
     "team": "CLE",
     "player": "Tyrese Proctor",
-    "source": "ESPN, NBA.com, Basketball-Reference verified",
-    "originYear": 2025,
-    "depth": 1,
-    "lastUpdated": "2026-02-15"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/p/proctty01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Tyrese Proctor",
     "acquisitionType": "draft",
-    "date": "2025-06-26",
+    "date": "2025-06-25",
     "currentTeam": "CLE",
     "draftPick": 49,
     "draftRound": 2,
-    "note": "Guard drafted 36th overall by Cleveland from Duke",
-    "isOrigin": true,
-    "assetsGivenUp": [],
+    "note": "Guard drafted 49th overall by Cleveland from Duke. Pick was MIL's own 2025 2nd, acquired via trade for Ilkan Karaman.",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2025 2nd Round Pick (#49)",
+        "acquisitionType": "trade",
+        "date": "2020-11-18",
+        "tradePartner": "MIL",
+        "tradeDescription": "MIL trades 2025 2nd round pick (MIL own) to CLE for Ilkan Karaman",
+        "becamePlayer": "Tyrese Proctor",
+        "note": "Milwaukee's own 2025 2nd rounder, acquired on draft night 2020.",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Ilkan Karaman",
+            "acquisitionType": "draft",
+            "date": "2020-11-18",
+            "note": "International draft-and-stash. Sent to MIL to acquire their 2025 2nd round pick.",
+            "isOrigin": true,
+            "assetsGivenUp": [],
+            "draftRound": 2,
+            "draftPick": 45
+          }
+        ]
+      }
+    ],
     "espnId": "5023693"
   }
 }

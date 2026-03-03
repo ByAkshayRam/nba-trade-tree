@@ -2,10 +2,9 @@
   "_meta": {
     "team": "GSW",
     "player": "Draymond Green",
-    "source": "Basketball-Reference, ESPN",
-    "originYear": 2012,
-    "depth": 1,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/g/greendr01.html",
+    "lastUpdated": "2026-03-02"
   },
   "tree": {
     "type": "player",
@@ -15,7 +14,89 @@
     "currentTeam": "GSW",
     "draftPick": 35,
     "draftRound": 2,
-    "note": "Defensive anchor, drafted 35th overall by GSW in 2012",
-    "isOrigin": true
+    "note": "4x champion, DPOY. Drafted 35th overall by GSW in 2012. Selected with the 2012 2nd round pick acquired from NJ Nets (Feb 23, 2011) — GSW sent Dan Gadzuric and Brandan Wright to NJN for Troy Murphy and this pick.",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Dan Gadzuric",
+        "acquisitionType": "trade",
+        "date": "2010-06-22",
+        "tradePartner": "MIL",
+        "tradeDescription": "GSW traded Corey Maggette and a 2010 2nd round pick (Jerome Jordan) to MIL for Dan Gadzuric and Charlie Bell. Later sent Gadzuric to NJ Nets with Brandan Wright for Troy Murphy and the 2012 2nd (Draymond Green).",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Corey Maggette",
+            "acquisitionType": "free-agent",
+            "date": "2008-07-09",
+            "tradeDescription": "Signed as FA by GSW in 2008. Sent to MIL for Gadzuric and Charlie Bell.",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "pick",
+            "name": "2010 2nd Round Pick (#44)",
+            "acquisitionType": "draft",
+            "date": "2010-06-22",
+            "draftPick": 44,
+            "draftRound": 2,
+            "becamePlayer": "Jerome Jordan",
+            "note": "GSW's own 2010 2nd round pick, sent to MIL for Gadzuric and Bell.",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          }
+        ]
+      },
+      {
+        "type": "player",
+        "name": "Brandan Wright",
+        "acquisitionType": "draft-night-trade",
+        "date": "2007-06-28",
+        "draftPick": 8,
+        "draftRound": 1,
+        "tradePartner": "CHA",
+        "tradeDescription": "Drafted #8 overall by Charlotte Bobcats, traded to GSW on draft night for Jason Richardson and Jermareo Davidson. Later sent to NJ Nets with Gadzuric for Troy Murphy and the 2012 2nd (Draymond Green).",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Jason Richardson",
+            "acquisitionType": "draft",
+            "date": "2001-06-27",
+            "draftPick": 5,
+            "draftRound": 1,
+            "tradeDescription": "Drafted #5 overall by GSW in 2001. Sent to Charlotte on draft night 2007 for Brandan Wright (#8).",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "player",
+            "name": "Jermareo Davidson",
+            "acquisitionType": "draft",
+            "date": "2007-06-28",
+            "draftPick": 36,
+            "draftRound": 2,
+            "tradeDescription": "Drafted #36 overall by GSW in 2007 with a pick acquired from MIN (Feb 21, 2002). Sent to Charlotte alongside Jason Richardson for Brandan Wright (#8).",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Marc Jackson",
+                "acquisitionType": "draft",
+                "date": "1997-06-25",
+                "draftPick": 46,
+                "draftRound": 2,
+                "tradeDescription": "GSW traded Marc Jackson to MIN for Dean Garrett and a future 2007 2nd round draft pick (#36, became Jermareo Davidson).",
+                "note": "Sent to Minnesota Feb 21, 2002.",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -2,10 +2,9 @@
   "_meta": {
     "team": "WAS",
     "player": "Cam Whitmore",
-    "source": "ESPN/NBA.com Official Trade Reports",
-    "originYear": 2025,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference, NBA.com",
+    "sourceUrl": "https://www.basketball-reference.com/players/w/whiteca01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,24 +13,26 @@
     "date": "2025-07-06",
     "currentTeam": "WAS",
     "tradePartner": "HOU",
-    "tradeDescription": "3-team trade: HOU sends Whitmore to WAS; WAS sends Poole, Bey, #40 pick to NOP; NOP sends McCollum, Olynyk, 2027 2nd to WAS; WAS sends two 2nd-round picks to HOU",
-    "note": "#20 overall pick by HOU in 2023.",
+    "tradeDescription": "3-team trade folded together: WAS sent Poole, Saddiq Bey, #40 pick (Micah Peavy) to NOP. NOP sent CJ McCollum, Kelly Olynyk, 2027 2nd (CHI) to WAS. HOU sent Cam Whitmore to WAS for two 2nd-round picks.",
+    "note": "#20 overall pick by HOU in 2023, acquired in 3-team trade",
     "assetsGivenUp": [
       {
         "type": "pick",
         "name": "2026 2nd Round Pick",
-        "acquisitionType": "original",
+        "acquisitionType": "draft",
         "date": "2025-07-06",
         "note": "Sent to HOU as part of 3-team trade",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
         "name": "2029 2nd Round Pick",
-        "acquisitionType": "original",
+        "acquisitionType": "draft",
         "date": "2025-07-06",
         "note": "Sent to HOU as part of 3-team trade",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

@@ -3,9 +3,8 @@
     "team": "MEM",
     "player": "Santi Aldama",
     "source": "Basketball-Reference, NBA.com",
-    "originYear": 2021,
-    "depth": 3,
-    "lastUpdated": "2026-02-16"
+    "sourceUrl": "https://www.basketball-reference.com/players/a/aldamsa01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,7 +13,7 @@
     "date": "2021-08-07",
     "currentTeam": "MEM",
     "tradePartner": "UTA",
-    "tradeDescription": "Memphis traded Jared Butler, 2022 2nd round pick (Jabari Walker) and 2026 2nd round pick to Utah for Santi Aldama",
+    "tradeDescription": "Memphis traded Jared Butler, 2022 2nd round pick (MEM own, Jabari Walker) and 2026 2nd round pick (MEM own) to Utah for Santi Aldama",
     "note": "Loyola Maryland forward, acquired from Utah on draft night 2021",
     "assetsGivenUp": [
       {
@@ -23,6 +22,7 @@
         "acquisitionType": "trade",
         "date": "2021-08-07",
         "tradePartner": "NOP",
+        "tradeDescription": "3-team trade: MEM traded Jonas Valanciunas, Brandon Boston Jr., Trey Murphy III to NOP; NOP traded Steven Adams, Eric Bledsoe, Jared Butler, Ziaire Williams, 2022 2nd (Vince Williams Jr.) and 2025 2nd to MEM; Charlotte involved in side deals",
         "note": "Baylor guard, acquired from New Orleans in Jonas Valanciunas 3-team trade, immediately sent to Utah",
         "assetsGivenUp": [
           {
@@ -31,16 +31,17 @@
             "acquisitionType": "trade",
             "date": "2019-02-07",
             "tradePartner": "TOR",
+            "tradeDescription": "Memphis traded Marc Gasol to Toronto for C.J. Miles, Jonas Valanciunas, Delon Wright and a 2024 2nd round pick (Juan Nunez)",
             "note": "Lithuanian center, acquired from Toronto in Marc Gasol trade",
             "assetsGivenUp": [
               {
                 "type": "player",
                 "name": "Marc Gasol",
-                "acquisitionType": "trade",
+                "acquisitionType": "draft-night-trade",
                 "date": "2008-02-01",
                 "tradePartner": "LAL",
-                "tradeDescription": "MEM traded Pau Gasol and 2010 2nd (Devin Ebanks) to LAL for Kwame Brown, Javaris Crittenton, Marc Gasol, Aaron McKie, 2008 1st (#28 Donté Greene) and 2010 1st (Greivis Vásquez)",
-                "note": "Spanish center, Marc was the key long-term piece MEM got back in the Pau Gasol blockbuster",
+                "tradeDescription": "MEM traded Pau Gasol and 2010 2nd (Devin Ebanks) to LAL for Kwame Brown, Javaris Crittenton, Marc Gasol, Aaron McKie, 2008 1st (#28 Dont\u00e9 Greene) and 2010 1st (Greivis V\u00e1squez)",
+                "note": "Spanish center, key long-term piece MEM got back in the Pau Gasol blockbuster",
                 "assetsGivenUp": [
                   {
                     "type": "player",
@@ -51,7 +52,7 @@
                     "draftRound": 1,
                     "tradePartner": "ATL",
                     "tradeDescription": "Vancouver Grizzlies traded Shareef Abdur-Rahim and draft rights to Jamaal Tinsley (#27) to Atlanta Hawks for draft rights to Pau Gasol (#3), Brevin Knight and Lorenzen Wright",
-                    "note": "2001 #3 overall pick; drafted by ATL, rights traded to Vancouver Grizzlies. 6x All-Star, 2002 Rookie of the Year. Won 2 titles with LAL after trade.",
+                    "note": "2001 #3 overall pick; drafted by ATL, rights traded to Vancouver Grizzlies. 6x All-Star, 2002 ROY.",
                     "assetsGivenUp": [
                       {
                         "type": "player",
@@ -65,23 +66,27 @@
                       },
                       {
                         "type": "pick",
-                        "name": "2001 #27 Overall Pick (Jamaal Tinsley)",
-                        "acquisitionType": "original",
+                        "name": "2001 1st Round Pick (#27)",
+                        "acquisitionType": "draft",
                         "becamePlayer": "Jamaal Tinsley",
                         "note": "Draft rights traded to ATL in Pau Gasol deal; Tinsley was sent to IND on draft night",
-                        "isOrigin": true
+                        "isOrigin": true,
+                        "date": "2001-06-27"
                       }
                     ]
                   },
                   {
                     "type": "pick",
-                    "name": "2010 MEM 2nd Round Pick",
-                    "acquisitionType": "original",
+                    "name": "2010 2nd Round Pick (#43)",
+                    "acquisitionType": "draft",
                     "becamePlayer": "Devin Ebanks",
-                    "note": "Sent to LAL in Pau Gasol trade; became #43 overall",
-                    "isOrigin": true
+                    "note": "Sent to LAL in Pau Gasol trade",
+                    "isOrigin": true,
+                    "date": "2010-06-24"
                   }
-                ]
+                ],
+                "draftPick": 48,
+                "draftRound": 2
               }
             ]
           }
@@ -89,18 +94,20 @@
       },
       {
         "type": "pick",
-        "name": "2022 2nd Round Pick (MEM own)",
-        "acquisitionType": "original",
+        "name": "2022 2nd Round Pick (#57)",
+        "acquisitionType": "draft",
         "becamePlayer": "Jabari Walker",
-        "note": "Memphis' own 2022 second-round pick",
-        "isOrigin": true
+        "note": "Memphis' own 2022 second-round pick, sent to Utah",
+        "isOrigin": true,
+        "date": "2022-06-23"
       },
       {
         "type": "pick",
-        "name": "2026 2nd Round Pick (MEM own)",
-        "acquisitionType": "original",
-        "note": "Memphis' own 2026 second-round pick",
-        "isOrigin": true
+        "name": "2026 2nd Round Pick via MEM",
+        "acquisitionType": "draft",
+        "note": "Memphis' own 2026 second-round pick, sent to Utah",
+        "isOrigin": true,
+        "date": "2021-08-07"
       }
     ]
   }

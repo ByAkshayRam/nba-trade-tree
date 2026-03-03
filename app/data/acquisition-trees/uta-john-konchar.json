@@ -3,9 +3,8 @@
     "team": "UTA",
     "player": "John Konchar",
     "source": "Basketball-Reference",
-    "originYear": 2019,
-    "depth": 4,
-    "lastUpdated": "2026-02-17"
+    "sourceUrl": "https://www.basketball-reference.com/players/k/konchjo01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,16 +13,16 @@
     "date": "2026-02-03",
     "currentTeam": "UTA",
     "tradePartner": "MEM",
-    "tradeDescription": "8-player mega-trade: came with JJJ, Williams Jr., Landale from MEM",
+    "tradeDescription": "UTA traded Kyle Anderson, Walter Clayton Jr., Taylor Hendricks, Georges Niang, 2027 1st (more favorable conditional), 2027 1st (LAL own), 2031 1st (PHO own) to MEM for Jaren Jackson Jr., John Konchar, Jock Landale, Vince Williams Jr. Memphis also received a trade exception.",
     "note": "Purdue-Fort Wayne guard, undrafted grinder, excellent role player",
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Walter Clayton Jr.",
-        "acquisitionType": "trade",
+        "acquisitionType": "draft-night-trade",
         "date": "2025-06-25",
         "tradePartner": "WAS",
-        "tradeDescription": "Draft-night trade: Jazz sent Will Riley (#21), Jamir Watkins (#43), 2031 2nd, 2032 2nd to Washington for Clayton (#18)",
+        "tradeDescription": "Draft-night trade: Jazz sent Will Riley (#21), Jamir Watkins (#43), 2031 2nd (more favorable), 2032 2nd (UTA own) to Washington for Walter Clayton Jr. (#18).",
         "draftPick": 18,
         "draftRound": 1,
         "note": "Florida guard, drafted 18th overall 2025",
@@ -35,7 +34,7 @@
         "acquisitionType": "trade",
         "date": "2025-07-07",
         "tradePartner": "MIA",
-        "tradeDescription": "3-team trade: Collins to LAC, Powell to MIA, Anderson and Love to UTA",
+        "tradeDescription": "3-team trade: UTA traded John Collins to LAC; LAC traded Norman Powell to MIA; MIA traded Kyle Anderson and Kevin Love to UTA; LAC traded cash and 2027 2nd (LAC own) to UTA.",
         "note": "Veteran forward, acquired from Miami in 3-team deal",
         "assetsGivenUp": [
           {
@@ -44,22 +43,25 @@
             "acquisitionType": "trade",
             "date": "2023-07-07",
             "tradePartner": "ATL",
-            "tradeDescription": "Traded Rudy Gay and 2026 2nd (MEM own) to Atlanta for Collins",
+            "tradeDescription": "UTA traded Rudy Gay and 2026 2nd (MEM own) to Atlanta for John Collins.",
             "note": "Wake Forest forward, acquired from Hawks",
             "assetsGivenUp": [
               {
                 "type": "player",
                 "name": "Rudy Gay",
                 "acquisitionType": "free-agent",
-                "date": "2022-09-01",
+                "date": "2021-08-06",
                 "note": "Veteran forward, signed as free agent",
                 "isOrigin": true
               },
               {
                 "type": "pick",
-                "name": "2026 2nd Round Pick (MEM own)",
-                "acquisitionType": "original",
-                "note": "Second-round pick traded to Atlanta",
+                "name": "2026 2nd Round Pick via MEM",
+                "acquisitionType": "trade",
+                "date": "2021-08-07",
+                "tradePartner": "MEM",
+                "tradeDescription": "UTA traded Santi Aldama to MEM for Jared Butler, 2022 2nd (MEM own), 2026 2nd (MEM own).",
+                "note": "Memphis's own 2026 2nd round pick, acquired in Aldama trade, sent to Atlanta for Collins",
                 "isOrigin": true
               }
             ]
@@ -82,7 +84,7 @@
         "acquisitionType": "trade",
         "date": "2025-08-06",
         "tradePartner": "BOS",
-        "tradeDescription": "Traded RJ Luis to Boston for Niang, 2027 2nd, and 2031 2nd",
+        "tradeDescription": "UTA traded RJ Luis to Boston for Georges Niang, 2027 2nd (more favorable), and 2031 2nd (more favorable). Boston received a trade exception.",
         "note": "Iowa State forward, veteran role player",
         "assetsGivenUp": [
           {
@@ -101,8 +103,8 @@
         "acquisitionType": "trade",
         "date": "2022-07-06",
         "tradePartner": "MIN",
-        "tradeDescription": "Conditional pick from Gobert and Mitchell trades - more favorable of remaining CLE/MIN 2027 picks",
-        "note": "More favorable conditional 2027 1st (from Gobert/Mitchell trade hauls)",
+        "tradeDescription": "From Rudy Gobert trade: UTA received Kessler, Beasley, Beverley, Bolmaro, Vanderbilt, 2023 1st, 2025 1st, 2026 1st swap, 2027 1st, 2029 1st from MIN for Gobert.",
+        "note": "Conditional 2027 1st from Gobert trade haul",
         "assetsGivenUp": [
           {
             "type": "player",
@@ -118,11 +120,11 @@
       },
       {
         "type": "pick",
-        "name": "2027 1st Round Pick (via LAL)",
+        "name": "2027 1st Round Pick via LAL",
         "acquisitionType": "trade",
         "date": "2023-02-09",
         "tradePartner": "LAL",
-        "tradeDescription": "3-team Conley/Russell Westbrook trade - Lakers sent 2027 1st to Jazz",
+        "tradeDescription": "3-team trade: UTA traded Conley, NAW, 2025 2nd (UTA), 2026 2nd (UTA) to MIN; Beasley, Vanderbilt to LAL; LAL traded Damian Jones, Toscano-Anderson, Westbrook, 2027 1st (LAL own) to UTA; LAL traded 2024 2nd to MIN; MIN traded D'Angelo Russell to LAL.",
         "note": "Lakers' own 2027 first-round pick, acquired in Conley mega-trade",
         "assetsGivenUp": [
           {
@@ -131,7 +133,7 @@
             "acquisitionType": "trade",
             "date": "2019-07-06",
             "tradePartner": "MEM",
-            "tradeDescription": "UTA traded Grayson Allen, Jae Crowder, Kyle Korver, Darius Bazley, and 2022 1st (Walker Kessler) to MEM for Mike Conley",
+            "tradeDescription": "UTA traded Grayson Allen, Jae Crowder, Kyle Korver, Darius Bazley, and 2022 1st (became Walker Kessler #22, conditional top-6 protected) to MEM for Mike Conley.",
             "note": "Veteran PG, acquired from Memphis in blockbuster trade",
             "assetsGivenUp": [
               {
@@ -150,7 +152,7 @@
                 "acquisitionType": "trade",
                 "date": "2018-02-08",
                 "tradePartner": "CLE",
-                "tradeDescription": "3-team trade: UTA sent Rodney Hood to CLE and Joe Johnson to SAC for Crowder, Derrick Rose, and 2024 2nd swap",
+                "tradeDescription": "3-team trade: UTA traded Rodney Hood to CLE and Joe Johnson to SAC; CLE traded Jae Crowder, Derrick Rose, and 2024 2nd swap to UTA; CLE traded Iman Shumpert, cash, Agravanis, 2020 2nd to SAC; SAC traded George Hill to CLE.",
                 "note": "Versatile wing, acquired from Cleveland in 3-team trade",
                 "assetsGivenUp": [
                   {
@@ -171,7 +173,7 @@
                 "acquisitionType": "trade",
                 "date": "2018-11-29",
                 "tradePartner": "CLE",
-                "tradeDescription": "UTA traded Alec Burks, 2020 2nd (Justinian Jessup), and 2021 2nd (Greg Brown III) to CLE for Kyle Korver",
+                "tradeDescription": "UTA traded Alec Burks, 2020 2nd (became Justinian Jessup), and 2021 2nd (WAS own, became Greg Brown III) to CLE for Kyle Korver.",
                 "note": "Veteran sharpshooter, acquired from Cleveland",
                 "assetsGivenUp": [
                   {
@@ -187,28 +189,41 @@
                   {
                     "type": "pick",
                     "name": "2020 2nd Round Pick",
-                    "acquisitionType": "original",
+                    "acquisitionType": "own",
                     "becamePlayer": "Justinian Jessup",
-                    "note": "Sent to CLE for Korver",
-                    "isOrigin": true
+                    "note": "UTA own 2020 2nd, sent to CLE for Korver",
+                    "isOrigin": true,
+                    "date": "2020-11-18"
                   },
                   {
                     "type": "pick",
-                    "name": "2021 2nd Round Pick (via WAS)",
+                    "name": "2021 2nd Round Pick via WAS",
                     "acquisitionType": "trade",
                     "becamePlayer": "Greg Brown III",
                     "note": "Washington's 2021 2nd, sent to CLE for Korver",
-                    "isOrigin": true
+                    "isOrigin": true,
+                    "date": "2021-07-29"
                   }
                 ]
               },
               {
-                "type": "pick",
-                "name": "2022 UTA 1st Round Pick",
-                "acquisitionType": "original",
-                "becamePlayer": "Walker Kessler",
-                "note": "UTA own 2022 1st, sent to MEM for Conley; conveyed as #22 overall (conditional, top-6 protected)",
+                "type": "player",
+                "name": "Darius Bazley",
+                "acquisitionType": "draft",
+                "date": "2019-06-20",
+                "draftPick": 23,
+                "draftRound": 1,
+                "note": "UTA 2019 1st round pick (#23). Sent to MEM for Conley.",
                 "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2022 1st Round Pick (#22)",
+                "acquisitionType": "own",
+                "becamePlayer": "Walker Kessler",
+                "note": "UTA own 2022 1st, sent to MEM for Conley. Conditional, protected in 2020/2021, conveyed 2022 as #22.",
+                "isOrigin": true,
+                "date": "2022-06-23"
               }
             ]
           }
@@ -216,22 +231,22 @@
       },
       {
         "type": "pick",
-        "name": "2031 1st Round Pick (via PHO)",
+        "name": "2031 1st Round Pick via PHO",
         "acquisitionType": "trade",
         "date": "2025-01-21",
         "tradePartner": "PHX",
-        "tradeDescription": "Jazz sent 2025 1st (CLE), 2027 1st (least favorable), 2029 1st (least favorable) to Phoenix for 2031 1st (PHO own)",
+        "tradeDescription": "UTA traded 2025 1st (least favorable CLE/MIN, became CLE pick), 2027 1st (least favorable CLE/UTA/MIN), 2029 1st (least favorable CLE/UTA/MIN top-5 protected) to Phoenix for 2031 1st (PHO own).",
         "note": "Phoenix's own 2031 first-round pick",
         "assetsGivenUp": [
           {
             "type": "pick",
-            "name": "2025 1st Round Pick (via CLE)",
+            "name": "2025 1st Round Pick via CLE",
             "acquisitionType": "trade",
-            "date": "2022-09-01",
+            "date": "2022-09-03",
             "tradePartner": "CLE",
-            "tradeDescription": "From Donovan Mitchell trade",
-            "note": "Cleveland's own 2025 1st, became Liam McNeeley",
+            "tradeDescription": "From Donovan Mitchell trade: UTA traded Mitchell to CLE for Markkanen, Sexton, Agbaji, 2025 1st (CLE), 2026 1st swap, 2027 1st (CLE), 2028 1st swap, 2029 1st (CLE).",
             "becamePlayer": "Liam McNeeley",
+            "note": "Cleveland's own 2025 1st, conveyed as least favorable of CLE/MIN picks",
             "isOrigin": true
           }
         ]

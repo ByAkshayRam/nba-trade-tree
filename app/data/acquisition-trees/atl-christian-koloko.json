@@ -2,10 +2,10 @@
   "_meta": {
     "team": "ATL",
     "player": "Christian Koloko",
-    "source": "Wikipedia, NBA.com",
-    "originYear": 2022,
-    "depth": 4,
-    "lastUpdated": "2026-02-14"
+    "source": "Basketball-Reference",
+    "originYear": 2026,
+    "depth": 1,
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -13,36 +13,7 @@
     "acquisitionType": "free-agent",
     "date": "2026-01-15",
     "currentTeam": "ATL",
-    "tradePartner": "MEM",
-    "tradeDescription": "Hawks sign Koloko off waivers",
-    "note": "Cameroon center, Pac-12 DPOY at Arizona | Two-way contract",
-    "tradeChain": {
-      "type": "player",
-      "name": "Christian Koloko",
-      "acquisitionType": "free-agent",
-      "date": "2025-10-01",
-      "tradePartner": "LAL",
-      "tradeDescription": "Grizzlies sign Koloko from Lakers",
-      "tradeChain": {
-        "type": "player",
-        "name": "Christian Koloko",
-        "acquisitionType": "free-agent",
-        "date": "2024-09-15",
-        "tradePartner": "TOR",
-        "tradeDescription": "Lakers sign Koloko after Raptors waived him due to health concerns",
-        "note": "Missed 2023-24 season due to blood clot issue",
-        "tradeChain": {
-          "type": "player",
-          "name": "Christian Koloko",
-          "acquisitionType": "draft",
-          "date": "2022-06-23",
-          "tradePartner": "TOR",
-          "tradeDescription": "Raptors draft Koloko with 33rd overall pick",
-          "isOrigin": true,
-          "note": "ORIGIN - 2022 NBA Draft 2nd round #33 by Toronto Raptors",
-          "draftPick": 33
-        }
-      }
-    }
+    "note": "Cameroon center, Pac-12 DPOY at Arizona. Signed off waivers on two-way contract.",
+    "isOrigin": true
   }
 }

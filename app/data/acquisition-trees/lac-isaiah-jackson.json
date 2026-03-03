@@ -2,10 +2,9 @@
   "_meta": {
     "team": "LAC",
     "player": "Isaiah Jackson",
-    "source": "ESPN, Los Angeles Times, NBA.com",
-    "originYear": 2021,
-    "depth": 3,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/j/jacksis01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,7 +13,7 @@
     "date": "2026-02-05",
     "currentTeam": "LAC",
     "tradePartner": "IND",
-    "tradeDescription": "Traded from Pacers with Bennedict Mathurin, a protected 2026 1st and an unprotected 2029 1st for Ivica Zubac and Kobe Brown",
+    "tradeDescription": "Traded from Pacers with Bennedict Mathurin, a 2026 1st round pick (IND own, conditional), a 2028 2nd round pick (DAL own), and a 2029 1st round pick (IND own) for Ivica Zubac and Kobe Brown. LAC also received trade exceptions.",
     "note": "Kentucky big man with shot-blocking ability",
     "isOrigin": false,
     "assetsGivenUp": [
@@ -31,10 +30,109 @@
           {
             "type": "player",
             "name": "Mike Muscala",
-            "acquisitionType": "free-agent",
-            "date": "2018-07-01",
-            "note": "Veteran big man",
-            "isOrigin": true
+            "acquisitionType": "trade",
+            "date": "2019-02-06",
+            "tradePartner": "PHI",
+            "tradeDescription": "Acquired from 76ers in Tobias Harris trade (LAC sent Harris, Boban Marjanovic, Mike Scott to PHI for Chandler, Muscala, Shamet, 2020 1st (became Saddiq Bey), 2021 1st (MIA own, became Tre Mann), 2021 2nd (DET own, became Jeremiah Robinson-Earl), and 2023 2nd (DET own, became James Nnaji))",
+            "note": "Veteran big man, acquired from PHI and traded to LAL the next day",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Tobias Harris",
+                "acquisitionType": "trade",
+                "date": "2018-01-29",
+                "tradePartner": "DET",
+                "tradeDescription": "Acquired from Pistons in Blake Griffin trade (LAC sent Griffin, Brice Johnson, Willie Reed to DET for Bradley, Harris, Boban, 2018 1st (became Miles Bridges), 2019 2nd (became Jaylen Hands))",
+                "note": "All-Star forward",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Blake Griffin",
+                    "acquisitionType": "draft",
+                    "date": "2009-06-25",
+                    "note": "2009 #1 overall pick; 6x All-Star with LAC",
+                    "isOrigin": true,
+                    "assetsGivenUp": [],
+                    "draftPick": 1,
+                    "draftRound": 1
+                  },
+                  {
+                    "type": "player",
+                    "name": "Brice Johnson",
+                    "acquisitionType": "draft",
+                    "date": "2016-06-23",
+                    "draftPick": 25,
+                    "draftRound": 1,
+                    "note": "Drafted by Clippers 25th overall in 2016",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  },
+                  {
+                    "type": "player",
+                    "name": "Willie Reed",
+                    "acquisitionType": "free-agent",
+                    "date": "2017-08-03",
+                    "note": "Signed as free agent",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  }
+                ]
+              },
+              {
+                "type": "player",
+                "name": "Boban Marjanović",
+                "acquisitionType": "trade",
+                "date": "2018-01-29",
+                "tradePartner": "DET",
+                "tradeDescription": "Acquired from Pistons in Blake Griffin trade (same trade as Tobias Harris)",
+                "note": "Serbian center",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Blake Griffin",
+                    "acquisitionType": "draft",
+                    "date": "2009-06-25",
+                    "note": "2009 #1 overall pick; 6x All-Star with LAC",
+                    "isOrigin": true,
+                    "assetsGivenUp": [],
+                    "draftPick": 1,
+                    "draftRound": 1
+                  },
+                  {
+                    "type": "player",
+                    "name": "Brice Johnson",
+                    "acquisitionType": "draft",
+                    "date": "2016-06-23",
+                    "draftPick": 25,
+                    "draftRound": 1,
+                    "note": "Drafted by Clippers 25th overall in 2016, shared cost with Harris",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  },
+                  {
+                    "type": "player",
+                    "name": "Willie Reed",
+                    "acquisitionType": "free-agent",
+                    "date": "2017-08-03",
+                    "note": "Signed as free agent, shared cost with Harris",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  }
+                ]
+              },
+              {
+                "type": "player",
+                "name": "Mike Scott",
+                "acquisitionType": "free-agent",
+                "date": "2018-07-09",
+                "note": "Signed as free agent",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              }
+            ]
           }
         ]
       },
@@ -45,8 +143,9 @@
         "date": "2023-06-22",
         "draftPick": 30,
         "draftRound": 1,
-        "note": "Drafted by Clippers 30th overall in 2023 (pick acquired from HOU via MEM trade)",
-        "isOrigin": true
+        "note": "Drafted by Clippers 30th overall in 2023 (pick acquired from HOU in 3-team trade with MEM)",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

@@ -3,9 +3,8 @@
     "team": "MEM",
     "player": "Cedric Coward",
     "source": "Basketball-Reference, NBA.com, ESPN",
-    "originYear": 2025,
-    "depth": 3,
-    "lastUpdated": "2026-02-16"
+    "sourceUrl": "https://www.basketball-reference.com/players/c/cowarce01.html",
+    "lastUpdated": "2026-03-02"
   },
   "tree": {
     "type": "player",
@@ -18,62 +17,207 @@
     "note": "Eastern Washington forward, acquired from Portland on draft night",
     "assetsGivenUp": [
       {
-        "type": "player",
-        "name": "Yang Hansen",
-        "acquisitionType": "draft",
-        "date": "2025-06-25",
-        "draftPick": 16,
-        "draftRound": 1,
-        "note": "Drafted 16th overall by Memphis with pick acquired from Orlando in KCP trade, sent to Portland",
-        "assetsGivenUp": [
-          {
-            "type": "player",
-            "name": "Desmond Bane",
-            "acquisitionType": "trade",
-            "date": "2020-11-20",
-            "draftPick": 30,
-            "draftRound": 1,
-            "tradePartner": "BOS",
-            "note": "TCU guard, drafted 30th overall by BOS. Acquired by MEM in 3-team trade. Traded to ORL for KCP package including this pick.",
-            "isOrigin": true
-          }
-        ],
-        "isOrigin": true
-      },
-      {
         "type": "pick",
-        "name": "2028 1st Round Pick (ORL own)",
+        "name": "2025 1st Round Pick (#16)",
         "acquisitionType": "trade",
         "date": "2025-06-15",
+        "draftPick": 16,
+        "draftRound": 1,
+        "becamePlayer": "Yang Hansen",
         "tradePartner": "ORL",
-        "note": "Acquired from Orlando in Desmond Bane trade, sent to Portland",
+        "tradeDescription": "Memphis traded Desmond Bane and 2026 1st swap to Orlando for KCP, Cole Anthony, 2025 1st (ORL own, 16th pick Yang Hansen), 2028 1st (ORL own), 2029 1st swap, and 2030 1st (ORL own)",
+        "note": "Orlando's own 2025 1st round pick, acquired in Bane trade; Hansen drafted 16th, sent to Portland",
         "assetsGivenUp": [
           {
             "type": "player",
             "name": "Desmond Bane",
             "acquisitionType": "trade",
             "date": "2020-11-20",
-            "draftPick": 30,
-            "draftRound": 1,
             "tradePartner": "BOS",
-            "note": "TCU guard, drafted 30th overall by BOS. Acquired by MEM in 3-team trade.",
-            "isOrigin": true
+            "tradeDescription": "3-team trade: MEM sent 2023 2nd (Keyonte Johnson) and 2025 2nd (MEM own, Kobe Sanders) to BOS, cash to POR; BOS sent Bane (#30) to MEM; POR sent Mario Hezonja to MEM",
+            "note": "TCU guard, drafted 30th overall by Boston, traded to MEM",
+            "assetsGivenUp": [
+              {
+                "type": "pick",
+                "name": "2023 2nd Round Pick (#49)",
+                "acquisitionType": "draft",
+                "becamePlayer": "Keyonte Johnson",
+                "note": "Memphis' own 2023 2nd round pick equivalent, sent to Boston in Bane trade",
+                "isOrigin": true,
+                "date": "2023-06-22"
+              },
+              {
+                "type": "pick",
+                "name": "2025 2nd Round Pick (#55)",
+                "acquisitionType": "draft",
+                "becamePlayer": "Kobe Sanders",
+                "note": "Memphis' own 2025 2nd round pick, sent to Boston in Bane trade",
+                "isOrigin": true,
+                "date": "2025-06-25"
+              },
+              {
+                "type": "other",
+                "name": "Cash Considerations",
+                "acquisitionType": "draft",
+                "note": "Cash sent to Portland in 3-team trade",
+                "isOrigin": true
+              }
+            ]
+          },
+          {
+            "type": "pick",
+            "name": "2026 1st Round Pick Swap Rights",
+            "acquisitionType": "draft",
+            "note": "Memphis' own 2026 first-round pick swap rights, sent to Orlando",
+            "isOrigin": true,
+            "date": "2024-07-01"
           }
         ]
       },
       {
         "type": "pick",
-        "name": "2027 2nd Round Pick (ATL own)",
+        "name": "2028 1st Round Pick via ORL",
         "acquisitionType": "trade",
-        "note": "Sent to Portland in Coward trade",
-        "isOrigin": true
+        "date": "2025-06-15",
+        "tradePartner": "ORL",
+        "tradeDescription": "Memphis traded Desmond Bane and 2026 1st swap to Orlando for KCP, Cole Anthony, 2025 1st (Yang Hansen), this 2028 1st, 2029 1st swap, and 2030 1st",
+        "note": "Orlando's own 2028 1st round pick, acquired in Bane trade, sent to Portland",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Desmond Bane",
+            "acquisitionType": "trade",
+            "date": "2020-11-20",
+            "tradePartner": "BOS",
+            "tradeDescription": "3-team trade: MEM sent 2023 2nd (Keyonte Johnson) and 2025 2nd (MEM own, Kobe Sanders) to BOS, cash to POR; BOS sent Bane (#30) to MEM; POR sent Mario Hezonja to MEM",
+            "note": "TCU guard, drafted 30th overall by Boston, traded to MEM",
+            "assetsGivenUp": [
+              {
+                "type": "pick",
+                "name": "2023 2nd Round Pick (#49)",
+                "acquisitionType": "draft",
+                "becamePlayer": "Keyonte Johnson",
+                "note": "Memphis' own 2023 2nd round pick equivalent, sent to Boston in Bane trade",
+                "isOrigin": true,
+                "date": "2023-06-22"
+              },
+              {
+                "type": "pick",
+                "name": "2025 2nd Round Pick (#55)",
+                "acquisitionType": "draft",
+                "becamePlayer": "Kobe Sanders",
+                "note": "Memphis' own 2025 2nd round pick, sent to Boston in Bane trade",
+                "isOrigin": true,
+                "date": "2025-06-25"
+              },
+              {
+                "type": "other",
+                "name": "Cash Considerations",
+                "acquisitionType": "draft",
+                "note": "Cash sent to Portland in 3-team trade",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
       },
       {
         "type": "pick",
-        "name": "2028 2nd Round Pick (SAC own)",
+        "name": "2027 2nd Round Pick via ATL",
         "acquisitionType": "trade",
-        "note": "Sent to Portland in Coward trade",
-        "isOrigin": true
+        "date": "2024-02-07",
+        "tradePartner": "BOS",
+        "tradeDescription": "Memphis traded Xavier Tillman to Boston for Lamar Stevens, 2027 2nd (ATL own) and 2030 2nd (DAL own)",
+        "note": "Atlanta's own 2027 2nd round pick, acquired from BOS in Tillman trade, sent to Portland",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Xavier Tillman Sr.",
+            "acquisitionType": "trade",
+            "date": "2020-11-19",
+            "tradePartner": "SAC",
+            "tradeDescription": "Memphis traded Robert Woodard and 2022 2nd (CHI own, Isaiah Mobley) to Sacramento for Xavier Tillman Sr.",
+            "note": "Michigan State forward, acquired from Sacramento",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Robert Woodard",
+                "acquisitionType": "draft",
+                "date": "2020-11-18",
+                "draftPick": 40,
+                "draftRound": 2,
+                "note": "Mississippi State forward, drafted 40th overall by Memphis in 2020",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2022 2nd Round Pick (#49)",
+                "acquisitionType": "draft",
+                "becamePlayer": "Isaiah Mobley",
+                "note": "Chicago's own 2022 2nd round pick, sent to Sacramento in Tillman trade",
+                "isOrigin": true,
+                "date": "2022-06-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2028 2nd Round Pick via SAC",
+        "acquisitionType": "trade",
+        "date": "2025-02-06",
+        "tradePartner": "SAC",
+        "tradeDescription": "Acquired from Sacramento in Marcus Smart 3-team trade",
+        "note": "Sacramento's own 2028 2nd round pick, acquired in Smart trade, sent to Portland",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Jake LaRavia",
+            "acquisitionType": "trade",
+            "date": "2022-06-24",
+            "draftPick": 19,
+            "draftRound": 1,
+            "tradePartner": "MIN",
+            "tradeDescription": "Memphis traded Walker Kessler and TyTy Washington Jr. to Minnesota for Jake LaRavia and 2023 2nd (GG Jackson)",
+            "note": "Wake Forest forward, sent to SAC in Smart 3-team trade",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Walker Kessler",
+                "acquisitionType": "draft",
+                "date": "2022-06-23",
+                "draftPick": 22,
+                "draftRound": 1,
+                "tradePartner": "UTA",
+                "tradeDescription": "Pick from Utah as part of Mike Conley trade (Jul 6, 2019); conveyed in 2022 as #22",
+                "note": "Auburn center, drafted with UTA's pick from Conley trade, sent to MIN",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Mike Conley",
+                    "acquisitionType": "draft",
+                    "date": "2007-06-28",
+                    "draftPick": 4,
+                    "draftRound": 1,
+                    "note": "Ohio State guard, drafted 4th overall by Memphis in 2007",
+                    "isOrigin": true
+                  }
+                ]
+              },
+              {
+                "type": "player",
+                "name": "TyTy Washington Jr.",
+                "acquisitionType": "draft",
+                "date": "2022-06-23",
+                "draftPick": 29,
+                "draftRound": 1,
+                "note": "Kentucky guard, drafted 29th overall by Memphis with MEM's own pick, sent to MIN",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
       }
     ]
   }

@@ -2,10 +2,11 @@
   "_meta": {
     "team": "BKN",
     "player": "Drake Powell",
-    "source": "ESPN, NBA.com, Wikipedia",
-    "originYear": 2023,
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/p/poweldr01.html",
+    "originYear": 2025,
     "depth": 2,
-    "lastUpdated": "2026-02-15"
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -15,17 +16,28 @@
     "draftPick": 22,
     "draftRound": 1,
     "currentTeam": "BKN",
-    "note": "UNC guard, drafted with ATL pick acquired in 3-team Porzingis trade",
+    "note": "UNC wing, drafted #22 with ATL's pick. Received in 3-team Porzingis trade along with Terance Mann.",
     "assetsGivenUp": [
       {
         "type": "pick",
-        "name": "2025 ATL 1st Round Pick (#22)",
+        "name": "2025 1st Round Pick (#22) via ATL",
         "acquisitionType": "trade",
         "date": "2025-07-07",
         "tradePartner": "ATL",
         "becamePlayer": "Drake Powell",
-        "tradeDescription": "Acquired from Atlanta in 3-team Porzingis trade. BKN also received Terance Mann. Porzingis went to ATL from BOS.",
-        "isOrigin": true
+        "tradeDescription": "3-team trade: ATL traded Mann and Drake Powell to BKN; ATL traded Niang and 2031 2nd (CLE own) to BOS; BKN traded cash to BOS; BOS traded Porzingis to ATL.",
+        "note": "Atlanta's own 2025 1st-round pick, received by BKN in the Porzingis 3-team trade.",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "other",
+            "name": "Cash considerations",
+            "acquisitionType": "original",
+            "date": "2025-07-07",
+            "note": "BKN sent cash to Boston to facilitate the deal.",
+            "isOrigin": true
+          }
+        ]
       }
     ]
   }

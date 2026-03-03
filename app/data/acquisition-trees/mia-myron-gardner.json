@@ -2,10 +2,9 @@
   "_meta": {
     "team": "MIA",
     "player": "Myron Gardner",
-    "source": "Basketball-Reference - Feb 2026",
-    "originYear": 2025,
-    "depth": 1,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/g/gardnmy01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -13,7 +12,8 @@
     "acquisitionType": "free-agent",
     "date": "2025-07-24",
     "currentTeam": "MIA",
-    "note": "Signed two-way contract July 24, 2025",
-    "isOrigin": true
+    "note": "Signed two-way contract July 24, 2025. Converted to regular contract February 18, 2026.",
+    "isOrigin": true,
+    "assetsGivenUp": []
   }
 }

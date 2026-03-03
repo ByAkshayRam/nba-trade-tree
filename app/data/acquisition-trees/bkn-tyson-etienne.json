@@ -2,18 +2,19 @@
   "_meta": {
     "team": "BKN",
     "player": "Tyson Etienne",
-    "source": "Wikipedia, RealGM, ESPN",
-    "originYear": 2022,
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/e/etienty01.html",
+    "originYear": 2025,
     "depth": 1,
-    "lastUpdated": "2026-02-15"
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Tyson Etienne",
     "acquisitionType": "undrafted",
-    "date": "2025-07-15",
+    "date": "2025-07-03",
     "currentTeam": "BKN",
-    "note": "Two-way contract",
+    "note": "Wichita State guard, undrafted. Signed to two-way contract July 3, 2025. Previously had Exhibit 10 with BKN in Sept 2024 (waived), then two-way in March 2025.",
     "isOrigin": true
   }
 }

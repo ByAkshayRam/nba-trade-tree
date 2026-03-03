@@ -2,19 +2,17 @@
   "_meta": {
     "team": "NOP",
     "player": "Dejounte Murray",
-    "source": "ESPN, NBA.com, Basketball-Reference",
-    "originYear": 2016,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/m/murrade01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Dejounte Murray",
     "acquisitionType": "trade",
     "date": "2024-07-06",
-    "currentTeam": "NOP",
     "tradePartner": "ATL",
-    "tradeDescription": "Hawks trade Murray to Pelicans for Daniels, Nance Jr., Liddell, Zeller and 2 1st round picks",
+    "tradeDescription": "NOP traded Daniels, Nance Jr., Liddell, Zeller, 2025 1st (LAL own), 2027 1st (least favorable) to ATL for Murray",
     "note": "All-Star guard acquired from Atlanta",
     "assetsGivenUp": [
       {
@@ -24,8 +22,32 @@
         "date": "2022-06-23",
         "draftPick": 8,
         "draftRound": 1,
-        "note": "Guard drafted 8th overall in 2022, Australian playmaker",
-        "isOrigin": true
+        "note": "Australian guard; drafted 8th overall by New Orleans using pick acquired from Lakers in Anthony Davis trade",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2022 1st Round Pick (#8)",
+            "acquisitionType": "trade",
+            "date": "2019-06-15",
+            "tradePartner": "LAL",
+            "becamePlayer": "Dyson Daniels",
+            "tradeDescription": "NOP traded Anthony Davis to LAL for Brandon Ingram, Lonzo Ball, Josh Hart, 2019 1st (#4, De'Andre Hunter), 2021 1st (swap, not exercised), 2024 1st (#17, Dalton Knecht), and 2025 1st (#16, Yang Hansen)",
+            "note": "LAL's 2022 1st round pick, acquired in Anthony Davis trade, used to draft Dyson Daniels",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Anthony Davis",
+                "acquisitionType": "draft",
+                "date": "2012-06-28",
+                "draftPick": 1,
+                "draftRound": 1,
+                "note": "Kentucky forward, 2012 #1 overall pick by New Orleans",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
       },
       {
         "type": "player",
@@ -33,16 +55,207 @@
         "acquisitionType": "trade",
         "date": "2022-02-08",
         "tradePartner": "POR",
-        "note": "Forward acquired from Portland in CJ McCollum trade",
+        "tradeDescription": "NOP traded Hart, NAW, Louzada, Satoransky, 2025 1st, 2026 2nd, 2027 2nd to POR for McCollum, Nance Jr., Snell",
+        "note": "Forward acquired from Portland in CJ McCollum trade \u2014 shared trade cost",
+        "isOrigin": false,
         "assetsGivenUp": [
           {
             "type": "player",
-            "name": "CJ McCollum",
+            "name": "Josh Hart",
             "acquisitionType": "trade",
-            "date": "2022-02-08",
-            "tradePartner": "POR",
-            "note": "Guard acquired from Portland in 2022 — shared trade cost with Saddiq Bey, Poole trees",
-            "isOrigin": true
+            "date": "2019-07-06",
+            "tradePartner": "LAL",
+            "tradeDescription": "Acquired from Lakers in Anthony Davis trade",
+            "note": "Villanova guard drafted 30th overall in 2017, acquired in AD trade",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Anthony Davis",
+                "acquisitionType": "draft",
+                "date": "2012-06-28",
+                "draftPick": 1,
+                "draftRound": 1,
+                "note": "1st overall pick, Kentucky forward",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Nickeil Alexander-Walker",
+            "acquisitionType": "draft",
+            "date": "2019-06-20",
+            "draftPick": 17,
+            "draftRound": 1,
+            "note": "Virginia Tech guard drafted by Pelicans",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "player",
+            "name": "Tomas Satoransky",
+            "acquisitionType": "trade",
+            "date": "2021-08-08",
+            "tradePartner": "CHI",
+            "tradeDescription": "NOP traded Lonzo Ball to CHI for Satoransky, Garrett Temple, cash, 2024 2nd (CHI own) via sign-and-trade",
+            "note": "Acquired from Chicago in Lonzo Ball sign-and-trade",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Lonzo Ball",
+                "acquisitionType": "trade",
+                "date": "2019-07-06",
+                "tradePartner": "LAL",
+                "tradeDescription": "Acquired from Lakers in Anthony Davis trade",
+                "note": "Point guard acquired from Lakers in AD trade",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Anthony Davis",
+                    "acquisitionType": "draft",
+                    "date": "2012-06-28",
+                    "draftPick": 1,
+                    "draftRound": 1,
+                    "note": "1st overall pick, Kentucky forward",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Didi Louzada",
+            "acquisitionType": "trade",
+            "date": "2019-07-07",
+            "tradePartner": "ATL",
+            "tradeDescription": "NOP traded De'Andre Hunter, Solomon Hill, Jordan Bone, 2023 2nd to ATL for NAW, Hayes, Louzada, 2021 2nd, 2022 2nd",
+            "note": "Brazilian guard acquired from Atlanta in draft-night trade package",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "De'Andre Hunter",
+                "acquisitionType": "trade",
+                "date": "2019-07-06",
+                "tradePartner": "LAL",
+                "tradeDescription": "Acquired from Lakers in Anthony Davis trade (drafted #4 by LAL)",
+                "note": "Virginia forward, received from LAL in AD trade, immediately flipped to ATL",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Anthony Davis",
+                    "acquisitionType": "draft",
+                    "date": "2012-06-28",
+                    "draftPick": 1,
+                    "draftRound": 1,
+                    "note": "1st overall pick, Kentucky forward",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  }
+                ]
+              },
+              {
+                "type": "player",
+                "name": "Solomon Hill",
+                "acquisitionType": "free-agent",
+                "date": "2016-07-08",
+                "note": "Forward signed as free agent",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              },
+              {
+                "type": "player",
+                "name": "Jordan Bone",
+                "acquisitionType": "draft",
+                "date": "2019-06-20",
+                "draftPick": 57,
+                "draftRound": 2,
+                "note": "Tennessee guard, drafted #57 in 2019",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              },
+              {
+                "type": "pick",
+                "name": "2023 2nd Round Pick (#54)",
+                "acquisitionType": "own",
+                "note": "NOP pick sent to ATL (31-45 protected)",
+                "isOrigin": true,
+                "assetsGivenUp": [],
+                "becamePlayer": "Seth Lundy",
+                "date": "2023-06-22"
+              }
+            ]
+          },
+          {
+            "type": "pick",
+            "name": "2025 1st Round Pick (#14)",
+            "acquisitionType": "trade",
+            "date": "2020-11-23",
+            "tradePartner": "MIL",
+            "tradeDescription": "Acquired from MIL in 4-team Jrue Holiday trade",
+            "becamePlayer": "Nolan Traor\u00e9",
+            "note": "MIL own 2025 1st (originally 2022 conditional that did not convey), sent to Portland",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Jrue Holiday",
+                "acquisitionType": "trade",
+                "date": "2013-07-12",
+                "tradePartner": "PHI",
+                "tradeDescription": "NOP traded Nerlens Noel (#6 pick) and 2014 1st (#10, Elfrid Payton) to PHI for Jrue Holiday",
+                "note": "All-Star guard acquired from Philadelphia",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Nerlens Noel",
+                    "acquisitionType": "draft",
+                    "date": "2013-06-27",
+                    "draftPick": 6,
+                    "draftRound": 1,
+                    "note": "Kentucky center, drafted #6 overall in 2013",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2014 1st Round Pick (#10)",
+                    "acquisitionType": "own",
+                    "becamePlayer": "Elfrid Payton",
+                    "note": "NOP own 2014 1st, became #10",
+                    "isOrigin": true,
+                    "assetsGivenUp": [],
+                    "date": "2014-06-26"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "pick",
+            "name": "2026 2nd Round Pick",
+            "acquisitionType": "own",
+            "note": "More favorable of two teams, sent to Portland",
+            "isOrigin": true,
+            "assetsGivenUp": [],
+            "date": "2022-02-08"
+          },
+          {
+            "type": "pick",
+            "name": "2027 2nd Round Pick via NOP",
+            "acquisitionType": "own",
+            "note": "NOP own, sent to Portland",
+            "isOrigin": true,
+            "assetsGivenUp": [],
+            "date": "2022-02-08"
           }
         ]
       },
@@ -54,7 +267,8 @@
         "draftPick": 41,
         "draftRound": 2,
         "note": "Forward drafted in 2nd round, Ohio State",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "player",
@@ -62,23 +276,41 @@
         "acquisitionType": "free-agent",
         "date": "2024-07-06",
         "note": "Center signed and immediately included in Murray trade",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2025 1st Round Pick (via LAL)",
+        "name": "2025 1st Round Pick (#22) via LAL",
         "acquisitionType": "trade",
-        "date": "2025-06-25",
+        "date": "2019-07-06",
+        "tradePartner": "LAL",
         "becamePlayer": "Drake Powell",
-        "note": "Via Lakers, became 22nd overall pick",
-        "isOrigin": true
+        "note": "LAL own 2025 1st from AD trade, became #22 Drake Powell",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Anthony Davis",
+            "acquisitionType": "draft",
+            "date": "2012-06-28",
+            "draftPick": 1,
+            "draftRound": 1,
+            "note": "1st overall pick, Kentucky forward",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          }
+        ],
+        "tradeDescription": "Acquired from Lakers in Anthony Davis trade"
       },
       {
         "type": "pick",
-        "name": "2027 1st Round Pick",
-        "acquisitionType": "original",
-        "note": "Least favorable of Bucks/Pelicans, top-4 protected",
-        "isOrigin": true
+        "name": "2027 1st Round Pick (least favorable)",
+        "acquisitionType": "own",
+        "note": "Least favorable of Bucks/Pelicans, sent to Atlanta",
+        "isOrigin": true,
+        "assetsGivenUp": [],
+        "date": "2024-07-06"
       }
     ]
   }

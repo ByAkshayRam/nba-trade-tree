@@ -2,10 +2,11 @@
   "_meta": {
     "team": "OKC",
     "player": "Aaron Wiggins",
-    "source": "NBA/ESPN Trade History Research",
-    "originYear": 2021,
-    "depth": 1,
-    "lastUpdated": "2026-02-10"
+    "source": "Basketball Reference Transaction Logs",
+    "sourceUrl": "https://www.basketball-reference.com/players/w/wiggiaa01.html",
+    "originYear": 2008,
+    "depth": 6,
+    "lastUpdated": "2026-03-03"
   },
   "tree": {
     "type": "player",
@@ -15,8 +16,42 @@
     "draftPick": 55,
     "draftRound": 2,
     "currentTeam": "OKC",
-    "tradeDescription": "Drafted 55th overall by Thunder",
-    "note": "Maryland product, drafted 55th overall in second round",
-    "isOrigin": true
+    "tradeDescription": "Drafted 55th overall by OKC using MIN's pick (via GSW). Acquired from Golden State in Kelly Oubre Jr. trade (Nov 22, 2020).",
+    "note": "Pick chain: MIN owned → GSW acquired → OKC (Oubre trade)",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Kelly Oubre Jr.",
+        "acquisitionType": "trade",
+        "date": "2020-11-16",
+        "tradePartner": "PHX",
+        "tradeDescription": "Acquired from Phoenix in Chris Paul trade. Flipped to GSW 6 days later (Nov 22) for draft picks including #55 (Wiggins).",
+        "note": "OKC sent CP3 to PHX, received Oubre, Rubio, picks. Oubre immediately flipped to GSW.",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Chris Paul",
+            "acquisitionType": "trade",
+            "date": "2019-07-16",
+            "tradePartner": "HOU",
+            "tradeDescription": "Acquired from Houston in Russell Westbrook trade. Traded to Phoenix (Nov 16, 2020) for Oubre, Rubio, and picks.",
+            "note": "10x All-Star, played 1 season in OKC (2019-20)",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Russell Westbrook",
+                "acquisitionType": "draft",
+                "date": "2008-06-26",
+                "draftPick": 4,
+                "draftRound": 1,
+                "tradeDescription": "Drafted 4th overall by Seattle with their own lottery pick. Traded to Houston (Jul 16, 2019) for Chris Paul and draft picks.",
+                "note": "Seattle was 20-62 in 2007-08. TRUE ORIGIN.",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

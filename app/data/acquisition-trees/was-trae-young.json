@@ -2,34 +2,84 @@
   "_meta": {
     "team": "WAS",
     "player": "Trae Young",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2021,
-    "depth": 2,
-    "lastUpdated": "2026-02-11"
+    "source": "Basketball-Reference, NBA.com",
+    "sourceUrl": "https://www.basketball-reference.com/players/y/youngtr01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Trae Young",
     "acquisitionType": "trade",
-    "date": "2026-02-06",
+    "date": "2026-01-09",
     "currentTeam": "WAS",
     "tradePartner": "ATL",
-    "tradeDescription": "Blockbuster deadline deal",
-    "note": "3x All-Star, elite playmaker",
+    "tradeDescription": "WAS traded CJ McCollum and Corey Kispert to ATL for Trae Young",
+    "note": "3x All-Star, elite playmaker acquired from Atlanta",
     "assetsGivenUp": [
       {
-        "type": "pick",
-        "name": "2026 1st Round Pick",
-        "acquisitionType": "original",
-        "date": "2026-02-06",
-        "isOrigin": true
-      },
-      {
-        "type": "pick",
-        "name": "2028 1st Round Pick",
-        "acquisitionType": "original",
-        "date": "2026-02-06",
-        "isOrigin": true
+        "type": "player",
+        "name": "CJ McCollum",
+        "acquisitionType": "trade",
+        "date": "2025-07-06",
+        "tradePartner": "NOP",
+        "tradeDescription": "3-team trade (WAS/NOP/HOU): WAS sent Poole, Saddiq Bey, Micah Peavy (#40) to NOP. NOP sent McCollum, Olynyk, 2027 2nd (CHI) to WAS. HOU sent Whitmore to WAS for 2026 2nd + 2029 2nd.",
+        "note": "Veteran guard acquired from New Orleans in 3-team trade",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Jordan Poole",
+            "acquisitionType": "trade",
+            "date": "2023-07-06",
+            "tradePartner": "GSW",
+            "tradeDescription": "WAS traded Chris Paul to GSW for Baldwin Jr., Poole, Rollins, 2027 2nd (GSW), 2030 1st (GSW)",
+            "note": "Acquired from GSW in Chris Paul trade, sent to NOP in 2025",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Chris Paul",
+                "acquisitionType": "trade",
+                "date": "2023-06-23",
+                "tradePartner": "PHX",
+                "tradeDescription": "3-team trade (WAS/PHX/IND): WAS sent Bradley Beal, Goodwin, Todd to PHX; Walker (#8) + 2029 2nd to IND. PHX sent Chris Paul, Shamet, picks to WAS.",
+                "note": "From Beal trade — salary filler",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Bradley Beal",
+                    "acquisitionType": "draft",
+                    "date": "2012-06-28",
+                    "draftPick": 3,
+                    "draftRound": 1,
+                    "note": "#3 overall pick by WAS in 2012 NBA Draft",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Saddiq Bey",
+            "acquisitionType": "free-agent",
+            "date": "2024-07-11",
+            "note": "Signed as FA to multi-year deal. Sent to NOP in 2025 3-team trade.",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "pick",
+            "name": "2025 2nd Round Pick (#40)",
+            "acquisitionType": "draft",
+            "becamePlayer": "Micah Peavy",
+            "note": "WAS own 2nd round pick, sent to NOP",
+            "isOrigin": true,
+            "assetsGivenUp": [],
+            "draftPick": 40,
+            "draftRound": 2,
+            "date": "2023-06-23"
+          }
+        ]
       },
       {
         "type": "player",
@@ -37,7 +87,10 @@
         "acquisitionType": "draft",
         "date": "2021-07-29",
         "draftPick": 15,
-        "isOrigin": true
+        "draftRound": 1,
+        "note": "#15 overall pick by WAS in 2021 NBA Draft",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

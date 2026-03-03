@@ -2,10 +2,9 @@
   "_meta": {
     "team": "DAL",
     "player": "Daniel Gafford",
-    "source": "ESPN, Basketball-Reference",
-    "originYear": 2019,
-    "depth": 4,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/g/gaffoda01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,9 +13,8 @@
     "date": "2024-02-08",
     "currentTeam": "DAL",
     "tradePartner": "WAS",
-    "tradeDescription": "Dallas acquired Gafford from Washington",
+    "tradeDescription": "DAL traded Richaun Holmes and a 2024 1st round pick (least favorable, became Dillon Jones) to WAS for Daniel Gafford",
     "note": "Arkansas center, 2019 #38 overall pick by Chicago",
-    "isOrigin": false,
     "assetsGivenUp": [
       {
         "type": "player",
@@ -24,50 +22,29 @@
         "acquisitionType": "trade",
         "date": "2023-07-06",
         "tradePartner": "SAC",
-        "tradeDescription": "Dallas absorbed Holmes from Sacramento using a $17M traded player exception",
-        "note": "Bowling Green center, undrafted 2015. Also received O-Max Prosper (#24 pick) in same deal.",
+        "tradeDescription": "DAL traded cash to SAC for Richaun Holmes and Olivier-Maxence Prosper",
+        "note": "Bowling Green center, undrafted 2015",
         "isOrigin": false,
         "assetsGivenUp": [
           {
             "type": "other",
-            "name": "$17M Trade Exception",
-            "acquisitionType": "trade",
-            "date": "2023-06-22",
-            "tradePartner": "OKC",
-            "tradeDescription": "Created by sending Davis Bertans and #10 pick to OKC for #12 pick (Dereck Lively)",
-            "note": "$17M traded player exception generated from the Bertans salary leaving Dallas",
-            "isOrigin": false,
-            "assetsGivenUp": [
-              {
-                "type": "player",
-                "name": "Davis Bertans",
-                "acquisitionType": "trade",
-                "date": "2022-02-10",
-                "tradePartner": "WAS",
-                "tradeDescription": "Acquired from Washington in the Kristaps Porzingis trade",
-                "note": "Latvian forward, salary filler in KP deal",
-                "isOrigin": true
-              },
-              {
-                "type": "pick",
-                "name": "2023 DAL 1st Round Pick (#10)",
-                "acquisitionType": "original",
-                "date": "2023-06-22",
-                "becamePlayer": "Cason Wallace",
-                "note": "Sent to OKC along with Bertans, became #10 pick Cason Wallace",
-                "isOrigin": true
-              }
-            ]
+            "name": "Cash Considerations",
+            "acquisitionType": "original",
+            "note": "Cash sent to Sacramento",
+            "isOrigin": true,
+            "assetsGivenUp": []
           }
         ]
       },
       {
         "type": "pick",
-        "name": "2028 DAL 1st Round Pick",
-        "acquisitionType": "original",
-        "date": "2028-06-26",
-        "note": "Dallas own 2028 first-round pick",
-        "isOrigin": true
+        "name": "2024 1st Round Pick (least favorable) via DAL",
+        "acquisitionType": "own",
+        "date": "2024-06-27",
+        "becamePlayer": "Dillon Jones",
+        "note": "Dallas own 2024 first-round pick (least favorable), sent to Washington",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

@@ -4,9 +4,9 @@
     "player": "Jalen Williams",
     "source": "NBA/ESPN Trade History Research",
     "sourceUrl": "https://www.basketball-reference.com/players/w/willija06.html",
-    "originYear": 2022,
-    "depth": 3,
-    "lastUpdated": "2026-02-16"
+    "originYear": 1997,
+    "depth": 10,
+    "lastUpdated": "2026-03-03"
   },
   "tree": {
     "type": "player",
@@ -16,8 +16,74 @@
     "draftPick": 12,
     "draftRound": 1,
     "currentTeam": "OKC",
-    "tradeDescription": "Drafted 12th overall by Thunder",
-    "note": "Santa Clara forward, drafted 12th overall in 2022",
-    "isOrigin": true
+    "tradeDescription": "Drafted 12th overall by OKC using LAC's pick, acquired in Paul George trade (Jul 10, 2019)",
+    "note": "2024 All-Star. Pick was one of 5 unprotected 1sts from LAC in the PG mega-trade.",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Paul George",
+        "acquisitionType": "trade",
+        "date": "2017-07-06",
+        "tradePartner": "IND",
+        "tradeDescription": "Acquired from Indiana for Oladipo and Sabonis. Traded to LAC (Jul 10, 2019) for SGA, Gallinari, and 5 1sts including this pick.",
+        "note": "9x All-Star, played 2 seasons in OKC (2017-2019)",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Victor Oladipo",
+            "acquisitionType": "trade",
+            "date": "2016-06-23",
+            "tradePartner": "ORL",
+            "tradeDescription": "Acquired from Orlando with Sabonis and İlyasova for Serge Ibaka",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Serge Ibaka",
+                "acquisitionType": "draft",
+                "date": "2008-06-26",
+                "draftPick": 24,
+                "draftRound": 1,
+                "tradeDescription": "Drafted 24th overall by Seattle using pick acquired from Phoenix (Jul 20, 2007)",
+                "note": "Pick acquired from PHX in Kurt Thomas trade",
+                "assetsGivenUp": [
+                  {
+                    "type": "pick",
+                    "name": "Emir Preldžić",
+                    "acquisitionType": "trade",
+                    "date": "2007-07-20",
+                    "tradePartner": "PHX",
+                    "tradeDescription": "2009 2nd round pick sent to Phoenix for Kurt Thomas, 2008 1st (Ibaka), and 2010 1st (Pondexter)",
+                    "assetsGivenUp": [
+                      {
+                        "type": "player",
+                        "name": "Rashard Lewis",
+                        "acquisitionType": "trade",
+                        "date": "2007-07-11",
+                        "tradePartner": "ORL",
+                        "tradeDescription": "Traded to Orlando for 2009 2nd round pick (Preldžić) and trade exception",
+                        "assetsGivenUp": [
+                          {
+                            "type": "player",
+                            "name": "Bobby Jackson",
+                            "acquisitionType": "draft-night-trade",
+                            "date": "1997-06-25",
+                            "draftPick": 23,
+                            "draftRound": 1,
+                            "tradePartner": "DEN",
+                            "tradeDescription": "Drafted 23rd overall by Seattle with own pick, immediately traded to Denver for James Cotton and 1998 2nd round pick (Rashard Lewis #32)",
+                            "note": "Seattle's own 1997 1st round pick. TRUE ORIGIN of the Ibaka→Oladipo→PG→JWill chain.",
+                            "isOrigin": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

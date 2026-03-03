@@ -2,29 +2,31 @@
   "_meta": {
     "team": "NYK",
     "player": "Mohamed Diawara",
-    "source": "NBA/ESPN Trade History Research",
-    "originYear": 2024,
-    "depth": 1,
-    "lastUpdated": "2026-02-10"
+    "source": "Basketball-Reference Transaction History",
+    "sourceUrl": "https://www.basketball-reference.com/players/d/diawamo01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Mohamed Diawara",
-    "acquisitionType": "draft",
-    "date": "2024-06-27",
-    "draftPick": 44,
+    "acquisitionType": "draft-night-trade",
+    "date": "2025-06-26",
+    "draftPick": 51,
     "draftRound": 2,
     "currentTeam": "NYK",
-    "tradeDescription": "Drafted 44th overall by Knicks",
-    "note": "French forward, two-way player, homegrown talent",
-    "isOrigin": true,
+    "tradePartner": "LAC",
+    "tradeDescription": "NYK traded Kobe Sanders (#50 pick) to LA Clippers for Mohamed Diawara (#51 pick) and Luka Mitrovic",
     "assetsGivenUp": [
       {
-        "type": "pick",
-        "details": "2024 #44 Overall Pick (used)",
-        "name": "2024 #44 Overall Pick (used)",
-        "becamePlayer": "Mohamed Diawara",
-        "draftPick": 44
+        "type": "player",
+        "name": "Kobe Sanders",
+        "acquisitionType": "draft",
+        "date": "2025-06-25",
+        "draftPick": 50,
+        "draftRound": 2,
+        "tradeDescription": "Drafted 50th overall by NYK in 2025",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

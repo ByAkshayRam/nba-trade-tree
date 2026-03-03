@@ -2,19 +2,18 @@
   "_meta": {
     "team": "MIN",
     "player": "Julius Randle",
-    "source": "ESPN, NBA.com, Basketball-Reference",
-    "originYear": 2014,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/r/randlju01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Julius Randle",
     "acquisitionType": "trade",
-    "date": "2024-09-28",
+    "date": "2024-10-02",
     "currentTeam": "MIN",
     "tradePartner": "NYK",
-    "tradeDescription": "3-team trade: MIN sent Karl-Anthony Towns to NYK and a 2025 2nd round pick (Alex Toohey) to CHA. MIN received Julius Randle, Donte DiVincenzo, Keita Bates-Diop, and 2025 1st round pick (via DET, top-13 protected, became Joan Beringer #17) from NYK.",
+    "tradeDescription": "3-team trade: MIN sent Karl-Anthony Towns to NYK and a 2025 2nd round pick (least favorable, became Alex Toohey) to CHA. MIN received Julius Randle, Donte DiVincenzo, Keita Bates-Diop, and 2025 1st round pick (via DET, top-13 protected, became Joan Beringer #17) from NYK.",
     "note": "3-time All-Star power forward from Kentucky. Shared trade cost with DiVincenzo and Beringer.",
     "assetsGivenUp": [
       {
@@ -29,11 +28,12 @@
       },
       {
         "type": "pick",
-        "name": "2025 2nd Round Pick",
-        "acquisitionType": "original",
+        "name": "2025 2nd Round Pick (least favorable)",
+        "acquisitionType": "own",
         "becamePlayer": "Alex Toohey",
-        "note": "MIN 2025 2nd round pick, sent to CHA as part of 3-team trade",
-        "isOrigin": true
+        "note": "MIN 2025 2nd round pick (least favorable), sent to CHA as part of 3-team trade",
+        "isOrigin": true,
+        "date": "2025-06-25"
       }
     ]
   }

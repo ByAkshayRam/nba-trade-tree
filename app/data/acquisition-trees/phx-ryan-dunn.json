@@ -2,10 +2,9 @@
   "_meta": {
     "team": "PHX",
     "player": "Ryan Dunn",
-    "source": "ESPN, NBA.com, Basketball-Reference",
-    "originYear": 2024,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/d/dunnry01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,19 +13,18 @@
     "date": "2024-06-26",
     "currentTeam": "PHX",
     "tradePartner": "DEN",
-    "tradeDescription": "Draft-night trade: Suns traded #22 pick (Holmes) for #28 pick (Dunn), #56 pick, 2026 2nd, 2031 2nd",
     "draftPick": 28,
     "draftRound": 1,
-    "note": "Virginia forward, acquired via draft-night trade with Denver",
+    "tradeDescription": "PHX traded DaRon Holmes II (#22 pick) to DEN for Ryan Dunn (#28 pick), 2024 2nd round pick (#56 Kevin McCullar Jr.), 2026 2nd round pick (DEN own), and 2031 2nd round pick (DEN own)",
     "assetsGivenUp": [
       {
         "type": "pick",
-        "name": "2024 #22 Overall Pick",
-        "acquisitionType": "original",
+        "name": "2024 1st Round Pick (#22)",
+        "acquisitionType": "own",
         "date": "2024-06-26",
         "becamePlayer": "DaRon Holmes II",
-        "note": "Phoenix's own 2024 first-round pick",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

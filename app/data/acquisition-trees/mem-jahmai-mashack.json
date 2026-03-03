@@ -3,9 +3,8 @@
     "team": "MEM",
     "player": "Jahmai Mashack",
     "source": "Basketball-Reference, NBA.com, ESPN",
-    "originYear": 2025,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "sourceUrl": "https://www.basketball-reference.com/players/m/mashaja01.html",
+    "lastUpdated": "2026-03-02"
   },
   "tree": {
     "type": "player",
@@ -18,14 +17,93 @@
     "note": "Tennessee guard, acquired from Golden State",
     "assetsGivenUp": [
       {
-        "type": "player",
-        "name": "Will Richard",
-        "acquisitionType": "draft",
-        "date": "2025-06-25",
+        "type": "pick",
+        "name": "2025 2nd Round Pick (#56)",
+        "acquisitionType": "trade",
+        "date": "2024-02-01",
         "draftPick": 56,
         "draftRound": 2,
-        "note": "Florida guard, drafted 56th overall by Memphis in 2025",
-        "isOrigin": true
+        "becamePlayer": "Will Richard",
+        "tradePartner": "HOU",
+        "tradeDescription": "Grizzlies traded Steven Adams to Rockets for Victor Oladipo, a 2024 2nd round pick (#39, Jaylen Wells), a 2024 2nd round pick (#57, Ulrich Chomche) and a 2025 2nd round pick (Will Richard)",
+        "note": "Pick acquired from Houston in Steven Adams trade; Richard drafted 56th, sent to GSW",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Steven Adams",
+            "acquisitionType": "trade",
+            "date": "2021-08-07",
+            "tradePartner": "NOP",
+            "tradeDescription": "3-team trade: MEM traded Jonas Valanciunas, Trey Murphy III (#17), and Brandon Boston Jr. (#51) to NOP; NOP traded Steven Adams, Eric Bledsoe, Jared Butler, Ziaire Williams, 2022 2nd (Vince Williams Jr.) and 2025 2nd to MEM; Charlotte involved in side deals",
+            "note": "Kiwi center; acquired from New Orleans in JV 3-team trade, then traded to Houston",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Jonas Valanciunas",
+                "acquisitionType": "trade",
+                "date": "2019-02-07",
+                "tradePartner": "TOR",
+                "tradeDescription": "Memphis traded Marc Gasol to Toronto for C.J. Miles, Jonas Valanciunas, Delon Wright and a 2024 2nd round pick",
+                "note": "Lithuanian center, acquired from Toronto in Marc Gasol trade",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Marc Gasol",
+                    "acquisitionType": "draft-night-trade",
+                    "date": "2008-02-01",
+                    "tradePartner": "LAL",
+                    "tradeDescription": "MEM traded Pau Gasol to LAL for Marc Gasol and others",
+                    "note": "Spanish center from the Pau Gasol blockbuster",
+                    "assetsGivenUp": [
+                      {
+                        "type": "player",
+                        "name": "Pau Gasol",
+                        "acquisitionType": "draft-night-trade",
+                        "date": "2001-06-27",
+                        "draftPick": 3,
+                        "draftRound": 1,
+                        "tradePartner": "ATL",
+                        "note": "2001 #3 overall pick by Vancouver Grizzlies",
+                        "assetsGivenUp": [
+                          {
+                            "type": "player",
+                            "name": "Shareef Abdur-Rahim",
+                            "acquisitionType": "draft",
+                            "date": "1996-06-26",
+                            "draftPick": 3,
+                            "draftRound": 1,
+                            "note": "1996 #3 overall pick by Vancouver Grizzlies",
+                            "isOrigin": true
+                          }
+                        ]
+                      }
+                    ],
+                    "draftPick": 48,
+                    "draftRound": 2
+                  }
+                ]
+              },
+              {
+                "type": "pick",
+                "name": "2021 1st Round Pick (#17)",
+                "acquisitionType": "draft",
+                "becamePlayer": "Trey Murphy III",
+                "note": "MEM's own 2021 1st round pick, used to draft Trey Murphy III and sent to NOP in JV/Adams trade",
+                "isOrigin": true,
+                "date": "2021-07-29"
+              },
+              {
+                "type": "pick",
+                "name": "2021 2nd Round Pick (#51)",
+                "acquisitionType": "draft",
+                "becamePlayer": "Brandon Boston Jr.",
+                "note": "MEM's own 2021 2nd round pick, used to draft Brandon Boston Jr. and sent to NOP in JV/Adams trade",
+                "isOrigin": true,
+                "date": "2021-07-29"
+              }
+            ]
+          }
+        ]
       }
     ]
   }

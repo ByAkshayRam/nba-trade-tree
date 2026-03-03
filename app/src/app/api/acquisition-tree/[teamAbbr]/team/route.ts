@@ -145,8 +145,8 @@ const ROSTER_ORDERS: Record<string, Record<string, { order: number; category: "s
     "Chaney Johnson": { order: 17, category: "bench" },
     "E.J. Liddell": { order: 18, category: "bench" },
     "Tyson Etienne": { order: 19, category: "bench" },
-    "Ben Saraf": { order: 20, category: "two-way" },
-    "Josh Minott": { order: 21, category: "two-way" },
+    "Ben Saraf": { order: 20, category: "bench" },
+    "Josh Minott": { order: 21, category: "bench" },
   },
   CHA: {
     "LaMelo Ball": { order: 1, category: "starter" },

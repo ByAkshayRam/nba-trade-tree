@@ -2,20 +2,44 @@
   "_meta": {
     "team": "WAS",
     "player": "Bilal Coulibaly",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2023,
-    "depth": 1,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/c/coulibi01.html",
+    "lastUpdated": "2026-03-02"
   },
   "tree": {
     "type": "player",
     "name": "Bilal Coulibaly",
-    "acquisitionType": "draft",
-    "date": "2023-06-22",
+    "acquisitionType": "draft-night-trade",
+    "date": "2023-06-23",
     "currentTeam": "WAS",
     "draftPick": 7,
     "draftRound": 1,
-    "note": "#7 overall pick by WAS in 2023.",
-    "isOrigin": true
+    "tradePartner": "IND",
+    "tradeDescription": "3-team Beal trade: WAS traded Jarace Walker (#8) and a 2029 2nd round pick to IND. IND traded Bilal Coulibaly (#7) to WAS. PHX also sent Chris Paul, Shamet, picks to WAS for Beal.",
+    "note": "WAS drafted Walker at #8, swapped with IND to move up one spot for Coulibaly at #7.",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Jarace Walker",
+        "acquisitionType": "draft",
+        "date": "2023-06-22",
+        "draftPick": 8,
+        "draftRound": 1,
+        "tradePartner": "IND",
+        "tradeDescription": "Drafted #8 overall by WAS, immediately traded to IND for Coulibaly (#7).",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      },
+      {
+        "type": "pick",
+        "name": "2029 2nd Round Pick",
+        "acquisitionType": "draft",
+        "date": "2023-06-23",
+        "note": "Sent to Indiana as part of the Coulibaly/Walker swap in the Beal 3-team trade.",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      }
+    ]
   }
 }

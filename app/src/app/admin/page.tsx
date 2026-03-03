@@ -42,6 +42,7 @@ export default function AdminPage() {
   const [timeFilter, setTimeFilter] = useState<string>("all");
   const [autoRefresh, setAutoRefresh] = useState(false);
   const [tab, setTab] = useState<"overview" | "teams" | "players" | "events" | "live" | "discovery">("overview");
+  const [domainFilter, setDomainFilter] = useState<string>("all");
 
   const fetchData = useCallback(async (pwd?: string) => {
     setLoading(true);
@@ -57,6 +58,9 @@ export default function AdminPage() {
     } else if (timeFilter === "30d") {
       const d = new Date(); d.setDate(d.getDate() - 30);
       url += `&since=${d.toISOString()}`;
+    }
+    if (domainFilter !== "all") {
+      url += `&hostname=${encodeURIComponent(domainFilter)}`;
     }
 
     try {
@@ -75,7 +79,7 @@ export default function AdminPage() {
       setError("Failed to fetch data");
     }
     setLoading(false);
-  }, [password, timeFilter]);
+  }, [password, timeFilter, domainFilter]);
 
   // Auto-refresh
   useEffect(() => {
@@ -158,6 +162,15 @@ export default function AdminPage() {
                 />
                 Auto-refresh (15s)
               </label>
+              <select
+                value={domainFilter}
+                onChange={(e) => { setDomainFilter(e.target.value); }}
+                className="bg-zinc-800 border border-zinc-700 text-xs sm:text-sm text-white px-2 sm:px-3 py-1.5 rounded-lg"
+              >
+                <option value="all">All Domains</option>
+                <option value="www.rosterdna.com">🟢 Production</option>
+                <option value="rosterdna.vercel.app">🟡 Beta</option>
+              </select>
               <select
                 value={timeFilter}
                 onChange={(e) => { setTimeFilter(e.target.value); }}

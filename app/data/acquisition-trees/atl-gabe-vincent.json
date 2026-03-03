@@ -2,10 +2,11 @@
   "_meta": {
     "team": "ATL",
     "player": "Gabe Vincent",
-    "source": "ESPN, The Athletic, NBA.com",
-    "originYear": 2018,
-    "depth": 3,
-    "lastUpdated": "2026-02-15"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/v/vincega01.html",
+    "originYear": 2025,
+    "depth": 2,
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,37 +15,17 @@
     "date": "2026-02-05",
     "currentTeam": "ATL",
     "tradePartner": "LAL",
-    "tradeDescription": "Hawks trade Luke Kennard to Lakers for Gabe Vincent and a 2032 2nd-round pick",
-    "note": "2023 NBA Finals starter with Miami, playoff-tested guard",
+    "tradeDescription": "Hawks traded Luke Kennard to Lakers for Gabe Vincent and a 2032 2nd-round pick (LAL own).",
+    "note": "2023 NBA Finals starter with Miami, playoff-tested guard.",
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Luke Kennard",
         "acquisitionType": "free-agent",
-        "date": "2025-07-01",
-        "tradePartner": "MEM",
-        "tradeDescription": "Hawks signed Kennard as free agent from Memphis, 1-year $11M deal",
-        "note": "Elite 3-point shooter, career 44% from deep. Sent to LAL in Vincent trade."
+        "date": "2025-07-08",
+        "note": "Signed as free agent from Memphis. Elite 3-point shooter, career 44% from deep. Sent to LAL in Vincent trade.",
+        "isOrigin": true
       }
-    ],
-    "tradeChain": {
-      "type": "player",
-      "name": "Gabe Vincent",
-      "acquisitionType": "free-agent",
-      "date": "2023-07-06",
-      "tradePartner": "MIA",
-      "tradeDescription": "Lakers signed Vincent as free agent from Heat, 3-year $33M deal",
-      "note": "Signed after 2023 Finals run with Miami",
-      "tradeChain": {
-        "type": "player",
-        "name": "Gabe Vincent",
-        "acquisitionType": "free-agent",
-        "date": "2020-11-27",
-        "tradePartner": "G-League",
-        "tradeDescription": "Heat signed Vincent from G-League",
-        "isOrigin": true,
-        "note": "ORIGIN - Undrafted 2018, UC Santa Barbara. Developed in G-League with Stockton Kings."
-      }
-    }
+    ]
   }
 }

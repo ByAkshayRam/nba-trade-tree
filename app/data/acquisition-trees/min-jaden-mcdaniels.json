@@ -2,44 +2,145 @@
   "_meta": {
     "team": "MIN",
     "player": "Jaden McDaniels",
-    "source": "ESPN, NBA.com, Basketball-Reference",
-    "originYear": 2020,
-    "depth": 3,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/m/mcdanja02.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Jaden McDaniels",
     "acquisitionType": "draft-night-trade",
-    "date": "2020-11-18",
+    "date": "2020-11-20",
     "currentTeam": "MIN",
     "tradePartner": "OKC",
-    "tradeDescription": "3-team draft night trade: MIN acquired Ricky Rubio and draft rights to Jaden McDaniels (#28) from OKC, and draft rights to Leandro Bolmaro (#23) from NYK. MIN sent James Johnson and draft rights to Aleksej Pokuševski (#17) to OKC, and draft rights to Mathias Lessort + DET 2023 2nd round pick to NYK.",
-    "note": "Washington forward, drafted 28th overall by LAL (on behalf of OKC via Schroder trade), then traded to MIN",
+    "tradeDescription": "3-team draft night trade: MIN acquired Ricky Rubio and Jaden McDaniels (#28) from OKC, and Leandro Bolmaro (#23) from NYK. MIN sent James Johnson, Aleksej Poku\u0161evski (#17), and 2024 2nd round pick to OKC, and Mathias Lessort + DET 2023 2nd round pick to NYK.",
+    "note": "Washington forward, drafted 28th overall",
+    "draftPick": 28,
+    "draftRound": 1,
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "James Johnson",
         "acquisitionType": "trade",
-        "note": "Veteran forward, sent to OKC",
-        "isOrigin": true
+        "date": "2020-02-06",
+        "tradePartner": "MIA",
+        "tradeDescription": "3-team trade: MIN sent Gorgui Dieng to MEM. MIA sent James Johnson to MIN. MEM sent Jae Crowder, Solomon Hill, Andre Iguodala to MIA and received Dion Waiters, Justise Winslow.",
+        "note": "Acquired from MIA in 3-team trade. Sent to OKC.",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Gorgui Dieng",
+            "acquisitionType": "draft",
+            "date": "2013-06-27",
+            "draftPick": 21,
+            "draftRound": 1,
+            "note": "Senegalese center from Louisville, 2013 #21 overall pick. Sent to MEM.",
+            "isOrigin": true
+          }
+        ]
       },
       {
         "type": "pick",
         "name": "2020 1st Round Pick (#17)",
-        "acquisitionType": "original",
-        "date": "2020-11-18",
-        "becamePlayer": "Aleksej Pokuševski",
-        "note": "MIN original 2020 1st round pick, used to select Pokuševski for OKC",
-        "isOrigin": true
+        "acquisitionType": "trade",
+        "date": "2020-11-20",
+        "becamePlayer": "Aleksej Poku\u0161evski",
+        "tradePartner": "ATL",
+        "note": "Acquired from ATL in Feb 5, 2020 4-team trade (Covington/Beasley deal). Used to select Poku\u0161evski for OKC.",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Robert Covington",
+            "acquisitionType": "trade",
+            "date": "2018-11-12",
+            "tradePartner": "PHI",
+            "note": "Part of 4-team trade cost (shared with Beasley/Vanderbilt). Full chain detailed in min-rudy-gobert.json Beasley branch.",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Jimmy Butler",
+                "acquisitionType": "trade",
+                "date": "2017-06-22",
+                "tradePartner": "CHI",
+                "note": "Full chain: LaVine (draft #13) + Dunn (draft #5) + 2017 #7 pick (Markkanen). See min-rudy-gobert.json.",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Zach LaVine",
+                    "acquisitionType": "draft",
+                    "date": "2014-06-26",
+                    "draftPick": 13,
+                    "draftRound": 1,
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "player",
+                    "name": "Kris Dunn",
+                    "acquisitionType": "draft",
+                    "date": "2016-06-23",
+                    "draftPick": 5,
+                    "draftRound": 1,
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2017 1st Round Pick (#7)",
+                    "acquisitionType": "own",
+                    "becamePlayer": "Lauri Markkanen",
+                    "isOrigin": true,
+                    "date": "2017-06-22"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Keita Bates-Diop",
+            "acquisitionType": "draft",
+            "date": "2018-06-21",
+            "draftPick": 48,
+            "draftRound": 2,
+            "note": "Shared 4-team trade cost. Sent to DEN.",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Shabazz Napier",
+            "acquisitionType": "trade",
+            "date": "2019-07-08",
+            "tradePartner": "GSW",
+            "note": "Shared 4-team trade cost. Sent to DEN.",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Noah Vonleh",
+            "acquisitionType": "free-agent",
+            "date": "2019-07-08",
+            "note": "Shared 4-team trade cost. Sent to DEN.",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Jordan Bell",
+            "acquisitionType": "free-agent",
+            "date": "2019-07-12",
+            "note": "Shared 4-team trade cost. Sent to HOU.",
+            "isOrigin": true
+          }
+        ]
       },
       {
         "type": "pick",
-        "name": "2024 2nd Round Pick",
-        "acquisitionType": "original",
+        "name": "2024 2nd Round Pick (#32)",
+        "acquisitionType": "own",
         "becamePlayer": "Kevin McCullar Jr.",
         "note": "MIN 2024 2nd round pick, sent to OKC",
-        "isOrigin": true
+        "isOrigin": true,
+        "date": "2024-06-26"
       }
     ]
   }

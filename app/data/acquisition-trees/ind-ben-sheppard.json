@@ -2,10 +2,9 @@
   "_meta": {
     "team": "IND",
     "player": "Ben Sheppard",
-    "source": "Basketball-Reference, ESPN, NBA Trade History",
-    "originYear": 2019,
-    "depth": 4,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/s/sheppbe01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -15,46 +14,66 @@
     "currentTeam": "IND",
     "draftPick": 26,
     "draftRound": 1,
-    "note": "Guard from Belmont, 26th overall pick in 2023 NBA Draft. Pick acquired from BOS in Malcolm Brogdon trade.",
-    "pickOrigin": {
-      "type": "pick",
-      "name": "2023 BOS 1st Round Pick (#26)",
-      "acquisitionType": "trade",
-      "date": "2022-07-01",
-      "tradePartner": "BOS",
-      "note": "Acquired in Brogdon trade",
-      "assetsGivenUp": [
-        {
-          "type": "player",
-          "name": "Malcolm Brogdon",
-          "acquisitionType": "trade",
-          "date": "2019-07-06",
-          "tradePartner": "MIL",
-          "note": "Acquired via sign-and-trade from MIL",
-          "assetsGivenUp": [
-            {
-              "type": "pick",
-              "name": "2020 IND 1st Round Pick",
-              "note": "IND's own pick. Traded by MIL to DEN.",
-              "becamePlayer": "R.J. Hampton",
-              "draftPick": 24,
-              "isOrigin": true
-            },
-            {
-              "type": "pick",
-              "name": "2022 IND 2nd Round Pick",
-              "note": "Sent to MIL",
-              "isOrigin": true
-            },
-            {
-              "type": "pick",
-              "name": "2025 IND 2nd Round Pick",
-              "note": "Sent to MIL",
-              "isOrigin": true
-            }
-          ]
-        }
-      ]
-    }
+    "note": "Guard from Belmont, 26th overall pick in 2023 NBA Draft. Pick (CLE own) acquired from CLE in Caris LeVert trade.",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2023 1st Round Pick (#26) via CLE",
+        "acquisitionType": "trade",
+        "date": "2022-02-07",
+        "tradePartner": "CLE",
+        "becamePlayer": "Ben Sheppard",
+        "draftPick": 26,
+        "tradeDescription": "IND traded Caris LeVert and a 2022 2nd round pick (Luke Travers) to CLE for Ricky Rubio, a 2022 2nd round pick (Andrew Nembhard #31), a 2023 1st round pick (Ben Sheppard #26), and a 2027 2nd round pick. CLE also received a trade exception.",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Caris LeVert",
+            "acquisitionType": "trade",
+            "date": "2021-01-16",
+            "tradePartner": "BRK",
+            "note": "Acquired from BRK in James Harden 4-team trade",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Victor Oladipo",
+                "acquisitionType": "trade",
+                "date": "2017-07-06",
+                "tradePartner": "OKC",
+                "tradeDescription": "IND trades Paul George to OKC for Victor Oladipo and Domantas Sabonis",
+                "note": "2018 All-Star and Most Improved Player. Sent to HOU as part of the 4-team Harden trade.",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Paul George",
+                    "acquisitionType": "draft",
+                    "date": "2010-06-24",
+                    "note": "Drafted 10th overall by Indiana in 2010. 7x All-Star who requested a trade in 2017.",
+                    "isOrigin": true,
+                    "assetsGivenUp": [],
+                    "draftRound": 1,
+                    "draftPick": 10
+                  }
+                ]
+              }
+            ],
+            "tradeDescription": "4-team trade: BRK sends LeVert to IND and Jarrett Allen + Taurean Prince to CLE; HOU sends Harden to BRK and 2023 2nd (Jalen Pickett) to IND; CLE sends Dante Exum, cash, and 2024 2nd (Tristen Newton) to IND; IND sends Victor Oladipo to HOU"
+          },
+          {
+            "type": "pick",
+            "name": "2022 2nd Round Pick (Luke Travers)",
+            "acquisitionType": "trade",
+            "date": "2019-07-06",
+            "tradePartner": "MIA",
+            "note": "MIA own pick, acquired in T.J. Warren 3-team trade",
+            "becamePlayer": "Luke Travers",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          }
+        ]
+      }
+    ]
   }
 }

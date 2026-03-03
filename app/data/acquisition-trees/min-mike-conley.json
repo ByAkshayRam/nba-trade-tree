@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "team": "MIN",
+    "player": "Mike Conley",
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/c/conlemi01.html",
+    "lastUpdated": "2026-03-02"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Mike Conley",
+    "acquisitionType": "free-agent",
+    "date": "2026-02-07",
+    "currentTeam": "MIN",
+    "note": "Ohio State guard, re-signed with MIN after complex trade sequence: MIN traded him to CHI (with 2026 1st swap) to save luxury tax, CHI traded him to CHA, CHA waived him, allowing MIN to re-sign him as FA due to CBA loophole.",
+    "isOrigin": true
+  }
+}

@@ -21,12 +21,12 @@
     "assetsGivenUp": [
       {
         "type": "pick",
-        "name": "2016 #3 Pick (from BKN)",
+        "name": "2016 1st Round Pick (#3) via BKN",
         "acquisitionType": "trade",
         "date": "2013-06-27",
         "tradePartner": "BKN",
         "becamePlayer": "Jaylen Brown",
-        "tradeDescription": "The infamous Nets trade: KG, Pierce, Terry for multiple unprotected picks",
+        "tradeDescription": "BKN traded Kevin Garnett, Paul Pierce, Jason Terry, D.J. White, 2017 1st (#27, Kyle Kuzma via pick swap), and 2017 2nd (Sasha Vezenkov) to BOS for Keith Bogans, MarShon Brooks, Kris Humphries, Kris Joseph, Gerald Wallace, 2014 1st (James Young), 2016 1st (#3 Jaylen Brown), 2017 1st (#1 Markelle Fultz, swapped to #3 Jayson Tatum), and 2018 1st (Collin Sexton).",
         "note": "One of the most lopsided trades in NBA history. Pick conveyed as #3 in 2016.",
         "assetsGivenUp": [
           {
@@ -77,7 +77,7 @@
                 "acquisitionType": "trade",
                 "date": "2006-06-28",
                 "tradePartner": "POR",
-                "tradeDescription": "Acquired from Portland for Raef LaFrentz",
+                "tradeDescription": "Celtics trade Randy Foye (#7 pick), Raef LaFrentz, and Dan Dickau to Portland for Sebastian Telfair, Theo Ratliff, and 2008 2nd (#46 Trent Plaisted)",
                 "assetsGivenUp": [
                   {
                     "type": "player",
@@ -118,6 +118,39 @@
                         ]
                       }
                     ]
+                  },
+                  {
+                    "type": "player",
+                    "name": "Randy Foye",
+                    "acquisitionType": "draft",
+                    "date": "2006-06-28",
+                    "draftPick": 7,
+                    "draftRound": 1,
+                    "tradeDescription": "Drafted #7 overall by Celtics, immediately traded to Portland on draft night",
+                    "note": "BOS own pick. Selected and shipped same day in draft-night deal.",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  },
+                  {
+                    "type": "player",
+                    "name": "Dan Dickau",
+                    "acquisitionType": "trade",
+                    "date": "2005-09-30",
+                    "tradePartner": "NOH",
+                    "tradeDescription": "Celtics trade 2006 2nd round pick (became Edin Bavcic) to New Orleans for Dan Dickau",
+                    "note": "Journeyman guard, salary filler in the Portland draft-night deal",
+                    "assetsGivenUp": [
+                      {
+                        "type": "pick",
+                        "name": "2006 2nd Round Pick (#56)",
+                        "acquisitionType": "own",
+                        "becamePlayer": "Edin Bavcic",
+                        "tradeDescription": "Celtics own 2nd round pick, sent to New Orleans/Oklahoma City Hornets for Dickau",
+                        "note": "Pick acquired from MIA in Antoine Walker 5-team trade (Aug 2005), then sent to NOH",
+                        "isOrigin": true,
+                        "assetsGivenUp": []
+                      }
+                    ]
                   }
                 ]
               },
@@ -125,15 +158,15 @@
                 "type": "player",
                 "name": "Theo Ratliff",
                 "acquisitionType": "trade",
-                "date": "2006-01-26",
+                "date": "2006-06-28",
                 "tradePartner": "POR",
-                "tradeDescription": "Acquired from Portland in multi-team trade",
-                "note": "Expiring contract used as salary filler. Treated as origin.",
+                "tradeDescription": "Celtics trade Randy Foye (#7 pick), Raef LaFrentz, and Dan Dickau to Portland for Sebastian Telfair, Theo Ratliff, and 2008 2nd (#46 Trent Plaisted)",
+                "note": "Draft day trade. Veteran center, expiring contract. Full trade chain in Tatum tree.",
                 "isOrigin": true
               },
               {
                 "type": "pick",
-                "name": "2009 1st Round Pick",
+                "name": "2009 1st Round Pick (#11)",
                 "acquisitionType": "original",
                 "date": "2007-07-31",
                 "draftPick": 11,
@@ -162,6 +195,32 @@
             "date": "2012-07-11",
             "tradeDescription": "Signed as unrestricted free agent from DAL",
             "note": "The Jet - 2011 NBA Champion with Dallas. Signed 3yr/$15M deal. TRUE ORIGIN.",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "D.J. White",
+            "acquisitionType": "free-agent",
+            "date": "2013-02-28",
+            "note": "Forward, signed 10-day contract with BOS (Feb 28, 2013). Previously played in China. Sent to BKN in the KG/Pierce mega-trade.",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2017 1st Round Pick (#27)",
+            "becamePlayer": "Kyle Kuzma",
+            "acquisitionType": "original",
+            "date": "2013-07-12",
+            "note": "BOS own 2017 1st, sent to BKN in KG/Pierce trade. BOS got #1 overall from BKN via pick swap, BKN used the swap to get #27. Lakers drafted Kyle Kuzma at #27.",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2017 2nd Round Pick",
+            "becamePlayer": "Sasha Vezenkov",
+            "acquisitionType": "original",
+            "date": "2013-07-12",
+            "note": "Sent to BKN in KG/Pierce trade. Used to draft Sasha Vezenkov.",
             "isOrigin": true
           }
         ]

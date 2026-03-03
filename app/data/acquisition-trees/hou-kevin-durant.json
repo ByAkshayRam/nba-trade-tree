@@ -2,10 +2,9 @@
   "_meta": {
     "team": "HOU",
     "player": "Kevin Durant",
-    "source": "ESPN, NBA.com, Basketball-Reference",
-    "originYear": 2007,
-    "depth": 5,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/d/duranke01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,7 +13,7 @@
     "date": "2025-07-06",
     "currentTeam": "HOU",
     "tradePartner": "PHX",
-    "tradeDescription": "Centerpiece of historic 7-team trade: Rockets sent Green, Brooks, #10 pick and multiple 2nd-rounders to Suns for Durant",
+    "tradeDescription": "Centerpiece of historic 7-team trade: Rockets sent Jalen Green, Dillon Brooks, #10 pick (Khaman Maluach), Daeqwon Plowden and multiple 2nd-rounders to Suns for Durant",
     "note": "Two-time Finals MVP joins Houston from Phoenix in first 7-team trade in NBA history",
     "assetsGivenUp": [
       {
@@ -25,64 +24,325 @@
         "draftPick": 2,
         "draftRound": 1,
         "note": "2021 #2 overall pick; sent to Phoenix",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "player",
         "name": "Dillon Brooks",
-        "acquisitionType": "free-agent",
-        "date": "2023-07-01",
-        "note": "Signed from Memphis Grizzlies; sent to Phoenix",
-        "isOrigin": true
+        "acquisitionType": "trade",
+        "date": "2023-07-08",
+        "tradePartner": "MEM",
+        "tradeDescription": "5-team trade: Memphis traded Brooks to Houston. Houston sent Josh Christopher to Memphis, Kenyon Martin Jr. to Clippers, Usman Garuba and TyTy Washington Jr. to Hawks, Patty Mills and picks to Thunder. Houston received Alpha Kaba from Hawks and 2nd round picks from Clippers.",
+        "note": "Defensive wing acquired from Memphis in 5-team trade; sent to Phoenix in KD deal",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Josh Christopher",
+            "acquisitionType": "draft",
+            "date": "2021-07-29",
+            "draftPick": 24,
+            "draftRound": 1,
+            "note": "2021 #24 pick (from MIL via P.J. Tucker trade); sent to MEM in 5-team trade",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "player",
+            "name": "Kenyon Martin Jr.",
+            "acquisitionType": "trade",
+            "date": "2020-11-25",
+            "tradePartner": "SAC",
+            "tradeDescription": "Rockets traded cash and a 2021 2nd round draft pick (LAL own, Luka Garza) to Sacramento for Kenyon Martin Jr.",
+            "note": "Acquired from SAC; sent to LAC in 5-team trade",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "pick",
+                "name": "2021 2nd Round Pick (LAL own)",
+                "acquisitionType": "trade",
+                "tradePartner": "DET",
+                "becamePlayer": "Luka Garza",
+                "note": "LAL own 2nd; acquired from DET in Christian Wood trade (Nov 24, 2020). Sent to SAC for KMJ.",
+                "isOrigin": false,
+                "assetsGivenUp": [],
+                "date": "2020-11-25"
+              },
+              {
+                "type": "other",
+                "name": "Cash Considerations",
+                "acquisitionType": "free-agent",
+                "note": "Cash sent to Sacramento",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Usman Garuba",
+            "acquisitionType": "draft",
+            "date": "2021-07-29",
+            "draftPick": 23,
+            "draftRound": 1,
+            "note": "2021 #23 pick (from POR via Covington trade); sent to ATL in 5-team trade",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "player",
+            "name": "TyTy Washington Jr.",
+            "acquisitionType": "trade",
+            "date": "2022-06-24",
+            "tradePartner": "MIN",
+            "tradeDescription": "Rockets traded Wendell Moore Jr. to Timberwolves for TyTy Washington Jr., a 2025 2nd round draft pick (MIN own, Mohamed Diawara) and a 2027 2nd round draft pick (MIN own)",
+            "note": "Acquired from MIN for Wendell Moore Jr.; sent to ATL in 5-team trade",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Wendell Moore Jr.",
+                "acquisitionType": "trade",
+                "date": "2022-06-24",
+                "tradePartner": "DAL",
+                "tradeDescription": "Rockets traded Christian Wood to Mavericks for Sterling Brown, Trey Burke, Marquese Chriss, Boban Marjanovic and Wendell Moore Jr.",
+                "note": "Acquired from DAL in Christian Wood trade; immediately flipped to MIN for TyTy",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Christian Wood",
+                    "acquisitionType": "trade",
+                    "date": "2020-11-24",
+                    "tradePartner": "DET",
+                    "tradeDescription": "Rockets traded Trevor Ariza, Isaiah Stewart, cash and a 2027 2nd round draft pick (HOU own) to Pistons for Christian Wood, a 2021 2nd round draft pick (LAL own, Luka Garza) and a 2025 1st round draft pick (DET own, Joan Beringer #17)",
+                    "note": "Acquired from DET; later traded to DAL for Moore Jr. and salary filler",
+                    "isOrigin": false,
+                    "assetsGivenUp": [
+                      {
+                        "type": "player",
+                        "name": "Trevor Ariza",
+                        "acquisitionType": "trade",
+                        "date": "2020-11-22",
+                        "tradePartner": "POR",
+                        "tradeDescription": "Rockets traded Robert Covington to Portland for Trevor Ariza, Isaiah Stewart and a 2021 1st round draft pick (lottery protected, Usman Garuba #23)",
+                        "note": "Pass-through: acquired from POR and immediately flipped to DET",
+                        "isOrigin": false,
+                        "assetsGivenUp": [
+                          {
+                            "type": "player",
+                            "name": "Robert Covington",
+                            "acquisitionType": "trade",
+                            "date": "2020-02-05",
+                            "tradePartner": "MIN",
+                            "tradeDescription": "4-team trade: MIN traded Covington to HOU; HOU traded Clint Capela and Nene to ATL; HOU traded Gerald Green and 2020 1st (Zeke Nnaji #22) to DEN",
+                            "note": "Acquired from MIN in 4-team trade; sent to POR for Ariza, Stewart, and 2021 1st",
+                            "isOrigin": false,
+                            "assetsGivenUp": [
+                              {
+                                "type": "player",
+                                "name": "Clint Capela",
+                                "acquisitionType": "draft",
+                                "date": "2014-06-26",
+                                "draftPick": 25,
+                                "draftRound": 1,
+                                "note": "2014 #25 pick; sent to ATL in 4-team trade for Covington",
+                                "isOrigin": true,
+                                "assetsGivenUp": []
+                              },
+                              {
+                                "type": "player",
+                                "name": "Gerald Green",
+                                "acquisitionType": "free-agent",
+                                "date": "2019-07-22",
+                                "note": "Re-signed as FA; sent to DEN in 4-team trade",
+                                "isOrigin": true,
+                                "assetsGivenUp": []
+                              },
+                              {
+                                "type": "pick",
+                                "name": "2020 1st Round Pick (#22)",
+                                "acquisitionType": "draft",
+                                "becamePlayer": "Zeke Nnaji",
+                                "note": "HOU own pick; sent to DEN in 4-team trade",
+                                "isOrigin": true,
+                                "assetsGivenUp": [],
+                                "date": "2020-02-05"
+                              },
+                              {
+                                "type": "player",
+                                "name": "Nene",
+                                "acquisitionType": "free-agent",
+                                "date": "2019-09-06",
+                                "note": "Re-signed as FA; sent to ATL in 4-team trade",
+                                "isOrigin": true,
+                                "assetsGivenUp": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "player",
+                        "name": "Isaiah Stewart",
+                        "acquisitionType": "trade",
+                        "date": "2020-11-22",
+                        "tradePartner": "POR",
+                        "tradeDescription": "Part of same Covington-to-POR trade as Ariza; pass-through to DET",
+                        "note": "Pass-through: acquired from POR and immediately flipped to DET. Cost tracked under Ariza node.",
+                        "isOrigin": false,
+                        "assetsGivenUp": []
+                      },
+                      {
+                        "type": "pick",
+                        "name": "2027 2nd Round Pick (HOU own)",
+                        "acquisitionType": "draft",
+                        "note": "HOU own pick sent to DET",
+                        "isOrigin": true,
+                        "assetsGivenUp": [],
+                        "date": "2020-11-24"
+                      },
+                      {
+                        "type": "other",
+                        "name": "Cash Considerations",
+                        "acquisitionType": "free-agent",
+                        "isOrigin": true,
+                        "assetsGivenUp": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Patty Mills",
+            "acquisitionType": "trade",
+            "date": "2023-07-06",
+            "tradePartner": "BKN",
+            "tradeDescription": "Rockets traded a 2024 2nd round draft pick (BRK own, did not convey) to Brooklyn Nets for Patty Mills and a 2028 2nd round draft pick (MIL own)",
+            "note": "Acquired from BKN; immediately sent to OKC in 5-team trade",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "pick",
+                "name": "2024 2nd Round Pick (BRK own)",
+                "acquisitionType": "draft",
+                "note": "Did not convey. Sent to BKN for Mills.",
+                "isOrigin": true,
+                "assetsGivenUp": [],
+                "date": "2023-07-06"
+              }
+            ]
+          },
+          {
+            "type": "pick",
+            "name": "2024 2nd Round Pick (#37)",
+            "acquisitionType": "draft",
+            "becamePlayer": "KJ Simpson",
+            "note": "HOU own 2nd round pick; sent to OKC in 5-team trade",
+            "isOrigin": true,
+            "assetsGivenUp": [],
+            "date": "2023-07-08"
+          },
+          {
+            "type": "pick",
+            "name": "2025 2nd Round Pick (MIN own)",
+            "acquisitionType": "trade",
+            "tradePartner": "MIN",
+            "becamePlayer": "Mohamed Diawara",
+            "note": "Acquired from MIN in TyTy Washington trade (June 24, 2022); sent to ATL in 5-team trade",
+            "isOrigin": false,
+            "assetsGivenUp": [],
+            "date": "2023-07-08"
+          },
+          {
+            "type": "pick",
+            "name": "2028 2nd Round Pick (HOU own)",
+            "acquisitionType": "draft",
+            "note": "HOU own pick; sent to ATL in 5-team trade",
+            "isOrigin": true,
+            "assetsGivenUp": [],
+            "date": "2023-07-08"
+          },
+          {
+            "type": "pick",
+            "name": "2029 2nd Round Pick (HOU own)",
+            "acquisitionType": "draft",
+            "note": "HOU own pick; sent to OKC in 5-team trade",
+            "isOrigin": true,
+            "assetsGivenUp": [],
+            "date": "2023-07-08"
+          },
+          {
+            "type": "pick",
+            "name": "2030 2nd Round Pick (HOU own)",
+            "acquisitionType": "draft",
+            "note": "HOU own pick; sent to OKC in 5-team trade",
+            "isOrigin": true,
+            "assetsGivenUp": [],
+            "date": "2023-07-08"
+          }
+        ]
       },
       {
         "type": "pick",
-        "name": "2025 #10 Overall Pick",
-        "acquisitionType": "original",
+        "name": "2025 1st Round Pick (#10)",
+        "acquisitionType": "draft",
         "date": "2025-06-25",
         "becamePlayer": "Khaman Maluach",
         "note": "Rockets' own lottery pick; used by Phoenix to draft Maluach",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "player",
         "name": "Daeqwon Plowden",
-        "acquisitionType": "undrafted",
+        "acquisitionType": "free-agent",
         "date": "2025-06-25",
         "note": "Two-way player sent to Phoenix",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2025 #31 Overall Pick",
-        "acquisitionType": "original",
+        "name": "2025 2nd Round Pick (#31)",
+        "acquisitionType": "draft",
         "date": "2025-06-25",
         "becamePlayer": "Rasheer Fleming",
         "note": "2nd round pick sent to Phoenix; used to draft Fleming",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2025 #41 Overall Pick",
-        "acquisitionType": "original",
+        "name": "2025 2nd Round Pick (#41)",
+        "acquisitionType": "draft",
         "date": "2025-06-25",
         "becamePlayer": "Koby Brea",
         "note": "2nd round pick sent to Phoenix; used to draft Brea",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
-        "type": "other",
+        "type": "pick",
         "name": "2026 2nd Round Pick",
-        "acquisitionType": "original",
+        "acquisitionType": "trade",
         "note": "Sent to Phoenix as part of Durant trade package",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": [],
+        "date": "2025-07-06"
       },
       {
-        "type": "other",
+        "type": "pick",
         "name": "2032 2nd Round Pick",
-        "acquisitionType": "original",
+        "acquisitionType": "trade",
         "note": "Sent to Phoenix as part of Durant trade package",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": [],
+        "date": "2025-07-06"
       }
     ]
   }

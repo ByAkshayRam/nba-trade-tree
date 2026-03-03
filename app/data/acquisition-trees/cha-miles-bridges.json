@@ -2,21 +2,31 @@
   "_meta": {
     "team": "CHA",
     "player": "Miles Bridges",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2018,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "Basketball-Reference, ESPN",
+    "sourceUrl": "https://www.basketball-reference.com/players/b/bridgmi02.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Miles Bridges",
-    "acquisitionType": "draft",
+    "acquisitionType": "draft-night-trade",
     "date": "2018-06-21",
     "currentTeam": "CHA",
     "draftPick": 12,
     "draftRound": 1,
-    "note": "Michigan State forward, athletic versatile player",
-    "tradeDescription": "Drafted by Hornets with 12th overall pick", 
-    "isOrigin": true
+    "tradePartner": "LAC",
+    "tradeDescription": "Clippers drafted Bridges 12th overall and traded him with two future 2nd-round picks to Hornets for Shai Gilgeous-Alexander (11th pick)",
+    "note": "Michigan State forward, athletic versatile player. Re-signed with Charlotte Jul 2, 2023 and Jul 14, 2024.",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2018 1st Round Pick (#11)",
+        "becamePlayer": "Shai Gilgeous-Alexander",
+        "acquisitionType": "original",
+        "date": "2018-06-21",
+        "note": "Hornets' own 11th overall pick, sent to Clippers in draft-night swap for Bridges",
+        "isOrigin": true
+      }
+    ]
   }
 }

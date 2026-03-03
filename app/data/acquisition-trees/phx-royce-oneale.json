@@ -2,10 +2,9 @@
   "_meta": {
     "team": "PHX",
     "player": "Royce O'Neale",
-    "source": "ESPN, NBA.com, Basketball-Reference",
-    "originYear": 2017,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/o/onealro01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,25 +13,22 @@
     "date": "2024-02-08",
     "currentTeam": "PHX",
     "tradePartner": "BKN",
-    "tradeDescription": "3-team trade: Suns sent Bates-Diop, Goodwin, 3 2nds to Nets; Metu, Watanabe, 2026 1st swap to Grizzlies; received O'Neale from Nets, Roddy from Grizzlies",
-    "note": "Baylor forward, acquired from Brooklyn in 3-team trade at 2024 deadline",
+    "tradeDescription": "3-team trade: PHX sent Bates-Diop, Goodwin, 2026 2nd (least favorable), 2028 2nd (MEM own), 2029 2nd (MEM own) to BKN; Metu, Watanabe, 2026 1st swap to MEM; PHX received O'Neale from BKN, David Roddy from MEM",
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Keita Bates-Diop",
         "acquisitionType": "free-agent",
         "date": "2023-07-02",
-        "note": "Ohio State forward, signed as free agent",
         "isOrigin": true
       },
       {
         "type": "player",
         "name": "Jordan Goodwin",
         "acquisitionType": "trade",
-        "date": "2023-06-24",
+        "date": "2023-06-23",
         "tradePartner": "WAS",
-        "tradeDescription": "Acquired from Washington in Bradley Beal trade",
-        "note": "Saint Louis guard, acquired from Washington in Bradley Beal trade",
+        "tradeDescription": "3-team trade (Beal trade): PHX sent Chris Paul, Landry Shamet, cash, 2024 1st swap, 2024 2nd, 2025 2nd (PHO own), 2026 1st swap, 2026 2nd, 2027 2nd, 2028 1st swap, 2030 1st swap, 2030 2nd to WAS; 2028 2nd to IND; PHX received Bradley Beal, Jordan Goodwin, Isaiah Todd from WAS",
         "assetsGivenUp": [
           {
             "type": "player",
@@ -40,34 +36,21 @@
             "acquisitionType": "trade",
             "date": "2020-11-16",
             "tradePartner": "OKC",
-            "tradeDescription": "PHX traded Ty Jerome, Jalen Lecque, Kelly Oubre Jr., Ricky Rubio and 2022 1st (Peyton Watson) to OKC for Chris Paul and Abdel Nader",
-            "note": "All-Star point guard acquired from Oklahoma City",
+            "tradeDescription": "PHX traded Kelly Oubre Jr., Ricky Rubio, Ty Jerome, Jalen Lecque, and 2022 1st round pick (#30 Peyton Watson) to OKC for Chris Paul and Abdel Nader",
             "assetsGivenUp": [
               {
                 "type": "player",
                 "name": "Kelly Oubre Jr.",
-                "acquisitionType": "trade",
-                "date": "2018-12-17",
-                "tradePartner": "WAS",
-                "tradeDescription": "PHX traded Trevor Ariza to WAS for Kelly Oubre Jr. and Austin Rivers",
-                "note": "Wing acquired from Washington in Trevor Ariza trade. Sent to OKC for CP3.",
-                "assetsGivenUp": [
-                  {
-                    "type": "player",
-                    "name": "Trevor Ariza",
-                    "acquisitionType": "free-agent",
-                    "date": "2018-07-06",
-                    "note": "Veteran wing, signed as FA by PHX summer 2018. Sent to WAS for Oubre.",
-                    "isOrigin": true
-                  }
-                ]
+                "acquisitionType": "free-agent",
+                "date": "2019-07-16",
+                "tradeDescription": "Re-signed as free agent",
+                "isOrigin": true
               },
               {
                 "type": "player",
                 "name": "Ricky Rubio",
                 "acquisitionType": "free-agent",
                 "date": "2019-07-08",
-                "note": "Spanish guard, signed as free agent by PHX. Sent to OKC for CP3.",
                 "isOrigin": true
               },
               {
@@ -77,7 +60,6 @@
                 "date": "2019-06-20",
                 "draftPick": 24,
                 "draftRound": 1,
-                "note": "Virginia guard, PHX 2019 1st round pick. Sent to OKC for CP3.",
                 "isOrigin": true
               },
               {
@@ -87,16 +69,15 @@
                 "date": "2019-06-20",
                 "draftPick": 47,
                 "draftRound": 2,
-                "note": "PHX 2019 2nd round pick. Sent to OKC for CP3.",
                 "isOrigin": true
               },
               {
                 "type": "pick",
-                "name": "2022 PHX 1st Round Pick",
-                "acquisitionType": "original",
+                "name": "2022 1st Round Pick (#30)",
+                "acquisitionType": "own",
                 "becamePlayer": "Peyton Watson",
-                "note": "PHX own 2022 1st, sent to OKC for CP3; became #30 overall (traded to DEN)",
-                "isOrigin": true
+                "isOrigin": true,
+                "date": "2022-06-23"
               }
             ]
           },
@@ -106,28 +87,181 @@
             "acquisitionType": "trade",
             "date": "2021-08-06",
             "tradePartner": "BKN",
-            "tradeDescription": "PHX traded Jevon Carter and #29 pick (Day'Ron Sharpe) to BKN for Landry Shamet",
-            "note": "Wichita State guard, acquired from Brooklyn Nets",
+            "tradeDescription": "PHX traded Jevon Carter and Day'Ron Sharpe to BKN for Landry Shamet. BKN also received a trade exception.",
             "assetsGivenUp": [
               {
                 "type": "player",
                 "name": "Jevon Carter",
-                "acquisitionType": "draft",
-                "date": "2018-06-21",
-                "draftPick": 32,
-                "draftRound": 2,
-                "note": "West Virginia guard, PHX 2018 2nd round pick. Sent to BKN for Shamet.",
-                "isOrigin": true
+                "acquisitionType": "trade",
+                "date": "2019-07-07",
+                "tradePartner": "MEM",
+                "tradeDescription": "PHX traded Josh Jackson, De'Anthony Melton, and a 2020 2nd round pick (#42 Robert Woodard) to MEM for Jevon Carter and Kyle Korver",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Josh Jackson",
+                    "acquisitionType": "draft",
+                    "date": "2017-06-22",
+                    "draftPick": 4,
+                    "draftRound": 1,
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "player",
+                    "name": "De'Anthony Melton",
+                    "acquisitionType": "trade",
+                    "date": "2018-08-31",
+                    "tradePartner": "HOU",
+                    "tradeDescription": "PHX traded Marquese Chriss and Brandon Knight to HOU for Ryan Anderson and De'Anthony Melton",
+                    "assetsGivenUp": [
+                      {
+                        "type": "player",
+                        "name": "Marquese Chriss",
+                        "acquisitionType": "draft",
+                        "date": "2016-06-23",
+                        "draftPick": 8,
+                        "draftRound": 1,
+                        "isOrigin": true
+                      },
+                      {
+                        "type": "player",
+                        "name": "Brandon Knight",
+                        "acquisitionType": "trade",
+                        "date": "2015-02-19",
+                        "tradePartner": "MIL",
+                        "tradeDescription": "3-team trade: PHX traded Tyler Ennis, Miles Plumlee to MIL, 2018 1st (became Mikal Bridges) to PHI; MIL traded Brandon Knight to PHX; PHI traded Michael Carter-Williams to MIL",
+                        "assetsGivenUp": [
+                          {
+                            "type": "player",
+                            "name": "Tyler Ennis",
+                            "acquisitionType": "draft",
+                            "date": "2014-06-26",
+                            "draftPick": 18,
+                            "draftRound": 1,
+                            "isOrigin": true
+                          },
+                          {
+                            "type": "player",
+                            "name": "Miles Plumlee",
+                            "acquisitionType": "trade",
+                            "date": "2013-07-27",
+                            "tradePartner": "IND",
+                            "tradeDescription": "PHX traded Luis Scola to IND for Gerald Green, Miles Plumlee, and a 2014 1st round pick (#27 Bogdan Bogdanovi\u0107)",
+                            "assetsGivenUp": [
+                              {
+                                "type": "player",
+                                "name": "Luis Scola",
+                                "acquisitionType": "free-agent",
+                                "date": "2012-07-15",
+                                "isOrigin": true
+                              }
+                            ]
+                          },
+                          {
+                            "type": "pick",
+                            "name": "2018 1st Round Pick via LAL",
+                            "acquisitionType": "own",
+                            "date": "2018-06-21",
+                            "becamePlayer": "Mikal Bridges",
+                            "isOrigin": true
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2020 2nd Round Pick (#42)",
+                    "acquisitionType": "own",
+                    "date": "2020-11-18",
+                    "becamePlayer": "Robert Woodard",
+                    "isOrigin": true
+                  }
+                ]
               },
               {
                 "type": "pick",
-                "name": "2021 PHX 1st Round Pick (#29)",
-                "acquisitionType": "original",
+                "name": "2021 1st Round Pick (#29)",
+                "acquisitionType": "own",
+                "date": "2021-07-29",
                 "becamePlayer": "Day'Ron Sharpe",
-                "note": "PHX own 2021 1st, sent to BKN for Shamet; became #29 overall",
                 "isOrigin": true
               }
             ]
+          },
+          {
+            "type": "pick",
+            "name": "2024 1st Round Pick Swap",
+            "acquisitionType": "own",
+            "tradeDescription": "Right to swap, did not convey",
+            "isOrigin": true,
+            "date": "2023-06-23"
+          },
+          {
+            "type": "pick",
+            "name": "2024 2nd Round Pick (#51)",
+            "acquisitionType": "own",
+            "date": "2024-06-27",
+            "becamePlayer": "Melvin Ajin\u00e7a",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2025 2nd Round Pick",
+            "acquisitionType": "own",
+            "date": "2025-06-25",
+            "becamePlayer": "Micah Peavy",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2026 1st Round Pick Swap",
+            "acquisitionType": "own",
+            "isOrigin": true,
+            "date": "2023-06-23"
+          },
+          {
+            "type": "pick",
+            "name": "2026 2nd Round Pick",
+            "acquisitionType": "own",
+            "isOrigin": true,
+            "date": "2023-06-23"
+          },
+          {
+            "type": "pick",
+            "name": "2027 2nd Round Pick",
+            "acquisitionType": "own",
+            "isOrigin": true,
+            "date": "2023-06-23"
+          },
+          {
+            "type": "pick",
+            "name": "2028 1st Round Pick Swap",
+            "acquisitionType": "own",
+            "isOrigin": true,
+            "date": "2023-06-23"
+          },
+          {
+            "type": "pick",
+            "name": "2028 2nd Round Pick",
+            "acquisitionType": "own",
+            "tradeDescription": "Sent to IND as part of 3-team Beal trade",
+            "isOrigin": true,
+            "date": "2023-06-23"
+          },
+          {
+            "type": "pick",
+            "name": "2030 1st Round Pick Swap",
+            "acquisitionType": "own",
+            "isOrigin": true,
+            "date": "2023-06-23"
+          },
+          {
+            "type": "pick",
+            "name": "2030 2nd Round Pick",
+            "acquisitionType": "own",
+            "isOrigin": true,
+            "date": "2023-06-23"
           }
         ]
       },
@@ -136,7 +270,6 @@
         "name": "Chimezie Metu",
         "acquisitionType": "free-agent",
         "date": "2023-07-02",
-        "note": "USC forward, signed as free agent (sent to Memphis in 3-team trade)",
         "isOrigin": true
       },
       {
@@ -144,36 +277,35 @@
         "name": "Yuta Watanabe",
         "acquisitionType": "free-agent",
         "date": "2023-07-02",
-        "note": "George Washington forward, signed as free agent (sent to Memphis in 3-team trade)",
         "isOrigin": true
       },
       {
         "type": "pick",
         "name": "2026 1st Round Pick Swap",
-        "acquisitionType": "original",
-        "note": "Phoenix's right to swap 2026 first-round picks, sent to Memphis",
-        "isOrigin": true
+        "acquisitionType": "own",
+        "isOrigin": true,
+        "date": "2024-02-08"
       },
       {
         "type": "pick",
         "name": "2026 2nd Round Pick",
-        "acquisitionType": "original",
-        "note": "Least favorable 2026 second-round pick, sent to Brooklyn",
-        "isOrigin": true
+        "acquisitionType": "own",
+        "isOrigin": true,
+        "date": "2024-02-08"
       },
       {
         "type": "pick",
-        "name": "2028 2nd Round Pick",
-        "acquisitionType": "original",
-        "note": "Memphis's own 2028 second-round pick, sent to Brooklyn",
-        "isOrigin": true
+        "name": "2028 2nd Round Pick via MEM",
+        "acquisitionType": "own",
+        "isOrigin": true,
+        "date": "2024-02-08"
       },
       {
         "type": "pick",
-        "name": "2029 2nd Round Pick",
-        "acquisitionType": "original",
-        "note": "Memphis's own 2029 second-round pick, sent to Brooklyn",
-        "isOrigin": true
+        "name": "2029 2nd Round Pick via MEM",
+        "acquisitionType": "own",
+        "isOrigin": true,
+        "date": "2024-02-08"
       }
     ]
   }

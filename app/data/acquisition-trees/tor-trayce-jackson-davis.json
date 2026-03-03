@@ -2,10 +2,9 @@
   "_meta": {
     "team": "TOR",
     "player": "Trayce Jackson-Davis",
-    "source": "Basketball-Reference Transaction History",
-    "originYear": 2026,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/j/jackstr02.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -15,15 +14,17 @@
     "currentTeam": "TOR",
     "tradePartner": "GSW",
     "espnId": "4431684",
-    "note": "Acquired from Golden State Warriors for a 2026 2nd-round pick (LAL own).",
+    "tradeDescription": "Raptors traded a 2026 second-round pick (LAL own) to Golden State Warriors for Trayce Jackson-Davis.",
     "assetsGivenUp": [
       {
         "type": "pick",
-        "name": "2026 2nd-Round Pick",
-        "acquisitionType": "original",
+        "name": "2026 2nd Round Pick via LAL",
+        "acquisitionType": "draft",
         "date": "2026-02-04",
-        "note": "LAL own 2nd-round pick, sent to GSW for Trayce Jackson-Davis.",
-        "isOrigin": true
+        "details": "2026 Second Round Pick (LAL own). Acquired by TOR in the Feb 6, 2025 5-team Jimmy Butler trade (MIA sent this pick + cash to TOR for Davion Mitchell).",
+        "note": "Sent to GSW for Trayce Jackson-Davis.",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

@@ -3,17 +3,16 @@
     "team": "NOP",
     "player": "Kevon Looney",
     "source": "ESPN, Basketball-Reference",
-    "originYear": 2015,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "lastUpdated": "2026-03-01",
+    "sourceUrl": "https://www.basketball-reference.com/players/l/looneke01.html"
   },
   "tree": {
     "type": "player",
     "name": "Kevon Looney",
     "acquisitionType": "free-agent",
-    "date": "2025-06-30",
-    "currentTeam": "NOP",
+    "date": "2025-07-07",
     "note": "Center signed from Golden State in free agency. Est. 3yr/$20-25M (~$7-8M/yr)",
-    "isOrigin": true
+    "isOrigin": true,
+    "assetsGivenUp": []
   }
 }

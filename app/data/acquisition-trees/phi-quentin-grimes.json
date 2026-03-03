@@ -7,8 +7,9 @@
     "source": "Basketball-Reference Transaction Log",
     "originYear": 2025,
     "depth": 2,
-    "lastUpdated": "2026-02-16",
-    "accuracy": "high"
+    "lastUpdated": "2026-03-01",
+    "accuracy": "high",
+    "sourceUrl": "https://www.basketball-reference.com/players/g/grimequ01.html"
   },
   "tree": {
     "type": "player",
@@ -17,6 +18,7 @@
     "date": "2025-02-04",
     "currentTeam": "PHI",
     "tradePartner": "DAL",
+    "isOrigin": false,
     "note": "Acquired from Dallas Mavericks for Caleb Martin and a 2025 2nd round pick. Re-signed September 30, 2025.",
     "assetsGivenUp": [
       {
@@ -25,17 +27,23 @@
         "acquisitionType": "free-agent",
         "date": "2024-07-06",
         "note": "Signed as free agent from Miami Heat.",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2025 2nd Round Pick",
-        "year": 2025,
-        "round": 2,
-        "details": "More favorable of available 2nd round picks",
+        "name": "2025 2nd Round Pick (#35)",
+        "acquisitionType": "trade",
+        "date": "2024-07-06",
+        "tradePartner": "CHA",
+        "tradeDescription": "Originally PHI's own pick. Traveled through OKC (Mar 2021) → CHA (Feb 2024) → DAL (Jul 2024 6-team trade) → back to PHI (Feb 2025 Grimes trade).",
+        "draftPick": 35,
+        "draftRound": 2,
         "becamePlayer": "Johni Broome",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
-    ]
+    ],
+    "tradeDescription": "Philadelphia traded Caleb Martin to Dallas for Quentin Grimes and a 2025 2nd round pick (became Johni Broome #35). Dallas also received a trade exception. Philadelphia also received a trade exception."
   }
 }

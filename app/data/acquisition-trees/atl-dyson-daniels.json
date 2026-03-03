@@ -2,31 +2,83 @@
   "_meta": {
     "team": "ATL",
     "player": "Dyson Daniels",
-    "source": "NBA/ESPN Trade History",
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/d/daniedy01.html",
     "originYear": 2022,
-    "depth": 2,
-    "lastUpdated": "2026-02-15"
+    "depth": 3,
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Dyson Daniels",
     "acquisitionType": "trade",
-    "date": "2024-06-27",
+    "date": "2024-07-06",
     "currentTeam": "ATL",
     "tradePartner": "NOP",
-    "tradeDescription": "Hawks acquire Dyson Daniels from Pelicans in Dejounte Murray trade",
-    "note": "Australian guard, elite perimeter defender",
+    "tradeDescription": "Hawks traded Dejounte Murray to Pelicans for Dyson Daniels, E.J. Liddell, Larry Nance Jr., Cody Zeller, 2025 1st (LAL, became Drake Powell), and 2027 1st (least favorable).",
+    "note": "Australian guard, elite perimeter defender. #8 pick in 2022 draft (via LAL/AD trade pick).",
     "assetsGivenUp": [
       {
         "type": "player",
-        "name": "AJ Griffin",
-        "acquisitionType": "draft",
-        "date": "2022-06-23",
-        "draftPick": 16,
-        "draftRound": 1,
-        "tradeDescription": "Hawks drafted Griffin with #16 pick",
-        "note": "Duke sharpshooter, lottery talent who slipped due to injury concerns. Drafted by ATL with #16 pick in 2022.",
-        "isOrigin": true
+        "name": "Dejounte Murray",
+        "acquisitionType": "trade",
+        "date": "2022-06-30",
+        "tradePartner": "SAS",
+        "tradeDescription": "Hawks traded Danilo Gallinari, 2023 1st (CHO, didn't convey), 2025 1st (ATL own, became Carter Bryant), 2026 1st swap rights, and 2027 1st (ATL own) to Spurs for Murray and Jock Landale.",
+        "note": "All-Star PG, drafted #29 by SAS in 2016. ATL gave up massive pick haul to acquire him.",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Danilo Gallinari",
+            "acquisitionType": "free-agent",
+            "date": "2021-08-10",
+            "note": "Signed as free agent. Veteran stretch four, sent to SAS in Murray trade.",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2025 1st Round Pick via ATL",
+            "becamePlayer": "Carter Bryant",
+            "acquisitionType": "original",
+            "date": "2022-06-30",
+            "note": "Atlanta's own 2025 1st-round pick, sent to SAS in Murray trade.",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2026 2nd Round Pick via ATL",
+            "acquisitionType": "original",
+            "date": "2022-06-30",
+            "note": "Originally a 2023 CHO 1st (top-16 protected '23, top-14 '24) \u2014 never conveyed, converted to ATL's own 2026 2nd. SAS included in De'Aaron Fox 3-team trade to SAC.",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2027 2nd Round Pick via ATL",
+            "acquisitionType": "original",
+            "date": "2022-06-30",
+            "note": "Originally a 2023 CHO 1st (top-16 protected '23, top-14 '24) \u2014 never conveyed, converted to ATL's own 2027 2nd. SAS included in De'Aaron Fox 3-team trade to SAC.",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2026 1st Round Pick",
+            "becamePlayer": "Swap Rights \u2192 SAS",
+            "acquisitionType": "original",
+            "date": "2022-06-30",
+            "note": "SAS has right to swap 2026 1st-round picks with ATL if Atlanta's pick is better.",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2027 1st Round Pick via ATL",
+            "acquisitionType": "original",
+            "date": "2022-06-30",
+            "note": "Atlanta's own 2027 1st-round pick, sent to SAS in Murray trade.",
+            "isOrigin": true
+          }
+        ]
       }
     ]
   }

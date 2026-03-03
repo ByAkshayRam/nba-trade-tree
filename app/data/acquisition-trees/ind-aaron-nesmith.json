@@ -2,51 +2,53 @@
   "_meta": {
     "team": "IND",
     "player": "Aaron Nesmith",
-    "source": "Basketball-Reference, ESPN, NBA Trade History",
-    "originYear": 2019,
-    "depth": 3,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/n/nesmiaa01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Aaron Nesmith",
     "acquisitionType": "trade",
-    "date": "2022-07-01",
+    "date": "2022-07-09",
     "currentTeam": "IND",
     "tradePartner": "BOS",
-    "note": "Forward from Vanderbilt, 14th overall pick in 2020 NBA Draft. Acquired in Malcolm Brogdon trade.",
+    "tradeDescription": "IND received Aaron Nesmith, Daniel Theis, Malik Fitts, Juwan Morgan, Nik Stauskas, and a 2023 1st round pick (Julian Strawther #29) from BOS for Malcolm Brogdon. IND also received a trade exception.",
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Malcolm Brogdon",
-        "acquisitionType": "trade",
+        "acquisitionType": "sign-and-trade",
         "date": "2019-07-06",
         "tradePartner": "MIL",
-        "note": "Acquired via sign-and-trade from MIL",
+        "tradeDescription": "IND received Malcolm Brogdon from MIL for a 2020 1st round pick (R.J. Hampton #24), a 2022 2nd round pick (Max Christie #35), and a 2025 2nd round pick (Taelon Peter #54).",
         "assetsGivenUp": [
           {
             "type": "pick",
-            "name": "2020 IND 1st Round Pick",
-            "note": "IND's own pick. Traded by MIL to DEN.",
+            "name": "2020 1st Round Pick (#24)",
+            "acquisitionType": "own",
             "becamePlayer": "R.J. Hampton",
             "draftPick": 24,
-            "isOrigin": true
+            "isOrigin": true,
+            "assetsGivenUp": []
           },
           {
             "type": "pick",
-            "name": "2022 IND 2nd Round Pick",
-            "note": "Sent to MIL in Brogdon S&T. Pick was subsequently traded by Milwaukee.",
+            "name": "2022 2nd Round Pick (#35)",
+            "acquisitionType": "own",
+            "becamePlayer": "Max Christie",
+            "draftPick": 35,
             "isOrigin": true,
-            "becamePlayer": "Hugo Besson",
-            "draftPick": 35
+            "assetsGivenUp": []
           },
           {
             "type": "pick",
-            "name": "2025 IND 2nd Round Pick",
-            "note": "Sent to MIL",
-            "isOrigin": true,
+            "name": "2025 2nd Round Pick (#54)",
+            "acquisitionType": "own",
             "becamePlayer": "Taelon Peter",
-            "draftPick": 54
+            "draftPick": 54,
+            "isOrigin": true,
+            "assetsGivenUp": []
           }
         ]
       }

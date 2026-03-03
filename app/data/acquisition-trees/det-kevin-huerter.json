@@ -2,10 +2,9 @@
   "_meta": {
     "team": "DET",
     "player": "Kevin Huerter",
-    "source": "ESPN, The Athletic, NBA.com - February 2026 3-team trade",
-    "originYear": 2018,
-    "depth": 2,
-    "lastUpdated": "2026-02-15"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/h/huertke01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,8 +13,7 @@
     "date": "2026-02-03",
     "currentTeam": "DET",
     "tradePartner": "CHI",
-    "tradeDescription": "3-team trade: Pistons acquire Kevin Huerter and Dario Saric from Bulls, send Jaden Ivey to Bulls, Timberwolves send pick swap to Pistons",
-    "note": "Maryland sharpshooter acquired from Chicago Bulls in 3-team deal",
+    "tradeDescription": "3-team trade: CHI traded Kevin Huerter and Dario Saric to DET; DET traded Jaden Ivey to CHI; MIN traded Mike Conley to CHI and a 2026 1st round draft pick swap to DET; MIN also received a trade exception",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -24,20 +22,10 @@
         "date": "2022-06-23",
         "draftPick": 5,
         "draftRound": 1,
-        "note": "Guard from Purdue, drafted 5th overall by Detroit in 2022",
-        "isOrigin": true
+        "tradeDescription": "Drafted 5th overall by Detroit in the 2022 NBA Draft",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
-    ],
-    "tradeChain": {
-      "type": "player",
-      "name": "Kevin Huerter",
-      "acquisitionType": "draft",
-      "date": "2018-06-21",
-      "draftPick": 19,
-      "draftRound": 1,
-      "note": "Guard from Maryland, drafted 19th overall by Atlanta Hawks in 2018",
-      "isOrigin": true
-    },
-    "espnId": "4066372"
+    ]
   }
 }

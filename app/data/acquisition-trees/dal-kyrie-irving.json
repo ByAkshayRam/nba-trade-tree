@@ -2,20 +2,19 @@
   "_meta": {
     "team": "DAL",
     "player": "Kyrie Irving",
-    "source": "Basketball-Reference, NBA.com",
-    "originYear": 2014,
-    "depth": 4,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/i/irvinky01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Kyrie Irving",
     "acquisitionType": "trade",
-    "date": "2023-02-05",
+    "date": "2023-02-06",
     "currentTeam": "DAL",
     "tradePartner": "BKN",
-    "note": "Traded from Brooklyn to Dallas with Markieff Morris",
-    "isOrigin": false,
+    "tradeDescription": "DAL traded Spencer Dinwiddie, Dorian Finney-Smith, 2027 2nd, 2029 1st, and 2029 2nd to BKN for Kyrie Irving and Markieff Morris",
+    "note": "Duke guard, 2011 #1 overall pick by Cleveland",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -23,8 +22,8 @@
         "acquisitionType": "trade",
         "date": "2022-02-10",
         "tradePartner": "WAS",
-        "note": "Traded from Washington to Dallas with Davis Bertans for Kristaps Porzingis and a 2022 2nd round pick",
-        "isOrigin": false,
+        "tradeDescription": "DAL traded Kristaps Porzingis and a 2022 2nd round pick (Yannick Nzosa) to WAS for Davis Bertans and Spencer Dinwiddie",
+        "note": "Colorado guard, undrafted 2014",
         "assetsGivenUp": [
           {
             "type": "player",
@@ -32,8 +31,8 @@
             "acquisitionType": "trade",
             "date": "2019-01-31",
             "tradePartner": "NYK",
-            "note": "Traded from New York to Dallas with Tim Hardaway Jr., Courtney Lee, and Trey Burke for Dennis Smith Jr., DeAndre Jordan, Wesley Matthews, and 2 future 1st round picks",
-            "isOrigin": false,
+            "tradeDescription": "DAL traded Dennis Smith Jr., DeAndre Jordan, Wesley Matthews, 2021 1st (Keon Johnson #21), and 2024 1st (Kyshawn George #24) to NYK for Kristaps Porzingis, Tim Hardaway Jr., Courtney Lee, and Trey Burke",
+            "note": "Latvian forward, 2015 #4 pick by New York",
             "assetsGivenUp": [
               {
                 "type": "player",
@@ -41,8 +40,10 @@
                 "acquisitionType": "draft",
                 "date": "2017-06-22",
                 "draftPick": 9,
-                "note": "NC State guard, drafted 9th overall by Dallas",
-                "isOrigin": true
+                "draftRound": 1,
+                "note": "NC State guard, drafted #9 by Dallas",
+                "isOrigin": true,
+                "assetsGivenUp": []
               },
               {
                 "type": "player",
@@ -50,70 +51,87 @@
                 "acquisitionType": "free-agent",
                 "date": "2018-07-06",
                 "note": "Signed as free agent from LA Clippers",
-                "isOrigin": true
+                "isOrigin": true,
+                "assetsGivenUp": []
+              },
+              {
+                "type": "player",
+                "name": "Wesley Matthews",
+                "acquisitionType": "free-agent",
+                "date": "2015-07-09",
+                "note": "Signed as free agent from Portland Trail Blazers",
+                "isOrigin": true,
+                "assetsGivenUp": []
               },
               {
                 "type": "pick",
-                "name": "2021 DAL 1st Round Pick",
-                "acquisitionType": "original",
+                "name": "2021 1st Round Pick (#21) via DAL",
+                "acquisitionType": "own",
                 "date": "2021-07-29",
                 "becamePlayer": "Keon Johnson",
                 "note": "Unprotected, conveyed to New York as #21 overall",
-                "isOrigin": true
+                "isOrigin": true,
+                "assetsGivenUp": []
               },
               {
                 "type": "pick",
-                "name": "2023 DAL 1st Round Pick",
-                "acquisitionType": "original",
+                "name": "2024 1st Round Pick (#24) via DAL",
+                "acquisitionType": "own",
                 "date": "2024-06-26",
                 "becamePlayer": "Kyshawn George",
                 "note": "Top-10 protected, did not convey in 2023, rolled to 2024 as #24 overall to New York",
-                "isOrigin": true
+                "isOrigin": true,
+                "assetsGivenUp": []
               }
             ]
           },
           {
             "type": "pick",
-            "name": "2022 DAL 2nd Round Pick",
-            "acquisitionType": "original",
+            "name": "2022 2nd Round Pick (#54) via DAL",
+            "acquisitionType": "own",
             "date": "2022-06-23",
             "becamePlayer": "Yannick Nzosa",
-            "note": "Dallas own 2022 second-round pick, sent to Washington as #54 overall",
-            "isOrigin": true
+            "note": "Dallas own 2022 second-round pick, sent to Washington",
+            "isOrigin": true,
+            "assetsGivenUp": []
           }
         ]
       },
       {
         "type": "player",
         "name": "Dorian Finney-Smith",
-        "acquisitionType": "undrafted",
+        "acquisitionType": "free-agent",
         "date": "2016-07-01",
         "note": "Florida forward, signed by Dallas as undrafted free agent in 2016",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2029 DAL 1st Round Pick",
-        "acquisitionType": "original",
+        "name": "2029 1st Round Pick via DAL",
+        "acquisitionType": "own",
         "date": "2029-06-26",
         "note": "Dallas own 2029 first-round pick, sent to Brooklyn",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2027 DAL 2nd Round Pick",
-        "acquisitionType": "original",
+        "name": "2027 2nd Round Pick via DAL",
+        "acquisitionType": "own",
         "date": "2027-06-26",
         "note": "Dallas own 2027 second-round pick, sent to Brooklyn",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2029 DAL 2nd Round Pick",
-        "acquisitionType": "original",
+        "name": "2029 2nd Round Pick via DAL",
+        "acquisitionType": "own",
         "date": "2029-06-26",
         "note": "Dallas own 2029 second-round pick, sent to Brooklyn",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

@@ -2,10 +2,11 @@
   "_meta": {
     "team": "BKN",
     "player": "Danny Wolf",
-    "source": "ESPN, NBA.com, NetsDaily",
-    "originYear": 2013,
-    "depth": 5,
-    "lastUpdated": "2026-02-15"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/w/wolfda01.html",
+    "originYear": 2008,
+    "depth": 6,
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -15,32 +16,38 @@
     "draftPick": 27,
     "draftRound": 1,
     "currentTeam": "BKN",
-    "note": "Drafted with BKN's own pick, reacquired from Houston",
+    "note": "Michigan big man, 7-foot playmaker. Drafted #27 with Houston's 1st-round pick acquired in the BKN-HOU pick reacquisition trade.",
     "assetsGivenUp": [
       {
         "type": "pick",
-        "name": "2025 BKN 1st Round Pick (#27)",
+        "name": "2025 1st Round Pick (#27) via HOU",
         "acquisitionType": "trade",
         "date": "2024-06-26",
         "tradePartner": "HOU",
         "becamePlayer": "Danny Wolf",
-        "tradeDescription": "Nets reacquired their own 2025 1st and 2026 1st from Rockets by trading PHX 2027 1st, PHX 2025 swap rights (HOU/OKC for PHX), and 2029 assets",
+        "tradeDescription": "Nets reacquired their own 2025 1st (negating HOU swap), received HOU's 2025 1st, and got back their 2026 1st from Rockets. BKN sent PHX 2027 1st, PHX/HOU/OKC 2025 swap rights, and 2029 assets (two best of PHX/DAL/BKN).",
+        "note": "Houston's own 2025 1st-round pick (#27). Part of the trade where BKN got back picks owed to HOU from the Harden mega-trade.",
+        "isOrigin": false,
         "assetsGivenUp": [
           {
             "type": "pick",
-            "name": "2027 PHX 1st Round Pick",
+            "name": "2027 1st Round Pick via PHX",
             "acquisitionType": "trade",
             "date": "2023-02-09",
             "tradePartner": "PHX",
-            "tradeDescription": "Acquired from Phoenix in Kevin Durant trade. One of four 1st-round picks BKN received for KD.",
+            "tradeDescription": "One of four 1st-round picks acquired from Phoenix in the Kevin Durant trade.",
+            "note": "Acquired in KD trade, sent to Houston to reacquire BKN's own picks.",
+            "isOrigin": false,
             "assetsGivenUp": [
               {
                 "type": "player",
                 "name": "Kevin Durant",
-                "acquisitionType": "trade",
+                "acquisitionType": "sign-and-trade",
                 "date": "2019-07-07",
                 "tradePartner": "GSW",
-                "tradeDescription": "Sign-and-trade: Nets sent D'Angelo Russell, Treveon Graham, and Shabazz Napier to Warriors for Kevin Durant and a protected 2020 1st round pick",
+                "tradeDescription": "Sign-and-trade: Nets traded D'Angelo Russell, Treveon Graham, and Shabazz Napier to Warriors for Kevin Durant. Conditional 2020 1st did not convey; became 2025 2nd (Javon Small).",
+                "note": "4x scoring champ, 2x Finals MVP.",
+                "isOrigin": false,
                 "assetsGivenUp": [
                   {
                     "type": "player",
@@ -48,7 +55,8 @@
                     "acquisitionType": "trade",
                     "date": "2017-06-22",
                     "tradePartner": "LAL",
-                    "tradeDescription": "Nets traded Brook Lopez and the 27th pick (Kyle Kuzma) to Lakers for D'Angelo Russell and Timofey Mozgov",
+                    "tradeDescription": "Nets traded Brook Lopez and the #27 pick (Kyle Kuzma) to Lakers for D'Angelo Russell and Timofey Mozgov.",
+                    "isOrigin": false,
                     "assetsGivenUp": [
                       {
                         "type": "player",
@@ -56,14 +64,61 @@
                         "acquisitionType": "draft",
                         "date": "2008-06-26",
                         "draftPick": 10,
-                        "note": "Drafted 10th overall by Brooklyn (then New Jersey Nets) in 2008 NBA Draft",
+                        "draftRound": 1,
+                        "note": "Drafted #10 overall by New Jersey Nets in 2008.",
                         "isOrigin": true
+                      },
+                      {
+                        "type": "pick",
+                        "name": "2017 1st Round Pick (#27 via pick swap)",
+                        "becamePlayer": "Kyle Kuzma",
+                        "acquisitionType": "original",
+                        "date": "2017-06-22",
+                        "note": "BKN had the worst record in 2017 (#1 pick), but owed it to BOS from the KG/Pierce trade. BOS swapped #1 to PHI for #3 (Jayson Tatum). BKN got BOS's pick position (#27) via the swap. LAL drafted Kyle Kuzma.",
+                        "isOrigin": false,
+                        "assetsGivenUp": [
+                          {
+                            "type": "pick",
+                            "name": "2017 1st Round Pick (#1 overall)",
+                            "becamePlayer": "Markelle Fultz",
+                            "acquisitionType": "original",
+                            "date": "2017-06-22",
+                            "note": "BKN's own pick — worst record in NBA, #1 overall. Owed to BOS from the 2013 KG/Pierce trade. BOS traded #1 to PHI for #3 (Jayson Tatum) and a future 1st. PHI drafted Markelle Fultz.",
+                            "isOrigin": true
+                          }
+                        ]
                       }
                     ]
+                  },
+                  {
+                    "type": "player",
+                    "name": "Treveon Graham",
+                    "acquisitionType": "free-agent",
+                    "date": "2018-08-01",
+                    "note": "Signed as FA by BKN. Sent to GSW in KD sign-and-trade.",
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "player",
+                    "name": "Shabazz Napier",
+                    "acquisitionType": "free-agent",
+                    "date": "2018-07-14",
+                    "note": "UConn guard, signed as free agent by BKN (2yr deal, July 2018). Sent to GSW in KD sign-and-trade.",
+                    "isOrigin": true
                   }
                 ]
               }
             ]
+          },
+          {
+            "type": "pick",
+            "name": "2029 1st Round Picks (two best of PHX/DAL/BKN)",
+            "acquisitionType": "trade",
+            "date": "2023-02-09",
+            "tradePartner": "PHX",
+            "tradeDescription": "Acquired from Phoenix in Kevin Durant trade as part of the pick package.",
+            "note": "2029 assets from KD trade, sent to Houston to reacquire BKN's own picks.",
+            "isOrigin": true
           }
         ]
       }

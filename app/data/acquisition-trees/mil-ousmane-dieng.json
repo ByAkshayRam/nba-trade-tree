@@ -2,36 +2,34 @@
   "_meta": {
     "team": "MIL",
     "player": "Ousmane Dieng",
-    "source": "NBA/ESPN Trade History Research",
-    "originYear": 2025,
-    "depth": 3,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference Transaction Logs",
+    "lastUpdated": "2026-03-01",
+    "sourceUrl": "https://www.basketball-reference.com/players/d/diengou01.html"
   },
   "tree": {
     "type": "player",
     "name": "Ousmane Dieng",
     "acquisitionType": "trade",
     "date": "2026-02-05",
-    "currentTeam": "MIL",
     "tradePartner": "CHI",
-    "tradeDescription": "Three-team trade: MIL sends Cole Anthony and Amir Coffey to PHX; gets Dieng from CHI and Nigel Hayes-Davis from PHX",
-    "note": "Originally drafted #11 by OKC in 2022. Passed through OKC, CHA, CHI before arriving in MIL.",
+    "isOrigin": false,
+    "tradeDescription": "3-team trade: MIL traded Cole Anthony and Amir Coffey to PHX. CHI traded Ousmane Dieng to MIL. PHX traded Nick Richards to CHI and Nigel Hayes-Davis to MIL. Chicago also received a trade exception. Phoenix also received multiple trade exceptions.",
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Cole Anthony",
         "acquisitionType": "free-agent",
         "date": "2025-07-16",
-        "note": "Signed after being waived by Memphis. Originally drafted #15 by ORL in 2020.",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "player",
         "name": "Amir Coffey",
         "acquisitionType": "free-agent",
         "date": "2025-10-01",
-        "note": "Signed as free agent for 2025-26 season",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

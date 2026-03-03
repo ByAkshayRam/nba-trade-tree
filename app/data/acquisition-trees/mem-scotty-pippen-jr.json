@@ -2,18 +2,17 @@
   "_meta": {
     "team": "MEM",
     "player": "Scotty Pippen Jr.",
-    "source": "NBA.com, ESPN",
-    "originYear": 2022,
-    "depth": 1,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference, NBA.com, ESPN",
+    "sourceUrl": "https://www.basketball-reference.com/players/p/pippesc02.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Scotty Pippen Jr.",
-    "acquisitionType": "undrafted",
-    "date": "2022-07-01",
+    "acquisitionType": "free-agent",
+    "date": "2024-01-16",
     "currentTeam": "MEM",
-    "note": "Vanderbilt guard, son of Scottie Pippen, signed as undrafted free agent. Signed 4yr/$9.6M deal (converted from two-way)",
+    "note": "Vanderbilt guard, son of Scottie Pippen, signed to two-way contract. Later converted to regular contract and signed 4yr/$9.6M deal",
     "isOrigin": true
   }
 }

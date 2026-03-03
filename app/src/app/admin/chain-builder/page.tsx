@@ -126,6 +126,9 @@ export default function ChainBuilderPage() {
   const [exportSize, setExportSize] = useState<SizeKey>("1:1");
   const [layoutDir, setLayoutDir] = useState<"horizontal" | "vertical">("horizontal");
   const [exportFormat, setExportFormat] = useState<"png" | "jpeg">("png");
+  const [spread, setSpread] = useState(1.0);
+  const [splitHero, setSplitHero] = useState(false);
+  const [heroImageUrl, setHeroImageUrl] = useState("");
   const [loading, setLoading] = useState(false);
   const [exporting, setExporting] = useState(false);
   const cardRefs = useRef<Record<string, HTMLDivElement | null>>({});
@@ -339,6 +342,20 @@ export default function ChainBuilderPage() {
             </div>
           </div>
 
+          {/* Spread control */}
+          <div>
+            <label className="block text-xs text-zinc-400 mb-1">Spread ({spread.toFixed(1)}x)</label>
+            <input
+              type="range"
+              min="0.3"
+              max="3.0"
+              step="0.1"
+              value={spread}
+              onChange={(e) => setSpread(parseFloat(e.target.value))}
+              className="w-full accent-emerald-500"
+            />
+          </div>
+
           {/* Export size */}
           <div>
             <label className="block text-xs text-zinc-400 mb-1">Export Size</label>
@@ -379,6 +396,21 @@ export default function ChainBuilderPage() {
             </div>
           </div>
 
+          {/* Split Hero toggle */}
+          <div>
+            <label className="block text-xs text-zinc-400 mb-1">Split Hero</label>
+            <button
+              onClick={() => { setSplitHero(!splitHero); if (!splitHero) setExportSize("3:2"); }}
+              className={`px-3 py-2 rounded text-xs font-semibold border ${
+                splitHero
+                  ? "bg-fuchsia-600 border-fuchsia-500 text-white"
+                  : "bg-zinc-800 border-zinc-700 text-zinc-400 hover:text-white"
+              }`}
+            >
+              {splitHero ? "🖼️ ON" : "OFF"}
+            </button>
+          </div>
+
           {/* Export button */}
           <button
             onClick={handleExport}
@@ -388,6 +420,20 @@ export default function ChainBuilderPage() {
             {exporting ? "Exporting..." : `Export ${selectedSlugs.length} ${exportFormat.toUpperCase()}${selectedSlugs.length !== 1 ? "s" : ""}`}
           </button>
         </div>
+
+        {/* Hero image URL input */}
+        {splitHero && (
+          <div>
+            <label className="block text-xs text-zinc-400 mb-1">Hero Image URL (optional — paste action shot URL)</label>
+            <input
+              type="text"
+              value={heroImageUrl}
+              onChange={(e) => setHeroImageUrl(e.target.value)}
+              className="w-full max-w-xl px-3 py-2 bg-zinc-800 border border-zinc-700 rounded text-sm text-white"
+              placeholder="https://... (leave blank for default headshot)"
+            />
+          </div>
+        )}
 
         {/* Player multi-select */}
         {selectedTeam && roster.length > 0 && (
@@ -441,6 +487,9 @@ export default function ChainBuilderPage() {
                 size={SIZES[exportSize]}
                 headerData={playerHeaders[slug]}
                 layoutDir={layoutDir}
+                spread={spread}
+                splitHero={splitHero}
+                heroImageUrl={heroImageUrl}
                 ref={(el) => { cardRefs.current[slug] = el; }}
               />
             </div>
@@ -505,7 +554,10 @@ const ChainCard = forwardRef<HTMLDivElement, {
   size: { w: number; h: number };
   headerData?: { name: string; headshotUrl: string };
   layoutDir?: "horizontal" | "vertical";
-}>(function ChainCard({ data, teamColor, size, headerData, layoutDir = "horizontal" }, ref) {
+  spread?: number;
+  splitHero?: boolean;
+  heroImageUrl?: string;
+}>(function ChainCard({ data, teamColor, size, headerData, layoutDir = "horizontal", spread = 1.0, splitHero = false, heroImageUrl = "" }, ref) {
   if (!data?.tree) return <div style={{ color: "#71717a", padding: 20 }}>Loading...</div>;
   const { tree, _meta } = data;
   const latestOriginName = useMemo(() => findLatestOriginName(tree), [tree]);
@@ -561,6 +613,214 @@ const ChainCard = forwardRef<HTMLDivElement, {
     return () => clearTimeout(timer);
   }, [data, size, availW, availH, layoutDir]);
 
+  // Split hero refs for independent scaling
+  const splitTreeRef = useRef<HTMLDivElement>(null);
+  const [splitTreeScale, setSplitTreeScale] = useState(1);
+  const [splitTreeOffset, setSplitTreeOffset] = useState({ x: 0, y: 0 });
+
+  const heroW = Math.round(size.w * 0.38);
+  const chainW = size.w - heroW;
+  const chainPad = 16;
+  const chainHeaderH = 70;
+  const chainFooterH = 32;
+  const splitAvailW = chainW - chainPad * 2;
+  const splitAvailH = size.h - chainHeaderH - chainFooterH - chainPad * 2;
+
+  useEffect(() => {
+    if (!splitHero) return;
+    const el = splitTreeRef.current;
+    if (!el) return;
+    const timer = setTimeout(() => {
+      const naturalW = el.scrollWidth;
+      const naturalH = el.scrollHeight;
+      if (naturalW === 0 || naturalH === 0) return;
+      const scaleX = splitAvailW / naturalW;
+      const scaleY = splitAvailH / naturalH;
+      const s = Math.min(scaleX, scaleY, 2.5);
+      setSplitTreeScale(s);
+      const scaledW = naturalW * s;
+      const scaledH = naturalH * s;
+      setSplitTreeOffset({
+        x: (splitAvailW - scaledW) / 2,
+        y: (splitAvailH - scaledH) / 2,
+      });
+    }, 150);
+    return () => clearTimeout(timer);
+  }, [data, size, splitAvailW, splitAvailH, layoutDir, splitHero]);
+
+  // Resolve hero image
+  const heroSrc = heroImageUrl
+    ? `/api/headshot?url=${encodeURIComponent(heroImageUrl)}`
+    : headshotSrc;
+
+  if (splitHero) {
+    return (
+      <div
+        ref={ref}
+        style={{
+          width: size.w,
+          height: size.h,
+          backgroundColor: "#09090b",
+          fontFamily: "'Inter', system-ui, -apple-system, sans-serif",
+          position: "relative",
+          overflow: "hidden",
+          display: "flex",
+        }}
+      >
+        {/* LEFT: Hero image panel */}
+        <div style={{
+          width: heroW,
+          height: size.h,
+          position: "relative",
+          overflow: "hidden",
+          flexShrink: 0,
+        }}>
+          {/* Player image */}
+          <img
+            src={heroSrc}
+            alt={displayName}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              objectPosition: "top center",
+            }}
+            referrerPolicy="no-referrer"
+          />
+          {/* Dark gradient overlay from bottom */}
+          <div style={{
+            position: "absolute",
+            bottom: 0,
+            left: 0,
+            right: 0,
+            height: "60%",
+            background: "linear-gradient(to top, rgba(9,9,11,0.95) 0%, rgba(9,9,11,0.6) 40%, transparent 100%)",
+          }} />
+          {/* Player info at bottom */}
+          <div style={{
+            position: "absolute",
+            bottom: 0,
+            left: 0,
+            right: 0,
+            padding: "20px 24px",
+          }}>
+            <div style={{
+              fontSize: 10,
+              color: teamColor.primary,
+              fontWeight: 700,
+              textTransform: "uppercase",
+              letterSpacing: 2,
+              marginBottom: 4,
+            }}>
+              Acquisition Chain
+            </div>
+            <div style={{
+              fontSize: 28,
+              color: "#fff",
+              fontWeight: 800,
+              lineHeight: 1.15,
+              textShadow: "0 2px 8px rgba(0,0,0,0.5)",
+            }}>
+              {displayName}
+            </div>
+            <div style={{
+              fontSize: 12,
+              color: "#a1a1aa",
+              marginTop: 4,
+            }}>
+              {chainStats.teams} teams · {chainStats.trades} trades
+            </div>
+            {/* Team color accent bar */}
+            <div style={{
+              height: 3,
+              width: 60,
+              borderRadius: 2,
+              background: `linear-gradient(90deg, ${teamColor.primary}, ${teamColor.secondary})`,
+              marginTop: 10,
+            }} />
+          </div>
+        </div>
+
+        {/* RIGHT: Chain visualization panel */}
+        <div style={{
+          flex: 1,
+          height: size.h,
+          position: "relative",
+          overflow: "hidden",
+        }}>
+          {/* Dot grid background */}
+          <div style={{
+            position: "absolute", inset: 0, opacity: 0.08,
+            backgroundImage: "radial-gradient(circle, #ffffff 1px, transparent 1px)",
+            backgroundSize: "20px 20px",
+          }} />
+
+          {/* Mini header */}
+          <div style={{
+            padding: "12px 16px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "flex-end",
+            position: "relative",
+            zIndex: 1,
+          }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+              <div style={{ textAlign: "right" }}>
+                <div style={{ fontSize: 13, color: "#e4e4e7", fontWeight: 700 }}>RosterDNA</div>
+                <div style={{ fontSize: 8, color: "#52525b", textTransform: "uppercase", letterSpacing: 1.5 }}>Trade Chain Intelligence</div>
+              </div>
+              <img src="/rosterdna-icon.png" alt="RosterDNA" style={{ width: 28, height: 28, borderRadius: 6 }} />
+            </div>
+          </div>
+          {/* Gradient bar */}
+          <div style={{
+            height: 2,
+            margin: "0 16px",
+            borderRadius: 2,
+            background: `linear-gradient(90deg, ${teamColor.primary}, ${teamColor.secondary})`,
+            position: "relative",
+            zIndex: 1,
+          }} />
+
+          {/* Scaled chain tree */}
+          <div style={{
+            position: "relative", zIndex: 1,
+            width: splitAvailW,
+            height: splitAvailH,
+            marginTop: 12,
+            marginLeft: chainPad,
+            marginRight: chainPad,
+            overflow: "hidden",
+          }}>
+            <div
+              ref={splitTreeRef}
+              style={{
+                position: "absolute",
+                left: splitTreeOffset.x,
+                top: splitTreeOffset.y,
+                transform: `scale(${splitTreeScale})`,
+                transformOrigin: "top left",
+              }}
+            >
+              <HorizontalTree tree={tree} originName={latestOriginName} layoutDir={layoutDir} aspectRatio={size.h / size.w} spread={spread} />
+            </div>
+          </div>
+
+          {/* Footer */}
+          <div style={{
+            position: "absolute", bottom: 0, left: 0, right: 0, zIndex: 1,
+            borderTop: "1px solid #1a1a1e",
+            padding: "6px 16px",
+            display: "flex", justifyContent: "flex-end", alignItems: "center",
+            backgroundColor: "#09090b",
+          }}>
+            <span style={{ fontSize: 10, color: "#52525b" }}>@RosterDNA</span>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div
       ref={ref}
@@ -568,7 +828,7 @@ const ChainCard = forwardRef<HTMLDivElement, {
         width: size.w,
         height: size.h,
         backgroundColor: "#09090b",
-        fontFamily: "system-ui, -apple-system, sans-serif",
+        fontFamily: "'Inter', system-ui, -apple-system, sans-serif",
         position: "relative",
         overflow: "hidden",
       }}
@@ -642,7 +902,7 @@ const ChainCard = forwardRef<HTMLDivElement, {
             transformOrigin: "top left",
           }}
         >
-          <HorizontalTree tree={tree} originName={latestOriginName} layoutDir={layoutDir} aspectRatio={size.h / size.w} />
+          <HorizontalTree tree={tree} originName={latestOriginName} layoutDir={layoutDir} aspectRatio={size.h / size.w} spread={spread} />
         </div>
       </div>
 
@@ -675,14 +935,14 @@ interface LayoutNode {
   parentId?: string;
 }
 
-function layoutTree(tree: TreeNode): { nodes: LayoutNode[]; width: number; height: number } {
+function layoutTree(tree: TreeNode, spread: number = 1.0): { nodes: LayoutNode[]; width: number; height: number } {
   const nodes: LayoutNode[] = [];
   let idCounter = 0;
   
   // Node sizes by depth
   const nodeW = [280, 210, 180, 160, 140];
   const nodeH = [110, 90, 80, 72, 66];
-  const gapX = [80, 60, 40, 30, 24]; // horizontal gap between columns
+  const gapX = [80, 60, 40, 30, 24].map(g => Math.round(g * spread)); // horizontal gap between columns
   const gapY = [28, 20, 14, 10, 8]; // vertical gap between siblings
 
   function layout(n: TreeNode, depth: number, parentId?: string): { height: number } {
@@ -772,7 +1032,7 @@ function layoutTree(tree: TreeNode): { nodes: LayoutNode[]; width: number; heigh
   return { nodes, width: maxX, height: maxY };
 }
 
-function layoutTreeVertical(tree: TreeNode, aspectRatio?: number): { nodes: LayoutNode[]; width: number; height: number } {
+function layoutTreeVertical(tree: TreeNode, aspectRatio?: number, spread: number = 1.0): { nodes: LayoutNode[]; width: number; height: number } {
   const nodes: LayoutNode[] = [];
   let idCounter = 0;
 
@@ -782,7 +1042,7 @@ function layoutTreeVertical(tree: TreeNode, aspectRatio?: number): { nodes: Layo
   const nodeH = [100, 85, 75, 68, 62];
   const baseGapY = [80, 65, 50, 40, 32];
   const gapY = baseGapY.map(g => Math.round(g * vStretch)); // vertical gap between rows
-  const gapX = [24, 18, 14, 10, 8]; // horizontal gap between siblings
+  const gapX = [24, 18, 14, 10, 8].map(g => Math.round(g * spread)); // horizontal gap between siblings
 
   function layout(n: TreeNode, depth: number, parentId?: string): { width: number } {
     const id = `n${idCounter++}`;
@@ -845,44 +1105,97 @@ function layoutTreeVertical(tree: TreeNode, aspectRatio?: number): { nodes: Layo
   const rootW = subtreeW(root.id);
   position(root.id, rootW / 2, 0);
 
-  const maxX = Math.max(...nodes.map(n => n.x + n.w));
+  // Ensure no nodes are clipped on the left — add padding if any node has x < 0
+  const minX = Math.min(...nodes.map(n => n.x));
+  const pad = 20; // minimum left/right padding
+  if (minX < pad) {
+    const shift = pad - minX;
+    for (const n of nodes) n.x += shift;
+  }
+
+  const maxX = Math.max(...nodes.map(n => n.x + n.w)) + pad;
   const maxY = Math.max(...nodes.map(n => n.y + n.h));
   return { nodes, width: maxX, height: maxY };
 }
 
-function HorizontalTree({ tree, originName, layoutDir = "horizontal", aspectRatio = 1 }: { tree: TreeNode; originName?: string | null; layoutDir?: "horizontal" | "vertical"; aspectRatio?: number }) {
+function HorizontalTree({ tree, originName, layoutDir = "horizontal", aspectRatio = 1, spread = 1.0 }: { tree: TreeNode; originName?: string | null; layoutDir?: "horizontal" | "vertical"; aspectRatio?: number; spread?: number }) {
   const { nodes, width, height } = useMemo(
-    () => layoutDir === "vertical" ? layoutTreeVertical(tree, aspectRatio) : layoutTree(tree),
-    [tree, layoutDir, aspectRatio]
+    () => layoutDir === "vertical" ? layoutTreeVertical(tree, aspectRatio, spread) : layoutTree(tree, spread),
+    [tree, layoutDir, aspectRatio, spread]
   );
   const rootStyle = getNodeStyle(tree);
 
-  // Build edges based on layout direction
-  const edges: { x1: number; y1: number; x2: number; y2: number; color: string; parentDepth: number }[] = [];
+  // Dedup nodes with same name::date key — keep deepest (rightmost) instance
+  const dedupMap = new Map<string, LayoutNode>(); // key → canonical node
+  const idRemap = new Map<string, string>(); // duplicate id → canonical id
   for (const n of nodes) {
-    if (!n.parentId) continue;
-    const parent = nodes.find(p => p.id === n.parentId)!;
+    const key = `${n.node.name}::${n.node.date || ""}`;
+    const existing = dedupMap.get(key);
+    if (existing) {
+      if (n.depth > existing.depth || (n.depth === existing.depth && n.x > existing.x)) {
+        idRemap.delete(n.id);
+        idRemap.set(existing.id, n.id);
+        dedupMap.set(key, n);
+      } else {
+        idRemap.set(n.id, existing.id);
+      }
+    } else {
+      dedupMap.set(key, n);
+    }
+  }
+  // Filter out duplicate nodes and remap parentIds
+  const dedupedNodes = nodes.filter(n => !idRemap.has(n.id)).map(n => {
+    if (n.parentId && idRemap.has(n.parentId)) {
+      return { ...n, parentId: idRemap.get(n.parentId)! };
+    }
+    return n;
+  });
+  // Also remap any edges where a child's parent was a duplicate
+  // And add edges from original parents of duplicates to the canonical node
+  const extraEdges: { childId: string; parentId: string }[] = [];
+  for (const n of nodes) {
+    if (idRemap.has(n.id) && n.parentId) {
+      // n was a duplicate — its parent should connect to the canonical node
+      extraEdges.push({ childId: idRemap.get(n.id)!, parentId: n.parentId });
+    }
+  }
+
+  // Build edges based on layout direction
+  const nodeById = new Map(dedupedNodes.map(n => [n.id, n]));
+  const edges: { x1: number; y1: number; x2: number; y2: number; color: string; parentDepth: number }[] = [];
+  
+  const addEdge = (child: LayoutNode, parent: LayoutNode) => {
     if (layoutDir === "vertical") {
-      // parent bottom-center → child top-center
       edges.push({
         x1: parent.x + parent.w / 2,
         y1: parent.y + parent.h,
-        x2: n.x + n.w / 2,
-        y2: n.y,
+        x2: child.x + child.w / 2,
+        y2: child.y,
         color: parent.depth === 0 ? "#10b981" : "#3b82f6",
         parentDepth: parent.depth,
       });
     } else {
-      // parent right-center → child left-center
       edges.push({
         x1: parent.x + parent.w,
         y1: parent.y + parent.h / 2,
-        x2: n.x,
-        y2: n.y + n.h / 2,
+        x2: child.x,
+        y2: child.y + child.h / 2,
         color: parent.depth === 0 ? "#10b981" : "#3b82f6",
         parentDepth: parent.depth,
       });
     }
+  };
+
+  for (const n of dedupedNodes) {
+    if (!n.parentId) continue;
+    const parent = nodeById.get(n.parentId);
+    if (parent) addEdge(n, parent);
+  }
+  // Extra edges from dedup — connect original parents to canonical node
+  for (const { childId, parentId } of extraEdges) {
+    const child = nodeById.get(childId);
+    const parent = nodeById.get(parentId);
+    if (child && parent) addEdge(child, parent);
   }
 
   return (
@@ -940,7 +1253,7 @@ function HorizontalTree({ tree, originName, layoutDir = "horizontal", aspectRati
       </svg>
 
       {/* Nodes */}
-      {nodes.map((n) => (
+      {dedupedNodes.map((n) => (
         <div key={n.id} style={{ position: "absolute", left: n.x, top: n.y, zIndex: 1 }}>
           <NodeBox node={n.node} depth={n.depth} fixedW={n.w} fixedH={n.h} originName={originName} />
         </div>

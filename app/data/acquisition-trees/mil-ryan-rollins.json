@@ -2,28 +2,17 @@
   "_meta": {
     "team": "MIL",
     "player": "Ryan Rollins",
-    "source": "NBA/ESPN Trade History Research",
-    "originYear": 2022,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference Transaction Logs",
+    "lastUpdated": "2026-03-01",
+    "sourceUrl": "https://www.basketball-reference.com/players/r/rolliry01.html"
   },
   "tree": {
     "type": "player",
     "name": "Ryan Rollins",
-    "acquisitionType": "trade",
-    "date": "2022-06-23",
-    "currentTeam": "MIL",
-    "tradePartner": "ATL",
-    "tradeDescription": "Hawks traded Rollins (pick #44) to Bucks on draft night",
-    "note": "Selected 44th overall in 2022 NBA Draft out of Toledo. Re-signed with MIL in July 2025.",
-    "assetsGivenUp": [
-      {
-        "type": "pick",
-        "name": "2024 2nd Round Pick",
-        "acquisitionType": "draft",
-        "note": "MIL's own 2024 second-round pick sent to Atlanta. Subsequently traded by Atlanta.",
-        "isOrigin": true
-      }
-    ]
+    "acquisitionType": "free-agent",
+    "date": "2025-07-08",
+    "tradeDescription": "Re-signed as free agent with Milwaukee Bucks",
+    "isOrigin": true,
+    "assetsGivenUp": []
   }
 }

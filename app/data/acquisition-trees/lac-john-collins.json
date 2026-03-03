@@ -2,19 +2,18 @@
   "_meta": {
     "team": "LAC",
     "player": "John Collins",
-    "source": "NBA.com, The Athletic, ESPN, NBC Sports",
-    "originYear": 2017,
-    "depth": 3,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/c/collijo01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "John Collins",
     "acquisitionType": "trade",
-    "date": "2025-07-08",
+    "date": "2025-07-07",
     "currentTeam": "LAC",
     "tradePartner": "UTA",
-    "tradeDescription": "3-team trade: LAC got Collins from Jazz; Heat got Powell from LAC; Jazz got Kevin Love, Kyle Anderson, and a 2027 LAC 2nd from Heat",
+    "tradeDescription": "3-team trade: LAC sent Norman Powell to MIA, cash and a 2027 2nd round pick (LAC own) to UTA; MIA sent Kyle Anderson and Kevin Love to UTA; UTA sent John Collins to LAC",
     "note": "Power forward from Wake Forest",
     "isOrigin": false,
     "assetsGivenUp": [
@@ -24,7 +23,7 @@
         "acquisitionType": "trade",
         "date": "2022-02-04",
         "tradePartner": "POR",
-        "tradeDescription": "Traded from Trail Blazers with Robert Covington for Eric Bledsoe, Keon Johnson, Justise Winslow, and a 2025 2nd round pick",
+        "tradeDescription": "Traded from Trail Blazers with Robert Covington for Eric Bledsoe, Keon Johnson, Justise Winslow, and a 2025 2nd round pick (DET own, became Bogoljub Markovic)",
         "note": "Scoring guard",
         "isOrigin": false,
         "assetsGivenUp": [
@@ -42,19 +41,153 @@
                 "type": "player",
                 "name": "Patrick Beverley",
                 "acquisitionType": "free-agent",
-                "date": "2017-07-01",
-                "note": "Defensive-minded guard, re-signed with Clippers",
-                "isOrigin": true
+                "date": "2019-07-11",
+                "note": "Signed as free agent",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              },
+              {
+                "type": "player",
+                "name": "Daniel Oturu",
+                "acquisitionType": "trade",
+                "date": "2020-11-19",
+                "tradePartner": "MIN",
+                "tradeDescription": "Traded from Timberwolves for Mathias Lessort and a 2023 2nd round pick (DET own, became James Nnaji)",
+                "note": "Young center",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Mathias Lessort",
+                    "acquisitionType": "trade",
+                    "date": "2019-07-06",
+                    "tradePartner": "PHI",
+                    "tradeDescription": "Acquired from 76ers in 4-team Jimmy Butler sign-and-trade (LAC sent cash to MIA; received Lessort from PHI and Harkless from POR)",
+                    "note": "International big man",
+                    "isOrigin": false,
+                    "assetsGivenUp": [
+                      {
+                        "type": "other",
+                        "name": "Cash Considerations",
+                        "acquisitionType": "original",
+                        "date": "2019-07-06",
+                        "note": "Cash sent to Miami in 4-team trade",
+                        "isOrigin": true,
+                        "assetsGivenUp": []
+                      }
+                    ]
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2023 2nd Round Pick",
+                    "acquisitionType": "trade",
+                    "date": "2023-06-22",
+                    "becamePlayer": "James Nnaji",
+                    "note": "DET own 2nd round pick (acquired from PHI in Tobias Harris trade), sent to MIN",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  }
+                ]
+              },
+              {
+                "type": "player",
+                "name": "Rajon Rondo",
+                "acquisitionType": "trade",
+                "date": "2021-03-25",
+                "tradePartner": "ATL",
+                "tradeDescription": "Traded from Hawks for Lou Williams, a 2023 2nd round pick (POR own, became Julian Phillips) and a 2027 2nd round pick (LAC own)",
+                "note": "Veteran point guard",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Lou Williams",
+                    "acquisitionType": "trade",
+                    "date": "2017-06-28",
+                    "tradePartner": "HOU",
+                    "tradeDescription": "Acquired from Rockets in Chris Paul trade (LAC sent Chris Paul to HOU for Beverley, Dekker, Harrell, Hilliard, Liggins, Lou Williams, Wiltjer, cash, and a 2018 1st)",
+                    "note": "Three-time Sixth Man of the Year",
+                    "isOrigin": false,
+                    "assetsGivenUp": [
+                      {
+                        "type": "player",
+                        "name": "Chris Paul",
+                        "acquisitionType": "trade",
+                        "date": "2011-12-14",
+                        "tradePartner": "NOH",
+                        "tradeDescription": "Traded from New Orleans Hornets for Eric Gordon, Chris Kaman, Al-Farouq Aminu, a 2012 1st round pick (became Austin Rivers), and a 2015 2nd round pick",
+                        "note": "Hall of Fame point guard",
+                        "isOrigin": false,
+                        "assetsGivenUp": [
+                          {
+                            "type": "player",
+                            "name": "Eric Gordon",
+                            "acquisitionType": "draft",
+                            "date": "2008-06-26",
+                            "draftPick": 7,
+                            "draftRound": 1,
+                            "note": "Drafted by Clippers 7th overall in 2008",
+                            "isOrigin": true,
+                            "assetsGivenUp": []
+                          },
+                          {
+                            "type": "player",
+                            "name": "Chris Kaman",
+                            "acquisitionType": "draft",
+                            "date": "2003-06-26",
+                            "draftPick": 6,
+                            "draftRound": 1,
+                            "note": "Drafted by Clippers 6th overall in 2003",
+                            "isOrigin": true,
+                            "assetsGivenUp": []
+                          },
+                          {
+                            "type": "player",
+                            "name": "Al-Farouq Aminu",
+                            "acquisitionType": "draft",
+                            "date": "2010-06-24",
+                            "draftPick": 8,
+                            "draftRound": 1,
+                            "note": "Drafted by Clippers 8th overall in 2010",
+                            "isOrigin": true,
+                            "assetsGivenUp": []
+                          },
+                          {
+                            "type": "pick",
+                            "name": "2012 1st Round Pick (#10)",
+                            "acquisitionType": "own",
+                            "date": "2012-06-28",
+                            "becamePlayer": "Austin Rivers",
+                            "note": "Clippers' own 1st round pick, sent to New Orleans",
+                            "isOrigin": true,
+                            "assetsGivenUp": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2023 2nd Round Pick",
+                    "acquisitionType": "trade",
+                    "date": "2023-06-22",
+                    "becamePlayer": "Julian Phillips",
+                    "note": "POR own 2nd round pick (acquired from DET in Kennard 3-team trade), sent to ATL",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2027 2nd Round Pick",
+                    "acquisitionType": "own",
+                    "date": "2027-06-24",
+                    "note": "Clippers' own 2nd round pick, sent to ATL",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  }
+                ]
               }
             ]
-          },
-          {
-            "type": "player",
-            "name": "Justise Winslow",
-            "acquisitionType": "free-agent",
-            "date": "2021-08-07",
-            "note": "Signed with Clippers as free agent",
-            "isOrigin": true
           },
           {
             "type": "player",
@@ -62,7 +195,7 @@
             "acquisitionType": "trade",
             "date": "2021-07-30",
             "tradePartner": "NYK",
-            "tradeDescription": "Traded from Knicks for Quentin Grimes and a 2024 2nd round pick (DET own)",
+            "tradeDescription": "Traded from Knicks for Quentin Grimes and a 2024 2nd round draft pick (DET own, became Jonathan Mogbo)",
             "note": "Athletic guard",
             "isOrigin": false,
             "assetsGivenUp": [
@@ -73,21 +206,60 @@
                 "date": "2021-07-29",
                 "draftPick": 25,
                 "draftRound": 1,
-                "note": "Drafted by Clippers 25th overall, traded to Knicks on draft night",
-                "isOrigin": true
+                "note": "Drafted by Clippers 25th overall in 2021, traded to Knicks the next day",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              },
+              {
+                "type": "pick",
+                "name": "2024 2nd Round Pick",
+                "acquisitionType": "own",
+                "date": "2024-06-26",
+                "becamePlayer": "Jonathan Mogbo",
+                "note": "DET own 2nd round pick, sent to Knicks",
+                "isOrigin": true,
+                "assetsGivenUp": []
               }
             ]
           },
           {
+            "type": "player",
+            "name": "Justise Winslow",
+            "acquisitionType": "free-agent",
+            "date": "2021-08-07",
+            "note": "Signed with Clippers as free agent",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
             "type": "pick",
-            "name": "2025 2nd Round Pick",
-            "acquisitionType": "original",
+            "name": "2025 2nd Round Pick (#39)",
+            "acquisitionType": "own",
             "date": "2025-06-25",
             "becamePlayer": "Bogoljub Markovic",
             "note": "DET own 2nd round pick, sent to Portland",
-            "isOrigin": true
+            "isOrigin": true,
+            "assetsGivenUp": []
           }
         ]
+      },
+      {
+        "type": "other",
+        "name": "Cash Considerations",
+        "acquisitionType": "original",
+        "date": "2025-07-07",
+        "note": "Cash sent to Utah in 3-team trade",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      },
+      {
+        "type": "pick",
+        "name": "2027 2nd Round Pick",
+        "acquisitionType": "own",
+        "date": "2027-06-24",
+        "note": "LAC own 2nd round pick, sent to Utah in 3-team trade",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

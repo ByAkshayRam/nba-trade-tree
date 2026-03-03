@@ -2,10 +2,9 @@
   "_meta": {
     "team": "CHA",
     "player": "Grant Williams",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2019,
-    "depth": 2,
-    "lastUpdated": "2026-02-11"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/w/willigr01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,7 +13,7 @@
     "date": "2024-02-08",
     "currentTeam": "CHA",
     "tradePartner": "DAL",
-    "tradeDescription": "Acquired from Dallas with Seth Curry and 2027 1st for PJ Washington",
+    "tradeDescription": "Hornets traded PJ Washington, 2024 2nd (BOS own, #55 Ariel Hukporti), and 2028 2nd (least favorable) to Mavericks for Grant Williams, Seth Curry, and 2027 1st (DAL own, protected). Charlotte also received a trade exception.",
     "note": "Tennessee forward, versatile role player",
     "assetsGivenUp": [
       {
@@ -24,8 +23,37 @@
         "date": "2019-06-20",
         "draftPick": 12,
         "draftRound": 1,
-        "note": "Kentucky forward, Hornets drafted him 12th overall",
-        "tradeDescription": "Drafted by Hornets with 12th overall pick",
+        "note": "Kentucky forward, Hornets drafted him 12th overall in 2019",
+        "tradeDescription": "Drafted by Hornets with 12th overall pick in 2019 NBA Draft",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2024 2nd Round Pick (#55) via BOS",
+        "becamePlayer": "Ariel Hukporti",
+        "acquisitionType": "trade",
+        "tradePartner": "BOS",
+        "date": "2020-11-29",
+        "tradeDescription": "Acquired from Celtics as part of Gordon Hayward sign-and-trade",
+        "note": "Originally BOS own pick, acquired in Hayward S&T. Sent to DAL in PJ Washington trade.",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2022 2nd Round Pick",
+            "acquisitionType": "original",
+            "date": "2020-11-29",
+            "note": "Hornets' own 2022 2nd-round pick, sent to Boston in Hayward S&T. Did not convey per BBRef.",
+            "isOrigin": true,
+            "becamePlayer": "Did not convey"
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2028 2nd Round Pick (least favorable)",
+        "acquisitionType": "original",
+        "date": "2024-02-08",
+        "note": "Hornets' own future 2nd-round pick, sent to Dallas in PJ Washington trade",
         "isOrigin": true
       }
     ]

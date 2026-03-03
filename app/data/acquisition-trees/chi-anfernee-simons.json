@@ -2,10 +2,9 @@
   "_meta": {
     "team": "CHI",
     "player": "Anfernee Simons",
-    "source": "ESPN, NBA.com",
-    "originYear": 2021,
-    "depth": 4,
-    "lastUpdated": "2026-02-15"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/s/simonan01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,7 +13,7 @@
     "date": "2026-02-05",
     "currentTeam": "CHI",
     "tradePartner": "BOS",
-    "tradeDescription": "Bulls traded Nikola Vucevic and a 2027 2nd round pick (DEN own) to Celtics for Anfernee Simons and a 2026 2nd round pick (more favorable)",
+    "tradeDescription": "Bulls traded Nikola Vucevic and a 2027 2nd round pick (DEN own) to Celtics for Anfernee Simons and a 2026 2nd round pick (more favorable). Boston also received a trade exception.",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -22,7 +21,7 @@
         "acquisitionType": "trade",
         "date": "2021-03-25",
         "tradePartner": "ORL",
-        "tradeDescription": "Bulls traded Wendell Carter Jr., Otto Porter Jr., and two 1st-round picks to Magic for Vucevic and Al-Farouq Aminu",
+        "tradeDescription": "Bulls traded Wendell Carter Jr., Otto Porter Jr., a 2021 1st round pick (Franz Wagner, #8) and a 2023 1st round pick (Jett Howard) to Magic for Nikola Vucevic and Al-Farouq Aminu. Orlando also received a trade exception.",
         "assetsGivenUp": [
           {
             "type": "player",
@@ -32,9 +31,48 @@
             "draftPick": 7,
             "draftRound": 1,
             "note": "Drafted 7th overall by Chicago Bulls from Duke in 2018 NBA Draft",
-            "isOrigin": true
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "player",
+            "name": "Otto Porter Jr.",
+            "acquisitionType": "free-agent",
+            "date": "2019-07-06",
+            "note": "Signed as free agent from Washington Wizards",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "pick",
+            "name": "2021 1st Round Pick (#8) via CHI",
+            "becamePlayer": "Franz Wagner",
+            "acquisitionType": "own",
+            "date": "2021-03-25",
+            "note": "Chicago's own 2021 1st round pick, top-4 protected. Sent to ORL in Vucevic trade.",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "pick",
+            "name": "2023 1st Round Pick via CHI",
+            "becamePlayer": "Jett Howard",
+            "acquisitionType": "own",
+            "date": "2021-03-25",
+            "note": "Chicago's own 2023 1st round pick. Sent to ORL in Vucevic trade.",
+            "isOrigin": true,
+            "assetsGivenUp": []
           }
         ]
+      },
+      {
+        "type": "pick",
+        "name": "2027 2nd Round Pick via DEN",
+        "acquisitionType": "original",
+        "date": "2026-02-05",
+        "note": "Denver's 2027 2nd round pick, sent to BOS in Simons trade",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

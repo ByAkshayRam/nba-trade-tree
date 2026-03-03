@@ -3,9 +3,8 @@
     "team": "SAC",
     "player": "Malik Monk",
     "source": "Basketball-Reference SAC 2022-23 Transactions",
-    "originYear": 2017,
-    "depth": 1,
-    "lastUpdated": "2026-02-17"
+    "sourceUrl": "https://www.basketball-reference.com/players/m/monkma01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -13,7 +12,8 @@
     "acquisitionType": "free-agent",
     "date": "2022-07-06",
     "currentTeam": "SAC",
-    "note": "Guard originally drafted 11th overall by Charlotte in 2017. Re-signed July 6, 2024. 4yr/$78M (~$19.5M/yr)",
-    "isOrigin": true
+    "note": "Guard originally drafted 11th overall by Charlotte in 2017. Signed multi-year contract.",
+    "isOrigin": true,
+    "assetsGivenUp": []
   }
 }

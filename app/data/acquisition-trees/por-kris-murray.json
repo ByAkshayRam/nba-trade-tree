@@ -3,21 +3,19 @@
     "team": "POR",
     "player": "Kris Murray",
     "source": "Basketball-Reference.com",
-    "originYear": 2023,
-    "depth": 3,
-    "lastUpdated": "2026-02-17"
+    "sourceUrl": "https://www.basketball-reference.com/players/m/murrakr01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Kris Murray",
-    "acquisitionType": "draft-night-trade",
+    "acquisitionType": "draft",
     "date": "2023-06-22",
     "currentTeam": "POR",
     "draftPick": 23,
     "draftRound": 1,
-    "tradePartner": "NYK",
-    "tradeDescription": "4-team trade: POR sent Josh Hart to NYK for #23 pick (Kris Murray), Cam Reddish, Arcidiacono, Thybulle; also sent picks to PHI and CHA",
-    "note": "Iowa forward, drafted with NYK's 1st round pick acquired in Josh Hart 4-team trade (Feb 2023)",
+    "note": "Iowa forward, drafted 23rd overall with NYK's 1st round pick acquired in 4-team Josh Hart trade (Feb 2023)",
+    "isOrigin": false,
     "assetsGivenUp": [
       {
         "type": "player",
@@ -25,8 +23,9 @@
         "acquisitionType": "trade",
         "date": "2022-02-08",
         "tradePartner": "NOP",
-        "tradeDescription": "POR sent CJ McCollum to NOP for Josh Hart, Nickeil Alexander-Walker, Satoransky, Louzada, picks",
-        "note": "Villanova guard, acquired from New Orleans in CJ McCollum trade. Sent to NYK for Kris Murray pick.",
+        "tradeDescription": "POR traded CJ McCollum, Larry Nance Jr., and Tony Snell to NOP for Josh Hart, Nickeil Alexander-Walker, Didi Louzada, Tomas Satoransky, 2025 1st (NOP protected, rolled from 2022), 2026 2nd, and 2027 2nd (NOP own). Portland also received a trade exception.",
+        "note": "Villanova guard, acquired from New Orleans in CJ McCollum trade. Sent to NYK in 4-team trade (Feb 9, 2023) along with Dani Diez and Bojan Dubljevic for #23 pick (Murray), Cam Reddish, Arcidiacono, Thybulle, and trade exception.",
+        "isOrigin": false,
         "assetsGivenUp": [
           {
             "type": "player",
@@ -35,23 +34,61 @@
             "date": "2013-06-27",
             "draftPick": 10,
             "draftRound": 1,
-            "note": "Lehigh guard, drafted #10 overall by POR in 2013. Franchise cornerstone for 9 years.",
+            "note": "Lehigh guard, drafted #10 overall by POR in 2013",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Larry Nance Jr.",
+            "acquisitionType": "trade",
+            "date": "2021-08-28",
+            "tradePartner": "CLE",
+            "tradeDescription": "3-team trade: POR traded Derrick Jones Jr. and a 2022 1st round draft pick (POR own, conditional, did not convey) to Chicago. Cleveland traded Larry Nance Jr. to Portland.",
+            "note": "Forward, acquired from Cleveland in 3-team Lauri Markkanen trade",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Derrick Jones Jr.",
+                "acquisitionType": "free-agent",
+                "date": "2020-11-22",
+                "note": "Signed as free agent",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2022 1st Round Pick",
+                "acquisitionType": "own",
+                "date": "2021-08-28",
+                "note": "Portland's own 2022 1st, conditional, did not convey",
+                "isOrigin": true
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Tony Snell",
+            "acquisitionType": "free-agent",
+            "date": "2021-08-10",
+            "note": "Signed as free agent by Portland",
             "isOrigin": true
           }
         ]
       },
       {
         "type": "pick",
-        "name": "2029 POR 2nd Round Pick",
-        "acquisitionType": "original",
+        "name": "2029 2nd Round Pick via POR",
+        "acquisitionType": "own",
+        "date": "2023-02-09",
         "note": "POR own 2029 2nd, sent to PHI in 4-team Hart trade",
         "isOrigin": true
       },
       {
         "type": "pick",
         "name": "2027 2nd Round Pick",
-        "acquisitionType": "trade",
-        "note": "Sent to CHA in 4-team Hart trade",
+        "acquisitionType": "own",
+        "date": "2023-02-09",
+        "note": "Sent to CHA in 4-team Hart trade. More favorable.",
         "isOrigin": true
       }
     ]

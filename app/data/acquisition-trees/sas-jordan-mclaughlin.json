@@ -2,10 +2,9 @@
   "_meta": {
     "team": "SAS",
     "player": "Jordan McLaughlin",
-    "source": "NBA.com, ESPN",
-    "originYear": 2019,
-    "depth": 3,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/m/mclaujo01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,52 +13,93 @@
     "date": "2025-02-03",
     "currentTeam": "SAS",
     "tradePartner": "SAC",
-    "tradeDescription": "3-team trade: Spurs got Fox + McLaughlin from Kings in blockbuster deal",
+    "tradeDescription": "3-team trade: SAS sent Collins/Jones/2025 CHI 1st to CHI; SAS sent Cissoko + 2025 2nd (CHI) + 2026 2nd + 2027 1st (SAS) + 2027 2nd + 2028 2nd (DEN) + 2031 1st (MIN) to SAC; CHI sent LaVine + 2028 2nd to SAC; SAC sent Huerter to CHI; SAC sent Fox + McLaughlin to SAS",
     "note": "Point guard acquired alongside De'Aaron Fox from Sacramento",
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Sidy Cissoko",
+        "destination": "SAC",
         "acquisitionType": "draft",
         "date": "2023-06-22",
         "draftPick": 44,
         "draftRound": 2,
-        "note": "French guard/forward, drafted 44th overall by San Antonio",
+        "note": "Guard drafted 44th overall from Metropolitans 92 (France)",
         "isOrigin": true
       },
       {
         "type": "player",
         "name": "Tre Jones",
+        "destination": "CHI",
         "acquisitionType": "draft",
         "date": "2020-11-18",
         "draftPick": 41,
         "draftRound": 2,
-        "note": "Duke guard, drafted 41st overall by San Antonio",
+        "note": "Point guard drafted 41st overall from Duke",
         "isOrigin": true
       },
       {
         "type": "player",
         "name": "Zach Collins",
+        "destination": "CHI",
         "acquisitionType": "free-agent",
-        "date": "2021-08-06",
-        "note": "Center, signed as free agent from Portland",
+        "date": "2021-08-11",
+        "note": "Center signed as free agent from Portland on 3yr/$22M deal",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2025 1st Round Pick (CHA own)",
+        "name": "2025 1st Round Pick (#16) via CHI",
+        "destination": "CHI",
         "acquisitionType": "trade",
-        "date": "2025-02-03",
-        "note": "Charlotte's own 2025 first round pick, sent to Sacramento in Fox trade",
-        "becamePlayer": "Luka Samanic",
-        "isOrigin": true
+        "date": "2021-08-11",
+        "tradePartner": "CHI",
+        "tradeDescription": "Acquired from CHI in DeMar DeRozan sign-and-trade",
+        "note": "Chicago's own 2025 1st round pick, sent back to Chicago in Fox trade",
+        "becamePlayer": "Noa Essengue",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "DeMar DeRozan",
+            "acquisitionType": "trade",
+            "date": "2018-07-18",
+            "tradePartner": "TOR",
+            "tradeDescription": "SAS traded Kawhi Leonard, Danny Green and cash to TOR for DeRozan, Jakob Poeltl and a 2019 1st round pick (top-20 protected)",
+            "note": "All-Star guard originally drafted 9th overall by Toronto in 2009",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Kawhi Leonard",
+                "acquisitionType": "draft-night-trade",
+                "date": "2011-06-23",
+                "draftPick": 15,
+                "draftRound": 1,
+                "tradePartner": "IND",
+                "tradeDescription": "IND drafted Leonard 15th overall and traded him to SAS for George Hill",
+                "note": "Forward drafted 15th overall from San Diego State, immediately traded to SAS on draft night",
+                "isOrigin": true
+              },
+              {
+                "type": "player",
+                "name": "Danny Green",
+                "acquisitionType": "free-agent",
+                "date": "2010-11-20",
+                "note": "Guard originally drafted 46th overall by Cleveland in 2009. Waived, signed by SAS as free agent.",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
       },
       {
         "type": "pick",
-        "name": "2027 1st Round Pick (SAS own)",
-        "acquisitionType": "original",
+        "name": "2027 1st Round Pick via SAS",
+        "destination": "SAC",
+        "acquisitionType": "own",
         "note": "San Antonio's own 2027 first round pick, sent to Sacramento",
-        "isOrigin": true
+        "isOrigin": true,
+        "date": "2025-02-03"
       }
     ]
   }

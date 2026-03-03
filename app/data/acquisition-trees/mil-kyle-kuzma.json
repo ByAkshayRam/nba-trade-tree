@@ -2,20 +2,18 @@
   "_meta": {
     "team": "MIL",
     "player": "Kyle Kuzma",
-    "source": "NBA/ESPN Trade History Research",
-    "originYear": 2013,
-    "depth": 3,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference Transaction Logs",
+    "lastUpdated": "2026-03-01",
+    "sourceUrl": "https://www.basketball-reference.com/players/k/kuzmaky01.html"
   },
   "tree": {
     "type": "player",
     "name": "Kyle Kuzma",
     "acquisitionType": "trade",
     "date": "2025-02-06",
-    "currentTeam": "MIL",
     "tradePartner": "WAS",
-    "tradeDescription": "Bucks trade Khris Middleton to Wizards for Kyle Kuzma and Jericho Sims",
-    "note": "Part of midseason trade that also returned Jericho Sims",
+    "isOrigin": false,
+    "tradeDescription": "4-team trade: MIL traded Khris Middleton, A.J. Johnson, 2028 1st round pick and cash to WAS; Hugo Besson, Delon Wright and cash to NYK; cash to SAS. MIL received Kyle Kuzma, 2025 2nd round pick and 2026 2nd round pick from WAS; Jericho Sims from NYK; trade exceptions.",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -23,8 +21,8 @@
         "acquisitionType": "trade",
         "date": "2013-07-31",
         "tradePartner": "DET",
-        "tradeDescription": "Pistons trade Middleton and Brandon Knight to Bucks for Brandon Jennings",
-        "note": "Middleton played 12 seasons for MIL, 3x All-Star, 2021 NBA Champion",
+        "isOrigin": false,
+        "tradeDescription": "Bucks traded Brandon Jennings to Detroit Pistons for Brandon Knight, Viacheslav Kravtsov and Khris Middleton",
         "assetsGivenUp": [
           {
             "type": "player",
@@ -33,10 +31,69 @@
             "date": "2009-06-25",
             "draftPick": 10,
             "draftRound": 1,
-            "note": "Drafted 10th overall by Milwaukee in 2009",
-            "isOrigin": true
+            "isOrigin": true,
+            "assetsGivenUp": [],
+            "tradeDescription": "Drafted 10th overall in 2009 NBA Draft by Milwaukee Bucks"
           }
         ]
+      },
+      {
+        "type": "player",
+        "name": "A.J. Johnson",
+        "acquisitionType": "draft",
+        "date": "2024-06-26",
+        "draftPick": 23,
+        "draftRound": 1,
+        "isOrigin": true,
+        "assetsGivenUp": [],
+        "tradeDescription": "Drafted 23rd overall in 2024 NBA Draft by Milwaukee Bucks"
+      },
+      {
+        "type": "pick",
+        "name": "2028 1st Round Pick",
+        "acquisitionType": "own",
+        "date": "2025-02-06",
+        "isOrigin": true,
+        "assetsGivenUp": [],
+        "tradeDescription": "Milwaukee's own 2028 1st round pick (WAS has swap option with least favorable of POR/MIL picks)"
+      },
+      {
+        "type": "player",
+        "name": "Hugo Besson",
+        "acquisitionType": "draft-night-trade",
+        "date": "2022-06-23",
+        "tradePartner": "IND",
+        "isOrigin": false,
+        "tradeDescription": "Bucks traded cash to Indiana Pacers for Hugo Besson (58th pick in 2022 draft)",
+        "assetsGivenUp": [
+          {
+            "type": "other",
+            "name": "Cash Considerations",
+            "acquisitionType": "original",
+            "date": "2022-06-23",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          }
+        ],
+        "draftRound": 2,
+        "draftPick": 35
+      },
+      {
+        "type": "player",
+        "name": "Delon Wright",
+        "acquisitionType": "free-agent",
+        "date": "2024-07-06",
+        "isOrigin": true,
+        "assetsGivenUp": [],
+        "tradeDescription": "Signed as free agent by Milwaukee Bucks"
+      },
+      {
+        "type": "other",
+        "name": "Cash Considerations",
+        "acquisitionType": "original",
+        "date": "2025-02-06",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

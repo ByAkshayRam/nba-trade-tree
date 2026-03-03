@@ -2,10 +2,9 @@
   "_meta": {
     "team": "IND",
     "player": "Pascal Siakam",
-    "source": "Basketball-Reference, ESPN, NBA Trade History",
-    "originYear": 2023,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/s/siakapa01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,7 +13,7 @@
     "date": "2024-01-17",
     "currentTeam": "IND",
     "tradePartner": "TOR",
-    "note": "Forward from New Mexico State, 27th overall pick in 2016 NBA Draft. 3-team trade with NOP.",
+    "tradeDescription": "IND traded Bruce Brown, Kira Lewis Jr., Jordan Nwora, a 2024 1st round pick (Isaiah Collier, IND own), a 2024 1st round pick (Ja'Kobe Walter, least favorable conditional), and a 2026 1st round pick (IND own) to TOR for Pascal Siakam. TOR also received a trade exception. IND first acquired Kira Lewis Jr. and a 2024 2nd round pick from NOP for cash.",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -22,41 +21,54 @@
         "acquisitionType": "free-agent",
         "date": "2023-07-06",
         "note": "Signed as free agent from DEN in July 2023",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "player",
         "name": "Jordan Nwora",
+        "acquisitionType": "trade",
+        "date": "2023-02-09",
+        "tradePartner": "MIL",
+        "note": "Acquired from MIL in 4-team KD trade. MIL sent Hill, Ibaka, Nwora, and 3 2nd round picks to IND.",
         "isOrigin": true,
-        "acquisitionType": "free-agent"
+        "assetsGivenUp": []
       },
       {
         "type": "player",
         "name": "Kira Lewis Jr.",
+        "acquisitionType": "trade",
+        "date": "2024-01-17",
+        "tradePartner": "NOP",
+        "note": "Acquired from NOP for cash on same day as Siakam trade",
         "isOrigin": true,
-        "acquisitionType": "free-agent"
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2024 IND 1st Round Pick",
+        "name": "2024 1st Round Pick via IND",
+        "acquisitionType": "own",
         "note": "IND's own pick",
-        "isOrigin": true,
-        "becamePlayer": "Ja'Kobe Walter",
-        "draftPick": 19
-      },
-      {
-        "type": "pick",
-        "name": "2024 1st Round Pick (lesser of UTA/LAC/HOU/OKC)",
-        "note": "Conveyed as UTA's pick (#29). Traded by TOR to UTA in Kelly Olynyk deal.",
-        "isOrigin": true,
         "becamePlayer": "Isaiah Collier",
-        "draftPick": 29
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2026 IND 1st Round Pick (protected 1-4)",
+        "name": "2024 1st Round Pick (least favorable conditional)",
+        "acquisitionType": "trade",
+        "note": "Acquired from OKC in 4-team trade (June 23, 2023). Conveyed as least favorable of OKC/LAC/HOU.",
+        "becamePlayer": "Ja'Kobe Walter",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      },
+      {
+        "type": "pick",
+        "name": "2026 1st Round Pick via IND",
+        "acquisitionType": "own",
         "note": "IND's own pick",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

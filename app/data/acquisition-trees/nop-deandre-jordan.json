@@ -3,17 +3,16 @@
     "team": "NOP",
     "player": "DeAndre Jordan",
     "source": "ESPN, Basketball-Reference",
-    "originYear": 2008,
-    "depth": 5,
-    "lastUpdated": "2026-02-16"
+    "lastUpdated": "2026-03-01",
+    "sourceUrl": "https://www.basketball-reference.com/players/j/jordade01.html"
   },
   "tree": {
     "type": "player",
     "name": "DeAndre Jordan",
     "acquisitionType": "free-agent",
-    "date": "2025-10-24",
-    "currentTeam": "NOP",
+    "date": "2025-10-23",
     "note": "Veteran center signed from free agency. 1yr/vet min (~$2.1M)",
-    "isOrigin": true
+    "isOrigin": true,
+    "assetsGivenUp": []
   }
 }

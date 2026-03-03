@@ -4,9 +4,9 @@
     "player": "Kenrich Williams",
     "source": "Basketball Reference Transaction Logs",
     "sourceUrl": "https://www.basketball-reference.com/teams/OKC/2021_transactions.html",
-    "originYear": 2018,
+    "originYear": 2009,
     "depth": 5,
-    "lastUpdated": "2026-02-16"
+    "lastUpdated": "2026-03-03"
   },
   "tree": {
     "type": "player",
@@ -25,9 +25,21 @@
         "date": "2013-06-27",
         "draftPick": 12,
         "draftRound": 1,
-        "tradeDescription": "Drafted 12th overall by Thunder",
-        "note": "New Zealand center, OKC mainstay 2013-2020",
-        "isOrigin": true
+        "tradeDescription": "Drafted 12th overall by OKC using Toronto's pick, acquired from Houston in James Harden trade (Oct 27, 2012)",
+        "note": "Pick chain: TOR owned → HOU (Kyle Lowry trade, Jul 2012) → OKC (Harden trade, Oct 2012)",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "James Harden",
+            "acquisitionType": "draft",
+            "date": "2009-06-25",
+            "draftPick": 3,
+            "draftRound": 1,
+            "tradeDescription": "Drafted 3rd overall by OKC with their own lottery pick. Traded to Houston (Oct 27, 2012) for Kevin Martin, Jeremy Lamb, and draft picks including Steven Adams (#12).",
+            "note": "OKC was 23-59 in 2008-09. TRUE ORIGIN.",
+            "isOrigin": true
+          }
+        ]
       }
     ]
   }

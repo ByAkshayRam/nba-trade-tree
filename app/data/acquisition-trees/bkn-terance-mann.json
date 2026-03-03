@@ -2,10 +2,11 @@
   "_meta": {
     "team": "BKN",
     "player": "Terance Mann",
-    "source": "ESPN, NBA.com, Wikipedia",
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/m/mannte01.html",
     "originYear": 2019,
     "depth": 2,
-    "lastUpdated": "2026-02-15"
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,18 +15,17 @@
     "date": "2025-07-07",
     "currentTeam": "BKN",
     "tradePartner": "ATL",
-    "tradeDescription": "3-team trade: BKN received Mann and #22 pick (Drake Powell) from ATL. Porzingis to ATL from BOS, Niang to BOS.",
-    "note": "BKN did not send out assets in this deal — received Mann and #22 pick as facilitator",
-    "assetsGivenUp": [],
-    "tradeChain": {
-      "type": "player",
-      "name": "Terance Mann",
-      "acquisitionType": "draft",
-      "date": "2019-06-20",
-      "draftPick": 48,
-      "draftRound": 2,
-      "note": "Drafted by LA Clippers from Florida State",
-      "isOrigin": true
-    }
+    "tradeDescription": "3-team trade: ATL traded Terance Mann and Drake Powell to BKN; ATL traded Georges Niang and 2031 2nd (CLE own) to BOS; BKN traded cash to BOS; BOS traded Kristaps Porzingis to ATL. Boston also received a trade exception.",
+    "note": "Versatile wing, 2021 playoff hero vs Utah. BKN received Mann and Drake Powell as part of facilitating Porzingis move to Atlanta.",
+    "assetsGivenUp": [
+      {
+        "type": "other",
+        "name": "Cash considerations",
+        "acquisitionType": "original",
+        "date": "2025-07-07",
+        "note": "BKN sent cash to Boston Celtics to facilitate the 3-team Porzingis trade.",
+        "isOrigin": true
+      }
+    ]
   }
 }

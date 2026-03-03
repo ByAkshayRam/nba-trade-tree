@@ -2,20 +2,33 @@
   "_meta": {
     "team": "ATL",
     "player": "Nikola Durisic",
-    "source": "NBA/ESPN Trade History",
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/teams/ATL/2025_transactions.html",
     "originYear": 2024,
-    "depth": 1,
-    "lastUpdated": "2026-02-14"
+    "depth": 2,
+    "lastUpdated": "2026-03-02",
+    "note": "WAIVED February 18, 2026 — no longer on roster"
   },
   "tree": {
     "type": "player",
     "name": "Nikola Durisic",
-    "acquisitionType": "draft",
-    "date": "2024-06-26",
+    "acquisitionType": "trade",
+    "date": "2024-06-27",
     "currentTeam": "ATL",
-    "draftPick": 52,
-    "draftRound": 2,
-    "note": "Serbian wing, international prospect on two-way",
-    "isOrigin": true
+    "tradePartner": "MIA",
+    "tradeDescription": "3-team trade: ATL traded A.J. Griffin to HOU, ATL traded cash to MIA; MIA traded Nikola Djurisic to ATL; HOU traded Pelle Larsson to MIA.",
+    "note": "Serbian wing. Acquired via 3-team trade on draft night 2024. Waived Feb 18, 2026.",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "A.J. Griffin",
+        "acquisitionType": "draft",
+        "date": "2022-06-23",
+        "draftPick": 16,
+        "draftRound": 1,
+        "note": "Hawks' own #16 pick in 2022 draft. Duke wing, sent to HOU in 3-team trade.",
+        "isOrigin": true
+      }
+    ]
   }
 }

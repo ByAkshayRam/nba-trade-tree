@@ -2,20 +2,19 @@
   "_meta": {
     "team": "MIN",
     "player": "Julian Phillips",
-    "source": "ESPN, NBA.com, Basketball-Reference, Wikipedia",
-    "originYear": 2023,
-    "depth": 4,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/p/phillju02.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Julian Phillips",
     "acquisitionType": "trade",
-    "date": "2026-02-05",
+    "date": "2026-02-06",
     "currentTeam": "MIN",
     "tradePartner": "CHI",
     "tradeDescription": "Acquired alongside Ayo Dosunmu from Bulls for Rob Dillingham, Leonard Miller, and 4 second-round picks",
-    "note": "Tennessee forward, 2023 2nd round pick (#35 by BOS, traded to WAS then CHI). Same trade as Dosunmu.",
+    "note": "Tennessee forward, 2023 2nd round pick (#35). Same trade as Dosunmu.",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -25,25 +24,124 @@
         "draftPick": 8,
         "draftRound": 1,
         "tradePartner": "SAS",
-        "note": "Part of same trade package as Dosunmu deal — see min-ayo-dosunmu.json for full asset tree",
-        "isOrigin": true
+        "tradeDescription": "MIN traded a 2030 1st round pick swap right and 2031 unprotected 1st round pick to SAS for Rob Dillingham (#8 overall)",
+        "note": "Kentucky guard, selected #8 by SAS, traded to MIN. Shared cost \u2014 see min-ayo-dosunmu.json for full asset tree",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2031 1st Round Pick",
+            "acquisitionType": "own",
+            "note": "MIN 2031 unprotected 1st round pick, sent to SAS",
+            "isOrigin": true,
+            "date": "2024-06-26"
+          },
+          {
+            "type": "other",
+            "name": "2030 1st Round Pick Swap",
+            "acquisitionType": "other",
+            "note": "Right for SAS to swap 1st round picks with MIN in 2030",
+            "isOrigin": true
+          }
+        ]
       },
       {
         "type": "player",
         "name": "Leonard Miller",
         "acquisitionType": "draft-night-trade",
-        "date": "2023-06-22",
+        "date": "2023-06-23",
         "draftPick": 33,
         "draftRound": 2,
         "tradePartner": "SAS",
-        "note": "Part of same trade package as Dosunmu deal",
-        "isOrigin": true
+        "tradeDescription": "MIN traded UTA 2026 2nd round pick and MIN 2028 2nd round pick to SAS for Leonard Miller (#33)",
+        "note": "Canadian forward, selected #33 by SAS, traded to MIN. Shared cost \u2014 see min-ayo-dosunmu.json",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2026 2nd Round Pick via UTA",
+            "acquisitionType": "trade",
+            "tradePartner": "UTA",
+            "note": "Utah's 2026 2nd, from Conley 3-team trade. See min-ayo-dosunmu.json for full chain.",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "D'Angelo Russell",
+                "acquisitionType": "trade",
+                "date": "2020-02-06",
+                "tradePartner": "GSW",
+                "note": "Shared cost. Full chain in min-ayo-dosunmu.json: Wiggins (draft #1) + 2021 1st (#7 Kuminga) + 2021 2nd (#36 McBride)",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Andrew Wiggins",
+                    "acquisitionType": "draft",
+                    "date": "2014-06-26",
+                    "draftPick": 1,
+                    "draftRound": 1,
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2021 1st Round Pick (#7)",
+                    "acquisitionType": "own",
+                    "becamePlayer": "Jonathan Kuminga",
+                    "isOrigin": true,
+                    "date": "2021-07-29"
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2021 2nd Round Pick (#36)",
+                    "acquisitionType": "own",
+                    "becamePlayer": "Miles McBride",
+                    "isOrigin": true,
+                    "date": "2021-07-29"
+                  }
+                ]
+              }
+            ],
+            "date": "2023-06-23"
+          },
+          {
+            "type": "pick",
+            "name": "2028 2nd Round Pick",
+            "acquisitionType": "own",
+            "note": "Minnesota's own 2028 2nd round pick, sent to SAS for Miller",
+            "isOrigin": true,
+            "date": "2023-06-23"
+          }
+        ]
       },
       {
-        "type": "other",
-        "name": "4 Second-Round Picks",
-        "note": "2026, 2027 (via CLE), 2031, 2032 2nd round picks — see min-ayo-dosunmu.json for details",
-        "isOrigin": true
+        "type": "pick",
+        "name": "2026 2nd Round Pick (least favorable DEN/GSW)",
+        "acquisitionType": "trade",
+        "note": "Least favorable of Denver or Golden State 2026 2nd round picks. Accumulated through multiple prior trades.",
+        "isOrigin": true,
+        "date": "2026-02-06"
+      },
+      {
+        "type": "pick",
+        "name": "2027 2nd Round Pick via CLE",
+        "acquisitionType": "trade",
+        "note": "Cleveland's 2027 2nd round pick. Exact acquisition trade unverified on BBRef.",
+        "isOrigin": true,
+        "date": "2026-02-06"
+      },
+      {
+        "type": "pick",
+        "name": "2031 2nd Round Pick (most favorable MIN/GSW)",
+        "acquisitionType": "own",
+        "note": "Most favorable of MIN own or GSW 2031 2nd. GSW swap right from Kyle Anderson 6-team trade. Base pick is MIN's own.",
+        "isOrigin": true,
+        "date": "2026-02-06"
+      },
+      {
+        "type": "pick",
+        "name": "2032 2nd Round Pick (most favorable PHX/HOU)",
+        "acquisitionType": "trade",
+        "note": "Most favorable of Phoenix or Houston 2032 2nd round picks. Exact acquisition trade unverified on BBRef.",
+        "isOrigin": true,
+        "date": "2026-02-06"
       }
     ]
   }

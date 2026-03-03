@@ -2,10 +2,11 @@
   "_meta": {
     "team": "LAL",
     "player": "Luke Kennard",
-    "source": "ESPN, Wikipedia, Yahoo Sports",
+    "source": "Basketball-Reference",
     "originYear": 2017,
     "depth": 6,
-    "lastUpdated": "2026-02-16"
+    "lastUpdated": "2026-03-01",
+    "sourceUrl": "https://www.basketball-reference.com/players/k/kennalu01.html"
   },
   "tree": {
     "type": "player",
@@ -21,17 +22,19 @@
         "type": "player",
         "name": "Gabe Vincent",
         "acquisitionType": "free-agent",
-        "date": "2023-07-01",
+        "date": "2023-07-06",
         "note": "Former Heat guard, signed as free agent with Lakers in 2023",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2032 LAL 2nd Round Pick",
+        "name": "2032 2nd Round Pick via LAL",
         "acquisitionType": "original",
         "date": "2032-06-01",
         "note": "Lakers' own 2nd round pick",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

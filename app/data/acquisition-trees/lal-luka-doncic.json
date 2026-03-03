@@ -4,8 +4,9 @@
     "player": "Luka Doncic",
     "source": "Basketball-Reference",
     "originYear": 2018,
-    "depth": 4,
-    "lastUpdated": "2026-02-16"
+    "depth": 6,
+    "lastUpdated": "2026-03-01",
+    "sourceUrl": "https://www.basketball-reference.com/players/d/doncilu01.html"
   },
   "tree": {
     "type": "player",
@@ -34,7 +35,8 @@
             "draftPick": 2,
             "draftRound": 1,
             "note": "UCLA point guard, drafted 2nd overall by Lakers",
-            "isOrigin": true
+            "isOrigin": true,
+            "assetsGivenUp": []
           },
           {
             "type": "player",
@@ -44,44 +46,86 @@
             "draftPick": 2,
             "draftRound": 1,
             "note": "Duke forward, drafted 2nd overall by Lakers",
-            "isOrigin": true
+            "isOrigin": true,
+            "assetsGivenUp": []
           },
           {
             "type": "player",
             "name": "Josh Hart",
-            "acquisitionType": "draft",
+            "acquisitionType": "draft-night-trade",
             "date": "2017-06-22",
             "draftPick": 30,
             "draftRound": 1,
-            "note": "Villanova guard, drafted 30th overall by Lakers",
-            "isOrigin": true
+            "note": "Drafted #30 by UTA, immediately traded to LAL on draft night. Pick originally from GSW via 3-team trade (Jul 10, 2013).",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Thomas Bryant",
+                "acquisitionType": "draft",
+                "date": "2017-06-22",
+                "draftPick": 42,
+                "draftRound": 2,
+                "note": "Also received from UTA in Hart/Bradley draft-night swap; drafted #42 by UTA",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              },
+              {
+                "type": "player",
+                "name": "Tony Bradley",
+                "acquisitionType": "draft-night-trade",
+                "date": "2017-06-22",
+                "draftPick": 28,
+                "draftRound": 1,
+                "tradePartner": "LAL",
+                "tradeDescription": "Pick (#28) acquired from Rockets in Lou Williams trade (Feb 23, 2017); LAL drafted Bradley and traded him to UTA for Josh Hart (#30)",
+                "note": "HOU traded this pick with Corey Brewer to LAL for Lou Williams",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Lou Williams",
+                    "acquisitionType": "free-agent",
+                    "date": "2015-07-09",
+                    "note": "Signed as FA Jul 2015; traded to HOU for Corey Brewer and 2017 1st (#28)",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  }
+                ]
+              }
+            ],
+            "tradePartner": "UTA",
+            "tradeDescription": "Jazz traded Josh Hart (#30) and Thomas Bryant to Lakers for Tony Bradley"
           },
           {
             "type": "pick",
-            "name": "2019 LAL 1st Round Pick",
+            "name": "2019 1st Round Pick (#4) via LAL",
             "acquisitionType": "original",
             "date": "2019-06-20",
             "becamePlayer": "De'Andre Hunter",
             "note": "Lakers' own 1st round pick, became #4 overall, sent to NOP then traded to ATL",
-            "isOrigin": true
+            "isOrigin": true,
+            "assetsGivenUp": []
           },
           {
             "type": "pick",
-            "name": "2022 LAL 1st Round Pick",
+            "name": "2022 1st Round Pick (#8) via LAL",
             "acquisitionType": "original",
             "date": "2022-06-23",
             "becamePlayer": "Dyson Daniels",
             "note": "Lakers' own 1st round pick, sent to NOP",
-            "isOrigin": true
+            "isOrigin": true,
+            "assetsGivenUp": []
           },
           {
             "type": "pick",
-            "name": "2025 LAL 1st Round Pick",
+            "name": "2025 1st Round Pick (#9) via LAL",
             "acquisitionType": "original",
             "date": "2025-06-25",
             "becamePlayer": "Drake Powell",
             "note": "Lakers' own 1st round pick, NOP deferred from 2024 to 2025",
-            "isOrigin": true
+            "isOrigin": true,
+            "assetsGivenUp": []
           }
         ]
       },
@@ -93,15 +137,17 @@
         "draftPick": 35,
         "draftRound": 2,
         "note": "Michigan State guard, drafted 35th overall by Lakers",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2029 LAL 1st Round Pick",
+        "name": "2029 1st Round Pick via LAL",
         "acquisitionType": "original",
         "date": "2029-06-01",
         "note": "Lakers' own 1st round pick, sent to Dallas",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "player",
@@ -111,18 +157,85 @@
         "draftPick": 17,
         "draftRound": 1,
         "note": "Indiana guard, drafted 17th overall by Lakers, sent to Utah Jazz",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2025 2nd Round Pick (LAC own)",
+        "name": "2025 2nd Round Pick (#45)",
         "acquisitionType": "trade",
         "date": "2023-02-09",
         "tradePartner": "LAC",
-        "tradeDescription": "Received from Clippers via 4-team trade on Feb 9, 2023",
+        "tradeDescription": "4-team trade: Lakers sent Beverley to Magic, Bryant to Nuggets; received Reed, Bamba, 2024 2nd and 2025 2nd from Clippers",
         "becamePlayer": "John Tonje",
-        "note": "LAC own 2nd round pick, acquired in Feb 2023 4-team trade, sent to Utah Jazz",
-        "isOrigin": true
+        "note": "LAC own 2nd round pick, sent to Utah Jazz in Doncic trade",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Patrick Beverley",
+            "acquisitionType": "trade",
+            "date": "2022-08-25",
+            "tradePartner": "UTA",
+            "tradeDescription": "Lakers acquired Beverley from Jazz for Talen Horton-Tucker and Stanley Johnson",
+            "note": "Sent to Orlando Magic in 4-team trade",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Talen Horton-Tucker",
+                "acquisitionType": "draft-night-trade",
+                "date": "2019-06-20",
+                "draftPick": 46,
+                "draftRound": 2,
+                "note": "Drafted #46 by ORL, immediately traded to LAL on draft night",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "pick",
+                    "name": "2020 2nd Round Pick (#58)",
+                    "acquisitionType": "draft",
+                    "date": "2019-06-20",
+                    "draftPick": 58,
+                    "draftRound": 2,
+                    "becamePlayer": "Paul Reed",
+                    "note": "LAL own pick; sent to ORL in THT trade",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  },
+                  {
+                    "type": "other",
+                    "name": "Cash Considerations ($2.2M)",
+                    "acquisitionType": "free-agent",
+                    "note": "Cash sent to ORL",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  }
+                ],
+                "tradePartner": "ORL",
+                "tradeDescription": "Lakers traded cash ($2.2M) and a 2020 2nd round pick (#58, Paul Reed) to Magic for the #46 pick (Talen Horton-Tucker)"
+              },
+              {
+                "type": "player",
+                "name": "Stanley Johnson",
+                "acquisitionType": "free-agent",
+                "date": "2022-01-27",
+                "note": "Signed by Lakers after multiple 10-day contracts in 2021-22 season",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Thomas Bryant",
+            "acquisitionType": "free-agent",
+            "date": "2022-07-06",
+            "note": "Center signed with Lakers as free agent, sent to Denver Nuggets in 4-team trade",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          }
+        ]
       }
     ]
   }

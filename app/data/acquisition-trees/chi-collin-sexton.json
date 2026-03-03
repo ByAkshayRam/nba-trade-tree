@@ -2,10 +2,9 @@
   "_meta": {
     "team": "CHI",
     "player": "Collin Sexton",
-    "source": "ESPN, NBA.com, al.com",
-    "originYear": 2019,
-    "depth": 3,
-    "lastUpdated": "2026-02-15"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/s/sextoco01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,7 +13,7 @@
     "date": "2026-02-04",
     "currentTeam": "CHI",
     "tradePartner": "CHA",
-    "tradeDescription": "Bulls traded Coby White and Mike Conley to Hornets for Collin Sexton, Ousmane Dieng, and three 2nd-round picks",
+    "tradeDescription": "Bulls traded Coby White and Mike Conley to Hornets for Collin Sexton, Ousmane Dieng, and two 2031 2nd-round picks (DEN own, NYK own). Both teams also received trade exceptions.",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -24,7 +23,70 @@
         "draftPick": 7,
         "draftRound": 1,
         "note": "Drafted 7th overall by Chicago Bulls from UNC in 2019 NBA Draft",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
+      },
+      {
+        "type": "player",
+        "name": "Mike Conley",
+        "acquisitionType": "trade",
+        "date": "2026-02-03",
+        "tradePartner": "MIN",
+        "tradeDescription": "3-team trade: Bulls traded Kevin Huerter and Dario Saric to Pistons; Pistons traded Jaden Ivey to Bulls; Timberwolves traded Mike Conley to Bulls; Pistons traded a protected 2026 1st round pick swap to Timberwolves.",
+        "note": "Acquired from MIN in Ivey 3-team trade, then sent to CHA next day",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Kevin Huerter",
+            "acquisitionType": "trade",
+            "date": "2025-02-03",
+            "tradePartner": "SAC",
+            "tradeDescription": "3-team trade: Bulls traded Zach LaVine and a 2028 2nd round pick to Kings; Kings traded Kevin Huerter to Bulls; Kings traded De'Aaron Fox and Jordan McLaughlin to Spurs; Spurs traded Zach Collins, Tre Jones and a 2025 1st round pick (Noa Essengue) to Bulls.",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Zach LaVine",
+                "acquisitionType": "trade",
+                "date": "2017-06-22",
+                "tradePartner": "MIN",
+                "tradeDescription": "Bulls traded Jimmy Butler and Justin Patton to Timberwolves for Zach LaVine, Kris Dunn, and Lauri Markkanen",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Jimmy Butler",
+                    "acquisitionType": "draft",
+                    "date": "2011-06-23",
+                    "draftPick": 30,
+                    "draftRound": 1,
+                    "note": "Drafted 30th overall by Chicago Bulls from Marquette in 2011 NBA Draft",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Dario Saric",
+            "acquisitionType": "trade",
+            "date": "2026-02-01",
+            "tradePartner": "SAC",
+            "tradeDescription": "3-team trade: Bulls traded Emanuel Miller to Cavaliers; Cavaliers traded De'Andre Hunter to Kings; Kings traded Dario Saric and a 2029 2nd round pick to Bulls; Cavaliers traded a 2027 2nd round pick to Bulls.",
+            "note": "Acquired from SAC Feb 1 in 3-team deal, then sent to DET Feb 3",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Emanuel Miller",
+                "acquisitionType": "free-agent",
+                "date": "2024-12-27",
+                "note": "Signed to two-way contract Dec 27, 2024. Sent to CLE in Saric 3-team deal.",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              }
+            ]
+          }
+        ]
       }
     ]
   }

@@ -2,10 +2,9 @@
   "_meta": {
     "team": "GSW",
     "player": "Kristaps Porzingis",
-    "source": "Basketball-Reference, ESPN, NBA.com",
-    "originYear": 2015,
-    "depth": 7,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/p/porzikr01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,7 +13,7 @@
     "date": "2026-02-05",
     "currentTeam": "GSW",
     "tradePartner": "ATL",
-    "tradeDescription": "Warriors traded Kuminga, Buddy Hield, and 2026 1st to Hawks for Porzingis",
+    "tradeDescription": "GSW traded Jonathan Kuminga and Buddy Hield to ATL for Kristaps Porzingis",
     "note": "7'3\" center, 2024 NBA champion with Boston",
     "isOrigin": false,
     "assetsGivenUp": [
@@ -30,13 +29,79 @@
         "assetsGivenUp": [
           {
             "type": "pick",
-            "name": "2021 MIN 1st Round Pick (top-3 protected)",
+            "name": "2021 1st Round Pick (#7) via MIN",
             "acquisitionType": "trade",
             "date": "2020-02-06",
             "tradePartner": "MIN",
+            "tradeDescription": "Acquired from MIN in Andrew Wiggins trade (GSW sent D'Angelo Russell, Jacob Evans, Omari Spellman)",
             "becamePlayer": "Jonathan Kuminga",
-            "note": "Acquired from Minnesota in Andrew Wiggins trade, conveyed as #7 overall",
-            "isOrigin": true
+            "note": "Top-3 protected, conveyed as #7 overall",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "D'Angelo Russell",
+                "acquisitionType": "trade",
+                "date": "2019-07-07",
+                "tradePartner": "BKN",
+                "tradeDescription": "Sign-and-trade: GSW signed Kevin Durant as FA and traded him with 2025 2nd to BKN for D'Angelo Russell, Treveon Graham, and Shabazz Napier",
+                "note": "2019 All-Star, acquired in KD sign-and-trade",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Kevin Durant",
+                    "acquisitionType": "free-agent",
+                    "date": "2016-07-04",
+                    "note": "Signed as free agent from Oklahoma City Thunder",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  }
+                ]
+              },
+              {
+                "type": "player",
+                "name": "Jacob Evans",
+                "acquisitionType": "draft",
+                "date": "2018-06-21",
+                "draftPick": 28,
+                "draftRound": 1,
+                "note": "Drafted 28th overall by GSW in 2018",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              },
+              {
+                "type": "player",
+                "name": "Omari Spellman",
+                "acquisitionType": "trade",
+                "date": "2019-07-08",
+                "tradePartner": "ATL",
+                "tradeDescription": "GSW traded Damian Jones and a 2026 2nd round pick to ATL for Omari Spellman",
+                "note": "Villanova forward, acquired from Atlanta",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Damian Jones",
+                    "acquisitionType": "draft",
+                    "date": "2016-06-23",
+                    "draftPick": 30,
+                    "draftRound": 1,
+                    "note": "Vanderbilt center, drafted 30th overall by Golden State",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2026 2nd Round Pick",
+                    "acquisitionType": "own",
+                    "note": "GSW own 2nd rounder sent to Atlanta",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -57,18 +122,11 @@
             "date": "2011-06-23",
             "draftPick": 11,
             "draftRound": 1,
-            "note": "Washington State guard, drafted #11 overall by Golden State. 4x NBA champion, one of the greatest shooters in NBA history. Left via sign-and-trade to Dallas after 13 seasons.",
-            "isOrigin": true
+            "note": "Washington State guard, drafted #11 overall by Golden State. 4x NBA champion. Left via sign-and-trade to Dallas after 13 seasons.",
+            "isOrigin": true,
+            "assetsGivenUp": []
           }
         ]
-      },
-      {
-        "type": "pick",
-        "name": "2026 1st Round Pick",
-        "acquisitionType": "original",
-        "date": "2026-06-26",
-        "note": "Warriors' own first-round pick",
-        "isOrigin": true
       }
     ]
   }

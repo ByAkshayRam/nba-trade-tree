@@ -2,19 +2,18 @@
   "_meta": {
     "team": "WAS",
     "player": "Jaden Hardy",
-    "source": "ESPN, NBA.com",
-    "originYear": 2022,
-    "depth": 2,
-    "lastUpdated": "2026-02-27"
+    "source": "Basketball-Reference, NBA.com",
+    "sourceUrl": "https://www.basketball-reference.com/players/h/hardyja02.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Jaden Hardy",
     "acquisitionType": "trade",
-    "date": "2026-02-04",
+    "date": "2026-02-06",
     "currentTeam": "WAS",
     "tradePartner": "DAL",
-    "tradeDescription": "Acquired with Anthony Davis, Russell, Exum from Dallas",
+    "tradeDescription": "3-team trade (WAS/DAL/CHA): WAS received AD, Hardy, Russell, Exum from DAL. WAS sent Middleton, AJ Johnson, Bagley, Branham, 2 1sts, 3 2nds.",
     "note": "Shared cost with Anthony Davis — guard from Dallas",
     "assetsGivenUp": [
       {
@@ -23,17 +22,10 @@
         "acquisitionType": "trade",
         "date": "2025-02-06",
         "tradePartner": "MIL",
-        "note": "Shared cost with AJ Johnson — 3x All-Star from Milwaukee",
-        "assetsGivenUp": [
-          {
-            "type": "player",
-            "name": "Kyle Kuzma",
-            "acquisitionType": "free-agent",
-            "date": "2023-07-07",
-            "note": "Re-signed to multi-year contract with Washington",
-            "isOrigin": true
-          }
-        ]
+        "tradeDescription": "4-team trade: WAS sent Kuzma, PBJ, 2025 2nd, 2026 2nd to MIL for Middleton, AJ Johnson, 2028 1st. See was-anthony-davis.json for full chain.",
+        "note": "Shared cost with AD — 3x All-Star from Milwaukee",
+        "assetsGivenUp": [],
+        "isOrigin": true
       }
     ]
   }

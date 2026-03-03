@@ -2,18 +2,17 @@
   "_meta": {
     "team": "GSW",
     "player": "De'Anthony Melton",
-    "source": "Basketball-Reference, ESPN",
-    "originYear": 2018,
-    "depth": 1,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/m/meltode01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "De'Anthony Melton",
     "acquisitionType": "free-agent",
-    "date": "2024-07-01",
+    "date": "2025-10-01",
     "currentTeam": "GSW",
-    "note": "USC guard, signed via mid-level exception after leaving Philadelphia. Re-signed 2025: 2yr/vet min (~$3.1M)",
+    "note": "USC guard, re-signed as free agent after being traded to Brooklyn in Dec 2024",
     "isOrigin": true,
     "assetsGivenUp": []
   }

@@ -2,10 +2,9 @@
   "_meta": {
     "team": "DAL",
     "player": "Klay Thompson",
-    "source": "ESPN, Basketball-Reference, NBA.com",
-    "originYear": 2011,
-    "depth": 2,
-    "lastUpdated": "2026-02-22"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/t/thompkl01.html",
+    "lastUpdated": "2026-03-02"
   },
   "tree": {
     "type": "player",
@@ -14,8 +13,8 @@
     "date": "2024-07-06",
     "currentTeam": "DAL",
     "tradePartner": "GSW",
-    "note": "Washington State guard, 2011 #11 overall pick by Golden State. 6-team sign-and-trade, 3yr/$50M. | 3yr/$50M",
-    "isOrigin": false,
+    "tradeDescription": "6-team sign-and-trade: GSW traded Klay Thompson to DAL; CHA traded 2025 2nd (Johni Broome) to DAL; DAL traded Josh Green to CHA; DAL traded 2031 2nd (PHI own) to PHI; DEN traded Reggie Jackson, 2029 2nd, 2030 2nd to CHA; DEN traded 2025 2nd (Alex Toohey) to MIN; GSW traded cash + 2031 2nd to MIN; MIN traded Kyle Anderson to GSW; PHI traded Buddy Hield to GSW.",
+    "note": "5x All-Star, 4x champion. 3yr/$50M deal. 2011 #11 overall pick by Golden State.",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -24,24 +23,19 @@
         "date": "2020-11-18",
         "draftPick": 18,
         "draftRound": 1,
-        "note": "Arizona wing, drafted #18 by Dallas in 2020. Sent to Charlotte as part of 6-team Klay Thompson sign-and-trade.",
-        "isOrigin": true
+        "tradePartner": "CHA",
+        "tradeDescription": "Drafted #18 overall by Dallas in 2020 out of Arizona. Sent to Charlotte as part of 6-team Klay Thompson sign-and-trade.",
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2025 2nd Round Pick",
-        "acquisitionType": "original",
+        "name": "2031 2nd Round Pick",
+        "acquisitionType": "draft",
         "date": "2024-07-06",
-        "note": "Sent to Golden State as part of Klay Thompson sign-and-trade",
-        "isOrigin": true
-      },
-      {
-        "type": "pick",
-        "name": "2026 2nd Round Pick",
-        "acquisitionType": "original",
-        "date": "2024-07-06",
-        "note": "Sent to Golden State as part of Klay Thompson sign-and-trade",
-        "isOrigin": true
+        "note": "DAL's own 2031 2nd round pick. Sent to Philadelphia as part of 6-team Klay Thompson sign-and-trade.",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

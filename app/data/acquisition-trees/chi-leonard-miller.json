@@ -2,10 +2,9 @@
   "_meta": {
     "team": "CHI",
     "player": "Leonard Miller",
-    "source": "ESPN, NBA.com",
-    "originYear": 2021,
-    "depth": 2,
-    "lastUpdated": "2026-02-15"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/m/millele01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,7 +13,7 @@
     "date": "2026-02-05",
     "currentTeam": "CHI",
     "tradePartner": "MIN",
-    "tradeDescription": "Bulls traded Ayo Dosunmu and Julian Phillips to Timberwolves for Rob Dillingham, Leonard Miller, and four 2nd-round picks",
+    "tradeDescription": "Bulls traded Ayo Dosunmu, Julian Phillips, and a 2031 2nd round pick swap right to Timberwolves for Rob Dillingham, Leonard Miller, a 2026 2nd round pick (least favorable), a 2027 2nd round pick (CLE own), and a 2032 2nd round pick (more favorable).",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -23,8 +22,9 @@
         "date": "2021-07-29",
         "draftPick": 38,
         "draftRound": 2,
-        "note": "Drafted 38th overall by Chicago Bulls from Illinois in 2021",
-        "isOrigin": true
+        "note": "Drafted 38th overall by Chicago Bulls from Illinois in 2021 NBA Draft",
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "player",
@@ -33,8 +33,18 @@
         "date": "2023-06-22",
         "draftPick": 54,
         "draftRound": 2,
-        "note": "Drafted 54th overall by Chicago Bulls from Tennessee in 2023",
-        "isOrigin": true
+        "note": "Drafted 54th overall by Chicago Bulls from Tennessee in 2023 NBA Draft",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      },
+      {
+        "type": "pick",
+        "name": "2031 2nd Round Pick Swap Right",
+        "acquisitionType": "original",
+        "date": "2026-02-05",
+        "note": "2031 2nd round pick swap right sent to MIN in Dillingham/Miller trade",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

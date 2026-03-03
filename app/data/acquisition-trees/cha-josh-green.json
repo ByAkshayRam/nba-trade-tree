@@ -2,10 +2,9 @@
   "_meta": {
     "team": "CHA",
     "player": "Josh Green",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2024,
-    "depth": 2,
-    "lastUpdated": "2026-02-11"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/g/greenjo02.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,23 +13,57 @@
     "date": "2024-07-06",
     "currentTeam": "CHA",
     "tradePartner": "DAL",
-    "tradeDescription": "Acquired in 6-team Klay Thompson sign-and-trade",
+    "tradeDescription": "6-team Klay Thompson sign-and-trade. Charlotte sent a 2025 2nd (PHI own, #38 Johni Broome) to Dallas and cash to Denver. Charlotte received Josh Green from Dallas, plus Reggie Jackson, 2029 2nd (DEN own), and 2030 2nd (DEN own) from Denver.",
     "note": "Australian wing with defensive versatility",
     "assetsGivenUp": [
       {
         "type": "pick",
-        "name": "2029 2nd Round Pick",
-        "acquisitionType": "original",
-        "date": "2024-07-06",
-        "note": "Hornets' own future second round pick",
-        "isOrigin": true
+        "name": "2025 2nd Round Pick (#38) via PHI",
+        "becamePlayer": "Johni Broome",
+        "acquisitionType": "trade",
+        "tradePartner": "OKC",
+        "date": "2024-02-08",
+        "tradeDescription": "Acquired from Thunder as part of Gordon Hayward trade (PHI own pick)",
+        "note": "Originally PHI's own 2nd-round pick, acquired from OKC in Hayward deal. Sent to DAL in Josh Green 6-team trade.",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Gordon Hayward",
+            "acquisitionType": "sign-and-trade",
+            "date": "2020-11-29",
+            "tradePartner": "BOS",
+            "tradeDescription": "Hornets traded a 2022 2nd round pick (did not convey) to Celtics for Hayward, 2023 2nd (BOS own), and 2024 2nd (BOS own). Boston also received a trade exception.",
+            "note": "Former All-Star forward, 4yr/$120M sign-and-trade from Celtics",
+            "assetsGivenUp": [
+              {
+                "type": "pick",
+                "name": "2022 2nd Round Pick",
+                "acquisitionType": "original",
+                "date": "2020-11-29",
+                "note": "Hornets' own 2022 2nd-round pick, sent to Boston in Hayward S&T. Conditional \u2014 did not convey.",
+                "isOrigin": true,
+                "becamePlayer": "Did not convey"
+              },
+              {
+                "type": "other",
+                "name": "Trade Exception",
+                "acquisitionType": "original",
+                "date": "2020-11-29",
+                "tradeDescription": "Boston received a $28.5M trade exception as part of the Gordon Hayward sign-and-trade",
+                "note": "Trade exception generated from Hayward's outgoing salary. BOS used part of it to acquire Daniel Theis from HOU in Feb 2022.",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              }
+            ]
+          }
+        ]
       },
       {
-        "type": "pick", 
-        "name": "2030 2nd Round Pick",
+        "type": "other",
+        "name": "Cash Considerations",
         "acquisitionType": "original",
         "date": "2024-07-06",
-        "note": "Hornets' own future second round pick",
+        "note": "Cash sent to Denver as part of 6-team trade",
         "isOrigin": true
       }
     ]

@@ -2,10 +2,9 @@
   "_meta": {
     "team": "DEN",
     "player": "Peyton Watson",
-    "source": "ESPN, NBA.com, Wikipedia, Basketball News",
-    "originYear": 2020,
-    "depth": 3,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/w/watsope01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,27 +13,25 @@
     "date": "2022-06-23",
     "currentTeam": "DEN",
     "tradePartner": "OKC",
-    "tradeDescription": "Selected 30th by OKC, then traded to Denver with 2 future 2nd round picks",
+    "tradeDescription": "Denver traded JaMychal Green and a 2027 1st round pick (protected) to OKC for the #30 pick (Peyton Watson), a 2023 2nd round pick (#40, Maxwell Lewis), and a 2024 2nd round pick (Tyler Kolek)",
     "draftPick": 30,
     "draftRound": 1,
-    "note": "Guard/forward from UCLA acquired via draft-night trade",
-    "isOrigin": false,
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "JaMychal Green",
         "acquisitionType": "free-agent",
         "date": "2020-11-30",
-        "note": "Forward signed as free agent, multi-year contract",
+        "note": "Forward signed as free agent",
         "isOrigin": true,
         "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2027 DEN 1st Round Pick",
+        "name": "2027 1st Round Pick via DEN",
         "acquisitionType": "original",
         "date": "2022-06-23",
-        "note": "Denver's 2027 first-round pick (protected)",
+        "note": "Denver's own 2027 first-round pick (conditional/protected), sent to OKC",
         "isOrigin": true
       }
     ]

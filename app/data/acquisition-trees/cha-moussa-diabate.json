@@ -2,19 +2,19 @@
   "_meta": {
     "team": "CHA",
     "player": "Moussa Diabate",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2023,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/d/diabamo01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Moussa Diabate",
     "acquisitionType": "free-agent",
-    "date": "2023-07-01",
+    "date": "2024-07-31",
     "currentTeam": "CHA",
-    "note": "Former Michigan center, athletic rim protector | 3yr/$5.7M",
-    "tradeDescription": "Signed as free agent from Detroit",
+    "note": "Former Michigan center, athletic rim protector. Signed to two-way contract, converted to standard contract Feb 8, 2025.",
+    "tradeDescription": "Signed as free agent on two-way contract from Clippers",
+    "assetsGivenUp": [],
     "isOrigin": true
   }
 }

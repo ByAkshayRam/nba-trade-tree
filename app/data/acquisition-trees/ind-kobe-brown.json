@@ -2,10 +2,9 @@
   "_meta": {
     "team": "IND",
     "player": "Kobe Brown",
-    "source": "Basketball-Reference, ESPN, NBA Trade History",
-    "originYear": 2026,
-    "depth": 1,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/b/brownko01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,7 +13,55 @@
     "date": "2026-02-05",
     "currentTeam": "IND",
     "tradePartner": "LAC",
-    "note": "Forward from Missouri, undrafted. Acquired alongside Ivica Zubac in Clippers trade. Assets listed on ind-ivica-zubac.json.",
-    "isOrigin": true
+    "tradeDescription": "IND traded Isaiah Jackson, Bennedict Mathurin, a 2026 1st round pick (IND own), a 2028 2nd round pick (DAL own), and a 2029 1st round pick (IND own) to LAC for Ivica Zubac and Kobe Brown. LAC also received trade exceptions.",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Bennedict Mathurin",
+        "acquisitionType": "draft",
+        "date": "2022-06-23",
+        "draftPick": 6,
+        "draftRound": 1,
+        "note": "Guard from Arizona, 6th overall pick in 2022 NBA Draft",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      },
+      {
+        "type": "player",
+        "name": "Isaiah Jackson",
+        "acquisitionType": "trade",
+        "date": "2021-08-06",
+        "tradePartner": "LAL",
+        "draftPick": 22,
+        "draftRound": 1,
+        "note": "Drafted 22nd overall by LAL in 2021. Acquired in 5-team trade (Westbrook deal).",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      },
+      {
+        "type": "pick",
+        "name": "2026 1st Round Pick via IND",
+        "acquisitionType": "own",
+        "note": "IND's own pick",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      },
+      {
+        "type": "pick",
+        "name": "2028 2nd Round Pick via DAL",
+        "acquisitionType": "trade",
+        "note": "Dallas's own 2nd round pick, acquired from SAC in Chris Duarte trade",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      },
+      {
+        "type": "pick",
+        "name": "2029 1st Round Pick via IND",
+        "acquisitionType": "own",
+        "note": "IND's own pick",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      }
+    ]
   }
 }

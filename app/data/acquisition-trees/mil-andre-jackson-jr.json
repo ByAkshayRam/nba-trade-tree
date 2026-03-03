@@ -2,20 +2,36 @@
   "_meta": {
     "team": "MIL",
     "player": "Andre Jackson Jr.",
-    "source": "NBA/ESPN Trade History Research",
-    "originYear": 2023,
-    "depth": 1,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference Transaction Logs",
+    "lastUpdated": "2026-03-01",
+    "sourceUrl": "https://www.basketball-reference.com/players/j/jacksan01.html"
   },
   "tree": {
     "type": "player",
     "name": "Andre Jackson Jr.",
-    "acquisitionType": "draft",
+    "acquisitionType": "trade",
     "date": "2023-06-22",
-    "currentTeam": "MIL",
-    "draftPick": 36,
-    "draftRound": 2,
-    "note": "Selected 36th overall in 2023 NBA Draft out of UConn",
-    "isOrigin": true
+    "tradePartner": "ORL",
+    "isOrigin": false,
+    "tradeDescription": "Bucks traded cash and a 2030 2nd round pick to the Orlando Magic for Andre Jackson Jr.",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2030 2nd Round Pick",
+        "acquisitionType": "own",
+        "date": "2023-06-22",
+        "tradeDescription": "Milwaukee's own 2030 2nd round pick",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      },
+      {
+        "type": "other",
+        "name": "Cash Considerations",
+        "acquisitionType": "original",
+        "date": "2023-06-22",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      }
+    ]
   }
 }

@@ -2,10 +2,9 @@
   "_meta": {
     "team": "SAS",
     "player": "De'Aaron Fox",
-    "source": "NBA.com, ESPN, Basketball-Reference",
-    "originYear": 2017,
-    "depth": 6,
-    "lastUpdated": "2026-02-17"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/f/foxde01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,40 +13,17 @@
     "date": "2025-02-03",
     "currentTeam": "SAS",
     "tradePartner": "SAC",
-    "tradeDescription": "3-team trade: SAS sent Collins/Jones/2025 CHI 1st to CHI; SAS sent Cissoko + 6 picks to SAC; CHI sent LaVine + 2028 2nd to SAC; SAC sent Huerter to CHI; SAC sent Fox + McLaughlin to SAS",
+    "tradeDescription": "3-team trade: SAS sent Collins/Jones/2025 CHI 1st to CHI; SAS sent Cissoko + 2025 2nd (CHI) + 2026 2nd + 2027 1st (SAS) + 2027 2nd + 2028 2nd (DEN) + 2031 1st (MIN) to SAC; CHI sent LaVine + 2028 2nd to SAC; SAC sent Huerter to CHI; SAC sent Fox + McLaughlin to SAS",
     "note": "All-Star guard originally drafted 5th overall by Sacramento in 2017",
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Zach Collins",
         "destination": "CHI",
-        "acquisitionType": "trade",
-        "date": "2021-08-06",
-        "tradePartner": "POR",
-        "tradeDescription": "Spurs acquired Collins from Trail Blazers in sign-and-trade",
-        "note": "Center originally drafted 10th overall by Portland in 2017",
-        "assetsGivenUp": [
-          {
-            "type": "player",
-            "name": "Al-Farouq Aminu",
-            "acquisitionType": "sign-and-trade",
-            "date": "2021-08-11",
-            "tradePartner": "CHI",
-            "tradeDescription": "CHI sent Aminu, Thaddeus Young, 2025 1st, 2022 2nd (LAL), 2025 2nd (CHI) to SAS for DeMar DeRozan S&T",
-            "note": "Salary filler acquired from Chicago in DeMar DeRozan sign-and-trade. Waived Oct 2021.",
-            "assetsGivenUp": [
-              {
-                "type": "player",
-                "name": "DeMar DeRozan",
-                "acquisitionType": "trade",
-                "date": "2018-07-18",
-                "tradePartner": "TOR",
-                "note": "All-Star guard acquired from Toronto in Kawhi Leonard trade. Sent to CHI in S&T.",
-                "isOrigin": true
-              }
-            ]
-          }
-        ]
+        "acquisitionType": "free-agent",
+        "date": "2021-08-11",
+        "note": "Center originally drafted 10th overall by Portland in 2017. Signed as free agent by SAS on 3yr/$22M deal.",
+        "isOrigin": true
       },
       {
         "type": "player",
@@ -62,11 +38,13 @@
       },
       {
         "type": "pick",
-        "name": "2025 CHI 1st Round Pick",
+        "name": "2025 1st Round Pick (#16) via CHI",
         "destination": "CHI",
         "acquisitionType": "trade",
-        "date": "2021-08-27",
-        "note": "Chicago's own 2025 1st round pick, acquired from Bulls in DeMar DeRozan sign-and-trade. Sent back to Chicago in this deal.",
+        "date": "2021-08-11",
+        "tradePartner": "CHI",
+        "tradeDescription": "CHI sent Aminu, Thaddeus Young, 2022 2nd (swap), 2025 1st (CHI own), 2025 2nd (CHI own) to SAS for DeMar DeRozan in sign-and-trade",
+        "note": "Chicago's own 2025 1st round pick, acquired in DeMar DeRozan sign-and-trade. Sent back to Chicago in Fox trade.",
         "becamePlayer": "Noa Essengue",
         "assetsGivenUp": [
           {
@@ -75,9 +53,31 @@
             "acquisitionType": "trade",
             "date": "2018-07-18",
             "tradePartner": "TOR",
-            "tradeDescription": "Spurs acquired DeRozan + Poeltl from Raptors for Leonard + Green",
-            "note": "All-Star guard originally drafted 9th overall by Toronto in 2009",
-            "isOrigin": true
+            "tradeDescription": "SAS traded Kawhi Leonard, Danny Green and cash to TOR for DeRozan, Jakob Poeltl and a 2019 1st round pick (top-20 protected)",
+            "note": "All-Star guard originally drafted 9th overall by Toronto in 2009. Sign-and-traded to CHI in 2021.",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Kawhi Leonard",
+                "acquisitionType": "draft-night-trade",
+                "date": "2011-06-23",
+                "draftPick": 15,
+                "draftRound": 1,
+                "tradePartner": "IND",
+                "tradeDescription": "IND drafted Leonard 15th overall and traded him to SAS for George Hill",
+                "note": "Forward drafted 15th overall from San Diego State, immediately traded to SAS on draft night",
+                "isOrigin": true
+              },
+              {
+                "type": "player",
+                "name": "Danny Green",
+                "acquisitionType": "free-agent",
+                "date": "2010-11-20",
+                "note": "Guard originally drafted 46th overall by Cleveland in 2009. Waived, signed by SAS as free agent.",
+                "isOrigin": true
+              }
+            ]
           }
         ]
       },
@@ -94,58 +94,111 @@
       },
       {
         "type": "pick",
-        "name": "2025 CHI 2nd Round Pick",
+        "name": "2025 2nd Round Pick via CHI",
         "destination": "SAC",
         "acquisitionType": "trade",
+        "date": "2021-08-11",
+        "tradePartner": "CHI",
+        "tradeDescription": "Acquired from CHI in DeMar DeRozan sign-and-trade",
         "note": "Chicago's own 2025 2nd round pick, sent to Sacramento",
         "becamePlayer": "Maxime Raynaud",
-        "isOrigin": true
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "DeMar DeRozan",
+            "acquisitionType": "trade",
+            "date": "2018-07-18",
+            "tradePartner": "TOR",
+            "tradeDescription": "SAS traded Kawhi Leonard, Danny Green and cash to TOR for DeRozan, Jakob Poeltl and a 2019 1st round pick (top-20 protected)",
+            "note": "All-Star guard originally drafted 9th overall by Toronto in 2009",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Kawhi Leonard",
+                "acquisitionType": "draft-night-trade",
+                "date": "2011-06-23",
+                "draftPick": 15,
+                "draftRound": 1,
+                "tradePartner": "IND",
+                "tradeDescription": "IND drafted Leonard 15th overall and traded him to SAS for George Hill",
+                "note": "Forward drafted 15th overall from San Diego State, immediately traded to SAS on draft night",
+                "isOrigin": true
+              },
+              {
+                "type": "player",
+                "name": "Danny Green",
+                "acquisitionType": "free-agent",
+                "date": "2010-11-20",
+                "note": "Guard originally drafted 46th overall by Cleveland in 2009. Waived, signed by SAS as free agent.",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
       },
       {
         "type": "pick",
-        "name": "2026 2nd Round Pick",
+        "name": "2026 2nd Round Pick (conditional CHO 1st did not convey)",
         "destination": "SAC",
-        "acquisitionType": "trade",
-        "note": "Originally a conditional 2025 CHO 1st round pick owed to SAC that did not convey; converted to this 2026 2nd round pick",
-        "isOrigin": true
+        "acquisitionType": "own",
+        "note": "Originally a conditional 2025 CHO 1st round pick owed to SAC that did not convey; converted to 2026 and 2027 2nd round picks",
+        "isOrigin": true,
+        "date": "2025-02-03"
       },
       {
         "type": "pick",
-        "name": "2027 SAS 1st Round Pick",
+        "name": "2027 1st Round Pick via SAS",
         "destination": "SAC",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2025-02-03",
         "note": "San Antonio's own 2027 first round pick",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2027 2nd Round Pick",
+        "name": "2027 2nd Round Pick (conditional CHO 1st did not convey)",
         "destination": "SAC",
-        "acquisitionType": "trade",
-        "note": "Originally a conditional 2025 CHO 1st round pick owed to SAC that did not convey; converted to this 2027 2nd round pick",
-        "isOrigin": true
+        "acquisitionType": "own",
+        "note": "Originally a conditional 2025 CHO 1st round pick owed to SAC that did not convey; converted to 2026 and 2027 2nd round picks",
+        "isOrigin": true,
+        "date": "2025-02-03"
       },
       {
         "type": "pick",
-        "name": "2028 DEN 2nd Round Pick",
+        "name": "2028 2nd Round Pick via DEN",
         "destination": "SAC",
         "acquisitionType": "trade",
+        "date": "2022-01-19",
+        "tradePartner": "DEN",
+        "tradeDescription": "3-team trade: BOS sent Hernangomez + cash to SAS; DEN sent Bol Bol + Dozier to BOS; DEN sent cash + 2028 2nd (DEN own) to SAS; SAS sent Forbes to DEN",
         "note": "Denver's 2028 2nd round pick (conditional), sent to Sacramento",
-        "isOrigin": true
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Bryn Forbes",
+            "acquisitionType": "free-agent",
+            "date": "2018-07-20",
+            "note": "Guard signed as free agent by SAS. Re-signed Aug 2021. Traded to DEN in 3-team deal Jan 2022.",
+            "isOrigin": true
+          }
+        ]
       },
       {
         "type": "pick",
-        "name": "2031 MIN 1st Round Pick",
+        "name": "2031 1st Round Pick via MIN",
         "destination": "SAC",
         "acquisitionType": "trade",
         "date": "2024-06-26",
-        "note": "Minnesota's 2031 1st round pick, acquired from Timberwolves in Rob Dillingham draft-night trade (June 26, 2024)",
+        "tradePartner": "MIN",
+        "tradeDescription": "SAS traded Rob Dillingham (8th pick) to MIN for 2030 1st swap + 2031 1st (MIN own)",
+        "note": "Minnesota's 2031 1st round pick, acquired from Timberwolves in Rob Dillingham draft-night trade",
         "assetsGivenUp": [
           {
             "type": "player",
             "name": "Rob Dillingham",
-            "acquisitionType": "draft",
+            "acquisitionType": "draft-night-trade",
             "date": "2024-06-26",
             "draftPick": 8,
             "draftRound": 1,

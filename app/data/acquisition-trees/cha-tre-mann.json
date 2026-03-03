@@ -2,10 +2,9 @@
   "_meta": {
     "team": "CHA",
     "player": "Tre Mann",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2020,
-    "depth": 3,
-    "lastUpdated": "2026-02-11"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/m/manntr01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,26 +13,36 @@
     "date": "2024-02-08",
     "currentTeam": "CHA",
     "tradePartner": "OKC",
-    "tradeDescription": "Acquired from Thunder (with Vasilije Micic, Davis Bertans, 2 picks) for Gordon Hayward",
+    "tradeDescription": "Hornets traded Gordon Hayward to Thunder for Tre Mann, Vasilije Micic, Davis Bertans, cash, 2024 2nd (HOU own, #42 KJ Simpson), and 2025 2nd (PHI own, #38 Johni Broome). Charlotte also received a trade exception.",
     "note": "Florida guard, explosive scorer off the bench",
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Gordon Hayward",
-        "acquisitionType": "trade",
+        "acquisitionType": "sign-and-trade",
         "date": "2020-11-29",
         "tradePartner": "BOS",
-        "tradeDescription": "Sign-and-trade from Celtics",
-        "note": "Former All-Star forward",
+        "tradeDescription": "Hornets traded a 2022 2nd round pick (did not convey) to Celtics for Gordon Hayward, a 2023 2nd (BOS own, Trayce Jackson-Davis), and a 2024 2nd (BOS own, Ariel Hukporti). Boston also received a trade exception.",
+        "note": "Former All-Star forward, signed 4yr/$120M via sign-and-trade from Celtics",
         "assetsGivenUp": [
           {
             "type": "pick",
             "name": "2022 2nd Round Pick",
             "acquisitionType": "original",
             "date": "2020-11-29",
-            "note": "Conditional pick sent to Boston",
-            "becamePlayer": "Trevor Keels",
-            "isOrigin": true
+            "note": "Hornets' own 2022 2nd-round pick, sent to Boston in Hayward S&T. Conditional \u2014 did not convey.",
+            "isOrigin": true,
+            "becamePlayer": "Did not convey"
+          },
+          {
+            "type": "other",
+            "name": "Trade Exception",
+            "acquisitionType": "original",
+            "date": "2020-11-29",
+            "tradeDescription": "Boston received a $28.5M trade exception as part of the Gordon Hayward sign-and-trade",
+            "note": "Trade exception generated from Hayward's outgoing salary. BOS used part of it to acquire Daniel Theis from HOU in Feb 2022.",
+            "isOrigin": true,
+            "assetsGivenUp": []
           }
         ]
       }

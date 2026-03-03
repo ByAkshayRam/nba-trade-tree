@@ -2,40 +2,174 @@
   "_meta": {
     "team": "DAL",
     "player": "Caleb Martin",
-    "source": "NBA.com, Basketball-Reference",
-    "originYear": 2019,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/m/martica02.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Caleb Martin",
     "acquisitionType": "trade",
-    "date": "2025-02-05",
+    "date": "2025-02-04",
     "currentTeam": "DAL",
     "tradePartner": "PHI",
-    "tradeDescription": "Dallas acquired Caleb Martin from Philadelphia for Quentin Grimes and a 2025 2nd round pick",
+    "tradeDescription": "DAL traded Quentin Grimes and a 2025 2nd round pick (Johni Broome) to PHI for Caleb Martin",
     "note": "Nevada forward, undrafted 2019",
-    "isOrigin": false,
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Quentin Grimes",
         "acquisitionType": "trade",
-        "date": "2024-02-08",
-        "tradePartner": "NYK",
-        "tradeDescription": "Dallas acquired Grimes from New York in the Tim Hardaway Jr. trade",
-        "note": "Houston guard, 2021 #25 pick by LA Clippers, traded to NYK on draft night",
-        "isOrigin": true
+        "date": "2024-07-06",
+        "tradePartner": "DET",
+        "tradeDescription": "DAL traded Tim Hardaway Jr., 2025 2nd (TOR own), and two 2028 2nd round picks (least favorable, MIA own) to DET for Quentin Grimes",
+        "note": "Houston guard, 2021 #25 pick by NYK, traded to DET, then to DAL",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Tim Hardaway Jr.",
+            "acquisitionType": "trade",
+            "date": "2019-01-31",
+            "tradePartner": "NYK",
+            "tradeDescription": "DAL traded Dennis Smith Jr., DeAndre Jordan, Wesley Matthews, 2021 1st (Keon Johnson #21), and 2024 1st (Kyshawn George #24) to NYK for Kristaps Porzingis, Tim Hardaway Jr., Courtney Lee, and Trey Burke",
+            "note": "Michigan forward, 2013 #24 pick by NYK. Received by DAL in Porzingis trade.",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Dennis Smith Jr.",
+                "acquisitionType": "draft",
+                "date": "2017-06-22",
+                "draftPick": 9,
+                "draftRound": 1,
+                "note": "NC State guard, drafted #9 by Dallas",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              },
+              {
+                "type": "player",
+                "name": "DeAndre Jordan",
+                "acquisitionType": "free-agent",
+                "date": "2018-07-06",
+                "note": "Signed as free agent from LA Clippers",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              },
+              {
+                "type": "player",
+                "name": "Wesley Matthews",
+                "acquisitionType": "free-agent",
+                "date": "2015-07-09",
+                "note": "Signed as free agent from Portland Trail Blazers",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              },
+              {
+                "type": "pick",
+                "name": "2021 1st Round Pick (#21) via DAL",
+                "acquisitionType": "own",
+                "date": "2021-07-29",
+                "becamePlayer": "Keon Johnson",
+                "note": "Unprotected, conveyed to New York as #21 overall",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              },
+              {
+                "type": "pick",
+                "name": "2024 1st Round Pick (#24) via DAL",
+                "acquisitionType": "own",
+                "date": "2024-06-26",
+                "becamePlayer": "Kyshawn George",
+                "note": "Top-10 protected, did not convey in 2023, rolled to 2024 as #24 overall to New York",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              }
+            ]
+          },
+          {
+            "type": "pick",
+            "name": "2025 2nd Round Pick (TOR own)",
+            "acquisitionType": "own",
+            "date": "2025-06-25",
+            "becamePlayer": "Chaz Lanier",
+            "note": "Sent to Detroit in Grimes trade",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "pick",
+            "name": "2028 2nd Round Pick (least favorable)",
+            "acquisitionType": "own",
+            "date": "2028-06-22",
+            "note": "Sent to Detroit in Grimes trade",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "pick",
+            "name": "2028 2nd Round Pick (MIA own)",
+            "acquisitionType": "trade",
+            "date": "2023-07-12",
+            "tradePartner": "SAS",
+            "tradeDescription": "Acquired from SAS in 3-team Grant Williams trade",
+            "note": "Originally Miami's pick, acquired from San Antonio, sent to Detroit",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Reggie Bullock",
+                "acquisitionType": "free-agent",
+                "date": "2021-08-06",
+                "note": "UNC wing, signed as free agent. Sent to SAS in Grant Williams 3-team trade.",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              },
+              {
+                "type": "pick",
+                "name": "2030 1st Round Pick Swap via DAL",
+                "acquisitionType": "own",
+                "date": "2023-07-12",
+                "note": "Right to swap 2030 1st, sent to SAS in Grant Williams trade",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              }
+            ]
+          }
+        ]
       },
       {
         "type": "pick",
-        "name": "2025 DAL 2nd Round Pick",
-        "acquisitionType": "original",
-        "date": "2025-06-26",
+        "name": "2025 2nd Round Pick (CHA own)",
+        "acquisitionType": "trade",
+        "date": "2024-07-06",
+        "tradePartner": "CHA",
         "becamePlayer": "Johni Broome",
-        "note": "Dallas own 2025 second-round pick, sent to Philadelphia as #35 overall",
-        "isOrigin": true
+        "tradeDescription": "Acquired from CHA as part of 6-team Klay Thompson sign-and-trade, sent to PHI in Caleb Martin trade",
+        "note": "Originally CHA's pick, acquired July 6 2024 in Klay S&T",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Josh Green",
+            "acquisitionType": "draft",
+            "date": "2020-11-18",
+            "draftPick": 18,
+            "draftRound": 1,
+            "note": "Arizona wing, drafted #18 by Dallas. Sent to Charlotte as part of 6-team Klay Thompson sign-and-trade.",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "pick",
+            "name": "2031 2nd Round Pick via DAL",
+            "acquisitionType": "own",
+            "date": "2024-07-06",
+            "note": "Dallas own 2031 2nd round pick, sent to Philadelphia as part of Klay Thompson sign-and-trade",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          }
+        ]
       }
     ]
   }

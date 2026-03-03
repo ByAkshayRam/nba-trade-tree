@@ -2,30 +2,50 @@
   "_meta": {
     "team": "ORL",
     "player": "Jase Richardson",
-    "source": "NBA.com/ESPN - Feb 2026",
-    "originYear": 2021,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/r/richaja02.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Jase Richardson",
     "acquisitionType": "draft",
-    "date": "2025-06-26",
+    "date": "2025-06-25",
     "currentTeam": "ORL",
     "draftPick": 25,
     "draftRound": 1,
-    "note": "Drafted with DEN 2025 1st obtained in Aaron Gordon trade",
+    "tradeDescription": "Drafted #25 overall by Orlando using Denver's 2025 1st round pick (top-5 protected) obtained in Aaron Gordon trade",
     "assetsGivenUp": [
       {
-        "type": "player",
-        "name": "Aaron Gordon",
-        "acquisitionType": "draft",
-        "date": "2014-06-26",
-        "draftPick": 4,
-        "draftRound": 1,
-        "note": "#4 overall pick in 2014, traded to DEN March 2021",
-        "isOrigin": true
+        "type": "pick",
+        "name": "2025 1st Round Pick via DEN",
+        "acquisitionType": "trade",
+        "date": "2021-03-25",
+        "tradePartner": "DEN",
+        "becamePlayer": "Jase Richardson",
+        "tradeDescription": "Orlando traded Aaron Gordon and Gary Clark to Denver for R.J. Hampton, Gary Harris and 2025 1st round pick (DEN own, top-5 protected, conveys to 2026/2027 with same protection). Denver and Orlando also received trade exceptions",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Aaron Gordon",
+            "acquisitionType": "draft",
+            "date": "2014-06-26",
+            "draftPick": 4,
+            "draftRound": 1,
+            "tradeDescription": "Drafted #4 overall by Orlando in the 2014 NBA Draft",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "player",
+            "name": "Gary Clark",
+            "acquisitionType": "free-agent",
+            "date": "2020-02-08",
+            "tradeDescription": "Signed rest-of-season contract as free agent",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          }
+        ]
       }
     ]
   }

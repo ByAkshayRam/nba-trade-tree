@@ -2,10 +2,9 @@
   "_meta": {
     "team": "TOR",
     "player": "Jakob Poeltl",
-    "source": "ESPN/NBA.com Trade History - Feb 2026",
-    "originYear": 2023,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/p/poeltja01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,43 +13,53 @@
     "date": "2023-02-09",
     "currentTeam": "TOR",
     "tradePartner": "SAS",
-    "tradeDescription": "Raptors acquired Poeltl from Spurs for Khem Birch, a 2024 first-round pick (top-6 protected), and second-round picks in 2023 and 2025",
-    "note": "Returned to Toronto where he was originally drafted in 2016",
+    "tradeDescription": "Raptors traded Khem Birch, a 2024 first-round pick (TOR own, top-6 protected), a 2023 second-round pick (TOR own), and a 2025 second-round pick (TOR own) to Spurs for Jakob Poeltl.",
+    "note": "Returned to Toronto where he was originally drafted in 2016. Re-signed as FA July 6, 2023.",
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Khem Birch",
         "acquisitionType": "free-agent",
-        "date": "2021-04-18",
-        "note": "Signed as free agent during 2020-21 season",
-        "isOrigin": true
+        "date": "2021-08-06",
+        "note": "Signed as free agent in 2021",
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "details": "2024 First Round Pick (top-6 protected in 2024-2026)",
-        "isOrigin": true,
-        "name": "2024 First Round Pick (top-6 protected in 2024-2026)",
+        "name": "2024 1st Round Pick (#8)",
+        "acquisitionType": "draft",
+        "details": "2024 First Round Pick (TOR own, top-6 protected in 2024-2026). Conveyed at #8.",
         "becamePlayer": "Rob Dillingham",
         "draftPick": 8,
-        "note": "TOR's pick conveyed at #8 to SAS (outside top-6 protection). SAS traded Dillingham to MIN on draft night."
+        "note": "TOR's pick conveyed at #8 to SAS (outside top-6 protection). SAS traded Dillingham to MIN on draft night.",
+        "isOrigin": true,
+        "assetsGivenUp": [],
+        "date": "2023-02-09"
       },
       {
         "type": "pick",
-        "details": "2023 Second Round Pick",
-        "isOrigin": true,
-        "name": "2023 Second Round Pick",
+        "name": "2023 2nd Round Pick (#44)",
+        "acquisitionType": "draft",
+        "details": "2023 Second Round Pick (TOR own)",
         "becamePlayer": "Sidy Cissoko",
         "draftPick": 44,
-        "note": "TOR's 2023 second-round pick sent to SAS in Poeltl trade."
+        "note": "TOR's 2023 second-round pick sent to SAS in Poeltl trade.",
+        "isOrigin": true,
+        "assetsGivenUp": [],
+        "date": "2023-02-09"
       },
       {
         "type": "pick",
-        "details": "2025 Second Round Pick",
+        "name": "2025 2nd Round Pick (#37)",
+        "acquisitionType": "draft",
+        "details": "2025 Second Round Pick (TOR own)",
+        "becamePlayer": "Chaz Lanier",
+        "draftPick": 37,
+        "note": "TOR's 2025 second-round pick sent to SAS in Poeltl trade. Subsequently traded to DET who selected Lanier.",
         "isOrigin": true,
-        "name": "2025 Second Round Pick",
-        "becamePlayer": "Ryan Kalkbrenner",
-        "draftPick": 34,
-        "note": "TOR's 2025 second-round pick sent to SAS in Poeltl trade. Subsequently traded to DAL then CHO."
+        "assetsGivenUp": [],
+        "date": "2023-02-09"
       }
     ]
   }

@@ -2,18 +2,17 @@
   "_meta": {
     "team": "CLE",
     "player": "Dean Wade",
-    "source": "Wikipedia, Basketball-Reference, NBA.com verified",
-    "originYear": 2019,
-    "depth": 1,
-    "lastUpdated": "2026-02-15"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/w/wadede01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Dean Wade",
-    "acquisitionType": "undrafted",
+    "acquisitionType": "free-agent",
     "date": "2019-07-09",
     "currentTeam": "CLE",
-    "note": "Undrafted forward from Kansas State, signed two-way contract after 2019 NBA Draft | 3yr/$18.5M extension",
+    "note": "Undrafted forward from Kansas State, signed two-way contract after 2019 NBA Draft. 3yr/$18.5M extension",
     "isOrigin": true,
     "assetsGivenUp": [],
     "espnId": "3912848"

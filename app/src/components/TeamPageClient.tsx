@@ -48,6 +48,15 @@ const WEST_TEAMS = [
 
 const ALL_TEAMS = [...EAST_TEAMS, ...WEST_TEAMS];
 
+const TEAM_COLORS: Record<string, string> = {
+  ATL: "#E03A3E", BKN: "#000000", BOS: "#007A33", CHA: "#00788C", CHI: "#CE1141",
+  CLE: "#860038", DET: "#C8102E", IND: "#002D62", MIA: "#98002E", MIL: "#00471B",
+  NYK: "#F58426", ORL: "#0077C0", PHI: "#006BB6", TOR: "#CE1141", WAS: "#002B5C",
+  DAL: "#00538C", DEN: "#0E2240", GSW: "#FFC72C", HOU: "#CE1141", LAC: "#C8102E",
+  LAL: "#552583", MEM: "#5D76A9", MIN: "#0C2340", NOP: "#B4975A", OKC: "#007AC1",
+  PHX: "#1D1160", POR: "#E03A3E", SAC: "#5A2D81", SAS: "#C4CED4", UTA: "#3E1175",
+};
+
 // Get team emoji
 function getTeamEmoji(abbr: string): string {
   return ALL_TEAMS.find(t => t.abbr === abbr.toUpperCase())?.emoji || "🏀";
@@ -344,6 +353,8 @@ export default function TeamPageClient({ data, teamAbbr }: TeamPageClientProps) 
             }}
           />
         )}
+
+        {/* Explore More Teams - removed for now (too much real estate) */}
       </main>
     </div>
   );

@@ -2,11 +2,9 @@
   "_meta": {
     "team": "NYK",
     "player": "OG Anunoby",
-    "source": "NBA Trade History Research - Deep Analysis",
+    "source": "Basketball-Reference Transaction History",
     "sourceUrl": "https://www.basketball-reference.com/players/a/anunoog01.html",
-    "originYear": 2018,
-    "depth": 5,
-    "lastUpdated": "2026-02-13"
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -15,8 +13,7 @@
     "date": "2023-12-30",
     "tradePartner": "TOR",
     "currentTeam": "NYK",
-    "tradeDescription": "NYK acquires OG Anunoby for RJ Barrett + Immanuel Quickley + future 2nd",
-    "note": "Elite 3&D wing, championship experience. Major defensive upgrade for NYK.",
+    "tradeDescription": "NYK traded RJ Barrett, Immanuel Quickley, and a 2024 2nd (DET own) to Toronto for Precious Achiuwa, OG Anunoby, and Malachi Flynn",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -25,96 +22,55 @@
         "date": "2019-06-20",
         "draftPick": 3,
         "draftRound": 1,
-        "tradeDescription": "Drafted 3rd overall by NYK after tanking season",
-        "note": "Former Duke star, Canadian connection helped TOR. NYK's face of rebuild.",
-        "assetsGivenUp": [
-          {
-            "type": "pick",
-            "name": "2019 #3 Overall Pick",
-            "acquisitionType": "lottery-luck",
-            "date": "2019-05-14",
-            "draftPick": 3,
-            "becamePlayer": "RJ Barrett",
-            "tradeDescription": "NYK had worst record (17-65) but dropped to #3 in lottery",
-            "note": "NYK tanked hard in 2018-19, worst record but lottery dropped them to 3rd",
-            "assetsGivenUp": [
-              {
-                "type": "season-tank",
-                "name": "2018-19 Tank Season",
-                "acquisitionType": "strategic-losing",
-                "date": "2018-10-01",
-                "tradeDescription": "NYK deliberately built bad roster to maximize lottery odds",
-                "note": "17-65 record, worst in NBA. Sold veterans, played young players",
-                "assetsGivenUp": [
-                  {
-                    "type": "veteran-players",
-                    "name": "Veteran Talent Trades",
-                    "acquisitionType": "asset-accumulation",
-                    "date": "2018-02-08",
-                    "tradeDescription": "NYK traded Kristaps Porzingis + others to clear roster/cap",
-                    "note": "Porzingis trade to DAL cleared path for tank + future cap space",
-                    "isOrigin": true
-                  }
-                ]
-              }
-            ]
-          }
-        ]
+        "tradeDescription": "Drafted 3rd overall by NYK in 2019",
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "player",
         "name": "Immanuel Quickley",
-        "acquisitionType": "draft",
-        "date": "2020-11-18",
+        "acquisitionType": "draft-night-trade",
+        "date": "2020-11-20",
         "draftPick": 25,
         "draftRound": 1,
-        "tradeDescription": "Drafted 25th overall by NYK, Kentucky product",
-        "note": "Emerging 6th man, explosive scorer off bench. Fan favorite.",
+        "tradePartner": "OKC",
+        "tradeDescription": "3-team draft-night trade: NYK traded a 2020 1st to MIN; OKC traded Immanuel Quickley (#25) to NYK; MIN/OKC also exchanged players and picks",
+        "note": "Quickley was selected by OKC and traded to NYK as part of a 3-team deal on draft night.",
         "assetsGivenUp": [
           {
             "type": "pick",
-            "name": "2020 #25 Overall Pick",
+            "name": "2020 1st Round Pick (#23)",
             "acquisitionType": "original",
-            "date": "2020-11-18",
-            "draftPick": 25,
-            "becamePlayer": "Immanuel Quickley",
-            "tradeDescription": "NYK's own first-round pick from playoff-bubble season",
-            "note": "NYK went 21-45 in 2019-20, bubble didn't help their record much",
+            "date": "2020-11-20",
+            "tradeDescription": "NYK's own 2020 1st round pick, traded to Minnesota in the 3-team draft-night deal",
+            "becamePlayer": "Leandro Bolmaro",
+            "draftPick": 23,
             "isOrigin": true
           }
         ]
       },
       {
         "type": "pick",
-        "name": "2024 Second-Round Pick (via DET)",
+        "name": "2024 2nd Round Pick via DET",
         "acquisitionType": "trade",
-        "date": "2022-06-23",
-        "tradePartner": "DET",
-        "tradeDescription": "Acquired from Detroit in multi-team facilitator trade",
-        "note": "DET's 2024 second-round pick, sent to TOR in OG Anunoby trade. Used by TOR at #31.",
+        "date": "2021-07-30",
+        "tradePartner": "LAC",
+        "tradeDescription": "Acquired from LAC in the Keon Johnson/Quentin Grimes draft-night trade. Originally DET's 2024 2nd. Sent to Toronto in OG trade.",
+        "becamePlayer": "Jonathan Mogbo",
+        "isOrigin": false,
         "assetsGivenUp": [
           {
-            "type": "salary-match",
-            "name": "Contract Facilitation",
-            "acquisitionType": "trade-service",
-            "date": "2022-06-23",
-            "tradeDescription": "NYK used cap space/roster spots to help facilitate Detroit trade",
-            "note": "Monetized roster flexibility into future draft asset",
-            "assetsGivenUp": [
-              {
-                "type": "cap-flexibility",
-                "name": "Salary Cap Management",
-                "acquisitionType": "organizational-resource",
-                "date": "2022-06-01",
-                "tradeDescription": "NYK maintained cap space specifically for trade facilitation opportunities",
-                "note": "Front office asset management strategy",
-                "isOrigin": true
-              }
-            ]
+            "type": "player",
+            "name": "Keon Johnson",
+            "acquisitionType": "draft",
+            "date": "2021-07-29",
+            "draftPick": 21,
+            "draftRound": 1,
+            "tradeDescription": "Part of Keon Johnson (#21) to LAC for Quentin Grimes (#25) + this DET 2024 2nd",
+            "isOrigin": true,
+            "assetsGivenUp": []
           }
-        ],
-        "becamePlayer": "Jonathan Mogbo",
-        "draftPick": 31
+        ]
       }
     ]
   }

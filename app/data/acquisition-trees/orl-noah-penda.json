@@ -2,10 +2,9 @@
   "_meta": {
     "team": "ORL",
     "player": "Noah Penda",
-    "source": "Basketball-Reference Transaction History",
-    "originYear": 2025,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/p/pendano01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -13,9 +12,8 @@
     "acquisitionType": "trade",
     "date": "2025-06-26",
     "currentTeam": "ORL",
-    "note": "Acquired from Boston for Amari Williams, Max Shulga, and 2 second-round picks in June 2025. Originally drafted #32 by BOS in 2025.",
-    "espnId": "5214637",
     "tradePartner": "BOS",
+    "tradeDescription": "Orlando traded Amari Williams, Max Shulga, 2026 2nd round pick (most favorable), and 2027 2nd round pick (most favorable) to Boston for Noah Penda",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -23,8 +21,10 @@
         "acquisitionType": "draft",
         "date": "2025-06-25",
         "draftPick": 46,
-        "note": "Drafted #46 by ORL in 2025 out of Kentucky. Traded to BOS for Noah Penda.",
-        "isOrigin": true
+        "draftRound": 2,
+        "tradeDescription": "Drafted #46 overall by Orlando in the 2025 NBA Draft",
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "player",
@@ -32,8 +32,24 @@
         "acquisitionType": "draft",
         "date": "2025-06-25",
         "draftPick": 57,
-        "note": "Drafted #57 by ORL in 2025 out of VCU. Traded to BOS for Noah Penda.",
-        "isOrigin": true
+        "draftRound": 2,
+        "tradeDescription": "Drafted #57 overall by Orlando in the 2025 NBA Draft",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      },
+      {
+        "type": "pick",
+        "name": "2026 2nd Round Pick (most favorable)",
+        "acquisitionType": "own",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      },
+      {
+        "type": "pick",
+        "name": "2027 2nd Round Pick (most favorable)",
+        "acquisitionType": "own",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

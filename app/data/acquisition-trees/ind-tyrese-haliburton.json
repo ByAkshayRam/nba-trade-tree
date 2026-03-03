@@ -2,10 +2,9 @@
   "_meta": {
     "team": "IND",
     "player": "Tyrese Haliburton",
-    "source": "Basketball-Reference, ESPN, NBA Trade History",
-    "originYear": 2010,
-    "depth": 3,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/h/halibty01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,15 +13,15 @@
     "date": "2022-02-08",
     "currentTeam": "IND",
     "tradePartner": "SAC",
-    "note": "Guard from Iowa State, 12th overall pick in 2020 NBA Draft. Acquired alongside Buddy Hield and Tristan Thompson.",
+    "tradeDescription": "IND traded Domantas Sabonis, Justin Holiday, Jeremy Lamb, and a 2023 2nd round pick (Jordan Walsh #38) to SAC for Tyrese Haliburton, Buddy Hield, and Tristan Thompson. Both teams received trade exceptions.",
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Domantas Sabonis",
         "acquisitionType": "trade",
-        "date": "2017-07-07",
+        "date": "2017-07-06",
         "tradePartner": "OKC",
-        "note": "Acquired in Paul George trade",
+        "tradeDescription": "IND traded Paul George to OKC for Domantas Sabonis and Victor Oladipo.",
         "assetsGivenUp": [
           {
             "type": "player",
@@ -32,7 +31,8 @@
             "draftPick": 10,
             "draftRound": 1,
             "note": "Forward from Fresno State, 10th overall pick in 2010 NBA Draft",
-            "isOrigin": true
+            "isOrigin": true,
+            "assetsGivenUp": []
           }
         ]
       },
@@ -40,25 +40,29 @@
         "type": "player",
         "name": "Justin Holiday",
         "acquisitionType": "free-agent",
-        "date": "2021-08-06",
-        "note": "Signed as free agent in 2021",
-        "isOrigin": true
+        "date": "2019-07-31",
+        "note": "Signed as free agent in July 2019",
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "player",
         "name": "Jeremy Lamb",
         "acquisitionType": "free-agent",
-        "date": "2019-07-06",
-        "note": "Signed as free agent in 2019",
-        "isOrigin": true
+        "date": "2019-07-07",
+        "note": "Signed as free agent from CHA in July 2019",
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2023 2nd Round Pick",
+        "name": "2023 2nd Round Pick (#38)",
+        "acquisitionType": "own",
+        "note": "IND's own pick, sent to SAC",
+        "becamePlayer": "Jordan Walsh",
+        "draftPick": 38,
         "isOrigin": true,
-        "note": "Sent to SAC in Haliburton trade",
-        "becamePlayer": "Jalen Slawson",
-        "draftPick": 54
+        "assetsGivenUp": []
       }
     ]
   }

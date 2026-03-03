@@ -31,12 +31,14 @@
         "assetsGivenUp": [
           {
             "type": "pick",
-            "name": "2018 #3 Overall Pick",
+            "name": "2018 1st Round Pick (#3)",
             "acquisitionType": "original",
             "date": "2018-06-21",
             "becamePlayer": "Luka Doncic",
             "tradeDescription": "Hawks selected Doncic #3 overall, immediately traded to Dallas in swap for #5 pick (Trae Young)",
-            "note": "Slovenian prodigy, became 5x All-Star with Mavericks"
+            "note": "Slovenian prodigy, became 5x All-Star with Mavericks",
+            "isOrigin": true,
+            "assetsGivenUp": []
           }
         ]
       }

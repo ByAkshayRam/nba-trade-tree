@@ -2,30 +2,31 @@
   "_meta": {
     "team": "NYK",
     "player": "Miles McBride",
-    "source": "NBA/ESPN Trade History Research",
+    "source": "Basketball-Reference Transaction History",
     "sourceUrl": "https://www.basketball-reference.com/players/m/mcbrimi01.html",
-    "originYear": 2021,
-    "depth": 1,
-    "lastUpdated": "2026-02-10"
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Miles McBride",
-    "acquisitionType": "draft",
-    "date": "2021-07-29",
+    "acquisitionType": "draft-night-trade",
+    "date": "2021-07-30",
     "draftPick": 36,
     "draftRound": 2,
     "currentTeam": "NYK",
-    "tradeDescription": "Drafted 36th overall by Knicks",
-    "note": "West Virginia product, defensive guard, homegrown talent",
-    "isOrigin": true,
+    "tradePartner": "OKC",
+    "tradeDescription": "NYK traded Jeremiah Robinson-Earl to OKC for Rokas Jokubaitis and Miles McBride (drafted #36 by OKC on July 29, 2021)",
     "assetsGivenUp": [
       {
-        "type": "pick",
-        "details": "2021 #36 Overall Pick (used)",
-        "name": "2021 #36 Overall Pick (used)",
-        "becamePlayer": "Miles McBride",
-        "draftPick": 36
+        "type": "player",
+        "name": "Jeremiah Robinson-Earl",
+        "acquisitionType": "draft",
+        "date": "2021-07-29",
+        "draftPick": 32,
+        "draftRound": 2,
+        "tradeDescription": "Drafted 32nd overall by NYK in 2021",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

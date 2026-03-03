@@ -3,9 +3,8 @@
     "team": "MEM",
     "player": "GG Jackson",
     "source": "Basketball-Reference, NBA.com",
-    "originYear": 2023,
-    "depth": 1,
-    "lastUpdated": "2026-02-16"
+    "sourceUrl": "https://www.basketball-reference.com/players/j/jacksgg01.html",
+    "lastUpdated": "2026-03-02"
   },
   "tree": {
     "type": "player",
@@ -15,7 +14,53 @@
     "currentTeam": "MEM",
     "draftPick": 45,
     "draftRound": 2,
-    "note": "South Carolina forward, selected in second round",
-    "isOrigin": true
+    "note": "South Carolina forward; drafted 45th overall by Memphis using pick acquired from Minnesota",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2023 2nd Round Pick (#45)",
+        "acquisitionType": "trade",
+        "date": "2022-06-24",
+        "tradePartner": "MIN",
+        "becamePlayer": "GG Jackson",
+        "tradeDescription": "Memphis traded Walker Kessler and TyTy Washington Jr. to Minnesota for Jake LaRavia and a 2023 2nd round draft pick (GG Jackson, #45, MIN own)",
+        "note": "Pick acquired from MIN in Kessler/Washington trade",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Walker Kessler",
+            "acquisitionType": "draft",
+            "date": "2022-06-23",
+            "draftPick": 22,
+            "draftRound": 1,
+            "tradePartner": "UTA",
+            "tradeDescription": "Pick originally from Utah as part of the Mike Conley trade (Jul 6, 2019); conditional, conveyed in 2022 as #22",
+            "note": "Auburn center, drafted 22nd overall with UTA's pick from Conley trade, sent to MIN",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Mike Conley",
+                "acquisitionType": "draft",
+                "date": "2007-06-28",
+                "draftPick": 4,
+                "draftRound": 1,
+                "note": "Ohio State guard, drafted 4th overall by Memphis in 2007",
+                "isOrigin": true
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "TyTy Washington Jr.",
+            "acquisitionType": "draft",
+            "date": "2022-06-23",
+            "draftPick": 29,
+            "draftRound": 1,
+            "note": "Kentucky guard, drafted 29th overall by Memphis with MEM's own 2022 1st round pick, sent to MIN",
+            "isOrigin": true
+          }
+        ]
+      }
+    ]
   }
 }

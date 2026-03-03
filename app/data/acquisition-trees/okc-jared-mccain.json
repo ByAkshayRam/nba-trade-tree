@@ -2,11 +2,11 @@
   "_meta": {
     "team": "OKC",
     "player": "Jared McCain",
-    "source": "NBA/ESPN Trade History Research",
+    "source": "Basketball Reference Transaction Logs",
     "sourceUrl": "https://www.basketball-reference.com/players/m/mccaija01.html",
-    "originYear": 2024,
+    "originYear": 2008,
     "depth": 6,
-    "lastUpdated": "2026-02-16"
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -15,43 +15,133 @@
     "date": "2026-02-04",
     "tradePartner": "PHI",
     "currentTeam": "OKC",
-    "tradeDescription": "Acquired from 76ers for 2026 first-round pick and three second-round picks",
+    "tradeDescription": "Acquired from 76ers for 2026 1st round pick (via HOU) and three second-round picks",
     "note": "Duke product, drafted #16 overall by Philadelphia in 2024",
     "assetsGivenUp": [
       {
         "type": "pick",
-        "name": "2026 First-Round Pick (via HOU)",
+        "name": "2026 1st Round Pick via HOU",
         "acquisitionType": "trade",
-        "date": "2021-08-25",
+        "date": "2019-07-16",
         "tradePartner": "HOU",
-        "tradeDescription": "Acquired from Houston in previous trade",
-        "note": "Houston's 2026 first-round pick",
-        "isOrigin": true
+        "tradeDescription": "Acquired from Houston in Russell Westbrook trade. OKC sent Westbrook to HOU for Chris Paul, 2024 1st, 2025 1st, 2026 1st, and pick swaps",
+        "note": "Houston's 2026 first-round pick, top-4 protected",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Russell Westbrook",
+            "acquisitionType": "draft",
+            "date": "2008-06-26",
+            "draftPick": 4,
+            "draftRound": 1,
+            "tradeDescription": "Drafted 4th overall by Seattle SuperSonics",
+            "note": "2017 MVP, triple-double king, OKC legend",
+            "isOrigin": true
+          }
+        ]
       },
       {
         "type": "pick",
-        "name": "2027 Second-Round Pick",
-        "acquisitionType": "original",
+        "name": "2027 2nd Round Pick",
+        "acquisitionType": "trade",
         "date": "2026-02-04",
         "tradeDescription": "Most favorable of OKC/HOU/IND/MIA second-round picks",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2028 Second-Round Pick",
-        "acquisitionType": "original",
+        "name": "2028 2nd Round Pick",
+        "acquisitionType": "own",
         "date": "2026-02-04",
         "tradeDescription": "Thunder's own second-round pick",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2028 Second-Round Pick (via MIL)",
+        "name": "2028 2nd Round Pick via MIL",
         "acquisitionType": "trade",
-        "date": "2023-09-29",
-        "tradePartner": "MIL",
-        "tradeDescription": "Acquired from Milwaukee in previous trade",
-        "isOrigin": true
+        "date": "2023-10-17",
+        "tradePartner": "HOU",
+        "tradeDescription": "Acquired from Houston in Victor Oladipo/Jeremiah Robinson-Earl trade. OKC sent Oladipo and JRE to HOU for Kevin Porter Jr., 2027 2nd (MIN), and 2028 2nd (MIL)",
+        "note": "Milwaukee's 2028 second-round pick, routed through Houston",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Victor Oladipo",
+            "acquisitionType": "trade",
+            "date": "2023-07-06",
+            "tradePartner": "MIA",
+            "tradeDescription": "Acquired from Miami for cash considerations, along with 2029 and 2030 2nd round picks",
+            "note": "Acquired from Heat for cap purposes",
+            "assetsGivenUp": [
+              {
+                "type": "other",
+                "name": "Cash Considerations",
+                "acquisitionType": "other",
+                "date": "2023-07-06",
+                "tradeDescription": "Cash sent to Miami",
+                "isOrigin": true
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Jeremiah Robinson-Earl",
+            "acquisitionType": "trade",
+            "date": "2021-07-30",
+            "tradePartner": "NYK",
+            "tradeDescription": "Acquired from New York Knicks (who drafted him #32) for Rokas Jokubaitis and Miles McBride",
+            "note": "Villanova product. Drafted by NYK, traded to OKC on draft night.",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Miles McBride",
+                "acquisitionType": "draft-night-trade",
+                "date": "2021-07-29",
+                "draftPick": 36,
+                "draftRound": 2,
+                "tradePartner": "NYK",
+                "tradeDescription": "Drafted 36th overall by OKC using MIN's pick (via GSW in Kelly Oubre trade, Nov 2020). Traded to NYK with Jokubaitis for JRE.",
+                "note": "Pick chain: MIN owned → GSW (D'Angelo Russell trade, Feb 2020) → OKC (Oubre trade, Nov 2020)",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Kelly Oubre Jr.",
+                    "acquisitionType": "trade",
+                    "date": "2020-11-16",
+                    "tradePartner": "PHX",
+                    "tradeDescription": "Acquired from Phoenix in Chris Paul trade. Flipped to GSW (Nov 22) for picks including this one.",
+                    "assetsGivenUp": [
+                      {
+                        "type": "player",
+                        "name": "Chris Paul",
+                        "acquisitionType": "trade",
+                        "date": "2019-07-16",
+                        "tradePartner": "HOU",
+                        "tradeDescription": "Acquired from Houston in Westbrook trade. Traded to Phoenix (Nov 2020) for Oubre, Rubio, and picks.",
+                        "assetsGivenUp": [
+                          {
+                            "type": "player",
+                            "name": "Russell Westbrook",
+                            "acquisitionType": "draft",
+                            "date": "2008-06-26",
+                            "draftPick": 4,
+                            "draftRound": 1,
+                            "tradeDescription": "Drafted 4th overall by Seattle with their own lottery pick.",
+                            "note": "TRUE ORIGIN. Seattle was 20-62 in 2007-08.",
+                            "isOrigin": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }

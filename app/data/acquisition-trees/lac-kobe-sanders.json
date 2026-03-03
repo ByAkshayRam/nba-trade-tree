@@ -2,10 +2,9 @@
   "_meta": {
     "team": "LAC",
     "player": "Kobe Sanders",
-    "source": "Basketball-Reference, NBA.com",
-    "originYear": 2024,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/s/sandeko01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -26,14 +25,30 @@
         "draftPick": 51,
         "draftRound": 2,
         "note": "Drafted by Clippers 51st overall in the 2025 NBA Draft (with pick acquired from ATL via MIN)",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "player",
         "name": "Luka Mitrovic",
-        "acquisitionType": "other",
-        "note": "International player/draft rights",
-        "isOrigin": true
+        "acquisitionType": "trade",
+        "date": "2023-11-03",
+        "tradePartner": "SAC",
+        "tradeDescription": "Clippers acquired draft rights to Luka Mitrovic from Kings for Filip Petrušev",
+        "note": "Originally drafted #60 by PHI in 2015; rights traded to SAC then LAC",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Filip Petrušev",
+            "acquisitionType": "draft",
+            "date": "2021-07-29",
+            "draftPick": 50,
+            "draftRound": 2,
+            "note": "2021 #50 pick; traded to SAC for Mitrovic rights",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          }
+        ]
       }
     ]
   }

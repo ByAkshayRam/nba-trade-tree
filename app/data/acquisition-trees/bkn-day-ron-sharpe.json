@@ -2,21 +2,23 @@
   "_meta": {
     "team": "BKN",
     "player": "Day'Ron Sharpe",
-    "source": "Wikipedia, ESPN, NBA.com",
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/s/sharpda01.html",
     "originYear": 2020,
     "depth": 3,
-    "lastUpdated": "2026-02-15"
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Day'Ron Sharpe",
-    "acquisitionType": "draft-night-trade",
+    "acquisitionType": "trade",
     "date": "2021-08-06",
     "currentTeam": "BKN",
     "draftPick": 29,
     "draftRound": 1,
     "tradePartner": "PHX",
-    "tradeDescription": "Nets traded Landry Shamet to Suns for draft rights to Day'Ron Sharpe (#29) and Jevon Carter",
+    "tradeDescription": "Nets traded Landry Shamet to Suns for Jevon Carter and Day'Ron Sharpe. Brooklyn also received a trade exception.",
+    "note": "UNC big man, #29 pick in 2021. Originally drafted by PHX, traded to BKN same offseason. Re-signed as FA in 2025 (2yr/$12M).",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -24,15 +26,57 @@
         "acquisitionType": "trade",
         "date": "2020-11-19",
         "tradePartner": "LAC",
-        "tradeDescription": "3-team trade: Nets received Shamet and Reggie Perry rights from LAC, Bruce Brown from DET. BKN sent draft rights to Jay Scrubb (#55) to LAC.",
+        "tradeDescription": "3-team trade: BKN traded Jay Scrubb to LAC; BKN traded Saddiq Bey, Jaylen Hands, Dzanan Musa, and 2021 2nd (TOR own, became JT Thor) to DET; DET traded Bruce Brown to BKN; DET traded Luke Kennard, Justin Patton, and 4 2nd-rounders to LAC; LAC traded Reggie Perry and Landry Shamet to BKN; LAC traded Rodney McGruder and cash to DET.",
+        "note": "Guard/wing acquired from Clippers in massive 3-team deal on draft night 2020. Sent to PHX for Day'Ron Sharpe the following summer.",
+        "isOrigin": false,
         "assetsGivenUp": [
           {
-            "type": "pick",
-            "name": "2020 BKN 2nd Round Pick (#55)",
-            "acquisitionType": "original",
+            "type": "player",
+            "name": "Jay Scrubb",
+            "acquisitionType": "draft",
             "date": "2020-11-18",
-            "becamePlayer": "Jay Scrubb",
-            "note": "Draft rights to Jay Scrubb, sent to LAC in Shamet trade",
+            "draftPick": 55,
+            "draftRound": 2,
+            "note": "BKN's own 2020 2nd-round pick (#55). Draft rights sent to LAC in Shamet 3-team trade.",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Saddiq Bey",
+            "acquisitionType": "draft",
+            "date": "2020-11-18",
+            "draftPick": 19,
+            "draftRound": 1,
+            "note": "Drafted #19 by BKN, immediately sent to DET in Shamet 3-team trade. Never played for Nets.",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Dzanan Musa",
+            "acquisitionType": "draft",
+            "date": "2018-06-21",
+            "draftPick": 29,
+            "draftRound": 1,
+            "note": "BKN's 2018 1st-round pick. Sent to DET in Shamet 3-team trade.",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Jaylen Hands",
+            "acquisitionType": "draft",
+            "date": "2019-06-20",
+            "draftPick": 56,
+            "draftRound": 2,
+            "note": "BKN's 2019 2nd-round pick. Sent to DET in Shamet 3-team trade.",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2021 2nd Round Pick via TOR",
+            "becamePlayer": "JT Thor",
+            "acquisitionType": "original",
+            "date": "2020-11-19",
+            "note": "Toronto's 2021 2nd-round pick. Sent to DET in Shamet 3-team trade. DET used it to draft JT Thor.",
             "isOrigin": true
           }
         ]

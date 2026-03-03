@@ -2,19 +2,18 @@
   "_meta": {
     "team": "CHI",
     "player": "Zach Collins",
-    "source": "Spotrac, Wikipedia, RotoWire",
-    "originYear": 2011,
-    "depth": 4,
-    "lastUpdated": "2026-02-15"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/c/colliza01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Zach Collins",
     "acquisitionType": "trade",
-    "date": "2025-02-02",
+    "date": "2025-02-03",
     "currentTeam": "CHI",
     "tradePartner": "SAS",
-    "tradeDescription": "3-team trade: Bulls sent Zach LaVine to SAC, received Kevin Huerter (SAC) + Zach Collins and Tre Jones (SAS). De'Aaron Fox to SAS.",
+    "tradeDescription": "3-team trade: Bulls traded Zach LaVine and a 2028 2nd round pick to Kings; Kings traded Kevin Huerter to Bulls; Kings traded De'Aaron Fox and Jordan McLaughlin to Spurs; Spurs traded Zach Collins, Tre Jones and a 2025 1st round pick (Noa Essengue) to Bulls.",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -22,7 +21,7 @@
         "acquisitionType": "trade",
         "date": "2017-06-22",
         "tradePartner": "MIN",
-        "tradeDescription": "Bulls traded Jimmy Butler to Timberwolves for Zach LaVine, Kris Dunn, and the 7th pick (Lauri Markkanen)",
+        "tradeDescription": "Bulls traded Jimmy Butler and Justin Patton to Timberwolves for Zach LaVine, Kris Dunn, and Lauri Markkanen",
         "assetsGivenUp": [
           {
             "type": "player",
@@ -32,9 +31,19 @@
             "draftPick": 30,
             "draftRound": 1,
             "note": "Drafted 30th overall by Chicago Bulls from Marquette in 2011 NBA Draft",
-            "isOrigin": true
+            "isOrigin": true,
+            "assetsGivenUp": []
           }
         ]
+      },
+      {
+        "type": "pick",
+        "name": "2028 2nd Round Pick via CHI",
+        "acquisitionType": "own",
+        "date": "2025-02-03",
+        "note": "Chicago's own 2028 2nd round pick, sent to SAC in LaVine mega-deal",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

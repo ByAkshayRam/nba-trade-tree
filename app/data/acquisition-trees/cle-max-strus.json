@@ -2,67 +2,60 @@
   "_meta": {
     "team": "CLE",
     "player": "Max Strus",
-    "source": "ESPN, Basketball-Reference, NBA transaction history",
-    "originYear": 2019,
-    "depth": 2,
-    "lastUpdated": "2026-02-15"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/s/strusma01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Max Strus",
-    "acquisitionType": "trade",
+    "acquisitionType": "sign-and-trade",
     "date": "2023-07-06",
     "currentTeam": "CLE",
     "tradePartner": "MIA",
-    "tradeDescription": "3-team sign-and-trade: Cavaliers acquired Max Strus from Heat, sent Cedi Osman and Lamar Stevens to Spurs, 2nd round picks to Miami and San Antonio",
-    "note": "Guard from DePaul, signed 4-year, $63 million deal",
+    "tradeDescription": "3-team sign-and-trade: Heat traded Max Strus to Cavaliers. Cavaliers traded Cedi Osman, Lamar Stevens, and 2030 2nd round pick (CLE own) to Spurs. Cavaliers traded 2026 2nd round pick (LAL own) to Heat.",
+    "note": "Guard from DePaul, signed 4-year $63 million deal",
     "isOrigin": false,
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Cedi Osman",
-        "acquisitionType": "draft",
-        "date": "2017-06-22",
+        "acquisitionType": "draft-night-trade",
+        "date": "2015-06-25",
         "draftPick": 31,
         "draftRound": 2,
-        "note": "Forward drafted 31st overall by Cleveland",
-        "isOrigin": true
+        "note": "Forward drafted 31st overall by Minnesota in 2015, rights immediately traded to Cleveland. Played overseas until 2017-18 season. Sent to SAS in Strus S&T",
+        "isOrigin": true,
+        "assetsGivenUp": [],
+        "tradePartner": "MIN",
+        "tradeDescription": "MIN drafted Cedi Osman 31st overall in 2015 NBA Draft, immediately traded his rights to CLE"
       },
       {
         "type": "player",
         "name": "Lamar Stevens",
-        "acquisitionType": "undrafted",
+        "acquisitionType": "free-agent",
         "date": "2020-11-20",
-        "note": "Forward signed as undrafted free agent from Penn State",
+        "note": "Forward signed as undrafted free agent from Penn State, sent to SAS in Strus S&T",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      },
+      {
+        "type": "pick",
+        "name": "2030 2nd Round Pick via CLE",
+        "acquisitionType": "original",
+        "date": "2030-06-27",
+        "note": "Cavaliers' own 2030 second-round pick, sent to San Antonio in Strus S&T",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2024 CLE 2nd Round Pick",
-        "acquisitionType": "original",
-        "date": "2024-06-26",
-        "becamePlayer": "Kyle Filipowski",
-        "note": "Cavaliers' own second-round pick to Miami",
-        "isOrigin": true
-      },
-      {
-        "type": "pick",
-        "name": "2025 CLE 2nd Round Pick",
-        "acquisitionType": "original",
-        "date": "2025-06-25",
-        "becamePlayer": "Cam Christie",
-        "note": "Cavaliers' own second-round pick to San Antonio",
+        "name": "2026 2nd Round Pick via LAL",
+        "acquisitionType": "trade",
+        "date": "2026-06-25",
+        "note": "Lakers' second-round pick, sent to Miami in Strus S&T",
         "isOrigin": true
       }
     ],
-    "tradeChain": {
-      "type": "player",
-      "name": "Max Strus",
-      "acquisitionType": "undrafted",
-      "date": "2020-09-15",
-      "note": "Guard from DePaul, signed training camp contract with Miami Heat after being waived by Celtics and Bulls",
-      "isOrigin": true
-    },
     "espnId": "4065778"
   }
 }

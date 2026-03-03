@@ -2,10 +2,9 @@
   "_meta": {
     "team": "DAL",
     "player": "P.J. Washington",
-    "source": "ESPN, Basketball-Reference",
-    "originYear": 2019,
-    "depth": 3,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/w/washipj01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,33 +13,74 @@
     "date": "2024-02-08",
     "currentTeam": "DAL",
     "tradePartner": "CHA",
-    "tradeDescription": "Dallas acquired Washington from Charlotte",
+    "tradeDescription": "DAL traded Seth Curry, Grant Williams, and a 2027 1st round pick (DAL own, protected) to CHA for P.J. Washington, a 2024 2nd (BOS own), and a 2028 2nd (least favorable)",
     "note": "Kentucky forward, 2019 #12 overall pick by Charlotte",
-    "isOrigin": false,
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Grant Williams",
-        "acquisitionType": "free-agent",
-        "date": "2023-07-01",
-        "note": "Tennessee forward, signed 4-year $53M contract",
-        "isOrigin": true
+        "acquisitionType": "trade",
+        "date": "2023-07-12",
+        "tradePartner": "BOS",
+        "tradeDescription": "3-team trade: BOS traded Grant Williams to DAL. DAL traded Reggie Bullock and 2030 1st (swap) to SAS, and 2025 2nd (TOR own) and 2030 2nd (DAL own) to BOS. SAS traded 2024 2nd to BOS and 2025 2nd and 2028 2nd to DAL.",
+        "note": "Tennessee forward, 2019 #22 pick by Boston",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Reggie Bullock",
+            "acquisitionType": "free-agent",
+            "date": "2021-08-06",
+            "note": "UNC wing, signed as free agent from New York Knicks. Sent to SAS in Grant Williams 3-team trade.",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "pick",
+            "name": "2030 1st Round Pick Swap via DAL",
+            "acquisitionType": "own",
+            "date": "2023-07-12",
+            "note": "Right to swap 2030 1st round pick, sent to San Antonio",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "pick",
+            "name": "2025 2nd Round Pick (TOR own)",
+            "acquisitionType": "own",
+            "date": "2025-06-25",
+            "note": "Sent to Boston in Grant Williams 3-team trade",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "pick",
+            "name": "2030 2nd Round Pick via DAL",
+            "acquisitionType": "own",
+            "date": "2030-06-27",
+            "note": "Dallas own 2030 2nd round pick, sent to Boston",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          }
+        ]
       },
       {
         "type": "player",
         "name": "Seth Curry",
         "acquisitionType": "free-agent",
-        "date": "2023-07-01",
-        "note": "Duke guard, undrafted 2013. Signed 2-year $8M deal to return to Dallas after stints with PHI and BKN.",
-        "isOrigin": true
+        "date": "2023-07-14",
+        "note": "Duke guard, undrafted 2013. Signed by Dallas as free agent.",
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2027 DAL 1st Round Pick",
-        "acquisitionType": "original",
+        "name": "2027 1st Round Pick via DAL",
+        "acquisitionType": "own",
         "date": "2027-06-26",
-        "note": "Dallas own 2027 first-round pick",
-        "isOrigin": true
+        "note": "Dallas own 2027 first-round pick, protected, sent to Charlotte",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

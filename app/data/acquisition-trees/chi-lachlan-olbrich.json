@@ -2,23 +2,30 @@
   "_meta": {
     "team": "CHI",
     "player": "Lachlan Olbrich",
-    "source": "Basketball-Reference, ESPN, NBA.com",
-    "originYear": 2025,
-    "depth": 2,
-    "lastUpdated": "2026-02-15"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/o/olbrila01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Lachlan Olbrich",
-    "acquisitionType": "draft-night-trade",
-    "date": "2025-06-26",
+    "acquisitionType": "trade",
+    "date": "2025-06-30",
     "currentTeam": "CHI",
     "tradePartner": "LAL",
-    "tradeDescription": "Bulls acquire draft rights to Lachlan Olbrich (55th pick) from Lakers on draft night",
-    "draftPick": 55,
-    "draftRound": 2,
-    "note": "Australian center from UC Riverside, acquired via draft night trade with Lakers",
-    "isOrigin": true,
-    "assetsGivenUp": []
+    "tradeDescription": "Bulls traded Rocco Zikarsky to Lakers for cash and Lachlan Olbrich.",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Rocco Zikarsky",
+        "acquisitionType": "draft",
+        "date": "2025-06-25",
+        "draftPick": 45,
+        "draftRound": 2,
+        "note": "Drafted 45th overall by Chicago Bulls in 2025 NBA Draft. Pick originally from SAC via DeRozan S&T.",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      }
+    ]
   }
 }

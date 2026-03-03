@@ -2,103 +2,61 @@
   "_meta": {
     "team": "DET",
     "player": "Jalen Duren",
-    "source": "ESPN, Basketball-Reference, NBA Draft records",
-    "originYear": 2020,
-    "depth": 4,
-    "lastUpdated": "2026-02-15"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/d/durenja01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Jalen Duren",
-    "acquisitionType": "draft-night-trade",
-    "date": "2022-06-23",
-    "currentTeam": "DET",
+    "acquisitionType": "trade",
+    "date": "2022-07-06",
     "tradePartner": "NYK",
-    "tradeDescription": "3-team trade: Pistons acquired Jalen Duren (#13) and Kemba Walker from Knicks, sent 2025 MIL 1st round pick (top-4 protected) to New York",
+    "tradeDescription": "DET traded a 2025 1st round draft pick (MIL, conditional, became Nolan Traor\u00e9) to NYK for Jalen Duren and Kemba Walker. NYK also received a trade exception",
+    "currentTeam": "DET",
     "draftPick": 13,
-    "draftRound": 1,
-    "note": "Center from Memphis, drafted 13th overall by Charlotte, traded to Detroit via New York",
-    "isOrigin": false,
     "assetsGivenUp": [
       {
         "type": "pick",
-        "name": "2025 MIL 1st Round Pick (top-4 protected)",
+        "name": "2025 1st Round Pick (#14)",
         "acquisitionType": "trade",
         "date": "2022-07-06",
         "tradePartner": "POR",
-        "tradeDescription": "Acquired from Portland in Jerami Grant trade, then sent to New York Knicks",
-        "becamePlayer": "Nolan Traore",
-        "note": "Originally acquired from Portland in the Jerami Grant trade (Jul 6, 2022). Conveyed as #19 pick in 2025, selected Nolan Traore.",
-        "isOrigin": false,
+        "tradeDescription": "DET traded Jerami Grant and Ismael Kamagate to POR for Gabriele Procida, a 2025 1st round pick (MIL, conditional), a 2025 2nd round pick, and a 2026 2nd round pick. Detroit also received a trade exception",
+        "becamePlayer": "Nolan Traor\u00e9",
         "assetsGivenUp": [
           {
             "type": "player",
             "name": "Jerami Grant",
             "acquisitionType": "trade",
-            "date": "2020-11-24",
+            "date": "2020-11-22",
             "tradePartner": "DEN",
-            "note": "Forward, acquired via sign-and-trade from Denver",
-            "isOrigin": false,
+            "tradeDescription": "DET traded cash to DEN for Jerami Grant and Nikola Radi\u010devi\u0107. Denver also received a trade exception",
             "assetsGivenUp": [
               {
                 "type": "other",
                 "name": "Cash considerations",
-                "acquisitionType": "original",
-                "note": "Sign-and-trade, Detroit sent only cash/trade exception to Denver",
-                "isOrigin": true
+                "acquisitionType": "free-agent",
+                "date": "2020-11-22",
+                "tradeDescription": "Cash sent to Denver for Jerami Grant",
+                "isOrigin": true,
+                "assetsGivenUp": []
               }
             ]
+          },
+          {
+            "type": "player",
+            "name": "Ismael Kamagate",
+            "acquisitionType": "draft",
+            "date": "2022-06-23",
+            "draftPick": 46,
+            "draftRound": 2,
+            "tradeDescription": "Drafted 46th overall by Detroit (via BKN pick) in the 2022 NBA Draft",
+            "isOrigin": true,
+            "assetsGivenUp": []
           }
         ]
       }
-    ],
-    "tradeChain": {
-      "type": "pick",
-      "name": "2022 CHA 1st Round Pick (#13)",
-      "acquisitionType": "trade",
-      "date": "2022-06-23",
-      "tradePartner": "NYK",
-      "tradeDescription": "Pistons sent 2025 MIL 1st round pick to Knicks, received #13 pick (Jalen Duren, drafted by Charlotte) and Kemba Walker",
-      "becamePlayer": "Jalen Duren",
-      "draftPick": 13,
-      "draftRound": 1,
-      "note": "Charlotte drafted Duren #13, sent to Detroit via New York in 3-team draft night trade",
-      "isOrigin": false,
-      "assetsGivenUp": [
-        {
-          "type": "pick",
-          "name": "2025 MIL 1st Round Pick (protected)",
-          "acquisitionType": "trade",
-          "date": "2025-06-25",
-          "becamePlayer": "Nolan Traore",
-          "tradePartner": "POR",
-          "tradeDescription": "Acquired from Trail Blazers in Jerami Grant trade (Jul 6, 2022)",
-          "note": "Milwaukee's 2025 1st round pick (top-4 protected), sent to NYK then to BKN in Bridges trade, became #19 Nolan Traore",
-          "isOrigin": false,
-          "assetsGivenUp": [
-            {
-              "type": "player",
-              "name": "Jerami Grant",
-              "acquisitionType": "trade",
-              "date": "2020-11-24",
-              "tradePartner": "DEN",
-              "tradeDescription": "Sign-and-trade: Pistons signed Grant to 3-year $60M deal, Nuggets received trade exception and cash",
-              "note": "Forward acquired via sign-and-trade from Denver",
-              "isOrigin": false,
-              "assetsGivenUp": [
-                {
-                  "type": "other",
-                  "name": "Cash considerations",
-                  "acquisitionType": "original",
-                  "note": "Sign-and-trade, Detroit sent only cash/trade exception to Denver",
-                  "isOrigin": true
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "espnId": "4433621"
+    ]
   }
 }

@@ -2,6 +2,7 @@
 import { NBA_PLAYER_IDS, ESPN_PLAYER_IDS, getHeadshotUrl } from "@/lib/player-headshots";
 
 import { useEffect, useState, useCallback, useMemo, useRef } from "react";
+import Link from "next/link";
 import { trackPlayerClick, trackExport } from "@/lib/analytics";
 import {
   ReactFlow,
@@ -110,6 +111,18 @@ function formatAcquisitionType(acqType?: string): { label: string; color: string
   }
 }
 
+function TradePartnerLink({ abbr }: { abbr: string }) {
+  return (
+    <a
+      href={`/team/${abbr}`}
+      onClick={(e) => e.stopPropagation()}
+      className="text-[8px] text-zinc-400 hover:text-fuchsia-400 hover:underline cursor-pointer transition-colors"
+    >
+      via {abbr}
+    </a>
+  );
+}
+
 function RosterNode({ data }: NodeProps) {
   const nodeData = data as NodeData;
   const espnUrl = getHeadshotUrl(nodeData.label);
@@ -136,7 +149,7 @@ function RosterNode({ data }: NodeProps) {
   
   return (
     <div 
-      className={`px-3 py-2 rounded-lg shadow-lg min-w-[140px] relative cursor-pointer transition-all duration-300 ${
+      className={`px-2 py-1.5 rounded-lg shadow-lg min-w-[140px] min-h-[68px] relative cursor-pointer transition-all duration-300 leading-tight ${
         isHighlighted 
           ? "bg-green-800 border-2 border-green-300 ring-2 ring-green-400/50 scale-105" 
           : isDimmed 
@@ -145,28 +158,27 @@ function RosterNode({ data }: NodeProps) {
       }`}
     >
       <Handle type="source" position={Position.Right} className="!bg-green-400 !w-3 !h-3" />
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-1.5">
         {espnUrl && (
           <img 
             src={espnUrl}
             alt={nodeData.label}
-            className={`w-10 h-10 rounded-full object-cover bg-green-950 border transition-all duration-300 ${
+            className={`w-9 h-9 rounded-full object-cover bg-green-950 border transition-all duration-300 ${
               isHighlighted ? "border-green-300" : "border-green-400"
             }`}
             onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
           />
         )}
-        <div>
+        <div className="leading-tight">
           <div className={`text-[9px] font-bold uppercase flex items-center gap-1 ${isHighlighted ? "text-green-200" : categoryColor}`}>
             {categoryLabel}
             {isHomegrown && <span title="Homegrown talent">🏠</span>}
           </div>
           <div className="font-bold text-white text-xs">{nodeData.label}</div>
-          {acqInfo.label && (
-            <div className="flex items-center gap-1 mt-0.5">
-              <span className={`text-[8px] font-semibold ${acqInfo.color}`}>{acqInfo.label}</span>
-            </div>
-          )}
+          {nodeData.sublabel && (nodeData.acquisitionType === "draft" || nodeData.acquisitionType === "draft-night-trade") && <div className="text-[9px] text-zinc-400">{nodeData.sublabel}</div>}
+          {acqInfo.label && <div className={`text-[8px] font-semibold ${acqInfo.color}`}>{acqInfo.label}</div>}
+          {nodeData.tradePartner && <TradePartnerLink abbr={nodeData.tradePartner} />}
+          {nodeData.date && <div className="text-[8px] text-zinc-400">{formatDate(nodeData.date)}</div>}
         </div>
       </div>
     </div>
@@ -196,18 +208,49 @@ function PlayerNode({ data }: NodeProps) {
         Player
       </div>
       <div className="font-medium text-white text-xs">{nodeData.label}</div>
-      {nodeData.sublabel && <div className="text-[9px] text-zinc-400">{nodeData.sublabel}</div>}
+      {nodeData.sublabel && (!nodeData.tradePartner || nodeData.acquisitionType === "draft-night-trade" || nodeData.acquisitionType === "draft") && <div className="text-[9px] text-zinc-400">{nodeData.sublabel}</div>}
       {acqInfo.label && <div className={`text-[8px] font-semibold ${acqInfo.color}`}>{acqInfo.label}</div>}
+      {nodeData.tradePartner && <TradePartnerLink abbr={nodeData.tradePartner} />}
       {nodeData.date && <div className="text-[8px] text-zinc-500">{formatDate(nodeData.date)}</div>}
     </div>
   );
 }
 
 // Pick node
+function formatPickLabel(rawLabel: string, becamePlayer?: string): { title: string; via?: string } {
+  const label = rawLabel.trim();
+  
+  // Match: "2026 1st Round Pick (#18) via MIN", "2026 1st Round Pick (OKC)", "2026 1st Round Pick via MEM", "2026 1st Round Pick"
+  const match = label.match(/^(\d{4})\s+(1st|2nd|First|Second)\s+Round\s+Pick(?:\s*\(([^)]+)\))?(?:\s+via\s+([A-Z]{2,3}))?$/i);
+  if (!match) return { title: label };
+  
+  const [, year, round, parenthetical, viaInName] = match;
+  const roundLabel = /1st|first/i.test(round) ? 'First' : 'Second';
+  
+  let pickNum: string | null = null;
+  let viaTeam: string | null = viaInName || null;
+  
+  if (parenthetical) {
+    if (parenthetical.startsWith('#')) {
+      pickNum = parenthetical;
+    } else if (/^[A-Z]{2,3}$/.test(parenthetical)) {
+      viaTeam = viaTeam || parenthetical;
+    }
+  }
+  
+  let title = `${year} ${roundLabel} Round Pick`;
+  if (pickNum) {
+    title += ` (${pickNum})`;
+  }
+  
+  return { title, via: viaTeam || undefined };
+}
+
 function PickNode({ data }: NodeProps) {
   const nodeData = data as NodeData;
   const isHighlighted = nodeData.isHighlighted;
   const isDimmed = nodeData.isDimmed;
+  const pickInfo = formatPickLabel(nodeData.label, nodeData.becamePlayer as string | undefined);
   
   return (
     <div className="relative">
@@ -225,7 +268,10 @@ function PickNode({ data }: NodeProps) {
         <div className={`text-[9px] font-semibold uppercase ${isHighlighted ? "text-fuchsia-300" : "text-fuchsia-400"}`}>
           Pick
         </div>
-        <div className="font-medium text-white text-xs">{nodeData.label}</div>
+        <div className="font-medium text-white text-xs">{pickInfo.title}</div>
+        {(pickInfo.via || nodeData.tradePartner) && (
+          <TradePartnerLink abbr={pickInfo.via || nodeData.tradePartner!} />
+        )}
         {nodeData.date && <div className="text-[8px] text-zinc-500">{formatDate(nodeData.date)}</div>}
       </div>
       {nodeData.becamePlayer && (
@@ -281,7 +327,9 @@ function OriginNode({ data }: NodeProps) {
         )}
         <div>
           <div className="font-bold text-white text-xs">{nodeData.label}</div>
+          {nodeData.sublabel && (nodeData.acquisitionType === "draft" || nodeData.acquisitionType === "draft-night-trade") && <div className="text-[9px] text-amber-200/70">{nodeData.sublabel}</div>}
           {(() => { const ai = formatAcquisitionType(nodeData.acquisitionType); return ai.label ? <div className={`text-[8px] font-semibold ${ai.color}`}>{ai.label}</div> : null; })()}
+          {nodeData.tradePartner && <TradePartnerLink abbr={nodeData.tradePartner} />}
           {nodeData.date && <div className={`text-[8px] ${isHighlighted ? "text-amber-200" : "text-amber-300"}`}>
             {formatDate(nodeData.date)}
           </div>}
@@ -343,7 +391,7 @@ const elkOptions = {
 };
 
 // Vertical spacing for roster column
-const ROSTER_VERTICAL_SPACING = 100;
+const ROSTER_VERTICAL_SPACING = 110;
 const ROSTER_X_POSITION = 0;
 
 export default function TeamAcquisitionTree({

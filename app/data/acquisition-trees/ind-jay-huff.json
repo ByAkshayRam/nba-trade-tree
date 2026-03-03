@@ -2,10 +2,9 @@
   "_meta": {
     "team": "IND",
     "player": "Jay Huff",
-    "source": "Basketball-Reference, ESPN, NBA Trade History",
-    "originYear": 2025,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/h/huffja01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,18 +13,22 @@
     "date": "2025-07-06",
     "currentTeam": "IND",
     "tradePartner": "MEM",
-    "note": "Center from Virginia, undrafted",
+    "tradeDescription": "IND traded a 2029 2nd round pick (POR own) and a 2031 2nd round pick swap rights to MEM for Jay Huff. MEM also received a trade exception.",
     "assetsGivenUp": [
       {
         "type": "pick",
-        "name": "2029 2nd Round Pick (POR own)",
-        "note": "Portland's own 2nd round pick",
-        "isOrigin": true
+        "name": "2029 2nd Round Pick via POR",
+        "acquisitionType": "trade",
+        "note": "Portland's own 2nd round pick, acquired from PHI in Buddy Hield 3-team trade (Feb 8, 2024)",
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
         "name": "2031 2nd Round Pick Swap Rights",
-        "isOrigin": true
+        "acquisitionType": "own",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

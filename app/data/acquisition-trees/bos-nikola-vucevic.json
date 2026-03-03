@@ -7,7 +7,8 @@
     "originYear": 2000,
     "depth": 11,
     "lastUpdated": "2026-02-09",
-    "verificationStatus": "VERIFIED"
+    "verificationStatus": "VERIFIED",
+    "assetsGivenUp": []
   },
   "tree": {
     "type": "player",
@@ -57,7 +58,7 @@
                     "assetsGivenUp": [
                       {
                         "type": "pick",
-                        "name": "2020 1st Round Pick (#14, from MEM)",
+                        "name": "2020 1st Round Pick (#14) via MEM",
                         "acquisitionType": "trade",
                         "date": "2015-01-12",
                         "tradePartner": "MEM",
@@ -89,27 +90,28 @@
                                     "date": "2003-06-26",
                                     "draftPick": 20,
                                     "draftRound": 1,
-                                    "tradeDescription": "Drafted with pick acquired from 76ers (Mo\u00efso trade)",
+                                    "tradeDescription": "Drafted with pick acquired from 76ers (Moïso trade)",
                                     "assetsGivenUp": [
                                       {
                                         "type": "pick",
-                                        "name": "2003 1st Round Pick (#20, from PHI)",
+                                        "name": "2003 1st Round Pick (#20) via PHI",
                                         "acquisitionType": "trade",
                                         "date": "2001-08-03",
                                         "tradePartner": "PHI",
-                                        "tradeDescription": "Celtics trade J\u00e9r\u00f4me Mo\u00efso for Roshown McLeod and lottery-protected 1st",
+                                        "tradeDescription": "Celtics trade Jérôme Moïso for Roshown McLeod and lottery-protected 1st",
                                         "becamePlayer": "Dahntay Jones",
                                         "assetsGivenUp": [
                                           {
                                             "type": "player",
-                                            "name": "J\u00e9r\u00f4me Mo\u00efso",
+                                            "name": "Jérôme Moïso",
                                             "acquisitionType": "draft",
                                             "date": "2000-06-28",
                                             "draftPick": 11,
                                             "draftRound": 1,
                                             "tradeDescription": "Drafted by Celtics with their OWN pick",
-                                            "note": "THE ULTIMATE ORIGIN. Celtics drafted Mo\u00efso 11th overall out of UCLA. Massive bust - played 24 games, averaged 1.5 PPG. His selection started a 26-year chain.",
-                                            "isOrigin": true
+                                            "note": "THE ULTIMATE ORIGIN. Celtics drafted Moïso 11th overall out of UCLA. Massive bust - played 24 games, averaged 1.5 PPG. His selection started a 26-year chain.",
+                                            "isOrigin": true,
+                                            "assetsGivenUp": []
                                           }
                                         ]
                                       }
@@ -124,7 +126,8 @@
                                     "draftRound": 1,
                                     "tradeDescription": "Drafted by Celtics with their OWN pick",
                                     "note": "Part of package for Perkins. Never played in NBA. Celtics own pick.",
-                                    "isOrigin": true
+                                    "isOrigin": true,
+                                    "assetsGivenUp": []
                                   }
                                 ]
                               },
@@ -132,11 +135,53 @@
                                 "type": "player",
                                 "name": "Nate Robinson",
                                 "acquisitionType": "trade",
-                                "date": "2006-06-28",
-                                "tradePartner": "PHX",
-                                "tradeDescription": "Draft night trade - part of the Rajon Rondo trade complex",
-                                "note": "3x Slam Dunk Contest winner. Flipped to OKC for Jeff Green.",
-                                "isOrigin": true
+                                "date": "2010-02-18",
+                                "tradePartner": "NYK",
+                                "tradeDescription": "Celtics trade Eddie House, Bill Walker, J.R. Giddens, and conditional 2014 2nd (did not convey) to Knicks for Nate Robinson and Marcus Landry",
+                                "note": "3x Slam Dunk champion. Traded from NYK to BOS mid-season 2010.",
+                                "assetsGivenUp": [
+                                  {
+                                    "type": "player",
+                                    "name": "Eddie House",
+                                    "acquisitionType": "free-agent",
+                                    "date": "2007-08-01",
+                                    "tradeDescription": "Signed as free agent (1yr/$1.5M). Part of 2008 championship team as backup guard.",
+                                    "note": "Sharpshooter off the bench. Won 2008 title with Celtics.",
+                                    "isOrigin": true,
+                                    "assetsGivenUp": []
+                                  },
+                                  {
+                                    "type": "player",
+                                    "name": "Bill Walker",
+                                    "acquisitionType": "trade",
+                                    "date": "2008-06-26",
+                                    "tradePartner": "WAS",
+                                    "tradeDescription": "Celtics acquired draft rights to Bill Walker (#47 pick) from Wizards for cash considerations",
+                                    "note": "Drafted #47 by Washington, rights immediately traded to Boston for cash",
+                                    "assetsGivenUp": [
+                                      {
+                                        "type": "other",
+                                        "name": "Cash Considerations",
+                                        "acquisitionType": "original",
+                                        "tradeDescription": "Cash sent to Washington for Bill Walker's draft rights",
+                                        "isOrigin": true,
+                                        "assetsGivenUp": []
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "player",
+                                    "name": "J.R. Giddens",
+                                    "acquisitionType": "draft",
+                                    "date": "2008-06-26",
+                                    "draftPick": 30,
+                                    "draftRound": 1,
+                                    "tradeDescription": "Drafted by Celtics with their OWN pick (#30 overall)",
+                                    "note": "Last pick of 1st round. Spent most of time in G-League. Never made NBA impact.",
+                                    "isOrigin": true,
+                                    "assetsGivenUp": []
+                                  }
+                                ]
                               }
                             ]
                           }
@@ -150,18 +195,50 @@
                     "acquisitionType": "trade",
                     "date": "2022-02-10",
                     "tradePartner": "HOU",
-                    "tradeDescription": "Re-acquired from Houston in deadline deal for Schroder, Fernando, Kanter",
+                    "tradeDescription": "Re-acquired from Houston in deadline deal for Schroder, Freedom, Fernando",
                     "note": "Originally signed by Celtics as free agent 2017, traded to Bulls 2021, returned 2022",
-                    "isOrigin": true
+                    "assetsGivenUp": [
+                      {
+                        "type": "player",
+                        "name": "Dennis Schroder",
+                        "acquisitionType": "free-agent",
+                        "date": "2021-08-06",
+                        "tradeDescription": "Signed 1yr/$5.9M deal as free agent after Lakers stint",
+                        "note": "German guard, previously with Lakers. Free agent signing - TRUE ORIGIN.",
+                        "isOrigin": true,
+                        "assetsGivenUp": []
+                      },
+                      {
+                        "type": "player",
+                        "name": "Enes Freedom",
+                        "acquisitionType": "free-agent",
+                        "date": "2021-08-07",
+                        "tradeDescription": "Signed veteran minimum as free agent",
+                        "note": "Previously Enes Kanter, changed name 2021. Free agent - TRUE ORIGIN.",
+                        "isOrigin": true,
+                        "assetsGivenUp": []
+                      },
+                      {
+                        "type": "player",
+                        "name": "Bruno Fernando",
+                        "acquisitionType": "free-agent",
+                        "date": "2022-01-15",
+                        "tradeDescription": "Signed as free agent after Hawks waived him",
+                        "note": "Minor role player signed off waivers. Salary filler in Theis trade - TRUE ORIGIN.",
+                        "isOrigin": true,
+                        "assetsGivenUp": []
+                      }
+                    ]
                   },
                   {
                     "type": "pick",
-                    "name": "2023 1st Round Pick",
+                    "name": "2023 1st Round Pick (#26)",
                     "acquisitionType": "own",
                     "becamePlayer": "Ben Sheppard",
                     "tradeDescription": "Celtics own pick (#29)",
                     "note": "Conveyed to Indiana in Brogdon trade. Pacers selected Ben Sheppard.",
-                    "isOrigin": true
+                    "isOrigin": true,
+                    "assetsGivenUp": []
                   }
                 ]
               },
@@ -174,16 +251,18 @@
                 "draftRound": 1,
                 "tradeDescription": "Drafted by Celtics with their OWN pick",
                 "note": "Time Lord. 2024 NBA Champion (traded after). Celtics own pick - TRUE ORIGIN.",
-                "isOrigin": true
+                "isOrigin": true,
+                "assetsGivenUp": []
               },
               {
                 "type": "pick",
-                "name": "2024 1st Round Pick (GSW conditional)",
+                "name": "2024 1st Round Pick (#14)",
                 "acquisitionType": "own",
                 "becamePlayer": "Bub Carrington",
                 "tradeDescription": "Originally GSW pick acquired by Celtics. Conveyed to Portland.",
                 "note": "Portland selected Bub Carrington.",
-                "isOrigin": true
+                "isOrigin": true,
+                "assetsGivenUp": []
               },
               {
                 "type": "pick",
@@ -191,7 +270,8 @@
                 "acquisitionType": "own",
                 "tradeDescription": "Celtics own pick",
                 "note": "TRUE ORIGIN",
-                "isOrigin": true
+                "isOrigin": true,
+                "assetsGivenUp": []
               }
             ]
           }
@@ -199,12 +279,15 @@
       },
       {
         "type": "pick",
-        "name": "2026 2nd Round Pick (most favorable)",
+        "name": "2026 2nd Round Pick via ORL",
         "acquisitionType": "trade",
-        "tradeDescription": "Acquired from Orlando in Noah Penda trade (June 2025)",
-        "note": "Part of Vucevic trade to Chicago",
+        "date": "2025-06-26",
+        "tradePartner": "ORL",
+        "tradeDescription": "Acquired from Orlando in the Noah Penda trade. BOS sent Penda to ORL for Shulga, Amari Williams, 2026 2nd, and 2027 2nd.",
+        "note": "Received from Orlando, then sent to Chicago in the Vucevic trade.",
         "isOrigin": true
       }
     ]
-  }
+  },
+  "assetsGivenUp": []
 }

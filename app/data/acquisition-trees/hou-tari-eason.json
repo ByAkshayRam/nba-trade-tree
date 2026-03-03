@@ -2,10 +2,9 @@
   "_meta": {
     "team": "HOU",
     "player": "Tari Eason",
-    "source": "ESPN, NBA.com, Basketball-Reference",
-    "originYear": 2022,
-    "depth": 1,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/e/easonta01.html",
+    "lastUpdated": "2026-03-02"
   },
   "tree": {
     "type": "player",
@@ -15,7 +14,20 @@
     "currentTeam": "HOU",
     "draftPick": 17,
     "draftRound": 1,
-    "note": "LSU forward, 17th overall pick, defensive specialist",
-    "isOrigin": true
+    "note": "LSU forward, 17th overall pick. Selected with the 2022 1st round pick acquired from BKN in the James Harden 4-team trade (Jan 16, 2021).",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "James Harden",
+        "acquisitionType": "trade",
+        "date": "2012-10-27",
+        "tradePartner": "OKC",
+        "tradeDescription": "4-team trade (HOU/BKN/CLE/IND): HOU traded James Harden to BKN. HOU received BKN 2022 1st (#17, Tari Eason), 2024 1st (#3, Reed Sheppard), 2023 1st, 2025 1st, 2026 1st, 2027 1st swap, Rodions Kurucs, Victor Oladipo (from IND), Dante Exum + 2022 1st MarJon Beauchamp (from CLE). HOU also sent 2023 2nd (Jalen Pickett) to IND.",
+        "note": "Drafted #3 by OKC in 2009. Traded to HOU Oct 2012. Sent to BKN Jan 16, 2021 — the pick haul included the 2022 1st that became Tari Eason.",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      }
+    ]
   }
 }

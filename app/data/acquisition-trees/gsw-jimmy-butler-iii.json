@@ -2,20 +2,19 @@
   "_meta": {
     "team": "GSW",
     "player": "Jimmy Butler III",
-    "source": "Basketball-Reference, ESPN, The Athletic",
-    "originYear": 2015,
-    "depth": 6,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/b/butleji01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Jimmy Butler III",
     "acquisitionType": "trade",
-    "date": "2025-02-05",
+    "date": "2025-02-06",
     "currentTeam": "GSW",
     "tradePartner": "MIA",
-    "tradeDescription": "5-team trade: Warriors acquired Butler from Heat",
-    "note": "6x All-Star, signed 2-year extension through 2026-27",
+    "tradeDescription": "5-team trade: GSW traded Kyle Anderson, Andrew Wiggins, and 2025 1st (GSW own, became Jakucionis #20) to MIA; GSW traded Dennis Schroder, Lindy Waters III, and 2031 2nd (GSW own) to DET; MIA traded Jimmy Butler and cash to GSW; DET traded K.J. Martin to UTA; MIA traded Davion Mitchell from TOR, cash and 2026 2nd (LAL own) to TOR; MIA traded Josh Richardson and cash to UTA; UTA traded P.J. Tucker to TOR",
+    "note": "6x All-Star, acquired from Miami Heat",
     "isOrigin": false,
     "assetsGivenUp": [
       {
@@ -24,7 +23,7 @@
         "acquisitionType": "trade",
         "date": "2020-02-06",
         "tradePartner": "MIN",
-        "tradeDescription": "Traded from Minnesota with picks for D'Angelo Russell and others",
+        "tradeDescription": "GSW traded D'Angelo Russell, Jacob Evans, and Omari Spellman to MIN for Andrew Wiggins, 2021 1st (became Kuminga #7), and 2021 2nd (became McBride)",
         "note": "Former #1 overall pick, 2022 All-Star",
         "isOrigin": false,
         "assetsGivenUp": [
@@ -32,10 +31,10 @@
             "type": "player",
             "name": "D'Angelo Russell",
             "acquisitionType": "trade",
-            "date": "2019-07-01",
+            "date": "2019-07-07",
             "tradePartner": "BKN",
-            "tradeDescription": "Sign-and-trade from Brooklyn Nets for Kevin Durant",
-            "note": "2019 All-Star, part of Durant trade",
+            "tradeDescription": "Sign-and-trade: GSW signed Kevin Durant as FA and traded him with 2025 2nd to BKN for D'Angelo Russell, Treveon Graham, and Shabazz Napier",
+            "note": "2019 All-Star, acquired in KD sign-and-trade",
             "isOrigin": false,
             "assetsGivenUp": [
               {
@@ -43,8 +42,9 @@
                 "name": "Kevin Durant",
                 "acquisitionType": "free-agent",
                 "date": "2016-07-04",
-                "note": "Signed as free agent from Oklahoma City Thunder. Sent to BKN in sign-and-trade.",
-                "isOrigin": true
+                "note": "Signed as free agent from Oklahoma City Thunder. Sent to BKN in sign-and-trade July 2019.",
+                "isOrigin": true,
+                "assetsGivenUp": []
               }
             ]
           },
@@ -56,7 +56,8 @@
             "draftPick": 28,
             "draftRound": 1,
             "note": "Drafted 28th overall by GSW in 2018",
-            "isOrigin": true
+            "isOrigin": true,
+            "assetsGivenUp": []
           },
           {
             "type": "player",
@@ -64,9 +65,30 @@
             "acquisitionType": "trade",
             "date": "2019-07-08",
             "tradePartner": "ATL",
-            "tradeDescription": "Acquired from Atlanta for Damian Jones and a 2026 2nd round pick",
+            "tradeDescription": "GSW traded Damian Jones and a 2026 2nd round pick to ATL for Omari Spellman",
             "note": "Villanova forward, 2018 #30 pick by Atlanta",
-            "isOrigin": true
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Damian Jones",
+                "acquisitionType": "draft",
+                "date": "2016-06-23",
+                "draftPick": 30,
+                "draftRound": 1,
+                "note": "Vanderbilt center, drafted 30th overall by Golden State",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              },
+              {
+                "type": "pick",
+                "name": "2026 2nd Round Pick",
+                "acquisitionType": "own",
+                "note": "GSW own 2nd rounder sent to Atlanta in Spellman trade",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              }
+            ]
           }
         ]
       },
@@ -74,10 +96,40 @@
         "type": "player",
         "name": "Kyle Anderson",
         "acquisitionType": "sign-and-trade",
-        "date": "2024-07-01",
+        "date": "2024-07-06",
         "tradePartner": "MIN",
-        "note": "UCLA forward, joined via sign-and-trade from Minnesota Timberwolves",
-        "isOrigin": true
+        "tradeDescription": "6-team sign-and-trade: GSW traded Klay Thompson to DAL; MIN traded Kyle Anderson to GSW; PHI traded Buddy Hield to GSW",
+        "note": "UCLA forward, acquired via 6-team sign-and-trade from Minnesota",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Klay Thompson",
+            "acquisitionType": "draft",
+            "date": "2011-06-23",
+            "draftPick": 11,
+            "draftRound": 1,
+            "note": "Washington State guard, drafted #11 overall by Golden State. 4x NBA champion. Left via sign-and-trade to Dallas after 13 seasons.",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "pick",
+            "name": "2031 2nd Round Pick (via DAL)",
+            "acquisitionType": "own",
+            "note": "GSW own 2nd rounder sent to MIN as part of 6-team trade",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "other",
+            "name": "Cash Considerations",
+            "acquisitionType": "original",
+            "note": "Cash sent to MIN as part of 6-team trade",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          }
+        ]
       },
       {
         "type": "player",
@@ -85,16 +137,18 @@
         "acquisitionType": "trade",
         "date": "2024-12-15",
         "tradePartner": "BKN",
-        "tradeDescription": "Warriors acquire Schroder and 2025 2nd (via MIA) from Nets for Melton, Beekman, and three 2nd-round picks",
-        "note": "German veteran PG, averaging 18.4 ppg and 6.6 apg at time of trade",
+        "tradeDescription": "GSW traded De'Anthony Melton, Reece Beekman, 2026 2nd (ATL own), 2028 2nd (ATL own), and 2029 2nd (GSW own) to BKN for Dennis Schroder and 2025 2nd (MIA own, became Koby Brea #41)",
+        "note": "German veteran PG",
+        "isOrigin": false,
         "assetsGivenUp": [
           {
             "type": "player",
             "name": "De'Anthony Melton",
             "acquisitionType": "free-agent",
-            "date": "2024-07-01",
+            "date": "2024-07-08",
             "note": "Signed via mid-level exception from Philadelphia. Out for season with torn ACL at time of trade.",
-            "isOrigin": true
+            "isOrigin": true,
+            "assetsGivenUp": []
           },
           {
             "type": "player",
@@ -103,50 +157,77 @@
             "date": "2024-06-27",
             "draftPick": 39,
             "draftRound": 2,
-            "note": "Virginia guard, 2024 2nd round pick",
-            "isOrigin": true
+            "note": "Virginia guard, 2024 2nd round pick. Signed to two-way July 3, 2024.",
+            "isOrigin": true,
+            "assetsGivenUp": []
           },
           {
             "type": "pick",
-            "name": "2026 2nd Round Pick",
-            "acquisitionType": "own",
-            "date": "2024-12-15",
-            "note": "GSW own 2nd rounder sent to Brooklyn",
-            "isOrigin": true
+            "name": "2026 2nd Round Pick via ATL",
+            "acquisitionType": "original",
+            "note": "Acquired from ATL in GP2 4-team trade Feb 2023, sent to BKN",
+            "isOrigin": true,
+            "assetsGivenUp": []
           },
           {
             "type": "pick",
-            "name": "2027 2nd Round Pick",
-            "acquisitionType": "own",
-            "date": "2024-12-15",
-            "note": "GSW own 2nd rounder sent to Brooklyn",
-            "isOrigin": true
+            "name": "2028 2nd Round Pick via ATL",
+            "acquisitionType": "original",
+            "note": "Acquired from ATL in GP2 4-team trade Feb 2023, sent to BKN",
+            "isOrigin": true,
+            "assetsGivenUp": []
           },
           {
             "type": "pick",
-            "name": "2029 2nd Round Pick",
+            "name": "2029 2nd Round Pick via GSW",
             "acquisitionType": "own",
             "date": "2024-12-15",
-            "note": "GSW own 2nd rounder sent to Brooklyn",
-            "isOrigin": true
+            "note": "GSW own 2nd rounder sent to BKN",
+            "isOrigin": true,
+            "assetsGivenUp": []
           }
         ]
       },
       {
         "type": "player",
         "name": "Lindy Waters III",
-        "acquisitionType": "undrafted",
-        "date": "2022-09-01",
-        "note": "Signed as undrafted free agent by Oklahoma City Thunder in 2022",
-        "isOrigin": true
+        "acquisitionType": "trade",
+        "date": "2024-06-27",
+        "tradePartner": "OKC",
+        "tradeDescription": "GSW traded Quinten Post to OKC for Lindy Waters III",
+        "note": "Acquired from OKC on draft night 2024",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Quinten Post",
+            "acquisitionType": "draft",
+            "date": "2024-06-27",
+            "draftPick": 52,
+            "draftRound": 2,
+            "note": "Boston College center, drafted 52nd overall by GSW in 2024, immediately traded to OKC",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          }
+        ]
       },
       {
         "type": "pick",
-        "name": "2025 1st Round Pick (top-10 protected)",
-        "acquisitionType": "original",
-        "date": "2025-06-26",
-        "note": "Warriors' own first-round pick sent to MIA, top-10 protected. Did NOT convey in 2025 (GSW had #1 pick). Rolls to 2026 top-10 protected.",
-        "isOrigin": true
+        "name": "2025 1st Round Pick (#20)",
+        "acquisitionType": "own",
+        "date": "2025-06-25",
+        "note": "GSW own first-round pick sent to MIA in Jimmy Butler trade",
+        "becamePlayer": "Kasparas Jakucionis",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      },
+      {
+        "type": "pick",
+        "name": "2031 2nd Round Pick via GSW",
+        "acquisitionType": "own",
+        "note": "GSW own 2nd rounder sent to DET as part of Butler 5-team trade",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

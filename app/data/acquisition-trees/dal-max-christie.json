@@ -2,10 +2,9 @@
   "_meta": {
     "team": "DAL",
     "player": "Max Christie",
-    "source": "NBA.com, Basketball-Reference",
-    "originYear": 2018,
-    "depth": 4,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/c/chrisma02.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,9 +13,8 @@
     "date": "2025-02-02",
     "currentTeam": "DAL",
     "tradePartner": "LAL",
-    "tradeDescription": "Dallas acquired Christie, Anthony Davis and a 2029 1st from Lakers for Luka Doncic, Maxi Kleber, and Markieff Morris",
+    "tradeDescription": "3-team trade: DAL traded Luka Doncic, Maxi Kleber, and Markieff Morris to LAL. DAL received Max Christie, Anthony Davis, and LAL 2029 1st. Utah also involved.",
     "note": "Michigan State guard, 2022 #35 pick by Los Angeles Lakers",
-    "isOrigin": false,
     "assetsGivenUp": [
       {
         "type": "player",
@@ -26,28 +24,30 @@
         "tradePartner": "ATL",
         "draftPick": 3,
         "draftRound": 1,
-        "tradeDescription": "Atlanta traded #3 pick (Doncic) to Dallas for #5 pick (Trae Young) and a protected 2019 first-round pick",
+        "tradeDescription": "ATL traded #3 pick (Luka Doncic) to DAL for #5 pick (Trae Young) and a protected 2019 1st round pick",
         "note": "Real Madrid guard, drafted #3 by Atlanta, traded to Dallas on draft night",
-        "isOrigin": false,
         "assetsGivenUp": [
           {
-            "type": "player",
-            "name": "Trae Young",
+            "type": "pick",
+            "name": "2018 1st Round Pick (#5)",
             "acquisitionType": "draft",
             "date": "2018-06-21",
             "draftPick": 5,
             "draftRound": 1,
-            "note": "Oklahoma guard, drafted #5 by Dallas, sent to Atlanta in draft-night swap",
-            "isOrigin": true
+            "note": "DAL's own #5 pick, traded to ATL on draft night for Luka Doncic (#3). Became Trae Young.",
+            "isOrigin": true,
+            "assetsGivenUp": [],
+            "becamePlayer": "Trae Young"
           },
           {
             "type": "pick",
-            "name": "2019 DAL 1st Round Pick",
-            "acquisitionType": "original",
+            "name": "2019 1st Round Pick (#10) via DAL",
+            "acquisitionType": "own",
             "date": "2019-06-20",
             "becamePlayer": "Cam Reddish",
             "note": "Protected first-round pick sent to Atlanta, became #10 overall",
-            "isOrigin": true
+            "isOrigin": true,
+            "assetsGivenUp": []
           }
         ]
       },
@@ -56,16 +56,18 @@
         "name": "Maxi Kleber",
         "acquisitionType": "free-agent",
         "date": "2017-07-20",
-        "note": "German forward, signed as international free agent from Brose Bamberg in 2017. Shared cost with Bagley (AD trade).",
-        "isOrigin": true
+        "note": "German forward, signed as international free agent from Brose Bamberg",
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "player",
         "name": "Markieff Morris",
         "acquisitionType": "free-agent",
-        "date": "2024-09-20",
-        "note": "Veteran forward, signed as free agent. Shared cost with Bagley (AD trade).",
-        "isOrigin": true
+        "date": "2024-09-09",
+        "note": "Veteran forward, signed as free agent",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

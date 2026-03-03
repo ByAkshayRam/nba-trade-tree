@@ -2,10 +2,9 @@
   "_meta": {
     "team": "ORL",
     "player": "Desmond Bane",
-    "source": "ESPN/NBA.com - Feb 2026",
-    "originYear": 2024,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/b/banede01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,8 +13,7 @@
     "date": "2025-06-15",
     "currentTeam": "ORL",
     "tradePartner": "MEM",
-    "tradeDescription": "Blockbuster deal for proven All-Star guard",
-    "note": "Traded from Memphis for KCP, Cole Anthony, four 1st-round picks and a pick swap",
+    "tradeDescription": "Orlando traded Cole Anthony, Kentavious Caldwell-Pope, 2025 1st round pick (became Yang Hansen), 2028 1st round pick, 2030 1st round pick, and 2029 1st round pick swap rights to Memphis for Desmond Bane and 2026 1st round pick swap rights",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -23,8 +21,9 @@
         "acquisitionType": "free-agent",
         "date": "2024-07-06",
         "currentTeam": "MEM",
-        "note": "Signed 3yr/$66M from Denver in 2024 free agency",
-        "isOrigin": true
+        "tradeDescription": "Signed 3-year contract with Orlando as free agent from Denver",
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "player",
@@ -34,39 +33,38 @@
         "draftPick": 15,
         "draftRound": 1,
         "currentTeam": "MEM",
-        "note": "Drafted #15 overall in 2020",
-        "isOrigin": true
+        "tradeDescription": "Drafted #15 overall by Orlando in the 2020 NBA Draft",
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2025 ORL 1st Round Pick",
-        "details": "2025 ORL first-round pick (#16 overall)",
-        "becamePlayer": "Traded to MEM, became #16 pick",
-        "isOrigin": true
+        "name": "2025 1st Round Pick via ORL",
+        "acquisitionType": "own",
+        "becamePlayer": "Yang Hansen (2025 1st round pick)",
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2026 ORL 1st Round Pick",
-        "details": "2026 ORL first-round pick (unprotected, includes swap rights with PHX/WAS)",
-        "isOrigin": true
+        "name": "2028 1st Round Pick via ORL",
+        "acquisitionType": "own",
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2028 ORL 1st Round Pick",
-        "details": "2028 ORL first-round pick (unprotected)",
-        "isOrigin": true
+        "name": "2030 1st Round Pick via ORL",
+        "acquisitionType": "own",
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2030 ORL 1st Round Pick",
-        "details": "2030 ORL first-round pick (unprotected)",
-        "isOrigin": true
-      },
-      {
-        "type": "pick",
-        "name": "2029 Pick Swap",
-        "details": "2029 first-round pick swap rights (top-2 protected)",
-        "isOrigin": true
+        "name": "2029 1st Round Pick Swap Rights",
+        "acquisitionType": "own",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

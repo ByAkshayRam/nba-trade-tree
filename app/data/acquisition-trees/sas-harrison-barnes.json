@@ -2,10 +2,9 @@
   "_meta": {
     "team": "SAS",
     "player": "Harrison Barnes",
-    "source": "ESPN Trade Reports, NBA.com, Basketball-Reference",
-    "originYear": 2012,
-    "depth": 7,
-    "lastUpdated": "2026-02-17"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/b/barneha02.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,48 +13,18 @@
     "date": "2024-07-08",
     "currentTeam": "SAS",
     "tradePartner": "SAC",
-    "tradeDescription": "3-team sign-and-trade: SAS sign-and-traded DeRozan to CHI, SAC sent Barnes + 2031 1st swap to SAS, SAC traded Duarte + picks + cash to CHI",
-    "note": "Forward originally drafted 7th overall by Golden State in 2012",
+    "tradeDescription": "3-team trade: CHI traded DeRozan to SAC; SAC traded Barnes + 2031 1st swap to SAS; SAC traded Duarte + 2025 2nd + 2028 2nd + cash to CHI. SAS sent RaiQuan Gray to CHI to facilitate.",
+    "note": "Forward originally drafted 7th overall by Golden State in 2012. SAS used cap space to absorb Barnes' salary as part of facilitating the DeRozan sign-and-trade.",
     "assetsGivenUp": [
       {
         "type": "player",
-        "name": "DeMar DeRozan",
-        "acquisitionType": "trade",
-        "date": "2018-07-18",
-        "tradePartner": "TOR",
-        "tradeDescription": "Spurs acquired DeRozan + Poeltl from Raptors for Leonard + Green",
-        "note": "All-Star guard originally drafted 9th overall by Toronto in 2009. Sign-and-traded to Chicago as part of this 3-team deal.",
-        "assetsGivenUp": [
-          {
-            "type": "player",
-            "name": "Kawhi Leonard",
-            "acquisitionType": "trade",
-            "date": "2011-06-23",
-            "tradePartner": "IND",
-            "tradeDescription": "Draft-night trade: Spurs acquired Leonard from Pacers for George Hill",
-            "note": "Forward drafted 15th overall by Indiana, immediately traded to San Antonio",
-            "assetsGivenUp": [
-              {
-                "type": "player",
-                "name": "George Hill",
-                "acquisitionType": "draft",
-                "date": "2008-06-26",
-                "draftPick": 26,
-                "draftRound": 1,
-                "note": "Drafted 26th overall by San Antonio from IUPUI",
-                "isOrigin": true
-              }
-            ]
-          },
-          {
-            "type": "player",
-            "name": "Danny Green",
-            "acquisitionType": "free-agent",
-            "date": "2010-07-08",
-            "note": "Signed as undrafted free agent after being waived by Cleveland",
-            "isOrigin": true
-          }
-        ]
+        "name": "RaiQuan Gray",
+        "acquisitionType": "free-agent",
+        "date": "2023-10-24",
+        "note": "Undrafted forward, signed by SAS. Sent to Chicago to facilitate the 3-team deal.",
+        "destination": "CHI",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

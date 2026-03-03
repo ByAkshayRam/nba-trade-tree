@@ -4,21 +4,21 @@
     "player": "Justin Edwards",
     "nbaId": 1642348,
     "espnId": 4711297,
-    "source": "Basketball-Reference/NBA Draft History",
+    "source": "Basketball-Reference Transaction Log",
     "originYear": 2024,
     "depth": 1,
-    "lastUpdated": "2026-02-16",
-    "accuracy": "high"
+    "lastUpdated": "2026-03-01",
+    "accuracy": "high",
+    "sourceUrl": "https://www.basketball-reference.com/players/e/edwarju01.html"
   },
   "tree": {
     "type": "player",
     "name": "Justin Edwards",
-    "acquisitionType": "draft",
-    "date": "2024-06-26",
+    "acquisitionType": "free-agent",
+    "date": "2024-07-04",
     "currentTeam": "PHI",
-    "draftPick": 16,
-    "draftRound": 1,
-    "note": "Drafted #16 overall by Philadelphia from Kentucky. Initially signed to two-way, converted to standard contract February 9, 2025.",
-    "isOrigin": true
+    "note": "Signed as undrafted free agent to two-way contract from Kentucky. Converted to standard contract February 9, 2025. Re-signed July 6, 2025.",
+    "isOrigin": true,
+    "assetsGivenUp": []
   }
 }

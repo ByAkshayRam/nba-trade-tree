@@ -2,10 +2,11 @@
   "_meta": {
     "team": "LAL",
     "player": "Deandre Ayton",
-    "source": "ESPN, Basketball-Reference, The Athletic",
+    "source": "Basketball-Reference",
     "originYear": 2018,
     "depth": 1,
-    "lastUpdated": "2026-02-16"
+    "lastUpdated": "2026-03-01",
+    "sourceUrl": "https://www.basketball-reference.com/players/a/aytonde01.html"
   },
   "tree": {
     "type": "player",
@@ -14,6 +15,7 @@
     "date": "2025-07-06",
     "currentTeam": "LAL",
     "note": "Former #1 overall pick, signed after Portland buyout. 2yr/$16.2M (~$8.1M/yr)",
-    "isOrigin": true
+    "isOrigin": true,
+    "assetsGivenUp": []
   }
 }

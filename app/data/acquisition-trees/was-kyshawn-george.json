@@ -2,19 +2,89 @@
   "_meta": {
     "team": "WAS",
     "player": "Kyshawn George",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2024,
-    "depth": 1,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/g/georgky01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Kyshawn George",
-    "acquisitionType": "draft",
+    "acquisitionType": "draft-night-trade",
     "date": "2024-06-26",
     "currentTeam": "WAS",
+    "tradePartner": "NYK",
     "draftPick": 24,
     "draftRound": 1,
-    "isOrigin": true
+    "tradeDescription": "WAS traded Dillon Jones (#26 pick) and a 2024 2nd round draft pick (became Melvin Ajinça) to NYK for Kyshawn George (#24 pick)",
+    "note": "#24 overall pick, acquired from NYK on draft night",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2024 1st Round Pick (#26)",
+        "acquisitionType": "trade",
+        "date": "2024-02-08",
+        "tradePartner": "DAL",
+        "tradeDescription": "WAS traded Daniel Gafford to DAL for Richaun Holmes and 2024 1st (least favorable, became #26)",
+        "becamePlayer": "Dillon Jones",
+        "note": "Acquired from Dallas in Daniel Gafford trade",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Daniel Gafford",
+            "acquisitionType": "trade",
+            "date": "2021-03-25",
+            "tradePartner": "CHI",
+            "tradeDescription": "3-team trade (WAS/CHI/BOS): WAS sent Troy Brown Jr. + cash to CHI, Moe Wagner to BOS. CHI sent Gafford + Hutchison to WAS. BOS sent Theis, Green, cash to CHI. CHI sent Kornet to BOS.",
+            "note": "Athletic center from Chicago",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Troy Brown Jr.",
+                "acquisitionType": "draft",
+                "date": "2018-06-21",
+                "draftPick": 15,
+                "draftRound": 1,
+                "note": "#15 overall pick by WAS in 2018 NBA Draft",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              },
+              {
+                "type": "player",
+                "name": "Moritz Wagner",
+                "acquisitionType": "trade",
+                "date": "2019-07-06",
+                "tradePartner": "LAL",
+                "tradeDescription": "3-team trade (LAL/NOP/WAS): LAL sent AD to NOP. LAL sent Wagner, Bonga, J. Jones, 2022 2nd to WAS. WAS sent cash to NOP.",
+                "note": "Acquired from LAL in Anthony Davis 3-team trade for cash. Sent to BOS in Gafford deal.",
+                "assetsGivenUp": [
+                  {
+                    "type": "other",
+                    "name": "Cash Considerations",
+                    "acquisitionType": "free-agent",
+                    "note": "Cash sent to NOP as part of 3-team AD trade",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "draftPick": 26,
+        "draftRound": 1
+      },
+      {
+        "type": "pick",
+        "name": "2024 2nd Round Pick (#51)",
+        "acquisitionType": "draft",
+        "becamePlayer": "Melvin Ajinça",
+        "note": "Sent to NYK along with Dillon Jones pick",
+        "isOrigin": true,
+        "assetsGivenUp": [],
+        "draftPick": 51,
+        "draftRound": 2,
+        "date": "2023-06-23"
+      }
+    ]
   }
 }

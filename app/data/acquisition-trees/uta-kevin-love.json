@@ -3,9 +3,8 @@
     "team": "UTA",
     "player": "Kevin Love",
     "source": "Basketball-Reference",
-    "originYear": 2008,
-    "depth": 4,
-    "lastUpdated": "2026-02-17"
+    "sourceUrl": "https://www.basketball-reference.com/players/l/loveke01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,7 +13,7 @@
     "date": "2025-07-07",
     "currentTeam": "UTA",
     "tradePartner": "MIA",
-    "tradeDescription": "3-team trade: Collins to LAC, Powell to MIA, Love and Kyle Anderson to UTA, cash and 2027 2nd (LAC) to UTA",
+    "tradeDescription": "3-team trade: UTA traded John Collins to LAC; LAC traded Norman Powell to MIA; MIA traded Kyle Anderson and Kevin Love to UTA; LAC traded cash and 2027 2nd (LAC own) to UTA.",
     "note": "UCLA forward, traded from Miami Heat in 3-team deal",
     "assetsGivenUp": [
       {
@@ -23,23 +22,28 @@
         "acquisitionType": "trade",
         "date": "2023-07-07",
         "tradePartner": "ATL",
-        "tradeDescription": "Traded Rudy Gay and 2026 2nd (MEM own) to Atlanta for Collins",
+        "tradeDescription": "UTA traded Rudy Gay and 2026 2nd (MEM own) to Atlanta for John Collins.",
         "note": "Wake Forest forward, acquired from Hawks",
         "assetsGivenUp": [
           {
             "type": "player",
             "name": "Rudy Gay",
             "acquisitionType": "free-agent",
-            "date": "2022-09-01",
+            "date": "2021-08-06",
             "note": "Veteran forward, signed as free agent",
-            "isOrigin": true
+            "isOrigin": true,
+            "assetsGivenUp": []
           },
           {
             "type": "pick",
-            "name": "2026 2nd Round Pick (MEM own)",
-            "acquisitionType": "original",
-            "note": "Second-round pick traded to Atlanta",
-            "isOrigin": true
+            "name": "2026 2nd Round Pick via MEM",
+            "acquisitionType": "trade",
+            "date": "2021-08-07",
+            "tradePartner": "MEM",
+            "tradeDescription": "UTA traded Santi Aldama to MEM for Jared Butler, 2022 2nd (MEM own), 2026 2nd (MEM own).",
+            "note": "Memphis's own 2026 2nd round pick, acquired in Aldama trade, sent to Atlanta for Collins",
+            "isOrigin": true,
+            "assetsGivenUp": []
           }
         ]
       }

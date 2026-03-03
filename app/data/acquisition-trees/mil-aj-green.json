@@ -2,18 +2,17 @@
   "_meta": {
     "team": "MIL",
     "player": "AJ Green",
-    "source": "NBA/ESPN Trade History Research",
-    "originYear": 2024,
-    "depth": 1,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference Transaction Logs",
+    "lastUpdated": "2026-03-01",
+    "sourceUrl": "https://www.basketball-reference.com/players/g/greenaj01.html"
   },
   "tree": {
     "type": "player",
     "name": "AJ Green",
     "acquisitionType": "free-agent",
-    "date": "2024-07-01",
-    "currentTeam": "MIL",
-    "note": "Signed as undrafted free agent from Northern Iowa. Two-way contract",
-    "isOrigin": true
+    "date": "2023-07-07",
+    "isOrigin": true,
+    "assetsGivenUp": [],
+    "tradeDescription": "Re-signed with Milwaukee Bucks on multi-year contract"
   }
 }

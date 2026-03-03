@@ -2,30 +2,142 @@
   "_meta": {
     "team": "WAS",
     "player": "Jamir Watkins",
-    "source": "2025 NBA Draft / ESPN Trade Reports",
-    "originYear": 2025,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/w/watkija01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Jamir Watkins",
-    "acquisitionType": "draft",
-    "date": "2025-06-26",
+    "acquisitionType": "draft-night-trade",
+    "date": "2025-06-25",
     "currentTeam": "WAS",
+    "tradePartner": "UTA",
     "draftPick": 43,
     "draftRound": 2,
-    "note": "#43 overall pick from Florida State. Two-way contract. WAS acquired this pick by trading #18 to UTA for #21, #43, and future 2nds.",
+    "tradeDescription": "WAS traded Walter Clayton Jr. (#18 pick) to UTA for Will Riley (#21 pick), Jamir Watkins (#43 pick), 2031 2nd (more favorable), and 2032 2nd (UTA own)",
+    "note": "#43 overall pick from Florida State, acquired from Utah on draft night. Two-way contract.",
     "assetsGivenUp": [
       {
         "type": "pick",
         "name": "2025 1st Round Pick (#18)",
         "acquisitionType": "trade",
-        "date": "2025-02-08",
+        "date": "2025-02-06",
         "tradePartner": "MEM",
+        "tradeDescription": "3-team trade (WAS/MEM/SAC): WAS sent Bagley, Johnny Davis, 2025 2nd to MEM. MEM sent Marcus Smart, 2025 1st (#18) to WAS. SAC sent Colby Jones, Alex Len to WAS. SAC sent 2028 2nd to MEM.",
         "becamePlayer": "Walter Clayton Jr.",
-        "note": "Originally Memphis's pick, acquired by WAS Feb 2025. Same pick also used to draft Will Riley (#21).",
-        "isOrigin": true
+        "note": "Memphis's own 1st round pick, acquired by WAS in Feb 2025 3-team trade. Shared cost with Will Riley.",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Marvin Bagley III",
+            "acquisitionType": "trade",
+            "date": "2024-01-14",
+            "tradePartner": "DET",
+            "tradeDescription": "WAS traded Gallinari, Muscala to DET for Bagley, Livers, 2025 2nd (least favorable, became DET), 2026 2nd (least favorable)",
+            "note": "Former #2 overall pick, acquired from Detroit",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Danilo Gallinari",
+                "acquisitionType": "trade",
+                "date": "2023-06-23",
+                "tradePartner": "BOS",
+                "tradeDescription": "3-team trade (WAS/BOS/MEM): WAS sent Porzingis to BOS. BOS sent Gallinari, Muscala, Julian Phillips to WAS. MEM sent Tyus Jones to WAS. BOS sent Smart to MEM.",
+                "note": "Acquired from Boston in Porzingis 3-team trade",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Kristaps Porzingis",
+                    "acquisitionType": "trade",
+                    "date": "2022-02-10",
+                    "tradePartner": "DAL",
+                    "tradeDescription": "WAS traded Bertans, Dinwiddie to DAL for Porzingis and 2022 2nd (DAL own)",
+                    "note": "Unicorn acquired from Dallas",
+                    "assetsGivenUp": [
+                      {
+                        "type": "player",
+                        "name": "Davis Bertans",
+                        "acquisitionType": "free-agent",
+                        "date": "2020-11-22",
+                        "note": "Re-signed with WAS on multi-year deal",
+                        "isOrigin": true,
+                        "assetsGivenUp": []
+                      },
+                      {
+                        "type": "player",
+                        "name": "Spencer Dinwiddie",
+                        "acquisitionType": "trade",
+                        "date": "2021-08-06",
+                        "tradePartner": "BRK",
+                        "tradeDescription": "5-team trade: BRK sent Dinwiddie + 2025 2nd to WAS as part of the Westbrook mega-deal",
+                        "note": "Acquired from Brooklyn in 5-team Westbrook trade",
+                        "assetsGivenUp": [
+                          {
+                            "type": "player",
+                            "name": "Russell Westbrook",
+                            "acquisitionType": "trade",
+                            "date": "2020-12-02",
+                            "tradePartner": "HOU",
+                            "tradeDescription": "WAS traded Wall + 2023 1st to HOU for Westbrook. See was-anthony-davis.json for full chain.",
+                            "assetsGivenUp": [],
+                            "isOrigin": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "player",
+                "name": "Mike Muscala",
+                "acquisitionType": "trade",
+                "date": "2023-06-23",
+                "tradePartner": "BOS",
+                "tradeDescription": "Same Porzingis 3-team trade — shared cost with Gallinari",
+                "note": "Shared cost with Gallinari from Porzingis trade",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Kristaps Porzingis",
+                    "acquisitionType": "trade",
+                    "date": "2022-02-10",
+                    "tradePartner": "DAL",
+                    "tradeDescription": "See Gallinari chain for full Porzingis trade history",
+                    "assetsGivenUp": [],
+                    "isOrigin": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Johnny Davis",
+            "acquisitionType": "draft",
+            "date": "2022-06-23",
+            "draftPick": 10,
+            "draftRound": 1,
+            "note": "#10 overall pick by WAS in 2022 NBA Draft",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "pick",
+            "name": "2025 2nd Round Pick (#48)",
+            "acquisitionType": "draft",
+            "becamePlayer": "Javon Small",
+            "note": "Sent to Memphis. Originally from BRK in 5-team Westbrook trade (2025 2nd swap option).",
+            "isOrigin": true,
+            "assetsGivenUp": [],
+            "draftPick": 48,
+            "draftRound": 2,
+            "date": "2023-06-23"
+          }
+        ],
+        "draftPick": 18,
+        "draftRound": 1
       }
     ]
   }

@@ -2,10 +2,11 @@
   "_meta": {
     "team": "OKC",
     "player": "Nikola Topic",
-    "source": "NBA/ESPN Trade History Research",
-    "originYear": 2024,
-    "depth": 1,
-    "lastUpdated": "2026-02-10"
+    "source": "Basketball Reference Transaction Logs",
+    "sourceUrl": "https://www.basketball-reference.com/players/t/topicni01.html",
+    "originYear": 2008,
+    "depth": 3,
+    "lastUpdated": "2026-03-03"
   },
   "tree": {
     "type": "player",
@@ -15,8 +16,20 @@
     "draftPick": 12,
     "draftRound": 1,
     "currentTeam": "OKC",
-    "tradeDescription": "Drafted 12th overall by Thunder",
-    "note": "Serbian point guard prospect, fell due to injury. Presti stash pick, homegrown talent",
-    "isOrigin": true
+    "tradeDescription": "Drafted 12th overall by OKC using Houston's pick, acquired in Russell Westbrook trade (Jul 16, 2019)",
+    "note": "Serbian PG prospect. Pick chain: HOU owned → OKC (Westbrook trade)",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Russell Westbrook",
+        "acquisitionType": "draft",
+        "date": "2008-06-26",
+        "draftPick": 4,
+        "draftRound": 1,
+        "tradeDescription": "Drafted 4th overall by Seattle with their own lottery pick. Traded to Houston (Jul 16, 2019) for Chris Paul, 2024 1st (Topić), 2026 1st, and pick swaps.",
+        "note": "Seattle was 20-62 in 2007-08. TRUE ORIGIN.",
+        "isOrigin": true
+      }
+    ]
   }
 }

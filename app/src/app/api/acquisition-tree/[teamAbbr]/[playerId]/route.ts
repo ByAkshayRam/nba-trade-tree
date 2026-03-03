@@ -5,7 +5,7 @@ import path from "path";
 interface AcquisitionNode {
   type: "player" | "pick" | "cash";
   name: string;
-  acquisitionType: "draft" | "trade" | "signing" | "original" | "waiver";
+  acquisitionType: "draft" | "draft-night-trade" | "trade" | "signing" | "original" | "waiver";
   date: string;
   draftPick?: number;
   draftRound?: number;
@@ -155,6 +155,9 @@ export async function GET(
       sublabel = node.becamePlayer ? `→ ${node.becamePlayer}` : "";
     } else if (node.acquisitionType === "draft") {
       sublabel = `#${node.draftPick} pick (${new Date(node.date).getFullYear()})`;
+    } else if (node.acquisitionType === "draft-night-trade") {
+      const year = node.date ? new Date(node.date).getFullYear() : "";
+      sublabel = node.draftPick ? `#${node.draftPick} pick (${year})` : (node.tradePartner ? `via ${node.tradePartner}` : "");
     } else if (node.acquisitionType === "trade") {
       sublabel = node.tradePartner ? `via ${node.tradePartner}` : "";
     }

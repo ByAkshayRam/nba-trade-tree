@@ -2,10 +2,11 @@
   "_meta": {
     "team": "BKN",
     "player": "Nic Claxton",
-    "source": "ESPN, NBA.com, Basketball-Reference",
-    "originYear": 2019,
-    "depth": 1,
-    "lastUpdated": "2026-02-15"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/c/claxtni01.html",
+    "originYear": 2014,
+    "depth": 3,
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -15,7 +16,29 @@
     "draftPick": 31,
     "draftRound": 2,
     "currentTeam": "BKN",
-    "note": "Drafted by Brooklyn Nets from Georgia",
-    "isOrigin": true
+    "note": "Georgia big man, drafted #31 overall. Athletic rim-running center, signed 4yr/$100M extension in 2024. One of the few remaining homegrown Nets.",
+    "assetsGivenUp": [
+      {
+        "type": "pick",
+        "name": "2019 2nd Round Pick (#31) via NYK",
+        "acquisitionType": "trade",
+        "date": "2017-12-07",
+        "tradePartner": "PHI",
+        "becamePlayer": "Nic Claxton",
+        "tradeDescription": "76ers traded Jahlil Okafor, Nik Stauskas, and a 2019 2nd-round pick (NYK own, became Nic Claxton) to BKN for Trevor Booker.",
+        "note": "Originally a New York Knicks 2nd-round pick. Traded NYK → PHI (Oct 2014 in Arnett Moultrie deal), then PHI → BKN (Dec 2017 in Trevor Booker trade).",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Trevor Booker",
+            "acquisitionType": "free-agent",
+            "date": "2017-07-10",
+            "note": "Power forward, signed as free agent by BKN (July 2017). Sent to PHI in the Okafor/Stauskas trade that brought the pick used to draft Claxton.",
+            "isOrigin": true
+          }
+        ]
+      }
+    ]
   }
 }

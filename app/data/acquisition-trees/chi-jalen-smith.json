@@ -2,18 +2,17 @@
   "_meta": {
     "team": "CHI",
     "player": "Jalen Smith",
-    "source": "ESPN, NBA.com, Basketball-Reference",
-    "originYear": 2023,
-    "depth": 1,
-    "lastUpdated": "2026-02-15"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/s/smithja04.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Jalen Smith",
     "acquisitionType": "free-agent",
-    "date": "2023-07-01",
+    "date": "2024-07-08",
     "currentTeam": "CHI",
-    "note": "3yr/$27M contract",
+    "note": "Signed multi-year contract as free agent",
     "isOrigin": true,
     "assetsGivenUp": []
   }

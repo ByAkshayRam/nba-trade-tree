@@ -2,19 +2,18 @@
   "_meta": {
     "team": "UTA",
     "player": "Lauri Markkanen",
-    "source": "ESPN, Basketball-Reference, NBA.com",
-    "originYear": 2017,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/m/markkla01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Lauri Markkanen",
     "acquisitionType": "trade",
-    "date": "2022-09-01",
+    "date": "2022-09-03",
     "currentTeam": "UTA",
     "tradePartner": "CLE",
-    "tradeDescription": "Donovan Mitchell mega-trade: Jazz received Markkanen, Sexton, Agbaji, 3 1sts, 2 swaps for Mitchell",
+    "tradeDescription": "UTA traded Donovan Mitchell to CLE for Lauri Markkanen, Collin Sexton, Ochai Agbaji, 2025 1st (CLE), 2026 1st swap, 2027 1st (CLE), 2028 1st swap, 2029 1st (CLE).",
     "note": "Finnish forward, 7'1\" stretch big from Arizona",
     "assetsGivenUp": [
       {
@@ -25,7 +24,8 @@
         "draftPick": 13,
         "draftRound": 1,
         "note": "Louisville guard, Jazz drafted 13th overall 2017",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

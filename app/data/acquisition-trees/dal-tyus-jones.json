@@ -2,19 +2,147 @@
   "_meta": {
     "team": "DAL",
     "player": "Tyus Jones",
-    "source": "ESPN, Basketball-Reference",
-    "originYear": 2015,
-    "depth": 1,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference, ESPN",
+    "sourceUrl": "https://www.basketball-reference.com/players/j/jonesty01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Tyus Jones",
-    "acquisitionType": "free-agent",
-    "date": "2025-07-01",
+    "acquisitionType": "trade",
+    "date": "2026-02-06",
     "currentTeam": "DAL",
-    "note": "Duke guard, 2015 #24 overall pick by Cleveland | 1yr/$7M (acquired via trade from Orlando)",
-    "isOrigin": true,
-    "assetsGivenUp": []
+    "tradePartner": "CHA",
+    "tradeDescription": "DAL traded Malaki Branham to CHA for Tyus Jones",
+    "note": "Duke guard, 2015 #24 overall pick by Cleveland. Waived by DAL Feb 28, 2026.",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Malaki Branham",
+        "acquisitionType": "trade",
+        "date": "2026-02-06",
+        "tradePartner": "WAS",
+        "tradeDescription": "DAL traded Anthony Davis, D'Angelo Russell, Jaden Hardy, and Dante Exum to WAS for Khris Middleton, AJ Johnson, Malaki Branham, Marvin Bagley III, and picks",
+        "note": "Ohio State guard, 2022 #20 pick by San Antonio",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Anthony Davis",
+            "acquisitionType": "trade",
+            "date": "2025-02-02",
+            "tradePartner": "LAL",
+            "tradeDescription": "3-team trade: DAL traded Luka Doncic, Maxi Kleber, and Markieff Morris to LAL. DAL received Anthony Davis, Max Christie, and LAL 2029 1st. Utah also involved.",
+            "note": "Kentucky forward, 2012 #1 pick by New Orleans",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Luka Doncic",
+                "acquisitionType": "draft-night-trade",
+                "date": "2018-06-21",
+                "tradePartner": "ATL",
+                "draftPick": 3,
+                "draftRound": 1,
+                "tradeDescription": "ATL traded #3 pick (Luka Doncic) to DAL for #5 pick (Trae Young) and a protected 2019 1st round pick",
+                "note": "Real Madrid guard, drafted #3 by Atlanta, traded to Dallas on draft night",
+                "assetsGivenUp": [
+                  {
+                    "type": "pick",
+                    "name": "2018 1st Round Pick (#5)",
+                    "acquisitionType": "draft",
+                    "date": "2018-06-21",
+                    "draftPick": 5,
+                    "draftRound": 1,
+                    "note": "DAL's own #5 pick, traded to ATL on draft night for Luka Doncic (#3). Became Trae Young.",
+                    "isOrigin": true,
+                    "assetsGivenUp": [],
+                    "becamePlayer": "Trae Young"
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2019 1st Round Pick (#10) via DAL",
+                    "acquisitionType": "own",
+                    "date": "2019-06-20",
+                    "becamePlayer": "Cam Reddish",
+                    "note": "Protected first-round pick sent to Atlanta, became #10 overall",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  }
+                ]
+              },
+              {
+                "type": "player",
+                "name": "Maxi Kleber",
+                "acquisitionType": "free-agent",
+                "date": "2017-07-20",
+                "note": "German forward, signed as international free agent from Brose Bamberg",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              },
+              {
+                "type": "player",
+                "name": "Markieff Morris",
+                "acquisitionType": "free-agent",
+                "date": "2024-09-09",
+                "note": "Veteran forward, signed as free agent",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "D'Angelo Russell",
+            "acquisitionType": "free-agent",
+            "date": "2025-06-30",
+            "note": "Ohio State guard, 2015 #2 pick by Los Angeles Lakers. Signed 2yr/$12M deal.",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "player",
+            "name": "Jaden Hardy",
+            "acquisitionType": "trade",
+            "date": "2022-06-23",
+            "tradePartner": "SAC",
+            "tradeDescription": "DAL traded 2024 2nd round pick and 2028 2nd round pick to SAC for Jaden Hardy",
+            "note": "G League Ignite guard, drafted #37 by Sacramento, traded to Dallas",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "pick",
+                "name": "2024 2nd Round Pick (#54) via DAL",
+                "acquisitionType": "own",
+                "date": "2024-06-27",
+                "becamePlayer": "Anton Watson",
+                "note": "Dallas own 2024 2nd round pick sent to Sacramento",
+                "isOrigin": true,
+                "assetsGivenUp": [],
+                "draftPick": 54,
+                "draftRound": 2
+              },
+              {
+                "type": "pick",
+                "name": "2028 2nd Round Pick via DAL",
+                "acquisitionType": "own",
+                "date": "2028-06-22",
+                "note": "Dallas own 2028 2nd round pick sent to Sacramento",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Dante Exum",
+            "acquisitionType": "free-agent",
+            "date": "2023-07-14",
+            "note": "Australian guard, 2014 #5 pick by Utah. Signed by Dallas as free agent.",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          }
+        ]
+      }
+    ]
   }
 }

@@ -2,20 +2,19 @@
   "_meta": {
     "team": "WAS",
     "player": "Anthony Davis",
-    "source": "ESPN, NBA.com",
-    "originYear": 2012,
-    "depth": 2,
-    "lastUpdated": "2026-02-27"
+    "source": "Basketball-Reference, NBA.com",
+    "sourceUrl": "https://www.basketball-reference.com/players/d/davisan02.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Anthony Davis",
     "acquisitionType": "trade",
-    "date": "2026-02-04",
+    "date": "2026-02-06",
     "currentTeam": "WAS",
     "tradePartner": "DAL",
-    "tradeDescription": "8-player trade: WAS sent Middleton, AJ Johnson, Branham, Bagley, 2 1sts + 3 2nds to DAL for AD, Hardy, Russell, Exum",
-    "note": "10x All-Star acquired from Dallas",
+    "tradeDescription": "3-team trade (WAS/DAL/CHA): WAS sent Middleton, AJ Johnson, Bagley to DAL, Branham to CHA. DAL also received 2026 1st (OKC), 2030 1st (GSW), 3 future 2nds. CHA sent Tyus Jones to DAL. WAS received AD, Hardy, Russell, Exum.",
+    "note": "10x All-Star acquired from Dallas in 9-player, 3-team deal",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -23,31 +22,107 @@
         "acquisitionType": "trade",
         "date": "2025-02-06",
         "tradePartner": "MIL",
-        "tradeDescription": "4-team trade: WAS sent Kuzma to MIL, received Middleton + AJ Johnson + 2028 1st",
-        "note": "Shared cost with AJ Johnson — 3x All-Star from Milwaukee",
+        "tradeDescription": "4-team trade (WAS/MIL/NYK/SAS): WAS sent Kuzma, Patrick Baldwin Jr. (to SAS), 2025 2nd, 2026 2nd to MIL. MIL sent Middleton, AJ Johnson, 2028 1st to WAS. NYK sent Sims to MIL, Lessort to WAS. MIL sent Besson, Wright, cash to NYK, cash to SAS.",
+        "note": "3x All-Star from Milwaukee",
         "assetsGivenUp": [
           {
             "type": "player",
             "name": "Kyle Kuzma",
-            "acquisitionType": "free-agent",
-            "date": "2023-07-07",
-            "note": "Re-signed to multi-year contract with Washington",
-            "isOrigin": true
+            "acquisitionType": "trade",
+            "date": "2021-08-06",
+            "tradePartner": "LAL",
+            "tradeDescription": "5-team trade: WAS sent Westbrook, Hutchison, multiple 2nds to LAL/SAS/BRK. LAL sent Kuzma, KCP, Harrell to WAS. BRK sent Dinwiddie, 2025 2nd to WAS. IND sent Holiday, Todd to WAS.",
+            "note": "Originally acquired from Lakers in 5-team Westbrook deal",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Russell Westbrook",
+                "acquisitionType": "trade",
+                "date": "2020-12-02",
+                "tradePartner": "HOU",
+                "tradeDescription": "WAS traded John Wall + 2023 1st (lottery protected) to HOU for Westbrook",
+                "note": "MVP point guard acquired from Houston",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "John Wall",
+                    "acquisitionType": "draft",
+                    "date": "2010-06-24",
+                    "draftPick": 1,
+                    "draftRound": 1,
+                    "note": "#1 overall pick — franchise cornerstone for a decade",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2023 1st Round Pick (#4)",
+                    "acquisitionType": "draft",
+                    "note": "Sent to Houston, conveyed #4 overall",
+                    "becamePlayer": "Amen Thompson",
+                    "isOrigin": true,
+                    "assetsGivenUp": [],
+                    "draftPick": 4,
+                    "draftRound": 1,
+                    "date": "2020-12-02"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Patrick Baldwin Jr.",
+            "acquisitionType": "trade",
+            "date": "2023-07-06",
+            "tradePartner": "GSW",
+            "tradeDescription": "WAS traded Chris Paul to GSW for Baldwin Jr., Poole, Rollins, 2027 2nd (GSW), 2030 1st (GSW)",
+            "note": "Acquired from Golden State in Chris Paul trade. Sent to SAS as part of 4-team Middleton deal.",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Chris Paul",
+                "acquisitionType": "trade",
+                "date": "2023-06-23",
+                "tradePartner": "PHX",
+                "tradeDescription": "3-team trade (WAS/PHX/IND): WAS sent Bradley Beal, Goodwin, Todd to PHX; Walker (#8) + 2029 2nd to IND. PHX sent Chris Paul, Shamet, Coulibaly (#7), multiple picks/swaps, cash to WAS. PHX sent 2028 2nd to IND.",
+                "note": "Future HOF point guard, salary filler from Beal trade",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Bradley Beal",
+                    "acquisitionType": "draft",
+                    "date": "2012-06-28",
+                    "draftPick": 3,
+                    "draftRound": 1,
+                    "note": "#3 overall pick by WAS in 2012 NBA Draft — franchise star for a decade",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  }
+                ]
+              }
+            ]
           },
           {
             "type": "pick",
-            "name": "2025 2nd Round Pick",
+            "name": "2025 2nd Round Pick (#39)",
             "becamePlayer": "Bogoljub Markovic",
-            "acquisitionType": "original",
-            "note": "Most favorable of DET/PHO/GSW picks, sent to Milwaukee",
-            "isOrigin": true
+            "acquisitionType": "draft",
+            "note": "Second most favorable of DET/PHO/GSW picks, sent to Milwaukee",
+            "isOrigin": true,
+            "assetsGivenUp": [],
+            "draftPick": 39,
+            "draftRound": 2,
+            "date": "2024-01-14"
           },
           {
             "type": "pick",
             "name": "2026 2nd Round Pick",
-            "acquisitionType": "original",
+            "acquisitionType": "draft",
             "note": "Protected top 55, sent to Milwaukee",
-            "isOrigin": true
+            "isOrigin": true,
+            "assetsGivenUp": [],
+            "date": "2024-01-14"
           }
         ]
       },
@@ -57,15 +132,18 @@
         "acquisitionType": "trade",
         "date": "2025-02-06",
         "tradePartner": "MIL",
-        "tradeDescription": "4-team trade: received with Middleton from Milwaukee",
-        "note": "Shared cost with Khris Middleton",
+        "tradeDescription": "4-team trade: received with Middleton from Milwaukee. Same deal — see Middleton for full cost breakdown.",
+        "note": "Shared cost with Khris Middleton — same 4-team trade",
         "assetsGivenUp": [
           {
             "type": "player",
             "name": "Kyle Kuzma",
-            "acquisitionType": "free-agent",
-            "date": "2023-07-07",
-            "note": "Re-signed to multi-year contract with Washington",
+            "acquisitionType": "trade",
+            "date": "2021-08-06",
+            "tradePartner": "LAL",
+            "tradeDescription": "5-team trade: WAS sent Westbrook to LAL for Kuzma, KCP, Harrell + others. See Middleton chain for full history.",
+            "note": "Shared cost — same Kuzma asset sent to MIL for both Middleton and AJ Johnson Shared cost — see primary branch for full chain.",
+            "assetsGivenUp": [],
             "isOrigin": true
           }
         ]
@@ -73,35 +151,111 @@
       {
         "type": "player",
         "name": "Malaki Branham",
-        "acquisitionType": "draft",
-        "date": "2022-06-23",
-        "draftPick": 20,
-        "draftRound": 1,
-        "note": "Ohio State guard, drafted 20th overall by San Antonio, acquired by WAS",
-        "isOrigin": true
+        "acquisitionType": "trade",
+        "date": "2025-07-08",
+        "tradePartner": "SAS",
+        "tradeDescription": "WAS traded Kelly Olynyk to SAS for Branham, Blake Wesley, and 2026 2nd (least favorable of DAL/PHI/OKC)",
+        "note": "Former #20 overall pick (2022), acquired from San Antonio. Sent to Charlotte in AD trade.",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Kelly Olynyk",
+            "acquisitionType": "trade",
+            "date": "2025-07-06",
+            "tradePartner": "NOP",
+            "tradeDescription": "3-team trade (WAS/NOP/HOU): WAS sent Poole, Saddiq Bey, Micah Peavy (#40) to NOP. NOP sent McCollum, Olynyk, 2027 2nd (CHI) to WAS. HOU sent Whitmore to WAS for 2026 2nd + 2029 2nd.",
+            "note": "Veteran big from New Orleans, flipped to SAS for Branham",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Jordan Poole",
+                "acquisitionType": "trade",
+                "date": "2023-07-06",
+                "tradePartner": "GSW",
+                "tradeDescription": "WAS traded Chris Paul to GSW for Baldwin Jr., Poole, Rollins, 2027 2nd (GSW), 2030 1st (GSW)",
+                "note": "Acquired from GSW in Chris Paul trade (shared cost with Patrick Baldwin Jr. — see Middleton > Baldwin chain for full Beal origin).",
+                "assetsGivenUp": [],
+                "isOrigin": true
+              },
+              {
+                "type": "player",
+                "name": "Saddiq Bey",
+                "acquisitionType": "free-agent",
+                "date": "2024-07-11",
+                "note": "Signed as FA to multi-year deal. Sent to NOP in 2025 3-team trade.",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              },
+              {
+                "type": "pick",
+                "name": "2025 2nd Round Pick (#40)",
+                "acquisitionType": "draft",
+                "becamePlayer": "Micah Peavy",
+                "note": "WAS own 2nd round pick, sent to NOP",
+                "isOrigin": true,
+                "assetsGivenUp": [],
+                "draftPick": 40,
+                "draftRound": 2,
+                "date": "2023-06-23"
+              }
+            ]
+          }
+        ]
       },
       {
         "type": "player",
         "name": "Marvin Bagley III",
-        "acquisitionType": "trade",
-        "date": "2025-02-06",
-        "tradePartner": "MEM",
-        "note": "Acquired from Memphis in 3-team trade",
-        "isOrigin": true
+        "acquisitionType": "free-agent",
+        "date": "2025-07-10",
+        "note": "Re-signed as FA on 1-year deal after being traded to MEM at Feb 2025 deadline",
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2026 1st Round Pick (OKC)",
-        "acquisitionType": "original",
+        "name": "2026 1st Round Pick (via OKC)",
+        "acquisitionType": "draft",
         "note": "Thunder's 2026 1st round pick, sent to Dallas",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": [],
+        "date": "2026-02-06"
       },
       {
         "type": "pick",
-        "name": "2030 1st Round Pick (GSW)",
-        "acquisitionType": "original",
-        "note": "Warriors' 2030 1st, top-20 protected, sent to Dallas",
-        "isOrigin": true
+        "name": "2030 1st Round Pick (via GSW)",
+        "acquisitionType": "draft",
+        "note": "Warriors' 2030 1st, top-20 protected, sent to Dallas. Originally acquired from GSW in Chris Paul trade (July 2023).",
+        "isOrigin": true,
+        "assetsGivenUp": [],
+        "date": "2026-02-06"
+      },
+      {
+        "type": "pick",
+        "name": "2026 2nd Round Pick via PHX",
+        "acquisitionType": "trade",
+        "date": "2023-06-23",
+        "tradePartner": "PHX",
+        "tradeDescription": "Acquired from Phoenix in the Bradley Beal 3-team trade. Sent to Dallas in the AD trade.",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      },
+      {
+        "type": "pick",
+        "name": "2027 2nd Round Pick via CHI",
+        "acquisitionType": "trade",
+        "date": "2026-02-06",
+        "note": "Sent to Dallas in the Anthony Davis trade.",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      },
+      {
+        "type": "pick",
+        "name": "2029 2nd Round Pick via HOU",
+        "acquisitionType": "trade",
+        "date": "2026-02-06",
+        "note": "Sent to Dallas in the Anthony Davis trade.",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

@@ -2,10 +2,9 @@
   "_meta": {
     "team": "DEN",
     "player": "DaRon Holmes II",
-    "source": "ESPN, NBA.com, Yahoo Sports, Denver Post",
-    "originYear": 2024,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/h/holmeda01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,44 +13,42 @@
     "date": "2024-06-26",
     "currentTeam": "DEN",
     "tradePartner": "PHX",
-    "tradeDescription": "Selected 22nd by Phoenix, traded to Denver on draft night",
+    "tradeDescription": "Denver traded the #28 pick (Ryan Dunn), the #56 pick (Kevin McCullar Jr.), and 2026 and 2031 2nd round picks to Phoenix for the #22 pick (DaRon Holmes II)",
     "draftPick": 22,
     "draftRound": 1,
-    "note": "Forward from Dayton acquired via draft-night trade",
-    "isOrigin": false,
     "assetsGivenUp": [
       {
         "type": "pick",
-        "name": "2024 #28 Pick",
+        "name": "2024 1st Round Pick (#28)",
         "acquisitionType": "original",
         "date": "2024-06-26",
         "becamePlayer": "Ryan Dunn",
-        "note": "Denver's 28th overall pick (1st round)",
+        "note": "Denver's own 28th overall pick, sent to Phoenix in Holmes trade",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2024 #56 Pick", 
+        "name": "2024 2nd Round Pick (#56)",
         "acquisitionType": "original",
         "date": "2024-06-26",
-        "becamePlayer": "Jamal Shead",
-        "note": "Denver's 56th overall pick (2nd round)",
+        "becamePlayer": "Kevin McCullar Jr.",
+        "note": "Acquired from OKC in 2023 4-team trade (least favorable of MIN/CHO), sent to Phoenix in Holmes trade",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2026 DEN 2nd Round Pick",
+        "name": "2026 2nd Round Pick via DEN",
         "acquisitionType": "original",
         "date": "2024-06-26",
-        "note": "Denver's 2026 second-round pick",
+        "note": "Denver's own 2026 second-round pick, sent to Phoenix",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2031 DEN 2nd Round Pick",
-        "acquisitionType": "original", 
+        "name": "2031 2nd Round Pick via DEN",
+        "acquisitionType": "original",
         "date": "2024-06-26",
-        "note": "Denver's 2031 second-round pick",
+        "note": "Denver's own 2031 second-round pick, sent to Phoenix",
         "isOrigin": true
       }
     ]

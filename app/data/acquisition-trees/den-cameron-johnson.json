@@ -2,10 +2,9 @@
   "_meta": {
     "team": "DEN",
     "player": "Cameron Johnson",
-    "source": "ESPN, Basketball-Reference, NBA.com, Wikipedia",
-    "originYear": 2019,
-    "depth": 6,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/j/johnsca02.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,9 +13,7 @@
     "date": "2025-07-08",
     "currentTeam": "DEN",
     "tradePartner": "BKN",
-    "tradeDescription": "Traded from Brooklyn Nets for Michael Porter Jr. and 2032 1st round pick",
-    "note": "Forward acquired from Nets after career year in Brooklyn",
-    "isOrigin": false,
+    "tradeDescription": "Denver traded Michael Porter Jr. and a 2032 1st round pick (unprotected) to Brooklyn for Cameron Johnson",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -25,16 +22,16 @@
         "date": "2018-06-21",
         "draftPick": 14,
         "draftRound": 1,
-        "note": "Forward from Missouri, drafted by Denver 14th overall",
+        "note": "Forward from Missouri, drafted 14th overall by Denver",
         "isOrigin": true,
         "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2032 DEN 1st Round Pick",
+        "name": "2032 1st Round Pick via DEN",
         "acquisitionType": "original",
         "date": "2025-07-08",
-        "note": "Denver's 2032 first-round pick (unprotected)",
+        "note": "Denver's own 2032 first-round pick, unprotected",
         "isOrigin": true
       }
     ]

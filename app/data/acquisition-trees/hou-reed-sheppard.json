@@ -2,10 +2,9 @@
   "_meta": {
     "team": "HOU",
     "player": "Reed Sheppard",
-    "source": "ESPN, NBA.com, Basketball-Reference",
-    "originYear": 2024,
-    "depth": 1,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/s/sheppre01.html",
+    "lastUpdated": "2026-03-02"
   },
   "tree": {
     "type": "player",
@@ -15,7 +14,165 @@
     "currentTeam": "HOU",
     "draftPick": 3,
     "draftRound": 1,
-    "note": "Kentucky guard, 3rd overall pick, son of former NBA player Jeff Sheppard",
-    "isOrigin": true
+    "note": "Kentucky guard, 3rd overall pick. Selected with the 2024 1st round pick acquired from BKN in the James Harden 4-team trade (Jan 16, 2021).",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "James Harden",
+        "acquisitionType": "trade",
+        "date": "2012-10-27",
+        "tradePartner": "OKC",
+        "tradeDescription": "4-team trade (HOU/BKN/CLE/IND): HOU traded James Harden to BKN. HOU received BKN 2024 1st (#3, Reed Sheppard), 2022 1st (Tari Eason), 2023 1st, 2025 1st, 2026 1st, 2027 1st swap, Rodions Kurucs, Victor Oladipo (from IND), and Dante Exum + 2022 1st (MarJon Beauchamp, from CLE). HOU also sent a 2023 2nd (Jalen Pickett) to IND. BKN sent Jarrett Allen + Taurean Prince to CLE, Caris LeVert to IND.",
+        "draftPick": 3,
+        "draftRound": 1,
+        "note": "Drafted #3 overall by OKC in 2009. Traded to HOU Oct 27, 2012. Sent to BKN Jan 16, 2021 in blockbuster 4-team deal — the pick haul included the 2024 1st that became Reed Sheppard.",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Kevin Martin",
+            "acquisitionType": "trade",
+            "date": "2010-02-18",
+            "tradeDescription": "3-team trade: SAC traded Kevin Martin and Hilton Armstrong to HOU. HOU traded Tracy McGrady to NYK. HOU traded Joey Dorsey and Carl Landry to SAC. NYK traded Jordan Hill, Jared Jeffries, and a 2012 1st (Royce White) to HOU. NYK traded Larry Hughes to SAC. SAC traded Sergio Rodriguez to NYK.",
+            "note": "Drafted #26 by SAC in 2004. Acquired by HOU in 3-team T-Mac trade Feb 18, 2010. Sent to OKC for Harden Oct 2012.",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Tracy McGrady",
+                "acquisitionType": "trade",
+                "date": "2004-06-29",
+                "tradePartner": "ORL",
+                "tradeDescription": "HOU traded Steve Francis, Cuttino Mobley, and Kelvin Cato to ORL for Tracy McGrady, Juwan Howard, Tyronn Lue, and Reece Gaines.",
+                "note": "7x All-Star. Acquired from ORL in 2004 blockbuster. Sent to NYK in 3-team trade Feb 2010.",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Steve Francis",
+                    "acquisitionType": "draft",
+                    "date": "1999-06-30",
+                    "draftPick": 2,
+                    "draftRound": 1,
+                    "note": "Drafted #2 overall in 1999 (by VAN, traded to HOU on draft night). Sent to ORL for T-Mac.",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  }
+                ]
+              },
+              {
+                "type": "player",
+                "name": "Joey Dorsey",
+                "acquisitionType": "draft-night-trade",
+                "date": "2008-06-26",
+                "draftPick": 33,
+                "draftRound": 2,
+                "note": "Drafted #37 by HOU in 2008. Sent to SAC in 3-team T-Mac trade.",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Nicolas Batum",
+                    "acquisitionType": "draft",
+                    "date": "2008-06-26",
+                    "draftPick": 25,
+                    "draftRound": 1,
+                    "note": "Drafted #25 by HOU in 2008. Sent to POR on draft night for Joey Dorsey (#33).",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  }
+                ],
+                "tradePartner": "POR",
+                "tradeDescription": "3-team trade: POR traded Joey Dorsey (#33) to HOU. HOU traded Nicolas Batum to POR. MEM traded Donté Greene and a 2009 2nd (Sam Young) to HOU. POR traded Darrell Arthur to MEM."
+              },
+              {
+                "type": "player",
+                "name": "Carl Landry",
+                "acquisitionType": "draft-night-trade",
+                "date": "2007-06-28",
+                "draftPick": 31,
+                "draftRound": 2,
+                "note": "Drafted #31 by SEA in 2007. Traded to HOU on draft night Jun 28, 2007. Sent to SAC in 3-team T-Mac trade Feb 2010.",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "pick",
+                    "name": "2008 2nd Round Pick (#56)",
+                    "acquisitionType": "draft",
+                    "date": "2007-06-28",
+                    "becamePlayer": "Sasha Kaun",
+                    "note": "Sent to Seattle for Carl Landry on draft night.",
+                    "isOrigin": true,
+                    "assetsGivenUp": [],
+                    "draftPick": 56,
+                    "draftRound": 2
+                  },
+                  {
+                    "type": "other",
+                    "name": "Cash Considerations",
+                    "acquisitionType": "free-agent",
+                    "date": "2007-06-28",
+                    "note": "Cash sent to Seattle for Landry.",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  }
+                ],
+                "tradePartner": "SEA",
+                "tradeDescription": "Drafted #31 by Seattle SuperSonics. Traded to HOU on draft night for cash and a 2008 2nd round pick (Sasha Kaun)."
+              }
+            ],
+            "tradePartner": "SAC"
+          },
+          {
+            "type": "player",
+            "name": "Jeremy Lamb",
+            "acquisitionType": "draft",
+            "date": "2012-06-28",
+            "draftPick": 12,
+            "draftRound": 1,
+            "tradeDescription": "Drafted #12 overall by HOU in 2012. Sent to OKC as part of Harden trade.",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "pick",
+            "name": "2013 1st Round Pick (#12)",
+            "acquisitionType": "draft",
+            "date": "2012-10-27",
+            "draftPick": 12,
+            "draftRound": 1,
+            "becamePlayer": "Steven Adams",
+            "note": "HOU's own 2013 1st, sent to OKC in Harden trade. Became Steven Adams.",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "pick",
+            "name": "2014 1st Round Pick (#29)",
+            "acquisitionType": "draft",
+            "date": "2012-10-27",
+            "draftPick": 29,
+            "draftRound": 1,
+            "becamePlayer": "Mitch McGary",
+            "note": "HOU's own 2014 1st (via DAL/TOR), sent to OKC in Harden trade.",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "pick",
+            "name": "2013 2nd Round Pick (#32)",
+            "acquisitionType": "draft",
+            "date": "2012-10-27",
+            "draftPick": 32,
+            "draftRound": 2,
+            "becamePlayer": "Alex Abrines",
+            "note": "Sent to OKC in Harden trade.",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          }
+        ]
+      }
+    ]
   }
 }

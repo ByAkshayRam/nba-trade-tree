@@ -2,41 +2,39 @@
   "_meta": {
     "team": "DEN",
     "player": "Jalen Pickett",
-    "source": "ESPN, Wikipedia, Basketball-Reference, Yahoo Sports",
-    "originYear": 2023,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/p/pickeja02.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
-    "name": "Jalen Pickett", 
+    "name": "Jalen Pickett",
     "acquisitionType": "draft-night-trade",
-    "date": "2023-06-22",
+    "date": "2023-06-23",
     "currentTeam": "DEN",
     "tradePartner": "IND",
-    "tradeDescription": "Selected 32nd by Indiana via pre-draft trade with Denver",
+    "tradeDescription": "4-team trade: Denver sent 2029 1st round pick to OKC and Maxwell Lewis (#40) to LAL. Denver received Jalen Pickett (#32), Julian Strawther (#29), and Hunter Tyson from IND/OKC",
     "draftPick": 32,
     "draftRound": 2,
-    "note": "Guard from Penn State acquired via draft-night trade",
-    "isOrigin": false,
     "assetsGivenUp": [
       {
         "type": "pick",
-        "name": "2024 DEN 1st Round Pick",
+        "name": "2029 1st Round Pick via DEN",
         "acquisitionType": "original",
-        "date": "2023-06-21",
-        "becamePlayer": "Johnny Furphy",
-        "note": "Denver's 2024 first-round pick (part of 29th/32nd pick trade)",
+        "date": "2023-06-23",
+        "note": "Denver's own 2029 first-round pick (protected), sent to OKC in 4-team draft-night trade",
         "isOrigin": true
       },
       {
-        "type": "pick",
-        "name": "2023 #40 Pick",
-        "acquisitionType": "original", 
-        "date": "2023-06-21",
-        "becamePlayer": "Jaime Jaquez Jr.",
-        "note": "Denver's 2023 2nd round pick (part of 29th/32nd pick trade)",
-        "isOrigin": true
+        "type": "player",
+        "name": "Maxwell Lewis",
+        "acquisitionType": "draft",
+        "date": "2023-06-22",
+        "draftPick": 40,
+        "draftRound": 2,
+        "note": "Drafted 40th overall by Denver on June 22, traded to LAL the next day in 4-team deal",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

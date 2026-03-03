@@ -4,9 +4,9 @@
     "player": "Brooks Barnhizer",
     "source": "Basketball Reference Transaction Logs",
     "sourceUrl": "https://www.basketball-reference.com/teams/OKC/2026_transactions.html",
-    "originYear": 2025,
-    "depth": 1,
-    "lastUpdated": "2026-02-16"
+    "originYear": 2008,
+    "depth": 8,
+    "lastUpdated": "2026-03-03"
   },
   "tree": {
     "type": "player",
@@ -16,8 +16,51 @@
     "draftPick": 44,
     "draftRound": 2,
     "currentTeam": "OKC",
-    "tradeDescription": "Drafted 44th overall by Thunder",
-    "note": "Northwestern product, drafted in second round",
-    "isOrigin": true
+    "tradeDescription": "Drafted 44th overall by OKC using ATL's pick, acquired in Danilo Gallinari trade (Nov 24, 2020)",
+    "note": "Pick was ATL's own 2025 2nd rounder.",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Danilo Gallinari",
+        "acquisitionType": "trade",
+        "date": "2019-07-10",
+        "tradePartner": "LAC",
+        "tradeDescription": "Acquired from Clippers in PG trade. Traded to Atlanta (Nov 24, 2020) for 2025 2nd (Barnhizer).",
+        "note": "Italian forward, part of PG mega-trade haul from LAC",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Paul George",
+            "acquisitionType": "trade",
+            "date": "2017-07-06",
+            "tradePartner": "IND",
+            "tradeDescription": "Acquired from Indiana for Oladipo and Sabonis. Traded to LAC (Jul 2019) for SGA, Gallinari, and picks.",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Victor Oladipo",
+                "acquisitionType": "trade",
+                "date": "2016-06-23",
+                "tradePartner": "ORL",
+                "tradeDescription": "Acquired from Orlando with Sabonis for Serge Ibaka",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Serge Ibaka",
+                    "acquisitionType": "draft",
+                    "date": "2008-06-26",
+                    "draftPick": 24,
+                    "draftRound": 1,
+                    "tradeDescription": "Drafted 24th overall by Seattle using PHX pick. Full chain traces to Bobby Jackson (1997).",
+                    "note": "See SGA/Jalen Williams chains for full Ibaka origin trace.",
+                    "isOrigin": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

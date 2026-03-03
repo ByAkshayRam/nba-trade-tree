@@ -68,7 +68,7 @@
         "assetsGivenUp": [
           {
             "type": "pick",
-            "name": "2019 1st Round Pick (#14, from SAC)",
+            "name": "2019 1st Round Pick (#14) via SAC",
             "acquisitionType": "trade",
             "date": "2017-06-19",
             "tradePartner": "PHI",
@@ -78,12 +78,12 @@
             "assetsGivenUp": [
               {
                 "type": "pick",
-                "name": "2017 #1 Overall Pick (from BKN)",
+                "name": "2017 1st Round Pick (#1) via BKN",
                 "acquisitionType": "trade",
                 "date": "2013-06-27",
                 "tradePartner": "BKN",
                 "becamePlayer": "Markelle Fultz",
-                "tradeDescription": "The Nets trade: KG, Pierce, Terry for unprotected picks",
+                "tradeDescription": "BKN traded KG, Pierce, Jason Terry, D.J. White, 2017 1st (#27, Kyle Kuzma via pick swap), and 2017 2nd (Sasha Vezenkov) to BOS for Bogans, Brooks, Humphries, Joseph, Wallace, 2014 1st (James Young), 2016 1st (#3 Jaylen Brown), 2017 1st (#1 Markelle Fultz, swapped to #3 Tatum), and 2018 1st (Collin Sexton).",
                 "note": "Same origin as Jayson Tatum - see Tatum tree for full Nets trade breakdown",
                 "assetsGivenUp": [
                   {
@@ -103,8 +103,8 @@
                     "acquisitionType": "trade",
                     "date": "2007-07-31",
                     "tradePartner": "MIN",
-                    "tradeDescription": "See Tatum tree for full KG trade breakdown",
-                    "note": "Links to Al Jefferson (2004 own pick) - TRUE ORIGIN",
+                    "tradeDescription": "Reference node - see Jayson Tatum tree for complete KG trade chain (Al Jefferson, Gerald Green, Ryan Gomes, Sebastian Telfair, Theo Ratliff, 2009 1st)",
+                    "note": "Full trade details in Tatum tree. Acquired for multiple assets including Al Jefferson (2004 own pick).",
                     "isOrigin": true
                   },
                   {
@@ -115,6 +115,32 @@
                     "tradeDescription": "Signed as free agent from Dallas",
                     "note": "Free agent - TRUE ORIGIN",
                     "isOrigin": true
+                  },
+                  {
+                    "type": "player",
+                    "name": "D.J. White",
+                    "acquisitionType": "free-agent",
+                    "date": "2013-02-28",
+                    "note": "Forward, signed 10-day contract with BOS (Feb 28, 2013). Previously played in China. Sent to BKN in the KG/Pierce mega-trade.",
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2017 1st Round Pick (#27)",
+                    "becamePlayer": "Kyle Kuzma",
+                    "acquisitionType": "original",
+                    "date": "2013-07-12",
+                    "note": "BOS own 2017 1st, sent to BKN. BKN got #27 via pick swap. Lakers drafted Kuzma.",
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2017 2nd Round Pick",
+                    "becamePlayer": "Sasha Vezenkov",
+                    "acquisitionType": "original",
+                    "date": "2013-07-12",
+                    "note": "Sent to BKN in KG/Pierce trade.",
+                    "isOrigin": true
                   }
                 ]
               }
@@ -124,7 +150,7 @@
       },
       {
         "type": "pick",
-        "name": "2022 1st Round Pick (protected 1-4)",
+        "name": "2022 1st Round Pick (#25)",
         "acquisitionType": "own",
         "becamePlayer": "Blake Wesley",
         "tradeDescription": "Celtics own pick - conveyed #25 to Spurs",

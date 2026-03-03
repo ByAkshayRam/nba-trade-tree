@@ -2,10 +2,9 @@
   "_meta": {
     "team": "IND",
     "player": "Tony Bradley",
-    "source": "Basketball-Reference, ESPN, NBA Trade History",
-    "originYear": 2026,
-    "depth": 1,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/b/bradlto01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -13,7 +12,8 @@
     "acquisitionType": "free-agent",
     "date": "2026-01-08",
     "currentTeam": "IND",
-    "note": "Center from North Carolina, 28th overall pick in 2017 NBA Draft. Signed to 10-day contracts then rest-of-season. 1yr/vet min (~$2.1M)",
-    "isOrigin": true
+    "note": "Center from North Carolina, 28th overall pick in 2017 NBA Draft. Signed to 10-day contract.",
+    "isOrigin": true,
+    "assetsGivenUp": []
   }
 }

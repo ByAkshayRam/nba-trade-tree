@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "team": "BOS",
+    "player": "Dalano Banton",
+    "source": "Basketball-Reference, NBA.com",
+    "sourceUrl": "https://www.basketball-reference.com/players/b/bantoda01.html",
+    "originYear": 2026,
+    "depth": 1,
+    "lastUpdated": "2026-03-01",
+    "verificationStatus": "VERIFIED"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Dalano Banton",
+    "acquisitionType": "free-agent",
+    "date": "2026-02-19",
+    "currentTeam": "BOS",
+    "note": "6'8\" guard signed to 10-day contract on Feb 19, 2026. Previously drafted 46th overall by Toronto Raptors in 2021. Had brief stint with Celtics in 2023-24 before being traded to Portland. Canadian point guard from Toronto, Ontario.",
+    "isOrigin": true
+  }
+}

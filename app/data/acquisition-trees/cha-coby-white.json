@@ -2,46 +2,46 @@
   "_meta": {
     "team": "CHA",
     "player": "Coby White",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2019,
-    "depth": 6,
-    "lastUpdated": "2026-02-11"
+    "source": "Basketball-Reference, NBA.com, ESPN",
+    "sourceUrl": "https://www.basketball-reference.com/players/w/whiteco01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Coby White",
     "acquisitionType": "trade",
-    "date": "2026-02-06",
+    "date": "2026-02-05",
     "currentTeam": "CHA",
     "tradePartner": "CHI",
-    "tradeDescription": "Acquired from Bulls (with Mike Conley Jr) in 3-team deal",
-    "note": "Explosive scoring guard, former UNC standout",
+    "tradeDescription": "Hornets traded Collin Sexton, Ousmane Dieng, and three future 2nd-round picks to Bulls for Coby White and Mike Conley Jr. (Conley subsequently waived).",
+    "note": "Explosive scoring guard, former UNC standout. Two-time All-Star caliber player with Bulls.",
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Collin Sexton",
         "acquisitionType": "trade",
-        "date": "2025-06-30",
+        "date": "2025-06-29",
         "tradePartner": "UTA",
-        "tradeDescription": "Acquired from Jazz for Jusuf Nurkic",
-        "note": "Former Alabama guard",
+        "tradeDescription": "Hornets traded Jusuf Nurkic to Jazz for Collin Sexton. Utah also received a trade exception.",
+        "note": "Former Alabama guard, young scorer",
         "assetsGivenUp": [
           {
             "type": "player",
             "name": "Jusuf Nurkic",
-            "acquisitionType": "trade", 
+            "acquisitionType": "trade",
             "date": "2025-02-06",
             "tradePartner": "PHX",
-            "tradeDescription": "Acquired from Suns with 2026 first round pick",
+            "tradeDescription": "Hornets traded Cody Martin and Vasilije Micic to Suns for Jusuf Nurkic. Phoenix also received a trade exception.",
             "note": "Veteran center from Bosnia",
             "assetsGivenUp": [
               {
                 "type": "player",
                 "name": "Cody Martin",
-                "acquisitionType": "undrafted",
+                "acquisitionType": "free-agent",
                 "date": "2019-07-01",
-                "note": "Nevada twin, undrafted but signed by Hornets",
+                "note": "Nevada twin, signed as undrafted free agent by Hornets in 2019",
                 "tradeDescription": "Signed as undrafted free agent",
+                "assetsGivenUp": [],
                 "isOrigin": true
               },
               {
@@ -50,38 +50,40 @@
                 "acquisitionType": "trade",
                 "date": "2024-02-08",
                 "tradePartner": "OKC",
-                "tradeDescription": "Part of Gordon Hayward trade package", 
-                "note": "Serbian guard",
+                "tradeDescription": "Acquired from Thunder as part of Gordon Hayward trade. CHA sent Hayward to OKC for Tre Mann, Micic, Davis Bertans, cash, 2024 2nd (HOU own), and 2025 2nd (PHI own).",
+                "note": "Serbian guard, EuroLeague MVP",
                 "assetsGivenUp": [
                   {
                     "type": "player",
                     "name": "Gordon Hayward",
-                    "acquisitionType": "trade",
+                    "acquisitionType": "sign-and-trade",
                     "date": "2020-11-29",
-                    "tradePartner": "BOS", 
-                    "tradeDescription": "Sign-and-trade from Celtics",
-                    "note": "Former All-Star forward",
+                    "tradePartner": "BOS",
+                    "tradeDescription": "Hornets traded a 2022 2nd round pick (did not convey) to Celtics for Hayward, 2023 2nd (BOS own), and 2024 2nd (BOS own). Boston also received a trade exception.",
+                    "note": "Former All-Star forward, 4yr/$120M sign-and-trade from Celtics",
                     "assetsGivenUp": [
                       {
                         "type": "pick",
                         "name": "2022 2nd Round Pick",
                         "acquisitionType": "original",
                         "date": "2020-11-29",
-                        "note": "Conditional pick sent to Boston",
-                        "becamePlayer": "Trevor Keels",
-                        "isOrigin": true
+                        "note": "Hornets' own 2022 2nd-round pick, sent to Boston in Hayward S&T. Conditional \u2014 did not convey.",
+                        "isOrigin": true,
+                        "becamePlayer": "Did not convey"
+                      },
+                      {
+                        "type": "other",
+                        "name": "Trade Exception",
+                        "acquisitionType": "original",
+                        "date": "2020-11-29",
+                        "tradeDescription": "Boston received a $28.5M trade exception as part of the Gordon Hayward sign-and-trade",
+                        "note": "Trade exception generated from Hayward's outgoing salary. BOS used part of it to acquire Daniel Theis from HOU in Feb 2022.",
+                        "isOrigin": true,
+                        "assetsGivenUp": []
                       }
                     ]
                   }
                 ]
-              },
-              {
-                "type": "pick",
-                "name": "2026 2nd Round Pick",
-                "acquisitionType": "original",
-                "date": "2025-02-06",
-                "note": "Hornets' own second round pick",
-                "isOrigin": true
               }
             ]
           }
@@ -91,27 +93,27 @@
         "type": "player",
         "name": "Ousmane Dieng",
         "acquisitionType": "trade",
-        "date": "2026-02-06", 
+        "date": "2026-02-05",
         "tradePartner": "OKC",
-        "tradeDescription": "Acquired from Thunder for Mason Plumlee",
+        "tradeDescription": "Hornets acquired Ousmane Dieng and a 2nd-round pick from Thunder for Mason Plumlee. Dieng was then re-routed to Bulls in the Coby White trade.",
         "note": "French forward with length and playmaking",
         "assetsGivenUp": [
           {
-            "type": "player", 
+            "type": "player",
             "name": "Mason Plumlee",
             "acquisitionType": "trade",
             "date": "2021-08-06",
             "tradePartner": "DET",
-            "tradeDescription": "Acquired from Pistons with JT Thor for draft rights",
+            "tradeDescription": "Pistons traded Mason Plumlee and the #37 pick (JT Thor) to Hornets for the #57 pick (Balsa Koprivica).",
             "note": "Veteran center from Duke",
             "assetsGivenUp": [
               {
                 "type": "pick",
-                "name": "2021 57th Pick",
-                "acquisitionType": "original", 
-                "date": "2021-07-29",
-                "note": "Hornets' own 2nd round pick",
+                "name": "2021 2nd Round Pick (#57)",
                 "becamePlayer": "Balsa Koprivica",
+                "acquisitionType": "original",
+                "date": "2021-07-29",
+                "note": "Hornets' own 2021 2nd-round pick (#57), sent to Pistons in Plumlee trade",
                 "isOrigin": true
               }
             ]
@@ -122,24 +124,24 @@
         "type": "pick",
         "name": "2029 2nd Round Pick",
         "acquisitionType": "original",
-        "date": "2026-02-06",
-        "note": "Future second round pick",
-        "isOrigin": true
-      },
-      {
-        "type": "pick", 
-        "name": "2030 2nd Round Pick",
-        "acquisitionType": "original",
-        "date": "2026-02-06", 
-        "note": "Future second round pick",
+        "date": "2026-02-05",
+        "note": "Future second round pick, sent to Bulls in Coby White trade",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2031 2nd Round Pick", 
+        "name": "2030 2nd Round Pick",
         "acquisitionType": "original",
-        "date": "2026-02-06",
-        "note": "Future second round pick",
+        "date": "2026-02-05",
+        "note": "Future second round pick, sent to Bulls in Coby White trade",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2031 2nd Round Pick",
+        "acquisitionType": "original",
+        "date": "2026-02-05",
+        "note": "Future second round pick, sent to Bulls in Coby White trade",
         "isOrigin": true
       }
     ]

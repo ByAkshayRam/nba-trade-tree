@@ -2,10 +2,9 @@
   "_meta": {
     "team": "POR",
     "player": "Jerami Grant",
-    "source": "Basketball-Reference.com 2022-23 POR transactions",
-    "originYear": 2022,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference.com",
+    "sourceUrl": "https://www.basketball-reference.com/players/g/grantje01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,39 +13,44 @@
     "date": "2022-07-06",
     "currentTeam": "POR",
     "tradePartner": "DET",
-    "tradeDescription": "Acquired from Detroit Pistons for Gabriele Procida, 2025 1st (MIL own), 2025 2nd (DET own), and 2026 2nd round pick",
+    "tradeDescription": "Acquired Grant and Ismael Kamagate from Detroit for Gabriele Procida, 2025 1st (MIL own), 2025 2nd (DET own), and 2026 2nd round pick (more favorable). Detroit also received a trade exception.",
     "note": "Syracuse forward, 39th overall pick 2014",
     "isOrigin": false,
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Gabriele Procida",
-        "note": "Italian guard, drafted 36th overall in 2022",
-        "isOrigin": true,
-        "assetsGivenUp": [],
-        "acquisitionType": "free-agent"
-      },
-      {
-        "type": "pick",
-        "name": "2025 1st Round Pick (MIL own)",
-        "acquisitionType": "original",
-        "becamePlayer": "Nolan Traor\u00e9",
-        "note": "Conditional, Milwaukee's own pick",
+        "acquisitionType": "draft",
+        "date": "2022-06-23",
+        "draftPick": 36,
+        "draftRound": 2,
+        "note": "Italian guard, drafted 36th overall by Portland in 2022",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2025 2nd Round Pick (DET own)",
-        "acquisitionType": "original",
+        "name": "2025 1st Round Pick (#14)",
+        "acquisitionType": "own",
+        "date": "2022-07-06",
+        "becamePlayer": "Nolan Traor\u00e9",
+        "note": "Milwaukee's own 2025 1st round pick, conditional",
+        "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2025 2nd Round Pick (#39)",
+        "acquisitionType": "own",
+        "date": "2022-07-06",
         "becamePlayer": "Bogoljub Markovic",
-        "note": "Detroit's own pick",
+        "note": "Detroit's own 2025 2nd round pick",
         "isOrigin": true
       },
       {
         "type": "pick",
         "name": "2026 2nd Round Pick",
-        "acquisitionType": "original",
-        "note": "More favorable",
+        "acquisitionType": "own",
+        "date": "2022-07-06",
+        "note": "More favorable of two teams",
         "isOrigin": true
       }
     ]

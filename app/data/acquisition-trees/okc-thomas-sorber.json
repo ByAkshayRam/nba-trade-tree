@@ -2,10 +2,11 @@
   "_meta": {
     "team": "OKC",
     "player": "Thomas Sorber",
-    "source": "NBA/ESPN Trade History Research",
-    "originYear": 2025,
-    "depth": 1,
-    "lastUpdated": "2026-02-10"
+    "source": "Basketball Reference Transaction Logs",
+    "sourceUrl": "https://www.basketball-reference.com/players/s/sorbeth01.html",
+    "originYear": 2022,
+    "depth": 5,
+    "lastUpdated": "2026-03-03"
   },
   "tree": {
     "type": "player",
@@ -15,8 +16,30 @@
     "draftPick": 15,
     "draftRound": 1,
     "currentTeam": "OKC",
-    "tradeDescription": "Drafted 15th overall by Thunder",
-    "note": "Georgetown big man, rookie, homegrown talent",
-    "isOrigin": true
+    "tradeDescription": "Drafted 15th overall by OKC using pick acquired from Miami Heat (Feb 9, 2022)",
+    "note": "Pick was MIA's own 2025 1st. OKC acquired it by trading a 2023 1st round pick (became Jaime Jaquez Jr. #18) and a 2026 2nd round pick to Miami for KZ Okpala and this pick.",
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "KZ Okpala",
+        "acquisitionType": "trade",
+        "date": "2022-02-09",
+        "tradePartner": "MIA",
+        "tradeDescription": "Acquired from Miami along with 2025 1st (Sorber) for a 2023 1st (Jaime Jaquez Jr.) and 2026 2nd round pick",
+        "note": "OKC waived Okpala shortly after. The real asset was the 2025 1st round pick.",
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2023 1st Round Pick",
+            "acquisitionType": "own",
+            "date": "2022-02-09",
+            "becamePlayer": "Jaime Jaquez Jr.",
+            "tradeDescription": "OKC's own 2023 1st round pick, traded to Miami. Became #18 overall (Jaime Jaquez Jr.)",
+            "note": "OKC traded their own future 1st to acquire MIA's 2025 1st — a bet on Miami declining.",
+            "isOrigin": true
+          }
+        ]
+      }
+    ]
   }
 }

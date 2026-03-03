@@ -31,13 +31,12 @@
         "assetsGivenUp": [
           {
             "type": "pick",
-            "name": "2025 2nd Round Pick (from DET)",
+            "name": "2025 2nd Round Pick (#32) via DET",
             "acquisitionType": "trade",
             "date": "2023-06-28",
             "tradePartner": "DET",
-            "becamePlayer": "Noah Penda",
             "tradeDescription": "Acquired from Detroit for Marcus Sasser",
-            "note": "Part of the Marcus Sasser trade",
+            "note": "Detroit's 2025 2nd-round pick, acquired in Marcus Sasser trade. Conveyed as #32. BOS used it to draft Noah Penda.",
             "assetsGivenUp": [
               {
                 "type": "player",
@@ -60,7 +59,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "becamePlayer": "Noah Penda"
           }
         ]
       }

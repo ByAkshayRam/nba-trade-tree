@@ -2,61 +2,101 @@
   "_meta": {
     "team": "MIA",
     "player": "Kasparas Jakucionis",
-    "source": "ESPN, Basketball-Reference, NBA.com - Feb 2026",
-    "originYear": 2019,
-    "depth": 4,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/j/jakucka01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Kasparas Jakucionis",
     "acquisitionType": "draft",
-    "date": "2025-06-26",
+    "date": "2025-06-25",
     "currentTeam": "MIA",
     "draftPick": 20,
     "draftRound": 1,
-    "note": "Drafted 20th overall using GSW pick acquired in Jimmy Butler trade (top-10 protected, conveyed at #20)",
+    "note": "Drafted 20th overall using GSW pick acquired in Jimmy Butler 5-team trade (top-10 protected, conveyed at #20)",
     "assetsGivenUp": [
       {
         "type": "pick",
-        "details": "2025 1st Round Pick (from GSW, top-10 protected)",
-        "note": "Pick acquired from GSW in Feb 2025 Butler trade. Conveyed at #20.",
+        "name": "2025 1st Round Pick (#20) via GSW",
+        "acquisitionType": "trade",
+        "date": "2025-02-06",
+        "tradePartner": "GSW",
+        "becamePlayer": "Kasparas Jakucionis",
+        "draftPick": 20,
+        "tradeDescription": "5-team trade: MIA sent Jimmy Butler and cash to GSW, Josh Richardson and cash to UTA, cash and 2026 2nd round pick (LAL) to TOR. MIA received Andrew Wiggins, Kyle Anderson, and 2025 1st round pick from GSW, and Davion Mitchell from TOR.",
         "assetsGivenUp": [
           {
             "type": "player",
             "name": "Jimmy Butler",
-            "acquisitionType": "trade",
+            "acquisitionType": "sign-and-trade",
             "date": "2019-07-06",
             "tradePartner": "PHI",
-            "note": "Sign-and-trade from PHI in 4-team deal",
+            "tradeDescription": "4-team sign-and-trade: PHI sent Jimmy Butler to MIA; MIA sent Josh Richardson to PHI, Hassan Whiteside to POR, and 2023 1st round pick to LAC; POR sent Meyers Leonard to MIA and Maurice Harkless to LAC; PHI sent Mathias Lessort to LAC; LAC sent cash to MIA.",
             "assetsGivenUp": [
               {
                 "type": "player",
                 "name": "Josh Richardson",
-                "note": "Sent to PHI",
+                "acquisitionType": "draft",
+                "date": "2015-06-25",
+                "note": "Drafted 40th overall by MIA in 2015. Sent to PHI.",
                 "isOrigin": true,
-                "acquisitionType": "free-agent"
+                "assetsGivenUp": [],
+                "draftRound": 2,
+                "draftPick": 40
               },
               {
                 "type": "player",
                 "name": "Hassan Whiteside",
-                "note": "Sent to POR",
+                "acquisitionType": "free-agent",
+                "date": "2014-11-24",
+                "note": "Signed by MIA Nov 2014. Sent to POR.",
                 "isOrigin": true,
-                "acquisitionType": "free-agent"
+                "assetsGivenUp": []
               },
               {
-                "type": "player",
-                "name": "Maurice Harkless",
-                "note": "Sent to LAC with future 1st",
+                "type": "pick",
+                "name": "2023 1st Round Pick (#18, MIA own)",
+                "acquisitionType": "own",
+                "becamePlayer": "Jaime Jaquez Jr.",
+                "note": "MIA's own 2023 1st round pick, sent to LAC in the Jimmy Butler sign-and-trade.",
                 "isOrigin": true,
-                "acquisitionType": "free-agent"
+                "assetsGivenUp": [],
+                "date": "2019-07-06"
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Josh Richardson",
+            "acquisitionType": "free-agent",
+            "date": "2023-07-02",
+            "note": "Re-signed as free agent July 2023. Sent to UTA.",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "pick",
+            "name": "2026 2nd Round Pick (LAL)",
+            "acquisitionType": "trade",
+            "date": "2023-07-06",
+            "tradePartner": "CLE",
+            "tradeDescription": "3-team sign-and-trade: MIA signed and traded Max Strus to CLE; CLE traded a 2026 2nd round pick (LAL own) to MIA; CLE traded Cedi Osman, Lamar Stevens, and a 2030 2nd round pick to SAS.",
+            "note": "LAL own pick, acquired from CLE. Sent to TOR in 5-team Butler trade.",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Max Strus",
+                "acquisitionType": "free-agent",
+                "date": "2021-08-06",
+                "note": "Signed by MIA Aug 2021. Signed-and-traded to CLE July 2023.",
+                "isOrigin": true,
+                "assetsGivenUp": []
               }
             ]
           }
-        ],
-        "name": "2025 1st Round Pick (from GSW, top-10 protected)",
-        "becamePlayer": "Kasparas Jakucionis",
-        "draftPick": 20
+        ]
       }
     ]
   }

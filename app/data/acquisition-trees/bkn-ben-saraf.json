@@ -2,10 +2,11 @@
   "_meta": {
     "team": "BKN",
     "player": "Ben Saraf",
-    "source": "ESPN, NBA.com, Wikipedia",
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/s/sarafbe01.html",
     "originYear": 2008,
     "depth": 7,
-    "lastUpdated": "2026-02-15"
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -15,16 +16,18 @@
     "draftPick": 26,
     "draftRound": 1,
     "currentTeam": "BKN",
-    "note": "Israeli guard, drafted with NYK's own pick acquired in Mikal Bridges trade",
+    "note": "Israeli guard, drafted #26 with NYK's own 2025 1st acquired in the Mikal Bridges mega-trade.",
     "assetsGivenUp": [
       {
         "type": "pick",
-        "name": "2025 NYK 1st Round Pick (#26)",
+        "name": "2025 1st Round Pick (#26) via NYK",
         "acquisitionType": "trade",
-        "date": "2024-06-26",
+        "date": "2024-07-06",
         "tradePartner": "NYK",
         "becamePlayer": "Ben Saraf",
-        "tradeDescription": "Knicks sent Bojan Bogdanovic, five 1st-round picks (incl. NYK 2025), 2028 swap, and a 2nd-rounder to Nets for Mikal Bridges",
+        "tradeDescription": "BKN traded Mikal Bridges, Keita Bates-Diop, Juan Pablo Vaulet, and a 2026 2nd to NYK for Bojan Bogdanovic, Mamadi Diakite, Shake Milton, NYK 2025 1st (#26), MIL 2025 1st (#19), BKN 2025 2nd (#36), NYK 2027 1st, NYK/MIL 2028 swap, NYK 2029 1st, and NYK 2031 1st. Brooklyn also received trade exceptions.",
+        "note": "New York's own 2025 1st-round pick, part of the massive Bridges haul.",
+        "isOrigin": false,
         "assetsGivenUp": [
           {
             "type": "player",
@@ -33,14 +36,18 @@
             "date": "2023-02-09",
             "tradePartner": "PHX",
             "tradeDescription": "Acquired from Phoenix in Kevin Durant trade. BKN sent KD and TJ Warren to PHX for Cam Johnson, Mikal Bridges, 4 first-round picks, and pick swap rights.",
+            "note": "Villanova product, elite 3-and-D wing. Centerpiece BKN flipped to NYK for massive pick haul.",
+            "isOrigin": false,
             "assetsGivenUp": [
               {
                 "type": "player",
                 "name": "Kevin Durant",
-                "acquisitionType": "trade",
+                "acquisitionType": "sign-and-trade",
                 "date": "2019-07-07",
                 "tradePartner": "GSW",
-                "tradeDescription": "Sign-and-trade: Nets sent D'Angelo Russell, Treveon Graham, and Shabazz Napier to Warriors for Kevin Durant and a protected 2020 1st round pick",
+                "tradeDescription": "Sign-and-trade: Nets traded D'Angelo Russell, Treveon Graham, and Shabazz Napier to Warriors for Kevin Durant. Conditional 2020 1st did not convey; became 2025 2nd (Javon Small).",
+                "note": "4x scoring champ, 2x Finals MVP.",
+                "isOrigin": false,
                 "assetsGivenUp": [
                   {
                     "type": "player",
@@ -48,7 +55,8 @@
                     "acquisitionType": "trade",
                     "date": "2017-06-22",
                     "tradePartner": "LAL",
-                    "tradeDescription": "Nets traded Brook Lopez and the 27th pick (Kyle Kuzma) to Lakers for D'Angelo Russell and Timofey Mozgov",
+                    "tradeDescription": "Nets traded Brook Lopez and the #27 pick (Kyle Kuzma) to Lakers for D'Angelo Russell and Timofey Mozgov.",
+                    "isOrigin": false,
                     "assetsGivenUp": [
                       {
                         "type": "player",
@@ -56,14 +64,115 @@
                         "acquisitionType": "draft",
                         "date": "2008-06-26",
                         "draftPick": 10,
-                        "note": "Drafted 10th overall by Brooklyn (then New Jersey Nets) in 2008 NBA Draft",
+                        "draftRound": 1,
+                        "note": "Drafted #10 overall by New Jersey Nets in 2008. Franchise cornerstone for a decade.",
                         "isOrigin": true
+                      },
+                      {
+                        "type": "pick",
+                        "name": "2017 1st Round Pick (#27 via pick swap)",
+                        "becamePlayer": "Kyle Kuzma",
+                        "acquisitionType": "original",
+                        "date": "2017-06-22",
+                        "note": "BKN had the worst record in 2017 (#1 pick), but owed it to BOS from the KG/Pierce trade. BOS swapped #1 to PHI for #3 (Jayson Tatum). BKN got BOS's pick position (#27) via the swap. LAL drafted Kyle Kuzma.",
+                        "isOrigin": false,
+                        "assetsGivenUp": [
+                          {
+                            "type": "pick",
+                            "name": "2017 1st Round Pick (#1 overall)",
+                            "becamePlayer": "Markelle Fultz",
+                            "acquisitionType": "original",
+                            "date": "2017-06-22",
+                            "note": "BKN's own pick — worst record in NBA, #1 overall. Owed to BOS from the 2013 KG/Pierce trade. BOS traded #1 to PHI for #3 (Jayson Tatum) and a future 1st. PHI drafted Markelle Fultz.",
+                            "isOrigin": true
+                          }
+                        ]
                       }
                     ]
+                  },
+                  {
+                    "type": "player",
+                    "name": "Treveon Graham",
+                    "acquisitionType": "free-agent",
+                    "date": "2018-08-01",
+                    "note": "Signed as FA by BKN. Sent to GSW in KD sign-and-trade.",
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "player",
+                    "name": "Shabazz Napier",
+                    "acquisitionType": "free-agent",
+                    "date": "2018-07-14",
+                    "note": "UConn guard, signed as free agent by BKN (2yr deal, July 2018). Sent to GSW in KD sign-and-trade.",
+                    "isOrigin": true
                   }
                 ]
+              },
+              {
+                "type": "player",
+                "name": "TJ Warren",
+                "acquisitionType": "free-agent",
+                "date": "2022-07-01",
+                "note": "Signed as FA by BKN. Sent to PHX in Kevin Durant trade.",
+                "isOrigin": true
               }
             ]
+          },
+          {
+            "type": "player",
+            "name": "Keita Bates-Diop",
+            "acquisitionType": "free-agent",
+            "date": "2023-09-21",
+            "note": "Signed as FA by BKN. Sent to NYK in Bridges trade.",
+            "isOrigin": true
+          },
+          {
+            "type": "player",
+            "name": "Juan Pablo Vaulet",
+            "acquisitionType": "draft-night-trade",
+            "date": "2015-06-25",
+            "tradeDescription": "Charlotte traded Vaulet draft rights to BKN for cash ($880,000), a 2018 2nd (least favorable of BKN/CLE, became Arnoldas Kulboka), and a 2019 2nd (became Talen Horton-Tucker).",
+            "note": "Argentine forward, stash player. Draft rights acquired from Charlotte on draft night 2015. Later sent to IND (2021) then included in Bridges trade to NYK (2024).",
+            "isOrigin": false,
+            "draftPick": 39,
+            "draftRound": 2,
+            "assetsGivenUp": [
+              {
+                "type": "pick",
+                "name": "2018 2nd Round Pick (#55, least favorable of BKN/CLE)",
+                "becamePlayer": "Arnoldas Kulboka",
+                "acquisitionType": "original",
+                "date": "2015-06-25",
+                "note": "Sent to Charlotte for Vaulet draft rights. CHA used it to draft Arnoldas Kulboka.",
+                "isOrigin": true
+              },
+              {
+                "type": "pick",
+                "name": "2019 2nd Round Pick (#46)",
+                "becamePlayer": "Talen Horton-Tucker",
+                "acquisitionType": "original",
+                "date": "2015-06-25",
+                "note": "Sent to Charlotte for Vaulet draft rights. Became Talen Horton-Tucker.",
+                "isOrigin": true
+              },
+              {
+                "type": "other",
+                "name": "Cash considerations ($880,000)",
+                "acquisitionType": "original",
+                "date": "2015-06-25",
+                "note": "Cash sent to Charlotte for Vaulet draft rights.",
+                "isOrigin": true
+              }
+            ],
+            "tradePartner": "CHA"
+          },
+          {
+            "type": "pick",
+            "name": "2026 2nd Round Pick (least favorable)",
+            "acquisitionType": "original",
+            "date": "2024-07-06",
+            "note": "Sent to NYK in Bridges trade.",
+            "isOrigin": true
           }
         ]
       }

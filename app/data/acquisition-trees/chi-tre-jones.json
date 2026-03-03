@@ -2,30 +2,48 @@
   "_meta": {
     "team": "CHI",
     "player": "Tre Jones",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2025,
-    "depth": 1,
-    "lastUpdated": "2026-02-11"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/j/jonestr01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Tre Jones",
     "acquisitionType": "trade",
-    "date": "2025-02-02",
+    "date": "2025-02-03",
     "currentTeam": "CHI",
     "tradePartner": "SAS",
-    "tradeDescription": "Part of 3-team Fox/LaVine mega-deal: Bulls sent LaVine + 2nd to SAC, received Huerter, Collins, Tre Jones. Fox to SAS.",
-    "note": "Duke product, steady point guard",
+    "tradeDescription": "3-team trade: Bulls traded Zach LaVine and a 2028 2nd round pick to Kings; Kings traded Kevin Huerter to Bulls; Kings traded De'Aaron Fox and Jordan McLaughlin to Spurs; Spurs traded Zach Collins, Tre Jones and a 2025 1st round pick (Noa Essengue) to Bulls.",
     "assetsGivenUp": [
       {
+        "type": "player",
+        "name": "Zach LaVine",
+        "acquisitionType": "trade",
+        "date": "2017-06-22",
+        "tradePartner": "MIN",
+        "tradeDescription": "Bulls traded Jimmy Butler and Justin Patton to Timberwolves for Zach LaVine, Kris Dunn, and Lauri Markkanen",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Jimmy Butler",
+            "acquisitionType": "draft",
+            "date": "2011-06-23",
+            "draftPick": 30,
+            "draftRound": 1,
+            "note": "Drafted 30th overall by Chicago Bulls from Marquette in 2011 NBA Draft",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          }
+        ]
+      },
+      {
         "type": "pick",
-        "name": "2025 CHI 2nd Round Pick",
-        "acquisitionType": "original",
-        "date": "2025-02-08",
-        "note": "Chicago's own 2025 second-round pick",
+        "name": "2028 2nd Round Pick via CHI",
+        "acquisitionType": "own",
+        "date": "2025-02-03",
+        "note": "Chicago's own 2028 2nd round pick, sent to SAC in LaVine mega-deal",
         "isOrigin": true,
-        "becamePlayer": "Maxime Raynaud",
-        "draftPick": 42
+        "assetsGivenUp": []
       }
     ]
   }

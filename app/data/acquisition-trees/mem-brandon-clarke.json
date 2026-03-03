@@ -3,9 +3,8 @@
     "team": "MEM",
     "player": "Brandon Clarke",
     "source": "Basketball-Reference, ESPN, NBA.com",
-    "originYear": 2019,
-    "depth": 4,
-    "lastUpdated": "2026-02-16"
+    "sourceUrl": "https://www.basketball-reference.com/players/c/clarkbr01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,8 +13,8 @@
     "date": "2019-07-06",
     "currentTeam": "MEM",
     "tradePartner": "OKC",
-    "tradeDescription": "Memphis traded Darius Bazley and a 2024 2nd round pick to Oklahoma City for Brandon Clarke",
-    "note": "Gonzaga forward, acquired via trade from Oklahoma City",
+    "tradeDescription": "Memphis traded Darius Bazley and a 2024 2nd round pick (Bobi Klintman) to Oklahoma City for Brandon Clarke",
+    "note": "Gonzaga forward, drafted 21st overall by OKC, acquired via trade",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -23,8 +22,8 @@
         "acquisitionType": "trade",
         "date": "2019-07-06",
         "tradePartner": "UTA",
-        "tradeDescription": "Acquired from Utah in Mike Conley trade",
-        "note": "Acquired from Utah as part of Mike Conley trade package",
+        "tradeDescription": "Memphis traded Mike Conley to Utah for Grayson Allen, Darius Bazley, Jae Crowder, Kyle Korver and a 2022 1st round pick (Walker Kessler)",
+        "note": "Acquired from Utah as part of Mike Conley trade package, immediately sent to OKC",
         "assetsGivenUp": [
           {
             "type": "player",
@@ -33,7 +32,7 @@
             "date": "2007-06-28",
             "draftPick": 4,
             "draftRound": 1,
-            "note": "Ohio State guard, drafted by Memphis in 2007",
+            "note": "Ohio State guard, drafted 4th overall by Memphis in 2007",
             "isOrigin": true
           }
         ]
@@ -41,7 +40,7 @@
       {
         "type": "pick",
         "name": "2024 2nd Round Pick",
-        "acquisitionType": "original",
+        "acquisitionType": "draft",
         "date": "2024-06-26",
         "becamePlayer": "Bobi Klintman",
         "note": "Memphis' own 2024 second-round pick, conveyed to OKC",

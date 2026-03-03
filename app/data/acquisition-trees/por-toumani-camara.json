@@ -2,10 +2,9 @@
   "_meta": {
     "team": "POR",
     "player": "Toumani Camara",
-    "source": "Basketball-Reference.com 2023-24 POR transactions",
-    "originYear": 2012,
-    "depth": 4,
-    "lastUpdated": "2026-02-27"
+    "source": "Basketball-Reference.com",
+    "sourceUrl": "https://www.basketball-reference.com/players/c/camarto01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,7 +13,7 @@
     "date": "2023-09-27",
     "currentTeam": "POR",
     "tradePartner": "PHX",
-    "tradeDescription": "3-team trade: POR traded Lillard to MIL, and Nurkic/K.Johnson/N.Little to PHX. POR received Holiday/3 1st-rd picks from MIL, and Ayton/Camara from PHX.",
+    "tradeDescription": "3-team trade: POR traded Lillard to MIL, Nurkic/K.Johnson/N.Little to PHX. MIL traded Grayson Allen to PHX. POR received Holiday + 3 1st-rd picks from MIL, Ayton + Camara from PHX.",
     "note": "Belgian forward, 52nd overall pick 2023. Received from Phoenix as part of Lillard mega-trade.",
     "isOrigin": false,
     "assetsGivenUp": [
@@ -26,16 +25,16 @@
         "draftPick": 6,
         "draftRound": 1,
         "note": "Drafted 6th overall by Portland in 2012, Weber State guard. Sent to Milwaukee.",
-        "isOrigin": true,
-        "assetsGivenUp": []
+        "isOrigin": true
       },
       {
         "type": "player",
         "name": "Jusuf Nurkic",
         "acquisitionType": "trade",
-        "date": "2017-02-12",
+        "date": "2017-02-13",
         "tradePartner": "DEN",
-        "note": "Center, acquired from Denver for Mason Plumlee and 2017 second round pick",
+        "tradeDescription": "POR traded Mason Plumlee, cash considerations, and a 2018 2nd round pick to Denver for Jusuf Nurkic and a 2017 1st round pick (MEM own).",
+        "note": "Bosnian center, acquired from Denver. Re-signed as FA July 6, 2018 and July 6, 2022. Sent to PHX in Lillard trade.",
         "isOrigin": false,
         "assetsGivenUp": [
           {
@@ -44,7 +43,8 @@
             "acquisitionType": "trade",
             "date": "2015-06-25",
             "tradePartner": "BKN",
-            "note": "Duke center, acquired from Brooklyn for Steve Blake and Rondae Hollis-Jefferson draft rights",
+            "tradeDescription": "POR traded Steve Blake and Rondae Hollis-Jefferson (#23 pick) to Brooklyn for Mason Plumlee and Pat Connaughton.",
+            "note": "Duke center, acquired from Brooklyn on draft night",
             "isOrigin": false,
             "assetsGivenUp": [
               {
@@ -52,26 +52,27 @@
                 "name": "Steve Blake",
                 "acquisitionType": "free-agent",
                 "date": "2014-07-15",
-                "note": "Veteran guard, signed as free agent from Golden State",
+                "note": "Veteran guard, signed as free agent",
                 "isOrigin": true
               },
               {
                 "type": "pick",
                 "name": "2015 1st Round Pick (#23)",
-                "acquisitionType": "original",
+                "acquisitionType": "own",
                 "date": "2015-06-25",
                 "becamePlayer": "Rondae Hollis-Jefferson",
-                "note": "Portland's own 2015 1st round pick, used to draft RHJ then traded to Brooklyn",
+                "note": "Portland's own 2015 1st round pick, sent to Brooklyn",
                 "isOrigin": true
               }
             ]
           },
           {
             "type": "pick",
-            "name": "2018 2nd Round Pick",
+            "name": "2018 2nd Round Pick (#54)",
+            "acquisitionType": "own",
+            "date": "2017-02-13",
             "becamePlayer": "Shake Milton",
-            "acquisitionType": "original",
-            "note": "Portland's own 2018 2nd round pick, sent to Denver with Plumlee for Nurkic",
+            "note": "Portland's own 2018 2nd round pick, sent to Denver",
             "isOrigin": true
           }
         ]
@@ -82,7 +83,8 @@
         "acquisitionType": "trade",
         "date": "2022-02-04",
         "tradePartner": "LAC",
-        "note": "Guard, acquired from Clippers (part of Powell/Covington trade)",
+        "tradeDescription": "POR traded Norman Powell and Robert Covington to LA Clippers for Eric Bledsoe, Keon Johnson, Justise Winslow, and 2025 2nd (DET own). Portland also received a trade exception.",
+        "note": "Guard, acquired from Clippers in Powell/Covington trade",
         "isOrigin": false,
         "assetsGivenUp": [
           {
@@ -91,61 +93,29 @@
             "acquisitionType": "trade",
             "date": "2021-03-25",
             "tradePartner": "TOR",
-            "note": "Guard, acquired from Toronto for Gary Trent Jr. and Rodney Hood",
+            "tradeDescription": "POR traded Gary Trent Jr. and Rodney Hood to Toronto for Norman Powell. Portland also received a trade exception.",
+            "note": "Guard, acquired from Toronto",
             "isOrigin": false,
             "assetsGivenUp": [
               {
                 "type": "player",
                 "name": "Gary Trent Jr.",
-                "acquisitionType": "draft",
+                "acquisitionType": "draft-night-trade",
                 "date": "2018-06-21",
                 "draftPick": 37,
                 "draftRound": 2,
-                "note": "Duke guard, drafted 37th overall by Portland",
+                "tradePartner": "SAC",
+                "tradeDescription": "POR traded cash, 2019 2nd, and 2021 2nd (MIA own) to Sacramento for Gary Trent Jr. (#37 pick)",
+                "note": "Duke guard, acquired via draft-night trade with Sacramento",
                 "isOrigin": true
               },
               {
                 "type": "player",
                 "name": "Rodney Hood",
-                "acquisitionType": "trade",
-                "date": "2019-02-07",
-                "tradePartner": "CLE",
-                "note": "Guard/forward, acquired from Cleveland for Nik Stauskas, Wade Baldwin IV and two 2nd round picks",
-                "isOrigin": false,
-                "assetsGivenUp": [
-                  {
-                    "type": "player",
-                    "name": "Nik Stauskas",
-                    "acquisitionType": "free-agent",
-                    "date": "2018-07-05",
-                    "note": "Guard, signed as free agent by Portland",
-                    "isOrigin": true
-                  },
-                  {
-                    "type": "player",
-                    "name": "Wade Baldwin IV",
-                    "acquisitionType": "free-agent",
-                    "date": "2018-03-12",
-                    "note": "Guard, signed to standard contract by Portland",
-                    "isOrigin": true
-                  },
-                  {
-                    "type": "pick",
-                    "name": "2021 2nd Round Pick",
-                    "becamePlayer": "Brandon Boston Jr.",
-                    "acquisitionType": "original",
-                    "note": "Portland's own 2021 2nd round pick, sent to Cleveland",
-                    "isOrigin": true
-                  },
-                  {
-                    "type": "pick",
-                    "name": "2023 2nd Round Pick",
-                    "becamePlayer": "Julian Phillips",
-                    "acquisitionType": "original",
-                    "note": "Portland's own 2023 2nd round pick, sent to Cleveland",
-                    "isOrigin": true
-                  }
-                ]
+                "acquisitionType": "free-agent",
+                "date": "2020-11-22",
+                "note": "Re-signed as free agent Nov 22, 2020. Originally traded from CLE Feb 2019, then re-signed as FA July 6, 2019 and again Nov 22, 2020 before being traded to Toronto.",
+                "isOrigin": true
               }
             ]
           },
@@ -155,31 +125,84 @@
             "acquisitionType": "trade",
             "date": "2020-11-22",
             "tradePartner": "HOU",
-            "note": "Forward, acquired from Houston for Trevor Ariza and draft picks",
+            "tradeDescription": "POR traded Trevor Ariza, Isaiah Stewart, and 2021 1st (lottery protected, became Usman Garuba #23) to Houston for Robert Covington. Portland also received a trade exception.",
+            "note": "Forward, acquired from Houston",
             "isOrigin": false,
             "assetsGivenUp": [
               {
                 "type": "player",
                 "name": "Trevor Ariza",
-                "acquisitionType": "free-agent",
-                "date": "2019-07-18",
-                "note": "Forward, signed as free agent",
-                "isOrigin": true
+                "acquisitionType": "trade",
+                "date": "2020-01-21",
+                "tradePartner": "SAC",
+                "tradeDescription": "POR traded Kent Bazemore, Anthony Tolliver, 2024 2nd round pick, and 2025 2nd round pick (POR own) to Sacramento for Trevor Ariza, Wenyen Gabriel, and Caleb Swanigan.",
+                "note": "Veteran forward, acquired from Sacramento",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Kent Bazemore",
+                    "acquisitionType": "trade",
+                    "date": "2019-06-24",
+                    "tradePartner": "ATL",
+                    "tradeDescription": "POR traded Evan Turner to Atlanta for Kent Bazemore.",
+                    "note": "Guard/forward, acquired from Atlanta",
+                    "isOrigin": false,
+                    "assetsGivenUp": [
+                      {
+                        "type": "player",
+                        "name": "Evan Turner",
+                        "acquisitionType": "free-agent",
+                        "date": "2016-07-07",
+                        "note": "Signed as free agent to multi-year contract",
+                        "isOrigin": true
+                      }
+                    ]
+                  },
+                  {
+                    "type": "player",
+                    "name": "Anthony Tolliver",
+                    "acquisitionType": "free-agent",
+                    "date": "2019-07-03",
+                    "note": "Signed as free agent",
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2024 2nd Round Pick (#50)",
+                    "acquisitionType": "own",
+                    "date": "2020-01-21",
+                    "becamePlayer": "Tyler Smith",
+                    "note": "Sent to Sacramento in Ariza trade",
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2025 2nd Round Pick",
+                    "acquisitionType": "own",
+                    "date": "2020-01-21",
+                    "becamePlayer": "Alijah Martin",
+                    "note": "Portland's own 2025 2nd round pick, sent to Sacramento",
+                    "isOrigin": true
+                  }
+                ]
               },
               {
                 "type": "pick",
                 "name": "2020 1st Round Pick (#16)",
-                "acquisitionType": "original",
+                "acquisitionType": "own",
+                "date": "2020-11-22",
                 "becamePlayer": "Isaiah Stewart",
-                "note": "Portland's own 2020 1st round pick, drafted Isaiah Stewart",
+                "note": "Portland's own 2020 1st round pick. Stewart was drafted #16 by POR on Nov 18, 2020 and included in trade Nov 22.",
                 "isOrigin": true
               },
               {
                 "type": "pick",
-                "name": "2021 1st Round Pick",
+                "name": "2021 1st Round Pick (#23)",
+                "acquisitionType": "own",
+                "date": "2020-11-22",
                 "becamePlayer": "Usman Garuba",
-                "acquisitionType": "original",
-                "note": "Portland's own lottery-protected 2021 1st, sent to Houston",
+                "note": "Portland's own 2021 1st, lottery protected, sent to Houston",
                 "isOrigin": true
               }
             ]

@@ -2,10 +2,9 @@
   "_meta": {
     "team": "DET",
     "player": "Isaiah Stewart",
-    "source": "Basketball-Reference, ESPN, NBA Draft trade records",
-    "originYear": 2020,
-    "depth": 2,
-    "lastUpdated": "2026-02-15"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/s/stewais01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,31 +13,37 @@
     "date": "2020-11-24",
     "currentTeam": "DET",
     "tradePartner": "HOU",
-    "tradeDescription": "Sign-and-trade: Pistons signed Christian Wood then traded him to Rockets for Isaiah Stewart, Trevor Ariza, 2nd round pick, and cash",
-    "note": "Forward/Center from Washington, acquired via draft-night trades",
-    "isOrigin": false,
+    "tradeDescription": "DET signed Christian Wood then traded him, a 2021 2nd round draft pick (Luka Garza), and a 2025 1st round draft pick (Joan Beringer) to HOU for Trevor Ariza, Isaiah Stewart, cash, and a 2027 2nd round draft pick",
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Christian Wood",
         "acquisitionType": "free-agent",
-        "date": "2019-07-23",
-        "note": "Undrafted forward, signed by Pistons off waivers from Milwaukee in 2019, then signed 3-year $41M deal for sign-and-trade",
-        "isOrigin": true
+        "date": "2019-07-17",
+        "isOrigin": true,
+        "assetsGivenUp": [],
+        "note": "Signed as undrafted free agent. Played one season for Detroit before being traded to Houston in the Isaiah Stewart deal."
+      },
+      {
+        "type": "pick",
+        "name": "2021 2nd Round Pick (#52)",
+        "acquisitionType": "draft",
+        "date": "2020-11-24",
+        "tradeDescription": "Detroit's own 2nd round pick sent to Houston",
+        "becamePlayer": "Luka Garza",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      },
+      {
+        "type": "pick",
+        "name": "2025 1st Round Pick (#17)",
+        "acquisitionType": "draft",
+        "date": "2020-11-24",
+        "tradeDescription": "Detroit's own 1st round pick sent to Houston (conveyed in 2025)",
+        "becamePlayer": "Joan Beringer",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
-    ],
-    "tradeChain": {
-      "type": "player",
-      "name": "Isaiah Stewart",
-      "acquisitionType": "draft-night-trade",
-      "date": "2020-11-18",
-      "tradePartner": "POR",
-      "tradeDescription": "Rockets traded Robert Covington to Trail Blazers for Isaiah Stewart, Trevor Ariza, future 1st round pick",
-      "draftPick": 16,
-      "draftRound": 1,
-      "note": "Forward/Center drafted 16th overall by Portland, traded to Houston same night",
-      "isOrigin": true
-    },
-    "espnId": "4432810"
+    ]
   }
 }

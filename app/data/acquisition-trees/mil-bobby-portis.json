@@ -2,18 +2,17 @@
   "_meta": {
     "team": "MIL",
     "player": "Bobby Portis",
-    "source": "NBA/ESPN Trade History Research",
-    "originYear": 2020,
-    "depth": 1,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference Transaction Logs",
+    "lastUpdated": "2026-03-01",
+    "sourceUrl": "https://www.basketball-reference.com/players/p/portibo01.html"
   },
   "tree": {
     "type": "player",
     "name": "Bobby Portis",
     "acquisitionType": "free-agent",
     "date": "2025-07-06",
-    "currentTeam": "MIL",
-    "note": "Re-signed with Milwaukee in 2025 free agency. Originally signed with MIL in November 2020. 2021 NBA Champion. Signed 3yr/$44M extension",
-    "isOrigin": true
+    "isOrigin": true,
+    "assetsGivenUp": [],
+    "tradeDescription": "Re-signed as free agent with Milwaukee Bucks"
   }
 }

@@ -2,19 +2,18 @@
   "_meta": {
     "team": "MIN",
     "player": "Donte DiVincenzo",
-    "source": "ESPN, NBA.com, Basketball-Reference",
-    "originYear": 2018,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/d/divindo01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Donte DiVincenzo",
     "acquisitionType": "trade",
-    "date": "2024-09-28",
+    "date": "2024-10-02",
     "currentTeam": "MIN",
     "tradePartner": "NYK",
-    "tradeDescription": "3-team trade: MIN sent Karl-Anthony Towns to NYK and a 2025 2nd round pick (Alex Toohey) to CHA. MIN received Julius Randle, Donte DiVincenzo, Keita Bates-Diop, and 2025 1st round pick (via DET) from NYK.",
+    "tradeDescription": "3-team trade: MIN sent Karl-Anthony Towns to NYK and a 2025 2nd round pick (least favorable, became Alex Toohey) to CHA. MIN received Julius Randle, Donte DiVincenzo, Keita Bates-Diop, and 2025 1st round pick (via DET, top-13 protected) from NYK.",
     "note": "Villanova guard, drafted 17th overall by Milwaukee. Shared trade cost with Randle and Beringer.",
     "assetsGivenUp": [
       {
@@ -24,16 +23,17 @@
         "date": "2015-06-25",
         "draftPick": 1,
         "draftRound": 1,
-        "note": "7'0\" center from Kentucky, 2015 #1 overall pick. Sent to NYK. Shared cost — see min-julius-randle.json.",
+        "note": "7'0\" center from Kentucky, 2015 #1 overall pick. Sent to NYK. Shared cost \u2014 see min-julius-randle.json.",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2025 2nd Round Pick",
-        "acquisitionType": "original",
+        "name": "2025 2nd Round Pick (least favorable)",
+        "acquisitionType": "own",
         "becamePlayer": "Alex Toohey",
-        "note": "MIN 2025 2nd round pick, sent to CHA. Shared cost — see min-julius-randle.json.",
-        "isOrigin": true
+        "note": "MIN 2025 2nd round pick (least favorable), sent to CHA. Shared cost \u2014 see min-julius-randle.json.",
+        "isOrigin": true,
+        "date": "2025-06-25"
       }
     ]
   }

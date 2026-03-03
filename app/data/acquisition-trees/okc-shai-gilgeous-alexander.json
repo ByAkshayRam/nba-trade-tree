@@ -2,11 +2,11 @@
   "_meta": {
     "team": "OKC",
     "player": "Shai Gilgeous-Alexander",
-    "source": "NBA/ESPN Trade History Research",
-    "sourceUrl": "https://www.basketball-reference.com/players/g/gilMDSsha01.html",
-    "originYear": 2010,
-    "depth": 8,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball Reference Transaction Logs",
+    "sourceUrl": "https://www.basketball-reference.com/players/g/gilgesh01.html",
+    "originYear": 1997,
+    "depth": 11,
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -15,14 +15,14 @@
     "date": "2019-07-10",
     "tradePartner": "LAC",
     "currentTeam": "OKC",
-    "tradeDescription": "Acquired from Clippers with Danilo Gallinari, 5 first-round picks, and 2 pick swaps for Paul George",
-    "note": "2x All-Star, drafted #11 overall by LAC in 2018",
+    "tradeDescription": "Acquired from Clippers with Danilo Gallinari, 5 first-round picks, and 2 pick swaps for Paul George and a 2025 1st round pick",
+    "note": "2x All-Star, drafted #11 overall by CHA in 2018, traded to LAC on draft night",
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Paul George",
         "acquisitionType": "trade",
-        "date": "2017-06-30",
+        "date": "2017-07-06",
         "tradePartner": "IND",
         "tradeDescription": "Acquired from Indiana for Victor Oladipo and Domantas Sabonis",
         "note": "9x All-Star, played 2 seasons in OKC (2017-2019)",
@@ -33,7 +33,7 @@
             "acquisitionType": "trade",
             "date": "2016-06-23",
             "tradePartner": "ORL",
-            "tradeDescription": "Acquired from Orlando for Serge Ibaka",
+            "tradeDescription": "Acquired from Orlando with Domantas Sabonis and Ersan İlyasova for Serge Ibaka",
             "note": "2x All-Star, won Most Improved Player award with Indiana (2018)",
             "assetsGivenUp": [
               {
@@ -43,22 +43,68 @@
                 "date": "2008-06-26",
                 "draftPick": 24,
                 "draftRound": 1,
-                "tradeDescription": "Drafted 24th overall by Seattle SuperSonics",
-                "note": "3x NBA All-Defensive Team",
-                "isOrigin": true
+                "tradeDescription": "Drafted 24th overall by Seattle SuperSonics using pick acquired from Phoenix",
+                "note": "3x NBA All-Defensive Team. Pick acquired from PHX in Kurt Thomas trade (Jul 20, 2007)",
+                "assetsGivenUp": [
+                  {
+                    "type": "pick",
+                    "name": "Emir Preldžić",
+                    "acquisitionType": "trade",
+                    "date": "2007-07-20",
+                    "tradePartner": "PHX",
+                    "tradeDescription": "2009 2nd round pick (became Emir Preldžić) sent to Phoenix for Kurt Thomas, 2008 1st round pick (Ibaka), and 2010 1st round pick (Quincy Pondexter)",
+                    "assetsGivenUp": [
+                      {
+                        "type": "player",
+                        "name": "Rashard Lewis",
+                        "acquisitionType": "trade",
+                        "date": "2007-07-11",
+                        "tradePartner": "ORL",
+                        "tradeDescription": "Traded to Orlando Magic for 2009 2nd round pick (Emir Preldžić) and trade exception",
+                        "assetsGivenUp": [
+                          {
+                            "type": "player",
+                            "name": "Bobby Jackson",
+                            "acquisitionType": "draft-night-trade",
+                            "date": "1997-06-25",
+                            "draftPick": 23,
+                            "draftRound": 1,
+                            "tradePartner": "DEN",
+                            "tradeDescription": "Drafted 23rd overall by Seattle with their own pick, immediately traded to Denver for James Cotton and 1998 2nd round pick (Rashard Lewis #32)",
+                            "note": "Seattle's own 1997 1st round pick. True origin of the Ibaka chain.",
+                            "isOrigin": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
           {
             "type": "player",
             "name": "Domantas Sabonis",
-            "acquisitionType": "draft",
+            "acquisitionType": "draft-night-trade",
             "date": "2016-06-23",
             "draftPick": 11,
             "draftRound": 1,
-            "tradeDescription": "Drafted 11th overall by Thunder",
-            "note": "3x All-Star, son of Arvydas Sabonis",
-            "isOrigin": true
+            "tradePartner": "ORL",
+            "tradeDescription": "Draft rights acquired from Orlando along with Oladipo and İlyasova for Serge Ibaka",
+            "note": "3x All-Star, son of Arvydas Sabonis. ORL's own #11 lottery pick.",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Serge Ibaka",
+                "acquisitionType": "draft",
+                "date": "2008-06-26",
+                "draftPick": 24,
+                "draftRound": 1,
+                "tradeDescription": "Drafted 24th overall by Seattle using PHX pick. Traded to ORL (Jun 23, 2016) for Oladipo, Sabonis, and İlyasova.",
+                "note": "Same trade as Oladipo branch. Full origin chain: Bobby Jackson (1997) → Rashard Lewis → Preldžić → Ibaka.",
+                "isOrigin": true
+              }
+            ]
           }
         ]
       }

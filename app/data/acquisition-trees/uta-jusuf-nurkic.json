@@ -3,9 +3,8 @@
     "team": "UTA",
     "player": "Jusuf Nurkic",
     "source": "Basketball-Reference",
-    "originYear": 2014,
-    "depth": 3,
-    "lastUpdated": "2026-02-17"
+    "sourceUrl": "https://www.basketball-reference.com/players/n/nurkiju01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,16 +13,16 @@
     "date": "2025-06-29",
     "currentTeam": "UTA",
     "tradePartner": "CHA",
-    "tradeDescription": "Traded Collin Sexton to Charlotte for Nurkic",
+    "tradeDescription": "UTA traded Collin Sexton to Charlotte for Jusuf Nurkic. Utah also received a trade exception.",
     "note": "Bosnian center, 7'0\" veteran big man",
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Collin Sexton",
         "acquisitionType": "trade",
-        "date": "2022-09-01",
+        "date": "2022-09-03",
         "tradePartner": "CLE",
-        "tradeDescription": "Donovan Mitchell mega-trade",
+        "tradeDescription": "UTA traded Donovan Mitchell to CLE for Lauri Markkanen, Collin Sexton, Ochai Agbaji, 2025 1st (CLE), 2026 1st swap, 2027 1st (CLE), 2028 1st swap, 2029 1st (CLE).",
         "note": "Alabama guard, explosive scorer from Cleveland",
         "assetsGivenUp": [
           {
@@ -34,7 +33,8 @@
             "draftPick": 13,
             "draftRound": 1,
             "note": "Louisville guard, Jazz drafted 13th overall 2017",
-            "isOrigin": true
+            "isOrigin": true,
+            "assetsGivenUp": []
           }
         ]
       }

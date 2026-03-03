@@ -3,9 +3,8 @@
     "team": "SAC",
     "player": "De'Andre Hunter",
     "source": "Basketball-Reference SAC 2025-26 Transactions",
-    "originYear": 2019,
-    "depth": 4,
-    "lastUpdated": "2026-02-17"
+    "sourceUrl": "https://www.basketball-reference.com/players/h/huntede01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,16 +13,17 @@
     "date": "2026-02-01",
     "currentTeam": "SAC",
     "tradePartner": "CLE",
-    "tradeDescription": "3-team trade: SAC sent Keon Ellis and Dennis Schroder to CLE; SAC sent Dario Saric and 2029 2nd to CHI; CLE sent Hunter to SAC; CHI sent Emanuel Miller to CLE; CLE sent 2027 2nd to CHI",
+    "tradeDescription": "3-team trade: SAC sent Keon Ellis and Dennis Schroder to CLE; SAC sent Dario Saric and a 2029 2nd round pick to CHI; CHI sent Emanuel Miller to CLE; CLE sent a 2027 2nd round pick to CHI; CLE sent De'Andre Hunter to SAC",
     "note": "Forward originally drafted 4th overall by Atlanta in 2019",
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Keon Ellis",
-        "acquisitionType": "undrafted",
+        "acquisitionType": "free-agent",
         "date": "2022-07-02",
-        "note": "Undrafted guard signed to two-way contract, later converted",
-        "isOrigin": true
+        "note": "Undrafted guard signed to two-way contract, later converted to regular contract Feb 2024",
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "player",
@@ -31,15 +31,31 @@
         "acquisitionType": "trade",
         "date": "2025-07-07",
         "tradePartner": "DET",
-        "tradeDescription": "Kings traded 2026 2nd (CHO own) to Pistons for Schroder and 2029 2nd",
+        "tradeDescription": "Kings traded a 2026 2nd round pick (CHO own) to Pistons for Dennis Schroder and a 2029 2nd round pick (least favorable). Detroit also received a trade exception.",
         "note": "Veteran guard",
         "assetsGivenUp": [
           {
             "type": "pick",
-            "name": "2026 2nd Round Pick (CHO)",
-            "acquisitionType": "original",
-            "date": "2025-07-07",
-            "isOrigin": true
+            "name": "2026 2nd Round Pick via CHO",
+            "acquisitionType": "trade",
+            "date": "2025-02-03",
+            "tradePartner": "SAS",
+            "tradeDescription": "Received from Spurs in the De'Aaron Fox 3-team trade. Originally a conditional 2025 1st round pick (CHO own) that did not convey, became 2026 and 2027 2nd round picks.",
+            "note": "Acquired in Fox trade, CHO own. Shared cost with Zach LaVine trade.",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "De'Aaron Fox",
+                "acquisitionType": "draft",
+                "date": "2017-06-22",
+                "draftPick": 5,
+                "draftRound": 1,
+                "note": "Guard drafted 5th overall from Kentucky. Shared cost — also produced Zach LaVine.",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              }
+            ]
           }
         ]
       },
@@ -49,7 +65,7 @@
         "acquisitionType": "trade",
         "date": "2025-07-13",
         "tradePartner": "DEN",
-        "tradeDescription": "Kings traded Jonas Valanciunas to Nuggets for Saric and trade exceptions",
+        "tradeDescription": "Kings traded Jonas Valanciunas to Nuggets for Dario Saric. Both teams received trade exceptions.",
         "note": "Veteran forward",
         "assetsGivenUp": [
           {
@@ -58,7 +74,7 @@
             "acquisitionType": "trade",
             "date": "2025-02-05",
             "tradePartner": "WAS",
-            "tradeDescription": "Kings traded Sidy Cissoko, 2028 2nd (DEN own), and 2029 2nd (SAC own) to Wizards for Valanciunas",
+            "tradeDescription": "Kings traded Sidy Cissoko, a 2028 2nd round pick (DEN own), and a 2029 2nd round pick (SAC own) to Wizards for Jonas Valanciunas. Both teams received trade exceptions.",
             "note": "Veteran center",
             "assetsGivenUp": [
               {
@@ -67,8 +83,8 @@
                 "acquisitionType": "trade",
                 "date": "2025-02-03",
                 "tradePartner": "SAS",
-                "tradeDescription": "Received from Spurs in the De'Aaron Fox 3-team trade",
-                "note": "Wing drafted #44 overall by SAS in 2023. Shared cost with Zach LaVine trade",
+                "tradeDescription": "Received from Spurs in the De'Aaron Fox 3-team trade (Fox and McLaughlin to SAS; Huerter to CHI; LaVine to SAC; Cissoko and picks to SAC)",
+                "note": "Wing drafted #44 overall by SAS in 2023. Shared cost with Zach LaVine trade.",
                 "assetsGivenUp": [
                   {
                     "type": "player",
@@ -77,26 +93,43 @@
                     "date": "2017-06-22",
                     "draftPick": 5,
                     "draftRound": 1,
-                    "note": "Guard drafted 5th overall from Kentucky. Shared cost \u2014 also produced Zach LaVine",
-                    "isOrigin": true
+                    "note": "Guard drafted 5th overall from Kentucky. Shared cost — also produced Zach LaVine.",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
                   }
                 ]
               },
               {
                 "type": "pick",
-                "name": "2028 2nd Round Pick (DEN)",
+                "name": "2028 2nd Round Pick via DEN",
                 "acquisitionType": "trade",
                 "date": "2025-02-03",
-                "note": "Received from Spurs in Fox trade, DEN own",
-                "isOrigin": true
+                "tradePartner": "SAS",
+                "tradeDescription": "Received from Spurs in the De'Aaron Fox 3-team trade",
+                "note": "Acquired in Fox trade, DEN own. Shared cost with Zach LaVine trade.",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "De'Aaron Fox",
+                    "acquisitionType": "draft",
+                    "date": "2017-06-22",
+                    "draftPick": 5,
+                    "draftRound": 1,
+                    "note": "Guard drafted 5th overall from Kentucky. Shared cost — also produced Zach LaVine.",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  }
+                ]
               },
               {
                 "type": "pick",
-                "name": "2029 2nd Round Pick (SAC)",
-                "acquisitionType": "original",
+                "name": "2029 2nd Round Pick via SAC",
+                "acquisitionType": "own",
                 "date": "2025-02-05",
                 "note": "Sacramento's own 2nd round pick",
-                "isOrigin": true
+                "isOrigin": true,
+                "assetsGivenUp": []
               }
             ]
           }
@@ -107,8 +140,35 @@
         "name": "2029 2nd Round Pick",
         "acquisitionType": "trade",
         "date": "2025-07-07",
-        "note": "Acquired from DET in Schroder trade, sent to CHI in Hunter deal",
-        "isOrigin": true
+        "tradePartner": "DET",
+        "tradeDescription": "Received from Pistons in the Schroder trade (least favorable of available 2029 2nds), then sent to CHI in Hunter deal",
+        "note": "Acquired from DET in Schroder trade. Cost shared with Schroder acquisition.",
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2026 2nd Round Pick via CHO",
+            "acquisitionType": "trade",
+            "date": "2025-02-03",
+            "tradePartner": "SAS",
+            "tradeDescription": "Received from Spurs in the De'Aaron Fox 3-team trade. Originally a conditional 2025 1st round pick (CHO own) that did not convey, became 2026 and 2027 2nd round picks.",
+            "note": "Acquired in Fox trade, CHO own. Sent to DET in Schroder trade. Shared cost with Zach LaVine trade.",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "De'Aaron Fox",
+                "acquisitionType": "draft",
+                "date": "2017-06-22",
+                "draftPick": 5,
+                "draftRound": 1,
+                "note": "Guard drafted 5th overall from Kentucky. Shared cost — also produced Zach LaVine.",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              }
+            ]
+          }
+        ]
       }
     ]
   }

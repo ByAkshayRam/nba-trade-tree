@@ -2,32 +2,32 @@
   "_meta": {
     "team": "DAL",
     "player": "Dereck Lively II",
-    "source": "NBA.com, Basketball-Reference",
-    "originYear": 2011,
-    "depth": 4,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/l/livelde01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Dereck Lively II",
-    "acquisitionType": "draft-night-trade",
-    "date": "2023-06-22",
+    "acquisitionType": "trade",
+    "date": "2023-07-06",
     "currentTeam": "DAL",
     "tradePartner": "OKC",
     "draftPick": 12,
     "draftRound": 1,
-    "tradeDescription": "Dallas traded #10 pick (Cason Wallace) and Davis Bertans to OKC for #12 pick (Dereck Lively II)",
-    "note": "Duke center, drafted #12 overall",
-    "isOrigin": false,
+    "tradeDescription": "DAL traded Davis Bertans and Cason Wallace to OKC for Dereck Lively II",
+    "note": "Duke center, drafted #12 overall by OKC",
     "assetsGivenUp": [
       {
-        "type": "pick",
-        "name": "2023 DAL #10 Overall Pick",
-        "acquisitionType": "original",
+        "type": "player",
+        "name": "Cason Wallace",
+        "acquisitionType": "draft",
         "date": "2023-06-22",
-        "becamePlayer": "Cason Wallace",
-        "note": "Dallas own 2023 first-round pick, traded to OKC on draft night",
-        "isOrigin": true
+        "draftPick": 10,
+        "draftRound": 1,
+        "note": "Kentucky guard, drafted #10 by Dallas, sent to OKC in Lively trade",
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "player",
@@ -35,9 +35,8 @@
         "acquisitionType": "trade",
         "date": "2022-02-10",
         "tradePartner": "WAS",
-        "tradeDescription": "DAL acquired Bertans and Dinwiddie from WAS for Porzingis and a 2nd round pick",
-        "note": "Latvian forward, 2011 #42 pick by Indiana, rights traded to SAS with Kawhi Leonard",
-        "isOrigin": false,
+        "tradeDescription": "DAL traded Kristaps Porzingis and a 2022 2nd round pick (Yannick Nzosa) to WAS for Davis Bertans and Spencer Dinwiddie",
+        "note": "Latvian forward, salary filler in KP deal",
         "assetsGivenUp": [
           {
             "type": "player",
@@ -45,9 +44,8 @@
             "acquisitionType": "trade",
             "date": "2019-01-31",
             "tradePartner": "NYK",
-            "tradeDescription": "DAL acquired Porzingis from NYK for Dennis Smith Jr., DeAndre Jordan, and 2 future 1sts",
+            "tradeDescription": "DAL traded Dennis Smith Jr., DeAndre Jordan, Wesley Matthews, 2021 1st (Keon Johnson #21), and 2024 1st (Kyshawn George #24) to NYK for Kristaps Porzingis, Tim Hardaway Jr., Courtney Lee, and Trey Burke",
             "note": "Latvian forward, 2015 #4 pick by New York",
-            "isOrigin": false,
             "assetsGivenUp": [
               {
                 "type": "player",
@@ -57,7 +55,8 @@
                 "draftPick": 9,
                 "draftRound": 1,
                 "note": "NC State guard, drafted #9 by Dallas",
-                "isOrigin": true
+                "isOrigin": true,
+                "assetsGivenUp": []
               },
               {
                 "type": "player",
@@ -65,27 +64,49 @@
                 "acquisitionType": "free-agent",
                 "date": "2018-07-06",
                 "note": "Signed as free agent from LA Clippers",
-                "isOrigin": true
+                "isOrigin": true,
+                "assetsGivenUp": []
+              },
+              {
+                "type": "player",
+                "name": "Wesley Matthews",
+                "acquisitionType": "free-agent",
+                "date": "2015-07-09",
+                "note": "Signed as free agent from Portland Trail Blazers",
+                "isOrigin": true,
+                "assetsGivenUp": []
               },
               {
                 "type": "pick",
-                "name": "2021 DAL 1st Round Pick",
-                "acquisitionType": "original",
+                "name": "2021 1st Round Pick (#21) via DAL",
+                "acquisitionType": "own",
                 "date": "2021-07-29",
                 "becamePlayer": "Keon Johnson",
                 "note": "Unprotected, conveyed to New York as #21 overall",
-                "isOrigin": true
+                "isOrigin": true,
+                "assetsGivenUp": []
               },
               {
                 "type": "pick",
-                "name": "2023 DAL 1st Round Pick",
-                "acquisitionType": "original",
+                "name": "2024 1st Round Pick (#24) via DAL",
+                "acquisitionType": "own",
                 "date": "2024-06-26",
                 "becamePlayer": "Kyshawn George",
                 "note": "Top-10 protected, did not convey in 2023, rolled to 2024 as #24 overall to New York",
-                "isOrigin": true
+                "isOrigin": true,
+                "assetsGivenUp": []
               }
             ]
+          },
+          {
+            "type": "pick",
+            "name": "2022 2nd Round Pick (#54) via DAL",
+            "acquisitionType": "own",
+            "date": "2022-06-23",
+            "becamePlayer": "Yannick Nzosa",
+            "note": "Dallas own 2022 second-round pick, sent to Washington",
+            "isOrigin": true,
+            "assetsGivenUp": []
           }
         ]
       }

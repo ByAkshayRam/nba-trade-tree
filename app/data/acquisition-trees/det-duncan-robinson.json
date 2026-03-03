@@ -2,10 +2,9 @@
   "_meta": {
     "team": "DET",
     "player": "Duncan Robinson",
-    "source": "ESPN, Detroit Free Press, Hoops Rumors - July 2025 sign-and-trade",
-    "originYear": 2018,
-    "depth": 2,
-    "lastUpdated": "2026-02-15"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/r/robindu01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,8 +13,7 @@
     "date": "2025-07-07",
     "currentTeam": "DET",
     "tradePartner": "MIA",
-    "tradeDescription": "Pistons traded Simone Fontecchio to Heat for Duncan Robinson",
-    "note": "Michigan sharpshooter, acquired via trade from Miami",
+    "tradeDescription": "DET traded Simone Fontecchio to MIA for Duncan Robinson. Miami also received a trade exception",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -23,45 +21,90 @@
         "acquisitionType": "trade",
         "date": "2024-02-08",
         "tradePartner": "UTA",
-        "tradeDescription": "Pistons traded Kevin Knox II, rights to Gabriele Procida, and 2024 2nd round pick to Jazz for Fontecchio",
-        "note": "Italian forward acquired from Utah Jazz at 2024 trade deadline",
-        "isOrigin": false,
-        "tradeChain": {
-          "type": "player",
-          "name": "Simone Fontecchio",
-          "acquisitionType": "undrafted",
-          "date": "2019-07-15",
-          "note": "Italian forward, undrafted international signing with Utah Jazz in 2019",
-          "isOrigin": true
-        },
+        "tradeDescription": "DET traded Kevin Knox II, Gabriele Procida, and a 2024 2nd round draft pick (Kyle Filipowski) to UTA for Simone Fontecchio. Utah also received a trade exception",
         "assetsGivenUp": [
           {
             "type": "player",
             "name": "Kevin Knox II",
             "acquisitionType": "free-agent",
-            "date": "2023-09-21",
-            "note": "Forward signed as free agent by Detroit in 2023",
-            "isOrigin": true
+            "date": "2023-11-08",
+            "tradeDescription": "Signed as a free agent by Detroit",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "player",
+            "name": "Gabriele Procida",
+            "acquisitionType": "trade",
+            "date": "2022-07-06",
+            "tradePartner": "POR",
+            "tradeDescription": "DET traded Jerami Grant and Ismael Kamagate to POR for Gabriele Procida, 2025 1st round pick (MIL), 2025 2nd round pick, and 2026 2nd round pick",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Jerami Grant",
+                "acquisitionType": "trade",
+                "date": "2020-11-22",
+                "tradePartner": "DEN",
+                "tradeDescription": "DET traded cash to DEN for Jerami Grant and Nikola Radi\u010devi\u0107. Denver also received a trade exception",
+                "assetsGivenUp": [
+                  {
+                    "type": "other",
+                    "name": "Cash considerations",
+                    "acquisitionType": "free-agent",
+                    "date": "2020-11-22",
+                    "tradeDescription": "Cash sent to Denver",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  }
+                ]
+              },
+              {
+                "type": "player",
+                "name": "Ismael Kamagate",
+                "acquisitionType": "draft",
+                "date": "2022-06-23",
+                "draftPick": 46,
+                "draftRound": 2,
+                "tradeDescription": "Drafted 46th overall by Detroit (via BKN pick) in the 2022 NBA Draft",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              }
+            ]
           },
           {
             "type": "pick",
-            "name": "2024 DET 2nd Round Pick",
-            "acquisitionType": "original",
-            "note": "Pistons' own second-round pick sent to Utah",
-            "isOrigin": true,
-            "becamePlayer": "Cam Spencer",
-            "draftPick": 53
+            "name": "2024 2nd Round Pick (#32)",
+            "acquisitionType": "trade",
+            "date": "2021-09-04",
+            "tradePartner": "BKN",
+            "tradeDescription": "DET traded Sekou Doumbouya and Jahlil Okafor to BKN for DeAndre Jordan, cash, and multiple 2nd round picks",
+            "becamePlayer": "Kyle Filipowski",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Sekou Doumbouya",
+                "acquisitionType": "draft",
+                "date": "2019-06-20",
+                "draftPick": 15,
+                "draftRound": 1,
+                "tradeDescription": "Drafted 15th overall by Detroit in the 2019 NBA Draft",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              },
+              {
+                "type": "player",
+                "name": "Jahlil Okafor",
+                "acquisitionType": "free-agent",
+                "date": "2020-12-01",
+                "tradeDescription": "Signed as a free agent by Detroit",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              }
+            ]
           }
         ]
       }
-    ],
-    "tradeChain": {
-      "type": "player",
-      "name": "Duncan Robinson",
-      "acquisitionType": "undrafted",
-      "date": "2018-04-16",
-      "note": "Michigan forward, undrafted free agent signing with Miami Heat in 2018",
-      "isOrigin": true
-    }
+    ]
   }
 }

@@ -2,18 +2,17 @@
   "_meta": {
     "team": "MIL",
     "player": "Cam Thomas",
-    "source": "NBA/ESPN Trade History Research",
-    "originYear": 2026,
-    "depth": 1,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference Transaction Logs",
+    "lastUpdated": "2026-03-01",
+    "sourceUrl": "https://www.basketball-reference.com/players/t/thomaca02.html"
   },
   "tree": {
     "type": "player",
     "name": "Cam Thomas",
     "acquisitionType": "free-agent",
-    "date": "2026-02-07",
-    "currentTeam": "MIL",
-    "note": "Signed after being waived by Brooklyn Nets at 2026 trade deadline. Averaged 24 PPG for BKN in 2024-25. 1yr/vet min (~$2.1M)",
-    "isOrigin": true
+    "date": "2026-02-08",
+    "isOrigin": true,
+    "assetsGivenUp": [],
+    "tradeDescription": "Signed as free agent after being waived by Brooklyn Nets"
   }
 }

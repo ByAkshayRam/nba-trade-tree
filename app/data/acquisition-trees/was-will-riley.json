@@ -2,30 +2,177 @@
   "_meta": {
     "team": "WAS",
     "player": "Will Riley",
-    "source": "2025 NBA Draft / ESPN Trade Reports",
-    "originYear": 2025,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/r/rileywi01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Will Riley",
-    "acquisitionType": "draft",
-    "date": "2025-06-26",
+    "acquisitionType": "draft-night-trade",
+    "date": "2025-06-25",
     "currentTeam": "WAS",
+    "tradePartner": "UTA",
     "draftPick": 21,
     "draftRound": 1,
-    "note": "#21 overall pick from Illinois. WAS traded #18 pick (from MEM) to UTA for #21, #43, and two future 2nd-round picks.",
+    "tradeDescription": "WAS traded Walter Clayton Jr. (#18 pick) to UTA for Will Riley (#21 pick), Jamir Watkins (#43 pick), 2031 2nd (more favorable), and 2032 2nd (UTA own)",
+    "note": "#21 overall pick from Illinois, acquired from Utah on draft night",
     "assetsGivenUp": [
       {
         "type": "pick",
         "name": "2025 1st Round Pick (#18)",
         "acquisitionType": "trade",
-        "date": "2025-02-08",
+        "date": "2025-02-06",
         "tradePartner": "MEM",
+        "tradeDescription": "3-team trade (WAS/MEM/SAC): WAS sent Bagley, Johnny Davis, 2025 2nd to MEM. MEM sent Marcus Smart, 2025 1st (#18) to WAS. SAC sent Colby Jones, Alex Len to WAS. SAC sent 2028 2nd to MEM.",
         "becamePlayer": "Walter Clayton Jr.",
-        "note": "Originally Memphis's pick, acquired by WAS in Feb 2025 trade. Traded to UTA on draft night.",
-        "isOrigin": true
+        "note": "Memphis's own 1st round pick. Shared cost with Jamir Watkins — see was-jamir-watkins.json for full chain.",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Marvin Bagley III",
+            "acquisitionType": "trade",
+            "date": "2024-01-14",
+            "tradePartner": "DET",
+            "tradeDescription": "WAS traded Gallinari, Muscala to DET for Bagley, Livers, 2025 2nd, 2026 2nd",
+            "note": "Former #2 pick, from Detroit. See was-jamir-watkins.json for full chain to origins.",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Danilo Gallinari",
+                "acquisitionType": "trade",
+                "date": "2023-06-23",
+                "tradePartner": "BOS",
+                "tradeDescription": "3-team Porzingis trade: WAS sent Porzingis to BOS for Gallinari, Muscala, Phillips",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Kristaps Porzingis",
+                    "acquisitionType": "trade",
+                    "date": "2022-02-10",
+                    "tradePartner": "DAL",
+                    "tradeDescription": "WAS sent Bertans + Dinwiddie to DAL for Porzingis",
+                    "assetsGivenUp": [
+                      {
+                        "type": "player",
+                        "name": "Davis Bertans",
+                        "acquisitionType": "free-agent",
+                        "date": "2020-11-22",
+                        "isOrigin": true,
+                        "assetsGivenUp": []
+                      },
+                      {
+                        "type": "player",
+                        "name": "Spencer Dinwiddie",
+                        "acquisitionType": "trade",
+                        "date": "2021-08-06",
+                        "tradePartner": "BRK",
+                        "tradeDescription": "From 5-team Westbrook trade",
+                        "assetsGivenUp": [
+                          {
+                            "type": "player",
+                            "name": "John Wall",
+                            "acquisitionType": "draft",
+                            "date": "2010-06-24",
+                            "draftPick": 1,
+                            "draftRound": 1,
+                            "isOrigin": true,
+                            "assetsGivenUp": []
+                          },
+                          {
+                            "type": "pick",
+                            "name": "2023 1st Round Pick (#4)",
+                            "acquisitionType": "draft",
+                            "becamePlayer": "Amen Thompson",
+                            "isOrigin": true,
+                            "assetsGivenUp": [],
+                            "draftPick": 4,
+                            "draftRound": 1,
+                            "date": "2020-12-02"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "player",
+                "name": "Mike Muscala",
+                "acquisitionType": "trade",
+                "date": "2023-06-23",
+                "tradePartner": "BOS",
+                "tradeDescription": "Same Porzingis 3-team trade — shared cost with Gallinari",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Davis Bertans",
+                    "acquisitionType": "free-agent",
+                    "date": "2020-11-22",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  },
+                  {
+                    "type": "player",
+                    "name": "Spencer Dinwiddie",
+                    "acquisitionType": "trade",
+                    "date": "2021-08-06",
+                    "tradePartner": "BRK",
+                    "tradeDescription": "From 5-team Westbrook trade",
+                    "assetsGivenUp": [
+                      {
+                        "type": "player",
+                        "name": "John Wall",
+                        "acquisitionType": "draft",
+                        "date": "2010-06-24",
+                        "draftPick": 1,
+                        "draftRound": 1,
+                        "isOrigin": true,
+                        "assetsGivenUp": []
+                      },
+                      {
+                        "type": "pick",
+                        "name": "2023 1st Round Pick (#4)",
+                        "acquisitionType": "draft",
+                        "becamePlayer": "Amen Thompson",
+                        "isOrigin": true,
+                        "assetsGivenUp": [],
+                        "draftPick": 4,
+                        "draftRound": 1,
+                        "date": "2020-12-02"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Johnny Davis",
+            "acquisitionType": "draft",
+            "date": "2022-06-23",
+            "draftPick": 10,
+            "draftRound": 1,
+            "note": "#10 overall pick by WAS in 2022 NBA Draft",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "pick",
+            "name": "2025 2nd Round Pick (#48)",
+            "acquisitionType": "draft",
+            "becamePlayer": "Javon Small",
+            "note": "Sent to Memphis",
+            "isOrigin": true,
+            "assetsGivenUp": [],
+            "draftPick": 48,
+            "draftRound": 2,
+            "date": "2023-06-23"
+          }
+        ],
+        "draftPick": 18,
+        "draftRound": 1
       }
     ]
   }

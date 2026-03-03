@@ -5,7 +5,8 @@
     "source": "Basketball-Reference",
     "originYear": 2019,
     "depth": 3,
-    "lastUpdated": "2026-02-16"
+    "lastUpdated": "2026-03-01",
+    "sourceUrl": "https://www.basketball-reference.com/players/h/hachiru01.html"
   },
   "tree": {
     "type": "player",
@@ -23,18 +24,20 @@
         "acquisitionType": "free-agent",
         "date": "2021-08-06",
         "note": "Former Heat guard, signed with Lakers as free agent in 2021",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2023 2nd Round Pick (CHI own)",
+        "name": "2023 2nd Round Pick (#39)",
         "acquisitionType": "trade",
         "date": "2021-08-06",
         "tradePartner": "WAS",
         "tradeDescription": "Received from Wizards as part of the 5-team Russell Westbrook trade",
         "becamePlayer": "Tristan Vukcevic",
-        "note": "Originally CHI own 2nd round pick, acquired from WAS in Westbrook trade, sent to WAS in Hachimura trade",
-        "isOrigin": true
+        "note": "Originally CHI own 2nd round pick, received from WAS alongside Westbrook in 5-team trade (Aug 2021); sent back to WAS in Hachimura trade. Trade cost shared with Westbrook node in lal-jarred-vanderbilt.",
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
@@ -42,15 +45,17 @@
         "acquisitionType": "original",
         "date": "2028-06-01",
         "note": "2028 2nd round pick, least favorable of LAL/WAS per BBRef",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2029 LAL 2nd Round Pick",
+        "name": "2029 2nd Round Pick via LAL",
         "acquisitionType": "original",
         "date": "2029-06-01",
         "note": "Lakers' own 2nd round pick",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

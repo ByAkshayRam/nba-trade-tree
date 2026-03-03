@@ -2,10 +2,9 @@
   "_meta": {
     "team": "CHI",
     "player": "Isaac Okoro",
-    "source": "NBA.com, RotoWire, Bleacher Report",
-    "originYear": 2020,
-    "depth": 2,
-    "lastUpdated": "2026-02-15"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/o/okorois01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,17 +13,54 @@
     "date": "2025-07-06",
     "currentTeam": "CHI",
     "tradePartner": "CLE",
-    "tradeDescription": "Bulls traded Lonzo Ball to Cavaliers for Isaac Okoro",
+    "tradeDescription": "Bulls traded Lonzo Ball to Cavaliers for Isaac Okoro. Cleveland also received a trade exception.",
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Lonzo Ball",
-        "acquisitionType": "trade",
-        "date": "2021-08-06",
+        "acquisitionType": "sign-and-trade",
+        "date": "2021-08-08",
         "tradePartner": "NOP",
-        "tradeDescription": "Sign-and-trade: Bulls acquired Lonzo Ball from Pelicans",
-        "note": "Signed 4-year, $85M deal via sign-and-trade from New Orleans",
-        "isOrigin": true
+        "tradeDescription": "Bulls traded Tomas Satoransky, Garrett Temple, cash, and a 2024 2nd round pick (Adem Bona, CHI own) to Pelicans for Lonzo Ball via sign-and-trade.",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Tomas Satoransky",
+            "acquisitionType": "free-agent",
+            "date": "2019-07-06",
+            "note": "Signed as free agent from Washington Wizards",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "player",
+            "name": "Garrett Temple",
+            "acquisitionType": "free-agent",
+            "date": "2020-11-27",
+            "note": "Signed as free agent. Included in Lonzo Ball S&T to NOP.",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "pick",
+            "name": "2024 2nd Round Pick via CHI",
+            "becamePlayer": "Adem Bona",
+            "acquisitionType": "own",
+            "date": "2021-08-08",
+            "note": "Chicago's own 2024 2nd round pick, sent to NOP in Lonzo Ball S&T",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          },
+          {
+            "type": "other",
+            "name": "Cash Considerations",
+            "acquisitionType": "original",
+            "date": "2021-08-08",
+            "note": "Cash sent to NOP in Lonzo Ball S&T",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          }
+        ]
       }
     ]
   }

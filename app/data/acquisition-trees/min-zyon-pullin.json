@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "team": "MIN",
+    "player": "Zyon Pullin",
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/p/pullizo01.html",
+    "lastUpdated": "2026-03-02"
+  },
+  "tree": {
+    "type": "player",
+    "name": "Zyon Pullin",
+    "acquisitionType": "free-agent",
+    "date": "2026-03-01",
+    "currentTeam": "MIN",
+    "note": "Florida guard, signed to two-way contract after performing well with Iowa Wolves (MIN G-League affiliate). Previously waived by Memphis Grizzlies in July 2025.",
+    "isOrigin": true
+  }
+}

@@ -2,138 +2,394 @@
   "_meta": {
     "team": "NYK",
     "player": "Karl-Anthony Towns",
-    "source": "NBA Trade History Research - Deep Analysis",
+    "source": "Basketball-Reference Transaction History",
     "sourceUrl": "https://www.basketball-reference.com/players/t/townska01.html",
-    "originYear": 2013,
-    "depth": 6,
-    "lastUpdated": "2026-02-13"
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Karl-Anthony Towns",
     "acquisitionType": "trade",
-    "date": "2024-09-28",
+    "date": "2024-10-02",
     "tradePartner": "MIN",
     "currentTeam": "NYK",
-    "tradeDescription": "NYK acquires KAT for Julius Randle + Donte DiVincenzo + protected first",
-    "note": "4x All-Star, 2015 #1 pick. Towns-for-Randle centerpiece deal to improve spacing.",
+    "tradeDescription": "3-team trade: NYK traded Julius Randle, Donte DiVincenzo, Keita Bates-Diop, and a 2025 1st (DET own, conditional) to MIN; NYK traded cash, Charlie Brown Jr., DaQuan Jeffries, Duane Washington Jr., a 2026 2nd (GSW own), and a 2031 2nd (NYK own) to CHO; MIN traded KAT to NYK; CHO traded James Nnaji to NYK.",
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Julius Randle",
-        "acquisitionType": "trade",
-        "date": "2019-07-30",
-        "tradePartner": "NOP",
-        "tradeDescription": "Sign-and-trade from Pelicans: Randle to NYK for nothing (cap space)",
-        "note": "3x All-Star, 2x All-NBA. Originally Lakers draft pick traded to NOLA.",
-        "assetsGivenUp": [
-          {
-            "type": "player",
-            "name": "Julius Randle (Lakers period)",
-            "acquisitionType": "trade",
-            "date": "2018-07-09",
-            "tradePartner": "LAL",
-            "tradeDescription": "Randle to NOLA as part of Lakers clearing space for LeBron/other FAs",
-            "note": "Lakers used Randle's departure to create max cap space",
-            "assetsGivenUp": [
-              {
-                "type": "player",
-                "name": "Julius Randle (draft rights)",
-                "acquisitionType": "draft",
-                "date": "2014-06-26",
-                "draftPick": 7,
-                "draftRound": 1,
-                "tradePartner": "LAL",
-                "tradeDescription": "Lakers drafted Randle 7th overall in 2014",
-                "note": "Lakers finished 27-55 in 2013-14. Suffered broken leg as rookie.",
-                "assetsGivenUp": [
-                  {
-                    "type": "pick",
-                    "name": "2014 #7 Overall Pick",
-                    "acquisitionType": "original",
-                    "date": "2014-06-26",
-                    "draftPick": 7,
-                    "becamePlayer": "Julius Randle",
-                    "tradeDescription": "Lakers' own pick - poor season result",
-                    "note": "Post-Kobe era rebuilding. Lakers were 27-55 in 2013-14",
-                    "isOrigin": true
-                  }
-                ]
-              }
-            ]
-          }
-        ]
+        "acquisitionType": "free-agent",
+        "date": "2019-07-09",
+        "tradeDescription": "Signed as unrestricted free agent from New Orleans Pelicans. 3yr/$63M deal.",
+        "note": "Randle was a free agent, not a trade. Declined player option with NOP and signed outright with NYK.",
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "player",
         "name": "Donte DiVincenzo",
+        "acquisitionType": "free-agent",
+        "date": "2023-07-08",
+        "tradeDescription": "Signed as free agent. Multi-year contract with NYK.",
+        "note": "2021 NBA Champion with Milwaukee. Signed as FA from Golden State.",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      },
+      {
+        "type": "player",
+        "name": "Keita Bates-Diop",
         "acquisitionType": "trade",
-        "date": "2023-07-06",
-        "tradePartner": "GSW",
-        "tradeDescription": "Acquired from Warriors for future 2nd-round considerations",
-        "note": "2021 NBA Champion with Milwaukee, Villanova connection to NYK culture",
+        "date": "2024-07-06",
+        "tradePartner": "BKN",
+        "tradeDescription": "NYK traded Bogdanovic, Diakite, Shake Milton, 2025 1st (NYK own), 2025 1st (MIL own via NYK), 2025 2nd (BRK own), 2027 1st (NYK own), 2028 1st swap, 2029 1st (NYK own), 2031 1st (NYK own) to BKN for Mikal Bridges, Keita Bates-Diop, Juan Pablo Vaulet, and a 2026 2nd.",
+        "note": "Shared cost with Mikal Bridges — full chain breakdown in nyk-mikal-bridges.json",
+        "isOrigin": false,
         "assetsGivenUp": [
           {
-            "type": "pick",
-            "name": "2024 Second-Round Pick",
-            "acquisitionType": "original",
-            "date": "2023-07-06",
-            "tradeDescription": "NYK's own 2024 second-round pick",
+            "type": "player",
+            "name": "Bojan Bogdanovic",
+            "acquisitionType": "trade",
+            "date": "2024-02-08",
+            "tradePartner": "DET",
+            "tradeDescription": "NYK traded Ryan Arcidiacono, Malachi Flynn, Evan Fournier, Quentin Grimes and cash to Detroit for Bojan Bogdanovic and Alec Burks",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Evan Fournier",
+                "acquisitionType": "trade",
+                "date": "2021-08-17",
+                "tradePartner": "BOS",
+                "tradeDescription": "NYK traded cash to Boston for Evan Fournier and a 2023 2nd round pick",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "other",
+                    "name": "Cash Considerations",
+                    "acquisitionType": "original",
+                    "tradeDescription": "Cash sent to Boston for Fournier",
+                    "isOrigin": true,
+                    "date": "2021-08-17"
+                  }
+                ]
+              },
+              {
+                "type": "player",
+                "name": "Quentin Grimes",
+                "acquisitionType": "draft-night-trade",
+                "date": "2021-07-30",
+                "draftPick": 25,
+                "draftRound": 1,
+                "tradePartner": "LAC",
+                "tradeDescription": "NYK traded Keon Johnson (#21) to LAC for Quentin Grimes (#25) and a 2024 2nd (DET own)",
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Keon Johnson",
+                    "acquisitionType": "draft",
+                    "date": "2021-07-29",
+                    "draftPick": 21,
+                    "draftRound": 1,
+                    "tradeDescription": "Drafted 21st overall by NYK in 2021",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  }
+                ]
+              },
+              {
+                "type": "player",
+                "name": "Malachi Flynn",
+                "acquisitionType": "trade",
+                "date": "2023-12-30",
+                "tradePartner": "TOR",
+                "tradeDescription": "NYK sent RJ Barrett, Immanuel Quickley, and a 2024 2nd (DET own) to TOR for OG Anunoby, Precious Achiuwa, and Malachi Flynn.",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "RJ Barrett",
+                    "acquisitionType": "draft",
+                    "date": "2019-06-20",
+                    "draftPick": 3,
+                    "draftRound": 1,
+                    "tradeDescription": "Drafted 3rd overall by NYK in 2019",
+                    "isOrigin": true,
+                    "assetsGivenUp": []
+                  },
+                  {
+                    "type": "player",
+                    "name": "Immanuel Quickley",
+                    "acquisitionType": "draft-night-trade",
+                    "date": "2020-11-20",
+                    "draftPick": 25,
+                    "draftRound": 1,
+                    "tradePartner": "OKC",
+                    "tradeDescription": "3-team draft-night trade: NYK traded a 2020 1st to MIN; OKC traded Immanuel Quickley (#25) to NYK",
+                    "isOrigin": false,
+                    "assetsGivenUp": [
+                      {
+                        "type": "pick",
+                        "name": "2020 1st Round Pick (#23)",
+                        "acquisitionType": "original",
+                        "date": "2020-11-20",
+                        "tradeDescription": "NYK's own 2020 1st round pick, traded to Minnesota in the 3-team draft-night deal",
+                        "becamePlayer": "Leandro Bolmaro",
+                        "draftPick": 23,
+                        "draftRound": 1,
+                        "isOrigin": true
+                      }
+                    ]
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2024 2nd Round Pick via DET",
+                    "acquisitionType": "trade",
+                    "date": "2021-07-30",
+                    "tradePartner": "LAC",
+                    "tradeDescription": "Acquired from LAC in the Keon Johnson/Quentin Grimes draft-night trade. Originally DET's 2024 2nd. Sent to Toronto in OG trade.",
+                    "becamePlayer": "Jonathan Mogbo",
+                    "isOrigin": false,
+                    "assetsGivenUp": [
+                      {
+                        "type": "player",
+                        "name": "Keon Johnson",
+                        "acquisitionType": "draft",
+                        "date": "2021-07-29",
+                        "draftPick": 21,
+                        "draftRound": 1,
+                        "tradeDescription": "Drafted 21st overall by NYK in 2021",
+                        "isOrigin": true,
+                        "assetsGivenUp": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "player",
+                "name": "Ryan Arcidiacono",
+                "acquisitionType": "free-agent",
+                "date": "2022-09-17",
+                "tradeDescription": "Signed as free agent",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              },
+              {
+                "type": "other",
+                "name": "Cash Considerations",
+                "acquisitionType": "original",
+                "tradeDescription": "Cash sent to Detroit",
+                "isOrigin": true,
+                "date": "2024-02-08"
+              }
+            ]
+          },
+          {
+            "type": "player",
+            "name": "Mamadi Diakite",
+            "acquisitionType": "free-agent",
+            "date": "2024-03-25",
+            "tradeDescription": "Signed as free agent",
+            "note": "Salary filler in Bridges trade. Signed March 25, 2024.",
             "isOrigin": true,
-            "becamePlayer": "Quinten Post",
-            "draftPick": 52,
-            "note": "NYK's own 2024 second-round pick sent to GSW for DiVincenzo"
+            "assetsGivenUp": []
+          },
+          {
+            "type": "player",
+            "name": "Shake Milton",
+            "acquisitionType": "free-agent",
+            "date": "2024-07-06",
+            "tradeDescription": "Signed and immediately included in Bridges trade as salary filler",
+            "isOrigin": true,
+            "assetsGivenUp": []
           },
           {
             "type": "pick",
-            "name": "2027 Second-Round Pick",
+            "name": "2025 1st Round Pick (#26) via NYK",
             "acquisitionType": "original",
-            "date": "2023-07-06",
-            "tradeDescription": "NYK's own 2027 second-round pick",
+            "date": "2024-07-06",
+            "tradeDescription": "NYK's own first-round pick, unprotected, sent to BKN in Bridges trade",
+            "becamePlayer": "Ben Saraf",
+            "draftPick": 26,
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2025 1st Round Pick (#19) via MIL",
+            "acquisitionType": "trade",
+            "date": "2022-07-06",
+            "tradePartner": "DET",
+            "tradeDescription": "Acquired from Detroit in the Jalen Duren/Kemba Walker trade. Originally Milwaukee's conditional 1st. Sent to BKN in Bridges trade.",
+            "becamePlayer": "Nolan Traoré",
+            "draftPick": 19,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Jalen Duren",
+                "acquisitionType": "draft-night-trade",
+                "date": "2022-06-23",
+                "draftPick": 13,
+                "draftRound": 1,
+                "tradePartner": "CHA",
+                "tradeDescription": "NYK traded 2023 1st (DEN own), three 2023 2nd round picks (OKC own, UTA own, NYK own), and a 2024 2nd (NYK own) to Charlotte for Jalen Duren (#13). Then traded Duren + Kemba Walker to DET on July 6, 2022 for this MIL 2025 1st.",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "pick",
+                    "name": "2023 1st Round Pick (#27)",
+                    "acquisitionType": "trade",
+                    "date": "2022-06-23",
+                    "tradePartner": "DEN",
+                    "tradeDescription": "Denver's 2023 1st round pick, acquired by NYK in a prior trade, sent to Charlotte for Jalen Duren",
+                    "becamePlayer": "Nick Smith Jr.",
+                    "draftPick": 27,
+                    "draftRound": 1,
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2023 2nd Round Pick (#41)",
+                    "acquisitionType": "original",
+                    "date": "2022-06-23",
+                    "tradeDescription": "OKC's 2023 2nd round pick, sent to Charlotte for Duren",
+                    "isOrigin": true,
+                    "becamePlayer": "Amari Bailey"
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2023 2nd Round Pick (#34)",
+                    "acquisitionType": "original",
+                    "date": "2022-06-23",
+                    "tradeDescription": "Utah's 2023 2nd round pick, sent to Charlotte for Duren",
+                    "isOrigin": true,
+                    "becamePlayer": "Colby Jones"
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2023 2nd Round Pick (#39)",
+                    "acquisitionType": "original",
+                    "date": "2022-06-23",
+                    "tradeDescription": "NYK's own 2023 2nd round pick, sent to Charlotte for Duren",
+                    "isOrigin": true,
+                    "becamePlayer": "Mouhamed Gueye"
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2024 2nd Round Pick via NYK",
+                    "acquisitionType": "original",
+                    "date": "2022-06-23",
+                    "tradeDescription": "NYK's own 2024 2nd round pick, sent to Charlotte for Duren",
+                    "becamePlayer": "Cam Spencer",
+                    "isOrigin": true
+                  }
+                ]
+              },
+              {
+                "type": "player",
+                "name": "Kemba Walker",
+                "acquisitionType": "free-agent",
+                "date": "2021-08-10",
+                "tradeDescription": "Signed as free agent. Sent to DET alongside Duren for MIL 2025 1st on July 6, 2022.",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              }
+            ]
+          },
+          {
+            "type": "pick",
+            "name": "2025 2nd Round Pick via BRK",
+            "acquisitionType": "trade",
+            "date": "2022-01-13",
+            "tradePartner": "ATL",
+            "tradeDescription": "Acquired from Atlanta in the Cam Reddish trade. Originally Brooklyn's 2025 2nd. Sent to BKN in Bridges trade.",
+            "isOrigin": false,
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Kevin Knox",
+                "acquisitionType": "draft",
+                "date": "2018-06-21",
+                "draftPick": 9,
+                "draftRound": 1,
+                "tradeDescription": "Part of Kevin Knox + CHA 2022 1st trade to ATL for Reddish + BRK 2025 2nd",
+                "note": "This 2nd was part of the return for Kevin Knox in the Cam Reddish trade with ATL",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              }
+            ],
+            "becamePlayer": "Adou Thiero"
+          },
+          {
+            "type": "pick",
+            "name": "2027 1st Round Pick via NYK",
+            "acquisitionType": "original",
+            "date": "2024-07-06",
+            "tradeDescription": "NYK's own first-round pick, unprotected, sent to BKN in Bridges trade",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2028 1st Round Pick Swap Rights",
+            "acquisitionType": "original",
+            "date": "2024-07-06",
+            "tradeDescription": "BKN gains right to swap 2028 first-round picks with NYK",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2029 1st Round Pick via NYK",
+            "acquisitionType": "original",
+            "date": "2024-07-06",
+            "tradeDescription": "NYK's own first-round pick, unprotected, sent to BKN in Bridges trade",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2031 1st Round Pick via NYK",
+            "acquisitionType": "original",
+            "date": "2024-07-06",
+            "tradeDescription": "NYK's own first-round pick, unprotected, sent to BKN in Bridges trade",
             "isOrigin": true
           }
         ]
       },
       {
-        "type": "player",
-        "name": "Keita Bates-Diop",
-        "acquisitionType": "free-agent",
-        "date": "2023-09-15",
-        "tradeDescription": "Signed as free agent from San Antonio Spurs",
-        "note": "Salary filler, journeyman forward. Free agent = no assets given up",
+        "type": "pick",
+        "name": "2025 1st Round Pick (#17) via DET (conditional)",
+        "acquisitionType": "trade",
+        "date": "2022-06-23",
+        "tradePartner": "OKC",
+        "tradeDescription": "Acquired from OKC in Ousmane Dieng trade. Originally DET's pick. NYK traded Dieng (#11) to OKC for multiple picks including this conditional DET 1st.",
+        "becamePlayer": "Joan Beringer",
+        "draftPick": 17,
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Ousmane Dieng",
+            "acquisitionType": "draft",
+            "date": "2022-06-23",
+            "draftPick": 11,
+            "draftRound": 1,
+            "tradeDescription": "Drafted 11th overall by NYK in 2022, immediately traded to OKC",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "name": "2026 2nd Round Pick via GSW",
+        "acquisitionType": "original",
+        "date": "2024-10-02",
+        "tradeDescription": "Golden State's 2026 second-round pick, sent to Charlotte in KAT 3-team trade",
         "isOrigin": true
       },
       {
         "type": "pick",
-        "name": "2025 First-Round Pick (via DET, protected 1-13)",
-        "acquisitionType": "trade",
-        "date": "2022-02-08",
-        "tradePartner": "DET",
-        "tradeDescription": "Acquired from Detroit in Cam Reddish facilitator deal",
-        "note": "DET's pick conveyed at #17 (outside 1-13 protection). Went to MIN in KAT trade.",
-        "assetsGivenUp": [
-          {
-            "type": "trade-facilitation",
-            "name": "Trade Facilitation Services",
-            "acquisitionType": "roster-management",
-            "date": "2022-02-08",
-            "tradeDescription": "NYK helped facilitate Detroit trade by taking on contracts",
-            "note": "Used roster flexibility to acquire future asset",
-            "assetsGivenUp": [
-              {
-                "type": "roster-spot",
-                "name": "Roster Flexibility",
-                "acquisitionType": "organizational-asset",
-                "date": "2022-02-08",
-                "tradeDescription": "NYK maintained roster flexibility specifically for trade opportunities",
-                "note": "Strategic roster management = organizational resource",
-                "isOrigin": true
-              }
-            ]
-          }
-        ],
-        "becamePlayer": "Joan Beringer",
-        "draftPick": 17
+        "name": "2031 2nd Round Pick via NYK",
+        "acquisitionType": "original",
+        "date": "2024-10-02",
+        "tradeDescription": "NYK's own 2031 second-round pick, sent to Charlotte in KAT 3-team trade",
+        "isOrigin": true
       }
     ]
   }

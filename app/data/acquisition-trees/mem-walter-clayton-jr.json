@@ -3,9 +3,8 @@
     "team": "MEM",
     "player": "Walter Clayton Jr.",
     "source": "Basketball-Reference, ESPN, NBA.com",
-    "originYear": 2025,
-    "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "sourceUrl": "https://www.basketball-reference.com/players/c/claytwa01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,7 +13,7 @@
     "date": "2026-02-03",
     "currentTeam": "MEM",
     "tradePartner": "UTA",
-    "tradeDescription": "8-player trade: Grizzlies got Clayton Jr., Anderson, Hendricks, Niang + 3 first-round picks for JJJ, Konchar, Landale, Williams Jr.",
+    "tradeDescription": "Memphis traded Jaren Jackson Jr., John Konchar, Jock Landale, and Vince Williams Jr. to Utah for Kyle Anderson, Walter Clayton Jr., Taylor Hendricks, Georges Niang, 2027 1st (more favorable conditional), 2027 1st (LAL own), and 2031 1st (PHO own)",
     "note": "Florida guard acquired in Jaren Jackson Jr. trade",
     "assetsGivenUp": [
       {
@@ -30,9 +29,9 @@
       {
         "type": "player",
         "name": "John Konchar",
-        "acquisitionType": "undrafted",
-        "date": "2019-07-01",
-        "note": "Purdue Fort Wayne guard, signed as undrafted free agent",
+        "acquisitionType": "free-agent",
+        "date": "2019-07-08",
+        "note": "Purdue Fort Wayne guard, signed as undrafted free agent to two-way contract",
         "isOrigin": true
       },
       {
@@ -46,9 +45,9 @@
       {
         "type": "player",
         "name": "Vince Williams Jr.",
-        "acquisitionType": "undrafted",
-        "date": "2022-07-01",
-        "note": "VCU guard, signed as undrafted free agent",
+        "acquisitionType": "free-agent",
+        "date": "2022-07-02",
+        "note": "VCU guard, signed as undrafted free agent to two-way contract",
         "isOrigin": true
       }
     ]

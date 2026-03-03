@@ -4,21 +4,36 @@
     "player": "Adem Bona",
     "nbaId": 1641737,
     "espnId": 5105637,
-    "source": "Basketball-Reference/NBA Draft History",
+    "source": "Basketball-Reference",
     "originYear": 2024,
-    "depth": 1,
-    "lastUpdated": "2026-02-16",
-    "accuracy": "high"
+    "depth": 3,
+    "lastUpdated": "2026-03-01",
+    "accuracy": "high",
+    "sourceUrl": "https://www.basketball-reference.com/players/b/bonaad01.html"
   },
   "tree": {
     "type": "player",
     "name": "Adem Bona",
     "acquisitionType": "draft",
-    "date": "2024-06-26",
+    "date": "2024-06-27",
     "currentTeam": "PHI",
     "draftPick": 41,
     "draftRound": 2,
-    "note": "Drafted #41 overall by Philadelphia from UCLA. Signed July 21, 2024.",
-    "isOrigin": true
+    "note": "Drafted #41 overall by Philadelphia from UCLA. Selected with the 2024 2nd round pick acquired from Boston in the Jaden Springer trade (Feb 8, 2024).",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Jaden Springer",
+        "acquisitionType": "draft",
+        "date": "2021-07-29",
+        "draftPick": 28,
+        "draftRound": 1,
+        "tradePartner": "BOS",
+        "tradeDescription": "PHI traded Jaden Springer to Boston for a 2024 2nd round draft pick (Adem Bona was later selected #41). Philadelphia also received a trade exception.",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      }
+    ]
   }
 }

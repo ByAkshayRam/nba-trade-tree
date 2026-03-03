@@ -4,11 +4,12 @@
     "player": "Johni Broome",
     "nbaId": 1641780,
     "espnId": 4433569,
-    "source": "Basketball-Reference/NBA Draft History",
+    "source": "Basketball-Reference",
     "originYear": 2025,
-    "depth": 1,
-    "lastUpdated": "2026-02-16",
-    "accuracy": "high"
+    "depth": 3,
+    "lastUpdated": "2026-03-01",
+    "accuracy": "high",
+    "sourceUrl": "https://www.basketball-reference.com/players/b/broomjo01.html"
   },
   "tree": {
     "type": "player",
@@ -18,7 +19,20 @@
     "currentTeam": "PHI",
     "draftPick": 35,
     "draftRound": 2,
-    "note": "Drafted #35 overall by Philadelphia from Auburn. Selected with the 2025 2nd round pick acquired from Dallas in the Caleb Martin/Quentin Grimes trade.",
-    "isOrigin": true
+    "tradeDescription": "Drafted #35 overall by Philadelphia from Auburn. Selected with the 2025 2nd round pick acquired from Dallas in the Caleb Martin/Quentin Grimes trade (Feb 4, 2025).",
+    "isOrigin": false,
+    "assetsGivenUp": [
+      {
+        "type": "player",
+        "name": "Caleb Martin",
+        "acquisitionType": "free-agent",
+        "date": "2024-07-06",
+        "tradePartner": "DAL",
+        "tradeDescription": "PHI traded Caleb Martin to DAL for Quentin Grimes and this 2025 2nd round pick (#35, became Johni Broome). Dallas also received a trade exception.",
+        "note": "Signed as free agent from Miami Heat. Sent to Dallas Feb 4, 2025.",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      }
+    ]
   }
 }

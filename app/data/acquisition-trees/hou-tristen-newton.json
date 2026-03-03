@@ -2,18 +2,18 @@
   "_meta": {
     "team": "HOU",
     "player": "Tristen Newton",
-    "source": "ESPN, NBA.com, Basketball-Reference",
-    "originYear": 2024,
-    "depth": 1,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/n/newtotr01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Tristen Newton",
-    "acquisitionType": "undrafted",
+    "acquisitionType": "free-agent",
     "date": "2024-07-01",
     "currentTeam": "HOU",
-    "note": "UConn guard, undrafted free agent. Two-way contract (2 years)",
-    "isOrigin": true
+    "note": "UConn guard, undrafted free agent. Two-way contract",
+    "isOrigin": true,
+    "assetsGivenUp": []
   }
 }

@@ -2,10 +2,9 @@
   "_meta": {
     "team": "MIA",
     "player": "Terry Rozier",
-    "source": "ESPN, Basketball-Reference - Feb 2026",
-    "originYear": 2019,
-    "depth": 5,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/r/roziete01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,47 +13,125 @@
     "date": "2024-01-23",
     "currentTeam": "MIA",
     "tradePartner": "CHA",
-    "tradeDescription": "MIA sent Kyle Lowry and 2027 lottery-protected 1st round pick to CHA for Terry Rozier",
-    "note": "Traded from Charlotte for Lowry and a protected 1st",
+    "tradeDescription": "MIA sent Kyle Lowry and 2027 1st round pick (MIA own) to CHA for Terry Rozier. Miami also received a trade exception.",
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Kyle Lowry",
-        "acquisitionType": "trade",
+        "acquisitionType": "sign-and-trade",
         "date": "2021-08-06",
         "tradePartner": "TOR",
-        "tradeDescription": "Sign-and-trade. MIA sent Goran Dragic, Precious Achiuwa, and a future 2nd round pick to TOR",
-        "note": "Sign-and-trade from Toronto",
+        "tradeDescription": "Sign-and-trade: MIA sent Precious Achiuwa and Goran Dragic to TOR for Kyle Lowry. Toronto also received a trade exception.",
         "assetsGivenUp": [
           {
             "type": "player",
             "name": "Goran Dragic",
-            "note": "Sent to TOR. Signed as free agent by MIA in 2015",
-            "isOrigin": true,
-            "acquisitionType": "free-agent"
+            "acquisitionType": "trade",
+            "date": "2015-02-19",
+            "tradePartner": "PHX",
+            "note": "Acquired from PHX in 3-team trade Feb 2015. Sent to TOR.",
+            "assetsGivenUp": [
+              {
+                "type": "player",
+                "name": "Danny Granger",
+                "acquisitionType": "free-agent",
+                "date": "2014-07-14",
+                "note": "Signed by MIA July 2014. Sent to PHX.",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              },
+              {
+                "type": "player",
+                "name": "Norris Cole",
+                "acquisitionType": "trade",
+                "date": "2011-06-23",
+                "note": "Guard from Cleveland State. Won back-to-back titles with LeBron in Miami (2012, 2013). Part of a draft-night 3-way shuffle between CHI, MIN, and MIA.",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "player",
+                    "name": "Bojan Bogdanovic",
+                    "acquisitionType": "draft",
+                    "date": "2011-06-23",
+                    "draftRound": 2,
+                    "draftPick": 31,
+                    "note": "Drafted 31st overall by Miami. Draft-and-stash who never played for MIA \u2014 rights immediately traded to MIN for Norris Cole.",
+                    "isOrigin": false,
+                    "assetsGivenUp": [
+                      {
+                        "type": "pick",
+                        "name": "2011 2nd Round Pick (#31)",
+                        "acquisitionType": "trade",
+                        "date": "2010-07-12",
+                        "tradePartner": "MIN",
+                        "tradeDescription": "MIN trades 2011 2nd round pick (future), cash, and 2014 2nd round pick (Markel Brown) to MIA for Michael Beasley",
+                        "becamePlayer": "Bojan Bogdanovic",
+                        "note": "Pick acquired from Minnesota in the Michael Beasley trade.",
+                        "isOrigin": false,
+                        "assetsGivenUp": [
+                          {
+                            "type": "player",
+                            "name": "Michael Beasley",
+                            "acquisitionType": "draft",
+                            "date": "2008-06-26",
+                            "draftRound": 1,
+                            "draftPick": 2,
+                            "note": "Drafted #2 overall by Miami in 2008. Traded to Minnesota after 2 seasons.",
+                            "isOrigin": true,
+                            "assetsGivenUp": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "draftRound": 2,
+                "draftPick": 28,
+                "tradePartner": "MIN",
+                "tradeDescription": "MIA trades Bojan Bogdanovic (#31 pick) to MIN for Norris Cole. Cole was drafted #28 by CHI, traded to MIN with Malcolm Lee + cash for Nikola Mirotic rights, then immediately flipped to MIA."
+              },
+              {
+                "type": "pick",
+                "name": "2017 1st Round Pick",
+                "acquisitionType": "own",
+                "note": "MIA own pick. Sent to PHX.",
+                "isOrigin": true,
+                "assetsGivenUp": [],
+                "becamePlayer": "Did not convey"
+              },
+              {
+                "type": "pick",
+                "name": "2021 1st Round Pick (#18, MIA own)",
+                "acquisitionType": "own",
+                "becamePlayer": "Tre Mann",
+                "note": "MIA's own 2021 1st round pick, sent in the Kyle Lowry sign-and-trade.",
+                "isOrigin": true,
+                "assetsGivenUp": [],
+                "date": "2021-08-06"
+              }
+            ],
+            "tradeDescription": "3-team trade: PHX sent Goran Dragic and Zoran Dragic to MIA; MIA sent Danny Granger, 2017 1st and 2021 1st to PHX, and Norris Cole, Justin Hamilton, Shawne Williams to NOP; NOP sent John Salmons to PHX."
           },
           {
             "type": "player",
             "name": "Precious Achiuwa",
-            "note": "Sent to TOR. Drafted 20th overall by MIA in 2020",
+            "acquisitionType": "draft",
+            "date": "2020-11-18",
+            "note": "Drafted 20th overall by MIA in 2020. Sent to TOR.",
             "isOrigin": true,
-            "acquisitionType": "free-agent"
-          },
-          {
-            "type": "pick",
-            "details": "2025 2nd Round Pick",
-            "note": "Sent to TOR in Lowry S&T. Subsequently traded by Toronto.",
-            "isOrigin": true,
-            "name": "2025 2nd Round Pick"
+            "assetsGivenUp": [],
+            "draftRound": 1,
+            "draftPick": 20
           }
         ]
       },
       {
         "type": "pick",
-        "details": "2027 1st Round Pick (lottery-protected)",
-        "note": "MIA own pick, sent to CHA",
+        "name": "2027 1st Round Pick",
+        "acquisitionType": "own",
+        "note": "MIA own pick, sent to CHA.",
         "isOrigin": true,
-        "name": "2027 1st Round Pick (lottery-protected)"
+        "assetsGivenUp": []
       }
     ]
   }

@@ -5,7 +5,8 @@
     "source": "Basketball-Reference",
     "originYear": 2025,
     "depth": 2,
-    "lastUpdated": "2026-02-16"
+    "lastUpdated": "2026-03-01",
+    "sourceUrl": "https://www.basketball-reference.com/players/t/thierad01.html"
   },
   "tree": {
     "type": "player",
@@ -27,14 +28,26 @@
         "note": "Australian center, acquired from Bulls day before 7-team trade",
         "assetsGivenUp": [
           {
-            "type": "player",
-            "name": "Lachlan Olbrich",
-            "acquisitionType": "draft",
-            "date": "2025-06-25",
-            "draftPick": 55,
+            "type": "pick",
+            "name": "2025 2nd Round Pick (#36)",
+            "acquisitionType": "trade",
+            "date": "2025-07-06",
+            "draftPick": 36,
             "draftRound": 2,
-            "note": "Drafted 55th overall by Lakers in 2025 NBA Draft",
-            "isOrigin": true
+            "tradePartner": "BKN",
+            "tradeDescription": "Lakers acquired pick #36 (Lachlan Olbrich) from Nets as part of a 7-team trade involving Kevin Durant to Houston, Jalen Green to Phoenix, and others",
+            "becamePlayer": "Lachlan Olbrich",
+            "note": "Pick originally BKN own; traded to ATL (2018, Jeremy Lin trade), to NYK (2022, Cam Reddish trade), back to BKN (2024, Mikal Bridges trade), then to LAL in 7-team trade",
+            "assetsGivenUp": [
+              {
+                "type": "other",
+                "name": "Cash Considerations",
+                "acquisitionType": "free-agent",
+                "note": "Cash sent to Timberwolves as part of 7-team trade",
+                "isOrigin": true,
+                "assetsGivenUp": []
+              }
+            ]
           }
         ]
       }

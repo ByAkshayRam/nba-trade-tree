@@ -3,9 +3,8 @@
     "team": "SAC",
     "player": "Nique Clifford",
     "source": "Basketball-Reference SAC 2024-25 Transactions",
-    "originYear": 2024,
-    "depth": 2,
-    "lastUpdated": "2026-02-17"
+    "sourceUrl": "https://www.basketball-reference.com/players/c/cliffni01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -19,11 +18,12 @@
     "assetsGivenUp": [
       {
         "type": "pick",
-        "name": "2027 1st Round Pick (SAC, protected)",
-        "acquisitionType": "original",
+        "name": "2027 1st Round Pick",
+        "acquisitionType": "own",
         "date": "2025-06-25",
         "note": "Sacramento's own 1st round pick, protected",
-        "isOrigin": true
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

@@ -2,10 +2,9 @@
   "_meta": {
     "team": "CLE",
     "player": "Larry Nance Jr.",
-    "source": "ESPN, Wikipedia, NBA.com, Hoops Rumors verified",
-    "originYear": 2015,
-    "depth": 2,
-    "lastUpdated": "2026-02-15"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/n/nancela02.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -13,18 +12,8 @@
     "acquisitionType": "free-agent",
     "date": "2025-07-06",
     "currentTeam": "CLE",
-    "note": "Forward signed one-year free agent contract, returning to Cleveland | 1yr/$3.6M (vet min)",
-    "isOrigin": false,
-    "assetsGivenUp": [],
-    "tradeChain": {
-      "type": "player",
-      "name": "Larry Nance Jr.",
-      "acquisitionType": "draft",
-      "date": "2015-06-25",
-      "draftPick": 27,
-      "draftRound": 1,
-      "note": "Forward drafted 27th overall by Los Angeles Lakers from Wyoming",
-      "isOrigin": true
-    }
+    "note": "Forward signed one-year free agent contract, returning to Cleveland. 1yr/$3.6M (vet min)",
+    "isOrigin": true,
+    "assetsGivenUp": []
   }
 }

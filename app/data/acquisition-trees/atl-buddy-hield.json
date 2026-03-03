@@ -11,7 +11,7 @@
     "type": "player",
     "name": "Buddy Hield",
     "acquisitionType": "trade",
-    "date": "2026-02-06",
+    "date": "2026-02-05",
     "currentTeam": "ATL",
     "tradePartner": "GSW",
     "tradeDescription": "Hawks trade Porzingis to Warriors for Kuminga and Buddy Hield",
@@ -23,27 +23,113 @@
         "acquisitionType": "trade",
         "date": "2025-07-07",
         "tradePartner": "BOS",
-        "tradeDescription": "3-team trade: Hawks got Porzingis from Celtics, sent Niang to BOS, Mann + #22 pick to BKN",
+        "tradeDescription": "3-team trade: Hawks got Porzingis from Celtics, sent Niang + 2031 CLE 2nd to BOS, Mann + Drake Powell to BKN",
         "note": "2024 NBA Champion with Celtics, 7'2\" unicorn",
         "assetsGivenUp": [
           {
             "type": "player",
             "name": "Georges Niang",
             "acquisitionType": "trade",
-            "date": "2025-02-07",
+            "date": "2025-02-06",
             "tradePartner": "CLE",
-            "tradeDescription": "Hawks traded De'Andre Hunter to Cavaliers for Niang, Caris LeVert, 3 second-round picks, and 2 pick swaps",
+            "tradeDescription": "Hawks traded De'Andre Hunter to Cavaliers for Niang and Caris LeVert. Cleveland also received a trade exception.",
             "note": "The Minivan - stretch four, career 40% 3PT shooter. Sent to BOS in Porzingis deal.",
             "assetsGivenUp": [
               {
                 "type": "player",
                 "name": "De'Andre Hunter",
-                "acquisitionType": "draft",
+                "acquisitionType": "draft-night-trade",
                 "date": "2019-06-20",
                 "draftPick": 4,
                 "draftRound": 1,
-                "note": "Virginia product, #4 overall pick 2019. Atlanta's own draft pick.",
-                "isOrigin": true
+                "tradePartner": "NOP",
+                "tradeDescription": "Hawks traded picks #8, #17, #35, CLE 2021 2nd, and CLE 2022 2nd to Pelicans for #4 pick (used on Hunter), Solomon Hill, #57, and a 2023 2nd. Pick originally from LAL via Anthony Davis trade.",
+                "note": "Virginia product, #4 overall. Pick originated with Lakers, went to Pelicans in AD trade, then to Atlanta in draft-night deal.",
+                "isOrigin": false,
+                "assetsGivenUp": [
+                  {
+                    "type": "pick",
+                    "name": "2019 1st Round Pick (#8)",
+                    "becamePlayer": "Jaxson Hayes",
+                    "acquisitionType": "original",
+                    "date": "2019-06-20",
+                    "note": "Atlanta's own pick, sent to NOP in Hunter draft-night trade.",
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2019 1st Round Pick (#17) via BKN",
+                    "becamePlayer": "Nickeil Alexander-Walker",
+                    "acquisitionType": "trade",
+                    "tradePartner": "BKN",
+                    "date": "2019-06-06",
+                    "tradeDescription": "Hawks traded Taurean Prince and a 2021 2nd-round pick to Nets for Allen Crabbe, the #17 pick, and a protected 2020 1st-round pick.",
+                    "note": "Originally Brooklyn's own 1st-round pick. Sent to NOP in Hunter draft-night trade.",
+                    "isOrigin": false,
+                    "assetsGivenUp": [
+                      {
+                        "type": "player",
+                        "name": "Taurean Prince",
+                        "acquisitionType": "draft-night-trade",
+                        "date": "2016-07-07",
+                        "draftPick": 12,
+                        "draftRound": 1,
+                        "tradePartner": "UTA",
+                        "tradeDescription": "3-team trade: ATL sent Jeff Teague to IND, IND sent George Hill to UTA, UTA sent #12 pick (Prince) to ATL.",
+                        "note": "Baylor product, drafted 12th by Utah. ATL acquired via 3-team deal on draft night. Sent to BKN in 2019 for #17 pick.",
+                        "isOrigin": false,
+                        "assetsGivenUp": [
+                          {
+                            "type": "player",
+                            "name": "Jeff Teague",
+                            "acquisitionType": "draft",
+                            "date": "2009-06-25",
+                            "draftPick": 19,
+                            "draftRound": 1,
+                            "note": "Hawks' own pick, 19th overall in 2009. 3x All-Star with ATL. Sent to IND in 3-team deal that brought Taurean Prince.",
+                            "isOrigin": true
+                          }
+                        ]
+                      },
+                      {
+                        "type": "pick",
+                        "name": "2021 2nd Round Pick (#49)",
+                        "becamePlayer": "Marcus Zegarowski",
+                        "acquisitionType": "original",
+                        "date": "2019-06-06",
+                        "note": "Atlanta's own 2021 2nd-round pick (#49). Sent to Brooklyn as part of the Taurean Prince trade. BKN used it to draft Zegarowski (Creighton).",
+                        "isOrigin": true
+                      }
+                    ]
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2019 2nd Round Pick (#35)",
+                    "becamePlayer": "Marcos Louzada Silva",
+                    "acquisitionType": "original",
+                    "date": "2019-06-20",
+                    "note": "Atlanta's own pick, sent to NOP in Hunter draft-night trade.",
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2021 2nd Round Pick (#35) via CLE",
+                    "becamePlayer": "Herbert Jones",
+                    "acquisitionType": "trade",
+                    "date": "2019-06-20",
+                    "note": "CLE's 2021 2nd, acquired by ATL in Korver trade (2017), sent to NOP in Hunter draft-night trade.",
+                    "isOrigin": true
+                  },
+                  {
+                    "type": "pick",
+                    "name": "2022 2nd Round Pick (#47) via CLE",
+                    "becamePlayer": "Vince Williams Jr.",
+                    "acquisitionType": "trade",
+                    "date": "2019-06-20",
+                    "note": "CLE's 2022 2nd (#47), acquired by ATL in Korver trade (2017), sent to NOP in Hunter draft-night trade. NOP re-routed to MEM, who drafted Vince Williams Jr.",
+                    "isOrigin": true
+                  }
+                ]
               }
             ]
           },
@@ -53,12 +139,12 @@
             "acquisitionType": "trade",
             "date": "2025-02-06",
             "tradePartner": "LAC",
-            "tradeDescription": "Hawks traded Bogdan Bogdanovi\u0107 + 3 second-round picks to Clippers for Mann and Bones Hyland",
+            "tradeDescription": "Hawks traded Bogdan Bogdanović and a 2025 2nd round draft pick (MIN own, became Mohamed Diawara) to Clippers for Mann and Bones Hyland",
             "note": "Versatile wing, 2021 playoff hero vs Utah. Sent to BKN in Porzingis deal.",
             "assetsGivenUp": [
               {
                 "type": "player",
-                "name": "Bogdan Bogdanovi\u0107",
+                "name": "Bogdan Bogdanović",
                 "acquisitionType": "free-agent",
                 "date": "2020-11-21",
                 "note": "Signed via sign-and-trade from Sacramento Kings, 4-year $72M deal",
@@ -66,35 +152,32 @@
               },
               {
                 "type": "pick",
-                "name": "2025 MIN #31 Pick",
-                "becamePlayer": "Rasheer Fleming",
-                "acquisitionType": "original",
-                "note": "Minnesota's 2025 2nd-round pick, sent to LAC in Mann trade",
-                "isOrigin": true
-              },
-              {
-                "type": "pick",
-                "name": "2026 MEM 2nd Round Pick (protected 43-60)",
-                "acquisitionType": "original",
-                "note": "Memphis' 2026 2nd-round pick, protected 43-60, sent to LAC in Mann trade",
-                "isOrigin": true
-              },
-              {
-                "type": "pick",
-                "name": "2027 LAC 2nd Round Pick",
-                "acquisitionType": "original",
-                "note": "Clippers' own 2027 2nd-round pick, sent to LAC in Mann trade",
+                "name": "2025 2nd Round Pick (#31) via MIN",
+                "becamePlayer": "Mohamed Diawara",
+                "acquisitionType": "trade",
+                "date": "2023-07-08",
+                "tradePartner": "HOU",
+                "tradeDescription": "Acquired from Houston in 5-team trade involving Dillon Brooks",
+                "note": "Minnesota's 2025 2nd-round pick, acquired by ATL via HOU in 5-team trade July 2023. Sent to LAC in Mann trade.",
                 "isOrigin": true
               }
             ]
           },
           {
             "type": "pick",
-            "name": "2025 #22 Pick",
+            "name": "2025 1st Round Pick (#22)",
             "becamePlayer": "Drake Powell",
             "acquisitionType": "original",
             "date": "2025-06-26",
-            "note": "Hawks' own 2025 first-round pick, sent to Brooklyn in Porzingis 3-team deal",
+            "note": "Hawks' own 2025 first-round pick. ATL drafted Drake Powell #22, then traded him to Brooklyn in Porzingis 3-team deal.",
+            "isOrigin": true
+          },
+          {
+            "type": "pick",
+            "name": "2031 2nd Round Pick via CLE",
+            "acquisitionType": "trade",
+            "date": "2025-07-07",
+            "note": "Cleveland's 2031 2nd-round pick, sent to Boston in Porzingis 3-team deal.",
             "isOrigin": true
           }
         ]

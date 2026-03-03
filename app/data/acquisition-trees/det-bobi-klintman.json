@@ -2,33 +2,29 @@
   "_meta": {
     "team": "DET",
     "player": "Bobi Klintman",
-    "source": "NBA Draft records - June 2023 draft",
-    "originYear": 2023,
-    "depth": 1,
-    "lastUpdated": "2026-02-15"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/k/klintbo01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
     "name": "Bobi Klintman",
     "acquisitionType": "trade",
-    "date": "2024-06-27",
+    "date": "2024-07-06",
     "currentTeam": "DET",
-    "draftPick": 37,
-    "draftRound": 2,
-    "note": "Forward from Wake Forest, drafted 37th overall by Minnesota, traded to Detroit",
-    "isOrigin": false,
     "tradePartner": "MIN",
-    "tradeDescription": "Pistons acquired Klintman (#37) and Wendell Moore Jr. from Timberwolves for #53 pick, future pick, and cash",
+    "tradeDescription": "4-team trade: MIN traded Bobi Klintman and Wendell Moore Jr. to DET; DET traded Cam Spencer to MEM; MEM traded Ulrich Chomche to TOR and a 2030 2nd round pick to MIN; TOR traded to MIN",
     "assetsGivenUp": [
       {
-        "type": "pick",
-        "name": "2024 DET 2nd Round Pick (#53)",
-        "acquisitionType": "original",
+        "type": "player",
+        "name": "Cam Spencer",
+        "acquisitionType": "draft",
         "date": "2024-06-27",
-        "note": "Pistons' own second-round pick sent to Minnesota",
+        "draftPick": 53,
+        "draftRound": 2,
+        "tradeDescription": "Drafted 53rd overall by Detroit in the 2024 NBA Draft with a pick acquired from Philadelphia (originally NYK's pick)",
         "isOrigin": true,
-        "becamePlayer": "Cam Spencer",
-        "draftPick": 53
+        "assetsGivenUp": []
       }
     ]
   }

@@ -2,27 +2,35 @@
   "_meta": {
     "team": "ATL",
     "player": "Nickeil Alexander-Walker",
-    "source": "NBA/ESPN Trade History",
-    "originYear": 2024,
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/teams/ATL/2026_transactions.html",
+    "originYear": 2025,
     "depth": 2,
-    "lastUpdated": "2026-02-14"
+    "lastUpdated": "2026-03-02"
   },
   "tree": {
     "type": "player",
     "name": "Nickeil Alexander-Walker",
     "acquisitionType": "trade",
-    "date": "2024-02-08",
+    "date": "2025-07-06",
     "currentTeam": "ATL",
     "tradePartner": "MIN",
-    "tradeDescription": "Hawks acquire NAW from Timberwolves",
-    "note": "Canadian guard, scoring spark off the bench",
+    "tradeDescription": "Hawks traded cash and a 2027 2nd round draft pick (CLE own) to Timberwolves for Nickeil Alexander-Walker.",
+    "note": "Canadian guard, scoring spark off the bench. Minnesota also received a trade exception.",
     "assetsGivenUp": [
       {
         "type": "pick",
-        "name": "2029 2nd Round Pick",
+        "name": "2027 2nd Round Pick via CLE",
+        "acquisitionType": "trade",
+        "date": "2025-07-06",
+        "note": "Cleveland's 2027 2nd-round pick, sent to Minnesota in NAW trade.",
+        "isOrigin": true
+      },
+      {
+        "type": "other",
+        "name": "Cash Considerations",
         "acquisitionType": "original",
-        "date": "2024-02-08",
-        "tradeDescription": "Hawks own 2029 2nd sent to Minnesota",
+        "note": "Cash sent to Minnesota.",
         "isOrigin": true
       }
     ]

@@ -2,10 +2,9 @@
   "_meta": {
     "team": "DET",
     "player": "Caris LeVert",
-    "source": "ESPN, Shams Charania, Basketball-Reference - July 2025 free agent signing",
-    "originYear": 2016,
-    "depth": 1,
-    "lastUpdated": "2026-02-15"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/l/leverca01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -13,17 +12,8 @@
     "acquisitionType": "free-agent",
     "date": "2025-07-07",
     "currentTeam": "DET",
-    "note": "Michigan guard, signed 2-year $29M contract as free agent",
-    "isOrigin": false,
-    "tradeChain": {
-      "type": "player",
-      "name": "Caris LeVert",
-      "acquisitionType": "draft",
-      "date": "2016-06-23",
-      "draftPick": 20,
-      "draftRound": 1,
-      "note": "Guard from University of Michigan, drafted 20th overall by Indiana Pacers in 2016",
-      "isOrigin": true
-    }
+    "tradeDescription": "Signed as a free agent",
+    "isOrigin": true,
+    "assetsGivenUp": []
   }
 }

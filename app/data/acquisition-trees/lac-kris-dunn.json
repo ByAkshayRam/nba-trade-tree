@@ -2,10 +2,9 @@
   "_meta": {
     "team": "LAC",
     "player": "Kris Dunn",
-    "source": "NBA.com, Wikipedia, Deseret News",
-    "originYear": 2016,
-    "depth": 3,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/d/dunnkr01.html",
+    "lastUpdated": "2026-03-02"
   },
   "tree": {
     "type": "player",
@@ -14,37 +13,47 @@
     "date": "2024-07-18",
     "currentTeam": "LAC",
     "tradePartner": "UTA",
-    "tradeDescription": "Sign-and-trade from Jazz for Russell Westbrook and assets",
-    "note": "3-year, $17 million deal, defensive guard",
+    "tradeDescription": "Sign-and-trade from Jazz: LAC sent Russell Westbrook, Balsa Koprivica draft rights, cash, and a 2030 2nd round pick swap to UTA for Kris Dunn",
+    "note": "Defensive guard, sign-and-trade deal",
     "isOrigin": false,
     "assetsGivenUp": [
       {
         "type": "player",
         "name": "Russell Westbrook",
         "acquisitionType": "free-agent",
-        "date": "2023-07-01",
-        "note": "Former MVP point guard",
-        "isOrigin": true
+        "date": "2023-07-06",
+        "note": "Signed multi-year contract",
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "pick",
-        "name": "2030 2nd Round Pick Swap",
-        "acquisitionType": "original",
-        "date": "2030-06-26",
-        "note": "Right to swap second-round picks",
-        "isOrigin": true
-      },
-      {
-        "type": "other",
-        "name": "Draft Rights to Balsa Koprivica",
-        "note": "International draft rights",
-        "isOrigin": true
+        "name": "2021 2nd Round Pick (#57)",
+        "acquisitionType": "draft",
+        "date": "2024-07-18",
+        "draftPick": 57,
+        "draftRound": 2,
+        "becamePlayer": "Balsa Koprivica",
+        "note": "Draft rights originally CHA #57 (2021), traded to DET; LAC acquired rights and sent to UTA in Dunn S&T",
+        "isOrigin": true,
+        "assetsGivenUp": []
       },
       {
         "type": "other",
         "name": "Cash Considerations",
-        "note": "Cash sent in sign-and-trade",
-        "isOrigin": true
+        "acquisitionType": "free-agent",
+        "note": "Cash sent to Utah",
+        "isOrigin": true,
+        "assetsGivenUp": []
+      },
+      {
+        "type": "pick",
+        "name": "2030 2nd Round Pick Swap",
+        "acquisitionType": "draft",
+        "becamePlayer": "Did not convey",
+        "note": "Right to swap second-round picks, sent to Utah",
+        "isOrigin": true,
+        "assetsGivenUp": []
       }
     ]
   }

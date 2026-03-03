@@ -2,10 +2,9 @@
   "_meta": {
     "team": "CHI",
     "player": "Noa Essengue",
-    "source": "ESPN, SI, Bleacher Report",
-    "originYear": 2011,
-    "depth": 5,
-    "lastUpdated": "2026-02-15"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/e/essenno01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -15,16 +14,17 @@
     "currentTeam": "CHI",
     "draftPick": 12,
     "draftRound": 1,
-    "note": "French forward, drafted with CHI's own pick reacquired from Sacramento",
+    "note": "French forward, drafted 12th overall in 2025 NBA Draft with CHI's own pick reacquired from SAS",
     "assetsGivenUp": [
       {
         "type": "pick",
-        "name": "2025 CHI 1st Round Pick (#12)",
+        "name": "2025 1st Round Pick (#12) via CHI (reacquired)",
         "acquisitionType": "trade",
-        "date": "2025-02-02",
-        "tradePartner": "SAC",
+        "date": "2025-02-03",
+        "tradePartner": "SAS",
         "becamePlayer": "Noa Essengue",
-        "tradeDescription": "Bulls reacquired their own 2025 1st (originally sent to SAC in DeRozan sign-and-trade) as part of the LaVine/Fox 3-team mega-deal",
+        "tradeDescription": "3-team trade: Bulls traded Zach LaVine and a 2028 2nd round pick to Kings; Kings traded Kevin Huerter to Bulls; Kings traded De'Aaron Fox and Jordan McLaughlin to Spurs; Spurs traded Zach Collins, Tre Jones and a 2025 1st round pick (CHI own, originally sent to SAS in DeRozan S&T) to Bulls.",
+        "note": "CHI's own 2025 1st, originally sent to SAS in Aug 2021 DeRozan sign-and-trade, reacquired in Feb 2025 LaVine mega-deal",
         "assetsGivenUp": [
           {
             "type": "player",
@@ -32,7 +32,7 @@
             "acquisitionType": "trade",
             "date": "2017-06-22",
             "tradePartner": "MIN",
-            "tradeDescription": "Bulls traded Jimmy Butler to Timberwolves for Zach LaVine, Kris Dunn, and the 7th pick (Lauri Markkanen)",
+            "tradeDescription": "Bulls traded Jimmy Butler and Justin Patton to Timberwolves for Zach LaVine, Kris Dunn, and Lauri Markkanen",
             "assetsGivenUp": [
               {
                 "type": "player",
@@ -42,9 +42,19 @@
                 "draftPick": 30,
                 "draftRound": 1,
                 "note": "Drafted 30th overall by Chicago Bulls from Marquette in 2011 NBA Draft",
-                "isOrigin": true
+                "isOrigin": true,
+                "assetsGivenUp": []
               }
             ]
+          },
+          {
+            "type": "pick",
+            "name": "2028 2nd Round Pick via CHI",
+            "acquisitionType": "own",
+            "date": "2025-02-03",
+            "note": "Chicago's own 2028 2nd round pick, sent to SAC in LaVine mega-deal",
+            "isOrigin": true,
+            "assetsGivenUp": []
           }
         ]
       }

@@ -2,10 +2,9 @@
   "_meta": {
     "team": "CHA",
     "player": "Liam McNeeley",
-    "source": "ESPN/NBA Trade History - Feb 2026",
-    "originYear": 2022,
-    "depth": 2,
-    "lastUpdated": "2026-02-11"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/m/mcneeli01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -14,8 +13,8 @@
     "date": "2025-06-30",
     "currentTeam": "CHA",
     "tradePartner": "PHX",
-    "tradeDescription": "Acquired from Phoenix in Mark Williams trade",
-    "note": "UConn wing, drafted 29th overall by Phoenix in 2025",
+    "tradeDescription": "Hornets traded Mark Williams and 2029 2nd (PHO own) to Suns for Liam McNeeley (draft rights, #29 pick), Vasilije Micic, and 2029 1st (least favorable). Phoenix also received a trade exception.",
+    "note": "UConn wing, drafted 29th overall by Phoenix in 2025 NBA Draft",
     "assetsGivenUp": [
       {
         "type": "player",
@@ -24,9 +23,40 @@
         "date": "2022-06-23",
         "draftPick": 15,
         "draftRound": 1,
-        "note": "Hornets' own pick, promising young center",
-        "tradeDescription": "Drafted by Hornets with 15th overall pick",
+        "note": "Duke center, Hornets drafted him 15th overall in 2022",
+        "tradeDescription": "Drafted by Hornets with 15th overall pick in 2022 NBA Draft",
         "isOrigin": true
+      },
+      {
+        "type": "pick",
+        "name": "2029 2nd Round Pick via PHO",
+        "acquisitionType": "trade",
+        "tradePartner": "PHX",
+        "date": "2025-01-15",
+        "tradeDescription": "Hornets traded Nick Richards and 2025 2nd (least favorable) to Suns for Josh Okogie, 2026 2nd (DEN own), 2029 2nd (PHO own), and 2031 2nd (PHO own).",
+        "note": "Originally PHO own pick. Sent back to PHX in McNeeley trade.",
+        "assetsGivenUp": [
+          {
+            "type": "player",
+            "name": "Nick Richards",
+            "acquisitionType": "trade",
+            "date": "2020-11-19",
+            "tradePartner": "NOP",
+            "tradeDescription": "Hornets traded 2024 2nd (CHO own, #44 Tyler Kolek) to Pelicans for Nick Richards.",
+            "note": "Kentucky center, acquired on draft night 2020",
+            "assetsGivenUp": [
+              {
+                "type": "pick",
+                "name": "2024 2nd Round Pick (#44)",
+                "becamePlayer": "Tyler Kolek",
+                "acquisitionType": "original",
+                "date": "2020-11-19",
+                "note": "Hornets' own 2024 2nd-round pick, sent to NOP for Nick Richards",
+                "isOrigin": true
+              }
+            ]
+          }
+        ]
       }
     ]
   }

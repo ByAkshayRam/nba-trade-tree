@@ -2,10 +2,9 @@
   "_meta": {
     "team": "DEN",
     "player": "Bruce Brown",
-    "source": "ESPN, Basketball-Reference, NBA.com, Wikipedia",
-    "originYear": 2018,
-    "depth": 8,
-    "lastUpdated": "2026-02-16"
+    "source": "Basketball-Reference",
+    "sourceUrl": "https://www.basketball-reference.com/players/b/brownbr01.html",
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -13,7 +12,7 @@
     "acquisitionType": "free-agent",
     "date": "2025-07-09",
     "currentTeam": "DEN",
-    "note": "Guard signed as free agent, returning to Denver for second stint. Signed 1yr/$3.08M (vet min)",
+    "note": "Signed as free agent, returning to Denver for second stint",
     "isOrigin": true,
     "assetsGivenUp": []
   }
