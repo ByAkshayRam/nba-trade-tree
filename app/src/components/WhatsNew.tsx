@@ -10,6 +10,22 @@ interface ChangelogEntry {
 
 const changelog: ChangelogEntry[] = [
   {
+    date: "Mar 22, 2026",
+    version: "0.8.0",
+    items: [
+      { type: "feature", text: "Redesigned homepage — browse all 30 teams by conference, see trending stories" },
+      { type: "feature", text: "Longest Active Chains leaderboard — discover the NBA's deepest trade chains at a glance" },
+      { type: "feature", text: "Clickable trade partner names — jump between connected teams instantly" },
+      { type: "data", text: "Major data audit across all 30 teams — hundreds of chain corrections verified against Basketball Reference" },
+      { type: "data", text: "OKC: Extended SGA, Jalen Williams, and Jared McCain chains with full draft-night trade history" },
+      { type: "data", text: "PHX: Fixed Dragić-era chains — Royce O'Neal, Dillon Brooks, Koby Brea trace back correctly" },
+      { type: "data", text: "NOP: Extended Jordan Poole, Saddiq Bey, and Micah Peavy chains through CJ McCollum/Brandon Ingram ancestry" },
+      { type: "data", text: "CLE: Rebuilt Dennis Schröder chain — now traces 17 levels deep to Terrell Brandon (1991)" },
+      { type: "data", text: "ORL: Extended Franz Wagner and Wendell Carter Jr. chains through the Vucevic/Vince Carter lineage" },
+      { type: "fix", text: "Fixed invalid team abbreviations (BRK → BKN) across Washington data files" },
+    ],
+  },
+  {
     date: "Feb 22, 2026",
     version: "0.7.0",
     items: [
