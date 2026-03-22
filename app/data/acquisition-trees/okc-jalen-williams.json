@@ -65,7 +65,7 @@
                           {
                             "type": "player",
                             "name": "Bobby Jackson",
-                            "acquisitionType": "draft-night-trade",
+                            "acquisitionType": "trade",
                             "date": "1997-06-25",
                             "draftPick": 23,
                             "draftRound": 1,

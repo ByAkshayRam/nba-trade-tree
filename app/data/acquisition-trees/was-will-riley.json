@@ -9,7 +9,7 @@
   "tree": {
     "type": "player",
     "name": "Will Riley",
-    "acquisitionType": "draft-night-trade",
+    "acquisitionType": "trade",
     "date": "2025-06-25",
     "currentTeam": "WAS",
     "tradePartner": "UTA",
@@ -82,7 +82,7 @@
                           {
                             "type": "pick",
                             "name": "2023 1st Round Pick (#4)",
-                            "acquisitionType": "draft",
+                            "acquisitionType": "own",
                             "becamePlayer": "Amen Thompson",
                             "isOrigin": true,
                             "assetsGivenUp": [],
@@ -133,7 +133,7 @@
                       {
                         "type": "pick",
                         "name": "2023 1st Round Pick (#4)",
-                        "acquisitionType": "draft",
+                        "acquisitionType": "own",
                         "becamePlayer": "Amen Thompson",
                         "isOrigin": true,
                         "assetsGivenUp": [],
@@ -161,7 +161,7 @@
           {
             "type": "pick",
             "name": "2025 2nd Round Pick (#48)",
-            "acquisitionType": "draft",
+            "acquisitionType": "own",
             "becamePlayer": "Javon Small",
             "note": "Sent to Memphis",
             "isOrigin": true,

@@ -79,7 +79,7 @@
       {
         "type": "pick",
         "name": "2027 2nd Round Pick via MIN",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2024-06-27",
         "tradeDescription": "Minnesota's 2027 second-round pick, sent to Portland in Kolek trade",
         "isOrigin": true
@@ -87,7 +87,7 @@
       {
         "type": "pick",
         "name": "2029 2nd Round Pick (least favorable)",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2024-06-27",
         "tradeDescription": "2029 second-round pick (least favorable), sent to Portland in Kolek trade",
         "isOrigin": true
@@ -95,7 +95,7 @@
       {
         "type": "pick",
         "name": "2030 2nd Round Pick via NYK",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2024-06-27",
         "tradeDescription": "NYK's own 2030 second-round pick, sent to Portland in Kolek trade",
         "isOrigin": true

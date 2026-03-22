@@ -162,7 +162,7 @@
                                       {
                                         "type": "other",
                                         "name": "Cash Considerations",
-                                        "acquisitionType": "original",
+                                        "acquisitionType": "draft",
                                         "tradeDescription": "Cash sent to Washington for Bill Walker's draft rights",
                                         "isOrigin": true,
                                         "assetsGivenUp": []
@@ -280,7 +280,6 @@
       {
         "type": "pick",
         "name": "2026 2nd Round Pick via ORL",
-        "acquisitionType": "trade",
         "date": "2025-06-26",
         "tradePartner": "ORL",
         "tradeDescription": "Acquired from Orlando in the Noah Penda trade. BOS sent Penda to ORL for Shulga, Amari Williams, 2026 2nd, and 2027 2nd.",

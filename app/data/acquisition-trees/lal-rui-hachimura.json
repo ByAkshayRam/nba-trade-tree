@@ -42,7 +42,7 @@
       {
         "type": "pick",
         "name": "2028 2nd Round Pick",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2028-06-01",
         "note": "2028 2nd round pick, least favorable of LAL/WAS per BBRef",
         "isOrigin": true,
@@ -51,7 +51,7 @@
       {
         "type": "pick",
         "name": "2029 2nd Round Pick via LAL",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2029-06-01",
         "note": "Lakers' own 2nd round pick",
         "isOrigin": true,

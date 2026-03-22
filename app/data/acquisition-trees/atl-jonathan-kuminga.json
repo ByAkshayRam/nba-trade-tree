@@ -38,7 +38,7 @@
               {
                 "type": "player",
                 "name": "De'Andre Hunter",
-                "acquisitionType": "draft-night-trade",
+                "acquisitionType": "trade",
                 "date": "2019-06-20",
                 "draftPick": 4,
                 "draftRound": 1,
@@ -51,7 +51,7 @@
                     "type": "pick",
                     "name": "2019 1st Round Pick (#8)",
                     "becamePlayer": "Jaxson Hayes",
-                    "acquisitionType": "original",
+                    "acquisitionType": "own",
                     "date": "2019-06-20",
                     "note": "Atlanta's own pick, sent to NOP in Hunter draft-night trade.",
                     "isOrigin": true
@@ -70,7 +70,7 @@
                       {
                         "type": "player",
                         "name": "Taurean Prince",
-                        "acquisitionType": "draft-night-trade",
+                        "acquisitionType": "trade",
                         "date": "2016-07-07",
                         "draftPick": 12,
                         "draftRound": 1,
@@ -95,7 +95,7 @@
                         "type": "pick",
                         "name": "2021 2nd Round Pick (#49)",
                         "becamePlayer": "Marcus Zegarowski",
-                        "acquisitionType": "original",
+                        "acquisitionType": "own",
                         "date": "2019-06-06",
                         "note": "Atlanta's own 2021 2nd-round pick (#49). Sent to Brooklyn as part of the Taurean Prince trade. BKN used it to draft Zegarowski (Creighton).",
                         "isOrigin": true
@@ -106,7 +106,7 @@
                     "type": "pick",
                     "name": "2019 2nd Round Pick (#35)",
                     "becamePlayer": "Marcos Louzada Silva",
-                    "acquisitionType": "original",
+                    "acquisitionType": "own",
                     "date": "2019-06-20",
                     "note": "Atlanta's own pick, sent to NOP in Hunter draft-night trade.",
                     "isOrigin": true
@@ -167,7 +167,7 @@
             "type": "pick",
             "name": "2025 1st Round Pick (#22)",
             "becamePlayer": "Drake Powell",
-            "acquisitionType": "original",
+            "acquisitionType": "own",
             "date": "2025-06-26",
             "note": "Hawks' own 2025 first-round pick. ATL drafted Drake Powell #22, then traded him to Brooklyn in Porzingis 3-team deal.",
             "isOrigin": true

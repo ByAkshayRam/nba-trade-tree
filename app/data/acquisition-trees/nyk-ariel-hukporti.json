@@ -9,15 +9,15 @@
   "tree": {
     "type": "player",
     "name": "Ariel Hukporti",
-    "acquisitionType": "draft-night-trade",
+    "acquisitionType": "trade",
     "date": "2024-06-27",
     "currentTeam": "NYK",
     "tradePartner": "DAL",
-    "tradeDescription": "NYK traded Melvin Ajin\u00e7a (#51 pick) to Dallas for Ariel Hukporti, Petteri Koponen, and cash",
+    "tradeDescription": "NYK traded Melvin Ajinça (#51 pick) to Dallas for Ariel Hukporti, Petteri Koponen, and cash",
     "assetsGivenUp": [
       {
         "type": "player",
-        "name": "Melvin Ajin\u00e7a",
+        "name": "Melvin Ajinça",
         "acquisitionType": "draft",
         "date": "2024-06-27",
         "draftPick": 51,

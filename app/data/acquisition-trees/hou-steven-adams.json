@@ -38,7 +38,7 @@
               {
                 "type": "pick",
                 "name": "2024 2nd Round Pick via GSW",
-                "acquisitionType": "draft",
+                "acquisitionType": "own",
                 "note": "Conditional pick; did not convey. Sent to CLE for KPJ.",
                 "isOrigin": true,
                 "assetsGivenUp": [],
@@ -54,7 +54,7 @@
             "acquisitionType": "trade",
             "tradePartner": "MIN",
             "note": "Originally MIN's pick, acquired by HOU in TyTy Washington trade (June 24, 2022); sent to OKC",
-            "isOrigin": false,
+            "isOrigin": true,
             "assetsGivenUp": [],
             "date": "2023-10-17"
           },
@@ -69,7 +69,7 @@
               {
                 "type": "pick",
                 "name": "2024 2nd Round Pick via BKN",
-                "acquisitionType": "draft",
+                "acquisitionType": "own",
                 "note": "Did not convey. Sent to BKN for Mills and this pick.",
                 "isOrigin": true,
                 "assetsGivenUp": [],
@@ -94,7 +94,7 @@
           {
             "type": "other",
             "name": "Cash Considerations",
-            "acquisitionType": "free-agent",
+            "acquisitionType": "other",
             "note": "Cash sent to BKN for Doumbouya (waived) and this pick",
             "isOrigin": true,
             "assetsGivenUp": []
@@ -134,7 +134,7 @@
                   {
                     "type": "other",
                     "name": "Cash Considerations",
-                    "acquisitionType": "free-agent",
+                    "acquisitionType": "other",
                     "note": "Cash sent to CHI for Theis",
                     "isOrigin": true,
                     "assetsGivenUp": []
@@ -157,7 +157,7 @@
       {
         "type": "pick",
         "name": "2025 2nd Round Pick (more favorable of HOU/OKC)",
-        "acquisitionType": "draft",
+        "acquisitionType": "own",
         "date": "2025-06-26",
         "becamePlayer": "Will Richard",
         "note": "Became HOU's own pick; sent to MEM who drafted Will Richard",

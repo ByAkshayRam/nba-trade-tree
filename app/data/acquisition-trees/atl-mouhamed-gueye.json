@@ -21,7 +21,7 @@
       {
         "type": "pick",
         "name": "2027 2nd Round Pick via ATL",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2023-06-28",
         "note": "Atlanta's own 2027 2nd-round pick, sent to Boston for Gueye.",
         "isOrigin": true

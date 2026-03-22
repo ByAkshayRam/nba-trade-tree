@@ -110,7 +110,7 @@
       {
         "type": "pick",
         "name": "2031 2nd Round Pick via TOR",
-        "acquisitionType": "draft",
+        "acquisitionType": "own",
         "details": "2031 Second Round Pick (TOR own)",
         "isOrigin": true,
         "assetsGivenUp": [],

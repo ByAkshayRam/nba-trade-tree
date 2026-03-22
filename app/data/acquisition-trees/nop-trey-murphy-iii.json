@@ -9,7 +9,7 @@
   "tree": {
     "type": "player",
     "name": "Trey Murphy III",
-    "acquisitionType": "draft-night-trade",
+    "acquisitionType": "trade",
     "date": "2021-08-07",
     "draftPick": 17,
     "draftRound": 1,
@@ -203,7 +203,7 @@
         "assetsGivenUp": [
           {
             "type": "player",
-            "name": "Nicol\u00f2 Melli",
+            "name": "Nicolò Melli",
             "acquisitionType": "free-agent",
             "date": "2019-07-17",
             "note": "Italian forward signed as free agent",

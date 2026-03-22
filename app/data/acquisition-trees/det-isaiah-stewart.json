@@ -27,7 +27,7 @@
       {
         "type": "pick",
         "name": "2021 2nd Round Pick (#52)",
-        "acquisitionType": "draft",
+        "acquisitionType": "own",
         "date": "2020-11-24",
         "tradeDescription": "Detroit's own 2nd round pick sent to Houston",
         "becamePlayer": "Luka Garza",
@@ -37,7 +37,7 @@
       {
         "type": "pick",
         "name": "2025 1st Round Pick (#17)",
-        "acquisitionType": "draft",
+        "acquisitionType": "own",
         "date": "2020-11-24",
         "tradeDescription": "Detroit's own 1st round pick sent to Houston (conveyed in 2025)",
         "becamePlayer": "Joan Beringer",

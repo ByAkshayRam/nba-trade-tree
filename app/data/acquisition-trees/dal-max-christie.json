@@ -19,7 +19,7 @@
       {
         "type": "player",
         "name": "Luka Doncic",
-        "acquisitionType": "draft-night-trade",
+        "acquisitionType": "trade",
         "date": "2018-06-21",
         "tradePartner": "ATL",
         "draftPick": 3,
@@ -30,7 +30,7 @@
           {
             "type": "pick",
             "name": "2018 1st Round Pick (#5)",
-            "acquisitionType": "draft",
+            "acquisitionType": "own",
             "date": "2018-06-21",
             "draftPick": 5,
             "draftRound": 1,

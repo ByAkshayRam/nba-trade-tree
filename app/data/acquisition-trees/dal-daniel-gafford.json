@@ -29,7 +29,7 @@
           {
             "type": "other",
             "name": "Cash Considerations",
-            "acquisitionType": "original",
+            "acquisitionType": "draft",
             "note": "Cash sent to Sacramento",
             "isOrigin": true,
             "assetsGivenUp": []

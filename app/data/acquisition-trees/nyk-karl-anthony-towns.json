@@ -65,7 +65,7 @@
                   {
                     "type": "other",
                     "name": "Cash Considerations",
-                    "acquisitionType": "original",
+                    "acquisitionType": "draft",
                     "tradeDescription": "Cash sent to Boston for Fournier",
                     "isOrigin": true,
                     "date": "2021-08-17"
@@ -75,7 +75,7 @@
               {
                 "type": "player",
                 "name": "Quentin Grimes",
-                "acquisitionType": "draft-night-trade",
+                "acquisitionType": "trade",
                 "date": "2021-07-30",
                 "draftPick": 25,
                 "draftRound": 1,
@@ -118,7 +118,7 @@
                   {
                     "type": "player",
                     "name": "Immanuel Quickley",
-                    "acquisitionType": "draft-night-trade",
+                    "acquisitionType": "trade",
                     "date": "2020-11-20",
                     "draftPick": 25,
                     "draftRound": 1,
@@ -129,7 +129,7 @@
                       {
                         "type": "pick",
                         "name": "2020 1st Round Pick (#23)",
-                        "acquisitionType": "original",
+                        "acquisitionType": "own",
                         "date": "2020-11-20",
                         "tradeDescription": "NYK's own 2020 1st round pick, traded to Minnesota in the 3-team draft-night deal",
                         "becamePlayer": "Leandro Bolmaro",
@@ -176,7 +176,7 @@
               {
                 "type": "other",
                 "name": "Cash Considerations",
-                "acquisitionType": "original",
+                "acquisitionType": "draft",
                 "tradeDescription": "Cash sent to Detroit",
                 "isOrigin": true,
                 "date": "2024-02-08"
@@ -205,7 +205,7 @@
           {
             "type": "pick",
             "name": "2025 1st Round Pick (#26) via NYK",
-            "acquisitionType": "original",
+            "acquisitionType": "own",
             "date": "2024-07-06",
             "tradeDescription": "NYK's own first-round pick, unprotected, sent to BKN in Bridges trade",
             "becamePlayer": "Ben Saraf",
@@ -225,7 +225,7 @@
               {
                 "type": "player",
                 "name": "Jalen Duren",
-                "acquisitionType": "draft-night-trade",
+                "acquisitionType": "trade",
                 "date": "2022-06-23",
                 "draftPick": 13,
                 "draftRound": 1,
@@ -248,7 +248,7 @@
                   {
                     "type": "pick",
                     "name": "2023 2nd Round Pick (#41)",
-                    "acquisitionType": "original",
+                    "acquisitionType": "own",
                     "date": "2022-06-23",
                     "tradeDescription": "OKC's 2023 2nd round pick, sent to Charlotte for Duren",
                     "isOrigin": true,
@@ -257,7 +257,7 @@
                   {
                     "type": "pick",
                     "name": "2023 2nd Round Pick (#34)",
-                    "acquisitionType": "original",
+                    "acquisitionType": "own",
                     "date": "2022-06-23",
                     "tradeDescription": "Utah's 2023 2nd round pick, sent to Charlotte for Duren",
                     "isOrigin": true,
@@ -266,7 +266,7 @@
                   {
                     "type": "pick",
                     "name": "2023 2nd Round Pick (#39)",
-                    "acquisitionType": "original",
+                    "acquisitionType": "own",
                     "date": "2022-06-23",
                     "tradeDescription": "NYK's own 2023 2nd round pick, sent to Charlotte for Duren",
                     "isOrigin": true,
@@ -275,7 +275,7 @@
                   {
                     "type": "pick",
                     "name": "2024 2nd Round Pick via NYK",
-                    "acquisitionType": "original",
+                    "acquisitionType": "own",
                     "date": "2022-06-23",
                     "tradeDescription": "NYK's own 2024 2nd round pick, sent to Charlotte for Duren",
                     "becamePlayer": "Cam Spencer",
@@ -321,7 +321,7 @@
           {
             "type": "pick",
             "name": "2027 1st Round Pick via NYK",
-            "acquisitionType": "original",
+            "acquisitionType": "own",
             "date": "2024-07-06",
             "tradeDescription": "NYK's own first-round pick, unprotected, sent to BKN in Bridges trade",
             "isOrigin": true
@@ -329,7 +329,7 @@
           {
             "type": "pick",
             "name": "2028 1st Round Pick Swap Rights",
-            "acquisitionType": "original",
+            "acquisitionType": "own",
             "date": "2024-07-06",
             "tradeDescription": "BKN gains right to swap 2028 first-round picks with NYK",
             "isOrigin": true
@@ -337,7 +337,7 @@
           {
             "type": "pick",
             "name": "2029 1st Round Pick via NYK",
-            "acquisitionType": "original",
+            "acquisitionType": "own",
             "date": "2024-07-06",
             "tradeDescription": "NYK's own first-round pick, unprotected, sent to BKN in Bridges trade",
             "isOrigin": true
@@ -345,7 +345,7 @@
           {
             "type": "pick",
             "name": "2031 1st Round Pick via NYK",
-            "acquisitionType": "original",
+            "acquisitionType": "own",
             "date": "2024-07-06",
             "tradeDescription": "NYK's own first-round pick, unprotected, sent to BKN in Bridges trade",
             "isOrigin": true
@@ -378,7 +378,7 @@
       {
         "type": "pick",
         "name": "2026 2nd Round Pick via GSW",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2024-10-02",
         "tradeDescription": "Golden State's 2026 second-round pick, sent to Charlotte in KAT 3-team trade",
         "isOrigin": true
@@ -386,7 +386,7 @@
       {
         "type": "pick",
         "name": "2031 2nd Round Pick via NYK",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2024-10-02",
         "tradeDescription": "NYK's own 2031 second-round pick, sent to Charlotte in KAT 3-team trade",
         "isOrigin": true

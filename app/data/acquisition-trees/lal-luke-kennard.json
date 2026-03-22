@@ -30,7 +30,7 @@
       {
         "type": "pick",
         "name": "2032 2nd Round Pick via LAL",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2032-06-01",
         "note": "Lakers' own 2nd round pick",
         "isOrigin": true,

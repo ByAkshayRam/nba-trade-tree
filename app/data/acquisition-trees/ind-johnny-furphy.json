@@ -29,7 +29,7 @@
       {
         "type": "other",
         "name": "Cash Considerations",
-        "acquisitionType": "own",
+        "acquisitionType": "draft",
         "isOrigin": true,
         "assetsGivenUp": []
       }

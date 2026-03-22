@@ -29,7 +29,7 @@
       {
         "type": "pick",
         "name": "2025 2nd Round Pick (#32)",
-        "acquisitionType": "draft",
+        "acquisitionType": "own",
         "date": "2023-06-28",
         "tradeDescription": "Detroit's own 2nd round pick sent to Boston (more favorable of available picks)",
         "becamePlayer": "Noah Penda",
@@ -39,7 +39,7 @@
       {
         "type": "pick",
         "name": "2026 2nd Round Pick via DET",
-        "acquisitionType": "draft",
+        "acquisitionType": "own",
         "date": "2023-06-28",
         "tradeDescription": "Detroit's 2nd round pick sent to Boston (more favorable of available picks)",
         "becamePlayer": "TBD (2026 Draft)",

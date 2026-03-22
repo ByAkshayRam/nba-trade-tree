@@ -9,7 +9,7 @@
   "tree": {
     "type": "player",
     "name": "Julian Strawther",
-    "acquisitionType": "draft-night-trade",
+    "acquisitionType": "trade",
     "date": "2023-06-23",
     "currentTeam": "DEN",
     "tradePartner": "IND",
@@ -20,7 +20,7 @@
       {
         "type": "pick",
         "name": "2029 1st Round Pick via DEN",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2023-06-23",
         "note": "Denver's own 2029 first-round pick (protected), sent to OKC in 4-team draft-night trade",
         "isOrigin": true

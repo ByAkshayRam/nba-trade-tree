@@ -9,7 +9,7 @@
   "tree": {
     "type": "player",
     "name": "Peyton Watson",
-    "acquisitionType": "draft-night-trade",
+    "acquisitionType": "trade",
     "date": "2022-06-23",
     "currentTeam": "DEN",
     "tradePartner": "OKC",
@@ -29,7 +29,7 @@
       {
         "type": "pick",
         "name": "2027 1st Round Pick via DEN",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2022-06-23",
         "note": "Denver's own 2027 first-round pick (conditional/protected), sent to OKC",
         "isOrigin": true

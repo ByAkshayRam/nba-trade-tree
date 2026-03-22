@@ -9,7 +9,7 @@
   "tree": {
     "type": "player",
     "name": "Jamir Watkins",
-    "acquisitionType": "draft-night-trade",
+    "acquisitionType": "trade",
     "date": "2025-06-25",
     "currentTeam": "WAS",
     "tradePartner": "UTA",
@@ -126,7 +126,7 @@
           {
             "type": "pick",
             "name": "2025 2nd Round Pick (#48)",
-            "acquisitionType": "draft",
+            "acquisitionType": "own",
             "becamePlayer": "Javon Small",
             "note": "Sent to Memphis. Originally from BRK in 5-team Westbrook trade (2025 2nd swap option).",
             "isOrigin": true,

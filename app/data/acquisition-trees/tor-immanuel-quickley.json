@@ -58,7 +58,7 @@
               {
                 "type": "pick",
                 "name": "2013 1st Round Pick (#12)",
-                "acquisitionType": "draft",
+                "acquisitionType": "own",
                 "details": "2013 First Round Pick (TOR own). Became Steven Adams.",
                 "becamePlayer": "Steven Adams",
                 "draftPick": 12,

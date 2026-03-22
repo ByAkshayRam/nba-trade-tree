@@ -22,7 +22,7 @@
         "date": "2022-02-08",
         "tradePartner": "POR",
         "tradeDescription": "NOP traded Hart, NAW, Louzada, Satoransky, 2025 1st, 2026 2nd, 2027 2nd to POR for McCollum, Nance Jr., Snell",
-        "note": "Guard acquired from Portland \u2014 shared trade cost with Poole, Bey trees",
+        "note": "Guard acquired from Portland — shared trade cost with Poole, Bey trees",
         "isOrigin": false,
         "assetsGivenUp": [
           {
@@ -166,7 +166,7 @@
             "date": "2020-11-23",
             "tradePartner": "MIL",
             "tradeDescription": "Acquired from MIL in 4-team Jrue Holiday trade",
-            "becamePlayer": "Nolan Traor\u00e9",
+            "becamePlayer": "Nolan Traoré",
             "note": "MIL own 2025 1st (originally 2022 conditional that did not convey), sent to Portland",
             "isOrigin": false,
             "assetsGivenUp": [
@@ -469,7 +469,7 @@
                 "assetsGivenUp": [
                   {
                     "type": "player",
-                    "name": "Nicol\u00f2 Melli",
+                    "name": "Nicolò Melli",
                     "acquisitionType": "free-agent",
                     "date": "2019-07-17",
                     "note": "Italian forward signed as free agent",

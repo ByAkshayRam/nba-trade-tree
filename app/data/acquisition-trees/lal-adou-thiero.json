@@ -42,7 +42,7 @@
               {
                 "type": "other",
                 "name": "Cash Considerations",
-                "acquisitionType": "free-agent",
+                "acquisitionType": "other",
                 "note": "Cash sent to Timberwolves as part of 7-team trade",
                 "isOrigin": true,
                 "assetsGivenUp": []

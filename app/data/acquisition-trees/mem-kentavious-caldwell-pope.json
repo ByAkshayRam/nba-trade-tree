@@ -30,7 +30,7 @@
           {
             "type": "pick",
             "name": "2023 2nd Round Pick (#49)",
-            "acquisitionType": "draft",
+            "acquisitionType": "own",
             "becamePlayer": "Keyonte Johnson",
             "note": "Memphis' own 2023 2nd round pick equivalent, sent to Boston in Bane trade",
             "isOrigin": true,
@@ -39,7 +39,7 @@
           {
             "type": "pick",
             "name": "2025 2nd Round Pick (#55)",
-            "acquisitionType": "draft",
+            "acquisitionType": "own",
             "becamePlayer": "Kobe Sanders",
             "note": "Memphis' own 2025 2nd round pick, sent to Boston in Bane trade",
             "isOrigin": true,
@@ -57,7 +57,7 @@
       {
         "type": "pick",
         "name": "2026 1st Round Pick Swap Rights",
-        "acquisitionType": "draft",
+        "acquisitionType": "own",
         "note": "Memphis' own 2026 first-round pick swap rights, sent to Orlando",
         "isOrigin": true,
         "date": "2024-07-01"

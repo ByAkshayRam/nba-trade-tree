@@ -60,7 +60,7 @@
               {
                 "type": "player",
                 "name": "Kawhi Leonard",
-                "acquisitionType": "draft-night-trade",
+                "acquisitionType": "trade",
                 "date": "2011-06-23",
                 "draftPick": 15,
                 "draftRound": 1,
@@ -116,7 +116,7 @@
               {
                 "type": "player",
                 "name": "Kawhi Leonard",
-                "acquisitionType": "draft-night-trade",
+                "acquisitionType": "trade",
                 "date": "2011-06-23",
                 "draftPick": 15,
                 "draftRound": 1,
@@ -198,7 +198,7 @@
           {
             "type": "player",
             "name": "Rob Dillingham",
-            "acquisitionType": "draft-night-trade",
+            "acquisitionType": "trade",
             "date": "2024-06-26",
             "draftPick": 8,
             "draftRound": 1,

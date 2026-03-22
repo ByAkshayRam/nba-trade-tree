@@ -126,7 +126,7 @@
           {
             "type": "pick",
             "name": "2025 1st Round Pick (#18)",
-            "acquisitionType": "draft",
+            "acquisitionType": "own",
             "becamePlayer": "Walter Clayton Jr.",
             "note": "Memphis' own 2025 first-round pick, sent to Washington",
             "isOrigin": true,

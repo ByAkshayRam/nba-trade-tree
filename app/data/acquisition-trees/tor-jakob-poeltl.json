@@ -28,7 +28,7 @@
       {
         "type": "pick",
         "name": "2024 1st Round Pick (#8)",
-        "acquisitionType": "draft",
+        "acquisitionType": "own",
         "details": "2024 First Round Pick (TOR own, top-6 protected in 2024-2026). Conveyed at #8.",
         "becamePlayer": "Rob Dillingham",
         "draftPick": 8,
@@ -40,7 +40,7 @@
       {
         "type": "pick",
         "name": "2023 2nd Round Pick (#44)",
-        "acquisitionType": "draft",
+        "acquisitionType": "own",
         "details": "2023 Second Round Pick (TOR own)",
         "becamePlayer": "Sidy Cissoko",
         "draftPick": 44,
@@ -52,7 +52,7 @@
       {
         "type": "pick",
         "name": "2025 2nd Round Pick (#37)",
-        "acquisitionType": "draft",
+        "acquisitionType": "own",
         "details": "2025 Second Round Pick (TOR own)",
         "becamePlayer": "Chaz Lanier",
         "draftPick": 37,

@@ -32,7 +32,7 @@
           {
             "type": "other",
             "name": "Cash considerations",
-            "acquisitionType": "original",
+            "acquisitionType": "draft",
             "date": "2025-07-07",
             "note": "BKN sent cash to Boston to facilitate the deal.",
             "isOrigin": true

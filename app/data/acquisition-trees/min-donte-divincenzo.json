@@ -23,7 +23,7 @@
         "date": "2015-06-25",
         "draftPick": 1,
         "draftRound": 1,
-        "note": "7'0\" center from Kentucky, 2015 #1 overall pick. Sent to NYK. Shared cost \u2014 see min-julius-randle.json.",
+        "note": "7'0\" center from Kentucky, 2015 #1 overall pick. Sent to NYK. Shared cost — see min-julius-randle.json.",
         "isOrigin": true
       },
       {
@@ -31,7 +31,7 @@
         "name": "2025 2nd Round Pick (least favorable)",
         "acquisitionType": "own",
         "becamePlayer": "Alex Toohey",
-        "note": "MIN 2025 2nd round pick (least favorable), sent to CHA. Shared cost \u2014 see min-julius-randle.json.",
+        "note": "MIN 2025 2nd round pick (least favorable), sent to CHA. Shared cost — see min-julius-randle.json.",
         "isOrigin": true,
         "date": "2025-06-25"
       }

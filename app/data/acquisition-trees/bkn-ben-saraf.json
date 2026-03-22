@@ -72,7 +72,7 @@
                         "type": "pick",
                         "name": "2017 1st Round Pick (#27 via pick swap)",
                         "becamePlayer": "Kyle Kuzma",
-                        "acquisitionType": "original",
+                        "acquisitionType": "own",
                         "date": "2017-06-22",
                         "note": "BKN had the worst record in 2017 (#1 pick), but owed it to BOS from the KG/Pierce trade. BOS swapped #1 to PHI for #3 (Jayson Tatum). BKN got BOS's pick position (#27) via the swap. LAL drafted Kyle Kuzma.",
                         "isOrigin": false,
@@ -81,7 +81,7 @@
                             "type": "pick",
                             "name": "2017 1st Round Pick (#1 overall)",
                             "becamePlayer": "Markelle Fultz",
-                            "acquisitionType": "original",
+                            "acquisitionType": "own",
                             "date": "2017-06-22",
                             "note": "BKN's own pick — worst record in NBA, #1 overall. Owed to BOS from the 2013 KG/Pierce trade. BOS traded #1 to PHI for #3 (Jayson Tatum) and a future 1st. PHI drafted Markelle Fultz.",
                             "isOrigin": true
@@ -129,7 +129,7 @@
           {
             "type": "player",
             "name": "Juan Pablo Vaulet",
-            "acquisitionType": "draft-night-trade",
+            "acquisitionType": "trade",
             "date": "2015-06-25",
             "tradeDescription": "Charlotte traded Vaulet draft rights to BKN for cash ($880,000), a 2018 2nd (least favorable of BKN/CLE, became Arnoldas Kulboka), and a 2019 2nd (became Talen Horton-Tucker).",
             "note": "Argentine forward, stash player. Draft rights acquired from Charlotte on draft night 2015. Later sent to IND (2021) then included in Bridges trade to NYK (2024).",
@@ -141,7 +141,7 @@
                 "type": "pick",
                 "name": "2018 2nd Round Pick (#55, least favorable of BKN/CLE)",
                 "becamePlayer": "Arnoldas Kulboka",
-                "acquisitionType": "original",
+                "acquisitionType": "own",
                 "date": "2015-06-25",
                 "note": "Sent to Charlotte for Vaulet draft rights. CHA used it to draft Arnoldas Kulboka.",
                 "isOrigin": true
@@ -150,7 +150,7 @@
                 "type": "pick",
                 "name": "2019 2nd Round Pick (#46)",
                 "becamePlayer": "Talen Horton-Tucker",
-                "acquisitionType": "original",
+                "acquisitionType": "own",
                 "date": "2015-06-25",
                 "note": "Sent to Charlotte for Vaulet draft rights. Became Talen Horton-Tucker.",
                 "isOrigin": true
@@ -158,7 +158,7 @@
               {
                 "type": "other",
                 "name": "Cash considerations ($880,000)",
-                "acquisitionType": "original",
+                "acquisitionType": "draft",
                 "date": "2015-06-25",
                 "note": "Cash sent to Charlotte for Vaulet draft rights.",
                 "isOrigin": true
@@ -169,7 +169,7 @@
           {
             "type": "pick",
             "name": "2026 2nd Round Pick (least favorable)",
-            "acquisitionType": "original",
+            "acquisitionType": "own",
             "date": "2024-07-06",
             "note": "Sent to NYK in Bridges trade.",
             "isOrigin": true

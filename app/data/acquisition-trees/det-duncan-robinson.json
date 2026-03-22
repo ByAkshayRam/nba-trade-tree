@@ -46,12 +46,12 @@
                 "acquisitionType": "trade",
                 "date": "2020-11-22",
                 "tradePartner": "DEN",
-                "tradeDescription": "DET traded cash to DEN for Jerami Grant and Nikola Radi\u010devi\u0107. Denver also received a trade exception",
+                "tradeDescription": "DET traded cash to DEN for Jerami Grant and Nikola Radičević. Denver also received a trade exception",
                 "assetsGivenUp": [
                   {
                     "type": "other",
                     "name": "Cash considerations",
-                    "acquisitionType": "free-agent",
+                    "acquisitionType": "other",
                     "date": "2020-11-22",
                     "tradeDescription": "Cash sent to Denver",
                     "isOrigin": true,

@@ -29,7 +29,7 @@
       {
         "type": "player",
         "name": "Immanuel Quickley",
-        "acquisitionType": "draft-night-trade",
+        "acquisitionType": "trade",
         "date": "2020-11-20",
         "draftPick": 25,
         "draftRound": 1,
@@ -40,7 +40,7 @@
           {
             "type": "pick",
             "name": "2020 1st Round Pick (#23)",
-            "acquisitionType": "original",
+            "acquisitionType": "own",
             "date": "2020-11-20",
             "tradeDescription": "NYK's own 2020 1st round pick, traded to Minnesota in the 3-team draft-night deal",
             "becamePlayer": "Leandro Bolmaro",

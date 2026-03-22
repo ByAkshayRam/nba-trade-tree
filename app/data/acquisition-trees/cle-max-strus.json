@@ -20,7 +20,7 @@
       {
         "type": "player",
         "name": "Cedi Osman",
-        "acquisitionType": "draft-night-trade",
+        "acquisitionType": "trade",
         "date": "2015-06-25",
         "draftPick": 31,
         "draftRound": 2,
@@ -42,7 +42,7 @@
       {
         "type": "pick",
         "name": "2030 2nd Round Pick via CLE",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2030-06-27",
         "note": "Cavaliers' own 2030 second-round pick, sent to San Antonio in Strus S&T",
         "isOrigin": true
@@ -50,7 +50,6 @@
       {
         "type": "pick",
         "name": "2026 2nd Round Pick via LAL",
-        "acquisitionType": "trade",
         "date": "2026-06-25",
         "note": "Lakers' second-round pick, sent to Miami in Strus S&T",
         "isOrigin": true

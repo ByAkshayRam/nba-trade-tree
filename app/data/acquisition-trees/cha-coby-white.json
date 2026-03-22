@@ -65,16 +65,16 @@
                       {
                         "type": "pick",
                         "name": "2022 2nd Round Pick",
-                        "acquisitionType": "original",
+                        "acquisitionType": "own",
                         "date": "2020-11-29",
-                        "note": "Hornets' own 2022 2nd-round pick, sent to Boston in Hayward S&T. Conditional \u2014 did not convey.",
+                        "note": "Hornets' own 2022 2nd-round pick, sent to Boston in Hayward S&T. Conditional — did not convey.",
                         "isOrigin": true,
                         "becamePlayer": "Did not convey"
                       },
                       {
                         "type": "other",
                         "name": "Trade Exception",
-                        "acquisitionType": "original",
+                        "acquisitionType": "draft",
                         "date": "2020-11-29",
                         "tradeDescription": "Boston received a $28.5M trade exception as part of the Gordon Hayward sign-and-trade",
                         "note": "Trade exception generated from Hayward's outgoing salary. BOS used part of it to acquire Daniel Theis from HOU in Feb 2022.",
@@ -111,7 +111,7 @@
                 "type": "pick",
                 "name": "2021 2nd Round Pick (#57)",
                 "becamePlayer": "Balsa Koprivica",
-                "acquisitionType": "original",
+                "acquisitionType": "own",
                 "date": "2021-07-29",
                 "note": "Hornets' own 2021 2nd-round pick (#57), sent to Pistons in Plumlee trade",
                 "isOrigin": true
@@ -123,7 +123,7 @@
       {
         "type": "pick",
         "name": "2029 2nd Round Pick",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2026-02-05",
         "note": "Future second round pick, sent to Bulls in Coby White trade",
         "isOrigin": true
@@ -131,7 +131,7 @@
       {
         "type": "pick",
         "name": "2030 2nd Round Pick",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2026-02-05",
         "note": "Future second round pick, sent to Bulls in Coby White trade",
         "isOrigin": true
@@ -139,7 +139,7 @@
       {
         "type": "pick",
         "name": "2031 2nd Round Pick",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2026-02-05",
         "note": "Future second round pick, sent to Bulls in Coby White trade",
         "isOrigin": true

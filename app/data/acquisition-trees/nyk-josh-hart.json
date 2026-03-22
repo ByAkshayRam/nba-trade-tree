@@ -84,7 +84,7 @@
       {
         "type": "pick",
         "name": "2023 1st Round Pick (protected)",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2023-02-09",
         "tradeDescription": "NYK's own 2023 first-round pick, protected. Sent to Portland in Josh Hart trade.",
         "becamePlayer": "Kris Murray",

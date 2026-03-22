@@ -40,7 +40,7 @@
       {
         "type": "pick",
         "name": "2031 2nd Round Pick Swap Right",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2026-02-05",
         "note": "2031 2nd round pick swap right sent to MIN in Dillingham/Miller trade",
         "isOrigin": true,

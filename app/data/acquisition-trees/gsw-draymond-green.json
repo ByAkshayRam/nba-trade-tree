@@ -38,7 +38,7 @@
           {
             "type": "pick",
             "name": "2010 2nd Round Pick (#44)",
-            "acquisitionType": "draft",
+            "acquisitionType": "own",
             "date": "2010-06-22",
             "draftPick": 44,
             "draftRound": 2,
@@ -52,7 +52,7 @@
       {
         "type": "player",
         "name": "Brandan Wright",
-        "acquisitionType": "draft-night-trade",
+        "acquisitionType": "trade",
         "date": "2007-06-28",
         "draftPick": 8,
         "draftRound": 1,

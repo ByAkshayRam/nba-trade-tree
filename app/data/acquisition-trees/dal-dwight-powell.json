@@ -19,7 +19,7 @@
       {
         "type": "player",
         "name": "Jae Crowder",
-        "acquisitionType": "draft-night-trade",
+        "acquisitionType": "trade",
         "date": "2012-06-28",
         "tradePartner": "CLE",
         "draftPick": 34,

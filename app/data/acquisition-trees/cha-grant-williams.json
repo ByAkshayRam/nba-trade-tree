@@ -40,7 +40,7 @@
           {
             "type": "pick",
             "name": "2022 2nd Round Pick",
-            "acquisitionType": "original",
+            "acquisitionType": "own",
             "date": "2020-11-29",
             "note": "Hornets' own 2022 2nd-round pick, sent to Boston in Hayward S&T. Did not convey per BBRef.",
             "isOrigin": true,
@@ -51,7 +51,7 @@
       {
         "type": "pick",
         "name": "2028 2nd Round Pick (least favorable)",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2024-02-08",
         "note": "Hornets' own future 2nd-round pick, sent to Dallas in PJ Washington trade",
         "isOrigin": true

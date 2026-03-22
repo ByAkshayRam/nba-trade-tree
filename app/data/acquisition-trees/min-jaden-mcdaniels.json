@@ -9,11 +9,11 @@
   "tree": {
     "type": "player",
     "name": "Jaden McDaniels",
-    "acquisitionType": "draft-night-trade",
+    "acquisitionType": "trade",
     "date": "2020-11-20",
     "currentTeam": "MIN",
     "tradePartner": "OKC",
-    "tradeDescription": "3-team draft night trade: MIN acquired Ricky Rubio and Jaden McDaniels (#28) from OKC, and Leandro Bolmaro (#23) from NYK. MIN sent James Johnson, Aleksej Poku\u0161evski (#17), and 2024 2nd round pick to OKC, and Mathias Lessort + DET 2023 2nd round pick to NYK.",
+    "tradeDescription": "3-team draft night trade: MIN acquired Ricky Rubio and Jaden McDaniels (#28) from OKC, and Leandro Bolmaro (#23) from NYK. MIN sent James Johnson, Aleksej Pokuševski (#17), and 2024 2nd round pick to OKC, and Mathias Lessort + DET 2023 2nd round pick to NYK.",
     "note": "Washington forward, drafted 28th overall",
     "draftPick": 28,
     "draftRound": 1,
@@ -45,9 +45,9 @@
         "name": "2020 1st Round Pick (#17)",
         "acquisitionType": "trade",
         "date": "2020-11-20",
-        "becamePlayer": "Aleksej Poku\u0161evski",
+        "becamePlayer": "Aleksej Pokuševski",
         "tradePartner": "ATL",
-        "note": "Acquired from ATL in Feb 5, 2020 4-team trade (Covington/Beasley deal). Used to select Poku\u0161evski for OKC.",
+        "note": "Acquired from ATL in Feb 5, 2020 4-team trade (Covington/Beasley deal). Used to select Pokuševski for OKC.",
         "isOrigin": false,
         "assetsGivenUp": [
           {

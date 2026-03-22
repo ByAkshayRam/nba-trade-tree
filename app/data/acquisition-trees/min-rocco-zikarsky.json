@@ -9,7 +9,7 @@
   "tree": {
     "type": "player",
     "name": "Rocco Zikarsky",
-    "acquisitionType": "draft-night-trade",
+    "acquisitionType": "trade",
     "date": "2025-06-26",
     "currentTeam": "MIN",
     "tradePartner": "LAL",

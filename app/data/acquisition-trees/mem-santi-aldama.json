@@ -37,16 +37,16 @@
               {
                 "type": "player",
                 "name": "Marc Gasol",
-                "acquisitionType": "draft-night-trade",
+                "acquisitionType": "trade",
                 "date": "2008-02-01",
                 "tradePartner": "LAL",
-                "tradeDescription": "MEM traded Pau Gasol and 2010 2nd (Devin Ebanks) to LAL for Kwame Brown, Javaris Crittenton, Marc Gasol, Aaron McKie, 2008 1st (#28 Dont\u00e9 Greene) and 2010 1st (Greivis V\u00e1squez)",
+                "tradeDescription": "MEM traded Pau Gasol and 2010 2nd (Devin Ebanks) to LAL for Kwame Brown, Javaris Crittenton, Marc Gasol, Aaron McKie, 2008 1st (#28 Donté Greene) and 2010 1st (Greivis Vásquez)",
                 "note": "Spanish center, key long-term piece MEM got back in the Pau Gasol blockbuster",
                 "assetsGivenUp": [
                   {
                     "type": "player",
                     "name": "Pau Gasol",
-                    "acquisitionType": "draft-night-trade",
+                    "acquisitionType": "trade",
                     "date": "2001-06-27",
                     "draftPick": 3,
                     "draftRound": 1,
@@ -67,7 +67,7 @@
                       {
                         "type": "pick",
                         "name": "2001 1st Round Pick (#27)",
-                        "acquisitionType": "draft",
+                        "acquisitionType": "own",
                         "becamePlayer": "Jamaal Tinsley",
                         "note": "Draft rights traded to ATL in Pau Gasol deal; Tinsley was sent to IND on draft night",
                         "isOrigin": true,
@@ -78,7 +78,7 @@
                   {
                     "type": "pick",
                     "name": "2010 2nd Round Pick (#43)",
-                    "acquisitionType": "draft",
+                    "acquisitionType": "own",
                     "becamePlayer": "Devin Ebanks",
                     "note": "Sent to LAL in Pau Gasol trade",
                     "isOrigin": true,
@@ -95,7 +95,7 @@
       {
         "type": "pick",
         "name": "2022 2nd Round Pick (#57)",
-        "acquisitionType": "draft",
+        "acquisitionType": "own",
         "becamePlayer": "Jabari Walker",
         "note": "Memphis' own 2022 second-round pick, sent to Utah",
         "isOrigin": true,
@@ -104,7 +104,7 @@
       {
         "type": "pick",
         "name": "2026 2nd Round Pick via MEM",
-        "acquisitionType": "draft",
+        "acquisitionType": "own",
         "note": "Memphis' own 2026 second-round pick, sent to Utah",
         "isOrigin": true,
         "date": "2021-08-07"

@@ -29,7 +29,7 @@
       {
         "type": "pick",
         "name": "2032 1st Round Pick via DEN",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2025-07-08",
         "note": "Denver's own 2032 first-round pick, unprotected",
         "isOrigin": true

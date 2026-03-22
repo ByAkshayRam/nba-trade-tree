@@ -28,7 +28,7 @@
           {
             "type": "player",
             "name": "Mikal Bridges",
-            "acquisitionType": "draft-night-trade",
+            "acquisitionType": "trade",
             "date": "2018-06-21",
             "tradePartner": "PHI",
             "draftPick": 10,
@@ -77,7 +77,7 @@
           {
             "type": "player",
             "name": "Cam Johnson",
-            "acquisitionType": "draft-night-trade",
+            "acquisitionType": "trade",
             "date": "2019-07-06",
             "tradePartner": "MIN",
             "draftPick": 11,
@@ -123,7 +123,7 @@
               {
                 "type": "player",
                 "name": "Mikal Bridges",
-                "acquisitionType": "draft-night-trade",
+                "acquisitionType": "trade",
                 "date": "2018-06-21",
                 "draftPick": 10,
                 "draftRound": 1,

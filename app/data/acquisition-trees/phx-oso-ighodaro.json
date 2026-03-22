@@ -9,7 +9,7 @@
   "tree": {
     "type": "player",
     "name": "Oso Ighodaro",
-    "acquisitionType": "draft-night-trade",
+    "acquisitionType": "trade",
     "date": "2024-06-27",
     "currentTeam": "PHX",
     "tradePartner": "NYK",

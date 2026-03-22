@@ -19,7 +19,7 @@
       {
         "type": "pick",
         "name": "2026 2nd Round Pick",
-        "acquisitionType": "draft",
+        "acquisitionType": "own",
         "date": "2025-07-06",
         "note": "Sent to HOU as part of 3-team trade",
         "isOrigin": true,
@@ -28,7 +28,7 @@
       {
         "type": "pick",
         "name": "2029 2nd Round Pick",
-        "acquisitionType": "draft",
+        "acquisitionType": "own",
         "date": "2025-07-06",
         "note": "Sent to HOU as part of 3-team trade",
         "isOrigin": true,

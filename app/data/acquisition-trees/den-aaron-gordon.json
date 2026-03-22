@@ -18,7 +18,7 @@
       {
         "type": "player",
         "name": "Gary Harris",
-        "acquisitionType": "draft-night-trade",
+        "acquisitionType": "trade",
         "date": "2014-06-26",
         "tradePartner": "CHI",
         "tradeDescription": "Denver traded the #11 pick (Doug McDermott) and Anthony Randolph to Chicago for Jusuf Nurkic (#16), Gary Harris (#19), and a 2015 2nd round pick",
@@ -28,7 +28,7 @@
           {
             "type": "pick",
             "name": "2014 1st Round Pick (#11)",
-            "acquisitionType": "original",
+            "acquisitionType": "own",
             "date": "2014-06-26",
             "becamePlayer": "Doug McDermott",
             "note": "Denver's own pick, sent to Chicago in draft-night trade for Harris and Nurkic",
@@ -58,7 +58,7 @@
           {
             "type": "pick",
             "name": "2023 1st Round Pick (#27) via DEN",
-            "acquisitionType": "original",
+            "acquisitionType": "own",
             "date": "2020-11-23",
             "becamePlayer": "Nick Smith Jr.",
             "note": "Denver's own 2023 first-round pick, top-14 protected, sent to OKC in 4-team Jrue Holiday deal",
@@ -69,7 +69,7 @@
       {
         "type": "pick",
         "name": "2025 1st Round Pick (#25) via DEN",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2021-03-25",
         "becamePlayer": "Jase Richardson",
         "note": "Denver's own 2025 1st round pick, top-5 protected, conveyed to Orlando who selected Jase Richardson #25",

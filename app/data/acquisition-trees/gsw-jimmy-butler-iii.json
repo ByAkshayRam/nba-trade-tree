@@ -124,7 +124,7 @@
           {
             "type": "other",
             "name": "Cash Considerations",
-            "acquisitionType": "original",
+            "acquisitionType": "draft",
             "note": "Cash sent to MIN as part of 6-team trade",
             "isOrigin": true,
             "assetsGivenUp": []
@@ -164,7 +164,7 @@
           {
             "type": "pick",
             "name": "2026 2nd Round Pick via ATL",
-            "acquisitionType": "original",
+            "acquisitionType": "own",
             "note": "Acquired from ATL in GP2 4-team trade Feb 2023, sent to BKN",
             "isOrigin": true,
             "assetsGivenUp": []
@@ -172,7 +172,7 @@
           {
             "type": "pick",
             "name": "2028 2nd Round Pick via ATL",
-            "acquisitionType": "original",
+            "acquisitionType": "own",
             "note": "Acquired from ATL in GP2 4-team trade Feb 2023, sent to BKN",
             "isOrigin": true,
             "assetsGivenUp": []

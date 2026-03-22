@@ -69,7 +69,7 @@
                       {
                         "type": "other",
                         "name": "Cash Considerations",
-                        "acquisitionType": "original",
+                        "acquisitionType": "draft",
                         "date": "2019-07-06",
                         "note": "Cash sent to Miami in 4-team trade",
                         "isOrigin": true,
@@ -246,7 +246,7 @@
       {
         "type": "other",
         "name": "Cash Considerations",
-        "acquisitionType": "original",
+        "acquisitionType": "draft",
         "date": "2025-07-07",
         "note": "Cash sent to Utah in 3-team trade",
         "isOrigin": true,

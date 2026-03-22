@@ -38,7 +38,7 @@
       {
         "type": "pick",
         "name": "2026 2nd Round Pick (lesser of NYK/MIN)",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2026-02-06",
         "tradeDescription": "2026 second-round pick (lesser of New York's or Minnesota's) sent to New Orleans in Alvarado trade",
         "isOrigin": true
@@ -46,7 +46,7 @@
       {
         "type": "pick",
         "name": "2027 2nd Round Pick",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2026-02-06",
         "tradeDescription": "Second-round pick sent to New Orleans in Alvarado trade",
         "isOrigin": true
@@ -54,7 +54,7 @@
       {
         "type": "other",
         "name": "Cash Considerations",
-        "acquisitionType": "original",
+        "acquisitionType": "draft",
         "tradeDescription": "Cash sent to New Orleans in Alvarado trade",
         "isOrigin": true
       }

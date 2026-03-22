@@ -276,7 +276,7 @@
                       {
                         "type": "pick",
                         "name": "2005 2nd Round Pick (#44) via CLE",
-                        "acquisitionType": "original",
+                        "acquisitionType": "own",
                         "date": "2005-06-28",
                         "becamePlayer": "Martynas Andriuskevicius",
                         "note": "Cleveland's 2nd round pick, became #44 overall",
@@ -285,7 +285,7 @@
                       {
                         "type": "pick",
                         "name": "2007 2nd Round Pick (#54) via CLE",
-                        "acquisitionType": "original",
+                        "acquisitionType": "own",
                         "date": "2007-06-28",
                         "becamePlayer": "Brad Newley",
                         "note": "Cleveland's 2nd round pick, became #54 overall",
@@ -296,7 +296,7 @@
                   {
                     "type": "pick",
                     "name": "2018 1st Round Pick (#25) via CLE",
-                    "acquisitionType": "original",
+                    "acquisitionType": "own",
                     "date": "2018-06-21",
                     "becamePlayer": "Moritz Wagner",
                     "note": "Cavaliers' own first-round pick sent to Portland in Channing Frye trade",
@@ -307,7 +307,7 @@
               {
                 "type": "pick",
                 "name": "2018 1st Round Pick (#25) via CLE",
-                "acquisitionType": "original",
+                "acquisitionType": "own",
                 "date": "2018-06-21",
                 "becamePlayer": "Moritz Wagner",
                 "note": "Cavaliers' own first-round pick sent to Lakers in IT trade",
@@ -318,7 +318,7 @@
           {
             "type": "pick",
             "name": "2023 2nd Round Pick via CLE",
-            "acquisitionType": "original",
+            "acquisitionType": "own",
             "date": "2023-06-22",
             "note": "Cavaliers' own second-round pick sent to Bulls in Markkanen 3-team trade (eventually forfeited, never used)",
             "isOrigin": true,
@@ -376,7 +376,7 @@
       {
         "type": "pick",
         "name": "2025 1st Round Pick (#29) via CLE",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2025-06-26",
         "becamePlayer": "Liam McNeeley",
         "note": "Cavaliers' own first-round pick, became #29 overall (Liam McNeeley)",
@@ -385,7 +385,7 @@
       {
         "type": "pick",
         "name": "2027 1st Round Pick via CLE",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2027-06-24",
         "note": "Cavaliers' own first-round pick sent to Utah",
         "isOrigin": true
@@ -393,7 +393,7 @@
       {
         "type": "pick",
         "name": "2029 1st Round Pick via CLE",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2029-06-24",
         "note": "Cavaliers' own first-round pick sent to Utah",
         "isOrigin": true

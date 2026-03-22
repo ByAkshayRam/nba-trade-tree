@@ -9,7 +9,7 @@
   "tree": {
     "type": "player",
     "name": "Kyshawn George",
-    "acquisitionType": "draft-night-trade",
+    "acquisitionType": "trade",
     "date": "2024-06-26",
     "currentTeam": "WAS",
     "tradePartner": "NYK",
@@ -60,7 +60,7 @@
                   {
                     "type": "other",
                     "name": "Cash Considerations",
-                    "acquisitionType": "free-agent",
+                    "acquisitionType": "other",
                     "note": "Cash sent to NOP as part of 3-team AD trade",
                     "isOrigin": true,
                     "assetsGivenUp": []
@@ -76,7 +76,7 @@
       {
         "type": "pick",
         "name": "2024 2nd Round Pick (#51)",
-        "acquisitionType": "draft",
+        "acquisitionType": "own",
         "becamePlayer": "Melvin Ajinça",
         "note": "Sent to NYK along with Dillon Jones pick",
         "isOrigin": true,

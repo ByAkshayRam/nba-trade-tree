@@ -128,7 +128,7 @@
                     "type": "pick",
                     "name": "2017 1st Round Pick (#27)",
                     "becamePlayer": "Kyle Kuzma",
-                    "acquisitionType": "original",
+                    "acquisitionType": "own",
                     "date": "2013-07-12",
                     "note": "BOS own 2017 1st, sent to BKN. BKN got #27 via pick swap. Lakers drafted Kuzma.",
                     "isOrigin": true
@@ -137,7 +137,7 @@
                     "type": "pick",
                     "name": "2017 2nd Round Pick",
                     "becamePlayer": "Sasha Vezenkov",
-                    "acquisitionType": "original",
+                    "acquisitionType": "own",
                     "date": "2013-07-12",
                     "note": "Sent to BKN in KG/Pierce trade.",
                     "isOrigin": true

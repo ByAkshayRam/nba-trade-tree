@@ -52,7 +52,7 @@
           {
             "type": "player",
             "name": "Josh Hart",
-            "acquisitionType": "draft-night-trade",
+            "acquisitionType": "trade",
             "date": "2017-06-22",
             "draftPick": 30,
             "draftRound": 1,
@@ -73,7 +73,7 @@
               {
                 "type": "player",
                 "name": "Tony Bradley",
-                "acquisitionType": "draft-night-trade",
+                "acquisitionType": "trade",
                 "date": "2017-06-22",
                 "draftPick": 28,
                 "draftRound": 1,
@@ -100,7 +100,7 @@
           {
             "type": "pick",
             "name": "2019 1st Round Pick (#4) via LAL",
-            "acquisitionType": "original",
+            "acquisitionType": "own",
             "date": "2019-06-20",
             "becamePlayer": "De'Andre Hunter",
             "note": "Lakers' own 1st round pick, became #4 overall, sent to NOP then traded to ATL",
@@ -110,7 +110,7 @@
           {
             "type": "pick",
             "name": "2022 1st Round Pick (#8) via LAL",
-            "acquisitionType": "original",
+            "acquisitionType": "own",
             "date": "2022-06-23",
             "becamePlayer": "Dyson Daniels",
             "note": "Lakers' own 1st round pick, sent to NOP",
@@ -120,7 +120,7 @@
           {
             "type": "pick",
             "name": "2025 1st Round Pick (#9) via LAL",
-            "acquisitionType": "original",
+            "acquisitionType": "own",
             "date": "2025-06-25",
             "becamePlayer": "Drake Powell",
             "note": "Lakers' own 1st round pick, NOP deferred from 2024 to 2025",
@@ -143,7 +143,7 @@
       {
         "type": "pick",
         "name": "2029 1st Round Pick via LAL",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2029-06-01",
         "note": "Lakers' own 1st round pick, sent to Dallas",
         "isOrigin": true,
@@ -184,7 +184,7 @@
               {
                 "type": "player",
                 "name": "Talen Horton-Tucker",
-                "acquisitionType": "draft-night-trade",
+                "acquisitionType": "trade",
                 "date": "2019-06-20",
                 "draftPick": 46,
                 "draftRound": 2,
@@ -194,7 +194,7 @@
                   {
                     "type": "pick",
                     "name": "2020 2nd Round Pick (#58)",
-                    "acquisitionType": "draft",
+                    "acquisitionType": "own",
                     "date": "2019-06-20",
                     "draftPick": 58,
                     "draftRound": 2,
@@ -206,7 +206,7 @@
                   {
                     "type": "other",
                     "name": "Cash Considerations ($2.2M)",
-                    "acquisitionType": "free-agent",
+                    "acquisitionType": "other",
                     "note": "Cash sent to ORL",
                     "isOrigin": true,
                     "assetsGivenUp": []

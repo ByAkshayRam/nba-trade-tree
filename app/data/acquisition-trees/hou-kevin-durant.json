@@ -65,14 +65,14 @@
                 "tradePartner": "DET",
                 "becamePlayer": "Luka Garza",
                 "note": "LAL own 2nd; acquired from DET in Christian Wood trade (Nov 24, 2020). Sent to SAC for KMJ.",
-                "isOrigin": false,
+                "isOrigin": true,
                 "assetsGivenUp": [],
                 "date": "2020-11-25"
               },
               {
                 "type": "other",
                 "name": "Cash Considerations",
-                "acquisitionType": "free-agent",
+                "acquisitionType": "other",
                 "note": "Cash sent to Sacramento",
                 "isOrigin": true,
                 "assetsGivenUp": []
@@ -163,7 +163,7 @@
                               {
                                 "type": "pick",
                                 "name": "2020 1st Round Pick (#22)",
-                                "acquisitionType": "draft",
+                                "acquisitionType": "own",
                                 "becamePlayer": "Zeke Nnaji",
                                 "note": "HOU own pick; sent to DEN in 4-team trade",
                                 "isOrigin": true,
@@ -191,13 +191,13 @@
                         "tradePartner": "POR",
                         "tradeDescription": "Part of same Covington-to-POR trade as Ariza; pass-through to DET",
                         "note": "Pass-through: acquired from POR and immediately flipped to DET. Cost tracked under Ariza node.",
-                        "isOrigin": false,
+                        "isOrigin": true,
                         "assetsGivenUp": []
                       },
                       {
                         "type": "pick",
                         "name": "2027 2nd Round Pick (HOU own)",
-                        "acquisitionType": "draft",
+                        "acquisitionType": "own",
                         "note": "HOU own pick sent to DET",
                         "isOrigin": true,
                         "assetsGivenUp": [],
@@ -206,7 +206,7 @@
                       {
                         "type": "other",
                         "name": "Cash Considerations",
-                        "acquisitionType": "free-agent",
+                        "acquisitionType": "other",
                         "isOrigin": true,
                         "assetsGivenUp": []
                       }
@@ -229,7 +229,7 @@
               {
                 "type": "pick",
                 "name": "2024 2nd Round Pick (BRK own)",
-                "acquisitionType": "draft",
+                "acquisitionType": "own",
                 "note": "Did not convey. Sent to BKN for Mills.",
                 "isOrigin": true,
                 "assetsGivenUp": [],
@@ -240,7 +240,7 @@
           {
             "type": "pick",
             "name": "2024 2nd Round Pick (#37)",
-            "acquisitionType": "draft",
+            "acquisitionType": "own",
             "becamePlayer": "KJ Simpson",
             "note": "HOU own 2nd round pick; sent to OKC in 5-team trade",
             "isOrigin": true,
@@ -254,14 +254,14 @@
             "tradePartner": "MIN",
             "becamePlayer": "Mohamed Diawara",
             "note": "Acquired from MIN in TyTy Washington trade (June 24, 2022); sent to ATL in 5-team trade",
-            "isOrigin": false,
+            "isOrigin": true,
             "assetsGivenUp": [],
             "date": "2023-07-08"
           },
           {
             "type": "pick",
             "name": "2028 2nd Round Pick (HOU own)",
-            "acquisitionType": "draft",
+            "acquisitionType": "own",
             "note": "HOU own pick; sent to ATL in 5-team trade",
             "isOrigin": true,
             "assetsGivenUp": [],
@@ -270,7 +270,7 @@
           {
             "type": "pick",
             "name": "2029 2nd Round Pick (HOU own)",
-            "acquisitionType": "draft",
+            "acquisitionType": "own",
             "note": "HOU own pick; sent to OKC in 5-team trade",
             "isOrigin": true,
             "assetsGivenUp": [],
@@ -279,7 +279,7 @@
           {
             "type": "pick",
             "name": "2030 2nd Round Pick (HOU own)",
-            "acquisitionType": "draft",
+            "acquisitionType": "own",
             "note": "HOU own pick; sent to OKC in 5-team trade",
             "isOrigin": true,
             "assetsGivenUp": [],
@@ -290,7 +290,7 @@
       {
         "type": "pick",
         "name": "2025 1st Round Pick (#10)",
-        "acquisitionType": "draft",
+        "acquisitionType": "own",
         "date": "2025-06-25",
         "becamePlayer": "Khaman Maluach",
         "note": "Rockets' own lottery pick; used by Phoenix to draft Maluach",
@@ -309,7 +309,7 @@
       {
         "type": "pick",
         "name": "2025 2nd Round Pick (#31)",
-        "acquisitionType": "draft",
+        "acquisitionType": "own",
         "date": "2025-06-25",
         "becamePlayer": "Rasheer Fleming",
         "note": "2nd round pick sent to Phoenix; used to draft Fleming",
@@ -319,7 +319,7 @@
       {
         "type": "pick",
         "name": "2025 2nd Round Pick (#41)",
-        "acquisitionType": "draft",
+        "acquisitionType": "own",
         "date": "2025-06-25",
         "becamePlayer": "Koby Brea",
         "note": "2nd round pick sent to Phoenix; used to draft Brea",

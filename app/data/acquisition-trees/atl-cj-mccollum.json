@@ -20,19 +20,19 @@
       {
         "type": "player",
         "name": "Trae Young",
-        "acquisitionType": "draft-night-trade",
+        "acquisitionType": "trade",
         "date": "2018-06-21",
         "draftPick": 5,
         "draftRound": 1,
         "tradePartner": "DAL",
         "tradeDescription": "Draft night swap: Hawks selected Luka Doncic #3, traded him to Dallas for the #5 pick (Trae Young) and a 2019 protected 1st rounder",
         "note": "3x All-Star, Hawks franchise cornerstone 2018-2026. The Luka-Trae swap defined both franchises.",
-        "isOrigin": true,
+        "isOrigin": false,
         "assetsGivenUp": [
           {
             "type": "pick",
             "name": "2018 1st Round Pick (#3)",
-            "acquisitionType": "original",
+            "acquisitionType": "own",
             "date": "2018-06-21",
             "becamePlayer": "Luka Doncic",
             "tradeDescription": "Hawks selected Doncic #3 overall, immediately traded to Dallas in swap for #5 pick (Trae Young)",

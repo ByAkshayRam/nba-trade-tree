@@ -68,7 +68,7 @@
       {
         "type": "pick",
         "name": "2027 2nd Round Pick via DEN",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2026-02-05",
         "note": "Denver's 2027 2nd round pick, sent to BOS in Simons trade",
         "isOrigin": true,

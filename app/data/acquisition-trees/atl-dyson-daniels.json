@@ -40,7 +40,7 @@
             "type": "pick",
             "name": "2025 1st Round Pick via ATL",
             "becamePlayer": "Carter Bryant",
-            "acquisitionType": "original",
+            "acquisitionType": "own",
             "date": "2022-06-30",
             "note": "Atlanta's own 2025 1st-round pick, sent to SAS in Murray trade.",
             "isOrigin": true
@@ -48,24 +48,24 @@
           {
             "type": "pick",
             "name": "2026 2nd Round Pick via ATL",
-            "acquisitionType": "original",
+            "acquisitionType": "own",
             "date": "2022-06-30",
-            "note": "Originally a 2023 CHO 1st (top-16 protected '23, top-14 '24) \u2014 never conveyed, converted to ATL's own 2026 2nd. SAS included in De'Aaron Fox 3-team trade to SAC.",
+            "note": "Originally a 2023 CHO 1st (top-16 protected '23, top-14 '24) — never conveyed, converted to ATL's own 2026 2nd. SAS included in De'Aaron Fox 3-team trade to SAC.",
             "isOrigin": true
           },
           {
             "type": "pick",
             "name": "2027 2nd Round Pick via ATL",
-            "acquisitionType": "original",
+            "acquisitionType": "own",
             "date": "2022-06-30",
-            "note": "Originally a 2023 CHO 1st (top-16 protected '23, top-14 '24) \u2014 never conveyed, converted to ATL's own 2027 2nd. SAS included in De'Aaron Fox 3-team trade to SAC.",
+            "note": "Originally a 2023 CHO 1st (top-16 protected '23, top-14 '24) — never conveyed, converted to ATL's own 2027 2nd. SAS included in De'Aaron Fox 3-team trade to SAC.",
             "isOrigin": true
           },
           {
             "type": "pick",
             "name": "2026 1st Round Pick",
-            "becamePlayer": "Swap Rights \u2192 SAS",
-            "acquisitionType": "original",
+            "becamePlayer": "Swap Rights → SAS",
+            "acquisitionType": "own",
             "date": "2022-06-30",
             "note": "SAS has right to swap 2026 1st-round picks with ATL if Atlanta's pick is better.",
             "isOrigin": true
@@ -73,7 +73,7 @@
           {
             "type": "pick",
             "name": "2027 1st Round Pick via ATL",
-            "acquisitionType": "original",
+            "acquisitionType": "own",
             "date": "2022-06-30",
             "note": "Atlanta's own 2027 1st-round pick, sent to SAS in Murray trade.",
             "isOrigin": true

@@ -70,7 +70,7 @@
           {
             "type": "pick",
             "name": "2025 2nd Round Pick (#40)",
-            "acquisitionType": "draft",
+            "acquisitionType": "own",
             "becamePlayer": "Micah Peavy",
             "note": "WAS own 2nd round pick, sent to NOP",
             "isOrigin": true,

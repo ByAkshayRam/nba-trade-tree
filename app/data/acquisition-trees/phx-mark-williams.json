@@ -27,7 +27,7 @@
       },
       {
         "type": "player",
-        "name": "Vasilije Mici\u0107",
+        "name": "Vasilije Micić",
         "acquisitionType": "trade",
         "date": "2025-02-06",
         "tradePartner": "CHA",
@@ -35,7 +35,7 @@
         "assetsGivenUp": [
           {
             "type": "player",
-            "name": "Jusuf Nurki\u0107",
+            "name": "Jusuf Nurkić",
             "acquisitionType": "trade",
             "date": "2023-09-27",
             "tradePartner": "POR",

@@ -60,7 +60,7 @@
       {
         "type": "player",
         "name": "Hugo Besson",
-        "acquisitionType": "draft-night-trade",
+        "acquisitionType": "trade",
         "date": "2022-06-23",
         "tradePartner": "IND",
         "isOrigin": false,
@@ -69,7 +69,7 @@
           {
             "type": "other",
             "name": "Cash Considerations",
-            "acquisitionType": "original",
+            "acquisitionType": "draft",
             "date": "2022-06-23",
             "isOrigin": true,
             "assetsGivenUp": []
@@ -90,7 +90,7 @@
       {
         "type": "other",
         "name": "Cash Considerations",
-        "acquisitionType": "original",
+        "acquisitionType": "draft",
         "date": "2025-02-06",
         "isOrigin": true,
         "assetsGivenUp": []

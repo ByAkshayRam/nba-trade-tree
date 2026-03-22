@@ -37,7 +37,7 @@
       {
         "type": "other",
         "name": "Cash Considerations",
-        "acquisitionType": "free-agent",
+        "acquisitionType": "other",
         "note": "Cash sent to Atlanta to facilitate sign-and-trade",
         "isOrigin": true,
         "assetsGivenUp": []

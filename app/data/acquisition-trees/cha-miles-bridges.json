@@ -9,7 +9,7 @@
   "tree": {
     "type": "player",
     "name": "Miles Bridges",
-    "acquisitionType": "draft-night-trade",
+    "acquisitionType": "trade",
     "date": "2018-06-21",
     "currentTeam": "CHA",
     "draftPick": 12,
@@ -22,7 +22,7 @@
         "type": "pick",
         "name": "2018 1st Round Pick (#11)",
         "becamePlayer": "Shai Gilgeous-Alexander",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2018-06-21",
         "note": "Hornets' own 11th overall pick, sent to Clippers in draft-night swap for Bridges",
         "isOrigin": true

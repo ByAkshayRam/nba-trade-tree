@@ -21,7 +21,6 @@
       {
         "type": "pick",
         "name": "2027 2nd Round Pick via CLE",
-        "acquisitionType": "trade",
         "date": "2025-07-06",
         "note": "Cleveland's 2027 2nd-round pick, sent to Minnesota in NAW trade.",
         "isOrigin": true
@@ -29,7 +28,7 @@
       {
         "type": "other",
         "name": "Cash Considerations",
-        "acquisitionType": "original",
+        "acquisitionType": "draft",
         "note": "Cash sent to Minnesota.",
         "isOrigin": true
       }

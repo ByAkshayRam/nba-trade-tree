@@ -72,7 +72,7 @@
                         "type": "pick",
                         "name": "2017 1st Round Pick (#27 via pick swap)",
                         "becamePlayer": "Kyle Kuzma",
-                        "acquisitionType": "original",
+                        "acquisitionType": "own",
                         "date": "2017-06-22",
                         "note": "BKN had the worst record in 2017 (#1 pick), but owed it to BOS from the KG/Pierce trade. BOS swapped #1 to PHI for #3 (Jayson Tatum). BKN got BOS's pick position (#27) via the swap. LAL drafted Kyle Kuzma.",
                         "isOrigin": false,
@@ -81,7 +81,7 @@
                             "type": "pick",
                             "name": "2017 1st Round Pick (#1 overall)",
                             "becamePlayer": "Markelle Fultz",
-                            "acquisitionType": "original",
+                            "acquisitionType": "own",
                             "date": "2017-06-22",
                             "note": "BKN's own pick — worst record in NBA, #1 overall. Owed to BOS from the 2013 KG/Pierce trade. BOS traded #1 to PHI for #3 (Jayson Tatum) and a future 1st. PHI drafted Markelle Fultz.",
                             "isOrigin": true

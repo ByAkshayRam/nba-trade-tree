@@ -162,7 +162,7 @@
             "type": "pick",
             "name": "2025 1st Round Pick (#14)",
             "acquisitionType": "trade",
-            "becamePlayer": "Nolan Traor\u00e9",
+            "becamePlayer": "Nolan Traoré",
             "note": "MIL own 2025 1st (originally 2022 conditional that did not convey), sent to Portland",
             "isOrigin": false,
             "assetsGivenUp": [
@@ -469,7 +469,7 @@
                 "assetsGivenUp": [
                   {
                     "type": "player",
-                    "name": "Nicol\u00f2 Melli",
+                    "name": "Nicolò Melli",
                     "acquisitionType": "free-agent",
                     "date": "2019-07-17",
                     "note": "Italian forward signed as free agent",

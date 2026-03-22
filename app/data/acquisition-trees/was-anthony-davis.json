@@ -57,7 +57,7 @@
                   {
                     "type": "pick",
                     "name": "2023 1st Round Pick (#4)",
-                    "acquisitionType": "draft",
+                    "acquisitionType": "own",
                     "note": "Sent to Houston, conveyed #4 overall",
                     "becamePlayer": "Amen Thompson",
                     "isOrigin": true,
@@ -107,7 +107,7 @@
             "type": "pick",
             "name": "2025 2nd Round Pick (#39)",
             "becamePlayer": "Bogoljub Markovic",
-            "acquisitionType": "draft",
+            "acquisitionType": "own",
             "note": "Second most favorable of DET/PHO/GSW picks, sent to Milwaukee",
             "isOrigin": true,
             "assetsGivenUp": [],
@@ -118,7 +118,7 @@
           {
             "type": "pick",
             "name": "2026 2nd Round Pick",
-            "acquisitionType": "draft",
+            "acquisitionType": "own",
             "note": "Protected top 55, sent to Milwaukee",
             "isOrigin": true,
             "assetsGivenUp": [],
@@ -189,7 +189,7 @@
               {
                 "type": "pick",
                 "name": "2025 2nd Round Pick (#40)",
-                "acquisitionType": "draft",
+                "acquisitionType": "own",
                 "becamePlayer": "Micah Peavy",
                 "note": "WAS own 2nd round pick, sent to NOP",
                 "isOrigin": true,
@@ -214,7 +214,7 @@
       {
         "type": "pick",
         "name": "2026 1st Round Pick (via OKC)",
-        "acquisitionType": "draft",
+        "acquisitionType": "own",
         "note": "Thunder's 2026 1st round pick, sent to Dallas",
         "isOrigin": true,
         "assetsGivenUp": [],
@@ -223,7 +223,7 @@
       {
         "type": "pick",
         "name": "2030 1st Round Pick (via GSW)",
-        "acquisitionType": "draft",
+        "acquisitionType": "own",
         "note": "Warriors' 2030 1st, top-20 protected, sent to Dallas. Originally acquired from GSW in Chris Paul trade (July 2023).",
         "isOrigin": true,
         "assetsGivenUp": [],

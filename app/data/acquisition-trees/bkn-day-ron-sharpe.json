@@ -74,7 +74,7 @@
             "type": "pick",
             "name": "2021 2nd Round Pick via TOR",
             "becamePlayer": "JT Thor",
-            "acquisitionType": "original",
+            "acquisitionType": "own",
             "date": "2020-11-19",
             "note": "Toronto's 2021 2nd-round pick. Sent to DET in Shamet 3-team trade. DET used it to draft JT Thor.",
             "isOrigin": true

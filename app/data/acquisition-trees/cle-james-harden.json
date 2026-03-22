@@ -31,7 +31,7 @@
       {
         "type": "pick",
         "name": "2026 2nd Round Pick via CLE",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2026-06-25",
         "note": "Cavaliers' own second-round pick",
         "isOrigin": true

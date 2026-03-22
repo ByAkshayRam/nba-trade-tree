@@ -40,7 +40,7 @@
       {
         "type": "pick",
         "name": "2024 2nd Round Pick",
-        "acquisitionType": "draft",
+        "acquisitionType": "own",
         "date": "2024-06-26",
         "becamePlayer": "Bobi Klintman",
         "note": "Memphis' own 2024 second-round pick, conveyed to OKC",

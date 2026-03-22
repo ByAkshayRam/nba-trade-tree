@@ -40,7 +40,7 @@
           {
             "type": "player",
             "name": "Talen Horton-Tucker",
-            "acquisitionType": "draft-night-trade",
+            "acquisitionType": "trade",
             "date": "2019-06-20",
             "draftPick": 46,
             "draftRound": 2,
@@ -51,7 +51,7 @@
               {
                 "type": "pick",
                 "name": "2020 2nd Round Pick (#58)",
-                "acquisitionType": "draft",
+                "acquisitionType": "own",
                 "date": "2019-06-20",
                 "draftPick": 58,
                 "draftRound": 2,
@@ -63,7 +63,7 @@
               {
                 "type": "other",
                 "name": "Cash Considerations ($2.2M)",
-                "acquisitionType": "free-agent",
+                "acquisitionType": "other",
                 "note": "Cash sent to ORL",
                 "isOrigin": true,
                 "assetsGivenUp": []

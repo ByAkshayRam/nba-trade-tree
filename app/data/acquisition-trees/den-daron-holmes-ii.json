@@ -9,7 +9,7 @@
   "tree": {
     "type": "player",
     "name": "DaRon Holmes II",
-    "acquisitionType": "draft-night-trade",
+    "acquisitionType": "trade",
     "date": "2024-06-26",
     "currentTeam": "DEN",
     "tradePartner": "PHX",
@@ -20,7 +20,7 @@
       {
         "type": "pick",
         "name": "2024 1st Round Pick (#28)",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2024-06-26",
         "becamePlayer": "Ryan Dunn",
         "note": "Denver's own 28th overall pick, sent to Phoenix in Holmes trade",
@@ -29,7 +29,7 @@
       {
         "type": "pick",
         "name": "2024 2nd Round Pick (#56)",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2024-06-26",
         "becamePlayer": "Kevin McCullar Jr.",
         "note": "Acquired from OKC in 2023 4-team trade (least favorable of MIN/CHO), sent to Phoenix in Holmes trade",
@@ -38,7 +38,7 @@
       {
         "type": "pick",
         "name": "2026 2nd Round Pick via DEN",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2024-06-26",
         "note": "Denver's own 2026 second-round pick, sent to Phoenix",
         "isOrigin": true
@@ -46,7 +46,7 @@
       {
         "type": "pick",
         "name": "2031 2nd Round Pick via DEN",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2024-06-26",
         "note": "Denver's own 2031 second-round pick, sent to Phoenix",
         "isOrigin": true

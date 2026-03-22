@@ -51,7 +51,7 @@
                 "acquisitionType": "trade",
                 "date": "2010-12-18",
                 "tradePartner": "PHO",
-                "tradeDescription": "Orlando traded Vince Carter, Marcin Gortat, Micka\u00ebl Pi\u00e9trus, cash and 2011 1st round pick (became Nikola Miroti\u0107) to Phoenix for Jason Richardson, Earl Clark and Hedo T\u00fcrko\u011flu",
+                "tradeDescription": "Orlando traded Vince Carter, Marcin Gortat, Mickaël Piétrus, cash and 2011 1st round pick (became Nikola Mirotić) to Phoenix for Jason Richardson, Earl Clark and Hedo Türkoğlu",
                 "isOrigin": false,
                 "assetsGivenUp": [
                   {
@@ -142,14 +142,14 @@
                                         "acquisitionType": "trade",
                                         "date": "2000-08-03",
                                         "tradePartner": "TOR",
-                                        "tradeDescription": "Orlando traded 2005 1st round pick (became Fran V\u00e1zquez) to Toronto for Tracy McGrady",
+                                        "tradeDescription": "Orlando traded 2005 1st round pick (became Fran Vázquez) to Toronto for Tracy McGrady",
                                         "isOrigin": false,
                                         "assetsGivenUp": [
                                           {
                                             "type": "pick",
                                             "name": "2005 1st Round Pick (#11)",
                                             "acquisitionType": "own",
-                                            "becamePlayer": "Fran V\u00e1zquez",
+                                            "becamePlayer": "Fran Vázquez",
                                             "isOrigin": true,
                                             "assetsGivenUp": []
                                           }
@@ -198,7 +198,7 @@
                         "acquisitionType": "trade",
                         "date": "2004-07-23",
                         "tradePartner": "CLE",
-                        "tradeDescription": "Orlando traded Drew Gooden, Steven Hunter and Anderson Varej\u00e3o to Cleveland for Tony Battie, 2005 2nd round pick and 2007 2nd round pick",
+                        "tradeDescription": "Orlando traded Drew Gooden, Steven Hunter and Anderson Varejão to Cleveland for Tony Battie, 2005 2nd round pick and 2007 2nd round pick",
                         "isOrigin": false,
                         "assetsGivenUp": [
                           {
@@ -207,7 +207,7 @@
                             "acquisitionType": "trade",
                             "date": "2003-02-19",
                             "tradePartner": "MEM",
-                            "tradeDescription": "Orlando traded Mike Miller, Ryan Humphrey, 2003 1st round pick (became Kendrick Perkins) and 2004 2nd round pick to Memphis for Drew Gooden and Gordan Giri\u010dek",
+                            "tradeDescription": "Orlando traded Mike Miller, Ryan Humphrey, 2003 1st round pick (became Kendrick Perkins) and 2004 2nd round pick to Memphis for Drew Gooden and Gordan Giriček",
                             "isOrigin": false,
                             "assetsGivenUp": [
                               {
@@ -274,7 +274,7 @@
                           },
                           {
                             "type": "player",
-                            "name": "Anderson Varej\u00e3o",
+                            "name": "Anderson Varejão",
                             "acquisitionType": "draft",
                             "date": "2004-06-24",
                             "draftPick": 30,
@@ -299,7 +299,7 @@
                       {
                         "type": "other",
                         "name": "Future Considerations",
-                        "acquisitionType": "own",
+                        "acquisitionType": "draft",
                         "isOrigin": true,
                         "assetsGivenUp": []
                       }
@@ -307,7 +307,7 @@
                   },
                   {
                     "type": "player",
-                    "name": "Micka\u00ebl Pi\u00e9trus",
+                    "name": "Mickaël Piétrus",
                     "acquisitionType": "free-agent",
                     "date": "2008-07-10",
                     "tradeDescription": "Signed as free agent",
@@ -318,7 +318,7 @@
                     "type": "pick",
                     "name": "2011 1st Round Pick (#23)",
                     "acquisitionType": "own",
-                    "becamePlayer": "Nikola Miroti\u0107",
+                    "becamePlayer": "Nikola Mirotić",
                     "isOrigin": true,
                     "assetsGivenUp": []
                   }

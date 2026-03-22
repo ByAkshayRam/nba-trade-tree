@@ -19,7 +19,7 @@
       {
         "type": "pick",
         "name": "2030 2nd Round Pick (top-55 protected)",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2026-02-05",
         "note": "Hornets' own 2030 2nd-round pick, top-55 protected, sent to Boston in Tillman trade",
         "isOrigin": true

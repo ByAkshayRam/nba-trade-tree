@@ -12,7 +12,7 @@
     "acquisitionType": "trade",
     "date": "2022-07-06",
     "tradePartner": "NYK",
-    "tradeDescription": "DET traded a 2025 1st round draft pick (MIL, conditional, became Nolan Traor\u00e9) to NYK for Jalen Duren and Kemba Walker. NYK also received a trade exception",
+    "tradeDescription": "DET traded a 2025 1st round draft pick (MIL, conditional, became Nolan Traoré) to NYK for Jalen Duren and Kemba Walker. NYK also received a trade exception",
     "currentTeam": "DET",
     "draftPick": 13,
     "assetsGivenUp": [
@@ -23,7 +23,7 @@
         "date": "2022-07-06",
         "tradePartner": "POR",
         "tradeDescription": "DET traded Jerami Grant and Ismael Kamagate to POR for Gabriele Procida, a 2025 1st round pick (MIL, conditional), a 2025 2nd round pick, and a 2026 2nd round pick. Detroit also received a trade exception",
-        "becamePlayer": "Nolan Traor\u00e9",
+        "becamePlayer": "Nolan Traoré",
         "assetsGivenUp": [
           {
             "type": "player",
@@ -31,12 +31,12 @@
             "acquisitionType": "trade",
             "date": "2020-11-22",
             "tradePartner": "DEN",
-            "tradeDescription": "DET traded cash to DEN for Jerami Grant and Nikola Radi\u010devi\u0107. Denver also received a trade exception",
+            "tradeDescription": "DET traded cash to DEN for Jerami Grant and Nikola Radičević. Denver also received a trade exception",
             "assetsGivenUp": [
               {
                 "type": "other",
                 "name": "Cash considerations",
-                "acquisitionType": "free-agent",
+                "acquisitionType": "other",
                 "date": "2020-11-22",
                 "tradeDescription": "Cash sent to Denver for Jerami Grant",
                 "isOrigin": true,

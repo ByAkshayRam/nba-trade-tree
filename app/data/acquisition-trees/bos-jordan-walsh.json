@@ -12,7 +12,7 @@
   "tree": {
     "type": "player",
     "name": "Jordan Walsh",
-    "acquisitionType": "draft-night-trade",
+    "acquisitionType": "trade",
     "date": "2023-06-28",
     "draftPick": 38,
     "draftRound": 2,

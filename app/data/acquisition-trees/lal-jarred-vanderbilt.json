@@ -30,7 +30,7 @@
           {
             "type": "player",
             "name": "Kyle Kuzma",
-            "acquisitionType": "draft-night-trade",
+            "acquisitionType": "trade",
             "date": "2017-06-22",
             "draftPick": 27,
             "draftRound": 1,
@@ -81,7 +81,7 @@
           {
             "type": "pick",
             "name": "2021 1st Round Pick (#22) via LAL",
-            "acquisitionType": "original",
+            "acquisitionType": "own",
             "date": "2021-07-29",
             "becamePlayer": "Isaiah Jackson",
             "note": "Lakers' own 1st round pick, became #22 overall, sent to Pacers",
@@ -111,7 +111,7 @@
       {
         "type": "pick",
         "name": "2027 1st Round Pick via LAL",
-        "acquisitionType": "original",
+        "acquisitionType": "own",
         "date": "2027-06-01",
         "note": "Lakers' own 1st round pick, sent to Utah Jazz",
         "isOrigin": true,

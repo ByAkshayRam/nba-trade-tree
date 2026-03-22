@@ -9,7 +9,7 @@
   "tree": {
     "type": "player",
     "name": "Derik Queen",
-    "acquisitionType": "draft-night-trade",
+    "acquisitionType": "trade",
     "date": "2025-06-25",
     "draftPick": 13,
     "draftRound": 1,

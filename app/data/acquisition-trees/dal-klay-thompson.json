@@ -31,7 +31,7 @@
       {
         "type": "pick",
         "name": "2031 2nd Round Pick",
-        "acquisitionType": "draft",
+        "acquisitionType": "own",
         "date": "2024-07-06",
         "note": "DAL's own 2031 2nd round pick. Sent to Philadelphia as part of 6-team Klay Thompson sign-and-trade.",
         "isOrigin": true,

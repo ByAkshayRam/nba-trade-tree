@@ -47,16 +47,16 @@
                   {
                     "type": "player",
                     "name": "Marc Gasol",
-                    "acquisitionType": "draft-night-trade",
+                    "acquisitionType": "trade",
                     "date": "2008-02-01",
                     "tradePartner": "LAL",
-                    "tradeDescription": "MEM traded Pau Gasol and 2010 2nd (Devin Ebanks) to LAL for Kwame Brown, Javaris Crittenton, Marc Gasol, Aaron McKie, 2008 1st (#28 Dont\u00e9 Greene) and 2010 1st (Greivis V\u00e1squez)",
+                    "tradeDescription": "MEM traded Pau Gasol and 2010 2nd (Devin Ebanks) to LAL for Kwame Brown, Javaris Crittenton, Marc Gasol, Aaron McKie, 2008 1st (#28 Donté Greene) and 2010 1st (Greivis Vásquez)",
                     "note": "Spanish center, key long-term piece from the Pau Gasol blockbuster",
                     "assetsGivenUp": [
                       {
                         "type": "player",
                         "name": "Pau Gasol",
-                        "acquisitionType": "draft-night-trade",
+                        "acquisitionType": "trade",
                         "date": "2001-06-27",
                         "draftPick": 3,
                         "draftRound": 1,
@@ -77,7 +77,7 @@
                           {
                             "type": "pick",
                             "name": "2001 1st Round Pick (#27)",
-                            "acquisitionType": "draft",
+                            "acquisitionType": "own",
                             "becamePlayer": "Jamaal Tinsley",
                             "note": "Draft rights traded to ATL in Pau Gasol deal",
                             "isOrigin": true,
@@ -88,7 +88,7 @@
                       {
                         "type": "pick",
                         "name": "2010 2nd Round Pick (#43)",
-                        "acquisitionType": "draft",
+                        "acquisitionType": "own",
                         "becamePlayer": "Devin Ebanks",
                         "note": "Sent to LAL in Pau Gasol trade",
                         "isOrigin": true,
@@ -103,7 +103,7 @@
               {
                 "type": "pick",
                 "name": "2021 1st Round Pick (#17)",
-                "acquisitionType": "draft",
+                "acquisitionType": "own",
                 "becamePlayer": "Trey Murphy III",
                 "note": "MEM's own 2021 1st round pick, used to draft Trey Murphy III and sent to NOP in JV/Adams trade",
                 "isOrigin": true,
@@ -112,7 +112,7 @@
               {
                 "type": "pick",
                 "name": "2021 2nd Round Pick (#51)",
-                "acquisitionType": "draft",
+                "acquisitionType": "own",
                 "becamePlayer": "Brandon Boston Jr.",
                 "note": "MEM's own 2021 2nd round pick, used to draft Brandon Boston Jr. and sent to NOP in JV/Adams trade",
                 "isOrigin": true,

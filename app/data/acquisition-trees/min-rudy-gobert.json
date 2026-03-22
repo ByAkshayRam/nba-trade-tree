@@ -31,7 +31,7 @@
             "acquisitionType": "trade",
             "date": "2018-11-12",
             "tradePartner": "PHI",
-            "tradeDescription": "MIN traded Jimmy Butler and Justin Patton to PHI for Robert Covington, Dario \u0160ari\u0107, Jerryd Bayless, and a 2022 2nd round pick",
+            "tradeDescription": "MIN traded Jimmy Butler and Justin Patton to PHI for Robert Covington, Dario Šarić, Jerryd Bayless, and a 2022 2nd round pick",
             "note": "Acquired from 76ers in Jimmy Butler trade, sent to HOU in 4-team trade",
             "assetsGivenUp": [
               {
@@ -126,12 +126,12 @@
           {
             "type": "player",
             "name": "Jarrett Culver",
-            "acquisitionType": "draft-night-trade",
+            "acquisitionType": "trade",
             "date": "2019-07-06",
             "draftPick": 6,
             "draftRound": 1,
             "tradePartner": "PHX",
-            "tradeDescription": "MIN traded Cameron Johnson (#11) and Dario \u0160ari\u0107 to PHX for Jarrett Culver (#6)",
+            "tradeDescription": "MIN traded Cameron Johnson (#11) and Dario Šarić to PHX for Jarrett Culver (#6)",
             "note": "Texas Tech guard, 2019 #6 overall pick. Selected by PHX, traded to MIN.",
             "isOrigin": false,
             "assetsGivenUp": [
@@ -146,12 +146,12 @@
               },
               {
                 "type": "player",
-                "name": "Dario \u0160ari\u0107",
+                "name": "Dario Šarić",
                 "acquisitionType": "trade",
                 "date": "2018-11-12",
                 "tradePartner": "PHI",
-                "tradeDescription": "Acquired in Jimmy Butler trade (same trade as Covington). MIN traded Butler + Patton to PHI for Covington, \u0160ari\u0107, Bayless, 2022 2nd.",
-                "note": "Croatian forward, from PHI in Butler trade. Shared cost \u2014 same origin chain as Covington above.",
+                "tradeDescription": "Acquired in Jimmy Butler trade (same trade as Covington). MIN traded Butler + Patton to PHI for Covington, Šarić, Bayless, 2022 2nd.",
+                "note": "Croatian forward, from PHI in Butler trade. Shared cost — same origin chain as Covington above.",
                 "assetsGivenUp": [
                   {
                     "type": "player",
@@ -203,7 +203,7 @@
             "date": "2020-02-05",
             "tradePartner": "DEN",
             "tradeDescription": "Acquired from DEN in same 4-team trade as Beasley and Vanderbilt",
-            "note": "Spanish forward, acquired from DEN in 4-team trade. Shared cost \u2014 same origin chain as Beasley branch above.",
+            "note": "Spanish forward, acquired from DEN in 4-team trade. Shared cost — same origin chain as Beasley branch above.",
             "isOrigin": false,
             "assetsGivenUp": [
               {
@@ -212,7 +212,7 @@
                 "acquisitionType": "trade",
                 "date": "2018-11-12",
                 "tradePartner": "PHI",
-                "note": "Shared cost \u2014 full chain detailed in Beasley branch: Butler trade \u2192 LaVine (draft #13) + Dunn (draft #5) + 2017 #7 pick (Markkanen)",
+                "note": "Shared cost — full chain detailed in Beasley branch: Butler trade → LaVine (draft #13) + Dunn (draft #5) + 2017 #7 pick (Markkanen)",
                 "assetsGivenUp": [
                   {
                     "type": "player",
@@ -276,7 +276,7 @@
       {
         "type": "player",
         "name": "Walker Kessler",
-        "acquisitionType": "draft-night-trade",
+        "acquisitionType": "trade",
         "date": "2022-06-24",
         "draftPick": 22,
         "draftRound": 1,
@@ -311,7 +311,7 @@
         "date": "2020-02-05",
         "tradePartner": "DEN",
         "tradeDescription": "Acquired from DEN in same 4-team trade as Beasley",
-        "note": "Kentucky forward, drafted #41 overall by Denver in 2018. Shared cost \u2014 same origin chain as Beasley branch.",
+        "note": "Kentucky forward, drafted #41 overall by Denver in 2018. Shared cost — same origin chain as Beasley branch.",
         "assetsGivenUp": [
           {
             "type": "player",
@@ -319,7 +319,7 @@
             "acquisitionType": "trade",
             "date": "2018-11-12",
             "tradePartner": "PHI",
-            "note": "Shared cost \u2014 full chain in Beasley branch: Butler trade \u2192 LaVine (draft #13) + Dunn (draft #5) + 2017 #7 pick",
+            "note": "Shared cost — full chain in Beasley branch: Butler trade → LaVine (draft #13) + Dunn (draft #5) + 2017 #7 pick",
             "assetsGivenUp": [
               {
                 "type": "player",
@@ -365,7 +365,7 @@
             "date": "2018-06-21",
             "draftPick": 48,
             "draftRound": 2,
-            "note": "Shared cost with Beasley \u2014 sent to DEN",
+            "note": "Shared cost with Beasley — sent to DEN",
             "isOrigin": true
           },
           {
@@ -373,7 +373,7 @@
             "name": "Noah Vonleh",
             "acquisitionType": "free-agent",
             "date": "2019-07-08",
-            "note": "Shared cost with Beasley \u2014 sent to DEN",
+            "note": "Shared cost with Beasley — sent to DEN",
             "isOrigin": true
           }
         ]
@@ -381,7 +381,7 @@
       {
         "type": "player",
         "name": "Leandro Bolmaro",
-        "acquisitionType": "draft-night-trade",
+        "acquisitionType": "trade",
         "date": "2020-11-20",
         "draftPick": 23,
         "draftRound": 1,
