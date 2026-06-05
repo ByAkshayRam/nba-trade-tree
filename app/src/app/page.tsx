@@ -161,9 +161,9 @@ export default function Home() {
             <div className="flex flex-wrap gap-2 items-center justify-center max-w-lg">
               <span className="text-xs text-zinc-600 font-medium mr-2">Trending:</span>
               {[
-                { label: "Celtics", team: "BOS", reason: "Nets trade legacy" },
-                { label: "Thunder", team: "OKC", reason: "Draft dynasty" }, 
-                { label: "Nikola Vucevic", team: "BOS", player: "nikola-vucevic", reason: "Longest chain" }
+                { label: "Karl-Anthony Towns", team: "NYK", player: "karl-anthony-towns", reason: "Complex multi-trade saga" },
+                { label: "De'Aaron Fox", team: "SAS", player: "deaaron-fox", reason: "Traces to Kawhi Leonard trade" }, 
+                { label: "Josh Hart", team: "NYK", player: "josh-hart", reason: "Knicks development story" }
               ].map((item) => (
                 <button
                   key={item.label}
@@ -205,7 +205,13 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Knicks */}
               <div className="p-6 rounded-xl bg-[#F58426]/10 border border-[#F58426]/20">
-                <div className="flex items-center gap-3 mb-4">
+                <button
+                  onClick={() => {
+                    track('finals_team_click', { team: 'NYK' });
+                    router.push('/team/NYK?src=finals-team');
+                  }}
+                  className="flex items-center gap-3 mb-4 w-full text-left hover:scale-105 transition-transform"
+                >
                   <div
                     className="w-12 h-12 rounded-xl flex items-center justify-center text-white font-bold text-sm"
                     style={{ backgroundColor: TEAM_COLORS.NYK }}
@@ -213,21 +219,28 @@ export default function Home() {
                     NYK
                   </div>
                   <div>
-                    <h4 className="text-lg font-bold text-white">New York Knicks</h4>
+                    <h4 className="text-lg font-bold text-white hover:text-[#F58426] transition-colors">New York Knicks</h4>
                     <p className="text-xs text-zinc-500">The Garden&apos;s return to glory</p>
                   </div>
-                </div>
+                </button>
                 <div className="space-y-2 mb-4">
                   {[
-                    { player: "Jalen Brunson", role: "Floor general" },
-                    { player: "OG Anunoby", role: "Two-way star" },
-                    { player: "Karl-Anthony Towns", role: "Stretch big" },
-                    { player: "Josh Hart", role: "Versatile wing" }
+                    { player: "Jalen Brunson", role: "Floor general", slug: "jalen-brunson" },
+                    { player: "OG Anunoby", role: "Two-way star", slug: "og-anunoby" },
+                    { player: "Karl-Anthony Towns", role: "Stretch big", slug: "karl-anthony-towns" },
+                    { player: "Josh Hart", role: "Versatile wing", slug: "josh-hart" }
                   ].map((item) => (
-                    <div key={item.player} className="flex justify-between items-center text-sm">
-                      <span className="text-zinc-200 font-medium">{item.player}</span>
+                    <button
+                      key={item.player}
+                      onClick={() => {
+                        track('finals_player_click', { player: item.player, team: 'NYK' });
+                        router.push(`/team/NYK?player=${item.slug}&src=finals-player`);
+                      }}
+                      className="flex justify-between items-center text-sm w-full text-left hover:bg-[#F58426]/10 px-2 py-1 rounded transition-all"
+                    >
+                      <span className="text-zinc-200 font-medium hover:text-[#F58426] transition-colors">{item.player}</span>
                       <span className="text-zinc-500 text-xs">{item.role}</span>
-                    </div>
+                    </button>
                   ))}
                 </div>
                 <button
@@ -243,7 +256,13 @@ export default function Home() {
               
               {/* Spurs */}
               <div className="p-6 rounded-xl bg-[#C4CED4]/10 border border-[#C4CED4]/20">
-                <div className="flex items-center gap-3 mb-4">
+                <button
+                  onClick={() => {
+                    track('finals_team_click', { team: 'SAS' });
+                    router.push('/team/SAS?src=finals-team');
+                  }}
+                  className="flex items-center gap-3 mb-4 w-full text-left hover:scale-105 transition-transform"
+                >
                   <div
                     className="w-12 h-12 rounded-xl flex items-center justify-center text-black font-bold text-sm"
                     style={{ backgroundColor: TEAM_COLORS.SAS }}
@@ -251,21 +270,28 @@ export default function Home() {
                     SAS
                   </div>
                   <div>
-                    <h4 className="text-lg font-bold text-white">San Antonio Spurs</h4>
+                    <h4 className="text-lg font-bold text-white hover:text-[#C4CED4] transition-colors">San Antonio Spurs</h4>
                     <p className="text-xs text-zinc-500">Excellence never rebuilds</p>
                   </div>
-                </div>
+                </button>
                 <div className="space-y-2 mb-4">
                   {[
-                    { player: "Victor Wembanyama", role: "Generational talent" },
-                    { player: "De'Aaron Fox", role: "Elite playmaker" },
-                    { player: "Harrison Barnes", role: "Veteran leader" },
-                    { player: "Stephon Castle", role: "Rising star" }
+                    { player: "Victor Wembanyama", role: "Generational talent", slug: "victor-wembanyama" },
+                    { player: "De'Aaron Fox", role: "Elite playmaker", slug: "deaaron-fox" },
+                    { player: "Harrison Barnes", role: "Veteran leader", slug: "harrison-barnes" },
+                    { player: "Stephon Castle", role: "Rising star", slug: "stephon-castle" }
                   ].map((item) => (
-                    <div key={item.player} className="flex justify-between items-center text-sm">
-                      <span className="text-zinc-200 font-medium">{item.player}</span>
+                    <button
+                      key={item.player}
+                      onClick={() => {
+                        track('finals_player_click', { player: item.player, team: 'SAS' });
+                        router.push(`/team/SAS?player=${item.slug}&src=finals-player`);
+                      }}
+                      className="flex justify-between items-center text-sm w-full text-left hover:bg-[#C4CED4]/10 px-2 py-1 rounded transition-all"
+                    >
+                      <span className="text-zinc-200 font-medium hover:text-[#C4CED4] transition-colors">{item.player}</span>
                       <span className="text-zinc-500 text-xs">{item.role}</span>
-                    </div>
+                    </button>
                   ))}
                 </div>
                 <button
