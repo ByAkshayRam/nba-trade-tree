@@ -152,26 +152,26 @@ function RosterNode({ data }: NodeProps) {
     <div 
       className={`px-2 py-1.5 rounded-lg shadow-lg min-w-[140px] min-h-[68px] relative cursor-pointer transition-all duration-300 leading-tight ${
         isHighlighted 
-          ? "bg-green-800 border-2 border-green-300 ring-2 ring-green-400/50 scale-105" 
+          ? "bg-blue-800 border-2 border-blue-300 ring-2 ring-blue-400/50 scale-105" 
           : isDimmed 
-            ? "bg-zinc-900/40 border-2 border-zinc-600/30 opacity-40" 
-            : "bg-zinc-800 border-2 border-zinc-600 hover:border-zinc-400"
+            ? "bg-zinc-900/40 border-2 border-zinc-700/30 opacity-40" 
+            : "bg-zinc-900 border-2 border-zinc-700 hover:border-zinc-500"
       }`}
     >
-      <Handle type="source" position={Position.Right} className={`!w-3 !h-3 ${isHighlighted ? "!bg-green-400" : "!bg-zinc-500"}`} />
+      <Handle type="source" position={Position.Right} className={`!w-3 !h-3 ${isHighlighted ? "!bg-blue-400" : "!bg-zinc-500"}`} />
       <div className="flex items-center gap-1.5">
         {espnUrl && (
           <img 
             src={espnUrl}
             alt={nodeData.label}
             className={`w-9 h-9 rounded-full object-cover border transition-all duration-300 ${
-              isHighlighted ? "bg-green-950 border-green-300" : "bg-zinc-900 border-zinc-500"
+              isHighlighted ? "bg-blue-950 border-blue-300" : "bg-zinc-900 border-zinc-500"
             }`}
             onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
           />
         )}
         <div className="leading-tight">
-          <div className={`text-[9px] font-bold uppercase flex items-center gap-1 ${isHighlighted ? "text-green-200" : (isDimmed ? "text-zinc-500" : categoryColor)}`}>
+          <div className={`text-[9px] font-bold uppercase flex items-center gap-1 ${isHighlighted ? "text-blue-200" : (isDimmed ? "text-zinc-500" : categoryColor)}`}>
             {categoryLabel}
             {isHomegrown && <span title="Homegrown talent">🏠</span>}
           </div>
@@ -665,13 +665,13 @@ export default function TeamAcquisitionTree({
             return {
               ...edge,
               style: {
-                stroke: isInPath ? (isOriginEdge ? "#fbbf24" : "#4ade80") : "#3f3f46",
+                stroke: isInPath ? (isOriginEdge ? "#fbbf24" : "#3b82f6") : "#3f3f46",
                 strokeWidth: isInPath ? 3 : 1,
                 opacity: isInPath ? 1 : 0.3,
               },
               markerEnd: targetsRoster ? undefined : {
                 type: MarkerType.ArrowClosed,
-                color: isInPath ? (isOriginEdge ? "#fbbf24" : "#4ade80") : "#3f3f46",
+                color: isInPath ? (isOriginEdge ? "#fbbf24" : "#3b82f6") : "#3f3f46",
                 width: isInPath ? 18 : 12,
                 height: isInPath ? 18 : 12,
               },
@@ -730,7 +730,7 @@ export default function TeamAcquisitionTree({
         ...edge,
         style: {
           stroke: isInPath 
-            ? (isOriginEdge ? "#fbbf24" : "#4ade80") 
+            ? (isOriginEdge ? "#fbbf24" : "#3b82f6") 
             : "#3f3f46",
           strokeWidth: isInPath ? 3 : 1,
           opacity: isInPath ? 1 : 0.3,
@@ -738,7 +738,7 @@ export default function TeamAcquisitionTree({
         markerEnd: targetsRoster ? undefined : {
           type: MarkerType.ArrowClosed,
           color: isInPath 
-            ? (isOriginEdge ? "#fbbf24" : "#4ade80") 
+            ? (isOriginEdge ? "#fbbf24" : "#3b82f6") 
             : "#3f3f46",
           width: isInPath ? 18 : 12,
           height: isInPath ? 18 : 12,
