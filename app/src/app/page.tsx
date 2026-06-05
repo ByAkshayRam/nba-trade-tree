@@ -187,6 +187,107 @@ export default function Home() {
 
         </div>
 
+        {/* NBA Finals Banner */}
+        {(
+          <div className="mb-8 p-6 sm:p-8 bg-gradient-to-br from-yellow-900/20 via-amber-900/10 to-yellow-900/20 rounded-2xl border border-yellow-500/20">
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <span className="text-yellow-400 text-xs font-bold uppercase tracking-widest">🏆 NBA Finals</span>
+            </div>
+            <h3 className="text-3xl font-bold mb-2 text-center">
+              <span className="bg-gradient-to-r from-yellow-400 via-amber-400 to-yellow-500 bg-clip-text text-transparent">
+                Knicks vs Spurs
+              </span>
+            </h3>
+            <p className="text-center text-zinc-400 mb-8 text-sm max-w-lg mx-auto">
+              Two franchise legends meet in the Finals. Explore the trade chains that built these championship rosters.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Knicks */}
+              <div className="p-6 rounded-xl bg-[#F58426]/10 border border-[#F58426]/20">
+                <div className="flex items-center gap-3 mb-4">
+                  <div
+                    className="w-12 h-12 rounded-xl flex items-center justify-center text-white font-bold text-sm"
+                    style={{ backgroundColor: TEAM_COLORS.NYK }}
+                  >
+                    NYK
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-bold text-white">New York Knicks</h4>
+                    <p className="text-xs text-zinc-500">The Garden&apos;s return to glory</p>
+                  </div>
+                </div>
+                <div className="space-y-2 mb-4">
+                  {[
+                    { player: "Jalen Brunson", role: "Floor general" },
+                    { player: "OG Anunoby", role: "Two-way star" },
+                    { player: "Karl-Anthony Towns", role: "Stretch big" },
+                    { player: "Josh Hart", role: "Versatile wing" }
+                  ].map((item) => (
+                    <div key={item.player} className="flex justify-between items-center text-sm">
+                      <span className="text-zinc-200 font-medium">{item.player}</span>
+                      <span className="text-zinc-500 text-xs">{item.role}</span>
+                    </div>
+                  ))}
+                </div>
+                <button
+                  onClick={() => {
+                    track('finals_banner_click', { team: 'NYK' });
+                    router.push('/team/NYK?src=finals-banner');
+                  }}
+                  className="w-full px-4 py-2.5 bg-[#F58426]/20 hover:bg-[#F58426]/30 border border-[#F58426]/30 text-[#F58426] rounded-lg text-sm font-medium transition-all"
+                >
+                  Explore Knicks DNA →
+                </button>
+              </div>
+              
+              {/* Spurs */}
+              <div className="p-6 rounded-xl bg-[#C4CED4]/10 border border-[#C4CED4]/20">
+                <div className="flex items-center gap-3 mb-4">
+                  <div
+                    className="w-12 h-12 rounded-xl flex items-center justify-center text-black font-bold text-sm"
+                    style={{ backgroundColor: TEAM_COLORS.SAS }}
+                  >
+                    SAS
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-bold text-white">San Antonio Spurs</h4>
+                    <p className="text-xs text-zinc-500">Excellence never rebuilds</p>
+                  </div>
+                </div>
+                <div className="space-y-2 mb-4">
+                  {[
+                    { player: "Victor Wembanyama", role: "Generational talent" },
+                    { player: "De'Aaron Fox", role: "Elite playmaker" },
+                    { player: "Harrison Barnes", role: "Veteran leader" },
+                    { player: "Stephon Castle", role: "Rising star" }
+                  ].map((item) => (
+                    <div key={item.player} className="flex justify-between items-center text-sm">
+                      <span className="text-zinc-200 font-medium">{item.player}</span>
+                      <span className="text-zinc-500 text-xs">{item.role}</span>
+                    </div>
+                  ))}
+                </div>
+                <button
+                  onClick={() => {
+                    track('finals_banner_click', { team: 'SAS' });
+                    router.push('/team/SAS?src=finals-banner');
+                  }}
+                  className="w-full px-4 py-2.5 bg-[#C4CED4]/20 hover:bg-[#C4CED4]/30 border border-[#C4CED4]/30 text-[#C4CED4] rounded-lg text-sm font-medium transition-all"
+                >
+                  Explore Spurs DNA →
+                </button>
+              </div>
+            </div>
+            
+            <div className="text-center mt-6">
+              <p className="text-xs text-zinc-600">
+                <span className="text-yellow-400 font-semibold">Finals Preview:</span> Discover the trades, picks, and decisions that built these championship contenders
+              </p>
+            </div>
+          </div>
+        )}
+
         {/* Longest Active Chains */}
         {(
           <div className="p-6 sm:p-8 bg-zinc-900/50 rounded-2xl border border-zinc-800/50">
