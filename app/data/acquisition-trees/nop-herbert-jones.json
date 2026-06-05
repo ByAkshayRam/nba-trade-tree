@@ -4,7 +4,8 @@
     "player": "Herbert Jones",
     "source": "ESPN, Basketball-Reference, Wikipedia",
     "lastUpdated": "2026-03-02",
-    "sourceUrl": "https://www.basketball-reference.com/players/j/joneshe01.html"
+    "sourceUrl": "https://www.basketball-reference.com/players/j/joneshe01.html",
+    "originYear": 2012
   },
   "tree": {
     "type": "player",

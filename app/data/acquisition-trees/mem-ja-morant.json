@@ -4,7 +4,8 @@
     "player": "Ja Morant",
     "source": "Basketball-Reference, ESPN, NBA.com",
     "sourceUrl": "https://www.basketball-reference.com/players/m/moranja01.html",
-    "lastUpdated": "2026-03-01"
+    "lastUpdated": "2026-03-01",
+    "originYear": 2019
   },
   "tree": {
     "type": "player",

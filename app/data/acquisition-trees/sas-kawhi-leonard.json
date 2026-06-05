@@ -5,7 +5,8 @@
     "source": "Basketball-Reference",
     "sourceUrl": "https://www.basketball-reference.com/players/l/leonaka01.html",
     "lastUpdated": "2026-06-05",
-    "note": "Historical chain - player no longer on roster"
+    "note": "Historical chain - player no longer on roster",
+    "originYear": 2008
   },
   "tree": {
     "type": "player",

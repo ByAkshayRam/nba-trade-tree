@@ -4,7 +4,8 @@
     "player": "Jerami Grant",
     "source": "Basketball-Reference.com",
     "sourceUrl": "https://www.basketball-reference.com/players/g/grantje01.html",
-    "lastUpdated": "2026-03-01"
+    "lastUpdated": "2026-03-01",
+    "originYear": 2022
   },
   "tree": {
     "type": "player",
@@ -32,7 +33,7 @@
         "name": "2025 1st Round Pick (#14)",
         "acquisitionType": "own",
         "date": "2022-07-06",
-        "becamePlayer": "Nolan Traor\u00e9",
+        "becamePlayer": "Nolan Traoré",
         "note": "Milwaukee's own 2025 1st round pick, conditional",
         "isOrigin": true
       },

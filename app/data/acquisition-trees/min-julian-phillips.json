@@ -4,7 +4,8 @@
     "player": "Julian Phillips",
     "source": "Basketball-Reference",
     "sourceUrl": "https://www.basketball-reference.com/players/p/phillju02.html",
-    "lastUpdated": "2026-03-01"
+    "lastUpdated": "2026-03-01",
+    "originYear": 2014
   },
   "tree": {
     "type": "player",
@@ -25,7 +26,7 @@
         "draftRound": 1,
         "tradePartner": "SAS",
         "tradeDescription": "MIN traded a 2030 1st round pick swap right and 2031 unprotected 1st round pick to SAS for Rob Dillingham (#8 overall)",
-        "note": "Kentucky guard, selected #8 by SAS, traded to MIN. Shared cost \u2014 see min-ayo-dosunmu.json for full asset tree",
+        "note": "Kentucky guard, selected #8 by SAS, traded to MIN. Shared cost — see min-ayo-dosunmu.json for full asset tree",
         "assetsGivenUp": [
           {
             "type": "pick",
@@ -53,7 +54,7 @@
         "draftRound": 2,
         "tradePartner": "SAS",
         "tradeDescription": "MIN traded UTA 2026 2nd round pick and MIN 2028 2nd round pick to SAS for Leonard Miller (#33)",
-        "note": "Canadian forward, selected #33 by SAS, traded to MIN. Shared cost \u2014 see min-ayo-dosunmu.json",
+        "note": "Canadian forward, selected #33 by SAS, traded to MIN. Shared cost — see min-ayo-dosunmu.json",
         "assetsGivenUp": [
           {
             "type": "pick",

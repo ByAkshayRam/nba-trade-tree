@@ -4,7 +4,8 @@
     "player": "Terry Rozier",
     "source": "Basketball-Reference",
     "sourceUrl": "https://www.basketball-reference.com/players/r/roziete01.html",
-    "lastUpdated": "2026-03-01"
+    "lastUpdated": "2026-03-01",
+    "originYear": 2008
   },
   "tree": {
     "type": "player",
@@ -55,7 +56,7 @@
                     "date": "2011-06-23",
                     "draftRound": 2,
                     "draftPick": 31,
-                    "note": "Drafted 31st overall by Miami. Draft-and-stash who never played for MIA \u2014 rights immediately traded to MIN for Norris Cole.",
+                    "note": "Drafted 31st overall by Miami. Draft-and-stash who never played for MIA — rights immediately traded to MIN for Norris Cole.",
                     "isOrigin": false,
                     "assetsGivenUp": [
                       {

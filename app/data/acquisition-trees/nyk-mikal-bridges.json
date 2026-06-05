@@ -4,7 +4,8 @@
     "player": "Mikal Bridges",
     "source": "Basketball-Reference Transaction History",
     "sourceUrl": "https://www.basketball-reference.com/players/b/bridgmi01.html",
-    "lastUpdated": "2026-03-01"
+    "lastUpdated": "2026-03-01",
+    "originYear": 2018
   },
   "tree": {
     "type": "player",
@@ -189,7 +190,7 @@
         "date": "2022-07-06",
         "tradePartner": "DET",
         "tradeDescription": "Acquired from Detroit in the Jalen Duren/Kemba Walker trade. Originally Milwaukee's conditional 1st. Sent to BKN in Bridges trade.",
-        "becamePlayer": "Nolan Traor\u00e9",
+        "becamePlayer": "Nolan Traoré",
         "draftPick": 19,
         "assetsGivenUp": [
           {

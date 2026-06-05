@@ -4,7 +4,8 @@
     "player": "Taurean Prince",
     "source": "Basketball-Reference Transaction Logs",
     "lastUpdated": "2026-03-01",
-    "sourceUrl": "https://www.basketball-reference.com/players/p/princta02.html"
+    "sourceUrl": "https://www.basketball-reference.com/players/p/princta02.html",
+    "originYear": 2025
   },
   "tree": {
     "type": "player",

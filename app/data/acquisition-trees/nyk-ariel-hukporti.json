@@ -4,7 +4,8 @@
     "player": "Ariel Hukporti",
     "source": "Basketball-Reference Transaction History",
     "sourceUrl": "https://www.basketball-reference.com/players/h/hukpoar01.html",
-    "lastUpdated": "2026-03-01"
+    "lastUpdated": "2026-03-01",
+    "originYear": 2024
   },
   "tree": {
     "type": "player",
@@ -13,11 +14,11 @@
     "date": "2024-06-27",
     "currentTeam": "NYK",
     "tradePartner": "DAL",
-    "tradeDescription": "NYK traded Melvin Ajin\u00e7a (#51 pick) to Dallas for Ariel Hukporti, Petteri Koponen, and cash",
+    "tradeDescription": "NYK traded Melvin Ajinça (#51 pick) to Dallas for Ariel Hukporti, Petteri Koponen, and cash",
     "assetsGivenUp": [
       {
         "type": "player",
-        "name": "Melvin Ajin\u00e7a",
+        "name": "Melvin Ajinça",
         "acquisitionType": "draft",
         "date": "2024-06-27",
         "draftPick": 51,

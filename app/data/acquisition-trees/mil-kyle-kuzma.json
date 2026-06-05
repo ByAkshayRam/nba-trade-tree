@@ -4,7 +4,8 @@
     "player": "Kyle Kuzma",
     "source": "Basketball-Reference Transaction Logs",
     "lastUpdated": "2026-03-01",
-    "sourceUrl": "https://www.basketball-reference.com/players/k/kuzmaky01.html"
+    "sourceUrl": "https://www.basketball-reference.com/players/k/kuzmaky01.html",
+    "originYear": 2009
   },
   "tree": {
     "type": "player",

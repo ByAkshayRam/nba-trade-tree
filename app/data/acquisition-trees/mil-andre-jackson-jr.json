@@ -4,7 +4,8 @@
     "player": "Andre Jackson Jr.",
     "source": "Basketball-Reference Transaction Logs",
     "lastUpdated": "2026-03-01",
-    "sourceUrl": "https://www.basketball-reference.com/players/j/jacksan01.html"
+    "sourceUrl": "https://www.basketball-reference.com/players/j/jacksan01.html",
+    "originYear": 2023
   },
   "tree": {
     "type": "player",

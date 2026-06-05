@@ -4,7 +4,8 @@
     "player": "Cam Thomas",
     "source": "Basketball-Reference Transaction Logs",
     "lastUpdated": "2026-03-01",
-    "sourceUrl": "https://www.basketball-reference.com/players/t/thomaca02.html"
+    "sourceUrl": "https://www.basketball-reference.com/players/t/thomaca02.html",
+    "originYear": 2026
   },
   "tree": {
     "type": "player",

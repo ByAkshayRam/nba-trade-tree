@@ -4,7 +4,8 @@
     "player": "Cam Spencer",
     "source": "Basketball-Reference, NBA.com, ESPN",
     "sourceUrl": "https://www.basketball-reference.com/players/s/spencca01.html",
-    "lastUpdated": "2026-03-02"
+    "lastUpdated": "2026-03-02",
+    "originYear": 1996
   },
   "tree": {
     "type": "player",

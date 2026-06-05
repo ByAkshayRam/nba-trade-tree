@@ -4,7 +4,8 @@
     "player": "Colin Castleton",
     "source": "Basketball-Reference",
     "sourceUrl": "https://www.basketball-reference.com/players/c/castlco01.html",
-    "lastUpdated": "2026-03-01"
+    "lastUpdated": "2026-03-01",
+    "originYear": 2024
   },
   "tree": {
     "type": "player",

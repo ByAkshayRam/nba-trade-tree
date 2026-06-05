@@ -4,7 +4,8 @@
     "player": "Miles Kelly",
     "source": "Basketball-Reference",
     "sourceUrl": "https://www.basketball-reference.com/players/k/kellymi01.html",
-    "lastUpdated": "2026-03-01"
+    "lastUpdated": "2026-03-01",
+    "originYear": 2024
   },
   "tree": {
     "type": "player",

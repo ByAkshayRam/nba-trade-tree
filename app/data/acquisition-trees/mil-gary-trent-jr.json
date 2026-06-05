@@ -4,7 +4,8 @@
     "player": "Gary Trent Jr.",
     "source": "Basketball-Reference Transaction Logs",
     "lastUpdated": "2026-03-01",
-    "sourceUrl": "https://www.basketball-reference.com/players/t/trentga02.html"
+    "sourceUrl": "https://www.basketball-reference.com/players/t/trentga02.html",
+    "originYear": 2025
   },
   "tree": {
     "type": "player",

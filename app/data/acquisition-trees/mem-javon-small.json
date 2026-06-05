@@ -4,7 +4,8 @@
     "player": "Javon Small",
     "source": "Basketball-Reference, NBA.com, ESPN",
     "sourceUrl": "https://www.basketball-reference.com/players/s/smallja01.html",
-    "lastUpdated": "2026-03-01"
+    "lastUpdated": "2026-03-01",
+    "originYear": 2007
   },
   "tree": {
     "type": "player",

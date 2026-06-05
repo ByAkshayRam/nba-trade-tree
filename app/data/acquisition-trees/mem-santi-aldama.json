@@ -4,7 +4,8 @@
     "player": "Santi Aldama",
     "source": "Basketball-Reference, NBA.com",
     "sourceUrl": "https://www.basketball-reference.com/players/a/aldamsa01.html",
-    "lastUpdated": "2026-03-01"
+    "lastUpdated": "2026-03-01",
+    "originYear": 1996
   },
   "tree": {
     "type": "player",
@@ -40,7 +41,7 @@
                 "acquisitionType": "draft-night-trade",
                 "date": "2008-02-01",
                 "tradePartner": "LAL",
-                "tradeDescription": "MEM traded Pau Gasol and 2010 2nd (Devin Ebanks) to LAL for Kwame Brown, Javaris Crittenton, Marc Gasol, Aaron McKie, 2008 1st (#28 Dont\u00e9 Greene) and 2010 1st (Greivis V\u00e1squez)",
+                "tradeDescription": "MEM traded Pau Gasol and 2010 2nd (Devin Ebanks) to LAL for Kwame Brown, Javaris Crittenton, Marc Gasol, Aaron McKie, 2008 1st (#28 Donté Greene) and 2010 1st (Greivis Vásquez)",
                 "note": "Spanish center, key long-term piece MEM got back in the Pau Gasol blockbuster",
                 "assetsGivenUp": [
                   {
