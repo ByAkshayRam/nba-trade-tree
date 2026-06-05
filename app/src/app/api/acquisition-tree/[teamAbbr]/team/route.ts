@@ -971,16 +971,51 @@ export async function GET(
   // Convert map to array
   const nodes = Array.from(nodeMap.values());
   
+  // Helper function to find oldest date in a chain
+  function findOldestDate(node: any): string | null {
+    let oldestDate = null;
+    let oldestTime = Infinity;
+    
+    if (node.date) {
+      const time = new Date(node.date).getTime();
+      if (!isNaN(time) && time < oldestTime) {
+        oldestDate = node.date;
+        oldestTime = time;
+      }
+    }
+    
+    if (node.assetsGivenUp) {
+      for (const child of node.assetsGivenUp) {
+        const childOldest = findOldestDate(child);
+        if (childOldest) {
+          const childTime = new Date(childOldest).getTime();
+          if (!isNaN(childTime) && childTime < oldestTime) {
+            oldestDate = childOldest;
+            oldestTime = childTime;
+          }
+        }
+      }
+    }
+    
+    return oldestDate;
+  }
+
   // Calculate stats
   const rosterPlayers = nodes.filter(n => n.data.isRosterPlayer).length;
   const homegrownPlayers = nodes.filter(n => n.data.isRosterPlayer && n.data.isHomegrown).length;
   const origins = nodes.filter(n => n.data.isOrigin).length;
   const trades = nodes.filter(n => n.data.acquisitionType === "trade").length;
-  const earliestYear = Math.min(...trees.map(t => t._meta.originYear));
+  
+  // Calculate earliest year dynamically from current roster player chains
+  const originYears = trees.map(tree => {
+    const oldestDate = findOldestDate(tree.tree);
+    return oldestDate ? new Date(oldestDate).getFullYear() : new Date().getFullYear();
+  });
+  const earliestYear = originYears.length > 0 ? Math.min(...originYears) : new Date().getFullYear();
   
   // Calculate average experience (years since origin)
   const currentYear = new Date().getFullYear();
-  const experienceYears = trees.map(t => currentYear - t._meta.originYear);
+  const experienceYears = originYears.map(year => currentYear - year);
   const avgExperience = experienceYears.length > 0 
     ? Math.round((experienceYears.reduce((a, b) => a + b, 0) / experienceYears.length) * 10) / 10
     : 0;
@@ -993,10 +1028,16 @@ export async function GET(
   )];
   const allTeamAvgs: { abbr: string; avg: number }[] = allTeamAbbs.map(abbr => {
     const teamFiles = fs.readdirSync(dataDir).filter(f => f.startsWith(abbr.toLowerCase() + '-') && f.endsWith('.json'));
-    const origins = teamFiles.map(f => {
-      try { return JSON.parse(fs.readFileSync(path.join(dataDir, f), 'utf-8'))._meta.originYear; } catch { return currentYear; }
+    const teamOriginYears = teamFiles.map(f => {
+      try {
+        const data = JSON.parse(fs.readFileSync(path.join(dataDir, f), 'utf-8'));
+        const oldestDate = findOldestDate(data.tree);
+        return oldestDate ? new Date(oldestDate).getFullYear() : currentYear;
+      } catch { 
+        return currentYear; 
+      }
     });
-    const avg = origins.length > 0 ? origins.reduce((a: number, b: number) => a + (currentYear - b), 0) / origins.length : 0;
+    const avg = teamOriginYears.length > 0 ? teamOriginYears.reduce((a: number, b: number) => a + (currentYear - b), 0) / teamOriginYears.length : 0;
     return { abbr, avg };
   });
   allTeamAvgs.sort((a, b) => b.avg - a.avg); // highest experience first

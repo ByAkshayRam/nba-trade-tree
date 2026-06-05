@@ -4,7 +4,6 @@
     "player": "Egor Demin",
     "source": "Basketball-Reference",
     "sourceUrl": "https://www.basketball-reference.com/players/d/demineg01.html",
-    "originYear": 2008,
     "depth": 6,
     "lastUpdated": "2026-03-01"
   },
@@ -84,7 +83,7 @@
                             "becamePlayer": "Markelle Fultz",
                             "acquisitionType": "original",
                             "date": "2017-06-22",
-                            "note": "BKN's own pick \u2014 worst record in NBA, #1 overall. Owed to BOS from the 2013 KG/Pierce trade. BOS traded #1 to PHI for #3 (Jayson Tatum) and a future 1st. PHI drafted Markelle Fultz.",
+                            "note": "BKN's own pick — worst record in NBA, #1 overall. Owed to BOS from the 2013 KG/Pierce trade. BOS traded #1 to PHI for #3 (Jayson Tatum) and a future 1st. PHI drafted Markelle Fultz.",
                             "isOrigin": true
                           }
                         ]
