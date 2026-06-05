@@ -23,8 +23,18 @@
         "date": "2008-06-26",
         "currentTeam": "IND",
         "note": "Drafted #26 by San Antonio Spurs",
-        "isOrigin": true,
-        "assetsGivenUp": []
+        "isOrigin": false,
+        "assetsGivenUp": [
+          {
+            "type": "pick",
+            "name": "2008 1st Round Pick (#26)",
+            "acquisitionType": "own-pick",
+            "date": "2008-06-26",
+            "note": "Spurs' own first round pick, 26th overall",
+            "isOrigin": true,
+            "assetsGivenUp": []
+          }
+        ]
       }
     ]
   }

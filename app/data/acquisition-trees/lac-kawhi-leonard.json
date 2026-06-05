@@ -4,7 +4,7 @@
     "player": "Kawhi Leonard",
     "source": "Basketball-Reference",
     "sourceUrl": "https://www.basketball-reference.com/players/l/leonaka01.html",
-    "lastUpdated": "2026-06-05"
+    "lastUpdated": "2026-03-01"
   },
   "tree": {
     "type": "player",
@@ -13,29 +13,7 @@
     "date": "2019-07-09",
     "currentTeam": "LAC",
     "note": "Signed as free agent after leaving Toronto Raptors",
-    "isOrigin": false,
-    "assetsGivenUp": [
-      {
-        "type": "player",
-        "name": "Kawhi Leonard",
-        "acquisitionType": "draft-night-trade",
-        "date": "2011-06-23",
-        "currentTeam": "SAS",
-        "note": "Originally drafted #15 by Indiana, traded to Spurs for George Hill",
-        "isOrigin": false,
-        "assetsGivenUp": [
-          {
-            "type": "player",
-            "name": "George Hill",
-            "acquisitionType": "draft",
-            "date": "2008-06-26",
-            "currentTeam": "IND",
-            "note": "Drafted #26 by San Antonio Spurs",
-            "isOrigin": true,
-            "assetsGivenUp": []
-          }
-        ]
-      }
-    ]
+    "isOrigin": true,
+    "assetsGivenUp": []
   }
 }
