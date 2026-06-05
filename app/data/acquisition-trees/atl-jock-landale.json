@@ -11,6 +11,7 @@
   "tree": {
     "type": "player",
     "name": "Jock Landale",
+    "narrative": "**Jock Landale** has a unique Hawks history — the Australian center originally came to Atlanta as a throw-in with **Dejounte Murray** from San Antonio in 2022, was waived, and then re-acquired from Utah for cash in February 2026. A boomerang Hawk.",
     "acquisitionType": "trade",
     "date": "2026-02-05",
     "currentTeam": "ATL",
@@ -21,6 +22,7 @@
       {
         "type": "other",
         "name": "Cash Considerations",
+        "narrative": "Cash sent to Utah to bring **Jock Landale** back to Atlanta.",
         "acquisitionType": "original",
         "note": "Hawks sent cash to Utah for Landale.",
         "isOrigin": true

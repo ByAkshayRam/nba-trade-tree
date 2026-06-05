@@ -14,6 +14,7 @@ interface AcquisitionNode {
   becamePlayer?: string;
   currentTeam?: string;
   note?: string;
+  narrative?: string;
   assetsGivenUp?: AcquisitionNode[];
 }
 
@@ -41,6 +42,7 @@ interface FlowNode {
     acquisitionType?: string;
     tradePartner?: string;
     note?: string;
+    narrative?: string;
     isOrigin?: boolean;
     isTarget?: boolean;
     draftPick?: number;
@@ -173,6 +175,7 @@ export async function GET(
         acquisitionType: node.acquisitionType,
         tradePartner: node.tradePartner,
         note: node.note,
+        narrative: node.narrative,
         isOrigin,
         isTarget,
         draftPick: node.draftPick,

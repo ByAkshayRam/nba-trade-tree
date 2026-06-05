@@ -60,6 +60,7 @@ interface SelectedPlayerInfo {
     acquisitionType?: string;
     tradePartner?: string;
     isOrigin?: boolean;
+    narrative?: string;
   }>;
 }
 
@@ -153,24 +154,24 @@ function RosterNode({ data }: NodeProps) {
         isHighlighted 
           ? "bg-green-800 border-2 border-green-300 ring-2 ring-green-400/50 scale-105" 
           : isDimmed 
-            ? "bg-green-900/40 border-2 border-green-400/30 opacity-40" 
-            : "bg-green-900 border-2 border-green-400 hover:border-green-300"
+            ? "bg-zinc-900/40 border-2 border-zinc-600/30 opacity-40" 
+            : "bg-zinc-800 border-2 border-zinc-600 hover:border-zinc-400"
       }`}
     >
-      <Handle type="source" position={Position.Right} className="!bg-green-400 !w-3 !h-3" />
+      <Handle type="source" position={Position.Right} className={`!w-3 !h-3 ${isHighlighted ? "!bg-green-400" : "!bg-zinc-500"}`} />
       <div className="flex items-center gap-1.5">
         {espnUrl && (
           <img 
             src={espnUrl}
             alt={nodeData.label}
-            className={`w-9 h-9 rounded-full object-cover bg-green-950 border transition-all duration-300 ${
-              isHighlighted ? "border-green-300" : "border-green-400"
+            className={`w-9 h-9 rounded-full object-cover border transition-all duration-300 ${
+              isHighlighted ? "bg-green-950 border-green-300" : "bg-zinc-900 border-zinc-500"
             }`}
             onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
           />
         )}
         <div className="leading-tight">
-          <div className={`text-[9px] font-bold uppercase flex items-center gap-1 ${isHighlighted ? "text-green-200" : categoryColor}`}>
+          <div className={`text-[9px] font-bold uppercase flex items-center gap-1 ${isHighlighted ? "text-green-200" : (isDimmed ? "text-zinc-500" : categoryColor)}`}>
             {categoryLabel}
             {isHomegrown && <span title="Homegrown talent">🏠</span>}
           </div>
@@ -575,6 +576,7 @@ export default function TeamAcquisitionTree({
           acquisitionType: data.acquisitionType,
           tradePartner: data.tradePartner,
           isOrigin: data.isOrigin,
+          narrative: data.narrative as string | undefined,
         };
       })
       .filter(Boolean) as SelectedPlayerInfo['pathNodes'];
@@ -680,25 +682,24 @@ export default function TeamAcquisitionTree({
         }
       }
       
-      // No selection - reset all to normal
+      // No selection - reset all to normal (gray default state)
       setNodes(baseNodes.map(node => ({
         ...node,
         data: { ...node.data, isHighlighted: false, isDimmed: false }
       })));
       setEdges(baseEdges.map(edge => {
-        const isOriginEdge = initialNodes.find(n => n.id === edge.source)?.data.isOrigin;
         const targetsRoster = baseNodes.find(n => n.id === edge.target)?.type === "target";
         return {
           ...edge,
           style: {
-            stroke: isOriginEdge ? "#f59e0b" : "#22c55e",
-            strokeWidth: 2,
+            stroke: "#52525b",
+            strokeWidth: 1.5,
           },
           markerEnd: targetsRoster ? undefined : {
             type: MarkerType.ArrowClosed,
-            color: isOriginEdge ? "#f59e0b" : "#22c55e",
-            width: 15,
-            height: 15,
+            color: "#52525b",
+            width: 14,
+            height: 14,
           },
         };
       }));
@@ -772,24 +773,21 @@ export default function TeamAcquisitionTree({
       });
 
       const flowEdges: Edge[] = initialEdges.map((e) => {
-        const sourceNode = initialNodes.find(n => n.id === e.source);
-        const isOriginEdge = sourceNode?.data.isOrigin;
-
         return {
           id: e.id,
           source: e.source,
           target: e.target,
           type: "default",
           style: {
-            stroke: isOriginEdge ? "#f59e0b" : "#22c55e",
-            strokeWidth: 2,
+            stroke: "#52525b",
+            strokeWidth: 1.5,
           },
           ...(initialNodes.find(n => n.id === e.target)?.data.isRosterPlayer ? {} : {
             markerEnd: {
               type: MarkerType.ArrowClosed,
-              color: isOriginEdge ? "#f59e0b" : "#22c55e",
-              width: 15,
-              height: 15,
+              color: "#52525b",
+              width: 14,
+              height: 14,
             },
           }),
         };
@@ -1943,8 +1941,6 @@ export default function TeamAcquisitionTree({
         edges={edges}
         nodeTypes={nodeTypes}
         connectionMode={ConnectionMode.Loose}
-        fitView
-        fitViewOptions={{ padding: 0.1 }}
         minZoom={0.05}
         maxZoom={2}
         nodesDraggable={false}
@@ -1957,7 +1953,27 @@ export default function TeamAcquisitionTree({
         zoomOnPinch={graphInteractive}
         preventScrolling={graphInteractive}
         proOptions={{ hideAttribution: true }}
-        onInit={(instance) => { reactFlowInstance.current = instance; }}
+        onInit={(instance) => {
+          reactFlowInstance.current = instance;
+          // Zoom into starters on load
+          const allNodes = instance.getNodes();
+          const starters = allNodes.filter((n: any) => n.data?.rosterCategory === "starter");
+          const fitTargets = starters.length >= 3 ? starters : allNodes.filter((n: any) => n.type === "target").slice(0, 5);
+          if (fitTargets.length > 0) {
+            const padding = 80;
+            const xs = fitTargets.map((n: any) => n.position.x);
+            const ys = fitTargets.map((n: any) => n.position.y);
+            const minX = Math.min(...xs) - padding;
+            const minY = Math.min(...ys) - padding;
+            const maxX = Math.max(...xs) + 300 + padding;
+            const maxY = Math.max(...ys) + 120 + padding;
+            setTimeout(() => {
+              instance.fitBounds({ x: minX, y: minY, width: maxX - minX, height: maxY - minY }, { duration: 0, padding: 0.05 });
+            }, 100);
+          } else {
+            instance.fitView({ padding: 0.1 });
+          }
+        }}
       >
         <Background color="#3f3f46" gap={20} />
         <Controls 
@@ -2010,7 +2026,7 @@ export default function TeamAcquisitionTree({
       <div className="absolute bottom-4 left-4 bg-zinc-900/90 backdrop-blur rounded-lg p-3 border border-zinc-700 text-xs">
         <div className="flex flex-wrap gap-3">
           <div className="flex items-center gap-1.5">
-            <div className="w-3 h-3 rounded bg-green-900 border border-green-400" />
+            <div className="w-3 h-3 rounded bg-zinc-800 border border-zinc-600" />
             <span className="text-zinc-400">Current Roster</span>
           </div>
           <div className="flex items-center gap-1.5">

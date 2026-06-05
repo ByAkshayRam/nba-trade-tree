@@ -11,6 +11,7 @@
   "tree": {
     "type": "player",
     "name": "Gabe Vincent",
+    "narrative": "**Gabe Vincent** — a 2023 NBA Finals starter with Miami — came to Atlanta in a February 2026 trade with the Lakers. The Hawks sent **Luke Kennard**, a free agent signing from the prior summer, to L.A. to land the playoff-tested guard and a future second-rounder.",
     "acquisitionType": "trade",
     "date": "2026-02-05",
     "currentTeam": "ATL",
@@ -21,6 +22,7 @@
       {
         "type": "player",
         "name": "Luke Kennard",
+        "narrative": "**Luke Kennard** was signed as a free agent in July 2025 from Memphis. The elite three-point shooter (career 44%) was flipped to the Lakers just seven months later to acquire **Gabe Vincent**.",
         "acquisitionType": "free-agent",
         "date": "2025-07-08",
         "note": "Signed as free agent from Memphis. Elite 3-point shooter, career 44% from deep. Sent to LAL in Vincent trade.",

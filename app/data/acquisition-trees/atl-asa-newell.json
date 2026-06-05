@@ -11,6 +11,7 @@
   "tree": {
     "type": "player",
     "name": "Asa Newell",
+    "narrative": "**Asa Newell** came to Atlanta in a draft-night swap with New Orleans. The Hawks used their own #13 pick on **Derik Queen**, then immediately flipped him to the Pelicans for Newell and a 2026 first-round pick — turning one pick into a player they preferred plus future draft capital.",
     "acquisitionType": "trade",
     "date": "2025-06-25",
     "currentTeam": "ATL",
@@ -21,6 +22,7 @@
       {
         "type": "player",
         "name": "Derik Queen",
+        "narrative": "Atlanta's own #13 pick in the 2025 draft — **Derik Queen** out of Maryland was selected and immediately flipped to New Orleans on draft night.",
         "acquisitionType": "draft",
         "date": "2025-06-25",
         "draftPick": 13,

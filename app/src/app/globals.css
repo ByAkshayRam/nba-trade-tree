@@ -1,5 +1,44 @@
 @import "tailwindcss";
 
+@keyframes searchGlowPulse {
+  0% { filter: blur(12px) hue-rotate(0deg); opacity: 0.35; }
+  50% { filter: blur(20px) hue-rotate(30deg); opacity: 0.7; }
+  100% { filter: blur(12px) hue-rotate(0deg); opacity: 0.35; }
+}
+
+@keyframes searchBorderFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.search-glow-outer {
+  background: linear-gradient(90deg, #d946ef, #8b5cf6, #3b82f6, #8b5cf6, #d946ef);
+  background-size: 300% 100%;
+  animation: none;
+  filter: blur(12px);
+  opacity: 0.25;
+  transition: opacity 0.3s, filter 0.3s;
+}
+
+.search-glow-border {
+  background: linear-gradient(90deg, #d946ef, #8b5cf6, #3b82f6, #8b5cf6, #d946ef);
+  background-size: 300% 100%;
+  animation: none;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.search-container:hover .search-glow-outer,
+.search-container:focus-within .search-glow-outer {
+  animation: searchGlowPulse 4s ease-in-out infinite;
+}
+
+.search-container:hover .search-glow-border,
+.search-container:focus-within .search-glow-border {
+  animation: searchBorderFlow 4s ease-in-out infinite;
+}
+
 :root {
   --background: #000000;
   --foreground: #ffffff;

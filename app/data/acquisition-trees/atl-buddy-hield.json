@@ -10,6 +10,7 @@
   "tree": {
     "type": "player",
     "name": "Buddy Hield",
+    "narrative": "**Buddy Hield** landed in Atlanta when the Hawks flipped **Kristaps Porzingis** to Golden State in February 2026. Hield and **Jonathan Kuminga** came back for the Unicorn. But Porzingis himself was acquired through a complex three-team deal involving Boston and Brooklyn — and before that, the chain traces back through **De'Andre Hunter**, **Bogdan Bogdanović**, and ultimately to **Jeff Teague** being drafted in 2009. One of the deepest chains on the roster.",
     "acquisitionType": "trade",
     "date": "2026-02-05",
     "currentTeam": "ATL",
@@ -20,6 +21,7 @@
       {
         "type": "player",
         "name": "Kristaps Porzingis",
+        "narrative": "**Kristaps Porzingis** — the 2024 NBA champion with Boston — came to Atlanta in a July 2025 three-team blockbuster. The Hawks sent **Georges Niang** and a 2031 second to the Celtics, plus **Terance Mann** and **Drake Powell** to Brooklyn, to land the 7'2\" unicorn. He lasted just seven months before being shipped to Golden State.",
         "acquisitionType": "trade",
         "date": "2025-07-07",
         "tradePartner": "BOS",
@@ -29,6 +31,7 @@
           {
             "type": "player",
             "name": "Georges Niang",
+            "narrative": "**Georges Niang** — 'The Minivan' — came to Atlanta in the February 2025 **De'Andre Hunter** trade with Cleveland. The stretch four was then rerouted to Boston just five months later as part of the **Porzingis** three-team deal.",
             "acquisitionType": "trade",
             "date": "2025-02-06",
             "tradePartner": "CLE",
@@ -38,6 +41,7 @@
               {
                 "type": "player",
                 "name": "De'Andre Hunter",
+                "narrative": "**De'Andre Hunter** was the #4 overall pick in 2019, acquired by Atlanta in a draft-night megadeal with New Orleans. The Hawks paid a steep price — picks #8, #17, #35, and two Cleveland seconds — for the Virginia product. The #4 pick itself originated with the Lakers and went to New Orleans in the Anthony Davis trade. Hunter spent six years in Atlanta before being dealt to Cleveland for **Niang** and **Caris LeVert**.",
                 "acquisitionType": "draft-night-trade",
                 "date": "2019-06-20",
                 "draftPick": 4,
@@ -50,6 +54,7 @@
                   {
                     "type": "pick",
                     "name": "2019 1st Round Pick (#8)",
+                    "narrative": "Atlanta's own #8 pick in 2019, sent to New Orleans as part of the package for the #4 pick used on **De'Andre Hunter**.",
                     "becamePlayer": "Jaxson Hayes",
                     "acquisitionType": "original",
                     "date": "2019-06-20",
@@ -59,7 +64,7 @@
                   {
                     "type": "pick",
                     "name": "2019 1st Round Pick (#17) via BKN",
-                    "becamePlayer": "Nickeil Alexander-Walker",
+                    "narrative": "This Brooklyn first-rounder came to Atlanta in the **Taurean Prince** trade, then was immediately sent to New Orleans in the **De'Andre Hunter** draft-night deal. The Pelicans used it to draft **Nickeil Alexander-Walker**.",
                     "acquisitionType": "trade",
                     "tradePartner": "BKN",
                     "date": "2019-06-06",
@@ -70,6 +75,7 @@
                       {
                         "type": "player",
                         "name": "Taurean Prince",
+                        "narrative": "**Taurean Prince** came to Atlanta in a 2016 three-team draft-night deal — the Hawks sent **Jeff Teague** to Indiana, Indiana sent George Hill to Utah, and Utah sent the #12 pick (Prince) to Atlanta. Prince was later traded to Brooklyn in 2019, netting the #17 pick that became part of the Hunter trade package.",
                         "acquisitionType": "draft-night-trade",
                         "date": "2016-07-07",
                         "draftPick": 12,
@@ -82,6 +88,7 @@
                           {
                             "type": "player",
                             "name": "Jeff Teague",
+                            "narrative": "**Jeff Teague** — Atlanta's own #19 pick in 2009 and a 3x All-Star with the Hawks. He was sent to Indiana in a 2016 three-team deal that brought **Taurean Prince** to Atlanta, starting a chain that eventually led to **De'Andre Hunter**.",
                             "acquisitionType": "draft",
                             "date": "2009-06-25",
                             "draftPick": 19,
@@ -94,6 +101,7 @@
                       {
                         "type": "pick",
                         "name": "2021 2nd Round Pick (#49)",
+                        "narrative": "Atlanta's own 2021 second-round pick, sent to Brooklyn as part of the **Taurean Prince** trade package.",
                         "becamePlayer": "Marcus Zegarowski",
                         "acquisitionType": "original",
                         "date": "2019-06-06",
@@ -105,6 +113,7 @@
                   {
                     "type": "pick",
                     "name": "2019 2nd Round Pick (#35)",
+                    "narrative": "Atlanta's own 2019 second-round pick, included in the package sent to New Orleans for the #4 pick (**De'Andre Hunter**).",
                     "becamePlayer": "Marcos Louzada Silva",
                     "acquisitionType": "original",
                     "date": "2019-06-20",
@@ -114,6 +123,7 @@
                   {
                     "type": "pick",
                     "name": "2021 2nd Round Pick (#35) via CLE",
+                    "narrative": "A Cleveland second-rounder acquired by Atlanta in the 2017 Kyle Korver trade, then sent to New Orleans in the **De'Andre Hunter** deal. The Pelicans used it to draft **Herbert Jones**.",
                     "becamePlayer": "Herbert Jones",
                     "acquisitionType": "trade",
                     "date": "2019-06-20",
@@ -123,6 +133,7 @@
                   {
                     "type": "pick",
                     "name": "2022 2nd Round Pick (#47) via CLE",
+                    "narrative": "Another Cleveland second-rounder from the Korver trade, rerouted to New Orleans in the Hunter deal. NOP eventually sent it to Memphis, who drafted **Vince Williams Jr.**",
                     "becamePlayer": "Vince Williams Jr.",
                     "acquisitionType": "trade",
                     "date": "2019-06-20",
@@ -136,6 +147,7 @@
           {
             "type": "player",
             "name": "Terance Mann",
+            "narrative": "**Terance Mann** — the 2021 playoff hero who torched Utah — came to Atlanta from the Clippers in February 2025 when the Hawks sent **Bogdan Bogdanović** and a Minnesota second to L.A. Mann was then rerouted to Brooklyn five months later in the **Porzingis** three-team deal.",
             "acquisitionType": "trade",
             "date": "2025-02-06",
             "tradePartner": "LAC",
@@ -145,6 +157,7 @@
               {
                 "type": "player",
                 "name": "Bogdan Bogdanović",
+                "narrative": "**Bogdan Bogdanović** signed with Atlanta via sign-and-trade from Sacramento in November 2020 on a 4-year, $72M deal. The Serbian sharpshooter was eventually shipped to the Clippers in February 2025 for **Terance Mann**.",
                 "acquisitionType": "free-agent",
                 "date": "2020-11-21",
                 "note": "Signed via sign-and-trade from Sacramento Kings, 4-year $72M deal",
@@ -153,6 +166,7 @@
               {
                 "type": "pick",
                 "name": "2025 2nd Round Pick (#31) via MIN",
+                "narrative": "A Minnesota second-rounder acquired by Atlanta from Houston in a five-team trade in July 2023. Sent to the Clippers alongside **Bogdanović** for **Terance Mann**.",
                 "becamePlayer": "Mohamed Diawara",
                 "acquisitionType": "trade",
                 "date": "2023-07-08",
@@ -166,6 +180,7 @@
           {
             "type": "pick",
             "name": "2025 1st Round Pick (#22)",
+            "narrative": "Atlanta's own 2025 first-round pick, used to draft **Drake Powell** at #22 before immediately routing him to Brooklyn as part of the **Porzingis** three-team trade.",
             "becamePlayer": "Drake Powell",
             "acquisitionType": "original",
             "date": "2025-06-26",
@@ -175,6 +190,7 @@
           {
             "type": "pick",
             "name": "2031 2nd Round Pick via CLE",
+            "narrative": "A distant Cleveland 2031 second-rounder, sent to Boston as a sweetener in the **Porzingis** three-team deal.",
             "acquisitionType": "trade",
             "date": "2025-07-07",
             "note": "Cleveland's 2031 2nd-round pick, sent to Boston in Porzingis 3-team deal.",

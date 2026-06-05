@@ -47,58 +47,26 @@ const TYPEWRITER_SUGGESTIONS = [
   "Dallas Mavericks", "Denver Nuggets", "Philadelphia 76ers",
 ];
 
-function useTypewriter(suggestions: string[], enabled: boolean) {
-  const [displayText, setDisplayText] = useState("");
-  const phaseRef = useRef<"typing" | "pausing" | "deleting">("typing");
-  const indexRef = useRef(Math.floor(Math.random() * suggestions.length));
-  const charRef = useRef(0);
-  const timerRef = useRef<NodeJS.Timeout>(undefined);
+function useRotatingText(suggestions: string[], enabled: boolean) {
+  const [index, setIndex] = useState(0);
+  const [animState, setAnimState] = useState<"visible" | "exiting" | "entering">("visible");
 
   useEffect(() => {
-    if (!enabled) {
-      setDisplayText("");
-      return;
-    }
+    if (!enabled) return;
 
-    const tick = () => {
-      const word = suggestions[indexRef.current];
-      const phase = phaseRef.current;
+    const interval = setInterval(() => {
+      setAnimState("exiting");
+      setTimeout(() => {
+        setIndex((prev) => (prev + 1) % suggestions.length);
+        setAnimState("entering");
+        setTimeout(() => setAnimState("visible"), 50);
+      }, 300);
+    }, 3000);
 
-      if (phase === "typing") {
-        charRef.current++;
-        setDisplayText(word.slice(0, charRef.current));
-        if (charRef.current >= word.length) {
-          phaseRef.current = "pausing";
-          timerRef.current = setTimeout(tick, 1800);
-        } else {
-          timerRef.current = setTimeout(tick, 70 + Math.random() * 50);
-        }
-      } else if (phase === "pausing") {
-        phaseRef.current = "deleting";
-        timerRef.current = setTimeout(tick, 30);
-      } else {
-        charRef.current--;
-        setDisplayText(word.slice(0, charRef.current));
-        if (charRef.current <= 0) {
-          phaseRef.current = "typing";
-          // Pick a different random suggestion
-          let next = indexRef.current;
-          while (next === indexRef.current && suggestions.length > 1) {
-            next = Math.floor(Math.random() * suggestions.length);
-          }
-          indexRef.current = next;
-          timerRef.current = setTimeout(tick, 400);
-        } else {
-          timerRef.current = setTimeout(tick, 35);
-        }
-      }
-    };
-
-    timerRef.current = setTimeout(tick, 600);
-    return () => clearTimeout(timerRef.current);
+    return () => clearInterval(interval);
   }, [enabled, suggestions]);
 
-  return displayText;
+  return { text: suggestions[index], animState };
 }
 
 export function PlayerSearch({ onSelect, onSelectTeam, staticPlaceholder }: PlayerSearchProps) {
@@ -112,7 +80,7 @@ export function PlayerSearch({ onSelect, onSelectTeam, staticPlaceholder }: Play
   const debounceRef = useRef<NodeJS.Timeout>(undefined);
 
   const showTypewriter = !staticPlaceholder && !isFocused && query === "";
-  const typewriterText = useTypewriter(TYPEWRITER_SUGGESTIONS, showTypewriter);
+  const { text: rotatingText, animState } = useRotatingText(TYPEWRITER_SUGGESTIONS, showTypewriter);
 
   useEffect(() => {
     if (query.length < 2) {
@@ -163,7 +131,10 @@ export function PlayerSearch({ onSelect, onSelectTeam, staticPlaceholder }: Play
   const hasResults = playerResults.length > 0 || teamResults.length > 0;
 
   return (
-    <div className="relative w-full max-w-xl">
+    <div className="relative w-full max-w-2xl search-container">
+      {/* Animated gradient glow behind input */}
+      <div className="absolute -inset-[3px] rounded-2xl pointer-events-none search-glow-outer" />
+      <div className="absolute -inset-[1.5px] rounded-2xl pointer-events-none search-glow-border" />
       <div className="relative">
         <input
           ref={inputRef}
@@ -173,22 +144,29 @@ export function PlayerSearch({ onSelect, onSelectTeam, staticPlaceholder }: Play
           onFocus={() => { setIsFocused(true); hasResults && setIsOpen(true); }}
           onBlur={() => { setTimeout(() => setIsFocused(false), 200); }}
           placeholder={staticPlaceholder || (isFocused ? "Search players or teams..." : "")}
-          className="w-full px-4 py-3.5 pl-12 text-base sm:text-lg bg-zinc-900 border border-zinc-700 rounded-lg 
-                     text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-green-500 
-                     focus:border-transparent transition-all min-h-[48px]"
+          className="w-full px-5 py-5 pl-14 text-lg sm:text-xl bg-[#0d0d10] border-0 rounded-2xl 
+                     text-white placeholder-zinc-500 focus:outline-none focus:ring-0 
+                     transition-all min-h-[68px]"
         />
-        {/* Typewriter overlay */}
+        {/* Rotating placeholder overlay */}
         {showTypewriter && (
           <div 
-            className="absolute inset-0 flex items-center pl-12 pointer-events-none"
+            className="absolute inset-0 flex items-center pl-14 pointer-events-none overflow-hidden"
             onClick={() => inputRef.current?.focus()}
           >
-            <span className="text-lg text-zinc-500">{typewriterText}</span>
-            <span className="w-[2px] h-6 bg-zinc-500 ml-[1px] animate-pulse" />
+            <span 
+              className="text-xl text-zinc-500 transition-all duration-300 ease-in-out"
+              style={{
+                transform: animState === "exiting" ? "translateY(-100%)" : animState === "entering" ? "translateY(100%)" : "translateY(0)",
+                opacity: animState === "visible" ? 1 : 0,
+              }}
+            >
+              {rotatingText}
+            </span>
           </div>
         )}
         <svg
-          className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-zinc-500"
+          className="absolute left-5 top-1/2 -translate-y-1/2 w-6 h-6 text-zinc-500"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"

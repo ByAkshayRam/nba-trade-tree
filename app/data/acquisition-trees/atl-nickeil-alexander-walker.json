@@ -11,6 +11,7 @@
   "tree": {
     "type": "player",
     "name": "Nickeil Alexander-Walker",
+    "narrative": "**Nickeil Alexander-Walker** was a low-cost pickup from Minnesota in July 2025 — the Hawks sent cash and a Cleveland 2027 second-rounder for the Canadian scoring guard. A nice bench addition without giving up any real assets.",
     "acquisitionType": "trade",
     "date": "2025-07-06",
     "currentTeam": "ATL",
@@ -21,6 +22,7 @@
       {
         "type": "pick",
         "name": "2027 2nd Round Pick via CLE",
+        "narrative": "A Cleveland 2027 second-round pick, sent to Minnesota as partial payment for **Nickeil Alexander-Walker**.",
         "acquisitionType": "trade",
         "date": "2025-07-06",
         "note": "Cleveland's 2027 2nd-round pick, sent to Minnesota in NAW trade.",
@@ -29,6 +31,7 @@
       {
         "type": "other",
         "name": "Cash Considerations",
+        "narrative": "Cash sent to Minnesota alongside a second-round pick for NAW.",
         "acquisitionType": "original",
         "note": "Cash sent to Minnesota.",
         "isOrigin": true

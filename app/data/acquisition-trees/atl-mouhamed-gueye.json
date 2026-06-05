@@ -11,6 +11,7 @@
   "tree": {
     "type": "player",
     "name": "Mouhamed Gueye",
+    "narrative": "**Mouhamed Gueye** cost the Hawks just a single 2027 second-round pick, acquired from Boston on draft night 2023. The Washington State big was originally the Celtics' #39 pick — Atlanta bought low on a developmental project.",
     "acquisitionType": "trade",
     "date": "2023-06-28",
     "currentTeam": "ATL",
@@ -21,6 +22,7 @@
       {
         "type": "pick",
         "name": "2027 2nd Round Pick via ATL",
+        "narrative": "Atlanta's own 2027 second-round pick, sent to Boston as the price for **Mouhamed Gueye**.",
         "acquisitionType": "original",
         "date": "2023-06-28",
         "note": "Atlanta's own 2027 2nd-round pick, sent to Boston for Gueye.",

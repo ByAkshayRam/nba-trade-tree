@@ -12,6 +12,7 @@
   "tree": {
     "type": "player",
     "name": "Nikola Durisic",
+    "narrative": "**Nikola Durisic** came to Atlanta in a three-team draft-night deal in 2024 — the Hawks sent **A.J. Griffin** to Houston and got the Serbian wing from Miami. The experiment didn't last; Durisic was waived in February 2026.",
     "acquisitionType": "trade",
     "date": "2024-06-27",
     "currentTeam": "ATL",
@@ -22,6 +23,7 @@
       {
         "type": "player",
         "name": "A.J. Griffin",
+        "narrative": "**A.J. Griffin** was Atlanta's own #16 pick in the 2022 draft out of Duke. The wing was shipped to Houston in a three-team trade that brought **Nikola Durisic** to the Hawks.",
         "acquisitionType": "draft",
         "date": "2022-06-23",
         "draftPick": 16,

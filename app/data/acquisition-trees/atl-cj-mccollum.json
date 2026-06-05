@@ -10,6 +10,7 @@
   "tree": {
     "type": "player",
     "name": "CJ McCollum",
+    "narrative": "**CJ McCollum** arrived in the trade that ended the **Trae Young** era in Atlanta. The Hawks sent their franchise point guard to Washington in January 2026, getting back McCollum and **Corey Kispert**. It's a full-circle moment: Young only became a Hawk because Atlanta drafted **Luka Dončić** third overall in 2018 and swapped him to Dallas for the #5 pick.",
     "acquisitionType": "trade",
     "date": "2026-01-09",
     "currentTeam": "ATL",
@@ -20,6 +21,7 @@
       {
         "type": "player",
         "name": "Trae Young",
+        "narrative": "**Trae Young** was the Hawks' franchise cornerstone from 2018 to 2026 — a 3x All-Star who led Atlanta to the 2021 ECF. He came to Atlanta in the famous draft-night swap where the Hawks picked **Luka Dončić** #3 and traded him to Dallas for the #5 pick. After seven seasons, Young was dealt to Washington for McCollum and Kispert.",
         "acquisitionType": "draft-night-trade",
         "date": "2018-06-21",
         "draftPick": 5,
@@ -32,6 +34,7 @@
           {
             "type": "pick",
             "name": "2018 1st Round Pick (#3)",
+            "narrative": "Atlanta's own #3 overall pick in 2018, used to select **Luka Dončić** and immediately traded to Dallas in the swap that brought **Trae Young** to Atlanta.",
             "acquisitionType": "original",
             "date": "2018-06-21",
             "becamePlayer": "Luka Doncic",

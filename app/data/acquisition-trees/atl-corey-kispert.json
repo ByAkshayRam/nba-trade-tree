@@ -10,6 +10,7 @@
   "tree": {
     "type": "player",
     "name": "Corey Kispert",
+    "narrative": "**Corey Kispert** came to Atlanta alongside **CJ McCollum** in the blockbuster **Trae Young** trade to Washington in January 2026. The Gonzaga sharpshooter gives the Hawks a career 40% three-point shooter, and his chain traces all the way back to the iconic Luka-Trae draft-night swap of 2018.",
     "acquisitionType": "trade",
     "date": "2026-01-09",
     "currentTeam": "ATL",
@@ -20,6 +21,7 @@
       {
         "type": "player",
         "name": "Trae Young",
+        "narrative": "**Trae Young** was the Hawks' franchise player for seven seasons — a 3x All-Star who led Atlanta's 2021 ECF run. Acquired in the 2018 draft-night swap that sent **Luka Dončić** to Dallas, Young was eventually traded to Washington in January 2026 for McCollum and Kispert.",
         "acquisitionType": "draft-night-trade",
         "date": "2018-06-21",
         "draftPick": 5,
@@ -32,6 +34,7 @@
           {
             "type": "pick",
             "name": "2018 1st Round Pick (#3)",
+            "narrative": "Atlanta's own #3 pick in 2018 — used to draft **Luka Dončić**, then immediately shipped to Dallas for the #5 pick that became **Trae Young**.",
             "acquisitionType": "original",
             "date": "2018-06-21",
             "becamePlayer": "Luka Doncic",

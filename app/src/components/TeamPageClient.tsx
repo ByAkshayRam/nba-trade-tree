@@ -75,6 +75,7 @@ interface SelectedPlayerInfo {
     acquisitionType?: string;
     tradePartner?: string;
     isOrigin?: boolean;
+    narrative?: string;
   }>;
 }
 
@@ -102,6 +103,12 @@ interface TeamPageClientProps {
 
 function generatePlayerNarrative(player: SelectedPlayerInfo, teamName: string): string {
   const { name, pathNodes, isRosterPlayer } = player;
+  
+  // Check if the selected node has a pre-written narrative
+  const selectedNode = pathNodes.find(n => n.id === player.id);
+  if (selectedNode?.narrative) {
+    return selectedNode.narrative;
+  }
   
   if (pathNodes.length === 0) {
     return `${name} is on the current ${teamName} roster.`;
@@ -308,7 +315,15 @@ export default function TeamPageClient({ data, teamAbbr }: TeamPageClientProps) 
               {narrativeTitle}
               {selectedPlayer && (
                 <button 
-                  onClick={() => setSelectedPlayer(null)}
+                  onClick={() => {
+                    setSelectedPlayer(null);
+                    // Remove player param from URL to prevent re-selection
+                    const params = new URLSearchParams(window.location.search);
+                    params.delete('player');
+                    params.delete('from');
+                    const newUrl = `${window.location.pathname}${params.toString() ? '?' + params.toString() : ''}`;
+                    router.replace(newUrl, { scroll: false });
+                  }}
                   className="ml-auto text-xs text-gray-400 hover:text-white px-2 py-1 bg-gray-800 rounded"
                 >
                   ✕ Clear Selection
