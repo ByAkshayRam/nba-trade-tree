@@ -430,7 +430,7 @@ export default function AcquisitionTree({
         <Controls 
           showInteractive={false}
           position="top-right"
-          className="!bg-zinc-800 !border-zinc-700 !rounded-lg" 
+          className="!bg-zinc-800 !border-zinc-700 !rounded-lg hidden sm:!flex" 
         />
         <MiniMap
           nodeColor={(node) => {
