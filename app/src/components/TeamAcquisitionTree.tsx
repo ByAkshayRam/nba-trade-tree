@@ -2091,7 +2091,8 @@ export default function TeamAcquisitionTree({
               <div className="p-3 space-y-2">
                 <button
                   onClick={() => {
-                    const url = window.location.href;
+                    const baseUrl = window.location.href.split('?')[0];
+                    const url = `${baseUrl}?v=${Date.now()}`;
                     navigator.clipboard.writeText(url);
                     setShowExportMenu(false);
                   }}
@@ -2106,7 +2107,8 @@ export default function TeamAcquisitionTree({
 
                 <button
                   onClick={() => {
-                    const url = window.location.href;
+                    const baseUrl = window.location.href.split('?')[0];
+                    const url = `${baseUrl}?v=${Date.now()}`;
                     const text = `Check out how the ${teamName} roster was built 🧬`;
                     window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`, '_blank');
                     setShowExportMenu(false);
@@ -2122,7 +2124,8 @@ export default function TeamAcquisitionTree({
 
                 <button
                   onClick={() => {
-                    const url = window.location.href;
+                    const baseUrl = window.location.href.split('?')[0];
+                    const url = `${baseUrl}?v=${Date.now()}`;
                     const title = `How the ${teamName} roster was built`;
                     window.open(`https://www.reddit.com/submit?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`, '_blank');
                     setShowExportMenu(false);

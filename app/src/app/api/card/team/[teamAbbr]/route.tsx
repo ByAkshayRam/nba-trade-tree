@@ -1,11 +1,78 @@
 import { ImageResponse } from "@vercel/og";
 import { NextRequest } from "next/server";
-import {
-  loadPlayerData, TEAM_COLORS, TEAM_NAMES, listTeamPlayers,
-  getAcquisitionBadge, AcquisitionData,
-} from "../../shared";
 
 export const runtime = "nodejs";
+
+interface TreeNode {
+  id: string;
+  type: string;
+  data: {
+    label: string;
+    sublabel?: string;
+    date?: string;
+    nodeType: "player" | "pick" | "cash" | "trade-action";
+    acquisitionType?: string;
+    tradePartner?: string;
+    isOrigin?: boolean;
+    isRosterPlayer?: boolean;
+    isHomegrown?: boolean;
+    rosterCategory?: "starter" | "bench" | "two-way";
+  };
+}
+
+interface TreeEdge {
+  id: string;
+  source: string;
+  target: string;
+  animated?: boolean;
+}
+
+interface TeamTreeData {
+  team: string;
+  teamName: string;
+  nodes: TreeNode[];
+  edges: TreeEdge[];
+  teamColors: { primary: string; secondary: string };
+  rosterCount: number;
+  homegrownCount: number;
+  tradeCount: number;
+  earliestOrigin: number;
+}
+
+async function getTeamTree(teamAbbr: string): Promise<TeamTreeData | null> {
+  try {
+    // Use the same host detection logic as the team page
+    const baseUrl = process.env.NODE_ENV === 'production' 
+      ? 'https://www.rosterdna.com'
+      : 'http://localhost:3456';
+      
+    const res = await fetch(`${baseUrl}/api/acquisition-tree/${teamAbbr}/team`, {
+      cache: "no-store"
+    });
+    
+    if (!res.ok) return null;
+    return res.json();
+  } catch (error) {
+    console.error("Failed to fetch team tree:", error);
+    return null;
+  }
+}
+
+function getNodeColor(node: TreeNode): string {
+  if (node.data.isOrigin) return "#f59e0b"; // amber
+  if (node.data.isRosterPlayer) return "#22c55e"; // green
+  if (node.data.nodeType === "pick") return "#a855f7"; // purple
+  if (node.data.acquisitionType === "trade") return "#3b82f6"; // blue
+  return "#6b7280"; // gray
+}
+
+function getNodeLabel(node: TreeNode): string {
+  let label = node.data.label;
+  if (label.length > 12) {
+    label = label.slice(0, 11) + "…";
+  }
+  return label;
+}
 
 export async function GET(
   req: NextRequest,
@@ -13,156 +80,348 @@ export async function GET(
 ) {
   const { teamAbbr } = await params;
   const team = teamAbbr.toUpperCase();
-  const colors = TEAM_COLORS[team];
-  if (!colors) return new Response("Team not found", { status: 404 });
-
-  const teamName = TEAM_NAMES[team] || team;
-  const slugs = listTeamPlayers(team);
-  const players: AcquisitionData[] = [];
-  for (const s of slugs) {
-    const d = loadPlayerData(s);
-    if (d) players.push(d);
+  
+  const treeData = await getTeamTree(teamAbbr);
+  if (!treeData) {
+    return new Response("Team not found", { status: 404 });
   }
 
-  // Count acquisition types
-  const counts: Record<string, number> = {};
-  for (const p of players) {
-    const t = p.tree.acquisitionType;
-    const key = t === "draft" ? "draft" : t === "trade" ? "trade" : t.includes("sign-and-trade") ? "s&t" : "fa";
-    counts[key] = (counts[key] || 0) + 1;
-  }
-  const total = players.length || 1;
+  // Filter and organize nodes for the visualization
+  const rosterNodes = treeData.nodes
+    .filter(n => n.data.isRosterPlayer)
+    .sort((a, b) => {
+      const orderA = a.data.rosterCategory === "starter" ? 1 : 2;
+      const orderB = b.data.rosterCategory === "starter" ? 1 : 2;
+      return orderA - orderB;
+    })
+    .slice(0, 12); // Show top 12 players
 
-  const typeColorMap: Record<string, string> = {
-    draft: "#22c55e",
-    trade: "#3b82f6",
-    fa: "#6b7280",
-    "free-agent": "#6b7280",
-    "free_agent": "#6b7280",
-    "sign-and-trade": "#a855f7",
-    "sign_and_trade": "#a855f7",
-  };
+  const originNodes = treeData.nodes.filter(n => n.data.isOrigin);
+  const tradeNodes = treeData.nodes
+    .filter(n => n.data.acquisitionType === "trade" && !n.data.isRosterPlayer)
+    .slice(0, 8); // Show key trade nodes
 
-  function getTypeColor(acqType: string): string {
-    if (acqType === "draft") return "#22c55e";
-    if (acqType === "trade") return "#3b82f6";
-    if (acqType.includes("sign")) return "#a855f7";
-    return "#6b7280";
-  }
+  const pickNodes = treeData.nodes
+    .filter(n => n.data.nodeType === "pick")
+    .slice(0, 6); // Show key draft picks
 
-  // Sort: trades first, then draft, then others
-  players.sort((a, b) => {
-    const order: Record<string, number> = { trade: 0, draft: 1, "sign-and-trade": 2 };
-    return (order[a.tree.acquisitionType] ?? 3) - (order[b.tree.acquisitionType] ?? 3);
-  });
+  // Combine key nodes for visualization
+  const keyNodes = [
+    ...rosterNodes,
+    ...originNodes,
+    ...tradeNodes.slice(0, 4),
+    ...pickNodes.slice(0, 3)
+  ].slice(0, 20); // Max 20 nodes for clean layout
 
-  const displayPlayers = players.slice(0, 18); // max grid
+  // Create a simple layout (3 columns, multiple rows)
+  const nodesPerColumn = Math.ceil(keyNodes.length / 3);
 
   return new ImageResponse(
     (
       <div
         style={{
           width: "1200px",
-          height: "675px",
+          height: "630px",
           display: "flex",
           flexDirection: "column",
           backgroundColor: "#09090b",
-          fontFamily: "sans-serif",
+          fontFamily: "system-ui, sans-serif",
+          padding: "24px",
           position: "relative",
-          padding: "36px 48px",
         }}
       >
-        {/* Top accent */}
-        <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "4px", background: `linear-gradient(90deg, ${colors.primary}, ${colors.secondary})`, display: "flex" }} />
+        {/* Top accent bar */}
+        <div 
+          style={{ 
+            position: "absolute", 
+            top: 0, 
+            left: 0, 
+            right: 0, 
+            height: "4px", 
+            background: `linear-gradient(90deg, ${treeData.teamColors.primary}, ${treeData.teamColors.secondary})`,
+            display: "flex" 
+          }} 
+        />
 
         {/* Header */}
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "20px" }}>
-          <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
-            <span style={{ color: colors.primary, fontSize: "15px", fontWeight: 700, letterSpacing: "2px", display: "flex" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "16px" }}>
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <div style={{ color: treeData.teamColors.primary, fontSize: "14px", fontWeight: 700, letterSpacing: "1px", display: "flex" }}>
               ROSTER DNA
-            </span>
-            <div style={{ fontSize: "38px", fontWeight: 800, color: "#fff", display: "flex" }}>
-              How the {teamName} Were Built
+            </div>
+            <div style={{ fontSize: "28px", fontWeight: 800, color: "#fff", display: "flex" }}>
+              {treeData.teamName} Trade Tree
             </div>
           </div>
-
-          {/* Stats bar */}
+          
+          {/* Stats */}
           <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
-            {[
-              { label: "DRAFT", count: counts.draft || 0, color: "#22c55e" },
-              { label: "TRADE", count: counts.trade || 0, color: "#3b82f6" },
-              { label: "FA", count: counts.fa || 0, color: "#6b7280" },
-              { label: "S&T", count: counts["s&t"] || 0, color: "#a855f7" },
-            ].map((s) => (
-              <div key={s.label} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "2px" }}>
-                <span style={{ fontSize: "22px", fontWeight: 800, color: s.color, display: "flex" }}>{s.count}</span>
-                <span style={{ fontSize: "10px", fontWeight: 600, color: "#52525b", letterSpacing: "1px", display: "flex" }}>{s.label}</span>
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+              <div style={{ fontSize: "18px", fontWeight: 800, color: "#22c55e", display: "flex" }}>
+                {treeData.rosterCount}
               </div>
-            ))}
+              <div style={{ fontSize: "9px", fontWeight: 600, color: "#52525b", display: "flex" }}>
+                PLAYERS
+              </div>
+            </div>
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+              <div style={{ fontSize: "18px", fontWeight: 800, color: "#3b82f6", display: "flex" }}>
+                {treeData.tradeCount}
+              </div>
+              <div style={{ fontSize: "9px", fontWeight: 600, color: "#52525b", display: "flex" }}>
+                TRADES
+              </div>
+            </div>
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+              <div style={{ fontSize: "18px", fontWeight: 800, color: "#f59e0b", display: "flex" }}>
+                {treeData.earliestOrigin}
+              </div>
+              <div style={{ fontSize: "9px", fontWeight: 600, color: "#52525b", display: "flex" }}>
+                ORIGIN
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* Percentage bar */}
-        <div style={{ display: "flex", height: "8px", borderRadius: "4px", overflow: "hidden", marginBottom: "20px" }}>
-          {[
-            { pct: (counts.draft || 0) / total, color: "#22c55e" },
-            { pct: (counts.trade || 0) / total, color: "#3b82f6" },
-            { pct: (counts["s&t"] || 0) / total, color: "#a855f7" },
-            { pct: (counts.fa || 0) / total, color: "#6b7280" },
-          ].filter(s => s.pct > 0).map((s, i) => (
-            <div key={i} style={{ width: `${s.pct * 100}%`, backgroundColor: s.color, display: "flex" }} />
-          ))}
-        </div>
-
-        {/* Player grid */}
-        <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", flex: 1 }}>
-          {displayPlayers.map((p, i) => {
-            const tc = getTypeColor(p.tree.acquisitionType);
-            return (
+        {/* Main visualization area */}
+        <div style={{ 
+          flex: 1, 
+          display: "flex", 
+          gap: "12px",
+          justifyContent: "space-between",
+          alignItems: "flex-start"
+        }}>
+          {/* Column 1: Roster Players */}
+          <div style={{ 
+            display: "flex", 
+            flexDirection: "column", 
+            gap: "8px",
+            flex: 1
+          }}>
+            <div style={{ 
+              fontSize: "11px", 
+              fontWeight: 700, 
+              color: "#22c55e", 
+              marginBottom: "4px",
+              display: "flex"
+            }}>
+              CURRENT ROSTER
+            </div>
+            {rosterNodes.slice(0, 8).map((node, i) => (
               <div
                 key={i}
                 style={{
-                  width: "176px",
-                  height: "52px",
                   backgroundColor: "#18181b",
-                  borderRadius: "8px",
-                  borderLeft: `3px solid ${tc}`,
+                  borderRadius: "6px",
+                  borderLeft: `3px solid ${getNodeColor(node)}`,
+                  padding: "6px 8px",
                   display: "flex",
                   flexDirection: "column",
-                  justifyContent: "center",
-                  padding: "0 12px",
                 }}
               >
-                <span style={{ color: "#e4e4e7", fontSize: "14px", fontWeight: 700, display: "flex" }}>
-                  {p._meta.player.length > 18 ? p._meta.player.slice(0, 17) + "…" : p._meta.player}
-                </span>
-                <span style={{ color: tc, fontSize: "10px", fontWeight: 600, letterSpacing: "0.5px", display: "flex" }}>
-                  {getAcquisitionBadge(p.tree.acquisitionType).label}
-                  {p.tree.draftPick ? ` #${p.tree.draftPick}` : ""}
-                  {p.tree.tradePartner ? ` via ${p.tree.tradePartner}` : ""}
-                </span>
+                <div style={{ 
+                  color: "#e4e4e7", 
+                  fontSize: "11px", 
+                  fontWeight: 700,
+                  display: "flex"
+                }}>
+                  {getNodeLabel(node)}
+                </div>
+                {node.data.rosterCategory && (
+                  <div style={{ 
+                    color: node.data.rosterCategory === "starter" ? "#fbbf24" : "#a3a3a3", 
+                    fontSize: "8px", 
+                    fontWeight: 600,
+                    textTransform: "uppercase",
+                    display: "flex"
+                  }}>
+                    {node.data.rosterCategory}
+                  </div>
+                )}
               </div>
-            );
-          })}
-          {players.length > 18 && (
-            <div style={{ width: "176px", height: "52px", display: "flex", alignItems: "center", justifyContent: "center" }}>
-              <span style={{ color: "#52525b", fontSize: "14px", display: "flex" }}>+{players.length - 18} more</span>
+            ))}
+          </div>
+
+          {/* Column 2: Trade Chain */}
+          <div style={{ 
+            display: "flex", 
+            flexDirection: "column", 
+            gap: "8px",
+            flex: 1
+          }}>
+            <div style={{ 
+              fontSize: "11px", 
+              fontWeight: 700, 
+              color: "#3b82f6", 
+              marginBottom: "4px",
+              display: "flex"
+            }}>
+              TRADE ASSETS
             </div>
-          )}
+            {tradeNodes.slice(0, 6).map((node, i) => (
+              <div
+                key={i}
+                style={{
+                  backgroundColor: "#18181b",
+                  borderRadius: "6px",
+                  borderLeft: `3px solid ${getNodeColor(node)}`,
+                  padding: "6px 8px",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <div style={{ 
+                  color: "#e4e4e7", 
+                  fontSize: "11px", 
+                  fontWeight: 700,
+                  display: "flex"
+                }}>
+                  {getNodeLabel(node)}
+                </div>
+                {node.data.tradePartner && (
+                  <div style={{ 
+                    color: "#3b82f6", 
+                    fontSize: "8px", 
+                    fontWeight: 600,
+                    display: "flex"
+                  }}>
+                    via {node.data.tradePartner}
+                  </div>
+                )}
+              </div>
+            ))}
+
+            {/* Show some picks in this column too */}
+            {pickNodes.slice(0, 3).map((node, i) => (
+              <div
+                key={`pick-${i}`}
+                style={{
+                  backgroundColor: "#18181b",
+                  borderRadius: "6px",
+                  borderLeft: `3px solid ${getNodeColor(node)}`,
+                  padding: "6px 8px",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <div style={{ 
+                  color: "#e4e4e7", 
+                  fontSize: "11px", 
+                  fontWeight: 700,
+                  display: "flex"
+                }}>
+                  {getNodeLabel(node)}
+                </div>
+                <div style={{ 
+                  color: "#a855f7", 
+                  fontSize: "8px", 
+                  fontWeight: 600,
+                  display: "flex"
+                }}>
+                  PICK
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Column 3: Origins & Key Connections */}
+          <div style={{ 
+            display: "flex", 
+            flexDirection: "column", 
+            gap: "8px",
+            flex: 1
+          }}>
+            <div style={{ 
+              fontSize: "11px", 
+              fontWeight: 700, 
+              color: "#f59e0b", 
+              marginBottom: "4px",
+              display: "flex"
+            }}>
+              ORIGINS
+            </div>
+            {originNodes.map((node, i) => (
+              <div
+                key={i}
+                style={{
+                  backgroundColor: "#18181b",
+                  borderRadius: "6px",
+                  borderLeft: `3px solid ${getNodeColor(node)}`,
+                  padding: "6px 8px",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <div style={{ 
+                  color: "#e4e4e7", 
+                  fontSize: "11px", 
+                  fontWeight: 700,
+                  display: "flex"
+                }}>
+                  ★ {getNodeLabel(node)}
+                </div>
+                {node.data.date && (
+                  <div style={{ 
+                    color: "#f59e0b", 
+                    fontSize: "8px", 
+                    fontWeight: 600,
+                    display: "flex"
+                  }}>
+                    {new Date(node.data.date).getFullYear()}
+                  </div>
+                )}
+              </div>
+            ))}
+
+            {/* Visual connection lines indicator */}
+            <div style={{
+              backgroundColor: "#27272a",
+              borderRadius: "6px",
+              padding: "8px",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              marginTop: "8px"
+            }}>
+              <div style={{ 
+                color: "#71717a", 
+                fontSize: "10px", 
+                fontWeight: 600,
+                display: "flex",
+                marginBottom: "4px"
+              }}>
+                CONNECTED BY
+              </div>
+              <div style={{ 
+                color: "#a3a3a3", 
+                fontSize: "8px", 
+                textAlign: "center",
+                display: "flex"
+              }}>
+                {treeData.edges.length} trade paths
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Footer */}
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "12px" }}>
-          <span style={{ color: "#3f3f46", fontSize: "13px", display: "flex" }}>
-            {players.length} players · {Math.round(((counts.draft || 0) / total) * 100)}% drafted · {Math.round(((counts.trade || 0) / total) * 100)}% traded
-          </span>
-          <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-            <span style={{ fontSize: "14px", color: "#3f3f46", display: "flex" }}>🧬</span>
-            <span style={{ fontSize: "14px", color: "#3f3f46", fontWeight: 600, display: "flex" }}>RosterDNA</span>
+          <div style={{ 
+            color: "#71717a", 
+            fontSize: "10px", 
+            display: "flex"
+          }}>
+            Interactive tree visualization available at rosterdna.com
+          </div>
+          <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
+            <div style={{ fontSize: "12px", color: "#71717a", display: "flex" }}>🧬</div>
+            <div style={{ fontSize: "12px", color: "#71717a", fontWeight: 600, display: "flex" }}>
+              RosterDNA
+            </div>
           </div>
         </div>
       </div>
     ),
-    { width: 1200, height: 675 }
+    { width: 1200, height: 630 }
   );
 }
