@@ -2035,7 +2035,7 @@ export default function TeamAcquisitionTree({
       {/* Mobile/touch: tap-to-interact overlay */}
       {isTouchDevice && !graphInteractive && (
         <div
-          className="absolute inset-0 z-10 flex items-end justify-center pb-6 pointer-events-none"
+          className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none"
         >
           <button
             onClick={() => setGraphInteractive(true)}
