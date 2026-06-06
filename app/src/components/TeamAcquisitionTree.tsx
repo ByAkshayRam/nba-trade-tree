@@ -426,16 +426,24 @@ export default function TeamAcquisitionTree({
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const reactFlowInstance = useRef<any>(null);
 
-  // Build adjacency map for path finding (edge source -> edge targets)
+  // Build adjacency maps for path finding
   const adjacencyMap = useMemo(() => {
-    const map = new Map<string, string[]>();
+    const reverseMap = new Map<string, string[]>(); // target -> sources (backward)
+    const forwardMap = new Map<string, string[]>(); // source -> targets (forward)
+    
     initialEdges.forEach(edge => {
-      // Build reverse map: for each target, what sources point to it?
-      const sources = map.get(edge.target) || [];
+      // Reverse map: for each target, what sources point to it?
+      const sources = reverseMap.get(edge.target) || [];
       sources.push(edge.source);
-      map.set(edge.target, sources);
+      reverseMap.set(edge.target, sources);
+      
+      // Forward map: for each source, what targets does it point to?
+      const targets = forwardMap.get(edge.source) || [];
+      targets.push(edge.target);
+      forwardMap.set(edge.source, targets);
     });
-    return map;
+    
+    return { reverse: reverseMap, forward: forwardMap };
   }, [initialEdges]);
 
   // Find all nodes in the path from a node back to origin(s)
@@ -449,7 +457,7 @@ export default function TeamAcquisitionTree({
       pathNodes.add(nodeId);
       
       // Get all source nodes that point to this node
-      const sources = adjacencyMap.get(nodeId) || [];
+      const sources = adjacencyMap.reverse.get(nodeId) || [];
       sources.forEach(sourceId => {
         if (!pathNodes.has(sourceId)) {
           queue.push(sourceId);
@@ -459,6 +467,37 @@ export default function TeamAcquisitionTree({
     
     return pathNodes;
   }, [adjacencyMap]);
+
+  // Find all roster players reachable from a node (forward direction)
+  const findPathToRoster = useCallback((startNodeId: string): Set<string> => {
+    const pathNodes = new Set<string>();
+    const queue = [startNodeId];
+    
+    while (queue.length > 0) {
+      const nodeId = queue.shift()!;
+      if (pathNodes.has(nodeId)) continue;
+      pathNodes.add(nodeId);
+      
+      // Get all target nodes this node points to
+      const targets = adjacencyMap.forward.get(nodeId) || [];
+      targets.forEach(targetId => {
+        if (!pathNodes.has(targetId)) {
+          queue.push(targetId);
+        }
+      });
+    }
+    
+    // Only return nodes that are current roster players
+    const rosterOnlyPath = new Set<string>();
+    pathNodes.forEach(nodeId => {
+      const node = baseNodes.find(n => n.id === nodeId);
+      if (node && (node.data as NodeData).isRosterPlayer) {
+        rosterOnlyPath.add(nodeId);
+      }
+    });
+    
+    return rosterOnlyPath;
+  }, [adjacencyMap, baseNodes]);
 
   // Handle node click
   const onNodeClick = useCallback((event: React.MouseEvent, node: Node) => {
@@ -708,6 +747,9 @@ export default function TeamAcquisitionTree({
 
     // Find path from selected node to origins
     const pathNodeIds = findPathToOrigins(selectedNodeId);
+    
+    // Find forward path to current roster players (for dotted lines)
+    const forwardRosterIds = findPathToRoster(selectedNodeId);
 
     // Update nodes
     const updatedNodes = baseNodes.map(node => ({
@@ -721,35 +763,65 @@ export default function TeamAcquisitionTree({
 
     // Update edges
     const updatedEdges = baseEdges.map(edge => {
-      const isInPath = pathNodeIds.has(edge.source) && pathNodeIds.has(edge.target);
+      const isInBackPath = pathNodeIds.has(edge.source) && pathNodeIds.has(edge.target);
+      
+      // Check if edge is in forward path to roster (for dotted lines)
+      // We want to show connections FROM the selected node (or its backward path) TO roster players
+      // But only if it's not already part of the main backward path
+      const sourceInMainPath = pathNodeIds.has(edge.source);
+      const targetIsRoster = forwardRosterIds.has(edge.target);
+      const isForwardPath = sourceInMainPath && targetIsRoster && !isInBackPath;
+      
       const sourceNode = initialNodes.find(n => n.id === edge.source);
       const isOriginEdge = sourceNode?.data.isOrigin;
       const targetsRoster = baseNodes.find(n => n.id === edge.target)?.type === "target";
       
+      let strokeColor: string;
+      let strokeWidth: number;
+      let opacity: number;
+      let strokeDasharray: string | undefined;
+      
+      if (isInBackPath) {
+        // Main highlighted path (backward to origins)
+        strokeColor = isOriginEdge ? "#fbbf24" : "#3b82f6";
+        strokeWidth = 3;
+        opacity = 1;
+        strokeDasharray = undefined;
+      } else if (isForwardPath) {
+        // Dotted forward path to roster
+        strokeColor = "#22c55e"; // Green for forward connections
+        strokeWidth = 2;
+        opacity = 0.7;
+        strokeDasharray = "5,5"; // Dotted line
+      } else {
+        // Dimmed default
+        strokeColor = "#3f3f46";
+        strokeWidth = 1;
+        opacity = 0.3;
+        strokeDasharray = undefined;
+      }
+      
       return {
         ...edge,
         style: {
-          stroke: isInPath 
-            ? (isOriginEdge ? "#fbbf24" : "#3b82f6") 
-            : "#3f3f46",
-          strokeWidth: isInPath ? 3 : 1,
-          opacity: isInPath ? 1 : 0.3,
+          stroke: strokeColor,
+          strokeWidth: strokeWidth,
+          opacity: opacity,
+          strokeDasharray: strokeDasharray,
         },
         markerEnd: targetsRoster ? undefined : {
           type: MarkerType.ArrowClosed,
-          color: isInPath 
-            ? (isOriginEdge ? "#fbbf24" : "#3b82f6") 
-            : "#3f3f46",
-          width: isInPath ? 18 : 12,
-          height: isInPath ? 18 : 12,
+          color: strokeColor,
+          width: isInBackPath ? 18 : (isForwardPath ? 14 : 12),
+          height: isInBackPath ? 18 : (isForwardPath ? 14 : 12),
         },
-        animated: isInPath && isOriginEdge,
+        animated: isInBackPath && isOriginEdge,
       };
     });
 
     setNodes(updatedNodes);
     setEdges(updatedEdges);
-  }, [selectedNodeId, baseNodes, baseEdges, findPathToOrigins, initialNodes, highlightPartner, partnerHighlightCleared]);
+  }, [selectedNodeId, baseNodes, baseEdges, findPathToOrigins, findPathToRoster, initialNodes, highlightPartner, partnerHighlightCleared]);
 
   // Build initial graph layout
   useEffect(() => {
