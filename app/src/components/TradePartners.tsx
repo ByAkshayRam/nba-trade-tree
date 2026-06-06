@@ -62,6 +62,11 @@ export default function TradePartners({ partners, currentTeam, onNavigate }: Tra
               <div className="text-sm font-medium text-white">{partner.name}</div>
               <div className="text-xs text-zinc-500 truncate">
                 {partner.players.join(", ")}
+                {partner.count > partner.players.length && (
+                  <span className="text-zinc-600">
+                    {" "} +{partner.count - partner.players.length} more
+                  </span>
+                )}
               </div>
             </div>
             <div className="text-lg font-bold text-cyan-400 shrink-0">
