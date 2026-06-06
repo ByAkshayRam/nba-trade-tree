@@ -1070,7 +1070,7 @@ export async function GET(
         if (node.name && node.type === 'player') {
           const playerInfo = {
             name: node.name,
-            isDraftNight: node.acquisitionType === 'draft-night-trade'
+            isDraftNight: false // Disable asterisks for now - need better data to determine actual playing history
           };
           
           if (isCurrentChain) {
@@ -1094,9 +1094,9 @@ export async function GET(
   }
   const tradePartners = Array.from(partnerMap.entries())
     .map(([abbr, data]) => {
-      // Combine and format player names with asterisks for draft-night trades
+      // Format player names (asterisks disabled until we have better playing history data)
       const formatPlayerList = (playerList: Array<{ name: string; isDraftNight: boolean }>) => {
-        return playerList.map(p => p.isDraftNight ? `${p.name}*` : p.name);
+        return playerList.map(p => p.name); // Remove asterisks for now
       };
       
       const currentFormatted = formatPlayerList(data.currentPlayers);

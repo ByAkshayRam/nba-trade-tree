@@ -46,12 +46,6 @@ export default function TradePartners({ partners, currentTeam, onNavigate }: Tra
         <div className="flex-1 h-px bg-zinc-800" />
       </div>
       
-      {/* Legend */}
-      {partners.some(p => p.players.some(player => player.includes('*'))) && (
-        <div className="text-xs text-zinc-600 mb-3 px-2">
-          * Draft night trade (never played for that team)
-        </div>
-      )}
       
       <div className="bg-zinc-900/60 border border-zinc-800 rounded-2xl overflow-hidden">
         {partners.map((partner, i) => (
