@@ -1043,30 +1043,94 @@ export async function GET(
   allTeamAvgs.sort((a, b) => b.avg - a.avg); // highest experience first
   const experienceRank = allTeamAvgs.findIndex(t => t.abbr === team) + 1;
   
-  // Build trade partner map
-  const partnerMap = new Map<string, { count: number; players: Set<string> }>();
+  // Build trade partner map with enhanced player info
+  const partnerMap = new Map<string, {
+    count: number;
+    currentPlayers: Array<{ name: string; isDraftNight: boolean }>;
+    historicalPlayers: Array<{ name: string; isDraftNight: boolean }>;
+  }>();
+  
   for (const t of trees) {
-    function walkPartners(node: any) {
+    const rosterPlayerName = t._meta.player;
+    const isCurrentRoster = !!rosterPlayerName;
+    
+    function walkPartners(node: any, isCurrentChain: boolean = isCurrentRoster) {
       if (node.tradePartner && node.tradePartner !== team) {
         const partner = node.tradePartner;
-        if (!partnerMap.has(partner)) partnerMap.set(partner, { count: 0, players: new Set() });
+        if (!partnerMap.has(partner)) {
+          partnerMap.set(partner, {
+            count: 0,
+            currentPlayers: [],
+            historicalPlayers: []
+          });
+        }
         const entry = partnerMap.get(partner)!;
         entry.count++;
-        if (node.name && node.type === 'player') entry.players.add(node.name);
+        
+        if (node.name && node.type === 'player') {
+          const playerInfo = {
+            name: node.name,
+            isDraftNight: node.acquisitionType === 'draft-night-trade'
+          };
+          
+          if (isCurrentChain) {
+            // Check if this is actually the current roster player or someone in their chain
+            const playerNode = nodes.find(n => n.data.label === node.name);
+            if (playerNode?.data.isRosterPlayer) {
+              entry.currentPlayers.push(playerInfo);
+            } else {
+              entry.historicalPlayers.push(playerInfo);
+            }
+          } else {
+            entry.historicalPlayers.push(playerInfo);
+          }
+        }
       }
-      if (node.assetsGivenUp) node.assetsGivenUp.forEach(walkPartners);
+      if (node.assetsGivenUp) {
+        node.assetsGivenUp.forEach((child: any) => walkPartners(child, isCurrentChain));
+      }
     }
     walkPartners(t.tree);
   }
   const tradePartners = Array.from(partnerMap.entries())
-    .map(([abbr, data]) => ({
-      abbr,
-      name: TEAM_NAMES[abbr] || abbr,
-      count: data.count,
-      players: Array.from(data.players).slice(0, 3),
-      color: TEAM_COLORS[abbr]?.primary || "#666",
-    }))
-    .sort((a, b) => b.count - a.count)
+    .map(([abbr, data]) => {
+      // Combine and format player names with asterisks for draft-night trades
+      const formatPlayerList = (playerList: Array<{ name: string; isDraftNight: boolean }>) => {
+        return playerList.map(p => p.isDraftNight ? `${p.name}*` : p.name);
+      };
+      
+      const currentFormatted = formatPlayerList(data.currentPlayers);
+      const historicalFormatted = formatPlayerList(data.historicalPlayers);
+      
+      // Combine all players for display (current first, then historical)
+      const allPlayers = [...currentFormatted, ...historicalFormatted].slice(0, 3);
+      
+      return {
+        abbr,
+        name: TEAM_NAMES[abbr] || abbr,
+        count: data.count,
+        players: allPlayers,
+        currentPlayerCount: data.currentPlayers.length,
+        hasCurrentRoster: data.currentPlayers.length > 0,
+        color: TEAM_COLORS[abbr]?.primary || "#666",
+      };
+    })
+    // Sort by current roster relevance first, then by total count
+    .sort((a, b) => {
+      // Primary sort: current roster connections first
+      if (a.hasCurrentRoster && !b.hasCurrentRoster) return -1;
+      if (!a.hasCurrentRoster && b.hasCurrentRoster) return 1;
+      
+      // Secondary sort: by current player count if both have current connections
+      if (a.hasCurrentRoster && b.hasCurrentRoster) {
+        if (a.currentPlayerCount !== b.currentPlayerCount) {
+          return b.currentPlayerCount - a.currentPlayerCount;
+        }
+      }
+      
+      // Tertiary sort: by total count
+      return b.count - a.count;
+    })
     .slice(0, 8);
 
   return NextResponse.json({

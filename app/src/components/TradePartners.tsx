@@ -7,6 +7,8 @@ interface TradePartner {
   name: string;
   count: number;
   players: string[];
+  currentPlayerCount?: number;
+  hasCurrentRoster?: boolean;
   color: string;
 }
 
@@ -43,6 +45,14 @@ export default function TradePartners({ partners, currentTeam, onNavigate }: Tra
         </span>
         <div className="flex-1 h-px bg-zinc-800" />
       </div>
+      
+      {/* Legend */}
+      {partners.some(p => p.players.some(player => player.includes('*'))) && (
+        <div className="text-xs text-zinc-600 mb-3 px-2">
+          * Draft night trade (never played for that team)
+        </div>
+      )}
+      
       <div className="bg-zinc-900/60 border border-zinc-800 rounded-2xl overflow-hidden">
         {partners.map((partner, i) => (
           <button
@@ -59,7 +69,12 @@ export default function TradePartners({ partners, currentTeam, onNavigate }: Tra
               {partner.abbr}
             </div>
             <div className="flex-1 min-w-0">
-              <div className="text-sm font-medium text-white">{partner.name}</div>
+              <div className="flex items-center gap-2">
+                <div className="text-sm font-medium text-white">{partner.name}</div>
+                {partner.hasCurrentRoster && (
+                  <div className="w-2 h-2 rounded-full bg-green-500 shrink-0" title="Active roster connection" />
+                )}
+              </div>
               <div className="text-xs text-zinc-500 truncate">
                 {partner.players.join(", ")}
                 {partner.count > partner.players.length && (
@@ -69,8 +84,15 @@ export default function TradePartners({ partners, currentTeam, onNavigate }: Tra
                 )}
               </div>
             </div>
-            <div className="text-lg font-bold text-cyan-400 shrink-0">
-              {partner.count}
+            <div className="flex flex-col items-end shrink-0">
+              <div className="text-lg font-bold text-cyan-400">
+                {partner.count}
+              </div>
+              {partner.hasCurrentRoster && partner.currentPlayerCount && (
+                <div className="text-xs text-green-400">
+                  {partner.currentPlayerCount} active
+                </div>
+              )}
             </div>
             <div className="text-zinc-600 shrink-0">›</div>
           </button>
