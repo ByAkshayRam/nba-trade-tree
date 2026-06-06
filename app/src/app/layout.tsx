@@ -14,7 +14,21 @@ export const metadata: Metadata = {
   },
   description: "Interactive visualization of NBA trade chains. Trace how every player ended up on their current roster through trades, draft picks, and free agency.",
   keywords: ["NBA", "trade", "basketball", "visualization", "RosterDNA", "trade tree", "roster", "acquisition", "draft picks"],
-  metadataBase: new URL("https://rosterdna.vercel.app"),
+  metadataBase: new URL("https://www.rosterdna.com"),
+  icons: {
+    icon: [
+      { url: '/favicon-16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      { url: '/icon-192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/icon-512.png', sizes: '512x512', type: 'image/png' },
+    ],
+  },
   openGraph: {
     title: "RosterDNA — How Was Your Team Built?",
     description: "Every roster tells a story. Trace the chain of trades, picks, and signings that built every NBA team.",
@@ -32,6 +46,7 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  manifest: '/site.webmanifest',
 };
 
 export default function RootLayout({
