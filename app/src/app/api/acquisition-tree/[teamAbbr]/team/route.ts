@@ -1094,16 +1094,17 @@ export async function GET(
   }
   const tradePartners = Array.from(partnerMap.entries())
     .map(([abbr, data]) => {
-      // Format player names (asterisks disabled until we have better playing history data)
-      const formatPlayerList = (playerList: Array<{ name: string; isDraftNight: boolean }>) => {
-        return playerList.map(p => p.name); // Remove asterisks for now
-      };
+      // Combine and deduplicate player names (current players get priority)
+      const allPlayerNames = new Set<string>();
       
-      const currentFormatted = formatPlayerList(data.currentPlayers);
-      const historicalFormatted = formatPlayerList(data.historicalPlayers);
+      // Add current players first (priority)
+      data.currentPlayers.forEach(p => allPlayerNames.add(p.name));
       
-      // Combine all players for display (current first, then historical)
-      const allPlayers = [...currentFormatted, ...historicalFormatted].slice(0, 3);
+      // Add historical players only if not already present
+      data.historicalPlayers.forEach(p => allPlayerNames.add(p.name));
+      
+      // Convert to array and limit to 3
+      const allPlayers = Array.from(allPlayerNames).slice(0, 3);
       
       return {
         abbr,
