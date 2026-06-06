@@ -485,19 +485,26 @@ export default function TeamAcquisitionTree({
     return connectedRosterPlayers;
   }, [baseNodes, findPathToOrigins]);
 
-  // Find all edges that connect the selected node's network to current roster players
+  // Find edges that complete the path from selected node to connected roster players  
   const findForwardConnectionEdges = useCallback((startNodeId: string, connectedRosterIds: Set<string>): Set<string> => {
     const forwardEdges = new Set<string>();
-    const backwardPath = findPathToOrigins(startNodeId);
+    const selectedBackwardPath = findPathToOrigins(startNodeId);
     
-    // Find edges that go from our backward path network to roster players
-    baseEdges.forEach(edge => {
-      const sourceInBackwardPath = backwardPath.has(edge.source);
-      const targetIsConnectedRoster = connectedRosterIds.has(edge.target);
+    // For each roster player connected through the selected node
+    connectedRosterIds.forEach(rosterPlayerId => {
+      const rosterBackwardPath = findPathToOrigins(rosterPlayerId);
       
-      if (sourceInBackwardPath && targetIsConnectedRoster) {
-        forwardEdges.add(edge.id);
-      }
+      // Find all edges in the roster player's path that are NOT in the selected node's path
+      // These show the "forward progression" from the selected asset to current roster
+      baseEdges.forEach(edge => {
+        const edgeInRosterPath = rosterBackwardPath.has(edge.source) && rosterBackwardPath.has(edge.target);
+        const edgeInSelectedPath = selectedBackwardPath.has(edge.source) && selectedBackwardPath.has(edge.target);
+        
+        // Show edges that are part of roster path but not selected path (the forward completion)
+        if (edgeInRosterPath && !edgeInSelectedPath) {
+          forwardEdges.add(edge.id);
+        }
+      });
     });
     
     return forwardEdges;
@@ -755,21 +762,27 @@ export default function TeamAcquisitionTree({
     // Find current roster players that this node helped acquire
     const connectedRosterIds = findRosterPlayersFromNode(selectedNodeId);
     
+    // Get all nodes involved in connected roster paths for efficient checking
+    const allConnectedPathNodes = new Set<string>(pathNodeIds);
+    connectedRosterIds.forEach(rosterPlayerId => {
+      const rosterPath = findPathToOrigins(rosterPlayerId);
+      rosterPath.forEach(nodeId => allConnectedPathNodes.add(nodeId));
+    });
+    
     // Find edges that connect our network to those roster players
     const forwardConnectionEdges = findForwardConnectionEdges(selectedNodeId, connectedRosterIds);
 
-    // Update nodes  
+    // Update nodes - highlight backward path, keep connected roster players and paths visible
     const updatedNodes = baseNodes.map(node => {
       const isInBackwardPath = pathNodeIds.has(node.id);
-      const isConnectedRoster = connectedRosterIds.has(node.id);
-      const isRelevant = isInBackwardPath || isConnectedRoster;
+      const isInAnyConnectedPath = allConnectedPathNodes.has(node.id);
       
       return {
         ...node,
         data: {
           ...node.data,
           isHighlighted: isInBackwardPath,
-          isDimmed: !isRelevant,
+          isDimmed: !isInAnyConnectedPath,
         }
       };
     });
