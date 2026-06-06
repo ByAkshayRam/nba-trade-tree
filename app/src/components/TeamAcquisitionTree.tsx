@@ -792,7 +792,7 @@ export default function TeamAcquisitionTree({
         strokeColor = "#22c55e"; // Green for forward connections
         strokeWidth = 2;
         opacity = 0.7;
-        strokeDasharray = "5,5"; // Dotted line
+        strokeDasharray = "2,6"; // Circular dots
       } else {
         // Dimmed default
         strokeColor = "#3f3f46";
